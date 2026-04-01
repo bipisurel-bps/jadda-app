@@ -131,7 +131,7 @@ export default function WarisClient() {
       {/* Header */}
       <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}>
         <h1 className="text-2xl md:text-3xl font-display font-bold tracking-tight text-foreground">Kalkulator Waris</h1>
-        <p className="text-sm text-muted-foreground mt-1">Perhitungan faraidh sesuai Al-Qur&apos;an, Sunnah, dan Mazhab Syafi&apos;i</p>
+        <p className="text-sm text-muted-foreground mt-1">Perhitungan faraidh sesuai Al-Qur&apos;an dan Sunnah</p>
       </motion.div>
 
       {/* Form */}

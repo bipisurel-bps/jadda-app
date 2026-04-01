@@ -151,11 +151,8 @@ export default function DoaClient() {
           </div>
         ) : (
           filteredData?.map?.((cat: PrayerCategory, catIdx: number) => (
-            <motion.div
+            <div
               key={cat?.id ?? catIdx}
-              initial={{ opacity: 0, y: 15 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: catIdx * 0.05 }}
               className="space-y-3"
             >
               <div className="flex items-center gap-2">
@@ -169,10 +166,8 @@ export default function DoaClient() {
                 const isFav = favorites?.includes?.(prayerId);
                 const isCopied = copiedId === prayerId;
                 return (
-                  <motion.div
+                  <div
                     key={prayerId}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
                     className="rounded-xl bg-card border border-border/50 p-5 shadow-sm hover:shadow-md transition-shadow"
                   >
                     {/* Arabic */}
@@ -180,16 +175,16 @@ export default function DoaClient() {
                       {prayer?.arabic}
                     </p>
                     {/* Transliteration */}
-                    <p className="text-sm text-primary italic mb-2 leading-relaxed">
+                    <p className="text-sm text-emerald-700 dark:text-emerald-400 italic mb-2 leading-relaxed">
                       {prayer?.transliteration}
                     </p>
                     {/* Translation */}
-                    <p className="text-sm text-foreground/80 mb-3 leading-relaxed">
+                    <p className="text-sm text-foreground mb-3 leading-relaxed">
                       {prayer?.translation}
                     </p>
                     {/* Source & Actions */}
                     <div className="flex items-center justify-between pt-3 border-t border-border/50">
-                      <span className="text-[11px] text-muted-foreground font-medium">{prayer?.source}</span>
+                      <span className="text-[11px] text-foreground/70 font-medium">{prayer?.source}</span>
                       <div className="flex items-center gap-1">
                         <button
                           onClick={() => copyArabic(prayer?.arabic ?? '', prayerId)}
@@ -207,10 +202,10 @@ export default function DoaClient() {
                         </button>
                       </div>
                     </div>
-                  </motion.div>
+                  </div>
                 );
               }) ?? []}
-            </motion.div>
+            </div>
           )) ?? []
         )}
       </div>

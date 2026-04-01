@@ -38,7 +38,7 @@ export default function TentangClient() {
             </div>
             <div>
               <strong className="text-sm text-foreground">Kalkulator Waris (Faraidh)</strong>
-              <p className="text-sm text-muted-foreground">Perhitungan pembagian warisan sesuai hukum Islam berdasarkan Al-Qur&apos;an, Sunnah, dan Mazhab Syafi&apos;i. Mendukung berbagai kasus termasuk &apos;Aul, Radd, Hajb, dan Al-Umariyyatain.</p>
+              <p className="text-sm text-muted-foreground">Perhitungan pembagian warisan sesuai hukum Islam berdasarkan Al-Qur&apos;an dan Sunnah. Mendukung berbagai kasus termasuk &apos;Aul, Radd, Hajb, dan Al-Umariyyatain.</p>
             </div>
           </li>
         </ul>
@@ -61,7 +61,7 @@ export default function TentangClient() {
           </li>
           <li className="flex items-start gap-2">
             <span className="text-primary font-bold">•</span>
-            <span><strong>Fiqh Mawaris</strong> — Ilmu Faraidh berdasarkan Mazhab Syafi&apos;i</span>
+            <span><strong>Fiqh Mawaris</strong> — Ilmu Faraidh berdasarkan Al-Qur&apos;an dan Sunnah</span>
           </li>
         </ul>
       </motion.div>

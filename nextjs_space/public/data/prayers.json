@@ -6,9 +6,21 @@
       "prayers": [
         {
           "arabic": "الْحَمْدُ لِلَّهِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُورُ",
-          "transliteration": "Alhamdulillaahil ladzii ahyaanaa ba’da maa amaatanaa wa ilaihin nusyuur",
-          "translation": "Segala puji bagi Allah, yang telah membangunkan kami setelah menidurkan kami, dan kepada-Nya lah kami dibangkitkan",
+          "transliteration": "Alhamdulillaahil ladzii ahyaanaa ba'da maa amaatanaa wa ilaihin nusyuur",
+          "translation": "Segala puji bagi Allah, yang telah membangunkan kami setelah menidurkan kami, dan kepada-Nya lah kami dibangkitkan.",
           "source": "HR. Bukhari no. 6325, Muslim no. 2711"
+        },
+        {
+          "arabic": "لَا إِلٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ، سُبْحَانَ اللَّهِ وَالْحَمْدُ لِلَّهِ وَلَا إِلٰهَ إِلَّا اللَّهُ وَاللَّهُ أَكْبَرُ وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ الْعَلِيِّ الْعَظِيمِ",
+          "transliteration": "Laa ilaaha illallaahu wahdahu laa syariika lah, lahul mulku wa lahul hamdu wa huwa 'alaa kulli syai-in qadiir. Subhaanallaahi walhamdu lillaahi wa laa ilaaha illallaahu wallaahu akbar, wa laa hawla wa laa quwwata illaa billaahil 'aliyyil 'azhiim",
+          "translation": "Tiada Tuhan yang berhak disembah selain Allah semata, tiada sekutu bagi-Nya. Bagi-Nya kerajaan dan segala pujian, Dia Maha Kuasa atas segala sesuatu. Maha Suci Allah, segala puji bagi Allah, tiada Tuhan selain Allah, Allah Maha Besar, tiada daya dan upaya kecuali dengan pertolongan Allah Yang Maha Tinggi lagi Maha Agung.",
+          "source": "HR. Bukhari no. 1154"
+        },
+        {
+          "arabic": "الْحَمْدُ لِلَّهِ الَّذِي عَافَانِي فِي جَسَدِي وَرَدَّ عَلَيَّ رُوحِي وَأَذِنَ لِي بِذِكْرِهِ",
+          "transliteration": "Alhamdulillaahil ladzii 'aafaanii fii jasadii wa radda 'alayya ruuhii wa adzina lii bidzikrih",
+          "translation": "Segala puji bagi Allah yang telah memberikan kesehatan pada tubuhku, mengembalikan ruhku, dan mengizinkanku untuk berdzikir kepada-Nya.",
+          "source": "HR. Tirmidzi no. 3401"
         }
       ]
     },
@@ -18,15 +30,15 @@
       "prayers": [
         {
           "arabic": "بِسْمِ اللهِ اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْخُبُثِ وَالْخَبَائِثِ",
-          "transliteration": "Bismillah, Allahumma inni a’udzu bika minal khubutsi wal khabaits",
-          "translation": "Dengan nama Allah, ya Allah, aku berlindung kepada-Mu dari godaan setan laki-laki dan perempuan.",
-          "source": "HR. Bukhari no. 142 dan Muslim no. 375"
+          "transliteration": "Bismillah, Allahumma inni a'udzu bika minal khubutsi wal khabaa-its",
+          "translation": "Dengan nama Allah. Ya Allah, aku berlindung kepada-Mu dari godaan setan laki-laki dan perempuan.",
+          "source": "HR. Bukhari no. 142, Muslim no. 375"
         },
         {
           "arabic": "غُفْرَانَكَ",
-          "transliteration": "Ghufronaka",
+          "transliteration": "Ghufraanaka",
           "translation": "Aku memohon ampunan-Mu.",
-          "source": "HR. Tirmidzi no. 7"
+          "source": "HR. Abu Daud no. 30, Tirmidzi no. 7"
         }
       ]
     },
@@ -36,15 +48,21 @@
       "prayers": [
         {
           "arabic": "بِسْمِ اللهِ",
-          "transliteration": "Bismillah",
+          "transliteration": "Bismillaah",
           "translation": "Dengan nama Allah.",
-          "source": "HR. Abu Daud no. 101"
+          "source": "HR. Abu Daud no. 101, Tirmidzi no. 25"
         },
         {
-          "arabic": "أَشْهَدُ أَنْ لاَ إِلَهَ إِلاَّ اللَّهُ وَحْدَهُ لاَ شَرِيكَ لَهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ",
-          "transliteration": "Asyhadu an laa ilaha illallah wahdahu laa syarika lah, wa asyhadu anna Muhammadan ‘abduhu wa rasuluh",
+          "arabic": "أَشْهَدُ أَنْ لَا إِلٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ",
+          "transliteration": "Asyhadu an laa ilaaha illallaahu wahdahu laa syariika lah, wa asyhadu anna Muhammadan 'abduhu wa rasuuluh",
           "translation": "Aku bersaksi bahwa tiada Tuhan selain Allah semata, tiada sekutu bagi-Nya, dan aku bersaksi bahwa Muhammad adalah hamba dan utusan-Nya.",
           "source": "HR. Muslim no. 234"
+        },
+        {
+          "arabic": "اللَّهُمَّ اجْعَلْنِي مِنَ التَّوَّابِينَ وَاجْعَلْنِي مِنَ الْمُتَطَهِّرِينَ",
+          "transliteration": "Allaahummaj'alni minat tawwaabiina waj'alni minal mutathahhiriin",
+          "translation": "Ya Allah, jadikanlah aku termasuk orang-orang yang bertaubat dan jadikanlah aku termasuk orang-orang yang menyucikan diri.",
+          "source": "HR. Tirmidzi no. 55"
         }
       ]
     },
@@ -53,16 +71,16 @@
       "category_name": "Doa Masuk & Keluar Masjid",
       "prayers": [
         {
-          "arabic": "بِسْمِ اللهِ، وَالسَّلاَمُ عَلَى رَسُولِ اللهِ، اللَّهُمَّ اغْفِرْ لِي ذُنُوبِي، وَافْتَحْ لِي أَبْوَابَ رَحْمَتِكَ",
-          "transliteration": "Bismillah, wassalamu ‘ala Rasulillah, Allahummaghfir li dzunubi, waftah li abwaba rahmatik",
-          "translation": "Dengan nama Allah, dan salam atas Rasulullah. Ya Allah, ampunilah dosa-dosaku, dan bukakanlah untukku pintu-pintu rahmat-Mu.",
-          "source": "HR. Ibnu Majah no. 771"
+          "arabic": "أَعُوذُ بِاللَّهِ الْعَظِيمِ وَبِوَجْهِهِ الْكَرِيمِ وَسُلْطَانِهِ الْقَدِيمِ مِنَ الشَّيْطَانِ الرَّجِيمِ، بِسْمِ اللَّهِ وَالصَّلَاةُ وَالسَّلَامُ عَلَى رَسُولِ اللَّهِ، اللَّهُمَّ افْتَحْ لِي أَبْوَابَ رَحْمَتِكَ",
+          "transliteration": "A'uudzu billaahil 'azhiim, wa biwajhihil kariim, wa sulthaanihil qadiim, minasy syaithaanir rajiim. Bismillaah, wash shalaatu was salaamu 'alaa Rasuulillaah. Allahummaf tahlii abwaaba rahmatik",
+          "translation": "Aku berlindung kepada Allah Yang Maha Agung, dengan wajah-Nya Yang Mulia, dan kekuasaan-Nya yang kekal, dari setan yang terkutuk. Dengan nama Allah, shalawat dan salam atas Rasulullah. Ya Allah, bukakanlah untukku pintu-pintu rahmat-Mu.",
+          "source": "HR. Abu Daud no. 466"
         },
         {
-          "arabic": "بِسْمِ اللهِ، وَالسَّلاَمُ عَلَى رَسُولِ اللهِ، اللَّهُمَّ اغْفِرْ لِي ذُنُوبِي، وَافْتَحْ لِي أَبْوَابَ فَضْلِكَ",
-          "transliteration": "Bismillah, wassalamu ‘ala Rasulillah, Allahummaghfir li dzunubi, waftah li abwaba fadhlik",
-          "translation": "Dengan nama Allah, dan salam atas Rasulullah. Ya Allah, ampunilah dosa-dosaku, dan bukakanlah untukku pintu-pintu karunia-Mu.",
-          "source": "HR. Ibnu Majah no. 771"
+          "arabic": "بِسْمِ اللَّهِ وَالصَّلَاةُ وَالسَّلَامُ عَلَى رَسُولِ اللَّهِ، اللَّهُمَّ إِنِّي أَسْأَلُكَ مِنْ فَضْلِكَ",
+          "transliteration": "Bismillaah, wash shalaatu was salaamu 'alaa Rasuulillaah. Allaahumma inni as-aluka min fadllik",
+          "translation": "Dengan nama Allah, shalawat dan salam atas Rasulullah. Ya Allah, sesungguhnya aku memohon kepada-Mu dari karunia-Mu.",
+          "source": "HR. Muslim no. 713"
         }
       ]
     },
@@ -71,10 +89,52 @@
       "category_name": "Dzikir Pagi",
       "prayers": [
         {
-          "arabic": "أَصْبَحْنَا وَأَصْبَحَ الْمُلْكُ لِلَّهِ، وَالْحَمْدُ لِلَّهِ، لاَ إِلَـهَ إِلاَّ اللهُ وَحْدَهُ لاَ شَرِيْكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيْرُ. رَبِّ أَسْأَلُكَ خَيْرَ مَا فِيْ هَذَا الْيَوْمِ وَخَيْرَ مَا بَعْدَهُ، وَأَعُوْذُ بِكَ مِنْ شَرِّ مَا فِيْ هَذَا الْيَوْمِ وَشَرِّ مَا بَعْدَهُ، رَبِّ أَعُوْذُ بِكَ مِنَ الْكَسَلِ وَسُوْءِ الْكِبَرِ، رَبِّ أَعُوْذُ بِكَ مِنْ عَذَابٍ فِي النَّارِ وَعَذَابٍ فِي الْقَبْرِ",
-          "transliteration": "Ash-bahnaa wa ash-bahal mulku lillah walhamdulillah, laa ilaha illallah wahdahu laa syarika lah, lahul mulku walahul hamdu wa huwa ‘ala kulli syai-in qodir. Robbi as-aluka khoiro maa fii hadzal yaum wa khoiro maa ba’dahu, wa a’udzu bika min syarri maa fii hadzal yaum wa syarri maa ba’dahu. Robbi a’udzu bika minal kasali wa su-il kibar. Robbi a’udzu bika min ‘adzabin fin naari wa ‘adzabin fil qobri.",
-          "translation": "Kami telah memasuki waktu pagi dan kerajaan hanya milik Allah, segala puji bagi Allah. Tidak ada Tuhan (yang berhak disembah) kecuali Allah semata, tiada sekutu bagi-Nya. Milik-Nya lah kerajaan dan bagi-Nya pujian. Dia-lah Yang Mahakuasa atas segala sesuatu. Wahai Tuhanku, aku mohon kepada-Mu kebaikan di hari ini dan kebaikan sesudahnya. Aku berlindung kepada-Mu dari kejahatan hari ini dan kejahatan sesudahnya. Wahai Tuhanku, aku berlindung kepada-Mu dari kemalasan dan kejelekan di hari tua. Wahai Tuhanku, aku berlindung kepada-Mu dari siksa di neraka dan siksa di dalam kubur.",
+          "arabic": "أَصْبَحْنَا وَأَصْبَحَ الْمُلْكُ لِلَّهِ، وَالْحَمْدُ لِلَّهِ، لَا إِلٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ",
+          "transliteration": "Ashbahnaa wa ashbahal mulku lillaah, walhamdu lillaah, laa ilaaha illallaahu wahdahu laa syariika lah, lahul mulku wa lahul hamdu wa huwa 'alaa kulli syai-in qadiir",
+          "translation": "Kami telah memasuki waktu pagi dan kerajaan hanya milik Allah, segala puji bagi Allah. Tiada Tuhan yang berhak disembah selain Allah semata, tiada sekutu bagi-Nya. Bagi-Nya kerajaan dan bagi-Nya pujian. Dia Maha Kuasa atas segala sesuatu.",
           "source": "HR. Muslim no. 2723"
+        },
+        {
+          "arabic": "اللَّهُمَّ بِكَ أَصْبَحْنَا وَبِكَ أَمْسَيْنَا وَبِكَ نَحْيَا وَبِكَ نَمُوتُ وَإِلَيْكَ النُّشُورُ",
+          "transliteration": "Allaahumma bika ashbahnaa wa bika amsainaa wa bika nahyaa wa bika namuutu wa ilaikan nusyuur",
+          "translation": "Ya Allah, dengan rahmat dan pertolongan-Mu kami memasuki waktu pagi, dan dengan rahmat dan pertolongan-Mu kami memasuki waktu petang. Dengan rahmat dan pertolongan-Mu kami hidup dan dengan kehendak-Mu kami mati. Dan kepada-Mu kebangkitan.",
+          "source": "HR. Tirmidzi no. 3391"
+        },
+        {
+          "arabic": "اللَّهُمَّ إِنِّي أَصْبَحْتُ أُشْهِدُكَ وَأُشْهِدُ حَمَلَةَ عَرْشِكَ وَمَلَائِكَتَكَ وَجَمِيعَ خَلْقِكَ أَنَّكَ أَنْتَ اللَّهُ لَا إِلٰهَ إِلَّا أَنْتَ وَحْدَكَ لَا شَرِيكَ لَكَ وَأَنَّ مُحَمَّدًا عَبْدُكَ وَرَسُولُكَ",
+          "transliteration": "Allaahumma inni ashbahtu usyhiduka wa usyhidu hamalata 'arsyika wa malaa-ikataka wa jamii'a khalqika annaka antallahu laa ilaaha illaa anta wahdaka laa syariika laka wa anna Muhammadan 'abduka wa rasuuluk",
+          "translation": "Ya Allah, sesungguhnya aku di waktu pagi ini mempersaksikan Engkau, malaikat yang memikul Arsy-Mu, malaikat-malaikat dan seluruh makhluk-Mu, bahwa sesungguhnya Engkau adalah Allah, tiada Tuhan yang berhak disembah kecuali Engkau semata, tiada sekutu bagi-Mu dan bahwa Muhammad adalah hamba dan utusan-Mu.",
+          "source": "HR. Abu Daud no. 5069"
+        },
+        {
+          "arabic": "اللَّهُمَّ مَا أَصْبَحَ بِي مِنْ نِعْمَةٍ أَوْ بِأَحَدٍ مِنْ خَلْقِكَ فَمِنْكَ وَحْدَكَ لَا شَرِيكَ لَكَ فَلَكَ الْحَمْدُ وَلَكَ الشُّكْرُ",
+          "transliteration": "Allaahumma maa ashbaha bii min ni'matin aw bi-ahadin min khalqik, faminka wahdaka laa syariika lak, falakal hamdu wa lakasy syukr",
+          "translation": "Ya Allah, nikmat yang kuterima di pagi ini atau yang diterima oleh seorang pun dari makhluk-Mu, semua itu dari-Mu saja. Tiada sekutu bagi-Mu. Bagi-Mu segala puji dan syukur.",
+          "source": "HR. Abu Daud no. 5073"
+        },
+        {
+          "arabic": "اللَّهُمَّ عَافِنِي فِي بَدَنِي، اللَّهُمَّ عَافِنِي فِي سَمْعِي، اللَّهُمَّ عَافِنِي فِي بَصَرِي، لَا إِلٰهَ إِلَّا أَنْتَ",
+          "transliteration": "Allaahumma 'aafinii fii badanii. Allaahumma 'aafinii fii sam'ii. Allaahumma 'aafinii fii basharii. Laa ilaaha illaa anta",
+          "translation": "Ya Allah, sehatkan tubuhku. Ya Allah, sehatkan pendengaranku. Ya Allah, sehatkan penglihatanku. Tiada Tuhan yang berhak disembah kecuali Engkau.",
+          "source": "HR. Abu Daud no. 5090"
+        },
+        {
+          "arabic": "حَسْبِيَ اللَّهُ لَا إِلٰهَ إِلَّا هُوَ عَلَيْهِ تَوَكَّلْتُ وَهُوَ رَبُّ الْعَرْشِ الْعَظِيمِ",
+          "transliteration": "Hasbiyallaahu laa ilaaha illaa huwa, 'alaihi tawakkaltu wa huwa Rabbul 'arsyil 'azhiim",
+          "translation": "Cukuplah Allah bagiku. Tiada Tuhan yang berhak disembah selain Dia. Kepada-Nya aku bertawakal dan Dia adalah Rabb (Tuhan) Arsy yang agung.",
+          "source": "HR. Abu Daud no. 5081"
+        },
+        {
+          "arabic": "بِسْمِ اللَّهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ",
+          "transliteration": "Bismillaahil ladzii laa yadhurru ma'asmihi syai-un fil ardhi wa laa fis samaa-i wa huwas samii'ul 'aliim",
+          "translation": "Dengan nama Allah yang tidak ada sesuatu pun di bumi dan di langit yang dapat membahayakan bersama nama-Nya, dan Dia Maha Mendengar lagi Maha Mengetahui.",
+          "source": "HR. Abu Daud no. 5088, Tirmidzi no. 3388"
+        },
+        {
+          "arabic": "رَضِيتُ بِاللَّهِ رَبًّا وَبِالْإِسْلَامِ دِينًا وَبِمُحَمَّدٍ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ نَبِيًّا",
+          "transliteration": "Radhiitu billaahi rabbaa, wa bil islaami diinaa, wa bi Muhammadin shallallaahu 'alaihi wa sallama nabiyyaa",
+          "translation": "Aku ridha Allah sebagai Tuhanku, Islam sebagai agamaku, dan Muhammad shallallahu 'alaihi wa sallam sebagai nabiku.",
+          "source": "HR. Abu Daud no. 5072, Tirmidzi no. 3389"
         }
       ]
     },
@@ -83,10 +143,40 @@
       "category_name": "Dzikir Petang",
       "prayers": [
         {
-          "arabic": "أَمْسَيْنَا وَأَمْسَى الْمُلْكُ للهِ، وَالْحَمْدُ للهِ، لَا إِلَهَ إِلاَّ اللهُ وَحْدَهُ لاَ شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ، رَبِّ أَسْأَلُكَ خَيْرَ مَا فِي هَذِهِ اللَّيْلَةِ وَخَيْرَ مَا بَعْدَهَا، وَأَعُوذُ بِكَ مِنْ شَرِّ مَا فِي هَذِهِ اللَّيْلَةِ وَشَرِّ مَا بَعْدَهَا، رَبِّ أَعُوذُ بِكَ مِنَ الْكَسَلِ وَسُوءِ الْكِبَرِ، رَبِّ أَعُوذُ بِكَ مِنْ عَذَابٍ فِي النَّارِ وَعَذَابٍ فِي الْقَبْرِ",
-          "transliteration": "Amsaynaa wa amsal mulku lillah walhamdulillah, laa ilaha illallah wahdahu laa syarika lah, lahul mulku walahul hamdu wa huwa ‘ala kulli syai-in qodir. Robbi as-aluka khoiro maa fii hadzihil lailah wa khoiro maa ba’dahaa, wa a’udzu bika min syarri maa fii hadzihil lailah wa syarri maa ba’dahaa. Robbi a’udzu bika minal kasali wa su-il kibar. Robbi a’udzu bika min ‘adzabin fin naari wa ‘adzabin fil qobri.",
-          "translation": "Kami telah memasuki waktu petang dan kerajaan hanya milik Allah, segala puji bagi Allah. Tidak ada Tuhan (yang berhak disembah) kecuali Allah semata, tiada sekutu bagi-Nya. Milik-Nya lah kerajaan dan bagi-Nya pujian. Dia-lah Yang Mahakuasa atas segala sesuatu. Wahai Tuhanku, aku mohon kepada-Mu kebaikan di malam ini dan kebaikan sesudahnya. Aku berlindung kepada-Mu dari kejahatan malam ini dan kejahatan sesudahnya. Wahai Tuhanku, aku berlindung kepada-Mu dari kemalasan dan kejelekan di hari tua. Wahai Tuhanku, aku berlindung kepada-Mu dari siksa di neraka dan siksa di dalam kubur.",
+          "arabic": "أَمْسَيْنَا وَأَمْسَى الْمُلْكُ لِلَّهِ، وَالْحَمْدُ لِلَّهِ، لَا إِلٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ",
+          "transliteration": "Amsainaa wa amsal mulku lillaah, walhamdu lillaah, laa ilaaha illallaahu wahdahu laa syariika lah, lahul mulku wa lahul hamdu wa huwa 'alaa kulli syai-in qadiir",
+          "translation": "Kami telah memasuki waktu petang dan kerajaan hanya milik Allah, segala puji bagi Allah. Tiada Tuhan yang berhak disembah selain Allah semata, tiada sekutu bagi-Nya. Bagi-Nya kerajaan dan bagi-Nya pujian. Dia Maha Kuasa atas segala sesuatu.",
           "source": "HR. Muslim no. 2723"
+        },
+        {
+          "arabic": "اللَّهُمَّ بِكَ أَمْسَيْنَا وَبِكَ أَصْبَحْنَا وَبِكَ نَحْيَا وَبِكَ نَمُوتُ وَإِلَيْكَ الْمَصِيرُ",
+          "transliteration": "Allaahumma bika amsainaa wa bika ashbahnaa wa bika nahyaa wa bika namuutu wa ilaikal mashiir",
+          "translation": "Ya Allah, dengan rahmat dan pertolongan-Mu kami memasuki waktu petang, dan dengan rahmat dan pertolongan-Mu kami memasuki waktu pagi. Dengan rahmat dan pertolongan-Mu kami hidup dan dengan kehendak-Mu kami mati. Dan kepada-Mu tempat kembali.",
+          "source": "HR. Tirmidzi no. 3391"
+        },
+        {
+          "arabic": "اللَّهُمَّ إِنِّي أَمْسَيْتُ أُشْهِدُكَ وَأُشْهِدُ حَمَلَةَ عَرْشِكَ وَمَلَائِكَتَكَ وَجَمِيعَ خَلْقِكَ أَنَّكَ أَنْتَ اللَّهُ لَا إِلٰهَ إِلَّا أَنْتَ وَحْدَكَ لَا شَرِيكَ لَكَ وَأَنَّ مُحَمَّدًا عَبْدُكَ وَرَسُولُكَ",
+          "transliteration": "Allaahumma inni amsaitu usyhiduka wa usyhidu hamalata 'arsyika wa malaa-ikataka wa jamii'a khalqika annaka antallahu laa ilaaha illaa anta wahdaka laa syariika laka wa anna Muhammadan 'abduka wa rasuuluk",
+          "translation": "Ya Allah, sesungguhnya aku di waktu petang ini mempersaksikan Engkau, malaikat yang memikul Arsy-Mu, malaikat-malaikat dan seluruh makhluk-Mu, bahwa sesungguhnya Engkau adalah Allah, tiada Tuhan yang berhak disembah kecuali Engkau semata, tiada sekutu bagi-Mu dan bahwa Muhammad adalah hamba dan utusan-Mu.",
+          "source": "HR. Abu Daud no. 5069"
+        },
+        {
+          "arabic": "اللَّهُمَّ مَا أَمْسَى بِي مِنْ نِعْمَةٍ أَوْ بِأَحَدٍ مِنْ خَلْقِكَ فَمِنْكَ وَحْدَكَ لَا شَرِيكَ لَكَ فَلَكَ الْحَمْدُ وَلَكَ الشُّكْرُ",
+          "transliteration": "Allaahumma maa amsaa bii min ni'matin aw bi-ahadin min khalqik, faminka wahdaka laa syariika lak, falakal hamdu wa lakasy syukr",
+          "translation": "Ya Allah, nikmat yang kuterima di petang ini atau yang diterima oleh seorang pun dari makhluk-Mu, semua itu dari-Mu saja. Tiada sekutu bagi-Mu. Bagi-Mu segala puji dan syukur.",
+          "source": "HR. Abu Daud no. 5073"
+        },
+        {
+          "arabic": "أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ مِنْ شَرِّ مَا خَلَقَ",
+          "transliteration": "A'uudzu bikalimaatillaahit taammaati min syarri maa khalaq",
+          "translation": "Aku berlindung dengan kalimat-kalimat Allah yang sempurna dari kejahatan makhluk-Nya.",
+          "source": "HR. Muslim no. 2708"
+        },
+        {
+          "arabic": "اللَّهُمَّ عَالِمَ الْغَيْبِ وَالشَّهَادَةِ فَاطِرَ السَّمَاوَاتِ وَالْأَرْضِ رَبَّ كُلِّ شَيْءٍ وَمَلِيكَهُ أَشْهَدُ أَنْ لَا إِلٰهَ إِلَّا أَنْتَ أَعُوذُ بِكَ مِنْ شَرِّ نَفْسِي وَمِنْ شَرِّ الشَّيْطَانِ وَشِرْكِهِ",
+          "transliteration": "Allaahumma 'aalimal ghaibi wasy syahaadah, faathiras samaawaati wal ardh, rabba kulli syai-in wa maliikah, asyhadu an laa ilaaha illaa ant, a'uudzu bika min syarri nafsii wa min syarrisy syaithaani wa syirkih",
+          "translation": "Ya Allah, Yang Maha Mengetahui yang gaib dan yang nyata, wahai Rabb pencipta langit dan bumi, Rabb segala sesuatu dan yang merajainya. Aku bersaksi bahwa tiada Tuhan yang berhak disembah kecuali Engkau. Aku berlindung kepada-Mu dari kejahatan diriku, dari kejahatan setan dan sekutunya.",
+          "source": "HR. Abu Daud no. 5067, Tirmidzi no. 3392"
         }
       ]
     },
@@ -95,16 +185,28 @@
       "category_name": "Doa Sebelum & Sesudah Makan",
       "prayers": [
         {
-          "arabic": "بِسْمِ اللهِ",
-          "transliteration": "Bismillah",
+          "arabic": "بِسْمِ اللَّهِ",
+          "transliteration": "Bismillaah",
           "translation": "Dengan nama Allah.",
-          "source": "HR. Muslim no. 2022"
+          "source": "HR. Abu Daud no. 3767, Tirmidzi no. 1858"
         },
         {
-          "arabic": "الْحَمْدُ لِلَّهِ الَّذِي أَطْعَمَنِي هَذَا وَرَزَقَنِيهِ مِنْ غَيْرِ حَوْلٍ مِنِّي وَلاَ قُوَّةٍ",
-          "transliteration": "Alhamdulillaahilladzii ath’amanii haadzaa wa rozaqoniihi min ghoiri hawlin minnii wa laa quwwatin",
-          "translation": "Segala puji bagi Allah yang telah memberiku makanan ini dan merezekikannya kepadaku tanpa daya dan kekuatan dariku.",
-          "source": "HR. Tirmidzi no. 3458"
+          "arabic": "بِسْمِ اللَّهِ فِي أَوَّلِهِ وَآخِرِهِ",
+          "transliteration": "Bismillaahi fii awwalihi wa aakhirih",
+          "translation": "Dengan nama Allah pada awalnya dan akhirnya.",
+          "source": "HR. Abu Daud no. 3767, Tirmidzi no. 1858"
+        },
+        {
+          "arabic": "الْحَمْدُ لِلَّهِ الَّذِي أَطْعَمَنِي هَذَا وَرَزَقَنِيهِ مِنْ غَيْرِ حَوْلٍ مِنِّي وَلَا قُوَّةٍ",
+          "transliteration": "Alhamdulillaahil ladzii ath'amanii haadzaa wa razaqaniihi min ghairi hawlin minnii wa laa quwwah",
+          "translation": "Segala puji bagi Allah yang telah memberi makan ini kepadaku dan memberi rezeki tanpa daya dan kekuatan dariku.",
+          "source": "HR. Abu Daud no. 4023, Tirmidzi no. 3458"
+        },
+        {
+          "arabic": "الْحَمْدُ لِلَّهِ حَمْدًا كَثِيرًا طَيِّبًا مُبَارَكًا فِيهِ غَيْرَ مَكْفِيٍّ وَلَا مُوَدَّعٍ وَلَا مُسْتَغْنًى عَنْهُ رَبَّنَا",
+          "transliteration": "Alhamdulillaahi hamdan katsiiran thayyiban mubaarakan fiih, ghaira makfiyyin wa laa muwadda'in wa laa mustaghnan 'anhu Rabbanaa",
+          "translation": "Segala puji bagi Allah, pujian yang banyak, baik, dan penuh berkah, tanpa merasa sudah cukup, tanpa meninggalkan, dan tanpa merasa tidak butuh kepada-Nya, wahai Rabb kami.",
+          "source": "HR. Bukhari no. 5458"
         }
       ]
     },
@@ -113,15 +215,21 @@
       "category_name": "Doa Keluar & Masuk Rumah",
       "prayers": [
         {
-          "arabic": "بِسْمِ اللهِ تَوَكَّلْتُ عَلَى اللهِ، لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللهِ",
-          "transliteration": "Bismillahi tawakkaltu ‘alallah, laa hawla wa laa quwwata illa billah",
-          "translation": "Dengan nama Allah, aku bertawakkal kepada Allah, tiada daya dan kekuatan kecuali dengan pertolongan Allah.",
-          "source": "HR. Abu Daud no. 5095 dan Tirmidzi no. 3426"
+          "arabic": "بِسْمِ اللَّهِ تَوَكَّلْتُ عَلَى اللَّهِ وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ",
+          "transliteration": "Bismillaah, tawakkaltu 'alallaah, wa laa hawla wa laa quwwata illaa billaah",
+          "translation": "Dengan nama Allah, aku bertawakal kepada Allah, tidak ada daya dan kekuatan kecuali dengan pertolongan Allah.",
+          "source": "HR. Abu Daud no. 5095, Tirmidzi no. 3426"
         },
         {
-          "arabic": "بِسْمِ اللهِ وَلَجْنَا، وَبِسْمِ اللهِ خَرَجْنَا، وَعَلَى رَبِّنَا تَوَكَّلْنَا",
-          "transliteration": "Bismillahi walajnaa, wa bismillahi kharajnaa, wa ‘ala rabbina tawakkalnaa",
-          "translation": "Dengan nama Allah kami masuk, dengan nama Allah kami keluar, dan hanya kepada Tuhan kami, kami bertawakkal.",
+          "arabic": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ أَنْ أَضِلَّ أَوْ أُضَلَّ أَوْ أَزِلَّ أَوْ أُزَلَّ أَوْ أَظْلِمَ أَوْ أُظْلَمَ أَوْ أَجْهَلَ أَوْ يُجْهَلَ عَلَيَّ",
+          "transliteration": "Allaahumma inni a'uudzu bika an adhilla aw udhalla aw azilla aw uzalla aw azhlima aw uzhlama aw ajhala aw yujhala 'alayya",
+          "translation": "Ya Allah, aku berlindung kepada-Mu dari menyesatkan atau disesatkan, dari tergelincir atau digelincirkan, dari menzalimi atau dizalimi, dan dari membodohi atau dibodohi.",
+          "source": "HR. Abu Daud no. 5094, Tirmidzi no. 3427"
+        },
+        {
+          "arabic": "بِسْمِ اللَّهِ وَلَجْنَا وَبِسْمِ اللَّهِ خَرَجْنَا وَعَلَى اللَّهِ رَبِّنَا تَوَكَّلْنَا",
+          "transliteration": "Bismillaahi walajnaa, wa bismillaahi kharajnaa, wa 'alallaahi Rabbinaa tawakkalnaa",
+          "translation": "Dengan nama Allah kami masuk, dengan nama Allah kami keluar, dan kepada Allah Rabb kami, kami bertawakal.",
           "source": "HR. Abu Daud no. 5096"
         }
       ]
@@ -131,10 +239,16 @@
       "category_name": "Doa Naik Kendaraan",
       "prayers": [
         {
-          "arabic": "سُبْحَانَ الَّذِي سَخَّرَ لَنَا هَذَا وَمَا كُنَّا لَهُ مُقْرِنِينَ، وَإِنَّا إِلَى رَبِّنَا لَمُنْقَلِبُونَ",
-          "transliteration": "Subhanalladzi sakhkhoro lana hadza wa ma kunna lahu muqrinin, wa inna ila robbina lamunqolibun",
-          "translation": "Maha Suci Tuhan yang telah menundukkan semua ini bagi kami, padahal kami sebelumnya tidak mampu menguasainya, dan sesungguhnya kami akan kembali kepada Tuhan kami.",
-          "source": "QS. Az-Zukhruf: 13-14"
+          "arabic": "بِسْمِ اللَّهِ وَالْحَمْدُ لِلَّهِ، سُبْحَانَ الَّذِي سَخَّرَ لَنَا هَذَا وَمَا كُنَّا لَهُ مُقْرِنِينَ وَإِنَّا إِلَى رَبِّنَا لَمُنْقَلِبُونَ",
+          "transliteration": "Bismillaah, walhamdu lillaah. Subhaanal ladzii sakhkhara lanaa haadzaa wa maa kunnaa lahu muqriniin, wa innaa ilaa Rabbinaa lamunqalibuun",
+          "translation": "Dengan nama Allah dan segala puji bagi Allah. Maha Suci Tuhan yang telah menundukkan semua ini bagi kami, padahal kami sebelumnya tidak mampu menguasainya. Dan sesungguhnya kami akan kembali kepada Rabb kami.",
+          "source": "HR. Muslim no. 1342, dari QS. Az-Zukhruf: 13-14"
+        },
+        {
+          "arabic": "الْحَمْدُ لِلَّهِ، الْحَمْدُ لِلَّهِ، الْحَمْدُ لِلَّهِ، اللَّهُ أَكْبَرُ، اللَّهُ أَكْبَرُ، اللَّهُ أَكْبَرُ، سُبْحَانَكَ اللَّهُمَّ إِنِّي ظَلَمْتُ نَفْسِي فَاغْفِرْ لِي فَإِنَّهُ لَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ",
+          "transliteration": "Alhamdulillaah, alhamdulillaah, alhamdulillaah. Allaahu akbar, Allaahu akbar, Allaahu akbar. Subhaanaka Allaahumma inni zhalamtu nafsii faghfir lii fa-innahu laa yaghfirudz dzunuuba illaa ant",
+          "translation": "Segala puji bagi Allah (3x). Allah Maha Besar (3x). Maha Suci Engkau ya Allah, sesungguhnya aku telah menzalimi diriku, maka ampunilah aku, sesungguhnya tiada yang mengampuni dosa kecuali Engkau.",
+          "source": "HR. Abu Daud no. 2602, Tirmidzi no. 3446"
         }
       ]
     },
@@ -143,10 +257,40 @@
       "category_name": "Doa Sebelum Tidur",
       "prayers": [
         {
-          "arabic": "بِاسْمِكَ اللَّهُمَّ أَحْيَا وَأَمُوتُ",
-          "transliteration": "Bismika Allahumma ahyaa wa amuut",
-          "translation": "Dengan nama-Mu, ya Allah, aku hidup dan aku mati.",
-          "source": "HR. Bukhari no. 6324"
+          "arabic": "بِاسْمِكَ اللَّهُمَّ أَمُوتُ وَأَحْيَا",
+          "transliteration": "Bismika Allaahumma amuutu wa ahyaa",
+          "translation": "Dengan nama-Mu ya Allah, aku mati dan aku hidup.",
+          "source": "HR. Bukhari no. 6324, Muslim no. 2711"
+        },
+        {
+          "arabic": "اللَّهُمَّ إِنَّكَ خَلَقْتَ نَفْسِي وَأَنْتَ تَوَفَّاهَا لَكَ مَمَاتُهَا وَمَحْيَاهَا إِنْ أَحْيَيْتَهَا فَاحْفَظْهَا وَإِنْ أَمَتَّهَا فَاغْفِرْ لَهَا اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَافِيَةَ",
+          "transliteration": "Allaahumma innaka khalaqta nafsii wa anta tawaffaahaa, laka mamaatuhaa wa mahyaahaa. In ahyaitahaa fahfazh-haa, wa in amattahaa faghfir lahaa. Allaahumma inni as-alukal 'aafiyah",
+          "translation": "Ya Allah, sesungguhnya Engkau menciptakan jiwaku dan Engkaulah yang mewafatkannya. Milik-Mu kematiannya dan kehidupannya. Jika Engkau menghidupkannya maka jagalah, dan jika Engkau mematikannya maka ampunilah. Ya Allah, aku memohon keselamatan kepada-Mu.",
+          "source": "HR. Muslim no. 2712"
+        },
+        {
+          "arabic": "اللَّهُمَّ قِنِي عَذَابَكَ يَوْمَ تَبْعَثُ عِبَادَكَ",
+          "transliteration": "Allaahumma qinii 'adzaabaka yauma tab'atsu 'ibaadak",
+          "translation": "Ya Allah, lindungilah aku dari azab-Mu pada hari Engkau membangkitkan hamba-hamba-Mu.",
+          "source": "HR. Abu Daud no. 5045, Tirmidzi no. 3398"
+        },
+        {
+          "arabic": "بِاسْمِكَ رَبِّي وَضَعْتُ جَنْبِي وَبِكَ أَرْفَعُهُ فَإِنْ أَمْسَكْتَ نَفْسِي فَارْحَمْهَا وَإِنْ أَرْسَلْتَهَا فَاحْفَظْهَا بِمَا تَحْفَظُ بِهِ عِبَادَكَ الصَّالِحِينَ",
+          "transliteration": "Bismika Rabbii wadha'tu janbii wa bika arfa'uh. Fa-in amsakta nafsii farhamhaa, wa in arsaltahaa fahfazh-haa bimaa tahfazhu bihi 'ibaadasash shaalihiin",
+          "translation": "Dengan nama-Mu, ya Tuhanku, aku meletakkan lambungku dan dengan nama-Mu pula aku bangun. Jika Engkau menahan jiwaku maka rahmatilah, dan jika Engkau melepaskannya maka jagalah sebagaimana Engkau menjaga hamba-hamba-Mu yang shalih.",
+          "source": "HR. Bukhari no. 6320, Muslim no. 2714"
+        },
+        {
+          "arabic": "اللَّهُمَّ أَسْلَمْتُ نَفْسِي إِلَيْكَ وَفَوَّضْتُ أَمْرِي إِلَيْكَ وَوَجَّهْتُ وَجْهِي إِلَيْكَ وَأَلْجَأْتُ ظَهْرِي إِلَيْكَ رَغْبَةً وَرَهْبَةً إِلَيْكَ لَا مَلْجَأَ وَلَا مَنْجَا مِنْكَ إِلَّا إِلَيْكَ آمَنْتُ بِكِتَابِكَ الَّذِي أَنْزَلْتَ وَبِنَبِيِّكَ الَّذِي أَرْسَلْتَ",
+          "transliteration": "Allaahumma aslamtu nafsii ilaika wa fawwadhtu amrii ilaika wa wajjahtu wajhii ilaika wa alja'tu zhahrii ilaika raghbatan wa rahbatan ilaik. Laa malja-a wa laa manjaa minka illaa ilaik. Aamantu bikitaabikal ladzii anzalta wa binabiyyikal ladzii arsalt",
+          "translation": "Ya Allah, aku serahkan diriku kepada-Mu, aku serahkan urusanku kepada-Mu, aku hadapkan wajahku kepada-Mu, aku sandarkan punggungku kepada-Mu karena mengharap dan takut kepada-Mu. Tidak ada tempat berlindung dan tidak ada tempat menyelamatkan diri dari-Mu kecuali kepada-Mu. Aku beriman pada kitab-Mu yang telah Engkau turunkan dan nabi-Mu yang telah Engkau utus.",
+          "source": "HR. Bukhari no. 6313, Muslim no. 2710"
+        },
+        {
+          "arabic": "سُبْحَانَ اللَّهِ (ثَلَاثًا وَثَلَاثِينَ) وَالْحَمْدُ لِلَّهِ (ثَلَاثًا وَثَلَاثِينَ) وَاللَّهُ أَكْبَرُ (أَرْبَعًا وَثَلَاثِينَ)",
+          "transliteration": "Subhaanallaah (33x), Alhamdulillaah (33x), Allaahu Akbar (34x)",
+          "translation": "Maha Suci Allah (33x), Segala puji bagi Allah (33x), Allah Maha Besar (34x).",
+          "source": "HR. Bukhari no. 5362, Muslim no. 2727"
         }
       ]
     },
@@ -155,10 +299,34 @@
       "category_name": "Dzikir Setelah Shalat",
       "prayers": [
         {
-          "arabic": "أَسْتَغْفِرُ اللهَ (3x) اللَّهُمَّ أَنْتَ السَّلاَمُ، وَمِنْكَ السَّلاَمُ، تَبَارَكْتَ يَا ذَا الْجَلاَلِ وَالْإِكْرَامِ",
-          "transliteration": "Astaghfirullah (3x). Allahumma antas salaam wa minkas salaam tabaarakta yaa dzal jalaali wal ikraam.",
-          "translation": "Aku memohon ampun kepada Allah (3x). Ya Allah, Engkau adalah Zat yang memberi keselamatan, dan dari-Mu keselamatan, Maha Suci Engkau, wahai Zat yang memiliki keagungan dan kemuliaan.",
+          "arabic": "أَسْتَغْفِرُ اللَّهَ (ثَلَاثًا) اللَّهُمَّ أَنْتَ السَّلَامُ وَمِنْكَ السَّلَامُ تَبَارَكْتَ يَا ذَا الْجَلَالِ وَالْإِكْرَامِ",
+          "transliteration": "Astaghfirullaah (3x). Allaahumma antas salaam wa minkas salaam, tabaarakta yaa dzal jalaali wal ikraam",
+          "translation": "Aku memohon ampun kepada Allah (3x). Ya Allah, Engkaulah As-Salaam (Yang Maha Selamat) dan dari-Mu keselamatan, Maha Suci Engkau wahai Dzat Yang Memiliki Keagungan dan Kemuliaan.",
           "source": "HR. Muslim no. 591"
+        },
+        {
+          "arabic": "لَا إِلٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ، اللَّهُمَّ لَا مَانِعَ لِمَا أَعْطَيْتَ وَلَا مُعْطِيَ لِمَا مَنَعْتَ وَلَا يَنْفَعُ ذَا الْجَدِّ مِنْكَ الْجَدُّ",
+          "transliteration": "Laa ilaaha illallaahu wahdahu laa syariika lah, lahul mulku wa lahul hamdu wa huwa 'alaa kulli syai-in qadiir. Allaahumma laa maani'a limaa a'thaita wa laa mu'thiya limaa mana'ta wa laa yanfa'u dzal jaddi minkal jadd",
+          "translation": "Tiada Tuhan yang berhak disembah selain Allah semata, tiada sekutu bagi-Nya. Bagi-Nya kerajaan dan bagi-Nya pujian. Dia Maha Kuasa atas segala sesuatu. Ya Allah, tidak ada yang mencegah apa yang Engkau berikan dan tidak ada yang memberi apa yang Engkau cegah. Tidak berguna kekayaan dan kemuliaan pemiliknya dari-Mu.",
+          "source": "HR. Bukhari no. 844, Muslim no. 593"
+        },
+        {
+          "arabic": "لَا إِلٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ، لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ، لَا إِلٰهَ إِلَّا اللَّهُ وَلَا نَعْبُدُ إِلَّا إِيَّاهُ، لَهُ النِّعْمَةُ وَلَهُ الْفَضْلُ وَلَهُ الثَّنَاءُ الْحَسَنُ، لَا إِلٰهَ إِلَّا اللَّهُ مُخْلِصِينَ لَهُ الدِّينَ وَلَوْ كَرِهَ الْكَافِرُونَ",
+          "transliteration": "Laa ilaaha illallaahu wahdahu laa syariika lah, lahul mulku wa lahul hamdu wa huwa 'alaa kulli syai-in qadiir. Laa hawla wa laa quwwata illaa billaah. Laa ilaaha illallaahu wa laa na'budu illaa iyyaah. Lahun ni'matu wa lahul fadhlu wa lahuts tsanaa-ul hasan. Laa ilaaha illallaahu mukhlishiina lahud diin wa law karihal kaafiruun",
+          "translation": "Tiada Tuhan yang berhak disembah selain Allah, tidak ada sekutu bagi-Nya. Milik-Nya kerajaan dan pujian. Dia Maha Kuasa atas segala sesuatu. Tidak ada daya dan upaya kecuali dengan pertolongan Allah. Tiada Tuhan selain Allah dan kami tidak menyembah selain Dia. Milik-Nya nikmat, karunia dan pujian yang baik. Tiada Tuhan selain Allah dengan mengikhlaskan ibadah hanya kepada-Nya meskipun orang kafir membencinya.",
+          "source": "HR. Muslim no. 594"
+        },
+        {
+          "arabic": "سُبْحَانَ اللَّهِ (ثَلَاثًا وَثَلَاثِينَ) وَالْحَمْدُ لِلَّهِ (ثَلَاثًا وَثَلَاثِينَ) وَاللَّهُ أَكْبَرُ (ثَلَاثًا وَثَلَاثِينَ) لَا إِلٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ",
+          "transliteration": "Subhaanallaah (33x), Alhamdulillaah (33x), Allaahu Akbar (33x). Laa ilaaha illallaahu wahdahu laa syariika lah, lahul mulku wa lahul hamdu wa huwa 'alaa kulli syai-in qadiir",
+          "translation": "Maha Suci Allah (33x), Segala puji bagi Allah (33x), Allah Maha Besar (33x), kemudian untuk menggenapkan yang ke-100: Tiada Tuhan yang berhak disembah selain Allah semata, tiada sekutu bagi-Nya. Bagi-Nya kerajaan dan pujian. Dia Maha Kuasa atas segala sesuatu.",
+          "source": "HR. Muslim no. 597"
+        },
+        {
+          "arabic": "اللَّهُمَّ أَعِنِّي عَلَى ذِكْرِكَ وَشُكْرِكَ وَحُسْنِ عِبَادَتِكَ",
+          "transliteration": "Allaahumma a'innii 'alaa dzikrika wa syukrika wa husni 'ibaadatik",
+          "translation": "Ya Allah, bantulah aku untuk berdzikir kepada-Mu, bersyukur kepada-Mu, dan beribadah dengan baik kepada-Mu.",
+          "source": "HR. Abu Daud no. 1522, An-Nasai no. 1303"
         }
       ]
     },
@@ -167,9 +335,9 @@
       "category_name": "Doa Shalat Istikharah",
       "prayers": [
         {
-          "arabic": "اللَّهُمَّ إِنِّي أَسْتَخِيرُكَ بِعِلْمِكَ، وَأَسْتَقْدِرُكَ بِقُدْرَتِكَ، وَأَسْأَلُكَ مِنْ فَضْلِكَ الْعَظِيمِ، فَإِنَّكَ تَقْدِرُ وَلاَ أَقْدِرُ، وَتَعْلَمُ وَلاَ أَعْلَمُ، وَأَنْتَ عَلاَّمُ الْغُيُوبِ",
-          "transliteration": "Allahumma inni astakhiruka bi ‘ilmika, wa astaqdiruka bi qudratika, wa as-aluka min fadhlikal ‘azhim, fa innaka taqdiru wa laa aqdiru, wa ta’lamu wa laa a’lamu, wa anta ‘allamul ghuyub",
-          "translation": "Ya Allah, sesungguhnya aku memohon pilihan kepada-Mu dengan ilmu-Mu, dan aku memohon kekuatan kepada-Mu dengan kekuatan-Mu, dan aku memohon kepada-Mu dari karunia-Mu yang agung. Karena sesungguhnya Engkau Maha Kuasa dan aku tidak kuasa, Engkau Maha Mengetahui dan aku tidak mengetahui, dan Engkau Maha Mengetahui segala yang gaib.",
+          "arabic": "اللَّهُمَّ إِنِّي أَسْتَخِيرُكَ بِعِلْمِكَ وَأَسْتَقْدِرُكَ بِقُدْرَتِكَ وَأَسْأَلُكَ مِنْ فَضْلِكَ الْعَظِيمِ فَإِنَّكَ تَقْدِرُ وَلَا أَقْدِرُ وَتَعْلَمُ وَلَا أَعْلَمُ وَأَنْتَ عَلَّامُ الْغُيُوبِ، اللَّهُمَّ إِنْ كُنْتَ تَعْلَمُ أَنَّ هَذَا الْأَمْرَ خَيْرٌ لِي فِي دِينِي وَمَعَاشِي وَعَاقِبَةِ أَمْرِي فَاقْدُرْهُ لِي وَيَسِّرْهُ لِي ثُمَّ بَارِكْ لِي فِيهِ، وَإِنْ كُنْتَ تَعْلَمُ أَنَّ هَذَا الْأَمْرَ شَرٌّ لِي فِي دِينِي وَمَعَاشِي وَعَاقِبَةِ أَمْرِي فَاصْرِفْهُ عَنِّي وَاصْرِفْنِي عَنْهُ وَاقْدُرْ لِيَ الْخَيْرَ حَيْثُ كَانَ ثُمَّ أَرْضِنِي بِهِ",
+          "transliteration": "Allaahumma inni astakhiiruka bi'ilmika wa astaqdiruka biqudratika wa as-aluka min fadlikal 'azhiim. Fa innaka taqdiru wa laa aqdiru wa ta'lamu wa laa a'lamu wa anta 'allaamul ghuyuub. Allaahumma in kunta ta'lamu anna haadzal amra khairun lii fii diinii wa ma'aasyii wa 'aaqibati amrii faqdir-hu lii wa yassirhu lii tsumma baarik lii fiih. Wa in kunta ta'lamu anna haadzal amra syarrun lii fii diinii wa ma'aasyii wa 'aaqibati amrii fashrifhu 'annii washrifnii 'anhu waqdir liyal khaira haitsu kaana tsumma ardhinii bih",
+          "translation": "Ya Allah, sesungguhnya aku memohon pilihan yang terbaik kepada-Mu dengan ilmu-Mu, aku memohon kekuatan dengan kekuatan-Mu, dan aku memohon dari karunia-Mu yang agung. Sesungguhnya Engkau Maha Kuasa sedangkan aku tidak kuasa, Engkau Maha Mengetahui sedangkan aku tidak mengetahui, dan Engkau Maha Mengetahui perkara yang gaib. Ya Allah, jika Engkau mengetahui bahwa urusan ini baik bagiku dalam agamaku, kehidupanku, dan akibat urusanku, maka takdirkanlah untukku, mudahkanlah, kemudian berkahilah. Dan jika Engkau mengetahui bahwa urusan ini buruk bagiku dalam agamaku, kehidupanku, dan akibat urusanku, maka palingkanlah dariku dan palingkanlah aku darinya, serta takdirkanlah kebaikan untukku di mana pun adanya, kemudian ridakanlah aku dengannya.",
           "source": "HR. Bukhari no. 1162"
         }
       ]
@@ -179,10 +347,22 @@
       "category_name": "Doa Ketika Sakit",
       "prayers": [
         {
-          "arabic": "اللَّهُمَّ رَبَّ النَّاسِ، أَذْهِبِ الْبَأْسَ، اشْفِ أَنْتَ الشَّافِي، لاَ شِفَاءَ إِلاَّ شِفَاؤُكَ، شِفَاءً لاَ يُغَادِرُ سَقَمًا",
-          "transliteration": "Allahumma rabban naas, adzhibil ba’s, isyfi antasy syaafi, laa syifaa-a illa syifaauk, syifaa-an laa yughaadiru saqoman",
-          "translation": "Ya Allah, Tuhan manusia, hilangkanlah penyakit ini, sembuhkanlah, Engkaulah yang Maha Menyembuhkan, tidak ada kesembuhan kecuali kesembuhan dari-Mu, kesembuhan yang tidak meninggalkan penyakit.",
-          "source": "HR. Bukhari no. 5743 dan Muslim no. 2191"
+          "arabic": "اللَّهُمَّ رَبَّ النَّاسِ أَذْهِبِ الْبَأْسَ اشْفِهِ وَأَنْتَ الشَّافِي لَا شِفَاءَ إِلَّا شِفَاؤُكَ شِفَاءً لَا يُغَادِرُ سَقَمًا",
+          "transliteration": "Allaahumma Rabban naas, adz-hibil ba's, isyfih wa antas syaafii, laa syifaa-a illaa syifaa-uk, syifaa-an laa yughaadiru saqamaa",
+          "translation": "Ya Allah, Tuhan manusia, hilangkanlah penyakit, sembuhkanlah karena Engkaulah Yang Maha Menyembuhkan, tidak ada kesembuhan kecuali dari kesembuhan-Mu, kesembuhan yang tidak menyisakan penyakit.",
+          "source": "HR. Bukhari no. 5675, Muslim no. 2191"
+        },
+        {
+          "arabic": "أَسْأَلُ اللَّهَ الْعَظِيمَ رَبَّ الْعَرْشِ الْعَظِيمِ أَنْ يَشْفِيَكَ",
+          "transliteration": "As-alullaahul 'azhiima Rabbal 'arsyil 'azhiimi an yasyfiyak",
+          "translation": "Aku memohon kepada Allah Yang Maha Agung, Rabb Arsy yang agung, agar menyembuhkanmu.",
+          "source": "HR. Abu Daud no. 3106, Tirmidzi no. 2083"
+        },
+        {
+          "arabic": "بِسْمِ اللَّهِ أَرْقِيكَ مِنْ كُلِّ شَيْءٍ يُؤْذِيكَ مِنْ شَرِّ كُلِّ نَفْسٍ أَوْ عَيْنِ حَاسِدٍ اللَّهُ يَشْفِيكَ بِسْمِ اللَّهِ أَرْقِيكَ",
+          "transliteration": "Bismillaahi arqiika min kulli syai-in yu'dziika min syarri kulli nafsin aw 'aini haasidin, Allaahu yasyfik, bismillaahi arqiik",
+          "translation": "Dengan nama Allah aku meruqyahmu dari segala sesuatu yang menyakitimu, dari kejahatan setiap jiwa atau mata yang hasad, semoga Allah menyembuhkanmu. Dengan nama Allah aku meruqyahmu.",
+          "source": "HR. Muslim no. 2186"
         }
       ]
     },
@@ -191,10 +371,16 @@
       "category_name": "Doa Ketika Musibah",
       "prayers": [
         {
-          "arabic": "إِنَّا لِلَّهِ وَإِنَّا إِلَيْهِ رَاجِعُونَ، اللَّهُمَّ أْجُرْنِي فِي مُصِيبَتِي، وَأَخْلِفْ لِي خَيْرًا مِنْهَا",
-          "transliteration": "Inna lillahi wa inna ilaihi raji’un. Allahumma’jurni fi mushibati wa akhlif li khairan minha",
-          "translation": "Sesungguhnya kami milik Allah dan kepada-Nya kami akan kembali. Ya Allah, berilah aku pahala dalam musibahku ini dan gantilah untukku dengan yang lebih baik darinya.",
+          "arabic": "إِنَّا لِلَّهِ وَإِنَّا إِلَيْهِ رَاجِعُونَ، اللَّهُمَّ أْجُرْنِي فِي مُصِيبَتِي وَأَخْلِفْ لِي خَيْرًا مِنْهَا",
+          "transliteration": "Innaa lillaahi wa innaa ilaihi raaji'uun. Allaahumma' jurnii fii mushiibatii wa akhlif lii khairan minhaa",
+          "translation": "Sesungguhnya kami milik Allah dan sesungguhnya kepada-Nya kami kembali. Ya Allah, berilah aku pahala dalam musibahku ini dan gantikanlah untukku yang lebih baik darinya.",
           "source": "HR. Muslim no. 918"
+        },
+        {
+          "arabic": "إِنَّا لِلَّهِ وَإِنَّا إِلَيْهِ رَاجِعُونَ",
+          "transliteration": "Innaa lillaahi wa innaa ilaihi raaji'uun",
+          "translation": "Sesungguhnya kami milik Allah dan sesungguhnya kepada-Nya kami kembali.",
+          "source": "QS. Al-Baqarah 2:156"
         }
       ]
     },
@@ -203,10 +389,514 @@
       "category_name": "Doa Kaffaratul Majelis",
       "prayers": [
         {
-          "arabic": "سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، أَشْهَدُ أَنْ لاَ إِلَهَ إِلاَّ أَنْتَ، أَسْتَغْفِرُكَ وَأَتُوبُ إِلَيْكَ",
-          "transliteration": "Subhanakallahumma wa bihamdika, asyhadu an laa ilaha illa anta, astaghfiruka wa atuubu ilaik",
-          "translation": "Maha Suci Engkau, ya Allah, dan dengan memuji-Mu, aku bersaksi bahwa tiada Tuhan selain Engkau, aku memohon ampunan-Mu dan bertaubat kepada-Mu.",
-          "source": "HR. Tirmidzi no. 3433"
+          "arabic": "سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ أَشْهَدُ أَنْ لَا إِلٰهَ إِلَّا أَنْتَ أَسْتَغْفِرُكَ وَأَتُوبُ إِلَيْكَ",
+          "transliteration": "Subhaanaka Allaahumma wa bihamdika, asyhadu an laa ilaaha illaa anta, astaghfiruka wa atuubu ilaik",
+          "translation": "Maha Suci Engkau ya Allah, dengan memuji-Mu, aku bersaksi bahwa tiada Tuhan selain Engkau, aku memohon ampun dan bertaubat kepada-Mu.",
+          "source": "HR. Abu Daud no. 4859, Tirmidzi no. 3433"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "category_name": "Doa Bepergian (Safar)",
+      "prayers": [
+        {
+          "arabic": "اللَّهُ أَكْبَرُ، اللَّهُ أَكْبَرُ، اللَّهُ أَكْبَرُ، سُبْحَانَ الَّذِي سَخَّرَ لَنَا هَذَا وَمَا كُنَّا لَهُ مُقْرِنِينَ وَإِنَّا إِلَى رَبِّنَا لَمُنْقَلِبُونَ، اللَّهُمَّ إِنَّا نَسْأَلُكَ فِي سَفَرِنَا هَذَا الْبِرَّ وَالتَّقْوَى وَمِنَ الْعَمَلِ مَا تَرْضَى، اللَّهُمَّ هَوِّنْ عَلَيْنَا سَفَرَنَا هَذَا وَاطْوِ عَنَّا بُعْدَهُ، اللَّهُمَّ أَنْتَ الصَّاحِبُ فِي السَّفَرِ وَالْخَلِيفَةُ فِي الْأَهْلِ، اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ وَعْثَاءِ السَّفَرِ وَكَآبَةِ الْمَنْظَرِ وَسُوءِ الْمُنْقَلَبِ فِي الْمَالِ وَالْأَهْلِ",
+          "transliteration": "Allaahu akbar, Allaahu akbar, Allaahu akbar. Subhaanal ladzii sakhkhara lanaa haadzaa wa maa kunnaa lahu muqriniin. Wa innaa ilaa Rabbinaa lamunqalibuun. Allaahumma innaa nas-aluka fii safarinaa haadzal birra wat taqwaa wa minal 'amali maa tardhaa. Allaahumma hawwin 'alainaa safaranaa haadzaa wathwi 'annaa bu'dah. Allaahumma antas shaahibu fis safari wal khaliifatu fil ahl. Allaahumma innii a'uudzu bika min wa'tsaa-is safari wa ka-aabatil mandzari wa suu-il munqalabi fil maali wal ahl",
+          "translation": "Allah Maha Besar (3x). Maha Suci Allah yang telah menundukkan ini untuk kami padahal kami tidak mampu menguasainya. Dan sesungguhnya kami akan kembali kepada Rabb kami. Ya Allah, kami memohon kebaikan dan takwa dalam perjalanan ini serta amal yang Engkau ridhai. Ya Allah, mudahkanlah perjalanan kami ini dan dekatkanlah jaraknya. Ya Allah, Engkaulah teman dalam perjalanan dan pengganti dalam keluarga. Ya Allah, aku berlindung kepada-Mu dari kesulitan perjalanan, pemandangan yang menyedihkan, dan keburukan dalam harta dan keluarga.",
+          "source": "HR. Muslim no. 1342"
+        },
+        {
+          "arabic": "آيِبُونَ تَائِبُونَ عَابِدُونَ لِرَبِّنَا حَامِدُونَ",
+          "transliteration": "Aa-ibuuna taa-ibuuna 'aabiduuna li Rabbinaa haamiduun",
+          "translation": "Kami kembali dengan bertaubat, beribadah, dan memuji Tuhan kami.",
+          "source": "HR. Muslim no. 1342"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "category_name": "Doa Ketika Hujan",
+      "prayers": [
+        {
+          "arabic": "اللَّهُمَّ صَيِّبًا نَافِعًا",
+          "transliteration": "Allaahumma shayyiban naafi'aa",
+          "translation": "Ya Allah, jadikanlah hujan yang bermanfaat.",
+          "source": "HR. Bukhari no. 1032"
+        },
+        {
+          "arabic": "مُطِرْنَا بِفَضْلِ اللَّهِ وَرَحْمَتِهِ",
+          "transliteration": "Muthirnaa bifadlillaahi wa rahmatih",
+          "translation": "Kita telah diberi hujan berkat karunia dan rahmat Allah.",
+          "source": "HR. Bukhari no. 846, Muslim no. 71"
+        },
+        {
+          "arabic": "اللَّهُمَّ حَوَالَيْنَا وَلَا عَلَيْنَا، اللَّهُمَّ عَلَى الْآكَامِ وَالظِّرَابِ وَبُطُونِ الْأَوْدِيَةِ وَمَنَابِتِ الشَّجَرِ",
+          "transliteration": "Allaahumma hawaalainaa wa laa 'alainaa. Allaahumma 'alal aakaami wazhzhiraabi wa buthuunil awdiyati wa manaabitis syajar",
+          "translation": "Ya Allah, turunkanlah hujan di sekitar kami dan jangan atas kami. Ya Allah, turunkanlah di bukit-bukit, dataran tinggi, lembah, dan tempat tumbuhnya pepohonan.",
+          "source": "HR. Bukhari no. 1014, Muslim no. 897"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "category_name": "Doa Ketika Bersin",
+      "prayers": [
+        {
+          "arabic": "الْحَمْدُ لِلَّهِ",
+          "transliteration": "Alhamdulillaah",
+          "translation": "Segala puji bagi Allah. (Diucapkan orang yang bersin)",
+          "source": "HR. Bukhari no. 6224"
+        },
+        {
+          "arabic": "يَرْحَمُكَ اللَّهُ",
+          "transliteration": "Yarhamukallah",
+          "translation": "Semoga Allah merahmatimu. (Diucapkan orang yang mendengar bersin)",
+          "source": "HR. Bukhari no. 6224"
+        },
+        {
+          "arabic": "يَهْدِيكُمُ اللَّهُ وَيُصْلِحُ بَالَكُمْ",
+          "transliteration": "Yahdiikumullahu wa yushlihu baalakum",
+          "translation": "Semoga Allah memberimu petunjuk dan memperbaiki keadaanmu. (Jawaban orang yang bersin)",
+          "source": "HR. Bukhari no. 6224"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "category_name": "Doa Ketika Marah",
+      "prayers": [
+        {
+          "arabic": "أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ",
+          "transliteration": "A'uudzu billaahi minasy syaithaanir rajiim",
+          "translation": "Aku berlindung kepada Allah dari setan yang terkutuk.",
+          "source": "HR. Bukhari no. 6115, Muslim no. 2610"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "category_name": "Doa Ketika Bercermin",
+      "prayers": [
+        {
+          "arabic": "اللَّهُمَّ أَنْتَ حَسَّنْتَ خَلْقِي فَحَسِّنْ خُلُقِي",
+          "transliteration": "Allaahumma anta hassanta khalqii fahassin khuluqii",
+          "translation": "Ya Allah, Engkau telah memperindah ciptaanku (bentuk tubuhku), maka perindah pula akhlakku.",
+          "source": "HR. Ahmad no. 3823, Ibnu Hibban no. 959"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "category_name": "Doa Menjenguk Orang Sakit",
+      "prayers": [
+        {
+          "arabic": "لَا بَأْسَ طَهُورٌ إِنْ شَاءَ اللَّهُ",
+          "transliteration": "Laa ba'sa thahuurun insyaa Allah",
+          "translation": "Tidak apa-apa, ini penyuci (dari dosa), insya Allah.",
+          "source": "HR. Bukhari no. 3616"
+        },
+        {
+          "arabic": "أَسْأَلُ اللَّهَ الْعَظِيمَ رَبَّ الْعَرْشِ الْعَظِيمِ أَنْ يَشْفِيَكَ",
+          "transliteration": "As-alullaahul 'azhiima Rabbal 'arsyil 'azhiimi an yasyfiyak",
+          "translation": "Aku memohon kepada Allah Yang Maha Agung, Rabb Arsy yang agung, agar menyembuhkanmu. (Dibaca 7x)",
+          "source": "HR. Abu Daud no. 3106, Tirmidzi no. 2083"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "category_name": "Doa Ketika Takut & Was-was",
+      "prayers": [
+        {
+          "arabic": "لَا إِلٰهَ إِلَّا اللَّهُ",
+          "transliteration": "Laa ilaaha illallaah",
+          "translation": "Tiada Tuhan yang berhak disembah selain Allah.",
+          "source": "HR. Muslim no. 135"
+        },
+        {
+          "arabic": "أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ مِنْ غَضَبِهِ وَعِقَابِهِ وَشَرِّ عِبَادِهِ وَمِنْ هَمَزَاتِ الشَّيَاطِينِ وَأَنْ يَحْضُرُونِ",
+          "transliteration": "A'uudzu bikalimaatillaahit taammaati min ghadhabihi wa 'iqaabihi wa syarri 'ibaadihi wa min hamazaatisy syayaathiini wa an yahdhuruun",
+          "translation": "Aku berlindung dengan kalimat-kalimat Allah yang sempurna dari murka-Nya, hukuman-Nya, kejahatan hamba-hamba-Nya, dan dari bisikan setan serta kehadirannya.",
+          "source": "HR. Abu Daud no. 3893"
+        },
+        {
+          "arabic": "أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ",
+          "transliteration": "A'uudzu billaahi minasy syaithaanir rajiim",
+          "translation": "Aku berlindung kepada Allah dari setan yang terkutuk.",
+          "source": "HR. Bukhari no. 3276, Muslim no. 134"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "category_name": "Doa Ketika Berhutang & Kesulitan",
+      "prayers": [
+        {
+          "arabic": "اللَّهُمَّ اكْفِنِي بِحَلَالِكَ عَنْ حَرَامِكَ وَأَغْنِنِي بِفَضْلِكَ عَمَّنْ سِوَاكَ",
+          "transliteration": "Allaahummak-finii bihalaalika 'an haraamik, wa aghninii bifadlika 'amman siwaak",
+          "translation": "Ya Allah, cukupkanlah aku dengan yang halal dari-Mu, dan kayakanlah aku dengan karunia-Mu dari selain-Mu.",
+          "source": "HR. Tirmidzi no. 3563"
+        },
+        {
+          "arabic": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ وَأَعُوذُ بِكَ مِنَ الْعَجْزِ وَالْكَسَلِ وَأَعُوذُ بِكَ مِنَ الْجُبْنِ وَالْبُخْلِ وَأَعُوذُ بِكَ مِنْ غَلَبَةِ الدَّيْنِ وَقَهْرِ الرِّجَالِ",
+          "transliteration": "Allaahumma inni a'uudzu bika minal hammi wal hazan, wa a'uudzu bika minal 'ajzi wal kasal, wa a'uudzu bika minal jubni wal bukhl, wa a'uudzu bika min ghalabatid daini wa qahrir rijaal",
+          "translation": "Ya Allah, aku berlindung kepada-Mu dari kegelisahan dan kesedihan, aku berlindung kepada-Mu dari kelemahan dan kemalasan, aku berlindung kepada-Mu dari sifat pengecut dan kikir, dan aku berlindung kepada-Mu dari lilitan hutang dan kesewenangan manusia.",
+          "source": "HR. Bukhari no. 6369"
+        },
+        {
+          "arabic": "لَا إِلٰهَ إِلَّا اللَّهُ الْعَظِيمُ الْحَلِيمُ، لَا إِلٰهَ إِلَّا اللَّهُ رَبُّ الْعَرْشِ الْعَظِيمِ، لَا إِلٰهَ إِلَّا اللَّهُ رَبُّ السَّمَاوَاتِ وَرَبُّ الْأَرْضِ وَرَبُّ الْعَرْشِ الْكَرِيمِ",
+          "transliteration": "Laa ilaaha illallaahul 'azhiimul haliim. Laa ilaaha illallaahu Rabbul 'arsyil 'azhiim. Laa ilaaha illallaahu Rabbus samaawaati wa Rabbul ardhi wa Rabbul 'arsyil kariim",
+          "translation": "Tiada Tuhan selain Allah Yang Maha Agung lagi Maha Penyantun. Tiada Tuhan selain Allah, Rabb Arsy yang agung. Tiada Tuhan selain Allah, Rabb langit dan bumi serta Rabb Arsy yang mulia.",
+          "source": "HR. Bukhari no. 6346, Muslim no. 2730"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "category_name": "Doa Kebaikan Dunia & Akhirat",
+      "prayers": [
+        {
+          "arabic": "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ",
+          "transliteration": "Rabbanaa aatinaa fid dunyaa hasanatan wa fil aakhirati hasanatan wa qinaa 'adzaaban naar",
+          "translation": "Ya Rabb kami, berilah kami kebaikan di dunia dan kebaikan di akhirat, dan lindungilah kami dari azab neraka.",
+          "source": "QS. Al-Baqarah 2:201, HR. Bukhari no. 4522, Muslim no. 2690"
+        },
+        {
+          "arabic": "اللَّهُمَّ إِنِّي أَسْأَلُكَ الْهُدَى وَالتُّقَى وَالْعَفَافَ وَالْغِنَى",
+          "transliteration": "Allaahumma inni as-alukal hudaa wat tuqaa wal 'afaafa wal ghinaa",
+          "translation": "Ya Allah, aku memohon kepada-Mu petunjuk, ketakwaan, kesucian diri, dan kecukupan.",
+          "source": "HR. Muslim no. 2721"
+        },
+        {
+          "arabic": "اللَّهُمَّ أَصْلِحْ لِي دِينِي الَّذِي هُوَ عِصْمَةُ أَمْرِي وَأَصْلِحْ لِي دُنْيَايَ الَّتِي فِيهَا مَعَاشِي وَأَصْلِحْ لِي آخِرَتِي الَّتِي فِيهَا مَعَادِي وَاجْعَلِ الْحَيَاةَ زِيَادَةً لِي فِي كُلِّ خَيْرٍ وَاجْعَلِ الْمَوْتَ رَاحَةً لِي مِنْ كُلِّ شَرٍّ",
+          "transliteration": "Allaahumma ashlih lii diiniyal ladzii huwa 'ishmatu amrii, wa ashlih lii dunyaayal latii fiihaa ma'aasyii, wa ashlih lii aakhiratiyal latii fiihaa ma'aadii. Waj'alil hayaata ziyaadatan lii fii kulli khair, waj'alil mauta raahatan lii min kulli syarr",
+          "translation": "Ya Allah, perbaikilah agamaku yang menjadi pelindung urusanku. Perbaikilah duniaku yang menjadi tempat kehidupanku. Perbaikilah akhiratku yang menjadi tempat kembaliku. Jadikanlah kehidupan ini sebagai tambahan bagiku dalam setiap kebaikan, dan jadikanlah kematian sebagai istirahat bagiku dari setiap keburukan.",
+          "source": "HR. Muslim no. 2720"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "category_name": "Doa Pernikahan",
+      "prayers": [
+        {
+          "arabic": "بَارَكَ اللَّهُ لَكَ وَبَارَكَ عَلَيْكَ وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ",
+          "transliteration": "Baarakallaahu laka wa baaraka 'alaika wa jama'a bainakumaa fii khair",
+          "translation": "Semoga Allah memberkahimu, melimpahkan berkah atasmu, dan menyatukan kalian berdua dalam kebaikan.",
+          "source": "HR. Abu Daud no. 2130, Tirmidzi no. 1091"
+        },
+        {
+          "arabic": "اللَّهُمَّ بَارِكْ لِي فِي أَهْلِي وَبَارِكْ لَهُمْ فِيَّ، اللَّهُمَّ اجْمَعْ بَيْنَنَا مَا جَمَعْتَ بِخَيْرٍ وَفَرِّقْ بَيْنَنَا إِذَا فَرَّقْتَ إِلَى خَيْرٍ",
+          "transliteration": "Allaahumma baarik lii fii ahlii wa baarik lahum fiyya. Allaahummaj ma' bainanaa maa jama'ta bikhair, wa farriq bainanaa idzaa farraqta ilaa khair",
+          "translation": "Ya Allah, berkahilah aku dalam keluargaku dan berkahilah mereka denganku. Ya Allah, satukanlah kami selama itu dalam kebaikan, dan pisahkanlah kami jika itu kepada kebaikan.",
+          "source": "HR. Abu Daud no. 2130"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "category_name": "Doa Masuk Pasar",
+      "prayers": [
+        {
+          "arabic": "لَا إِلٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ يُحْيِي وَيُمِيتُ وَهُوَ حَيٌّ لَا يَمُوتُ بِيَدِهِ الْخَيْرُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ",
+          "transliteration": "Laa ilaaha illallaahu wahdahu laa syariika lah, lahul mulku wa lahul hamdu, yuhyii wa yumiitu wa huwa hayyun laa yamuutu, biyadihil khairu wa huwa 'alaa kulli syai-in qadiir",
+          "translation": "Tiada Tuhan yang berhak disembah selain Allah semata, tiada sekutu bagi-Nya. Bagi-Nya kerajaan dan bagi-Nya pujian. Dia yang menghidupkan dan mematikan. Dia Maha Hidup yang tidak pernah mati. Di tangan-Nya segala kebaikan dan Dia Maha Kuasa atas segala sesuatu.",
+          "source": "HR. Tirmidzi no. 3428"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "category_name": "Doa Qunut",
+      "prayers": [
+        {
+          "arabic": "اللَّهُمَّ اهْدِنِي فِيمَنْ هَدَيْتَ وَعَافِنِي فِيمَنْ عَافَيْتَ وَتَوَلَّنِي فِيمَنْ تَوَلَّيْتَ وَبَارِكْ لِي فِيمَا أَعْطَيْتَ وَقِنِي شَرَّ مَا قَضَيْتَ فَإِنَّكَ تَقْضِي وَلَا يُقْضَى عَلَيْكَ وَإِنَّهُ لَا يَذِلُّ مَنْ وَالَيْتَ وَلَا يَعِزُّ مَنْ عَادَيْتَ تَبَارَكْتَ رَبَّنَا وَتَعَالَيْتَ",
+          "transliteration": "Allaahummah dinii fiiman hadait, wa 'aafinii fiiman 'aafait, wa tawallanii fiiman tawallait, wa baarik lii fiimaa a'thait, wa qinii syarra maa qadhait. Fa innaka taqdhii wa laa yuqdhaa 'alaik. Wa innahu laa yadzillu man waalait, wa laa ya'izzu man 'aadait. Tabaarakta Rabbanaa wa ta'aalait",
+          "translation": "Ya Allah, berilah aku petunjuk di antara orang-orang yang Engkau beri petunjuk. Berilah aku keselamatan di antara orang-orang yang Engkau beri keselamatan. Uruslah aku di antara orang-orang yang Engkau urus. Berkahilah aku pada apa yang Engkau berikan. Lindungilah aku dari keburukan yang Engkau takdirkan. Sesungguhnya Engkau yang menentukan dan tidak ada yang menentukan atas-Mu. Sesungguhnya tidak akan hina orang yang Engkau tolong dan tidak akan mulia orang yang Engkau musuhi. Maha Suci Engkau wahai Tuhan kami dan Maha Tinggi.",
+          "source": "HR. Abu Daud no. 1425, Tirmidzi no. 464, An-Nasai no. 1745"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "category_name": "Doa Perlindungan",
+      "prayers": [
+        {
+          "arabic": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْبَرَصِ وَالْجُنُونِ وَالْجُذَامِ وَمِنْ سَيِّئِ الْأَسْقَامِ",
+          "transliteration": "Allaahumma innii a'uudzu bika minal barashi wal junuuni wal judzaami wa min sayyi-il asqaam",
+          "translation": "Ya Allah, aku berlindung kepada-Mu dari penyakit sopak, gila, kusta, dan penyakit-penyakit yang buruk.",
+          "source": "HR. Abu Daud no. 1554, An-Nasai no. 5493"
+        },
+        {
+          "arabic": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ عِلْمٍ لَا يَنْفَعُ وَمِنْ قَلْبٍ لَا يَخْشَعُ وَمِنْ نَفْسٍ لَا تَشْبَعُ وَمِنْ دَعْوَةٍ لَا يُسْتَجَابُ لَهَا",
+          "transliteration": "Allaahumma inni a'uudzu bika min 'ilmin laa yanfa', wa min qalbin laa yakhsya', wa min nafsin laa tasyba', wa min da'watin laa yustajabu lahaa",
+          "translation": "Ya Allah, aku berlindung kepada-Mu dari ilmu yang tidak bermanfaat, hati yang tidak khusyuk, nafsu yang tidak pernah puas, dan doa yang tidak dikabulkan.",
+          "source": "HR. Muslim no. 2722"
+        },
+        {
+          "arabic": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْكَسَلِ وَالْهَرَمِ وَالْمَأْثَمِ وَالْمَغْرَمِ",
+          "transliteration": "Allaahumma inni a'uudzu bika minal kasali wal harami wal ma'tsami wal maghrami",
+          "translation": "Ya Allah, aku berlindung kepada-Mu dari kemalasan, kepikunan, perbuatan dosa, dan lilitan hutang.",
+          "source": "HR. Bukhari no. 832, Muslim no. 589"
+        },
+        {
+          "arabic": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ شَرِّ مَا عَمِلْتُ وَمِنْ شَرِّ مَا لَمْ أَعْمَلْ",
+          "transliteration": "Allaahumma inni a'uudzu bika min syarri maa 'amiltu wa min syarri maa lam a'mal",
+          "translation": "Ya Allah, aku berlindung kepada-Mu dari keburukan apa yang telah aku kerjakan dan dari keburukan apa yang belum aku kerjakan.",
+          "source": "HR. Muslim no. 2716"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "category_name": "Doa Adzan",
+      "prayers": [
+        {
+          "arabic": "اللَّهُمَّ رَبَّ هَذِهِ الدَّعْوَةِ التَّامَّةِ وَالصَّلَاةِ الْقَائِمَةِ آتِ مُحَمَّدًا الْوَسِيلَةَ وَالْفَضِيلَةَ وَابْعَثْهُ مَقَامًا مَحْمُودًا الَّذِي وَعَدْتَهُ",
+          "transliteration": "Allaahumma Rabba haadzihid da'watit taammah, wash shalaatil qaa-imah, aati Muhammadanil wasiilata wal fadhiilah, wab'ats-hu maqaamam mahmuudanil ladzii wa'adtah",
+          "translation": "Ya Allah, Rabb pemilik seruan yang sempurna ini dan shalat yang akan didirikan, berikanlah kepada Muhammad wasilah dan keutamaan, dan bangkitkanlah beliau pada kedudukan terpuji yang telah Engkau janjikan.",
+          "source": "HR. Bukhari no. 614"
+        },
+        {
+          "arabic": "وَأَنَا أَشْهَدُ أَنْ لَا إِلٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ وَأَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ، رَضِيتُ بِاللَّهِ رَبًّا وَبِمُحَمَّدٍ رَسُولًا وَبِالْإِسْلَامِ دِينًا",
+          "transliteration": "Wa anaa asyhadu an laa ilaaha illallaahu wahdahu laa syariika lahu wa anna Muhammadan 'abduhu wa rasuuluh. Radhiitu billaahi Rabbaa wa bi Muhammadin rasuulaa wa bil islaami diinaa",
+          "translation": "Dan aku bersaksi bahwa tiada Tuhan yang berhak disembah selain Allah semata, tiada sekutu bagi-Nya, dan bahwa Muhammad adalah hamba dan utusan-Nya. Aku ridha Allah sebagai Tuhan, Muhammad sebagai rasul, dan Islam sebagai agama.",
+          "source": "HR. Muslim no. 386"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "category_name": "Doa Pergi ke Masjid",
+      "prayers": [
+        {
+          "arabic": "اللَّهُمَّ اجْعَلْ فِي قَلْبِي نُورًا وَفِي لِسَانِي نُورًا وَفِي بَصَرِي نُورًا وَفِي سَمْعِي نُورًا وَعَنْ يَمِينِي نُورًا وَعَنْ يَسَارِي نُورًا وَفَوْقِي نُورًا وَتَحْتِي نُورًا وَأَمَامِي نُورًا وَخَلْفِي نُورًا وَاجْعَلْ لِي نُورًا",
+          "transliteration": "Allaahummaj'al fii qalbii nuuraa, wa fii lisaanii nuuraa, wa fii bashorii nuuraa, wa fii sam'ii nuuraa, wa 'an yamiinii nuuraa, wa 'an yasaarii nuuraa, wa fauqii nuuraa, wa tahtii nuuraa, wa amaamii nuuraa, wa khalfii nuuraa, waj'al lii nuuraa",
+          "translation": "Ya Allah, jadikanlah cahaya di hatiku, di lisanku, di penglihatanku, di pendengaranku, dari kananku, dari kiriku, dari atasku, dari bawahku, dari depanku, dari belakangku, dan jadikanlah untukku cahaya.",
+          "source": "HR. Bukhari no. 6316, Muslim no. 763"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "category_name": "Doa Melihat Bulan Baru",
+      "prayers": [
+        {
+          "arabic": "اللَّهُمَّ أَهِلَّهُ عَلَيْنَا بِالْأَمْنِ وَالْإِيمَانِ وَالسَّلَامَةِ وَالْإِسْلَامِ رَبِّي وَرَبُّكَ اللَّهُ",
+          "transliteration": "Allaahumma ahillahu 'alainaa bil amni wal iimaani was salaamati wal islaam. Rabbii wa Rabbukallaah",
+          "translation": "Ya Allah, tampakkanlah bulan sabit itu kepada kami dengan keamanan, keimanan, keselamatan, dan Islam. Tuhanku dan Tuhanmu adalah Allah.",
+          "source": "HR. Tirmidzi no. 3451, Ad-Darimi no. 1687"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "category_name": "Doa Ketika Mendengar Petir",
+      "prayers": [
+        {
+          "arabic": "سُبْحَانَ الَّذِي يُسَبِّحُ الرَّعْدُ بِحَمْدِهِ وَالْمَلَائِكَةُ مِنْ خِيفَتِهِ",
+          "transliteration": "Subhaanal ladzii yusabbihur ra'du bihamdih, wal malaa-ikatu min khiifatih",
+          "translation": "Maha Suci Allah yang guruh bertasbih memuji-Nya, demikian pula para malaikat karena takut kepada-Nya.",
+          "source": "Muwaththa Malik, Al-Adabul Mufrad no. 723"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "category_name": "Doa Ketika Angin Bertiup",
+      "prayers": [
+        {
+          "arabic": "اللَّهُمَّ إِنِّي أَسْأَلُكَ خَيْرَهَا وَخَيْرَ مَا فِيهَا وَخَيْرَ مَا أُرْسِلَتْ بِهِ، وَأَعُوذُ بِكَ مِنْ شَرِّهَا وَشَرِّ مَا فِيهَا وَشَرِّ مَا أُرْسِلَتْ بِهِ",
+          "transliteration": "Allaahumma inni as-aluka khairahaa wa khaira maa fiihaa wa khaira maa ursilat bih. Wa a'uudzu bika min syarrihaa wa syarri maa fiihaa wa syarri maa ursilat bih",
+          "translation": "Ya Allah, aku memohon kebaikan angin ini, kebaikan yang terkandung di dalamnya, dan kebaikan yang dibawanya. Dan aku berlindung kepada-Mu dari keburukannya, keburukan yang terkandung di dalamnya, dan keburukan yang dibawanya.",
+          "source": "HR. Muslim no. 899"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "category_name": "Doa Ketika Mimpi Buruk",
+      "prayers": [
+        {
+          "arabic": "أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ",
+          "transliteration": "A'uudzu billaahi minasy syaithaanir rajiim",
+          "translation": "Aku berlindung kepada Allah dari setan yang terkutuk. (Meludah ke kiri 3x dan membalikkan badan)",
+          "source": "HR. Muslim no. 2262"
+        },
+        {
+          "arabic": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ عَمَلِ الشَّيْطَانِ",
+          "transliteration": "Allaahumma inni a'uudzu bika min 'amalisy syaithaan",
+          "translation": "Ya Allah, aku berlindung kepada-Mu dari perbuatan setan.",
+          "source": "HR. Ibnu Majah no. 3909"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "category_name": "Doa Ketika Kagum (Masya Allah)",
+      "prayers": [
+        {
+          "arabic": "مَا شَاءَ اللَّهُ لَا قُوَّةَ إِلَّا بِاللَّهِ",
+          "transliteration": "Maa syaa-allaah laa quwwata illaa billaah",
+          "translation": "Ini adalah apa yang dikehendaki Allah, tiada kekuatan kecuali dengan pertolongan Allah.",
+          "source": "QS. Al-Kahfi 18:39"
+        },
+        {
+          "arabic": "سُبْحَانَ اللَّهِ",
+          "transliteration": "Subhaanallaah",
+          "translation": "Maha Suci Allah.",
+          "source": "HR. Bukhari no. 3068, Muslim no. 2628"
+        },
+        {
+          "arabic": "تَبَارَكَ اللَّهُ أَحْسَنُ الْخَالِقِينَ",
+          "transliteration": "Tabaarakallaahu ahsanul khaaliqiin",
+          "translation": "Maha Suci Allah, sebaik-baik pencipta.",
+          "source": "QS. Al-Mu'minun 23:14"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "category_name": "Doa untuk Orang yang Berbuat Baik",
+      "prayers": [
+        {
+          "arabic": "جَزَاكَ اللَّهُ خَيْرًا",
+          "transliteration": "Jazaakallaahu khairan",
+          "translation": "Semoga Allah membalasmu dengan kebaikan.",
+          "source": "HR. Tirmidzi no. 2035"
+        },
+        {
+          "arabic": "بَارَكَ اللَّهُ فِيكَ",
+          "transliteration": "Baarakallaahu fiik",
+          "translation": "Semoga Allah memberkahimu.",
+          "source": "HR. An-Nasai dalam Amalul Yaum wal Lailah no. 179"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "category_name": "Doa Memakai Pakaian Baru",
+      "prayers": [
+        {
+          "arabic": "اللَّهُمَّ لَكَ الْحَمْدُ أَنْتَ كَسَوْتَنِيهِ أَسْأَلُكَ مِنْ خَيْرِهِ وَخَيْرِ مَا صُنِعَ لَهُ وَأَعُوذُ بِكَ مِنْ شَرِّهِ وَشَرِّ مَا صُنِعَ لَهُ",
+          "transliteration": "Allaahumma lakal hamdu, anta kasautaniih. As-aluka min khairihi wa khairi maa shuni'a lah. Wa a'uudzu bika min syarrihi wa syarri maa shuni'a lah",
+          "translation": "Ya Allah, bagi-Mu segala puji, Engkau yang telah memakaikannya kepadaku. Aku memohon kebaikannya dan kebaikan yang dibuat untuknya. Dan aku berlindung kepada-Mu dari keburukannya dan keburukan yang dibuat untuknya.",
+          "source": "HR. Abu Daud no. 4020, Tirmidzi no. 1767"
+        },
+        {
+          "arabic": "الْبَسْ جَدِيدًا وَعِشْ حَمِيدًا وَمُتْ شَهِيدًا",
+          "transliteration": "Ilbas jadiidan wa 'isy hamiidan wa mut syahiidaa",
+          "translation": "Pakailah yang baru, hiduplah dengan terpuji, dan matilah dalam keadaan syahid. (Doa untuk orang yang memakai pakaian baru)",
+          "source": "HR. Ibnu Majah no. 3558"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "category_name": "Doa Ketika Melihat Orang Tertimpa Musibah",
+      "prayers": [
+        {
+          "arabic": "الْحَمْدُ لِلَّهِ الَّذِي عَافَانِي مِمَّا ابْتَلَاكَ بِهِ وَفَضَّلَنِي عَلَى كَثِيرٍ مِمَّنْ خَلَقَ تَفْضِيلًا",
+          "transliteration": "Alhamdulillaahil ladzii 'aafaanii mimmab talaaka bihi wa fadh-dhalanii 'alaa katsiirin mimman khalaqa tafdhiilaa",
+          "translation": "Segala puji bagi Allah yang telah menyelamatkanku dari apa yang menimpamu dan yang telah melebihkanku atas banyak makhluk-Nya. (Dibaca pelan, jangan sampai terdengar orang yang tertimpa musibah)",
+          "source": "HR. Tirmidzi no. 3431"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "category_name": "Doa Menutup Mata Jenazah",
+      "prayers": [
+        {
+          "arabic": "اللَّهُمَّ اغْفِرْ لِفُلَانٍ وَارْفَعْ دَرَجَتَهُ فِي الْمَهْدِيِّينَ وَاخْلُفْهُ فِي عَقِبِهِ فِي الْغَابِرِينَ وَاغْفِرْ لَنَا وَلَهُ يَا رَبَّ الْعَالَمِينَ وَافْسَحْ لَهُ فِي قَبْرِهِ وَنَوِّرْ لَهُ فِيهِ",
+          "transliteration": "Allaahummagh fir li fulaanin warfa' darajatahu fil mahdiyyiin, wakhlufhu fii 'aqibihi fil ghaabiriina, waghfir lanaa wa lahu yaa Rabbal 'aalamiin, wafsah lahu fii qabrihi wa nawwir lahu fiih",
+          "translation": "Ya Allah, ampunilah (nama), angkatlah derajatnya di antara orang-orang yang mendapat petunjuk, dan gantikanlah bagi keluarganya di antara orang-orang yang tinggal. Ampunilah kami dan dia wahai Rabb semesta alam, lapangkanlah kuburnya dan terangilah dia di dalamnya.",
+          "source": "HR. Muslim no. 920"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "category_name": "Doa Berhubungan Suami Istri",
+      "prayers": [
+        {
+          "arabic": "بِسْمِ اللَّهِ اللَّهُمَّ جَنِّبْنَا الشَّيْطَانَ وَجَنِّبِ الشَّيْطَانَ مَا رَزَقْتَنَا",
+          "transliteration": "Bismillaah. Allaahumma jannibnasy syaithaana wa jannibisy syaithaana maa razaqtanaa",
+          "translation": "Dengan nama Allah. Ya Allah, jauhkanlah kami dari setan dan jauhkanlah setan dari apa yang Engkau karuniakan kepada kami.",
+          "source": "HR. Bukhari no. 5165, Muslim no. 1434"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "category_name": "Doa Mendengar Kokok Ayam & Lolongan Anjing",
+      "prayers": [
+        {
+          "arabic": "اللَّهُمَّ إِنِّي أَسْأَلُكَ مِنْ فَضْلِكَ",
+          "transliteration": "Allaahumma inni as-aluka min fadlik",
+          "translation": "Ya Allah, aku memohon karunia-Mu. (Ketika mendengar kokok ayam karena ia melihat malaikat)",
+          "source": "HR. Bukhari no. 3303, Muslim no. 2729"
+        },
+        {
+          "arabic": "أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ",
+          "transliteration": "A'uudzu billaahi minasy syaithaanir rajiim",
+          "translation": "Aku berlindung kepada Allah dari setan yang terkutuk. (Ketika mendengar lolongan anjing karena ia melihat setan)",
+          "source": "HR. Bukhari no. 3303, Muslim no. 2729"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "category_name": "Doa Ketika Bayi Lahir (Tahnik)",
+      "prayers": [
+        {
+          "arabic": "بَارَكَ اللَّهُ لَكَ فِي الْمَوْهُوبِ لَكَ، وَشَكَرْتَ الْوَاهِبَ، وَبَلَغَ أَشُدَّهُ، وَرُزِقْتَ بِرَّهُ",
+          "transliteration": "Baarakallaahu laka fil mauhubi lak, wa syakarta alwaahib, wa balagha asyuddah, wa ruziqta birrah",
+          "translation": "Semoga Allah memberkahi anak yang dikaruniakan kepadamu, semoga engkau bersyukur kepada Yang Menganugerahi, semoga anak ini mencapai dewasa, dan semoga engkau diberi kebaikan darinya.",
+          "source": "An-Nawawi, Al-Adzkar no. 382"
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "category_name": "Doa Ketika Puasa",
+      "prayers": [
+        {
+          "arabic": "ذَهَبَ الظَّمَأُ وَابْتَلَّتِ الْعُرُوقُ وَثَبَتَ الْأَجْرُ إِنْ شَاءَ اللَّهُ",
+          "transliteration": "Dzahabazh zhama-u wab tallatil 'uruuqu wa tsabatal ajru insyaa Allaah",
+          "translation": "Telah hilang dahaga, urat-urat telah basah, dan pahala telah ditetapkan insya Allah.",
+          "source": "HR. Abu Daud no. 2357"
+        },
+        {
+          "arabic": "اللَّهُمَّ إِنِّي لَكَ صُمْتُ وَبِكَ آمَنْتُ وَعَلَى رِزْقِكَ أَفْطَرْتُ",
+          "transliteration": "Allaahumma inni laka shumtu wa bika aamantu wa 'alaa rizqika afthartu",
+          "translation": "Ya Allah, untuk-Mu aku berpuasa, kepada-Mu aku beriman, dan dengan rezeki-Mu aku berbuka.",
+          "source": "HR. Abu Daud no. 2358"
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "category_name": "Doa Lailatul Qadr",
+      "prayers": [
+        {
+          "arabic": "اللَّهُمَّ إِنَّكَ عَفُوٌّ تُحِبُّ الْعَفْوَ فَاعْفُ عَنِّي",
+          "transliteration": "Allaahumma innaka 'afuwwun tuhibbul 'afwa fa'fu 'annii",
+          "translation": "Ya Allah, sesungguhnya Engkau Maha Pemaaf, Engkau menyukai permintaan maaf, maka maafkanlah aku.",
+          "source": "HR. Tirmidzi no. 3513, Ibnu Majah no. 3850"
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "category_name": "Doa Setelah Mengucapkan Salam",
+      "prayers": [
+        {
+          "arabic": "وَعَلَيْكُمُ السَّلَامُ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ",
+          "transliteration": "Wa'alaikumus salaamu wa rahmatullaahi wa barakaatuh",
+          "translation": "Dan semoga keselamatan, rahmat Allah, dan berkah-Nya terlimpah atas kalian.",
+          "source": "HR. Abu Daud no. 5195, Tirmidzi no. 2722"
         }
       ]
     }
