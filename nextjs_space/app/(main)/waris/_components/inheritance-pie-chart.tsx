@@ -1,0 +1,56 @@
+'use client';
+
+import React from 'react';
+import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip } from 'recharts';
+import { HeirResult } from '@/lib/types';
+import { formatRupiah } from '@/lib/faraidh';
+
+const COLORS = ['#1B6B4A', '#C9A84C', '#3B9B74', '#E8B960', '#2D8B62', '#D4A847', '#4CAF7D', '#B8963E', '#60C08E', '#9A7F34'];
+
+interface Props {
+  heirs: HeirResult[];
+}
+
+export default function InheritancePieChart({ heirs }: Props) {
+  const chartData = (heirs ?? [])?.map?.((h: HeirResult, idx: number) => {
+    // Extract clean name (remove per-person detail)
+    const name = (h?.name ?? '')?.split?.('(')?.[0]?.trim?.() ?? `Ahli Waris ${idx + 1}`;
+    return {
+      name,
+      value: Math.round(h?.amount ?? 0),
+      percentage: h?.percentage ?? 0,
+    };
+  }) ?? [];
+
+  if ((chartData?.length ?? 0) === 0) return null;
+
+  return (
+    <ResponsiveContainer width="100%" height="100%">
+      <PieChart>
+        <Pie
+          data={chartData}
+          cx="50%"
+          cy="50%"
+          innerRadius={50}
+          outerRadius={100}
+          paddingAngle={2}
+          dataKey="value"
+          animationBegin={0}
+          animationDuration={800}
+        >
+          {chartData?.map?.((entry: any, index: number) => (
+            <Cell key={`cell-${index}`} fill={COLORS?.[index % (COLORS?.length ?? 1)] ?? '#1B6B4A'} />
+          )) ?? []}
+        </Pie>
+        <Tooltip
+          formatter={(value: any) => [`Rp ${formatRupiah(value ?? 0)}`, '']}
+          contentStyle={{ fontSize: 11, borderRadius: 8, border: 'none', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}
+        />
+        <Legend
+          verticalAlign="top"
+          wrapperStyle={{ fontSize: 11 }}
+        />
+      </PieChart>
+    </ResponsiveContainer>
+  );
+}
