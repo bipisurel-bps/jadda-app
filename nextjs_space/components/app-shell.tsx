@@ -3,9 +3,11 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Home, BookOpen, Calculator, Info, Moon, Sun, Menu, X } from 'lucide-react';
+import { Home, BookOpen, Calculator, Info, Moon, Sun, Mail } from 'lucide-react';
 import { useTheme } from 'next-themes';
 import { motion, AnimatePresence } from 'framer-motion';
+
+const APP_VERSION = '1.2.0';
 
 const navItems = [
   { href: '/', label: 'Beranda', icon: Home },
@@ -101,9 +103,49 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
       </header>
 
       {/* Main Content */}
-      <main className="max-w-[1200px] mx-auto px-4 md:px-6 pb-24 md:pb-8 pt-4 md:pt-6">
+      <main className="max-w-[1200px] mx-auto px-4 md:px-6 pb-8 pt-4 md:pt-6">
         {children}
       </main>
+
+      {/* Footer */}
+      <footer className="border-t border-border bg-card/50 pb-24 md:pb-8">
+        <div className="max-w-[1200px] mx-auto px-4 md:px-6 py-8">
+          {/* Jazakallah Khairan */}
+          <div className="text-center mb-6">
+            <p className="text-xl md:text-2xl font-arabic text-foreground leading-relaxed mb-2" dir="rtl">
+              جَزَاكُمُ اللَّهُ خَيْرًا
+            </p>
+            <p className="text-sm font-semibold text-primary">Jazakumullahu Khairan</p>
+            <p className="text-sm text-muted-foreground mt-1">
+              Terima kasih telah berkunjung. Semoga bermanfaat untuk kehidupan dunia dan akhirat.
+            </p>
+          </div>
+
+          {/* Contact Admin */}
+          <div className="flex flex-col items-center gap-3 mb-6">
+            <a
+              href="mailto:bipi.surel@gmail.com?subject=Masukan%20Aplikasi%20Doa%20%26%20Waris"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-primary text-primary-foreground text-sm font-medium hover:bg-primary/90 transition-colors shadow-sm"
+            >
+              <Mail size={16} />
+              Hubungi Admin / Berikan Masukan
+            </a>
+            <p className="text-xs text-muted-foreground">
+              bipi.surel@gmail.com
+            </p>
+          </div>
+
+          {/* Divider & Version */}
+          <div className="border-t border-border pt-4 flex flex-col sm:flex-row items-center justify-between gap-2">
+            <p className="text-xs text-muted-foreground">
+              &copy; 2025 Doa &amp; Waris — Panduan Doa &amp; Perhitungan Waris Islami
+            </p>
+            <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary/10 text-primary text-[11px] font-semibold">
+              v{APP_VERSION}
+            </span>
+          </div>
+        </div>
+      </footer>
 
       {/* Mobile Bottom Nav */}
       <nav className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-t border-border">
