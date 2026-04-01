@@ -84,7 +84,7 @@ export default function HomeClient() {
                   </div>
                   <div>
                     <h2 className="font-display font-bold text-lg text-foreground">Doa Harian</h2>
-                    <p className="text-sm text-muted-foreground">15 kategori doa dari Hisnul Muslim</p>
+                    <p className="text-sm text-muted-foreground">Kumpulan doa lengkap dari Hisnul Muslim</p>
                   </div>
                 </div>
                 <ChevronRight size={20} className="text-muted-foreground group-hover:text-primary transition-colors" />

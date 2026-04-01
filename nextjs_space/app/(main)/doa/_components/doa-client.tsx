@@ -1,9 +1,9 @@
 'use client';
 
 import React, { useState, useEffect, useMemo, useCallback, useRef } from 'react';
-import { Search, BookOpen, Heart, Copy, Check, ChevronDown, ChevronRight, Bookmark, BookmarkCheck, ListFilter, X } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { PrayerCategory, PrayerData, Prayer } from '@/lib/types';
+import { Search, BookOpen, Heart, Copy, Check, ChevronDown, Bookmark, BookmarkCheck, ListFilter, X, Tag } from 'lucide-react';
+import { AnimatePresence, motion } from 'framer-motion';
+import { PrayerCategory, Prayer } from '@/lib/types';
 import { toast } from 'sonner';
 
 export default function DoaClient() {
@@ -15,18 +15,15 @@ export default function DoaClient() {
   const [copiedId, setCopiedId] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
   const [showCategoryMenu, setShowCategoryMenu] = useState(false);
-  const [expandedCategories, setExpandedCategories] = useState<Set<number>>(new Set());
+  const [openCategory, setOpenCategory] = useState<number | null>(null);
   const categoryMenuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     fetch('/data/prayers.json')
       .then((res: any) => res?.json?.())
       .then((d: any) => {
-        const cats = d?.categories ?? [];
-        setData(cats);
+        setData(d?.categories ?? []);
         setLoading(false);
-        // expand all categories by default
-        setExpandedCategories(new Set(cats.map((c: PrayerCategory) => c.id)));
       })
       .catch(() => setLoading(false));
   }, []);
@@ -38,7 +35,6 @@ export default function DoaClient() {
     } catch {}
   }, []);
 
-  // Close category menu on outside click
   useEffect(() => {
     function handleClickOutside(e: MouseEvent) {
       if (categoryMenuRef.current && !categoryMenuRef.current.contains(e.target as Node)) {
@@ -72,28 +68,17 @@ export default function DoaClient() {
     }
   }, []);
 
-  const toggleCategoryExpand = useCallback((catId: number) => {
-    setExpandedCategories(prev => {
-      const next = new Set(prev);
-      if (next.has(catId)) {
-        next.delete(catId);
-      } else {
-        next.add(catId);
-      }
-      return next;
-    });
+  const toggleCategory = useCallback((catId: number) => {
+    setOpenCategory(prev => prev === catId ? null : catId);
   }, []);
 
   const selectCategory = useCallback((catId: number | null) => {
     setSelectedCategory(catId);
     setShowFavorites(false);
     setShowCategoryMenu(false);
-    if (catId !== null) {
-      setExpandedCategories(new Set([catId]));
-    } else {
-      setExpandedCategories(new Set(data.map(c => c.id)));
-    }
-  }, [data]);
+    // When selecting a specific category, open it automatically
+    setOpenCategory(catId);
+  }, []);
 
   const filteredData = useMemo(() => {
     let cats = data ?? [];
@@ -146,12 +131,11 @@ export default function DoaClient() {
       {/* Header */}
       <div>
         <h1 className="text-2xl md:text-3xl font-display font-bold tracking-tight text-foreground">Doa Harian</h1>
-        <p className="text-sm text-muted-foreground mt-1">Kumpulan doa dari Hisnul Muslim untuk aktivitas sehari-hari</p>
+        <p className="text-sm text-muted-foreground mt-1">Kumpulan {data.reduce((s, c) => s + c.prayers.length, 0)} doa dari {data.length} kategori — Hisnul Muslim</p>
       </div>
 
       {/* Search & Filter Bar */}
       <div className="flex flex-col sm:flex-row gap-3">
-        {/* Search */}
         <div className="relative flex-1">
           <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" />
           <input
@@ -167,7 +151,7 @@ export default function DoaClient() {
         <div className="relative" ref={categoryMenuRef}>
           <button
             onClick={() => setShowCategoryMenu(!showCategoryMenu)}
-            className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-card border border-border text-sm font-medium text-foreground hover:bg-muted/50 transition-colors w-full sm:w-auto justify-between sm:justify-start min-w-[180px]"
+            className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-card border border-border text-sm font-medium text-foreground hover:bg-muted/50 transition-colors w-full sm:w-auto justify-between sm:justify-start min-w-[200px]"
           >
             <ListFilter size={15} className="text-primary shrink-0" />
             <span className="truncate">{selectedCategoryName}</span>
@@ -181,37 +165,36 @@ export default function DoaClient() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -5 }}
                 transition={{ duration: 0.15 }}
-                className="absolute z-50 mt-2 left-0 right-0 sm:right-auto sm:min-w-[280px] max-h-[400px] overflow-y-auto rounded-xl bg-card border border-border shadow-lg"
+                className="absolute z-50 mt-2 left-0 right-0 sm:right-auto sm:min-w-[300px] max-h-[60vh] overflow-y-auto rounded-xl bg-card border border-border shadow-lg"
               >
-                <div className="p-2">
-                  {/* Semua */}
+                <div className="p-2 space-y-0.5">
                   <button
                     onClick={() => selectCategory(null)}
-                    className={`w-full text-left px-3 py-2 rounded-lg text-sm transition-colors ${
+                    className={`w-full text-left px-3 py-2.5 rounded-lg text-sm transition-colors ${
                       selectedCategory === null && !showFavorites
                         ? 'bg-primary/10 text-primary font-semibold'
                         : 'text-foreground hover:bg-muted'
                     }`}
                   >
-                    Semua Kategori ({data.reduce((s, c) => s + c.prayers.length, 0)} doa)
+                    📖 Semua Kategori
+                    <span className="text-xs text-muted-foreground ml-1">({data.reduce((s, c) => s + c.prayers.length, 0)} doa)</span>
                   </button>
 
-                  {/* Favorit */}
                   <button
-                    onClick={() => { setShowFavorites(true); setSelectedCategory(null); setShowCategoryMenu(false); setExpandedCategories(new Set(data.map(c => c.id))); }}
-                    className={`w-full text-left px-3 py-2 rounded-lg text-sm transition-colors flex items-center gap-2 ${
+                    onClick={() => { setShowFavorites(true); setSelectedCategory(null); setShowCategoryMenu(false); setOpenCategory(null); }}
+                    className={`w-full text-left px-3 py-2.5 rounded-lg text-sm transition-colors flex items-center gap-2 ${
                       showFavorites
                         ? 'bg-primary/10 text-primary font-semibold'
                         : 'text-foreground hover:bg-muted'
                     }`}
                   >
                     <Heart size={13} fill={showFavorites ? 'currentColor' : 'none'} />
-                    Favorit ({favorites.length})
+                    Favorit
+                    <span className="text-xs text-muted-foreground">({favorites.length})</span>
                   </button>
 
-                  <div className="h-px bg-border my-1.5" />
+                  <div className="h-px bg-border my-1" />
 
-                  {/* Categories */}
                   {(data ?? []).map((cat: PrayerCategory) => (
                     <button
                       key={cat.id}
@@ -222,8 +205,8 @@ export default function DoaClient() {
                           : 'text-foreground hover:bg-muted'
                       }`}
                     >
-                      <span>{cat.category_name}</span>
-                      <span className="text-muted-foreground text-xs ml-2">({cat.prayers.length})</span>
+                      {cat.category_name}
+                      <span className="text-xs text-muted-foreground ml-1">({cat.prayers.length})</span>
                     </button>
                   ))}
                 </div>
@@ -236,11 +219,11 @@ export default function DoaClient() {
       {/* Active Filter Badge */}
       {(selectedCategory !== null || showFavorites) && (
         <div className="flex items-center gap-2">
-          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium">
+          <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-semibold">
             {showFavorites && <Heart size={12} fill="currentColor" />}
             {selectedCategoryName}
             <button
-              onClick={() => { setSelectedCategory(null); setShowFavorites(false); setExpandedCategories(new Set(data.map(c => c.id))); }}
+              onClick={() => { setSelectedCategory(null); setShowFavorites(false); setOpenCategory(null); }}
               className="ml-1 p-0.5 rounded-full hover:bg-primary/20 transition-colors"
             >
               <X size={11} />
@@ -250,8 +233,8 @@ export default function DoaClient() {
         </div>
       )}
 
-      {/* Prayer List - Grouped by Category */}
-      <div className="space-y-4">
+      {/* Prayer List */}
+      <div className="space-y-2">
         {(filteredData?.length ?? 0) === 0 ? (
           <div className="text-center py-16 rounded-2xl bg-card border border-border">
             <BookOpen size={44} className="mx-auto text-muted-foreground/30 mb-4" />
@@ -260,23 +243,34 @@ export default function DoaClient() {
           </div>
         ) : (
           filteredData.map((cat: PrayerCategory) => {
-            const isExpanded = expandedCategories.has(cat.id);
+            const isOpen = selectedCategory !== null
+              ? true
+              : (showFavorites ? true : openCategory === cat.id);
+
             return (
               <div
                 key={cat.id}
                 className="rounded-2xl border border-border bg-card overflow-hidden shadow-sm"
               >
-                {/* Category Header - Collapsible */}
+                {/* Category Header */}
                 <button
-                  onClick={() => toggleCategoryExpand(cat.id)}
-                  className="w-full flex items-center justify-between p-4 md:p-5 hover:bg-muted/30 transition-colors"
+                  onClick={() => {
+                    if (selectedCategory === null && !showFavorites) {
+                      toggleCategory(cat.id);
+                    }
+                  }}
+                  className={`w-full flex items-center justify-between p-4 md:px-5 transition-colors ${
+                    isOpen ? 'bg-primary/5 border-b border-border' : 'hover:bg-muted/30'
+                  } ${selectedCategory !== null || showFavorites ? 'cursor-default' : 'cursor-pointer'}`}
                 >
                   <div className="flex items-center gap-3">
-                    <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
-                      <BookOpen size={16} className="text-primary" />
+                    <div className={`w-10 h-10 rounded-xl flex items-center justify-center shrink-0 ${
+                      isOpen ? 'bg-primary text-primary-foreground' : 'bg-primary/10 text-primary'
+                    }`}>
+                      <BookOpen size={18} />
                     </div>
                     <div className="text-left">
-                      <h2 className="font-display font-semibold text-base text-foreground leading-tight">
+                      <h2 className="font-display font-bold text-[15px] text-foreground leading-tight">
                         {cat.category_name}
                       </h2>
                       <p className="text-xs text-muted-foreground mt-0.5">
@@ -284,40 +278,41 @@ export default function DoaClient() {
                       </p>
                     </div>
                   </div>
-                  <ChevronDown
-                    size={18}
-                    className={`text-muted-foreground transition-transform duration-200 ${
-                      isExpanded ? 'rotate-180' : ''
-                    }`}
-                  />
+                  {selectedCategory === null && !showFavorites && (
+                    <ChevronDown
+                      size={18}
+                      className={`text-muted-foreground transition-transform duration-200 ${
+                        isOpen ? 'rotate-180' : ''
+                      }`}
+                    />
+                  )}
                 </button>
 
-                {/* Category Content */}
-                {isExpanded && (
-                  <div className="border-t border-border">
+                {/* Prayers inside category */}
+                {isOpen && (
+                  <div>
                     {(cat.prayers ?? []).map((prayer: Prayer, pIdx: number) => {
                       const prayerId = `${cat.id}-${pIdx}`;
                       const isFav = favorites?.includes?.(prayerId);
                       const isCopied = copiedId === prayerId;
-                      const hasLabel = !!prayer.label;
                       return (
                         <div
                           key={prayerId}
-                          className={`p-4 md:p-5 ${
-                            pIdx > 0 ? 'border-t border-border/50' : ''
+                          className={`p-4 md:px-5 md:py-5 ${
+                            pIdx > 0 ? 'border-t border-dashed border-border/60' : ''
                           }`}
                         >
-                          {/* Sub-label / Prayer title */}
-                          {hasLabel && (
-                            <div className="flex items-center gap-2 mb-3">
-                              <div className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
-                              <h3 className="text-sm font-semibold text-foreground">
+                          {/* Sub-label */}
+                          {prayer.label && (
+                            <div className="mb-3 flex items-center gap-2">
+                              <Tag size={13} className="text-primary shrink-0" />
+                              <span className="text-sm font-bold text-primary">
                                 {prayer.label}
-                              </h3>
+                              </span>
                             </div>
                           )}
 
-                          {/* Arabic */}
+                          {/* Arabic text */}
                           <div className="bg-muted/30 dark:bg-muted/10 rounded-xl p-4 mb-3">
                             <p className="text-xl md:text-2xl font-arabic leading-[2.2] text-foreground text-right" dir="rtl">
                               {prayer.arabic}
@@ -336,7 +331,7 @@ export default function DoaClient() {
 
                           {/* Source & Actions */}
                           <div className="flex items-center justify-between">
-                            <span className="text-[11px] text-foreground/60 font-medium bg-muted/50 px-2 py-0.5 rounded">
+                            <span className="text-[11px] text-foreground/60 font-medium bg-muted/50 dark:bg-muted/20 px-2 py-0.5 rounded">
                               {prayer.source}
                             </span>
                             <div className="flex items-center gap-0.5">
