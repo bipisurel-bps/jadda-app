@@ -3,6 +3,7 @@ export interface Prayer {
   transliteration: string;
   translation: string;
   source: string;
+  label?: string;
 }
 
 export interface PrayerCategory {
