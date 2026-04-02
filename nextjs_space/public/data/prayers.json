@@ -1285,19 +1285,6 @@
     },
     {
       "id": 60,
-      "category_name": "Doa Ketika Mendengar Kabar Gembira",
-      "prayers": [
-        {
-          "arabic": "الْحَمْدُ لِلَّهِ الَّذِي بِنِعْمَتِهِ تَتِمُّ الصَّالِحَاتُ",
-          "transliteration": "Alhamdulillaahil ladzii bini'matihi tatimmush shaalihaat",
-          "translation": "Segala puji bagi Allah yang dengan nikmat-Nya sempurnalah kebaikan-kebaikan",
-          "source": "HR. Ibnu Majah no. 3803, Al-Hakim",
-          "label": "Doa Ketika Mendapat Kabar Baik"
-        }
-      ]
-    },
-    {
-      "id": 61,
       "category_name": "Doa Ketika Mendapat Kabar Buruk",
       "prayers": [
         {
@@ -1310,7 +1297,7 @@
       ]
     },
     {
-      "id": 62,
+      "id": 61,
       "category_name": "Doa Mohon Ilmu yang Bermanfaat",
       "prayers": [
         {
@@ -1337,7 +1324,7 @@
       ]
     },
     {
-      "id": 63,
+      "id": 62,
       "category_name": "Doa Mohon Kesembuhan (Ruqyah)",
       "prayers": [
         {
@@ -1364,7 +1351,7 @@
       ]
     },
     {
-      "id": 64,
+      "id": 63,
       "category_name": "Doa Mohon Perlindungan dari Ain (Mata Jahat)",
       "prayers": [
         {
@@ -1377,7 +1364,7 @@
       ]
     },
     {
-      "id": 65,
+      "id": 64,
       "category_name": "Doa Orang Tua untuk Anak",
       "prayers": [
         {
@@ -1404,7 +1391,7 @@
       ]
     },
     {
-      "id": 66,
+      "id": 65,
       "category_name": "Doa Mohon Keselamatan dari Neraka",
       "prayers": [
         {
@@ -1424,7 +1411,7 @@
       ]
     },
     {
-      "id": 67,
+      "id": 66,
       "category_name": "Doa Ketika Kesusahan & Kesedihan",
       "prayers": [
         {
@@ -1451,7 +1438,7 @@
       ]
     },
     {
-      "id": 68,
+      "id": 67,
       "category_name": "Doa Mohon Kebaikan Akhlak",
       "prayers": [
         {
@@ -1471,7 +1458,7 @@
       ]
     },
     {
-      "id": 69,
+      "id": 68,
       "category_name": "Doa Mohon Keteguhan Iman",
       "prayers": [
         {
@@ -1491,7 +1478,7 @@
       ]
     },
     {
-      "id": 70,
+      "id": 69,
       "category_name": "Doa Mohon Husnul Khatimah",
       "prayers": [
         {
@@ -1504,7 +1491,7 @@
       ]
     },
     {
-      "id": 71,
+      "id": 70,
       "category_name": "Doa Mohon Kecukupan Rezeki",
       "prayers": [
         {
@@ -1524,7 +1511,7 @@
       ]
     },
     {
-      "id": 72,
+      "id": 71,
       "category_name": "Doa Mohon Taubat & Istighfar",
       "prayers": [
         {
@@ -1551,7 +1538,7 @@
       ]
     },
     {
-      "id": 73,
+      "id": 72,
       "category_name": "Doa Untuk Kedua Orang Tua",
       "prayers": [
         {
@@ -1571,7 +1558,7 @@
       ]
     },
     {
-      "id": 74,
+      "id": 73,
       "category_name": "Doa Ketika Memulai Pekerjaan / Usaha",
       "prayers": [
         {
@@ -1591,7 +1578,7 @@
       ]
     },
     {
-      "id": 75,
+      "id": 74,
       "category_name": "Doa Ketika Gelisah & Tidak Bisa Tidur",
       "prayers": [
         {
@@ -1604,7 +1591,7 @@
       ]
     },
     {
-      "id": 76,
+      "id": 75,
       "category_name": "Doa Ketika Melihat Buah Pertama (Panen)",
       "prayers": [
         {
@@ -1617,7 +1604,7 @@
       ]
     },
     {
-      "id": 77,
+      "id": 76,
       "category_name": "Doa Ketika Minum Susu",
       "prayers": [
         {
@@ -1630,7 +1617,7 @@
       ]
     },
     {
-      "id": 78,
+      "id": 77,
       "category_name": "Doa Ketika Berbuka Puasa",
       "prayers": [
         {
@@ -1650,7 +1637,7 @@
       ]
     },
     {
-      "id": 79,
+      "id": 78,
       "category_name": "Doa Ketika Makan di Rumah Orang / Tuan Rumah",
       "prayers": [
         {
@@ -1663,7 +1650,7 @@
       ]
     },
     {
-      "id": 80,
+      "id": 79,
       "category_name": "Doa Ketika Bertemu Musuh / Penguasa Zalim",
       "prayers": [
         {
@@ -1683,7 +1670,7 @@
       ]
     },
     {
-      "id": 81,
+      "id": 80,
       "category_name": "Doa Ketika Tertimpa Keraguan dalam Iman",
       "prayers": [
         {
@@ -1703,7 +1690,7 @@
       ]
     },
     {
-      "id": 82,
+      "id": 81,
       "category_name": "Doa Ketika Menaiki Tanjakan & Turunan",
       "prayers": [
         {
@@ -1723,7 +1710,7 @@
       ]
     },
     {
-      "id": 83,
+      "id": 82,
       "category_name": "Doa Ketika Singgah di Suatu Tempat",
       "prayers": [
         {
@@ -1736,7 +1723,7 @@
       ]
     },
     {
-      "id": 84,
+      "id": 83,
       "category_name": "Doa Kembali dari Bepergian (Safar)",
       "prayers": [
         {
@@ -1749,7 +1736,7 @@
       ]
     },
     {
-      "id": 85,
+      "id": 84,
       "category_name": "Doa Ketika Ada Tamu Datang",
       "prayers": [
         {
@@ -1762,7 +1749,7 @@
       ]
     },
     {
-      "id": 86,
+      "id": 85,
       "category_name": "Doa Sebelum & Sesudah Belajar",
       "prayers": [
         {
@@ -1782,7 +1769,7 @@
       ]
     },
     {
-      "id": 87,
+      "id": 86,
       "category_name": "Doa Penutup Majelis",
       "prayers": [
         {
@@ -1795,7 +1782,7 @@
       ]
     },
     {
-      "id": 88,
+      "id": 87,
       "category_name": "Doa Shalat Dhuha",
       "prayers": [
         {
@@ -1808,7 +1795,7 @@
       ]
     },
     {
-      "id": 89,
+      "id": 88,
       "category_name": "Doa Shalat Tahajjud",
       "prayers": [
         {
@@ -1821,7 +1808,7 @@
       ]
     },
     {
-      "id": 90,
+      "id": 89,
       "category_name": "Doa Hari Arafah",
       "prayers": [
         {
@@ -1834,7 +1821,7 @@
       ]
     },
     {
-      "id": 91,
+      "id": 90,
       "category_name": "Doa Ketika Menginap di Tempat Baru",
       "prayers": [
         {
@@ -1847,8 +1834,8 @@
       ]
     },
     {
-      "id": 92,
-      "category_name": "Doa Ketika Kendaraan Bergerak / Perjalanan Dimulai",
+      "id": 91,
+      "category_name": "Doa Ketika Melakukan Perjalanan / Safar",
       "prayers": [
         {
           "arabic": "سُبْحَانَ الَّذِي سَخَّرَ لَنَا هَذَا وَمَا كُنَّا لَهُ مُقْرِنِينَ وَإِنَّا إِلَى رَبِّنَا لَمُنْقَلِبُونَ",
@@ -1867,7 +1854,7 @@
       ]
     },
     {
-      "id": 93,
+      "id": 92,
       "category_name": "Doa untuk Orang yang Sakit (Menjenguk)",
       "prayers": [
         {
@@ -1887,7 +1874,7 @@
       ]
     },
     {
-      "id": 94,
+      "id": 93,
       "category_name": "Doa Ketika Rasa Sakit di Badan",
       "prayers": [
         {
@@ -1900,7 +1887,7 @@
       ]
     },
     {
-      "id": 95,
+      "id": 94,
       "category_name": "Doa Ketika Memasuki Pagi & Petang (Ringkas)",
       "prayers": [
         {
@@ -1920,7 +1907,7 @@
       ]
     },
     {
-      "id": 96,
+      "id": 95,
       "category_name": "Doa Shalat Witir (Qunut Nazilah)",
       "prayers": [
         {
@@ -1933,7 +1920,7 @@
       ]
     },
     {
-      "id": 97,
+      "id": 96,
       "category_name": "Doa Ketika Menyembelih / Qurban",
       "prayers": [
         {
@@ -1946,7 +1933,7 @@
       ]
     },
     {
-      "id": 98,
+      "id": 97,
       "category_name": "Doa Ketika Terjadi Wabah / Pandemi",
       "prayers": [
         {
@@ -1959,7 +1946,7 @@
       ]
     },
     {
-      "id": 99,
+      "id": 98,
       "category_name": "Doa Ketika Memakai & Melepas Pakaian",
       "prayers": [
         {
@@ -1979,7 +1966,7 @@
       ]
     },
     {
-      "id": 100,
+      "id": 99,
       "category_name": "Doa Mohon Kebaikan Hari Ini",
       "prayers": [
         {
@@ -1992,7 +1979,7 @@
       ]
     },
     {
-      "id": 101,
+      "id": 100,
       "category_name": "Doa Ketika Mendapat Nikmat",
       "prayers": [
         {
@@ -2005,7 +1992,7 @@
       ]
     },
     {
-      "id": 102,
+      "id": 101,
       "category_name": "Doa Kepada Orang yang Menyatakan Cinta / Kasih",
       "prayers": [
         {
@@ -2018,7 +2005,7 @@
       ]
     },
     {
-      "id": 103,
+      "id": 102,
       "category_name": "Doa Ketika Melihat Orang Tersenyum / Tertawa",
       "prayers": [
         {
@@ -2031,7 +2018,7 @@
       ]
     },
     {
-      "id": 104,
+      "id": 103,
       "category_name": "Doa Perlindungan Anak & Keluarga",
       "prayers": [
         {
@@ -2044,7 +2031,7 @@
       ]
     },
     {
-      "id": 105,
+      "id": 104,
       "category_name": "Doa Masuk Bulan Ramadhan",
       "prayers": [
         {
@@ -2057,7 +2044,7 @@
       ]
     },
     {
-      "id": 106,
+      "id": 105,
       "category_name": "Doa Akhir Tahun & Awal Tahun Hijriyyah",
       "prayers": [
         {
@@ -2070,7 +2057,7 @@
       ]
     },
     {
-      "id": 107,
+      "id": 106,
       "category_name": "Doa Ketika Merasakan Sakit Hati / Dengki",
       "prayers": [
         {
@@ -2083,20 +2070,7 @@
       ]
     },
     {
-      "id": 108,
-      "category_name": "Doa Selamat (Umum)",
-      "prayers": [
-        {
-          "arabic": "اللَّهُمَّ إِنَّا نَسْأَلُكَ سَلَامَةً فِي الدِّينِ، وَعَافِيَةً فِي الْجَسَدِ، وَزِيَادَةً فِي الْعِلْمِ، وَبَرَكَةً فِي الرِّزْقِ، وَتَوْبَةً قَبْلَ الْمَوْتِ، وَرَحْمَةً عِنْدَ الْمَوْتِ، وَمَغْفِرَةً بَعْدَ الْمَوْتِ",
-          "transliteration": "Allaahumma innaa nas-aluka salaamatan fid diini, wa 'aafiyatan fil jasadi, wa ziyaadatan fil 'ilmi, wa barakatan fir rizqi, wa tawbatan qablal mawti, wa rahmatan 'indal mawti, wa maghfiratan ba'dal mawti",
-          "translation": "Ya Allah, kami memohon keselamatan dalam agama, kesehatan dalam badan, penambahan ilmu, keberkahan rezeki, taubat sebelum mati, rahmat saat mati, dan ampunan setelah mati",
-          "source": "Riwayat ulama",
-          "label": "Doa Selamat Komprehensif"
-        }
-      ]
-    },
-    {
-      "id": 109,
+      "id": 107,
       "category_name": "Doa Perlindungan Rumah",
       "prayers": [
         {
@@ -2109,7 +2083,7 @@
       ]
     },
     {
-      "id": 110,
+      "id": 108,
       "category_name": "Doa Mohon Panjang Umur dalam Kebaikan",
       "prayers": [
         {
@@ -2122,7 +2096,7 @@
       ]
     },
     {
-      "id": 111,
+      "id": 109,
       "category_name": "Doa untuk Orang yang Memakai Pakaian Baru",
       "prayers": [
         {
@@ -2140,20 +2114,8 @@
       ]
     },
     {
-      "id": 112,
-      "category_name": "Doa Sebelum Melepas Pakaian (Membuka Aurat)",
-      "prayers": [
-        {
-          "arabic": "بِسْمِ اللَّهِ",
-          "transliteration": "Bismillaah",
-          "translation": "Dengan menyebut nama Allah. (Doa ini sebagai pelindung dari pandangan jin ketika seseorang melepas pakaiannya).",
-          "source": "HR. At-Tirmidzi 2/505"
-        }
-      ]
-    },
-    {
-      "id": 113,
-      "category_name": "Doa Ketika Membolak-balikkan Badan di Malam Hari",
+      "id": 110,
+      "category_name": "Doa Ketika Terbangun di Malam Hari",
       "prayers": [
         {
           "arabic": "لَا إِلَهَ إِلَّا اللَّهُ الْوَاحِدُ الْقَهَّارُ، رَبُّ السَّمَاوَاتِ وَالْأَرْضِ وَمَا بَيْنَهُمَا الْعَزِيزُ الْغَفَّارُ",
@@ -2164,7 +2126,7 @@
       ]
     },
     {
-      "id": 114,
+      "id": 111,
       "category_name": "Doa Ketika Melihat Mimpi Baik",
       "prayers": [
         {
@@ -2177,7 +2139,7 @@
       ]
     },
     {
-      "id": 115,
+      "id": 112,
       "category_name": "Dzikir Setelah Salam Shalat Witir",
       "prayers": [
         {
@@ -2195,7 +2157,7 @@
       ]
     },
     {
-      "id": 116,
+      "id": 113,
       "category_name": "Doa Ketika Takut Sekelompok Orang",
       "prayers": [
         {
@@ -2207,7 +2169,7 @@
       ]
     },
     {
-      "id": 117,
+      "id": 114,
       "category_name": "Doa Ketika Was-was dalam Shalat atau Bacaan Quran",
       "prayers": [
         {
@@ -2219,7 +2181,7 @@
       ]
     },
     {
-      "id": 118,
+      "id": 115,
       "category_name": "Doa Ketika Urusan Menjadi Sulit",
       "prayers": [
         {
@@ -2231,7 +2193,7 @@
       ]
     },
     {
-      "id": 119,
+      "id": 116,
       "category_name": "Doa Setelah Berbuat Dosa",
       "prayers": [
         {
@@ -2244,7 +2206,7 @@
       ]
     },
     {
-      "id": 120,
+      "id": 117,
       "category_name": "Doa Mengusir Setan dan Was-wasnya",
       "prayers": [
         {
@@ -2271,7 +2233,7 @@
       ]
     },
     {
-      "id": 121,
+      "id": 118,
       "category_name": "Doa Orang Sakit yang Berputus Asa dari Kehidupan",
       "prayers": [
         {
@@ -2289,7 +2251,7 @@
       ]
     },
     {
-      "id": 122,
+      "id": 119,
       "category_name": "Mentalqinkan Orang yang Hendak Meninggal",
       "prayers": [
         {
@@ -2301,7 +2263,7 @@
       ]
     },
     {
-      "id": 123,
+      "id": 120,
       "category_name": "Doa Shalat Jenazah untuk Anak Kecil",
       "prayers": [
         {
@@ -2313,7 +2275,7 @@
       ]
     },
     {
-      "id": 124,
+      "id": 121,
       "category_name": "Doa Meletakkan Jenazah di Kubur",
       "prayers": [
         {
@@ -2325,7 +2287,7 @@
       ]
     },
     {
-      "id": 125,
+      "id": 122,
       "category_name": "Doa Setelah Memakamkan Jenazah",
       "prayers": [
         {
@@ -2337,7 +2299,7 @@
       ]
     },
     {
-      "id": 126,
+      "id": 123,
       "category_name": "Doa Meminta Hujan (Istisqa)",
       "prayers": [
         {
@@ -2355,7 +2317,7 @@
       ]
     },
     {
-      "id": 127,
+      "id": 124,
       "category_name": "Doa Setelah Hujan Turun",
       "prayers": [
         {
@@ -2367,7 +2329,7 @@
       ]
     },
     {
-      "id": 128,
+      "id": 125,
       "category_name": "Doa Meminta Langit Cerah",
       "prayers": [
         {
@@ -2379,7 +2341,7 @@
       ]
     },
     {
-      "id": 129,
+      "id": 126,
       "category_name": "Doa Perlindungan dari Dajjal",
       "prayers": [
         {
@@ -2399,7 +2361,7 @@
       ]
     },
     {
-      "id": 130,
+      "id": 127,
       "category_name": "Doa Takut Syirik",
       "prayers": [
         {
@@ -2411,7 +2373,7 @@
       ]
     },
     {
-      "id": 131,
+      "id": 128,
       "category_name": "Doa Masuk Kota atau Desa",
       "prayers": [
         {
@@ -2423,85 +2385,7 @@
       ]
     },
     {
-      "id": 132,
-      "category_name": "Doa Ketika Kendaraan Oleng / Tergelincir",
-      "prayers": [
-        {
-          "arabic": "بِسْمِ اللَّهِ",
-          "transliteration": "Bismillaah",
-          "translation": "Dengan menyebut nama Allah. (Jika kendaraan tergelincir atau oleng, ucapkanlah Bismillah).",
-          "source": "HR. Abu Dawud 4/296"
-        }
-      ]
-    },
-    {
-      "id": 133,
-      "category_name": "Doa Musafir untuk Orang yang Menetap",
-      "prayers": [
-        {
-          "arabic": "أَسْتَوْدِعُكُمُ اللَّهَ الَّذِي لَا تَضِيعُ وَدَائِعُهُ",
-          "transliteration": "Astawdi'ukumul laahalladzii laa tadhii'u wadaa-i'uh",
-          "translation": "Aku menitipkan kalian kepada Allah yang titipan-Nya tidak pernah hilang.",
-          "source": "HR. Ahmad 2/403, Ibnu Majah 2/943"
-        }
-      ]
-    },
-    {
-      "id": 134,
-      "category_name": "Doa Orang yang Menetap untuk Musafir",
-      "prayers": [
-        {
-          "arabic": "أَسْتَوْدِعُ اللَّهَ دِينَكَ وَأَمَانَتَكَ وَخَوَاتِيمَ عَمَلِكَ",
-          "transliteration": "Astawdi'ullaaha diinaka wa amaanataka wa khawaatiima 'amalika",
-          "translation": "Aku menitipkan kepada Allah agamamu, amanatmu, dan akhir-akhir amalmu.",
-          "source": "HR. Ahmad 2/7, At-Tirmidzi 5/499"
-        },
-        {
-          "arabic": "زَوَّدَكَ اللَّهُ التَّقْوَى، وَغَفَرَ ذَنْبَكَ، وَيَسَّرَ لَكَ الْخَيْرَ حَيْثُمَا كُنْتَ",
-          "transliteration": "Zawwadakallaahut taqwaa, wa ghafara dzanbaka, wa yassara lakal khaira haitsumaa kunta",
-          "translation": "Semoga Allah membekalimu takwa, mengampuni dosamu, dan memudahkan kebaikan bagimu di mana pun engkau berada.",
-          "source": "HR. At-Tirmidzi 5/499"
-        }
-      ]
-    },
-    {
-      "id": 135,
-      "category_name": "Doa Musafir Menjelang Subuh",
-      "prayers": [
-        {
-          "arabic": "سَمِعَ سَامِعٌ بِحَمْدِ اللَّهِ وَحُسْنِ بَلَائِهِ عَلَيْنَا، رَبَّنَا صَاحِبْنَا وَأَفْضِلْ عَلَيْنَا، عَائِذًا بِاللَّهِ مِنَ النَّارِ",
-          "transliteration": "Sami'a saami'un bihamdillaahi wa husni balaa-ihii 'alainaa, rabbanaa shahibnaa wa afdlil 'alainaa, 'aa-idzan billaahi minan naar",
-          "translation": "Semoga yang mendengar bersaksi atas pujian kami kepada Allah dan nikmat-Nya yang baik kepada kami. Ya Rabb kami, temani dan limpahkanlah karunia-Mu kepada kami, kami berlindung kepada Allah dari api neraka.",
-          "source": "HR. Muslim 4/2086"
-        }
-      ]
-    },
-    {
-      "id": 136,
-      "category_name": "Doa Ketika Dihina Saat Puasa",
-      "prayers": [
-        {
-          "arabic": "إِنِّي صَائِمٌ، إِنِّي صَائِمٌ",
-          "transliteration": "Innii shaa-imun, innii shaa-imun",
-          "translation": "Sesungguhnya aku sedang puasa, sesungguhnya aku sedang puasa. (Rasulullah ﷺ bersabda: 'Jika seseorang sedang berpuasa, janganlah ia berkata kotor dan bertindak bodoh. Jika ada orang yang mencaci atau mengajaknya berkelahi, hendaklah ia berkata: Sesungguhnya aku sedang berpuasa.').",
-          "source": "HR. Al-Bukhari 4/103, Muslim 2/806"
-        }
-      ]
-    },
-    {
-      "id": 137,
-      "category_name": "Doa Orang Puasa Disuguhi Makanan tapi Tidak Berbuka",
-      "prayers": [
-        {
-          "arabic": "إِنِّي صَائِمٌ",
-          "transliteration": "Innii shaa-imun",
-          "translation": "Sesungguhnya aku sedang berpuasa. (Jika diundang makan, hendaklah ia mengabulkan undangan tersebut. Jika ia sedang berpuasa, hendaklah ia mendoakan tuan rumah).",
-          "source": "HR. Muslim 2/1054"
-        }
-      ]
-    },
-    {
-      "id": 138,
+      "id": 129,
       "category_name": "Doa kepada Orang yang Memberi Minum",
       "prayers": [
         {
@@ -2513,7 +2397,7 @@
       ]
     },
     {
-      "id": 139,
+      "id": 130,
       "category_name": "Doa Ketika Berbuka Puasa di Rumah Orang Lain",
       "prayers": [
         {
@@ -2525,7 +2409,7 @@
       ]
     },
     {
-      "id": 140,
+      "id": 131,
       "category_name": "Membalas Ucapan Minta Ampun (Istighfar)",
       "prayers": [
         {
@@ -2537,7 +2421,7 @@
       ]
     },
     {
-      "id": 141,
+      "id": 132,
       "category_name": "Doa untuk Orang yang Memberi Harta",
       "prayers": [
         {
@@ -2549,7 +2433,7 @@
       ]
     },
     {
-      "id": 142,
+      "id": 133,
       "category_name": "Doa Ketika Hutang Dilunasi",
       "prayers": [
         {
@@ -2561,7 +2445,7 @@
       ]
     },
     {
-      "id": 143,
+      "id": 134,
       "category_name": "Larangan Tathayyur (Percaya Kesialan)",
       "prayers": [
         {
@@ -2573,7 +2457,7 @@
       ]
     },
     {
-      "id": 144,
+      "id": 135,
       "category_name": "Doa Membalas Setelah Memberi Hadiah atau Sedekah",
       "prayers": [
         {
@@ -2585,7 +2469,7 @@
       ]
     },
     {
-      "id": 145,
+      "id": 136,
       "category_name": "Keutamaan Menyebarkan Salam",
       "prayers": [
         {
@@ -2597,7 +2481,7 @@
       ]
     },
     {
-      "id": 146,
+      "id": 137,
       "category_name": "Membalas Salam Non-Muslim",
       "prayers": [
         {
@@ -2609,7 +2493,7 @@
       ]
     },
     {
-      "id": 147,
+      "id": 138,
       "category_name": "Doa untuk Orang yang Pernah Disakiti",
       "prayers": [
         {
@@ -2621,7 +2505,7 @@
       ]
     },
     {
-      "id": 148,
+      "id": 139,
       "category_name": "Etika Memuji Sesama Muslim",
       "prayers": [
         {
@@ -2634,7 +2518,7 @@
       ]
     },
     {
-      "id": 149,
+      "id": 140,
       "category_name": "Doa untuk Orang yang Dipuji",
       "prayers": [
         {
@@ -2646,7 +2530,7 @@
       ]
     },
     {
-      "id": 150,
+      "id": 141,
       "category_name": "Doa Ketika Terkejut",
       "prayers": [
         {
@@ -2664,79 +2548,7 @@
       ]
     },
     {
-      "id": 151,
-      "category_name": "Talbiyah Haji & Umrah",
-      "prayers": [
-        {
-          "arabic": "لَبَّيْكَ اللَّهُمَّ لَبَّيْكَ، لَبَّيْكَ لَا شَرِيكَ لَكَ لَبَّيْكَ، إِنَّ الْحَمْدَ وَالنِّعْمَةَ لَكَ وَالْمُلْكَ، لَا شَرِيكَ لَكَ",
-          "transliteration": "Labbaikallahumma labbaik, labbaika laa syariika laka labbaik, innal hamda wan ni'mata laka wal mulk, laa syariika lak",
-          "translation": "Aku penuhi panggilan-Mu ya Allah, aku penuhi panggilan-Mu. Aku penuhi panggilan-Mu, tiada sekutu bagi-Mu, aku penuhi panggilan-Mu. Sesungguhnya segala puji, nikmat, dan kerajaan adalah milik-Mu, tiada sekutu bagi-Mu.",
-          "source": "HR. Al-Bukhari 3/408, Muslim 2/841"
-        }
-      ]
-    },
-    {
-      "id": 152,
-      "category_name": "Takbir di Hajar Aswad (Thawaf)",
-      "prayers": [
-        {
-          "arabic": "اللَّهُ أَكْبَرُ",
-          "transliteration": "Allaahu akbar",
-          "translation": "Allah Maha Besar. (Diucapkan setiap kali melewati Hajar Aswad saat thawaf).",
-          "source": "HR. Al-Bukhari 3/476"
-        }
-      ]
-    },
-    {
-      "id": 153,
-      "category_name": "Doa Antara Rukun Yamani dan Hajar Aswad",
-      "prayers": [
-        {
-          "arabic": "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ",
-          "transliteration": "Rabbanaa aatinaa fid dunyaa hasanatan wa fil aakhirati hasanatan wa qinaa 'adzaaban naar",
-          "translation": "Ya Rabb kami, berilah kami kebaikan di dunia dan kebaikan di akhirat, dan lindungilah kami dari azab neraka.",
-          "source": "HR. Abu Dawud 2/179, Ahmad 3/411. QS. Al-Baqarah 2:201"
-        }
-      ]
-    },
-    {
-      "id": 154,
-      "category_name": "Doa di Bukit Shafa dan Marwah (Sa'i)",
-      "prayers": [
-        {
-          "arabic": "إِنَّ الصَّفَا وَالْمَرْوَةَ مِنْ شَعَائِرِ اللَّهِ... لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ، لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ، أَنْجَزَ وَعْدَهُ، وَنَصَرَ عَبْدَهُ، وَهَزَمَ الْأَحْزَابَ وَحْدَهُ",
-          "transliteration": "Innash shafaa wal marwata min sya'aa-irillaah... Laa ilaaha illallaahu wahdahu laa syariika lahu, lahul mulku wa lahul hamdu wa huwa 'alaa kulli syai-in qadiir, laa ilaaha illallaahu wahdahu, anjaza wa'dahu, wa nashara 'abdahu, wa hazamal ahzaaba wahdahu",
-          "translation": "Sesungguhnya Shafa dan Marwah termasuk syiar-syiar Allah... Tidak ada ilah (yang berhak disembah) selain Allah semata, tiada sekutu bagi-Nya, bagi-Nya kerajaan dan segala pujian, dan Dia Maha Kuasa atas segala sesuatu. Tidak ada ilah selain Allah semata, Dia telah menepati janji-Nya, menolong hamba-Nya, dan mengalahkan golongan-golongan (musuh) sendirian.",
-          "source": "HR. Muslim 2/888. QS. Al-Baqarah 2:158"
-        }
-      ]
-    },
-    {
-      "id": 155,
-      "category_name": "Dzikir di Muzdalifah",
-      "prayers": [
-        {
-          "arabic": "لَا إِلَهَ إِلَّا اللَّهُ وَاللَّهُ أَكْبَرُ",
-          "transliteration": "Laa ilaaha illallaahu wallaahu akbar",
-          "translation": "Tidak ada ilah yang berhak disembah selain Allah, dan Allah Maha Besar. (Rasulullah ﷺ naik ke atas Al-Masy'ari Al-Haram [Muzdalifah] lalu berdoa, bertakbir, dan bertahlil).",
-          "source": "HR. Muslim 2/891"
-        }
-      ]
-    },
-    {
-      "id": 156,
-      "category_name": "Takbir Ketika Melempar Jumrah",
-      "prayers": [
-        {
-          "arabic": "اللَّهُ أَكْبَرُ",
-          "transliteration": "Allaahu akbar",
-          "translation": "Allah Maha Besar. (Diucapkan setiap kali melempar batu kerikil di setiap Jamrah).",
-          "source": "HR. Al-Bukhari. Lihat Manasik Al-Hajj oleh Al-Albani"
-        }
-      ]
-    },
-    {
-      "id": 157,
+      "id": 142,
       "category_name": "Keutamaan Shalawat atas Nabi ﷺ",
       "prayers": [
         {
@@ -2748,7 +2560,7 @@
       ]
     },
     {
-      "id": 158,
+      "id": 143,
       "category_name": "Keutamaan Dzikir dan Tasbih",
       "prayers": [
         {
@@ -2772,7 +2584,7 @@
       ]
     },
     {
-      "id": 159,
+      "id": 144,
       "category_name": "Doa Takut Kezaliman Penguasa",
       "prayers": [
         {
@@ -2784,7 +2596,7 @@
       ]
     },
     {
-      "id": 160,
+      "id": 145,
       "category_name": "Doa Melawan Musuh",
       "prayers": [
         {
@@ -2796,7 +2608,7 @@
       ]
     },
     {
-      "id": 161,
+      "id": 146,
       "category_name": "Doa Menolak Kesialan (Mendengar Suara Burung, dll)",
       "prayers": [
         {
@@ -2808,7 +2620,7 @@
       ]
     },
     {
-      "id": 162,
+      "id": 147,
       "category_name": "Cara Nabi ﷺ Bertasbih",
       "prayers": [
         {
@@ -2821,7 +2633,7 @@
       ]
     },
     {
-      "id": 163,
+      "id": 148,
       "category_name": "Doa untuk Orang yang Baru Menikah (Walimah)",
       "prayers": [
         {
@@ -2834,7 +2646,7 @@
       ]
     },
     {
-      "id": 164,
+      "id": 149,
       "category_name": "Doa Malam Pengantin (Memegang Ubun-ubun Istri)",
       "prayers": [
         {
@@ -2846,19 +2658,7 @@
       ]
     },
     {
-      "id": 165,
-      "category_name": "Doa Takbir & Tasbih dalam Perjalanan",
-      "prayers": [
-        {
-          "arabic": "كَانَ النَّبِيُّ ﷺ وَجُيُوشُهُ إِذَا عَلَوُا الثَّنَايَا كَبَّرُوا وَإِذَا هَبَطُوا سَبَّحُوا",
-          "transliteration": "Kaanan nabiyyu ﷺ wa juyuushuhu idzaa 'alawuts tsanaayaa kabbaruu wa idzaa habathuu sabbahuu",
-          "translation": "Nabi ﷺ dan para pasukannya, jika mendaki bukit/tanjakan mereka bertakbir (Allaahu Akbar) dan jika menuruni lembah mereka bertasbih (Subhaanallaah).",
-          "source": "HR. Al-Bukhari. Lihat Fathul Baari 6/135"
-        }
-      ]
-    },
-    {
-      "id": 166,
+      "id": 150,
       "category_name": "Ucapan Selamat atas Kelahiran Bayi",
       "prayers": [
         {
@@ -2877,19 +2677,7 @@
       ]
     },
     {
-      "id": 167,
-      "category_name": "Doa Menangkal Deception Setan yang Membandel",
-      "prayers": [
-        {
-          "arabic": "أَعُوذُ بِاللَّهِ السَّمِيعِ الْعَلِيمِ مِنَ الشَّيْطَانِ الرَّجِيمِ، مِنْ هَمْزِهِ وَنَفْخِهِ وَنَفْثِهِ",
-          "transliteration": "A'uudzu billaahis samii'il 'aliimi minasy syaithaanir rajiim, min hamzihii wa nafkhihii wa naftsih",
-          "translation": "Aku berlindung kepada Allah Yang Maha Mendengar lagi Maha Mengetahui dari setan yang terkutuk, dari godaan (yang menyebabkan gila), kesombongan, dan sihirnya.",
-          "source": "HR. Abu Dawud 1/203, At-Tirmidzi 2/5, Ibnu Majah"
-        }
-      ]
-    },
-    {
-      "id": 168,
+      "id": 151,
       "category_name": "Doa Ketika Terjadi Gerhana (Kusuf / Khusuf)",
       "prayers": [
         {
@@ -2901,7 +2689,7 @@
       ]
     },
     {
-      "id": 169,
+      "id": 152,
       "category_name": "Shalawat setelah Tasyahhud (Doa Ibrahimiyyah)",
       "prayers": [
         {
@@ -2913,7 +2701,7 @@
       ]
     },
     {
-      "id": 170,
+      "id": 153,
       "category_name": "Doa Shalat Jenazah (Kemajuan Pahala / Anak yang Meninggal)",
       "prayers": [
         {
@@ -2925,14 +2713,211 @@
       ]
     },
     {
-      "id": 171,
-      "category_name": "Doa Ketika Melihat Orang Cacat atau Tertimpa Bala",
+      "id": 154,
+      "category_name": "Doa Haji & Umrah",
       "prayers": [
         {
-          "arabic": "الْحَمْدُ لِلَّهِ الَّذِي عَافَانِي مِمَّا ابْتَلَاكَ بِهِ وَفَضَّلَنِي عَلَى كَثِيرٍ مِمَّنْ خَلَقَ تَفْضِيلًا",
-          "transliteration": "Alhamdulillaahilladzii 'aafaanii mimmab talaaka bihii wa fadh-dhalanii 'alaa katsiirin mimman khalaqa tafdhiilaa",
-          "translation": "Segala puji bagi Allah yang telah menyelamatkanku dari apa yang menimpamu dan mengutamakanku atas banyak makhluk-Nya dengan keutamaan yang sempurna. (Barangsiapa membaca doa ini, ia tidak akan ditimpa bala tersebut).",
-          "source": "HR. At-Tirmidzi 5/493, Ibnu Majah. Lihat Shahih At-Tirmidzi 3/153"
+          "arabic": "لَبَّيْكَ اللَّهُمَّ لَبَّيْكَ، لَبَّيْكَ لَا شَرِيكَ لَكَ لَبَّيْكَ، إِنَّ الْحَمْدَ وَالنِّعْمَةَ لَكَ وَالْمُلْكَ، لَا شَرِيكَ لَكَ",
+          "transliteration": "Labbaikallahumma labbaik, labbaika laa syariika laka labbaik, innal hamda wan ni'mata laka wal mulk, laa syariika lak",
+          "translation": "Aku penuhi panggilan-Mu ya Allah, aku penuhi panggilan-Mu. Aku penuhi panggilan-Mu, tiada sekutu bagi-Mu, aku penuhi panggilan-Mu. Sesungguhnya segala puji, nikmat, dan kerajaan adalah milik-Mu, tiada sekutu bagi-Mu.",
+          "source": "HR. Al-Bukhari 3/408, Muslim 2/841",
+          "label": "Talbiyah Haji & Umrah"
+        },
+        {
+          "arabic": "اللَّهُ أَكْبَرُ",
+          "transliteration": "Allaahu akbar",
+          "translation": "Allah Maha Besar. (Diucapkan setiap kali melewati Hajar Aswad saat thawaf).",
+          "source": "HR. Al-Bukhari 3/476",
+          "label": "Takbir di Hajar Aswad (Thawaf)"
+        },
+        {
+          "arabic": "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ",
+          "transliteration": "Rabbanaa aatinaa fid dunyaa hasanatan wa fil aakhirati hasanatan wa qinaa 'adzaaban naar",
+          "translation": "Ya Rabb kami, berilah kami kebaikan di dunia dan kebaikan di akhirat, dan lindungilah kami dari azab neraka.",
+          "source": "HR. Abu Dawud 2/179, Ahmad 3/411. QS. Al-Baqarah 2:201",
+          "label": "Doa Antara Rukun Yamani dan Hajar Aswad"
+        },
+        {
+          "arabic": "إِنَّ الصَّفَا وَالْمَرْوَةَ مِنْ شَعَائِرِ اللَّهِ... لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ، لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ، أَنْجَزَ وَعْدَهُ، وَنَصَرَ عَبْدَهُ، وَهَزَمَ الْأَحْزَابَ وَحْدَهُ",
+          "transliteration": "Innash shafaa wal marwata min sya'aa-irillaah... Laa ilaaha illallaahu wahdahu laa syariika lahu, lahul mulku wa lahul hamdu wa huwa 'alaa kulli syai-in qadiir, laa ilaaha illallaahu wahdahu, anjaza wa'dahu, wa nashara 'abdahu, wa hazamal ahzaaba wahdahu",
+          "translation": "Sesungguhnya Shafa dan Marwah termasuk syiar-syiar Allah... Tidak ada ilah (yang berhak disembah) selain Allah semata, tiada sekutu bagi-Nya, bagi-Nya kerajaan dan segala pujian, dan Dia Maha Kuasa atas segala sesuatu. Tidak ada ilah selain Allah semata, Dia telah menepati janji-Nya, menolong hamba-Nya, dan mengalahkan golongan-golongan (musuh) sendirian.",
+          "source": "HR. Muslim 2/888. QS. Al-Baqarah 2:158",
+          "label": "Doa di Bukit Shafa dan Marwah (Sa'i)"
+        },
+        {
+          "arabic": "لَا إِلَهَ إِلَّا اللَّهُ وَاللَّهُ أَكْبَرُ",
+          "transliteration": "Laa ilaaha illallaahu wallaahu akbar",
+          "translation": "Tidak ada ilah yang berhak disembah selain Allah, dan Allah Maha Besar. (Rasulullah ﷺ naik ke atas Al-Masy'ari Al-Haram [Muzdalifah] lalu berdoa, bertakbir, dan bertahlil).",
+          "source": "HR. Muslim 2/891",
+          "label": "Dzikir di Muzdalifah"
+        },
+        {
+          "arabic": "اللَّهُ أَكْبَرُ",
+          "transliteration": "Allaahu akbar",
+          "translation": "Allah Maha Besar. (Diucapkan setiap kali melempar batu kerikil di setiap Jamrah).",
+          "source": "HR. Al-Bukhari. Lihat Manasik Al-Hajj oleh Al-Albani",
+          "label": "Takbir Ketika Melempar Jumrah"
+        }
+      ]
+    },
+    {
+      "id": 155,
+      "category_name": "Doa Musafir (Orang yang Bepergian)",
+      "prayers": [
+        {
+          "arabic": "أَسْتَوْدِعُكُمُ اللَّهَ الَّذِي لَا تَضِيعُ وَدَائِعُهُ",
+          "transliteration": "Astawdi'ukumul laahalladzii laa tadhii'u wadaa-i'uh",
+          "translation": "Aku menitipkan kalian kepada Allah yang titipan-Nya tidak pernah hilang.",
+          "source": "HR. Ahmad 2/403, Ibnu Majah 2/943",
+          "label": "Doa Musafir untuk Orang yang Menetap"
+        },
+        {
+          "arabic": "أَسْتَوْدِعُ اللَّهَ دِينَكَ وَأَمَانَتَكَ وَخَوَاتِيمَ عَمَلِكَ",
+          "transliteration": "Astawdi'ullaaha diinaka wa amaanataka wa khawaatiima 'amalika",
+          "translation": "Aku menitipkan kepada Allah agamamu, amanatmu, dan akhir-akhir amalmu.",
+          "source": "HR. Ahmad 2/7, At-Tirmidzi 5/499",
+          "label": "Doa Orang yang Menetap untuk Musafir"
+        },
+        {
+          "arabic": "زَوَّدَكَ اللَّهُ التَّقْوَى، وَغَفَرَ ذَنْبَكَ، وَيَسَّرَ لَكَ الْخَيْرَ حَيْثُمَا كُنْتَ",
+          "transliteration": "Zawwadakallaahut taqwaa, wa ghafara dzanbaka, wa yassara lakal khaira haitsumaa kunta",
+          "translation": "Semoga Allah membekalimu takwa, mengampuni dosamu, dan memudahkan kebaikan bagimu di mana pun engkau berada.",
+          "source": "HR. At-Tirmidzi 5/499",
+          "label": "Doa Orang yang Menetap untuk Musafir"
+        },
+        {
+          "arabic": "سَمِعَ سَامِعٌ بِحَمْدِ اللَّهِ وَحُسْنِ بَلَائِهِ عَلَيْنَا، رَبَّنَا صَاحِبْنَا وَأَفْضِلْ عَلَيْنَا، عَائِذًا بِاللَّهِ مِنَ النَّارِ",
+          "transliteration": "Sami'a saami'un bihamdillaahi wa husni balaa-ihii 'alainaa, rabbanaa shahibnaa wa afdlil 'alainaa, 'aa-idzan billaahi minan naar",
+          "translation": "Semoga yang mendengar bersaksi atas pujian kami kepada Allah dan nikmat-Nya yang baik kepada kami. Ya Rabb kami, temani dan limpahkanlah karunia-Mu kepada kami, kami berlindung kepada Allah dari api neraka.",
+          "source": "HR. Muslim 4/2086",
+          "label": "Doa Musafir Menjelang Subuh"
+        },
+        {
+          "arabic": "كَانَ النَّبِيُّ ﷺ وَجُيُوشُهُ إِذَا عَلَوُا الثَّنَايَا كَبَّرُوا وَإِذَا هَبَطُوا سَبَّحُوا",
+          "transliteration": "Kaanan nabiyyu ﷺ wa juyuushuhu idzaa 'alawuts tsanaayaa kabbaruu wa idzaa habathuu sabbahuu",
+          "translation": "Nabi ﷺ dan para pasukannya, jika mendaki bukit/tanjakan mereka bertakbir (Allaahu Akbar) dan jika menuruni lembah mereka bertasbih (Subhaanallaah).",
+          "source": "HR. Al-Bukhari. Lihat Fathul Baari 6/135",
+          "label": "Doa Takbir & Tasbih dalam Perjalanan"
+        }
+      ]
+    },
+    {
+      "id": 156,
+      "category_name": "Doa Ketika Terjadi Kebakaran",
+      "prayers": [
+        {
+          "arabic": "اللَّهُ أَكْبَرُ",
+          "transliteration": "Allaahu akbar",
+          "translation": "Allah Maha Besar. (Rasulullah ﷺ bersabda: 'Jika kalian melihat kebakaran, maka bertakbirlah karena takbir dapat memadamkannya.')",
+          "source": "HR. Ibnu As-Sunni dalam 'Amalul Yaum wal Lailah"
+        }
+      ]
+    },
+    {
+      "id": 157,
+      "category_name": "Doa Ketika Memasuki Bulan Baru Hijriyyah",
+      "prayers": [
+        {
+          "arabic": "اللَّهُمَّ أَدْخِلْهُ عَلَيْنَا بِالْأَمْنِ وَالْإِيمَانِ وَالسَّلَامَةِ وَالْإِسْلَامِ وَجِوَارٍ مِنَ الشَّيْطَانِ وَرِضْوَانٍ مِنَ الرَّحْمَنِ",
+          "transliteration": "Allaahumma adkhilhu 'alainaa bil amni wal iimaani was salaamati wal islaami wa jiwaarin minasy syaithaani wa ridhwaanin minar rahmaan",
+          "translation": "Ya Allah, masukkanlah bulan ini atas kami dengan keamanan, keimanan, keselamatan, keislaman, perlindungan dari setan, dan keridhaan dari Ar-Rahman.",
+          "source": "HR. Ath-Thabrani dalam Ad-Du'a. Lihat Majma' Az-Zawa'id 10/140"
+        }
+      ]
+    },
+    {
+      "id": 158,
+      "category_name": "Doa Ketika Minum Zamzam",
+      "prayers": [
+        {
+          "arabic": "اللَّهُمَّ إِنِّي أَسْأَلُكَ عِلْمًا نَافِعًا وَرِزْقًا وَاسِعًا وَشِفَاءً مِنْ كُلِّ دَاءٍ",
+          "transliteration": "Allaahumma innii as-aluka 'ilman naafi'an wa rizqan waasi'an wa syifaa-an min kulli daa-in",
+          "translation": "Ya Allah, sesungguhnya aku memohon kepada-Mu ilmu yang bermanfaat, rezeki yang luas, dan kesembuhan dari segala penyakit.",
+          "source": "HR. Ad-Daraquthni, Al-Hakim. Lihat Shahih Al-Jami' 5502"
+        }
+      ]
+    },
+    {
+      "id": 159,
+      "category_name": "Doa Ketika Keluar dari Majelis / Pertemuan",
+      "prayers": [
+        {
+          "arabic": "سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا أَنْتَ، أَسْتَغْفِرُكَ وَأَتُوبُ إِلَيْكَ",
+          "transliteration": "Subhaanakallaahumma wa bihamdika, asyhadu an laa ilaaha illaa anta, astaghfiruka wa atuubu ilaik",
+          "translation": "Maha Suci Engkau ya Allah, dan dengan memuji-Mu. Aku bersaksi bahwa tidak ada ilah selain Engkau. Aku memohon ampun dan bertaubat kepada-Mu.",
+          "source": "HR. Abu Dawud, At-Tirmidzi, An-Nasa'i, Ibnu Majah, Ahmad"
+        }
+      ]
+    },
+    {
+      "id": 160,
+      "category_name": "Doa Mohon Ampunan untuk Kaum Muslimin",
+      "prayers": [
+        {
+          "arabic": "اللَّهُمَّ اغْفِرْ لِلْمُسْلِمِينَ وَالْمُسْلِمَاتِ وَالْمُؤْمِنِينَ وَالْمُؤْمِنَاتِ الْأَحْيَاءِ مِنْهُمْ وَالْأَمْوَاتِ",
+          "transliteration": "Allaahummagh-fir lil muslimiina wal muslimaat, wal mu'miniina wal mu'minaat, al ahyaa-i minhum wal amwaat",
+          "translation": "Ya Allah, ampunilah orang-orang Islam laki-laki dan perempuan, orang-orang mukmin laki-laki dan perempuan, yang masih hidup maupun yang sudah meninggal.",
+          "source": "HR. Muslim. Lihat Shahih Al-Jami' No. 7981"
+        }
+      ]
+    },
+    {
+      "id": 161,
+      "category_name": "Doa Ketika Melihat Kebun / Tanaman yang Indah",
+      "prayers": [
+        {
+          "arabic": "مَا شَاءَ اللَّهُ لَا قُوَّةَ إِلَّا بِاللَّهِ",
+          "transliteration": "Maa syaa-allaahu laa quwwata illaa billaah",
+          "translation": "Ini atas kehendak Allah, tidak ada kekuatan kecuali dengan pertolongan Allah. (Diucapkan agar terhindar dari ain/mata jahat).",
+          "source": "QS. Al-Kahfi 18:39"
+        }
+      ]
+    },
+    {
+      "id": 162,
+      "category_name": "Doa Ketika Hati Sedang Keras / Lalai",
+      "prayers": [
+        {
+          "arabic": "يَا مُقَلِّبَ الْقُلُوبِ ثَبِّتْ قَلْبِي عَلَى دِينِكَ",
+          "transliteration": "Yaa muqallibal quluubi tsabbit qalbii 'alaa diinika",
+          "translation": "Wahai Dzat yang membolak-balikkan hati, teguhkanlah hatiku di atas agama-Mu.",
+          "source": "HR. At-Tirmidzi 5/538, Ahmad 6/294. Lihat Shahih Al-Jami' 5/333"
+        }
+      ]
+    },
+    {
+      "id": 163,
+      "category_name": "Doa Mohon Keberkahan Waktu",
+      "prayers": [
+        {
+          "arabic": "اللَّهُمَّ بَارِكْ لِأُمَّتِي فِي بُكُورِهَا",
+          "transliteration": "Allaahumma baarik li ummatii fii bukuurihaa",
+          "translation": "Ya Allah, berkahilah umatku di waktu paginya. (Rasulullah ﷺ mendoakan keberkahan di waktu pagi bagi umatnya).",
+          "source": "HR. Abu Dawud 3/517, At-Tirmidzi 3/30, Ibnu Majah 2/752"
+        }
+      ]
+    },
+    {
+      "id": 164,
+      "category_name": "Doa Memohon Kematian yang Baik (Husnul Khatimah)",
+      "prayers": [
+        {
+          "arabic": "اللَّهُمَّ اجْعَلْ خَيْرَ عُمُرِي آخِرَهُ، وَخَيْرَ عَمَلِي خَوَاتِمَهُ، وَخَيْرَ أَيَّامِي يَوْمَ أَلْقَاكَ",
+          "transliteration": "Allaahummaj'al khaira 'umrii aakhirahu, wa khaira 'amalii khawaatimahu, wa khaira ayyaamii yauma alqaak",
+          "translation": "Ya Allah, jadikanlah sebaik-baik umurku di akhirnya, sebaik-baik amalku di penghujungnya, dan sebaik-baik hari-hariku pada hari aku bertemu-Mu.",
+          "source": "HR. Ibnu Hibban. Lihat Shahih Al-Jami' 1263"
+        }
+      ]
+    },
+    {
+      "id": 165,
+      "category_name": "Doa Masuk & Keluar Kendaraan (Pesawat, Kapal, dll)",
+      "prayers": [
+        {
+          "arabic": "سُبْحَانَ الَّذِي سَخَّرَ لَنَا هَذَا وَمَا كُنَّا لَهُ مُقْرِنِينَ وَإِنَّا إِلَى رَبِّنَا لَمُنْقَلِبُونَ",
+          "transliteration": "Subhaanal ladzii sakhkhara lanaa haadzaa wa maa kunnaa lahuu muqriniin, wa innaa ilaa rabbinaa lamunqalibuun",
+          "translation": "Maha Suci (Allah) yang telah menundukkan semua ini bagi kami padahal kami sebelumnya tidak mampu menguasainya, dan sesungguhnya kami akan kembali kepada Rabb kami.",
+          "source": "QS. Az-Zukhruf 43:13-14, HR. Muslim 2/978"
         }
       ]
     }

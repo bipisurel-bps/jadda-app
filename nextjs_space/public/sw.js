@@ -1,4 +1,4 @@
-const CACHE_NAME = 'doa-waris-v4';
+const CACHE_NAME = 'doa-waris-v5';
 const URLS_TO_CACHE = [
   '/',
   '/doa',
