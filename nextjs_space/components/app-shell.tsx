@@ -7,7 +7,7 @@ import { Home, BookOpen, Calculator, Info, Moon, Sun, Mail } from 'lucide-react'
 import { useTheme } from 'next-themes';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const APP_VERSION = '1.2.0';
+const APP_VERSION = '2.0.0';
 
 const navItems = [
   { href: '/', label: 'Beranda', icon: Home },

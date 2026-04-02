@@ -29,7 +29,7 @@ export default function TentangClient() {
             </div>
             <div>
               <strong className="text-sm text-foreground">Doa Harian</strong>
-              <p className="text-sm text-muted-foreground">Kumpulan doa dari kitab Hisnul Muslim karya Sa&apos;id bin Ali bin Wahf Al-Qahtani, mencakup 45 kategori dengan 105 doa lengkap — teks Arab, transliterasi Latin, terjemahan Indonesia, dan sumber hadits.</p>
+              <p className="text-sm text-muted-foreground">Kumpulan doa dari kitab Hisnul Muslim karya Sa&apos;id bin Ali bin Wahf Al-Qahtani, mencakup 110 kategori dengan 211 doa lengkap — teks Arab, transliterasi Latin, terjemahan Indonesia, dan sumber hadits.</p>
             </div>
           </li>
           <li className="flex items-start gap-3">
