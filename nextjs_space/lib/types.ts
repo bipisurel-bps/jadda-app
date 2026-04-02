@@ -49,6 +49,7 @@ export interface HeirResult {
   blocked: boolean;
   blockReason?: string;
   role: 'furudh' | 'asabah' | 'blocked';
+  perPersonAmount?: number;
 }
 
 export interface InheritanceResult {

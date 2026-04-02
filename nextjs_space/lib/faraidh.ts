@@ -335,7 +335,7 @@ export function calculateInheritance(
         name: 'Ayah',
         count: 1,
         basis: 'QS. An-Nisa 4:11 (Al-Umariyyatain)',
-        shareFraction: 'Sisa (Asabah)',
+        shareFraction: 'Sisa (Ashabah)',
         percentage: (fatherAmount / totalEstate) * 100,
         amount: fatherAmount,
         blocked: false,
@@ -482,29 +482,65 @@ export function calculateInheritance(
       const remainder = totalEstate - furudhTotal;
 
       if (remainder > 0) {
-        // Priority: First asabah in list gets remainder
-        // If multiple asabah groups, distribute based on priority
-        // Simplification: give to highest priority asabah
-        if (asabahList?.length === 1) {
-          const a = asabahList[0];
-          results.push({
-            name: a?.name ?? '',
-            count: a?.count ?? 1,
-            basis: a?.basis ?? '',
-            shareFraction: 'Sisa (Asabah)',
-            percentage: (remainder / totalEstate) * 100,
-            amount: remainder,
-            blocked: false,
-            role: 'asabah'
-          });
+        // Distribute remainder to highest priority asabah
+        const a = asabahList[0];
+        if (a?.isMaleAsabah && a?.name?.includes?.('&')) {
+          // Asabah bil-ghair: split into separate male & female entries with 2:1 ratio
+          const totalParts = a?.count ?? 1; // sons*2 + daughters
+          const perPart = remainder / totalParts;
+          
+          // Determine actual counts from name context
+          let maleCount = 0;
+          let femaleCount = 0;
+          const nameL = (a?.name ?? '').toLowerCase();
+          
+          if (nameL.includes('anak')) {
+            maleCount = heirs?.son ?? 0;
+            femaleCount = heirs?.daughter ?? 0;
+          } else if (nameL.includes('cucu')) {
+            maleCount = heirs?.grandsonFromSon ?? 0;
+            femaleCount = heirs?.granddaughterFromSon ?? 0;
+          } else if (nameL.includes('kandung')) {
+            maleCount = fullBrothers;
+            femaleCount = fullSisters;
+          } else if (nameL.includes('seayah')) {
+            maleCount = patHalfBrothers;
+            femaleCount = patHalfSisters;
+          }
+          
+          if (maleCount > 0) {
+            const maleTotal = perPart * 2 * maleCount;
+            const malePer = perPart * 2;
+            results.push({
+              name: nameL.includes('anak') ? `Anak laki-laki` : nameL.includes('cucu') ? `Cucu laki-laki` : nameL.includes('kandung') ? `Saudara laki-laki kandung` : `Saudara laki-laki seayah`,
+              count: maleCount,
+              basis: a?.basis ?? '',
+              shareFraction: `Ashabah (2:1)`,
+              percentage: (maleTotal / totalEstate) * 100,
+              amount: maleTotal,
+              blocked: false,
+              role: 'asabah'
+            });
+          }
+          if (femaleCount > 0) {
+            const femaleTotal = perPart * femaleCount;
+            results.push({
+              name: nameL.includes('anak') ? `Anak perempuan` : nameL.includes('cucu') ? `Cucu perempuan` : nameL.includes('kandung') ? `Saudara perempuan kandung` : `Saudara perempuan seayah`,
+              count: femaleCount,
+              basis: a?.basis ?? '',
+              shareFraction: `Ashabah (2:1)`,
+              percentage: (femaleTotal / totalEstate) * 100,
+              amount: femaleTotal,
+              blocked: false,
+              role: 'asabah'
+            });
+          }
         } else {
-          // Multiple asabah: first priority gets it
-          const a = asabahList[0];
           results.push({
             name: a?.name ?? '',
             count: a?.count ?? 1,
             basis: a?.basis ?? '',
-            shareFraction: 'Sisa (Asabah)',
+            shareFraction: 'Sisa (Ashabah)',
             percentage: (remainder / totalEstate) * 100,
             amount: remainder,
             blocked: false,
@@ -533,7 +569,7 @@ export function calculateInheritance(
   for (const r of results) {
     if ((r?.count ?? 0) > 1 && (r?.amount ?? 0) > 0) {
       const perPerson = r.amount / r.count;
-      r.name = `${r.name} (${r.count} orang, masing-masing Rp ${formatRupiah(perPerson)})`;
+      r.perPersonAmount = perPerson;
     }
   }
 

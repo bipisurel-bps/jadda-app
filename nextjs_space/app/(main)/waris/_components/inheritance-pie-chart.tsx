@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip } from 'recharts';
+import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip, Label } from 'recharts';
 import { HeirResult } from '@/lib/types';
 import { formatRupiah } from '@/lib/faraidh';
 
@@ -9,11 +9,28 @@ const COLORS = ['#1B6B4A', '#C9A84C', '#3B9B74', '#E8B960', '#2D8B62', '#D4A847'
 
 interface Props {
   heirs: HeirResult[];
+  totalEstate?: number;
 }
 
-export default function InheritancePieChart({ heirs }: Props) {
+const RADIAN = Math.PI / 180;
+
+function renderCustomLabel({ cx, cy, midAngle, innerRadius, outerRadius, percentage, name, value }: any) {
+  const radius = innerRadius + (outerRadius - innerRadius) * 1.35;
+  const x = cx + radius * Math.cos(-midAngle * RADIAN);
+  const y = cy + radius * Math.sin(-midAngle * RADIAN);
+
+  if ((percentage ?? 0) < 5) return null;
+
+  return (
+    <text x={x} y={y} fill="currentColor" textAnchor={x > cx ? 'start' : 'end'} dominantBaseline="central" fontSize={10} className="fill-foreground">
+      <tspan fontWeight="600">{(percentage ?? 0).toFixed(1)}%</tspan>
+      <tspan x={x} dy={14} fontSize={9} className="fill-muted-foreground">Rp {formatRupiah(value ?? 0)}</tspan>
+    </text>
+  );
+}
+
+export default function InheritancePieChart({ heirs, totalEstate }: Props) {
   const chartData = (heirs ?? [])?.map?.((h: HeirResult, idx: number) => {
-    // Extract clean name (remove per-person detail)
     const name = (h?.name ?? '')?.split?.('(')?.[0]?.trim?.() ?? `Ahli Waris ${idx + 1}`;
     return {
       name,
@@ -31,24 +48,33 @@ export default function InheritancePieChart({ heirs }: Props) {
           data={chartData}
           cx="50%"
           cy="50%"
-          innerRadius={50}
-          outerRadius={100}
+          innerRadius={45}
+          outerRadius={90}
           paddingAngle={2}
           dataKey="value"
           animationBegin={0}
           animationDuration={800}
+          label={renderCustomLabel}
+          labelLine={false}
         >
           {chartData?.map?.((entry: any, index: number) => (
             <Cell key={`cell-${index}`} fill={COLORS?.[index % (COLORS?.length ?? 1)] ?? '#1B6B4A'} />
           )) ?? []}
         </Pie>
         <Tooltip
-          formatter={(value: any) => [`Rp ${formatRupiah(value ?? 0)}`, '']}
+          formatter={(value: any, _name: any, props: any) => [
+            `Rp ${formatRupiah(value ?? 0)} (${(props?.payload?.percentage ?? 0).toFixed(1)}%)`,
+            ''
+          ]}
           contentStyle={{ fontSize: 11, borderRadius: 8, border: 'none', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}
         />
         <Legend
           verticalAlign="top"
           wrapperStyle={{ fontSize: 11 }}
+          formatter={(value: any, entry: any) => {
+            const pct = entry?.payload?.percentage ?? 0;
+            return `${value} (${pct.toFixed(1)}%)`;
+          }}
         />
       </PieChart>
     </ResponsiveContainer>

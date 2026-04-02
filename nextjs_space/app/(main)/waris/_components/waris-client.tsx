@@ -303,7 +303,12 @@ export default function WarisClient() {
                   <tbody>
                     {(result?.heirs ?? [])?.map?.((heir: HeirResult, idx: number) => (
                       <tr key={idx} className="border-b border-border/30">
-                        <td className="py-2.5 px-2 text-foreground font-medium">{heir?.name}</td>
+                        <td className="py-2.5 px-2 text-foreground font-medium">
+                          <div>{heir?.name}{(heir?.count ?? 0) > 1 ? ` (${heir.count} orang)` : ''}</div>
+                          {(heir?.perPersonAmount ?? 0) > 0 && (heir?.count ?? 0) > 1 && (
+                            <div className="text-xs text-muted-foreground mt-0.5">Masing-masing: Rp {formatRupiah(heir.perPersonAmount ?? 0)}</div>
+                          )}
+                        </td>
                         <td className="py-2.5 px-2 text-muted-foreground text-xs">{heir?.basis}</td>
                         <td className="py-2.5 px-2 text-center text-foreground font-mono text-xs">{heir?.shareFraction}</td>
                         <td className="py-2.5 px-2 text-right text-foreground font-mono">{(heir?.percentage ?? 0)?.toFixed?.(1) ?? '0'}%</td>
