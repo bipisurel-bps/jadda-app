@@ -12,15 +12,15 @@ const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mon
 
 export const metadata = {
   metadataBase: new URL(process.env.NEXTAUTH_URL || 'http://localhost:3000'),
-  title: 'Doa & Waris — Doa, Hadits, Zakat & Waris Islami',
-  description: 'Kumpulan doa harian dari Hisnul Muslim, Hadits Arbain An-Nawawi, kalkulator zakat, dan kalkulator waris (faraidh) sesuai Al-Quran dan Sunnah.',
+  title: 'Jariyah — Doa, Hadits, Zakat & Waris Islami',
+  description: 'Jariyah — Kumpulan doa harian dari Hisnul Muslim, Hadits Arbain An-Nawawi, kalkulator zakat & peternakan, dan kalkulator waris (faraidh) sesuai Al-Quran dan Sunnah.',
   icons: {
     icon: '/favicon.svg',
     shortcut: '/favicon.svg',
   },
   openGraph: {
-    title: 'Doa & Waris — Doa, Hadits, Zakat & Waris Islami',
-    description: 'Kumpulan doa harian dari Hisnul Muslim, Hadits Arbain An-Nawawi, kalkulator zakat, dan kalkulator waris (faraidh) sesuai Al-Quran dan Sunnah.',
+    title: 'Jariyah — Doa, Hadits, Zakat & Waris Islami',
+    description: 'Jariyah — Kumpulan doa harian dari Hisnul Muslim, Hadits Arbain An-Nawawi, kalkulator zakat & peternakan, dan kalkulator waris (faraidh) sesuai Al-Quran dan Sunnah.',
     images: ['/og-image.png'],
   },
 }
@@ -34,7 +34,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="theme-color" content="#1B6B4A" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <meta name="apple-mobile-web-app-title" content="Doa & Waris" />
+        <meta name="apple-mobile-web-app-title" content="Jariyah" />
       </head>
       <body className={`${dmSans.variable} ${jakartaSans.variable} ${jetbrainsMono.variable} font-sans`}>
         <ThemeProvider

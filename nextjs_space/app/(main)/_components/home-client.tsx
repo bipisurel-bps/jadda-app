@@ -42,7 +42,7 @@ export default function HomeClient() {
           </p>
           <h1 className="text-2xl md:text-3xl font-display font-bold mt-4 tracking-tight">Assalamu&apos;alaikum!</h1>
           <p className="mt-2 text-sm md:text-base opacity-90 max-w-xl">
-            Selamat datang di <strong>Doa & Waris</strong> — panduan doa harian dari Hisnul Muslim dan kalkulator waris (faraidh) sesuai Al-Qur&apos;an dan Sunnah.
+            Selamat datang di <strong>Jariyah</strong> — panduan doa harian, hadits, kalkulator zakat &amp; waris (faraidh) sesuai Al-Qur&apos;an dan Sunnah.
           </p>
         </div>
       </motion.div>
@@ -153,7 +153,7 @@ export default function HomeClient() {
                   </div>
                   <div>
                     <h2 className="font-display font-bold text-lg text-foreground">Kalkulator Zakat</h2>
-                    <p className="text-sm text-muted-foreground">Hitung zakat maal, fitrah, perdagangan &amp; pertanian</p>
+                    <p className="text-sm text-muted-foreground">Hitung zakat maal, fitrah, dagang, tani &amp; ternak</p>
                   </div>
                 </div>
                 <ChevronRight size={20} className="text-muted-foreground group-hover:text-pink-500 transition-colors" />

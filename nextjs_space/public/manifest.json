@@ -1,7 +1,7 @@
 {
-  "name": "Doa & Waris",
-  "short_name": "Doa & Waris",
-  "description": "Panduan Doa & Perhitungan Waris Islami",
+  "name": "Jariyah",
+  "short_name": "Jariyah",
+  "description": "Aplikasi Islam Lengkap — Doa, Hadits, Zakat & Waris",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#f7faf8",
