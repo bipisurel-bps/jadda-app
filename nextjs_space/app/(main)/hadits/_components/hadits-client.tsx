@@ -71,7 +71,7 @@ export default function HaditsClient() {
       {/* Header */}
       <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
         <h1 className="font-display font-bold text-2xl text-foreground">Hadits Arbain An-Nawawi</h1>
-        <p className="text-sm text-muted-foreground mt-1">40 hadits pokok-pokok ajaran Islam pilihan Imam An-Nawawi</p>
+        <p className="text-sm text-muted-foreground mt-1">42 hadits pokok-pokok ajaran Islam pilihan Imam An-Nawawi &amp; Ibnu Rajab</p>
       </motion.div>
 
       {/* Search & Filter */}

@@ -182,7 +182,7 @@ export default function ZakatClient() {
         <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}
           className="rounded-xl bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800/50 p-4">
           <CurrencyInput
-            label="\u2B50 Harga Emas per Gram (saat ini)"
+            label="Harga Emas per Gram (saat ini)"
             value={hargaEmas}
             onChange={setHargaEmas}
             placeholder="Contoh: 1.800.000"

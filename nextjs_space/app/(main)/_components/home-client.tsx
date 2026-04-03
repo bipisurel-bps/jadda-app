@@ -130,7 +130,7 @@ export default function HomeClient() {
                   </div>
                   <div>
                     <h2 className="font-display font-bold text-lg text-foreground">Hadits Arbain</h2>
-                    <p className="text-sm text-muted-foreground">40 hadits pilihan Imam An-Nawawi</p>
+                    <p className="text-sm text-muted-foreground">42 hadits pilihan Imam An-Nawawi</p>
                   </div>
                 </div>
                 <ChevronRight size={20} className="text-muted-foreground group-hover:text-blue-500 transition-colors" />

@@ -7,7 +7,7 @@ import { Home, BookOpen, Calculator, Info, Moon, Sun, Mail, Coins, ScrollText } 
 import { useTheme } from 'next-themes';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const APP_VERSION = '3.1.0';
+const APP_VERSION = '1.1';
 
 const navItems = [
   { href: '/', label: 'Beranda', icon: Home },
@@ -140,7 +140,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
           {/* Divider & Version */}
           <div className="border-t border-border pt-4 flex flex-col sm:flex-row items-center justify-between gap-2">
             <p className="text-xs text-muted-foreground">
-              &copy; 2025 Jariyah — Aplikasi Islam Lengkap
+              &copy; 2026 Jariyah — Aplikasi Islam Lengkap
             </p>
             <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary/10 text-primary text-[11px] font-semibold">
               v{APP_VERSION}

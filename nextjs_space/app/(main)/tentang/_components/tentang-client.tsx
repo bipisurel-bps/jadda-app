@@ -29,7 +29,7 @@ export default function TentangClient() {
             </div>
             <div>
               <strong className="text-sm text-foreground">Doa Harian</strong>
-              <p className="text-sm text-muted-foreground">Kumpulan doa dari kitab Hisnul Muslim karya Sa&apos;id bin Ali bin Wahf Al-Qahtani, mencakup 163 kategori dengan 288 doa lengkap — teks Arab, transliterasi Latin, terjemahan Indonesia, dan sumber hadits.</p>
+              <p className="text-sm text-muted-foreground">Kumpulan doa dari kitab Hisnul Muslim karya Sa&apos;id bin Ali bin Wahf Al-Qahtani, mencakup 163 kategori dengan 309 doa lengkap — teks Arab, transliterasi Latin, terjemahan Indonesia, dan sumber hadits.</p>
             </div>
           </li>
           <li className="flex items-start gap-3">
@@ -47,7 +47,7 @@ export default function TentangClient() {
             </div>
             <div>
               <strong className="text-sm text-foreground">Hadits Arbain An-Nawawi</strong>
-              <p className="text-sm text-muted-foreground">40 hadits pilihan Imam An-Nawawi yang merupakan pokok-pokok ajaran Islam, lengkap dengan teks Arab, terjemahan, dan sumber periwayatan.</p>
+              <p className="text-sm text-muted-foreground">42 hadits pilihan Imam An-Nawawi dan Ibnu Rajab yang merupakan pokok-pokok ajaran Islam, lengkap dengan teks Arab, terjemahan, dan sumber periwayatan.</p>
             </div>
           </li>
           <li className="flex items-start gap-3">
@@ -71,7 +71,7 @@ export default function TentangClient() {
           </li>
           <li className="flex items-start gap-2">
             <span className="text-primary font-bold">•</span>
-            <span><strong>Hadits Arbain An-Nawawi</strong> — Imam Yahya bin Syaraf An-Nawawi (40 Hadits Pokok)</span>
+            <span><strong>Hadits Arbain An-Nawawi</strong> — Imam Yahya bin Syaraf An-Nawawi &amp; Ibnu Rajab (42 Hadits Pokok)</span>
           </li>
           <li className="flex items-start gap-2">
             <span className="text-primary font-bold">•</span>
