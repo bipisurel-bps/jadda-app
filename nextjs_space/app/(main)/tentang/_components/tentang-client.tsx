@@ -41,6 +41,24 @@ export default function TentangClient() {
               <p className="text-sm text-muted-foreground">Perhitungan pembagian warisan sesuai hukum Islam berdasarkan Al-Qur&apos;an dan Sunnah. Mendukung berbagai kasus termasuk &apos;Aul, Radd, Hajb, dan Al-Umariyyatain.</p>
             </div>
           </li>
+          <li className="flex items-start gap-3">
+            <div className="w-6 h-6 rounded-md bg-blue-500/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <BookOpen size={12} className="text-blue-500" />
+            </div>
+            <div>
+              <strong className="text-sm text-foreground">Hadits Arbain An-Nawawi</strong>
+              <p className="text-sm text-muted-foreground">40 hadits pilihan Imam An-Nawawi yang merupakan pokok-pokok ajaran Islam, lengkap dengan teks Arab, terjemahan, dan sumber periwayatan.</p>
+            </div>
+          </li>
+          <li className="flex items-start gap-3">
+            <div className="w-6 h-6 rounded-md bg-pink-500/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <Scale size={12} className="text-pink-500" />
+            </div>
+            <div>
+              <strong className="text-sm text-foreground">Kalkulator Zakat</strong>
+              <p className="text-sm text-muted-foreground">Perhitungan zakat maal, fitrah, perdagangan, dan pertanian sesuai ketentuan syariat Islam.</p>
+            </div>
+          </li>
         </ul>
       </motion.div>
 
@@ -50,6 +68,10 @@ export default function TentangClient() {
           <li className="flex items-start gap-2">
             <span className="text-primary font-bold">•</span>
             <span><strong>Hisnul Muslim</strong> — Said bin Ali bin Wahf Al-Qahthani (Kumpulan Doa)</span>
+          </li>
+          <li className="flex items-start gap-2">
+            <span className="text-primary font-bold">•</span>
+            <span><strong>Hadits Arbain An-Nawawi</strong> — Imam Yahya bin Syaraf An-Nawawi (40 Hadits Pokok)</span>
           </li>
           <li className="flex items-start gap-2">
             <span className="text-primary font-bold">•</span>

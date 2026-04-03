@@ -12,15 +12,15 @@ const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mon
 
 export const metadata = {
   metadataBase: new URL(process.env.NEXTAUTH_URL || 'http://localhost:3000'),
-  title: 'Doa & Waris — Panduan Doa & Perhitungan Waris Islami',
-  description: 'Kumpulan doa harian dari Hisnul Muslim dan kalkulator waris (faraidh) sesuai Al-Quran dan Sunnah.',
+  title: 'Doa & Waris — Doa, Hadits, Zakat & Waris Islami',
+  description: 'Kumpulan doa harian dari Hisnul Muslim, Hadits Arbain An-Nawawi, kalkulator zakat, dan kalkulator waris (faraidh) sesuai Al-Quran dan Sunnah.',
   icons: {
     icon: '/favicon.svg',
     shortcut: '/favicon.svg',
   },
   openGraph: {
-    title: 'Doa & Waris — Panduan Doa & Perhitungan Waris Islami',
-    description: 'Kumpulan doa harian dari Hisnul Muslim dan kalkulator waris (faraidh) sesuai Al-Quran dan Sunnah.',
+    title: 'Doa & Waris — Doa, Hadits, Zakat & Waris Islami',
+    description: 'Kumpulan doa harian dari Hisnul Muslim, Hadits Arbain An-Nawawi, kalkulator zakat, dan kalkulator waris (faraidh) sesuai Al-Quran dan Sunnah.',
     images: ['/og-image.png'],
   },
 }

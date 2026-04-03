@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { BookOpen, Calculator, Star, ChevronRight } from 'lucide-react';
+import { BookOpen, Calculator, Star, ChevronRight, ScrollText, Coins } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { dailyVerses } from '@/lib/quran-verses';
 
@@ -115,6 +115,52 @@ export default function HomeClient() {
             </div>
           </Link>
         </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+        >
+          <Link href="/hadits" className="block">
+            <div className="group rounded-xl bg-card p-6 shadow-sm border border-border/50 hover:shadow-md hover:border-blue-400/30 transition-all cursor-pointer">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center group-hover:bg-blue-500/20 transition-colors">
+                    <ScrollText size={24} className="text-blue-500" />
+                  </div>
+                  <div>
+                    <h2 className="font-display font-bold text-lg text-foreground">Hadits Arbain</h2>
+                    <p className="text-sm text-muted-foreground">40 hadits pilihan Imam An-Nawawi</p>
+                  </div>
+                </div>
+                <ChevronRight size={20} className="text-muted-foreground group-hover:text-blue-500 transition-colors" />
+              </div>
+            </div>
+          </Link>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, x: 20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.6 }}
+        >
+          <Link href="/zakat" className="block">
+            <div className="group rounded-xl bg-card p-6 shadow-sm border border-border/50 hover:shadow-md hover:border-pink-400/30 transition-all cursor-pointer">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-xl bg-pink-500/10 flex items-center justify-center group-hover:bg-pink-500/20 transition-colors">
+                    <Coins size={24} className="text-pink-500" />
+                  </div>
+                  <div>
+                    <h2 className="font-display font-bold text-lg text-foreground">Kalkulator Zakat</h2>
+                    <p className="text-sm text-muted-foreground">Hitung zakat maal, fitrah, perdagangan &amp; pertanian</p>
+                  </div>
+                </div>
+                <ChevronRight size={20} className="text-muted-foreground group-hover:text-pink-500 transition-colors" />
+              </div>
+            </div>
+          </Link>
+        </motion.div>
       </div>
 
       {/* Brief Description */}
@@ -125,7 +171,7 @@ export default function HomeClient() {
         className="rounded-xl bg-muted/50 p-5 text-center"
       >
         <p className="text-sm text-muted-foreground leading-relaxed max-w-lg mx-auto">
-          Aplikasi ini dirancang untuk membantu umat Islam dalam mengamalkan doa sehari-hari dan memahami pembagian waris sesuai hukum Islam. Semua konten bersumber dari referensi terpercaya.
+          Aplikasi ini dirancang untuk membantu umat Islam dalam mengamalkan doa sehari-hari, mempelajari hadits, menghitung zakat, dan memahami pembagian waris sesuai hukum Islam. Semua konten bersumber dari Al-Quran dan As-Sunnah.
         </p>
       </motion.div>
     </div>

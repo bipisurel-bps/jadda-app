@@ -3,16 +3,18 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Home, BookOpen, Calculator, Info, Moon, Sun, Mail } from 'lucide-react';
+import { Home, BookOpen, Calculator, Info, Moon, Sun, Mail, Coins, ScrollText } from 'lucide-react';
 import { useTheme } from 'next-themes';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const APP_VERSION = '2.1.0';
+const APP_VERSION = '3.0.0';
 
 const navItems = [
   { href: '/', label: 'Beranda', icon: Home },
   { href: '/doa', label: 'Doa', icon: BookOpen },
+  { href: '/hadits', label: 'Hadits', icon: ScrollText },
   { href: '/waris', label: 'Waris', icon: Calculator },
+  { href: '/zakat', label: 'Zakat', icon: Coins },
   { href: '/tentang', label: 'Tentang', icon: Info },
 ];
 

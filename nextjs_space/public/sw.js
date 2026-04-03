@@ -1,10 +1,13 @@
-const CACHE_NAME = 'doa-waris-v6';
+const CACHE_NAME = 'doa-waris-v7';
 const URLS_TO_CACHE = [
   '/',
   '/doa',
+  '/hadits',
   '/waris',
+  '/zakat',
   '/tentang',
   '/data/prayers.json',
+  '/data/hadits-arbain.json',
   '/favicon.svg',
   '/manifest.json'
 ];

@@ -5,7 +5,7 @@ import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip, Label } from
 import { HeirResult } from '@/lib/types';
 import { formatRupiah } from '@/lib/faraidh';
 
-const COLORS = ['#1B6B4A', '#C9A84C', '#3B9B74', '#E8B960', '#2D8B62', '#D4A847', '#4CAF7D', '#B8963E', '#60C08E', '#9A7F34'];
+const COLORS = ['#1B6B4A', '#C9A84C', '#2196F3', '#E57373', '#26A69A', '#AB47BC', '#FF8A65', '#5C6BC0', '#66BB6A', '#FFA726', '#EC407A', '#78909C'];
 
 interface Props {
   heirs: HeirResult[];
