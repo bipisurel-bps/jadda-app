@@ -1,4 +1,4 @@
-const CACHE_NAME = 'jariyah-v1';
+const CACHE_NAME = 'jariyah-v2';
 const URLS_TO_CACHE = [
   '/',
   '/doa',
@@ -9,6 +9,7 @@ const URLS_TO_CACHE = [
   '/data/prayers.json',
   '/data/hadits-arbain.json',
   '/favicon.svg',
+  '/logo-jariyah.jpg',
   '/manifest.json'
 ];
 

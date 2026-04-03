@@ -42,7 +42,7 @@ export default function HomeClient() {
           </p>
           <h1 className="text-2xl md:text-3xl font-display font-bold mt-4 tracking-tight">Assalamu&apos;alaikum!</h1>
           <p className="mt-2 text-sm md:text-base opacity-90 max-w-xl">
-            Selamat datang di <strong>Jariyah</strong> — panduan doa harian, hadits, kalkulator zakat &amp; waris (faraidh) sesuai Al-Qur&apos;an dan Sunnah.
+            Selamat datang di <strong>Jariyah</strong> <span className="font-arabic">(جَارِيَة)</span> — panduan doa harian, hadits, kalkulator zakat &amp; waris (faraidh) sesuai Al-Qur&apos;an dan Sunnah.
           </p>
         </div>
       </motion.div>
@@ -163,17 +163,7 @@ export default function HomeClient() {
         </motion.div>
       </div>
 
-      {/* Brief Description */}
-      <motion.div
-        initial={{ opacity: 0, y: 15 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.5 }}
-        className="rounded-xl bg-muted/50 p-5 text-center"
-      >
-        <p className="text-sm text-muted-foreground leading-relaxed max-w-lg mx-auto">
-          Aplikasi ini dirancang untuk membantu umat Islam dalam mengamalkan doa sehari-hari, mempelajari hadits, menghitung zakat, dan memahami pembagian waris sesuai hukum Islam. Semua konten bersumber dari Al-Quran dan As-Sunnah.
-        </p>
-      </motion.div>
+
     </div>
   );
 }

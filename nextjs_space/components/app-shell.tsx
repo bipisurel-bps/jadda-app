@@ -44,9 +44,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
       <header className="hidden md:block sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
         <div className="max-w-[1200px] mx-auto px-6 h-16 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm font-arabic">جـ</span>
-            </div>
+            <img src="/logo-jariyah.jpg" alt="Jariyah - Aplikasi Islam Lengkap" width={36} height={36} className="rounded-lg" />
             <span className="font-display font-bold text-lg tracking-tight text-foreground">Jariyah</span>
           </Link>
           <nav className="flex items-center gap-1">
@@ -85,9 +83,9 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
       <header className="md:hidden sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
         <div className="px-4 h-14 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
-            <div className="w-7 h-7 rounded-md bg-primary flex items-center justify-center">
+            <span className="w-7 h-7 rounded-md bg-primary flex items-center justify-center">
               <span className="text-primary-foreground font-bold text-xs font-arabic">جـ</span>
-            </div>
+            </span>
             <span className="font-display font-bold text-base tracking-tight text-foreground">Jariyah</span>
           </Link>
           <div className="flex items-center gap-2">

@@ -12,6 +12,11 @@
       "src": "/favicon.svg",
       "sizes": "any",
       "type": "image/svg+xml"
+    },
+    {
+      "src": "/logo-jariyah.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
     }
   ]
 }
