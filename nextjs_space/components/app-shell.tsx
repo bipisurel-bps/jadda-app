@@ -136,7 +136,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
           {/* Divider & Version */}
           <div className="border-t border-border pt-4 flex flex-col sm:flex-row items-center justify-between gap-2">
             <p className="text-xs text-muted-foreground">
-              &copy; 2026 Jadda — Kindly pray for our future developments 🙏🏽
+              &copy; 2026 Jadda — Mohon doanya agar kami bisa melanjutkan proses development aplikasi ini 🙏🏽
             </p>
             <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary/10 text-primary text-[11px] font-semibold">
               v{APP_VERSION}
@@ -146,8 +146,8 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
       </footer>
 
       {/* Mobile Bottom Nav */}
-      <nav className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-t border-border">
-        <div className="flex justify-around items-center h-16 px-2">
+      <nav className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-t border-border safe-area-bottom">
+        <div className="grid grid-cols-7 items-center h-[60px] px-1">
           {navItems?.map?.((item: any) => {
             const Icon = item?.icon;
             const isActive = pathname === item?.href || (item?.href !== '/' && pathname?.startsWith?.(item?.href));
@@ -155,14 +155,17 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
               <Link
                 key={item?.href}
                 href={item?.href ?? '/'}
-                className={`flex flex-col items-center gap-1 px-3 py-1.5 rounded-xl transition-all ${
+                className={`flex flex-col items-center justify-center gap-0.5 py-1.5 rounded-lg transition-all relative ${
                   isActive
                     ? 'text-primary'
-                    : 'text-muted-foreground'
+                    : 'text-muted-foreground hover:text-foreground'
                 }`}
               >
-                {Icon && <Icon size={20} strokeWidth={isActive ? 2.5 : 1.5} />}
-                <span className={`text-[10px] font-medium ${isActive ? 'font-semibold' : ''}`}>{item?.label}</span>
+                {isActive && (
+                  <span className="absolute -top-0.5 left-1/2 -translate-x-1/2 w-5 h-[3px] rounded-full bg-primary" />
+                )}
+                {Icon && <Icon size={18} strokeWidth={isActive ? 2.5 : 1.5} />}
+                <span className={`text-[9px] leading-tight ${isActive ? 'font-bold' : 'font-medium'}`}>{item?.label}</span>
               </Link>
             );
           }) ?? []}
