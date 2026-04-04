@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { BookOpen, Scale, Heart, Info, MapPin } from 'lucide-react';
+import { BookOpen, Scale, Heart, Info, MapPin, Sparkles } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export default function TentangClient() {
@@ -9,7 +9,32 @@ export default function TentangClient() {
     <div className="space-y-6 max-w-2xl mx-auto">
       <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}>
         <h1 className="text-2xl md:text-3xl font-display font-bold tracking-tight text-foreground">Tentang Aplikasi</h1>
-        <p className="text-sm text-muted-foreground mt-1">Informasi tentang Jariyah</p>
+        <p className="text-sm text-muted-foreground mt-1">Informasi tentang Jadda</p>
+      </motion.div>
+
+      {/* Philosophy Section */}
+      <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.05 }} className="rounded-xl bg-gradient-to-br from-primary/5 to-accent/5 border border-primary/15 p-6 shadow-sm">
+        <div className="flex items-center gap-3 mb-4">
+          <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+            <Sparkles size={20} className="text-primary" />
+          </div>
+          <div>
+            <h2 className="font-display font-bold text-lg text-foreground">Jadda <span className="font-arabic text-base">(جدّ)</span></h2>
+            <p className="text-xs text-muted-foreground">Filosofi Nama</p>
+          </div>
+        </div>
+        <div className="space-y-3">
+          <p className="text-sm text-foreground/80 leading-relaxed">
+            <strong>JADDA</strong> adalah perpaduan antara etimologi bahasa Arab yang kuat dan visi digital masa depan.
+          </p>
+          <p className="text-sm text-foreground/80 leading-relaxed">
+            Diambil dari kata <strong className="text-primary">Jadda</strong> <span className="font-arabic">(جدّ)</span> yang berarti <em>&quot;Bersungguh-sungguh&quot;</em> — mencerminkan semangat untuk terus belajar dan mengamalkan ajaran Islam dengan penuh kesungguhan.
+          </p>
+          <div className="mt-3 p-3 rounded-lg bg-primary/5 border border-primary/10">
+            <p className="text-center font-arabic text-2xl text-primary leading-loose" dir="rtl">جدّ</p>
+            <p className="text-center text-xs text-muted-foreground mt-1">Bersungguh-sungguh</p>
+          </div>
+        </div>
       </motion.div>
 
       <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="rounded-xl bg-card border border-border/50 p-6 shadow-sm">
@@ -17,10 +42,10 @@ export default function TentangClient() {
           <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
             <Info size={20} className="text-primary" />
           </div>
-          <h2 className="font-display font-bold text-lg text-foreground">Jariyah <span className="font-arabic text-base">(جارية)</span></h2>
+          <h2 className="font-display font-bold text-lg text-foreground">Fitur Utama</h2>
         </div>
         <p className="text-sm text-foreground/80 leading-relaxed mb-3">
-          <strong>Jariyah</strong> adalah aplikasi web (PWA) yang dirancang untuk membantu umat Islam dalam beribadah sehari-hari:
+          <strong>Jadda</strong> adalah aplikasi web (PWA) Islami ringkas yang dirancang untuk membantu umat Islam dalam beribadah sehari-hari:
         </p>
         <ul className="space-y-3">
           <li className="flex items-start gap-3">
@@ -113,6 +138,7 @@ export default function TentangClient() {
             'Kalkulator waris lengkap',
             'Visualisasi diagram lingkaran',
             'Penjelasan Hajb, Aul, Radd',
+            'Panduan umrah langkah demi langkah',
             'Mode gelap/terang',
             'Bisa diinstal sebagai aplikasi (PWA)',
             'Bekerja offline',

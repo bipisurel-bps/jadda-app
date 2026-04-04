@@ -42,7 +42,7 @@ export default function HomeClient() {
           </p>
           <h1 className="text-2xl md:text-3xl font-display font-bold mt-4 tracking-tight">Assalamu&apos;alaikum!</h1>
           <p className="mt-2 text-sm md:text-base opacity-90 max-w-xl">
-            Selamat datang di <strong>Jariyah</strong> <span className="font-arabic">(جَارِيَة)</span> — panduan doa harian, hadits, kalkulator zakat &amp; waris (faraidh), serta panduan umrah sesuai Al-Qur&apos;an dan Sunnah.
+            Selamat datang di <strong>Jadda</strong> <span className="font-arabic">(جدّ)</span> — aplikasi Islami ringkas: doa harian, hadits, kalkulator zakat &amp; waris (faraidh), serta panduan umrah sesuai Al-Qur&apos;an dan Sunnah.
           </p>
         </div>
       </motion.div>

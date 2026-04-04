@@ -7,7 +7,7 @@ import { Home, BookOpen, Calculator, Info, Moon, Sun, Mail, Coins, ScrollText, M
 import { useTheme } from 'next-themes';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const APP_VERSION = '1.1';
+const APP_VERSION = '2.0';
 
 const navItems = [
   { href: '/', label: 'Beranda', icon: Home },
@@ -45,8 +45,8 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
       <header className="hidden md:block sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
         <div className="max-w-[1200px] mx-auto px-6 h-16 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
-            <img src="/logo-jariyah.png" alt="Jariyah - Aplikasi Islam Lengkap" width={36} height={36} className="rounded-lg" />
-            <span className="font-display font-bold text-lg tracking-tight text-foreground">Jariyah</span>
+            <img src="/logo-jadda.png" alt="Jadda - Aplikasi Islami Ringkas" width={36} height={36} className="rounded-lg" />
+            <span className="font-display font-bold text-lg tracking-tight text-foreground">Jadda</span>
           </Link>
           <nav className="flex items-center gap-1">
             {navItems?.map?.((item: any) => {
@@ -85,9 +85,9 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
         <div className="px-4 h-14 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
             <span className="w-7 h-7 rounded-md bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-xs font-arabic">جـ</span>
+              <span className="text-primary-foreground font-bold text-xs font-arabic">جدّ</span>
             </span>
-            <span className="font-display font-bold text-base tracking-tight text-foreground">Jariyah</span>
+            <span className="font-display font-bold text-base tracking-tight text-foreground">Jadda</span>
           </Link>
           <div className="flex items-center gap-2">
             {mounted && (
@@ -125,7 +125,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
           {/* Contact Admin */}
           <div className="flex flex-col items-center gap-3 mb-6">
             <a
-              href="mailto:bipi.surel@gmail.com?subject=Masukan%20Aplikasi%20Jariyah"
+              href="mailto:bipi.surel@gmail.com?subject=Masukan%20Aplikasi%20Jadda"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-primary text-primary-foreground text-sm font-medium hover:bg-primary/90 transition-colors shadow-sm"
             >
               <Mail size={16} />
@@ -136,7 +136,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
           {/* Divider & Version */}
           <div className="border-t border-border pt-4 flex flex-col sm:flex-row items-center justify-between gap-2">
             <p className="text-xs text-muted-foreground">
-              &copy; 2026 Jariyah — Kindly pray for our future developments 🙏🏽
+              &copy; 2026 Jadda — Kindly pray for our future developments 🙏🏽
             </p>
             <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary/10 text-primary text-[11px] font-semibold">
               v{APP_VERSION}

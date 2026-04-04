@@ -1,4 +1,4 @@
-const CACHE_NAME = 'jariyah-v3';
+const CACHE_NAME = 'jadda-v1';
 const URLS_TO_CACHE = [
   '/',
   '/doa',
@@ -11,7 +11,7 @@ const URLS_TO_CACHE = [
   '/data/panduan-umroh.json',
   '/data/hadits-arbain.json',
   '/favicon.svg',
-  '/logo-jariyah.png',
+  '/logo-jadda.png',
   '/manifest.json'
 ];
 
