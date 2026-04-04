@@ -12,15 +12,15 @@ const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mon
 
 export const metadata = {
   metadataBase: new URL(process.env.NEXTAUTH_URL || 'http://localhost:3000'),
-  title: 'Jariyah — Doa, Hadits, Zakat & Waris Islami',
-  description: 'Jariyah — Kumpulan doa harian dari Hisnul Muslim, Hadits Arbain An-Nawawi, kalkulator zakat & peternakan, dan kalkulator waris (faraidh) sesuai Al-Quran dan Sunnah.',
+  title: 'Jariyah — Doa, Hadits, Zakat, Waris & Umrah Islami',
+  description: 'Jariyah — Kumpulan doa harian dari Hisnul Muslim, Hadits Arbain An-Nawawi, kalkulator zakat & peternakan, kalkulator waris (faraidh), dan panduan umrah sesuai Al-Quran dan Sunnah.',
   icons: {
     icon: '/favicon.svg',
     shortcut: '/favicon.svg',
   },
   openGraph: {
-    title: 'Jariyah — Doa, Hadits, Zakat & Waris Islami',
-    description: 'Jariyah — Kumpulan doa harian dari Hisnul Muslim, Hadits Arbain An-Nawawi, kalkulator zakat & peternakan, dan kalkulator waris (faraidh) sesuai Al-Quran dan Sunnah.',
+    title: 'Jariyah — Doa, Hadits, Zakat, Waris & Umrah Islami',
+    description: 'Jariyah — Kumpulan doa harian dari Hisnul Muslim, Hadits Arbain An-Nawawi, kalkulator zakat & peternakan, kalkulator waris (faraidh), dan panduan umrah sesuai Al-Quran dan Sunnah.',
     images: ['/og-image.png'],
   },
 }

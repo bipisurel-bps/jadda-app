@@ -1,12 +1,14 @@
-const CACHE_NAME = 'jariyah-v2';
+const CACHE_NAME = 'jariyah-v3';
 const URLS_TO_CACHE = [
   '/',
   '/doa',
   '/hadits',
   '/waris',
   '/zakat',
+  '/umroh',
   '/tentang',
   '/data/prayers.json',
+  '/data/panduan-umroh.json',
   '/data/hadits-arbain.json',
   '/favicon.svg',
   '/logo-jariyah.png',

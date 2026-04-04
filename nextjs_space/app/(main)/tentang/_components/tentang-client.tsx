@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { BookOpen, Scale, Heart, Info } from 'lucide-react';
+import { BookOpen, Scale, Heart, Info, MapPin } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export default function TentangClient() {
@@ -59,6 +59,15 @@ export default function TentangClient() {
               <p className="text-sm text-muted-foreground">Perhitungan zakat maal, fitrah, perdagangan, pertanian, dan peternakan sesuai ketentuan syariat Islam.</p>
             </div>
           </li>
+          <li className="flex items-start gap-3">
+            <div className="w-6 h-6 rounded-md bg-teal-500/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <MapPin size={12} className="text-teal-500" />
+            </div>
+            <div>
+              <strong className="text-sm text-foreground">Panduan Umrah</strong>
+              <p className="text-sm text-muted-foreground">Panduan ringkas tata cara umrah 10 langkah, lengkap dengan doa dan bacaan Arab, transliterasi, serta keterangan praktis.</p>
+            </div>
+          </li>
         </ul>
       </motion.div>
 
@@ -84,6 +93,10 @@ export default function TentangClient() {
           <li className="flex items-start gap-2">
             <span className="text-primary font-bold">•</span>
             <span><strong>Fiqh Mawaris</strong> — Ilmu Faraidh berdasarkan Al-Qur&apos;an dan Sunnah</span>
+          </li>
+          <li className="flex items-start gap-2">
+            <span className="text-primary font-bold">•</span>
+            <span><strong>Manasik Haji &amp; Umrah</strong> — Panduan ringkas tata cara umrah berdasarkan Sunnah</span>
           </li>
         </ul>
       </motion.div>

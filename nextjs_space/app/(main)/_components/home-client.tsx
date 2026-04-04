@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { BookOpen, Calculator, Star, ChevronRight, ScrollText, Coins } from 'lucide-react';
+import { BookOpen, Calculator, Star, ChevronRight, ScrollText, Coins, MapPin } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { dailyVerses } from '@/lib/quran-verses';
 
@@ -42,7 +42,7 @@ export default function HomeClient() {
           </p>
           <h1 className="text-2xl md:text-3xl font-display font-bold mt-4 tracking-tight">Assalamu&apos;alaikum!</h1>
           <p className="mt-2 text-sm md:text-base opacity-90 max-w-xl">
-            Selamat datang di <strong>Jariyah</strong> <span className="font-arabic">(جَارِيَة)</span> — panduan doa harian, hadits, kalkulator zakat &amp; waris (faraidh) sesuai Al-Qur&apos;an dan Sunnah.
+            Selamat datang di <strong>Jariyah</strong> <span className="font-arabic">(جَارِيَة)</span> — panduan doa harian, hadits, kalkulator zakat &amp; waris (faraidh), serta panduan umrah sesuai Al-Qur&apos;an dan Sunnah.
           </p>
         </div>
       </motion.div>
@@ -157,6 +157,29 @@ export default function HomeClient() {
                   </div>
                 </div>
                 <ChevronRight size={20} className="text-muted-foreground group-hover:text-pink-500 transition-colors" />
+              </div>
+            </div>
+          </Link>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.7 }}
+          className="md:col-span-2"
+        >
+          <Link href="/umroh" className="block">
+            <div className="group rounded-xl bg-card p-6 shadow-sm border border-border/50 hover:shadow-md hover:border-teal-400/30 transition-all cursor-pointer">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-xl bg-teal-500/10 flex items-center justify-center group-hover:bg-teal-500/20 transition-colors">
+                    <MapPin size={24} className="text-teal-600 dark:text-teal-400" />
+                  </div>
+                  <div>
+                    <h2 className="font-display font-bold text-lg text-foreground">Panduan Umrah</h2>
+                    <p className="text-sm text-muted-foreground">Tata cara umrah lengkap dengan doa &amp; bacaan Arab</p>
+                  </div>
+                </div>
+                <ChevronRight size={20} className="text-muted-foreground group-hover:text-teal-500 transition-colors" />
               </div>
             </div>
           </Link>
