@@ -14,9 +14,9 @@
       "type": "image/svg+xml"
     },
     {
-      "src": "/logo-jariyah.jpg",
+      "src": "/logo-jariyah.png",
       "sizes": "512x512",
-      "type": "image/jpeg"
+      "type": "image/png"
     }
   ]
 }

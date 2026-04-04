@@ -44,7 +44,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
       <header className="hidden md:block sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
         <div className="max-w-[1200px] mx-auto px-6 h-16 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
-            <img src="/logo-jariyah.jpg" alt="Jariyah - Aplikasi Islam Lengkap" width={36} height={36} className="rounded-lg" />
+            <img src="/logo-jariyah.png" alt="Jariyah - Aplikasi Islam Lengkap" width={36} height={36} className="rounded-lg" />
             <span className="font-display font-bold text-lg tracking-tight text-foreground">Jariyah</span>
           </Link>
           <nav className="flex items-center gap-1">
@@ -130,15 +130,12 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
               <Mail size={16} />
               Hubungi Admin / Berikan Masukan
             </a>
-            <p className="text-xs text-muted-foreground">
-              bipi.surel@gmail.com
-            </p>
           </div>
 
           {/* Divider & Version */}
           <div className="border-t border-border pt-4 flex flex-col sm:flex-row items-center justify-between gap-2">
             <p className="text-xs text-muted-foreground">
-              &copy; 2026 Jariyah — Aplikasi Islam Lengkap
+              &copy; 2026 Jariyah — Kindly pray for our future developments 🙏🏽
             </p>
             <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary/10 text-primary text-[11px] font-semibold">
               v{APP_VERSION}

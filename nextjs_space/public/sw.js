@@ -9,7 +9,7 @@ const URLS_TO_CACHE = [
   '/data/prayers.json',
   '/data/hadits-arbain.json',
   '/favicon.svg',
-  '/logo-jariyah.jpg',
+  '/logo-jariyah.png',
   '/manifest.json'
 ];
 
