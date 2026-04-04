@@ -1,4 +1,4 @@
-const CACHE_NAME = 'jadda-v1';
+const CACHE_NAME = 'jadda-v2';
 const URLS_TO_CACHE = [
   '/',
   '/doa',
