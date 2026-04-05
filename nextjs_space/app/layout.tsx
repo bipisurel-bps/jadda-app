@@ -12,17 +12,37 @@ const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mon
 
 export const metadata = {
   metadataBase: new URL(process.env.NEXTAUTH_URL || 'http://localhost:3000'),
-  title: 'Jadda (جدّ) — Doa, Hadits, Zakat, Waris & Umrah Islami',
-  description: 'Jadda — Aplikasi Islami ringkas: doa harian dari Hisnul Muslim, Hadits Arbain An-Nawawi, kalkulator zakat & peternakan, kalkulator waris (faraidh), dan panduan umrah sesuai Al-Quran dan Sunnah.',
+  title: {
+    default: 'Jadda (جدّ) — Doa Harian, Hadits, Zakat, Waris & Umrah Islami',
+    template: '%s | Jadda',
+  },
+  description: 'Jadda — Aplikasi Islami ringkas berbahasa Indonesia: 309 doa harian dari Hisnul Muslim, 42 Hadits Arbain An-Nawawi, kalkulator zakat (maal, fitrah, perdagangan, pertanian, peternakan), kalkulator waris (faraidh), dan panduan umrah lengkap sesuai Al-Quran dan Sunnah.',
+  keywords: ['doa harian islam', 'hisnul muslim', 'hadits arbain', 'kalkulator zakat', 'kalkulator waris', 'faraidh', 'panduan umrah', 'aplikasi islami', 'jadda', 'dzikir pagi petang', 'doa sehari-hari'],
+  authors: [{ name: 'Jadda', url: 'https://jadda.app' }],
+  creator: 'Jadda',
   icons: {
     icon: '/favicon.svg',
     shortcut: '/favicon.svg',
+    apple: '/logo-jadda.png',
   },
   openGraph: {
-    title: 'Jadda (جدّ) — Doa, Hadits, Zakat, Waris & Umrah Islami',
-    description: 'Jadda — Aplikasi Islami ringkas: doa harian dari Hisnul Muslim, Hadits Arbain An-Nawawi, kalkulator zakat & peternakan, kalkulator waris (faraidh), dan panduan umrah sesuai Al-Quran dan Sunnah.',
+    title: 'Jadda (جدّ) — Doa Harian, Hadits, Zakat, Waris & Umrah Islami',
+    description: 'Aplikasi Islami ringkas: 309 doa harian Hisnul Muslim, 42 Hadits Arbain, kalkulator zakat & waris, dan panduan umrah sesuai Al-Quran dan Sunnah.',
+    type: 'website',
+    locale: 'id_ID',
+    siteName: 'Jadda',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Jadda - Aplikasi Islami Ringkas' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Jadda (جدّ) — Aplikasi Islami Ringkas',
+    description: 'Doa harian, hadits, kalkulator zakat & waris, panduan umrah sesuai Al-Quran dan Sunnah.',
     images: ['/og-image.png'],
   },
+  alternates: {
+    canonical: '/',
+  },
+  category: 'religion',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -34,7 +54,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="theme-color" content="#1B6B4A" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <meta name="apple-mobile-web-app-title" content="Jariyah" />
+        <meta name="apple-mobile-web-app-title" content="Jadda" />
       </head>
       <body className={`${dmSans.variable} ${jakartaSans.variable} ${jetbrainsMono.variable} font-sans`}>
         <ThemeProvider
