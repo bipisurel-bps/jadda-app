@@ -2,9 +2,9 @@ import HomeClient from './_components/home-client';
 import { WebsiteJsonLd } from '@/components/json-ld';
 
 export const metadata = {
-  title: 'Jadda (جدّ) — Doa Harian, Hadits, Zakat, Waris & Umrah Islami',
-  description: 'Jadda — Aplikasi Islami ringkas berbahasa Indonesia: 309 doa harian dari Hisnul Muslim, 42 Hadits Arbain An-Nawawi, kalkulator zakat & waris (faraidh), dan panduan umrah lengkap sesuai Al-Quran dan Sunnah.',
-  keywords: ['doa harian islam', 'hisnul muslim', 'hadits arbain', 'kalkulator zakat', 'kalkulator waris', 'faraidh', 'panduan umrah', 'aplikasi islami', 'doa sehari-hari', 'dzikir pagi petang', 'jadda'],
+  title: 'Jadda (جدّ) — Waktu Sholat, Doa, Hadits, Zakat, Waris, Umrah & Haji',
+  description: 'Jadda — Aplikasi Islami ringkas: jadwal waktu sholat otomatis, pengingat dzikir pagi petang, 309 doa dari Hisnul Muslim, 42 Hadits Arbain, kalkulator zakat & waris, panduan umrah dan haji sesuai Al-Quran dan Sunnah.',
+  keywords: ['jadwal sholat', 'waktu adzan', 'doa harian islam', 'hisnul muslim', 'hadits arbain', 'kalkulator zakat', 'kalkulator waris', 'faraidh', 'panduan umrah', 'panduan haji', 'dzikir pagi petang', 'jadda'],
   openGraph: {
     title: 'Jadda (جدّ) — Doa Harian, Hadits, Zakat, Waris & Umrah Islami',
     description: 'Aplikasi Islami ringkas: 309 doa harian Hisnul Muslim, 42 Hadits Arbain, kalkulator zakat & waris, dan panduan umrah sesuai Al-Quran dan Sunnah.',

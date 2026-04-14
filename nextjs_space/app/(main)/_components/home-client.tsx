@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { BookOpen, Calculator, Star, ChevronRight, ScrollText, Coins, MapPin } from 'lucide-react';
+import { BookOpen, Calculator, Star, ChevronRight, ScrollText, Coins, MapPin, Clock, Landmark } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { dailyVerses } from '@/lib/quran-verses';
 
@@ -42,7 +42,7 @@ export default function HomeClient() {
           </p>
           <h1 className="text-2xl md:text-3xl font-display font-bold mt-4 tracking-tight">Assalamu&apos;alaikum!</h1>
           <p className="mt-2 text-sm md:text-base opacity-90 max-w-xl">
-            Selamat datang di <strong>Jadda</strong> <span className="font-arabic">(جدّ)</span> — aplikasi Islami ringkas: doa harian, hadits, kalkulator zakat &amp; waris (faraidh), serta panduan umrah sesuai Al-Qur&apos;an dan Sunnah.
+            Selamat datang di <strong>Jadda</strong> <span className="font-arabic">(جدّ)</span> — aplikasi Islami ringkas: jadwal sholat, doa harian, hadits, kalkulator zakat &amp; waris, serta panduan umrah &amp; haji sesuai Al-Qur&apos;an dan Sunnah.
           </p>
         </div>
       </motion.div>
@@ -70,6 +70,31 @@ export default function HomeClient() {
 
       {/* Feature Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {/* Waktu Sholat - New featured card */}
+        <motion.div
+          initial={{ opacity: 0, y: 15 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.25 }}
+          className="md:col-span-2"
+        >
+          <Link href="/sholat" className="block">
+            <div className="group rounded-xl bg-gradient-to-r from-indigo-500/10 to-blue-500/10 p-6 shadow-sm border border-indigo-500/20 hover:shadow-md hover:border-indigo-400/40 transition-all cursor-pointer">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-xl bg-indigo-500/15 flex items-center justify-center group-hover:bg-indigo-500/25 transition-colors">
+                    <Clock size={24} className="text-indigo-500" />
+                  </div>
+                  <div>
+                    <h2 className="font-display font-bold text-lg text-foreground">Waktu Sholat &amp; Dzikir</h2>
+                    <p className="text-sm text-muted-foreground">Jadwal sholat otomatis &amp; pengingat dzikir pagi petang</p>
+                  </div>
+                </div>
+                <ChevronRight size={20} className="text-muted-foreground group-hover:text-indigo-500 transition-colors" />
+              </div>
+            </div>
+          </Link>
+        </motion.div>
+
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
@@ -165,7 +190,6 @@ export default function HomeClient() {
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.7 }}
-          className="md:col-span-2"
         >
           <Link href="/umroh" className="block">
             <div className="group rounded-xl bg-card p-6 shadow-sm border border-border/50 hover:shadow-md hover:border-teal-400/30 transition-all cursor-pointer">
@@ -180,6 +204,28 @@ export default function HomeClient() {
                   </div>
                 </div>
                 <ChevronRight size={20} className="text-muted-foreground group-hover:text-teal-500 transition-colors" />
+              </div>
+            </div>
+          </Link>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, x: 20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.8 }}
+        >
+          <Link href="/haji" className="block">
+            <div className="group rounded-xl bg-card p-6 shadow-sm border border-border/50 hover:shadow-md hover:border-amber-400/30 transition-all cursor-pointer">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-xl bg-amber-500/10 flex items-center justify-center group-hover:bg-amber-500/20 transition-colors">
+                    <Landmark size={24} className="text-amber-600 dark:text-amber-400" />
+                  </div>
+                  <div>
+                    <h2 className="font-display font-bold text-lg text-foreground">Panduan Haji</h2>
+                    <p className="text-sm text-muted-foreground">Tuntunan ringkas ibadah haji sesuai Sunnah</p>
+                  </div>
+                </div>
+                <ChevronRight size={20} className="text-muted-foreground group-hover:text-amber-500 transition-colors" />
               </div>
             </div>
           </Link>

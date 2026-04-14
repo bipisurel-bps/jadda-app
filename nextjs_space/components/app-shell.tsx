@@ -3,20 +3,38 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Home, BookOpen, Calculator, Info, Moon, Sun, Mail, Coins, ScrollText, MapPin } from 'lucide-react';
+import { Home, BookOpen, Calculator, Info, Moon, Sun, Mail, Coins, ScrollText, MapPin, Clock, Landmark, MoreHorizontal, X } from 'lucide-react';
 import { useTheme } from 'next-themes';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const APP_VERSION = '2.0';
+const APP_VERSION = '2.1';
 
 const navItems = [
   { href: '/', label: 'Beranda', icon: Home },
+  { href: '/sholat', label: 'Sholat', icon: Clock },
   { href: '/doa', label: 'Doa', icon: BookOpen },
   { href: '/hadits', label: 'Hadits', icon: ScrollText },
   { href: '/waris', label: 'Waris', icon: Calculator },
   { href: '/zakat', label: 'Zakat', icon: Coins },
   { href: '/umroh', label: 'Umrah', icon: MapPin },
+  { href: '/haji', label: 'Haji', icon: Landmark },
   { href: '/tentang', label: 'Tentang', icon: Info },
+];
+
+// Mobile: show these 5 in bottom bar, rest in "More" menu
+const mobileMainNav = [
+  { href: '/', label: 'Beranda', icon: Home },
+  { href: '/sholat', label: 'Sholat', icon: Clock },
+  { href: '/doa', label: 'Doa', icon: BookOpen },
+  { href: '/hadits', label: 'Hadits', icon: ScrollText },
+];
+
+const mobileMoreNav = [
+  { href: '/waris', label: 'Kalkulator Waris', icon: Calculator },
+  { href: '/zakat', label: 'Kalkulator Zakat', icon: Coins },
+  { href: '/umroh', label: 'Panduan Umrah', icon: MapPin },
+  { href: '/haji', label: 'Panduan Haji', icon: Landmark },
+  { href: '/tentang', label: 'Tentang Aplikasi', icon: Info },
 ];
 
 export default function AppShell({ children }: { children: React.ReactNode }) {
@@ -147,8 +165,8 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
 
       {/* Mobile Bottom Nav */}
       <nav className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-t border-border safe-area-bottom">
-        <div className="grid grid-cols-7 items-center h-[60px] px-1">
-          {navItems?.map?.((item: any) => {
+        <div className="grid grid-cols-5 items-center h-[60px] px-1">
+          {mobileMainNav?.map?.((item: any) => {
             const Icon = item?.icon;
             const isActive = pathname === item?.href || (item?.href !== '/' && pathname?.startsWith?.(item?.href));
             return (
@@ -156,21 +174,77 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                 key={item?.href}
                 href={item?.href ?? '/'}
                 className={`flex flex-col items-center justify-center gap-0.5 py-1.5 rounded-lg transition-all relative ${
-                  isActive
-                    ? 'text-primary'
-                    : 'text-muted-foreground hover:text-foreground'
+                  isActive ? 'text-primary' : 'text-muted-foreground hover:text-foreground'
                 }`}
               >
-                {isActive && (
-                  <span className="absolute -top-0.5 left-1/2 -translate-x-1/2 w-5 h-[3px] rounded-full bg-primary" />
-                )}
+                {isActive && <span className="absolute -top-0.5 left-1/2 -translate-x-1/2 w-5 h-[3px] rounded-full bg-primary" />}
                 {Icon && <Icon size={18} strokeWidth={isActive ? 2.5 : 1.5} />}
                 <span className={`text-[9px] leading-tight ${isActive ? 'font-bold' : 'font-medium'}`}>{item?.label}</span>
               </Link>
             );
           }) ?? []}
+          {/* More button */}
+          {(() => {
+            const isMoreActive = mobileMoreNav.some(item => pathname === item.href || (item.href !== '/' && pathname?.startsWith?.(item.href)));
+            return (
+              <button
+                onClick={() => setMobileMenuOpen(prev => !prev)}
+                className={`flex flex-col items-center justify-center gap-0.5 py-1.5 rounded-lg transition-all relative ${
+                  isMoreActive || mobileMenuOpen ? 'text-primary' : 'text-muted-foreground hover:text-foreground'
+                }`}
+              >
+                {isMoreActive && !mobileMenuOpen && <span className="absolute -top-0.5 left-1/2 -translate-x-1/2 w-5 h-[3px] rounded-full bg-primary" />}
+                {mobileMenuOpen ? <X size={18} strokeWidth={2} /> : <MoreHorizontal size={18} strokeWidth={isMoreActive ? 2.5 : 1.5} />}
+                <span className={`text-[9px] leading-tight ${isMoreActive ? 'font-bold' : 'font-medium'}`}>Lainnya</span>
+              </button>
+            );
+          })()}
         </div>
       </nav>
+
+      {/* Mobile More Menu Overlay */}
+      <AnimatePresence>
+        {mobileMenuOpen && (
+          <>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.2 }}
+              className="md:hidden fixed inset-0 bg-black/30 z-40"
+              onClick={() => setMobileMenuOpen(false)}
+            />
+            <motion.div
+              initial={{ y: '100%' }}
+              animate={{ y: 0 }}
+              exit={{ y: '100%' }}
+              transition={{ type: 'spring', damping: 25, stiffness: 300 }}
+              className="md:hidden fixed bottom-[60px] left-0 right-0 z-40 bg-background rounded-t-2xl border-t border-border shadow-xl"
+            >
+              <div className="p-4 space-y-1">
+                <div className="w-10 h-1 rounded-full bg-muted mx-auto mb-3" />
+                {mobileMoreNav.map((item) => {
+                  const Icon = item.icon;
+                  const isActive = pathname === item.href || (item.href !== '/' && pathname?.startsWith?.(item.href));
+                  return (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      onClick={() => setMobileMenuOpen(false)}
+                      className={`flex items-center gap-4 px-4 py-3 rounded-xl transition-all ${
+                        isActive ? 'bg-primary/10 text-primary' : 'text-foreground hover:bg-muted'
+                      }`}
+                    >
+                      <Icon size={20} strokeWidth={isActive ? 2.5 : 1.5} />
+                      <span className={`text-sm ${isActive ? 'font-bold' : 'font-medium'}`}>{item.label}</span>
+                    </Link>
+                  );
+                })}
+              </div>
+            </motion.div>
+          </>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
