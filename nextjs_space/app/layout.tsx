@@ -16,7 +16,7 @@ export const metadata = {
     default: 'Jadda (جدّ) — Doa Harian, Hadits, Zakat, Waris & Umrah Islami',
     template: '%s | Jadda',
   },
-  description: 'Jadda — Aplikasi Islami ringkas berbahasa Indonesia: 309 doa harian dari Hisnul Muslim, 42 Hadits Arbain An-Nawawi, kalkulator zakat (maal, fitrah, perdagangan, pertanian, peternakan), kalkulator waris (faraidh), dan panduan umrah lengkap sesuai Al-Quran dan Sunnah.',
+  description: 'Jadda — Aplikasi Islami ringkas berbahasa Indonesia: 310 doa harian dari Hisnul Muslim, 42 Hadits Arbain An-Nawawi, kalkulator zakat (maal, fitrah, perdagangan, pertanian, peternakan), kalkulator waris (faraidh), dan panduan umrah lengkap sesuai Al-Quran dan Sunnah.',
   keywords: ['doa harian islam', 'hisnul muslim', 'hadits arbain', 'kalkulator zakat', 'kalkulator waris', 'faraidh', 'panduan umrah', 'aplikasi islami', 'jadda', 'dzikir pagi petang', 'doa sehari-hari'],
   authors: [{ name: 'Jadda', url: 'https://jadda.app' }],
   creator: 'Jadda',

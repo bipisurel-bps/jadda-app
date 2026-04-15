@@ -3,11 +3,11 @@ import { BreadcrumbJsonLd, JsonLd } from '@/components/json-ld';
 
 export const metadata = {
   title: 'Doa Harian Lengkap dari Hisnul Muslim — Jadda',
-  description: '309 doa harian Islam dari kitab Hisnul Muslim dalam 163 kategori. Dilengkapi teks Arab, transliterasi latin, terjemahan bahasa Indonesia, dan sumber hadits. Bisa disimpan sebagai favorit.',
+  description: '310 doa harian Islam dari kitab Hisnul Muslim dalam 161 kategori. Dilengkapi teks Arab, transliterasi latin, terjemahan bahasa Indonesia, dan sumber hadits. Bisa disimpan sebagai favorit.',
   keywords: ['doa harian islam', 'hisnul muslim', 'doa sehari-hari', 'doa arab dan artinya', 'doa bangun tidur', 'doa makan', 'doa bepergian', 'dzikir pagi', 'dzikir petang', 'doa lengkap'],
   openGraph: {
     title: 'Doa Harian Lengkap dari Hisnul Muslim — Jadda',
-    description: '309 doa harian dari Hisnul Muslim dengan teks Arab, transliterasi, dan terjemahan Indonesia.',
+    description: '310 doa harian dari Hisnul Muslim dengan teks Arab, transliterasi, dan terjemahan Indonesia.',
     type: 'website',
     locale: 'id_ID',
   },
@@ -25,7 +25,7 @@ export default function DoaPage() {
         '@context': 'https://schema.org',
         '@type': 'CollectionPage',
         name: 'Doa Harian Lengkap dari Hisnul Muslim',
-        description: '309 doa harian Islam dari kitab Hisnul Muslim dalam 163 kategori dengan teks Arab, transliterasi, dan terjemahan Indonesia.',
+        description: '310 doa harian Islam dari kitab Hisnul Muslim dalam 161 kategori dengan teks Arab, transliterasi, dan terjemahan Indonesia.',
         inLanguage: 'id',
         isPartOf: { '@type': 'WebApplication', name: 'Jadda', url: baseUrl },
         about: {

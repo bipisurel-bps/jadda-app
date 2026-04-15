@@ -3,11 +3,11 @@ import { BreadcrumbJsonLd, JsonLd } from '@/components/json-ld';
 
 export const metadata = {
   title: '42 Hadits Arbain An-Nawawi & Ibnu Rajab — Jadda',
-  description: '42 hadits pilihan Imam An-Nawawi dan Ibnu Rajab tentang pokok-pokok ajaran Islam. Dilengkapi teks Arab, perawi, terjemahan bahasa Indonesia, dan sumber hadits.',
+  description: '42 hadits pilihan Imam An-Nawawi dan Ibnu Rajab tentang pokok-pokok ajaran Islam. Dilengkapi teks Arab, perawi, terjemahan bahasa Indonesia, sumber hadits, dan kandungan hadits.',
   keywords: ['hadits arbain', 'hadits nawawi', 'hadits 40', 'hadits pilihan', 'hadits pokok islam', 'arbain nawawi', 'ibnu rajab', 'hadits niat', 'hadits islam'],
   openGraph: {
     title: '42 Hadits Arbain An-Nawawi & Ibnu Rajab — Jadda',
-    description: '42 hadits pilihan tentang pokok-pokok ajaran Islam dengan teks Arab dan terjemahan Indonesia.',
+    description: '42 hadits pilihan tentang pokok-pokok ajaran Islam dengan teks Arab, terjemahan Indonesia, dan kandungan hadits.',
     type: 'website',
     locale: 'id_ID',
   },
