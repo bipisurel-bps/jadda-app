@@ -1,0 +1,22 @@
+{
+  "name": "Jadda",
+  "short_name": "Jadda",
+  "description": "Aplikasi Islami Ringkas — Doa, Hadits, Zakat, Waris & Umrah",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7faf8",
+  "theme_color": "#1B6B4A",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/logo-jadda.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

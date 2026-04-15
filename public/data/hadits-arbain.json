@@ -1,0 +1,342 @@
+{
+  "title": "Hadits Arbain An-Nawawi",
+  "description": "42 hadits pilihan Imam An-Nawawi dan Ibnu Rajab tentang pokok-pokok ajaran Islam",
+  "hadits": [
+    {
+      "id": 1,
+      "title": "Niat",
+      "arabic": "إِنَّمَا الْأَعْمَالُ بِالنِّيَّاتِ، وَإِنَّمَا لِكُلِّ امْرِئٍ مَا نَوَى، فَمَنْ كَانَتْ هِجْرَتُهُ إِلَى اللهِ وَرَسُولِهِ فَهِجْرَتُهُ إِلَى اللهِ وَرَسُولِهِ، وَمَنْ كَانَتْ هِجْرَتُهُ لِدُنْيَا يُصِيبُهَا أَوِ امْرَأَةٍ يَنْكِحُهَا فَهِجْرَتُهُ إِلَى مَا هَاجَرَ إِلَيْهِ",
+      "narrator": "Umar bin Al-Khaththab radhiyallahu 'anhu",
+      "translation": "Sesungguhnya setiap amalan tergantung pada niatnya. Dan sesungguhnya setiap orang akan mendapatkan apa yang ia niatkan. Barangsiapa yang hijrahnya karena Allah dan Rasul-Nya, maka hijrahnya kepada Allah dan Rasul-Nya. Dan barangsiapa yang hijrahnya karena dunia yang ingin ia dapatkan atau karena wanita yang ingin ia nikahi, maka hijrahnya kepada apa yang ia tuju.",
+      "source": "HR. Al-Bukhari dan Muslim"
+    },
+    {
+      "id": 2,
+      "title": "Islam, Iman, dan Ihsan",
+      "arabic": "أَخْبِرْنِي عَنِ الْإِسْلَامِ... أَنْ تَشْهَدَ أَنْ لَا إِلَهَ إِلَّا اللهُ وَأَنَّ مُحَمَّدًا رَسُولُ اللهِ، وَتُقِيمَ الصَّلَاةَ، وَتُؤْتِيَ الزَّكَاةَ، وَتَصُومَ رَمَضَانَ، وَتَحُجَّ الْبَيْتَ إِنِ اسْتَطَعْتَ إِلَيْهِ سَبِيلًا",
+      "narrator": "Umar bin Al-Khaththab radhiyallahu 'anhu",
+      "translation": "Beritahukan kepadaku tentang Islam... Engkau bersaksi bahwa tiada ilah yang berhak disembah selain Allah dan Muhammad adalah utusan Allah, mendirikan shalat, menunaikan zakat, berpuasa Ramadhan, dan berhaji ke Baitullah jika engkau mampu.",
+      "source": "HR. Muslim"
+    },
+    {
+      "id": 3,
+      "title": "Rukun Islam",
+      "arabic": "بُنِيَ الْإِسْلَامُ عَلَى خَمْسٍ: شَهَادَةِ أَنْ لَا إِلَهَ إِلَّا اللهُ وَأَنَّ مُحَمَّدًا رَسُولُ اللهِ، وَإِقَامِ الصَّلَاةِ، وَإِيتَاءِ الزَّكَاةِ، وَحَجِّ الْبَيْتِ، وَصَوْمِ رَمَضَانَ",
+      "narrator": "Abdullah bin Umar radhiyallahu 'anhuma",
+      "translation": "Islam dibangun di atas lima perkara: bersaksi bahwa tiada ilah yang berhak disembah selain Allah dan Muhammad adalah utusan Allah, mendirikan shalat, menunaikan zakat, berhaji ke Baitullah, dan berpuasa Ramadhan.",
+      "source": "HR. Al-Bukhari dan Muslim"
+    },
+    {
+      "id": 4,
+      "title": "Tahapan Penciptaan Manusia",
+      "arabic": "إِنَّ أَحَدَكُمْ يُجْمَعُ خَلْقُهُ فِي بَطْنِ أُمِّهِ أَرْبَعِينَ يَوْمًا نُطْفَةً، ثُمَّ يَكُونُ عَلَقَةً مِثْلَ ذَلِكَ، ثُمَّ يَكُونُ مُضْغَةً مِثْلَ ذَلِكَ، ثُمَّ يُرْسَلُ إِلَيْهِ الْمَلَكُ فَيَنْفُخُ فِيهِ الرُّوحَ",
+      "narrator": "Abdullah bin Mas'ud radhiyallahu 'anhu",
+      "translation": "Sesungguhnya setiap kalian dikumpulkan penciptaannya di perut ibunya selama 40 hari berupa nutfah, kemudian menjadi 'alaqah selama itu pula, kemudian menjadi mudhghah selama itu pula, kemudian diutus kepadanya malaikat lalu ditiupkan ruh padanya.",
+      "source": "HR. Al-Bukhari dan Muslim"
+    },
+    {
+      "id": 5,
+      "title": "Larangan Bid'ah",
+      "arabic": "مَنْ أَحْدَثَ فِي أَمْرِنَا هَذَا مَا لَيْسَ مِنْهُ فَهُوَ رَدٌّ",
+      "narrator": "Aisyah radhiyallahu 'anha",
+      "translation": "Barangsiapa yang mengada-adakan sesuatu dalam urusan (agama) kami yang bukan bagian darinya, maka ia tertolak.",
+      "source": "HR. Al-Bukhari dan Muslim"
+    },
+    {
+      "id": 6,
+      "title": "Halal dan Haram",
+      "arabic": "إِنَّ الْحَلَالَ بَيِّنٌ وَإِنَّ الْحَرَامَ بَيِّنٌ، وَبَيْنَهُمَا أُمُورٌ مُشْتَبِهَاتٌ لَا يَعْلَمُهُنَّ كَثِيرٌ مِنَ النَّاسِ، فَمَنِ اتَّقَى الشُّبُهَاتِ فَقَدِ اسْتَبْرَأَ لِدِينِهِ وَعِرْضِهِ",
+      "narrator": "An-Nu'man bin Basyir radhiyallahu 'anhuma",
+      "translation": "Sesungguhnya yang halal itu jelas dan yang haram itu jelas, dan di antara keduanya terdapat perkara syubhat (samar) yang tidak diketahui oleh banyak orang. Barangsiapa menjaga diri dari syubhat, maka ia telah membersihkan agama dan kehormatannya.",
+      "source": "HR. Al-Bukhari dan Muslim"
+    },
+    {
+      "id": 7,
+      "title": "Agama adalah Nasihat",
+      "arabic": "الدِّينُ النَّصِيحَةُ. قُلْنَا: لِمَنْ؟ قَالَ: لِلَّهِ، وَلِكِتَابِهِ، وَلِرَسُولِهِ، وَلِأَئِمَّةِ الْمُسْلِمِينَ وَعَامَّتِهِمْ",
+      "narrator": "Tamim Ad-Dari radhiyallahu 'anhu",
+      "translation": "Agama itu adalah nasihat. Kami bertanya: Untuk siapa? Beliau menjawab: Untuk Allah, Kitab-Nya, Rasul-Nya, para pemimpin kaum muslimin, dan kaum muslimin pada umumnya.",
+      "source": "HR. Muslim"
+    },
+    {
+      "id": 8,
+      "title": "Kesucian Darah Seorang Muslim",
+      "arabic": "أُمِرْتُ أَنْ أُقَاتِلَ النَّاسَ حَتَّى يَشْهَدُوا أَنْ لَا إِلَهَ إِلَّا اللهُ وَأَنَّ مُحَمَّدًا رَسُولُ اللهِ، وَيُقِيمُوا الصَّلَاةَ، وَيُؤْتُوا الزَّكَاةَ",
+      "narrator": "Abdullah bin Umar radhiyallahu 'anhuma",
+      "translation": "Aku diperintahkan untuk memerangi manusia sampai mereka bersaksi bahwa tiada ilah yang berhak disembah selain Allah dan Muhammad adalah utusan Allah, mendirikan shalat, dan menunaikan zakat.",
+      "source": "HR. Al-Bukhari dan Muslim"
+    },
+    {
+      "id": 9,
+      "title": "Larangan Berlebihan dalam Agama",
+      "arabic": "مَا نَهَيْتُكُمْ عَنْهُ فَاجْتَنِبُوهُ، وَمَا أَمَرْتُكُمْ بِهِ فَأْتُوا مِنْهُ مَا اسْتَطَعْتُمْ",
+      "narrator": "Abu Hurairah radhiyallahu 'anhu",
+      "translation": "Apa yang aku larang atas kalian maka jauhilah, dan apa yang aku perintahkan kepada kalian maka kerjakanlah semampu kalian.",
+      "source": "HR. Al-Bukhari dan Muslim"
+    },
+    {
+      "id": 10,
+      "title": "Makanan yang Halal dan Baik",
+      "arabic": "إِنَّ اللهَ طَيِّبٌ لَا يَقْبَلُ إِلَّا طَيِّبًا، وَإِنَّ اللهَ أَمَرَ الْمُؤْمِنِينَ بِمَا أَمَرَ بِهِ الْمُرْسَلِينَ",
+      "narrator": "Abu Hurairah radhiyallahu 'anhu",
+      "translation": "Sesungguhnya Allah itu baik dan tidak menerima kecuali yang baik. Dan sesungguhnya Allah memerintahkan kepada orang-orang beriman sebagaimana Dia memerintahkan kepada para rasul.",
+      "source": "HR. Muslim"
+    },
+    {
+      "id": 11,
+      "title": "Meninggalkan Keraguan",
+      "arabic": "دَعْ مَا يَرِيبُكَ إِلَى مَا لَا يَرِيبُكَ",
+      "narrator": "Al-Hasan bin Ali radhiyallahu 'anhuma",
+      "translation": "Tinggalkanlah apa yang meragukanmu kepada apa yang tidak meragukanmu.",
+      "source": "HR. At-Tirmidzi dan An-Nasa'i"
+    },
+    {
+      "id": 12,
+      "title": "Meninggalkan yang Tidak Bermanfaat",
+      "arabic": "مِنْ حُسْنِ إِسْلَامِ الْمَرْءِ تَرْكُهُ مَا لَا يَعْنِيهِ",
+      "narrator": "Abu Hurairah radhiyallahu 'anhu",
+      "translation": "Di antara kebaikan Islam seseorang adalah meninggalkan apa yang tidak bermanfaat baginya.",
+      "source": "HR. At-Tirmidzi dan Ibnu Majah"
+    },
+    {
+      "id": 13,
+      "title": "Mencintai Saudara Muslim",
+      "arabic": "لَا يُؤْمِنُ أَحَدُكُمْ حَتَّى يُحِبَّ لِأَخِيهِ مَا يُحِبُّ لِنَفْسِهِ",
+      "narrator": "Anas bin Malik radhiyallahu 'anhu",
+      "translation": "Tidak beriman salah seorang di antara kalian sampai ia mencintai untuk saudaranya apa yang ia cintai untuk dirinya sendiri.",
+      "source": "HR. Al-Bukhari dan Muslim"
+    },
+    {
+      "id": 14,
+      "title": "Kesucian Darah Muslim",
+      "arabic": "لَا يَحِلُّ دَمُ امْرِئٍ مُسْلِمٍ إِلَّا بِإِحْدَى ثَلَاثٍ: الثَّيِّبُ الزَّانِي، وَالنَّفْسُ بِالنَّفْسِ، وَالتَّارِكُ لِدِينِهِ الْمُفَارِقُ لِلْجَمَاعَةِ",
+      "narrator": "Abdullah bin Mas'ud radhiyallahu 'anhu",
+      "translation": "Tidak halal darah seorang muslim kecuali karena salah satu dari tiga perkara: orang yang sudah menikah berzina, jiwa dengan jiwa (qishas), dan orang yang meninggalkan agamanya memisahkan diri dari jamaah.",
+      "source": "HR. Al-Bukhari dan Muslim"
+    },
+    {
+      "id": 15,
+      "title": "Memuliakan Tamu",
+      "arabic": "مَنْ كَانَ يُؤْمِنُ بِاللهِ وَالْيَوْمِ الْآخِرِ فَلْيَقُلْ خَيْرًا أَوْ لِيَصْمُتْ، وَمَنْ كَانَ يُؤْمِنُ بِاللهِ وَالْيَوْمِ الْآخِرِ فَلْيُكْرِمْ جَارَهُ، وَمَنْ كَانَ يُؤْمِنُ بِاللهِ وَالْيَوْمِ الْآخِرِ فَلْيُكْرِمْ ضَيْفَهُ",
+      "narrator": "Abu Hurairah radhiyallahu 'anhu",
+      "translation": "Barangsiapa beriman kepada Allah dan hari akhir hendaklah berkata baik atau diam. Barangsiapa beriman kepada Allah dan hari akhir hendaklah memuliakan tetangganya. Dan barangsiapa beriman kepada Allah dan hari akhir hendaklah memuliakan tamunya.",
+      "source": "HR. Al-Bukhari dan Muslim"
+    },
+    {
+      "id": 16,
+      "title": "Larangan Marah",
+      "arabic": "لَا تَغْضَبْ (فَرَدَّدَ مِرَارًا) لَا تَغْضَبْ",
+      "narrator": "Abu Hurairah radhiyallahu 'anhu",
+      "translation": "Jangan marah. (Beliau mengulang-ulangnya) Jangan marah.",
+      "source": "HR. Al-Bukhari"
+    },
+    {
+      "id": 17,
+      "title": "Berbuat Ihsan dalam Segala Hal",
+      "arabic": "إِنَّ اللهَ كَتَبَ الْإِحْسَانَ عَلَى كُلِّ شَيْءٍ، فَإِذَا قَتَلْتُمْ فَأَحْسِنُوا الْقِتْلَةَ، وَإِذَا ذَبَحْتُمْ فَأَحْسِنُوا الذِّبْحَةَ",
+      "narrator": "Syaddad bin Aus radhiyallahu 'anhu",
+      "translation": "Sesungguhnya Allah mewajibkan ihsan (berbuat baik) atas segala sesuatu. Jika kalian membunuh, maka baikanlah cara membunuh. Dan jika kalian menyembelih, maka baikanlah cara menyembelih.",
+      "source": "HR. Muslim"
+    },
+    {
+      "id": 18,
+      "title": "Takwa kepada Allah",
+      "arabic": "اتَّقِ اللهَ حَيْثُمَا كُنْتَ، وَأَتْبِعِ السَّيِّئَةَ الْحَسَنَةَ تَمْحُهَا، وَخَالِقِ النَّاسَ بِخُلُقٍ حَسَنٍ",
+      "narrator": "Abu Dzar dan Mu'adz bin Jabal radhiyallahu 'anhuma",
+      "translation": "Bertakwalah kepada Allah di mana pun engkau berada, dan iringilah keburukan dengan kebaikan niscaya ia akan menghapusnya, dan bergaullah dengan manusia dengan akhlak yang baik.",
+      "source": "HR. At-Tirmidzi"
+    },
+    {
+      "id": 19,
+      "title": "Meminta Pertolongan Allah",
+      "arabic": "يَا غُلَامُ إِنِّي أُعَلِّمُكَ كَلِمَاتٍ: احْفَظِ اللهَ يَحْفَظْكَ، احْفَظِ اللهَ تَجِدْهُ تُجَاهَكَ، إِذَا سَأَلْتَ فَاسْأَلِ اللهَ، وَإِذَا اسْتَعَنْتَ فَاسْتَعِنْ بِاللهِ",
+      "narrator": "Abdullah bin Abbas radhiyallahu 'anhuma",
+      "translation": "Wahai anak muda, aku ajarkan kepadamu beberapa kalimat: Jagalah Allah, niscaya Dia menjagamu. Jagalah Allah, niscaya engkau mendapati-Nya di hadapanmu. Jika engkau meminta, mintalah kepada Allah. Dan jika engkau memohon pertolongan, mohonlah pertolongan kepada Allah.",
+      "source": "HR. At-Tirmidzi"
+    },
+    {
+      "id": 20,
+      "title": "Rasa Malu",
+      "arabic": "إِنَّ مِمَّا أَدْرَكَ النَّاسُ مِنْ كَلَامِ النُّبُوَّةِ الْأُولَى: إِذَا لَمْ تَسْتَحْيِ فَاصْنَعْ مَا شِئْتَ",
+      "narrator": "Abu Mas'ud Uqbah bin Amr Al-Anshari radhiyallahu 'anhu",
+      "translation": "Sesungguhnya di antara yang didapat manusia dari kalimat kenabian terdahulu adalah: Jika engkau tidak malu, berbuatlah sesukamu.",
+      "source": "HR. Al-Bukhari"
+    },
+    {
+      "id": 21,
+      "title": "Istiqamah",
+      "arabic": "قُلْ آمَنْتُ بِاللهِ ثُمَّ اسْتَقِمْ",
+      "narrator": "Sufyan bin Abdullah radhiyallahu 'anhu",
+      "translation": "Katakanlah: Aku beriman kepada Allah, kemudian istiqamahlah (konsisten).",
+      "source": "HR. Muslim"
+    },
+    {
+      "id": 22,
+      "title": "Jalan Menuju Surga",
+      "arabic": "أَرَأَيْتَ إِذَا صَلَّيْتُ الْمَكْتُوبَاتِ، وَصُمْتُ رَمَضَانَ، وَأَحْلَلْتُ الْحَلَالَ، وَحَرَّمْتُ الْحَرَامَ، وَلَمْ أَزِدْ عَلَى ذَلِكَ شَيْئًا، أَأَدْخُلُ الْجَنَّةَ؟ قَالَ: نَعَمْ",
+      "narrator": "Abu Abdillah Jabir bin Abdillah Al-Anshari radhiyallahu 'anhuma",
+      "translation": "Bagaimana menurutmu jika aku shalat wajib, berpuasa Ramadhan, menghalalkan yang halal dan mengharamkan yang haram, dan tidak menambah amalan lain, apakah aku masuk surga? Beliau menjawab: Ya.",
+      "source": "HR. Muslim"
+    },
+    {
+      "id": 23,
+      "title": "Bersuci Separuh Iman",
+      "arabic": "الطُّهُورُ شَطْرُ الْإِيمَانِ، وَالْحَمْدُ لِلَّهِ تَمْلَأُ الْمِيزَانَ، وَسُبْحَانَ اللهِ وَالْحَمْدُ لِلَّهِ تَمْلَآنِ مَا بَيْنَ السَّمَاوَاتِ وَالْأَرْضِ",
+      "narrator": "Abu Malik Al-Asy'ari radhiyallahu 'anhu",
+      "translation": "Bersuci itu separuh iman, Alhamdulillah memenuhi timbangan, Subhanallah dan Alhamdulillah memenuhi apa yang ada antara langit dan bumi.",
+      "source": "HR. Muslim"
+    },
+    {
+      "id": 24,
+      "title": "Larangan Kezaliman",
+      "arabic": "يَا عِبَادِي إِنِّي حَرَّمْتُ الظُّلْمَ عَلَى نَفْسِي وَجَعَلْتُهُ بَيْنَكُمْ مُحَرَّمًا فَلَا تَظَالَمُوا",
+      "narrator": "Abu Dzar Al-Ghifari radhiyallahu 'anhu (Hadits Qudsi)",
+      "translation": "Wahai hamba-Ku, sesungguhnya Aku telah mengharamkan kezaliman atas diri-Ku dan Aku jadikan ia haram di antara kalian, maka janganlah kalian saling menzalimi.",
+      "source": "HR. Muslim"
+    },
+    {
+      "id": 25,
+      "title": "Keutamaan Sedekah dan Amal Kebaikan",
+      "arabic": "كُلُّ سُلَامَى مِنَ النَّاسِ عَلَيْهِ صَدَقَةٌ، كُلَّ يَوْمٍ تَطْلُعُ فِيهِ الشَّمْسُ: تَعْدِلُ بَيْنَ اثْنَيْنِ صَدَقَةٌ",
+      "narrator": "Abu Hurairah radhiyallahu 'anhu",
+      "translation": "Setiap ruas tulang manusia wajib bersedekah setiap hari terbitnya matahari. Mendamaikan dua orang yang bertengkar adalah sedekah.",
+      "source": "HR. Al-Bukhari dan Muslim"
+    },
+    {
+      "id": 26,
+      "title": "Banyak Pintu Kebaikan",
+      "arabic": "لَا تَحْقِرَنَّ مِنَ الْمَعْرُوفِ شَيْئًا وَلَوْ أَنْ تَلْقَى أَخَاكَ بِوَجْهٍ طَلِقٍ",
+      "narrator": "Abu Dzar radhiyallahu 'anhu",
+      "translation": "Jangan engkau meremehkan kebaikan sedikit pun, walaupun hanya bertemu saudaramu dengan wajah berseri.",
+      "source": "HR. Muslim"
+    },
+    {
+      "id": 27,
+      "title": "Kebaikan dan Dosa",
+      "arabic": "الْبِرُّ حُسْنُ الْخُلُقِ، وَالْإِثْمُ مَا حَاكَ فِي نَفْسِكَ وَكَرِهْتَ أَنْ يَطَّلِعَ عَلَيْهِ النَّاسُ",
+      "narrator": "An-Nawwas bin Sam'an radhiyallahu 'anhu",
+      "translation": "Kebaikan itu adalah akhlak yang baik. Dan dosa itu adalah apa yang mengganjal di hatimu dan engkau tidak suka orang lain mengetahuinya.",
+      "source": "HR. Muslim"
+    },
+    {
+      "id": 28,
+      "title": "Berpegang pada Sunnah",
+      "arabic": "عَلَيْكُمْ بِسُنَّتِي وَسُنَّةِ الْخُلَفَاءِ الْمَهْدِيِّينَ الرَّاشِدِينَ، تَمَسَّكُوا بِهَا وَعَضُّوا عَلَيْهَا بِالنَّوَاجِذِ",
+      "narrator": "Al-'Irbadh bin Sariyah radhiyallahu 'anhu",
+      "translation": "Hendaklah kalian berpegang pada sunnahku dan sunnah para khulafaur rasyidin yang mendapat petunjuk. Berpeganglah padanya dan gigitlah dengan gigi geraham.",
+      "source": "HR. Abu Dawud dan At-Tirmidzi"
+    },
+    {
+      "id": 29,
+      "title": "Pintu-Pintu Kebaikan",
+      "arabic": "الصَّوْمُ جُنَّةٌ، وَالصَّدَقَةُ تُطْفِئُ الْخَطِيئَةَ كَمَا يُطْفِئُ الْمَاءُ النَّارَ",
+      "narrator": "Mu'adz bin Jabal radhiyallahu 'anhu",
+      "translation": "Puasa adalah perisai, dan sedekah memadamkan dosa sebagaimana air memadamkan api.",
+      "source": "HR. At-Tirmidzi"
+    },
+    {
+      "id": 30,
+      "title": "Batasan-Batasan Allah",
+      "arabic": "إِنَّ اللهَ فَرَضَ فَرَائِضَ فَلَا تُضَيِّعُوهَا، وَحَدَّ حُدُودًا فَلَا تَعْتَدُوهَا، وَحَرَّمَ أَشْيَاءَ فَلَا تَنْتَهِكُوهَا، وَسَكَتَ عَنْ أَشْيَاءَ رَحْمَةً لَكُمْ غَيْرَ نِسْيَانٍ فَلَا تَبْحَثُوا عَنْهَا",
+      "narrator": "Abu Tsa'labah Al-Khusyani radhiyallahu 'anhu",
+      "translation": "Sesungguhnya Allah telah mewajibkan beberapa kewajiban maka jangan kalian sia-siakan, menetapkan batasan-batasan maka jangan kalian langgar, mengharamkan beberapa hal maka jangan kalian langgar, dan diam tentang beberapa hal sebagai rahmat bagi kalian bukan karena lupa maka jangan kalian bahas.",
+      "source": "HR. Ad-Daraquthni"
+    },
+    {
+      "id": 31,
+      "title": "Zuhud",
+      "arabic": "ازْهَدْ فِي الدُّنْيَا يُحِبَّكَ اللهُ، وَازْهَدْ فِيمَا عِنْدَ النَّاسِ يُحِبَّكَ النَّاسُ",
+      "narrator": "Sahl bin Sa'd As-Sa'idi radhiyallahu 'anhu",
+      "translation": "Zuhudlah terhadap dunia niscaya Allah mencintaimu, dan zuhudlah terhadap apa yang ada pada manusia niscaya manusia mencintaimu.",
+      "source": "HR. Ibnu Majah"
+    },
+    {
+      "id": 32,
+      "title": "Tidak Boleh Membahayakan",
+      "arabic": "لَا ضَرَرَ وَلَا ضِرَارَ",
+      "narrator": "Abu Sa'id Al-Khudri radhiyallahu 'anhu",
+      "translation": "Tidak boleh membahayakan diri sendiri dan tidak boleh membahayakan orang lain.",
+      "source": "HR. Ibnu Majah dan Ad-Daraquthni"
+    },
+    {
+      "id": 33,
+      "title": "Bukti untuk Penuntut",
+      "arabic": "لَوْ يُعْطَى النَّاسُ بِدَعْوَاهُمْ، لَادَّعَى رِجَالٌ أَمْوَالَ قَوْمٍ وَدِمَاءَهُمْ، لَكِنَّ الْبَيِّنَةَ عَلَى الْمُدَّعِي وَالْيَمِينَ عَلَى مَنْ أَنْكَرَ",
+      "narrator": "Ibnu Abbas radhiyallahu 'anhuma",
+      "translation": "Seandainya manusia diberikan (haknya) hanya berdasarkan dakwaan mereka, niscaya orang-orang akan menuntut harta dan darah kaum lainnya. Akan tetapi bukti itu wajib atas penuntut dan sumpah wajib atas yang mengingkari.",
+      "source": "HR. Al-Baihaqi"
+    },
+    {
+      "id": 34,
+      "title": "Amar Ma'ruf Nahi Munkar",
+      "arabic": "مَنْ رَأَى مِنْكُمْ مُنْكَرًا فَلْيُغَيِّرْهُ بِيَدِهِ، فَإِنْ لَمْ يَسْتَطِعْ فَبِلِسَانِهِ، فَإِنْ لَمْ يَسْتَطِعْ فَبِقَلْبِهِ وَذَلِكَ أَضْعَفُ الْإِيمَانِ",
+      "narrator": "Abu Sa'id Al-Khudri radhiyallahu 'anhu",
+      "translation": "Barangsiapa di antara kalian melihat kemungkaran, hendaklah ia mengubahnya dengan tangannya. Jika tidak mampu, maka dengan lisannya. Dan jika tidak mampu, maka dengan hatinya, dan itulah selemah-lemahnya iman.",
+      "source": "HR. Muslim"
+    },
+    {
+      "id": 35,
+      "title": "Persaudaraan Islam",
+      "arabic": "لَا تَحَاسَدُوا، وَلَا تَنَاجَشُوا، وَلَا تَبَاغَضُوا، وَلَا تَدَابَرُوا، وَكُونُوا عِبَادَ اللهِ إِخْوَانًا",
+      "narrator": "Abu Hurairah radhiyallahu 'anhu",
+      "translation": "Janganlah kalian saling hasad, saling menipu, saling membenci, dan saling membelakangi. Jadilah kalian hamba-hamba Allah yang bersaudara.",
+      "source": "HR. Muslim"
+    },
+    {
+      "id": 36,
+      "title": "Memenuhi Kebutuhan Saudara",
+      "arabic": "مَنْ نَفَّسَ عَنْ مُؤْمِنٍ كُرْبَةً مِنْ كُرَبِ الدُّنْيَا نَفَّسَ اللهُ عَنْهُ كُرْبَةً مِنْ كُرَبِ يَوْمِ الْقِيَامَةِ",
+      "narrator": "Abu Hurairah radhiyallahu 'anhu",
+      "translation": "Barangsiapa melepaskan kesulitan seorang mukmin dari kesulitan-kesulitan dunia, niscaya Allah melepaskan kesulitannya dari kesulitan-kesulitan hari Kiamat.",
+      "source": "HR. Muslim"
+    },
+    {
+      "id": 37,
+      "title": "Keutamaan Kebaikan dan Dosa",
+      "arabic": "إِنَّ اللهَ كَتَبَ الْحَسَنَاتِ وَالسَّيِّئَاتِ... فَمَنْ هَمَّ بِحَسَنَةٍ فَلَمْ يَعْمَلْهَا كَتَبَهَا اللهُ عِنْدَهُ حَسَنَةً كَامِلَةً",
+      "narrator": "Ibnu Abbas radhiyallahu 'anhuma",
+      "translation": "Sesungguhnya Allah mencatat kebaikan-kebaikan dan keburukan-keburukan... Barangsiapa berniat melakukan kebaikan namun belum mengerjakannya, Allah mencatatnya sebagai satu kebaikan sempurna.",
+      "source": "HR. Al-Bukhari dan Muslim"
+    },
+    {
+      "id": 38,
+      "title": "Wali Allah",
+      "arabic": "مَنْ عَادَى لِي وَلِيًّا فَقَدْ آذَنْتُهُ بِالْحَرْبِ",
+      "narrator": "Abu Hurairah radhiyallahu 'anhu (Hadits Qudsi)",
+      "translation": "Barangsiapa memusuhi wali-Ku, maka sungguh Aku telah mengumumkan perang kepadanya.",
+      "source": "HR. Al-Bukhari"
+    },
+    {
+      "id": 39,
+      "title": "Keringanan dalam Agama",
+      "arabic": "إِنَّ اللهَ تَجَاوَزَ عَنْ أُمَّتِي الْخَطَأَ وَالنِّسْيَانَ وَمَا اسْتُكْرِهُوا عَلَيْهِ",
+      "narrator": "Ibnu Abbas radhiyallahu 'anhuma",
+      "translation": "Sesungguhnya Allah memaafkan dari umatku kesalahan, lupa, dan apa yang dipaksakan atas mereka.",
+      "source": "HR. Ibnu Majah dan Al-Baihaqi"
+    },
+    {
+      "id": 40,
+      "title": "Menjadi Asing di Dunia",
+      "arabic": "كُنْ فِي الدُّنْيَا كَأَنَّكَ غَرِيبٌ أَوْ عَابِرُ سَبِيلٍ",
+      "narrator": "Abdullah bin Umar radhiyallahu 'anhuma",
+      "translation": "Jadilah engkau di dunia seakan-akan engkau orang asing atau musafir yang sedang melintas.",
+      "source": "HR. Al-Bukhari"
+    },
+    {
+      "id": 41,
+      "title": "Mengikuti Sunnah Nabi ﷺ",
+      "arabic": "عَنْ أَبِي مُحَمَّدٍ عَبْدِ اللهِ بْنِ عَمْرِو بْنِ الْعَاصِ رَضِيَ اللهُ عَنْهُمَا قَالَ: قَالَ رَسُولُ اللهِ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ: لَا يُؤْمِنُ أَحَدُكُمْ حَتَّى يَكُونَ هَوَاهُ تَبَعًا لِمَا جِئْتُ بِهِ",
+      "narrator": "Abdullah bin Amr bin Al-Ash radhiyallahu 'anhuma",
+      "translation": "Tidak beriman salah seorang di antara kalian sampai hawa nafsunya mengikuti apa yang aku bawa (ajaran Islam).",
+      "source": "Kitab Al-Hujjah, dishahihkan oleh An-Nawawi"
+    },
+    {
+      "id": 42,
+      "title": "Luasnya Ampunan Allah",
+      "arabic": "عَنْ أَنَسٍ رَضِيَ اللهُ عَنْهُ قَالَ: سَمِعْتُ رَسُولَ اللهِ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ يَقُولُ: قَالَ اللهُ تَعَالَى: يَا ابْنَ آدَمَ، إِنَّكَ مَا دَعَوْتَنِي وَرَجَوْتَنِي غَفَرْتُ لَكَ عَلَى مَا كَانَ مِنْكَ وَلَا أُبَالِي. يَا ابْنَ آدَمَ، لَوْ بَلَغَتْ ذُنُوبُكَ عَنَانَ السَّمَاءِ ثُمَّ اسْتَغْفَرْتَنِي غَفَرْتُ لَكَ وَلَا أُبَالِي. يَا ابْنَ آدَمَ، إِنَّكَ لَوْ أَتَيْتَنِي بِقُرَابِ الْأَرْضِ خَطَايَا ثُمَّ لَقِيتَنِي لَا تُشْرِكُ بِي شَيْئًا لَأَتَيْتُكَ بِقُرَابِهَا مَغْفِرَةً",
+      "narrator": "Anas bin Malik radhiyallahu 'anhu (Hadits Qudsi)",
+      "translation": "Allah Ta'ala berfirman: Wahai anak Adam, selama engkau berdoa kepada-Ku dan mengharapkan-Ku, Aku ampuni dosamu dan Aku tidak peduli. Wahai anak Adam, seandainya dosamu mencapai awan di langit kemudian engkau meminta ampunan kepada-Ku, niscaya Aku ampuni engkau dan Aku tidak peduli. Wahai anak Adam, sesungguhnya jika engkau datang kepada-Ku dengan kesalahan sepenuh bumi, kemudian engkau menemui-Ku tanpa menyekutukan-Ku dengan sesuatu, niscaya Aku datangkan kepadamu ampunan sepenuh bumi pula.",
+      "source": "HR. At-Tirmidzi, hasan shahih"
+    }
+  ]
+}

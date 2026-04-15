@@ -1,0 +1,16 @@
+export const dailyVerses = [
+  { text: '"Dan apabila hamba-hamba-Ku bertanya kepadamu tentang Aku, maka (jawablah), bahwasanya Aku adalah dekat."', source: 'QS. Al-Baqarah 2:186' },
+  { text: '"Sesungguhnya sesudah kesulitan itu ada kemudahan."', source: 'QS. Al-Insyirah 94:6' },
+  { text: '"Dan bertawakallah kepada Allah. Dan cukuplah Allah sebagai pemelihara."', source: 'QS. Al-Ahzab 33:3' },
+  { text: '"Maka ingatlah kepada-Ku, niscaya Aku akan mengingat kamu."', source: 'QS. Al-Baqarah 2:152' },
+  { text: '"Cukuplah Allah bagiku; tidak ada Tuhan selain Dia. Hanya kepada-Nya aku bertawakal."', source: 'QS. At-Taubah 9:129' },
+  { text: '"Dan Tuhanmu berfirman: Berdoalah kepada-Ku, niscaya akan Kuperkenankan bagimu."', source: 'QS. Ghafir 40:60' },
+  { text: '"Hai orang-orang yang beriman, jadikanlah sabar dan shalat sebagai penolongmu."', source: 'QS. Al-Baqarah 2:153' },
+  { text: '"Allah tidak membebani seseorang melainkan sesuai dengan kesanggupannya."', source: 'QS. Al-Baqarah 2:286' },
+  { text: '"Sesungguhnya Allah beserta orang-orang yang sabar."', source: 'QS. Al-Baqarah 2:153' },
+  { text: '"Dan janganlah kamu berputus asa dari rahmat Allah."', source: 'QS. Az-Zumar 39:53' },
+  { text: '"Barangsiapa bertakwa kepada Allah niscaya Dia akan membukakan jalan keluar baginya."', source: 'QS. At-Talaq 65:2' },
+  { text: '"Sesungguhnya bersama kesulitan ada kemudahan."', source: 'QS. Al-Insyirah 94:5' },
+  { text: '"Dan Dia bersama kamu di mana saja kamu berada."', source: 'QS. Al-Hadid 57:4' },
+  { text: '"Dia-lah yang menurunkan ketenangan ke dalam hati orang-orang mukmin."', source: 'QS. Al-Fath 48:4' },
+];

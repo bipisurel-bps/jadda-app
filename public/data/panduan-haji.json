@@ -1,0 +1,241 @@
+{
+  "title": "Tuntunan Ringkas Ibadah Haji",
+  "description": "Panduan manasik haji berdasarkan buku Mulakhos Fiqhi karya Syaikh Shaleh bin Fauzan Al-Fauzan",
+  "source": "Diringkas dari Mulakhos Fiqhi (Kitabul Hajj) — Syaikh Shaleh bin Fauzan Al-Fauzan",
+  "note": "Hukum menunaikan ibadah haji adalah wajib bagi yang mampu (QS. Ali Imran: 97). Rasulullah ﷺ bersabda: 'Tidak ada balasan bagi haji mabrur kecuali jannah.' (HR. Tirmidzi 809)",
+  "steps": [
+    {
+      "id": 1,
+      "title": "Syarat & Keutamaan Haji",
+      "icon": "info",
+      "items": [
+        {
+          "text": "Lima syarat wajib haji: Islam, berakal, baligh, merdeka, dan mampu (fisik maupun materi). Untuk wanita ditambah syarat adanya mahram."
+        },
+        {
+          "text": "Dalil wajib haji:",
+          "arabic": "وَلِلَّهِ عَلَى النَّاسِ حِجُّ الْبَيْتِ مَنِ اسْتَطَاعَ إِلَيْهِ سَبِيلًا",
+          "transliteration": "Walillahi 'alan-naasi hijjul baiti manistathaa'a ilaihi sabiila"
+        },
+        {
+          "text": "'Mengerjakan haji adalah kewajiban manusia terhadap Allah, yaitu (bagi) orang yang sanggup mengadakan perjalanan ke Baitullah.' (QS. Ali Imran: 97)"
+        },
+        {
+          "text": "Rasulullah ﷺ bersabda: 'Tidak ada balasan bagi haji mabrur kecuali jannah.' (HR. Tirmidzi 809, Nasa'i 263)"
+        }
+      ],
+      "notes": [
+        "Jika mampu secara harta namun tidak mampu fisik (tua/sakit menahun), boleh diwakilkan.",
+        "Wanita wajib disertai mahram berdasar sabda Rasulullah ﷺ: 'Tidaklah seorang wanita bersafar kecuali dengan disertai mahram.' (HR. Bukhari 1862, Muslim 1341)"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Miqat Haji (Waktu & Tempat)",
+      "icon": "location",
+      "items": [
+        {
+          "text": "Miqat Zamani (waktu): Bulan Syawal, Dzulqa'dah, dan 10 hari awal Dzulhijjah."
+        },
+        {
+          "text": "Dalil miqat zamani:",
+          "arabic": "الْحَجُّ أَشْهُرٌ مَّعْلُومَاتٌ فَمَن فَرَضَ فِيهِنَّ الْحَجَّ فَلَا رَفَثَ وَلَا فُسُوقَ وَلَا جِدَالَ فِي الْحَجِّ",
+          "transliteration": "Al-hajju asy-hurun ma'luumaat, faman faradha fihinnal hajja falaa rafatsa walaa fusuuqa walaa jidaala fil hajj"
+        },
+        {
+          "text": "'(Musim) haji adalah beberapa bulan yang dimaklumi.' (QS. Al-Baqarah: 197)"
+        },
+        {
+          "text": "Miqat Makani (tempat): Dzul Hulaifah (Madinah), Juhfah (Syam), Qorn Manazil (Nejed), Yalamlam (Yaman), Dzatul 'Irq (Iraq). Bagi yang dari Indonesia umumnya melalui miqat Yalamlam atau Qornul Manazil."
+        }
+      ],
+      "notes": [
+        "Tidak boleh melewati miqat kecuali sudah dalam keadaan ihram.",
+        "Bagi yang berada di dalam area miqat, berihram dari tempat tinggalnya."
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Tatacara Berihram",
+      "icon": "ihram",
+      "preparation": [
+        "Mandi (HR. Tirmidzi 830)",
+        "Memotong kuku, kumis, bulu ketiak",
+        "Memakai minyak wangi di badan (HR. Bukhari 1539, Muslim 33/1189)",
+        "Laki-laki memakai pakaian tidak berjahit (kain ihram)",
+        "Tidak ada shalat sunnah khusus sebelum ihram, namun jika bertepatan waktu fardhu, berihram setelahnya"
+      ],
+      "items": [
+        {
+          "text": "Setelah persiapan selesai, niatkan ihram lalu perbanyak membaca talbiyah:",
+          "arabic": "لَبَّيْكَ اللَّهُمَّ لَبَّيْكَ، لَبَّيْكَ لَا شَرِيكَ لَكَ لَبَّيْكَ، إِنَّ الْحَمْدَ وَالنِّعْمَةَ لَكَ وَالْمُلْكَ، لَا شَرِيكَ لَكَ",
+          "transliteration": "Labbaikallahumma labbaik, labbaika laa syariika laka labbaik, innal hamda wan ni'mata laka wal mulk, laa syariika lak"
+        },
+        {
+          "text": "Artinya: 'Aku memenuhi panggilan-Mu ya Allah, aku memenuhi panggilan-Mu. Tiada sekutu bagi-Mu, aku memenuhi panggilan-Mu. Sesungguhnya segala pujian, kenikmatan dan kekuasaan hanya milik-Mu, tiada sekutu bagi-Mu.'"
+        }
+      ],
+      "notes": [
+        "Bagi laki-laki disunnahkan mengangkat suara saat bertalbiyah.",
+        "Talbiyah terus dibaca sampai melempar Jumrah Aqabah pada hari Nahr (10 Dzulhijjah)."
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Macam-Macam Haji",
+      "icon": "types",
+      "items": [
+        {
+          "text": "1. Haji Tamattuk: Berihram untuk umrah di bulan haji → selesaikan umrah → bertahalul → lalu berihram kembali untuk haji pada tahun itu. (Wajib menyembelih hadyu)"
+        },
+        {
+          "text": "2. Haji Ifraad: Berihram untuk haji saja sejak miqat → tetap ihram sampai selesai manasik haji. (Tidak wajib hadyu)"
+        },
+        {
+          "text": "3. Haji Qiran: Berihram untuk haji dan umrah secara bersamaan. (Wajib menyembelih hadyu)"
+        }
+      ],
+      "notes": [
+        "Rasulullah ﷺ memerintahkan para sahabat yang tidak membawa hadyu untuk bertahalul dan menjadikannya haji Tamattuk."
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Larangan Saat Ihram",
+      "icon": "forbidden",
+      "items": [
+        {
+          "text": "1. Menghilangkan rambut dari tubuh (memotong/mencukur/mencabut)"
+        },
+        {
+          "text": "2. Memotong kuku"
+        },
+        {
+          "text": "3. Menutup kepala (bagi laki-laki)"
+        },
+        {
+          "text": "4. Memakai pakaian berjahit (bagi laki-laki) — HR. Bukhari 1542, Muslim 1177"
+        },
+        {
+          "text": "5. Memakai wewangian"
+        },
+        {
+          "text": "6. Membunuh binatang buruan (QS. Al-Ma'idah: 96)"
+        },
+        {
+          "text": "7. Melakukan akad nikah (HR. Muslim 1409)"
+        },
+        {
+          "text": "8. Berhubungan suami istri (QS. Al-Baqarah: 196)"
+        }
+      ],
+      "notes": [
+        "Wanita boleh memakai pakaian apa saja yang menutup aurat, kecuali wajah dan kedua telapak tangan.",
+        "Hendaknya menyibukkan diri dengan talbiyah, dzikrullah, dan qiraatul Qur'an."
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Sampai di Mekah",
+      "icon": "mosque",
+      "items": [
+        {
+          "text": "Bagi Haji Tamattuk: Lakukan manasik umrah (thawaf + sa'i) → tahalul → bebas dari ihram sampai Hari Tarwiyah (8 Dzulhijjah)."
+        },
+        {
+          "text": "Bagi Haji Qiran & Ifraad: Lakukan thawaf qudum (thawaf kedatangan). Boleh melakukan sa'i haji setelahnya. Tetap dalam keadaan ihram sampai Hari Idul Adha."
+        }
+      ],
+      "notes": [
+        "Setelah bertahalul (Tamattuk), halal semua yang diharamkan saat ihram."
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Hari Tarwiyah & Wukuf Arafah (8-9 Dzulhijjah)",
+      "icon": "arafah",
+      "items": [
+        {
+          "text": "8 Dzulhijjah (Tarwiyah): Bagi Tamattuk → berihram kembali untuk haji. Bagi Qiran & Ifraad → sudah dalam ihram. Berangkat ke Mina sebelum zhuhur, shalat dan mabit di Mina sampai subuh."
+        },
+        {
+          "text": "9 Dzulhijjah (Arafah): Setelah matahari terbit, berangkat dari Mina ke padang Arafah. Setelah zhuhur, shalat Zhuhur dan Ashar dijama' taqdim dan diqashar."
+        },
+        {
+          "text": "Doa hari Arafah — Rasulullah ﷺ bersabda: 'Sebaik-baik doa adalah doa di hari Arafah:'",
+          "arabic": "لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ",
+          "transliteration": "Laa ilaaha illallaahu wahdahu laa syariika lah, lahul mulku walahul hamdu wahuwa 'alaa kulli syai'in qadiir"
+        }
+      ],
+      "notes": [
+        "Wukuf di Arafah adalah RUKUN HAJI yang paling utama.",
+        "Rasulullah ﷺ bersabda: 'Haji adalah Arafah.' (HR. Abu Dawud, Tirmidzi, Nasa'i, Ibnu Majah)",
+        "Perbanyak doa dengan merendahkan diri, bertaubat kepada Allah di waktu dan tempat yang agung ini."
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Mabit di Muzdalifah & Amalan 10 Dzulhijjah",
+      "icon": "muzdalifah",
+      "items": [
+        {
+          "text": "Setelah matahari terbenam di Arafah, bertolak ke Muzdalifah dengan tenang.",
+          "arabic": "ثُمَّ أَفِيضُوا مِنْ حَيْثُ أَفَاضَ النَّاسُ وَاسْتَغْفِرُوا اللَّهَ إِنَّ اللَّهَ غَفُورٌ رَّحِيمٌ",
+          "transliteration": "Tsumma afiidhu min haitsu afaadhan-naasu wastaghfirullaah, innallaaha ghafuurun rahiim"
+        },
+        {
+          "text": "'Kemudian bertolaklah kamu dan mohonlah ampun kepada Allah. Sesungguhnya Allah Maha Pengampun lagi Maha Penyayang.' (QS. Al-Baqarah: 199)"
+        },
+        {
+          "text": "Di Muzdalifah: Shalat Maghrib + Isya (dijama' takhir, Isya diqashar) → Mabit sampai subuh → Shalat Subuh di awal waktu → Bertolak ke Mina sebelum matahari terbit."
+        },
+        {
+          "text": "Di Mina (10 Dzulhijjah): (1) Melempar Jumrah Aqabah 7 kerikil → (2) Menyembelih hadyu (bagi Tamattuk/Qiran) → (3) Mencukur/memendekkan rambut → (4) Thawaf Ifadhah + Sa'i."
+        }
+      ],
+      "notes": [
+        "Mabit di Muzdalifah adalah WAJIB haji. Wanita dan orang beruzur boleh meninggalkan mabit.",
+        "Urutan 4 amalan di atas adalah sunnah, namun jika tidak urut tidak mengapa. Rasulullah ﷺ bersabda: 'Kerjakan dan tidak ada masalah.' (HR. Bukhari 83, Muslim 1306)",
+        "Tahalul awal: setelah 2 dari 3 amalan (lempar jumrah, cukur, thawaf). Tahalul sempurna: setelah ketiganya."
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Hari Tasyrik (11, 12, 13 Dzulhijjah)",
+      "icon": "jumrah",
+      "items": [
+        {
+          "text": "Kembali ke Mina dan mabit (wajib). Mabit selama 3 hari (11, 12, 13), boleh hanya 2 hari (11, 12) berdasar QS. Al-Baqarah: 203."
+        },
+        {
+          "text": "Selama di Mina: Shalat diqashar tanpa dijama'."
+        },
+        {
+          "text": "Melempar 3 jumrah setiap hari setelah tergelincir matahari. Urutan: Jumratul Ula (terdekat Masjid Khaif) → Jumrah Wustha → Jumrah Aqabah (Kubra). Masing-masing 7 kerikil."
+        }
+      ],
+      "notes": [
+        "Harus urut dalam melempar jumrah: Ula → Wustha → Kubra.",
+        "Jika tidak mampu melempar, boleh diwakilkan.",
+        "Setelah melempar Jumratul Ula dan Wustha, disunnahkan berdoa menghadap kiblat."
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Thawaf Wada' (Thawaf Perpisahan)",
+      "icon": "wada",
+      "items": [
+        {
+          "text": "Jika ingin meninggalkan Mekah, wajib melakukan Thawaf Wada' sebagai akhir ibadah di Baitullah."
+        },
+        {
+          "text": "Ibnu Abbas berkata: 'Manusia diperintahkan menjadikan akhir urusannya (thawaf) di Baitullah.' (HR. Bukhari 1755, Muslim 1327)"
+        }
+      ],
+      "notes": [
+        "Wanita yang sedang haid diberi keringanan untuk tidak melakukan Thawaf Wada'.",
+        "Hendaknya seorang muslim bersungguh-sungguh meniru tatacara manasik Rasulullah ﷺ. Beliau bersabda: 'Hendaknya kalian mengambil dariku manasik kalian.' (HR. Muslim 1297)"
+      ]
+    }
+  ]
+}
