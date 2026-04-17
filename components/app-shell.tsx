@@ -7,7 +7,7 @@ import { Home, BookOpen, Calculator, Info, Moon, Sun, Mail, Coins, ScrollText, M
 import { useTheme } from 'next-themes';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const APP_VERSION = '2.1';
+const APP_VERSION = '2.2';
 
 const navItems = [
   { href: '/', label: 'Beranda', icon: Home },

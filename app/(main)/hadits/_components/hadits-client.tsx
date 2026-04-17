@@ -11,6 +11,7 @@ interface Hadith {
   narrator: string;
   translation: string;
   source: string;
+  kandungan?: string[];
 }
 
 interface HadithData {
@@ -71,7 +72,7 @@ export default function HaditsClient() {
       {/* Header */}
       <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
         <h1 className="font-display font-bold text-2xl text-foreground">Hadits Arbain An-Nawawi</h1>
-        <p className="text-sm text-muted-foreground mt-1">42 hadits pokok-pokok ajaran Islam pilihan Imam An-Nawawi &amp; Ibnu Rajab</p>
+        <p className="text-sm text-muted-foreground mt-1">42 hadits pokok-pokok ajaran Islam pilihan Imam An-Nawawi &amp; Ibnu Rajab, dilengkapi kandungan hadits</p>
       </motion.div>
 
       {/* Search & Filter */}
@@ -140,6 +141,18 @@ export default function HaditsClient() {
                       <div>
                         <p className="text-sm text-foreground leading-relaxed">{h.translation}</p>
                       </div>
+
+                      {/* Kandungan Hadits */}
+                      {h.kandungan && h.kandungan.length > 0 && (
+                        <div className="bg-accent/5 border border-accent/15 rounded-lg p-4 space-y-2">
+                          <p className="text-xs font-semibold text-accent uppercase tracking-wide">Kandungan Hadits</p>
+                          <ol className="space-y-1.5 list-decimal list-inside">
+                            {h.kandungan.map((k, i) => (
+                              <li key={i} className="text-sm text-foreground/85 leading-relaxed">{k}</li>
+                            ))}
+                          </ol>
+                        </div>
+                      )}
 
                       {/* Narrator & Source */}
                       <div className="flex flex-col sm:flex-row gap-2 text-xs text-muted-foreground">

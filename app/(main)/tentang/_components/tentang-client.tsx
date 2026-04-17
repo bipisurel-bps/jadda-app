@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { BookOpen, Scale, Heart, Info, MapPin, Sparkles } from 'lucide-react';
+import { BookOpen, Scale, Heart, Info, MapPin, Sparkles, Clock, Landmark } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export default function TentangClient() {
@@ -54,7 +54,7 @@ export default function TentangClient() {
             </div>
             <div>
               <strong className="text-sm text-foreground">Doa Harian</strong>
-              <p className="text-sm text-muted-foreground">Kumpulan doa dari kitab Hisnul Muslim karya Sa&apos;id bin Ali bin Wahf Al-Qahtani, mencakup 163 kategori dengan 309 doa lengkap — teks Arab, transliterasi Latin, terjemahan Indonesia, dan sumber hadits.</p>
+              <p className="text-sm text-muted-foreground">Kumpulan doa dari kitab Hisnul Muslim karya Sa&apos;id bin Ali bin Wahf Al-Qahtani, mencakup 161 kategori dengan 310 doa lengkap — teks Arab, transliterasi Latin, terjemahan Indonesia, dan sumber hadits.</p>
             </div>
           </li>
           <li className="flex items-start gap-3">
@@ -72,7 +72,7 @@ export default function TentangClient() {
             </div>
             <div>
               <strong className="text-sm text-foreground">Hadits Arbain An-Nawawi</strong>
-              <p className="text-sm text-muted-foreground">42 hadits pilihan Imam An-Nawawi dan Ibnu Rajab yang merupakan pokok-pokok ajaran Islam, lengkap dengan teks Arab, terjemahan, dan sumber periwayatan.</p>
+              <p className="text-sm text-muted-foreground">42 hadits pilihan Imam An-Nawawi dan Ibnu Rajab yang merupakan pokok-pokok ajaran Islam, lengkap dengan teks Arab, terjemahan, sumber periwayatan, dan kandungan hadits.</p>
             </div>
           </li>
           <li className="flex items-start gap-3">
@@ -91,6 +91,24 @@ export default function TentangClient() {
             <div>
               <strong className="text-sm text-foreground">Panduan Umrah</strong>
               <p className="text-sm text-muted-foreground">Panduan ringkas tata cara umrah 10 langkah, lengkap dengan doa dan bacaan Arab, transliterasi, serta keterangan praktis.</p>
+            </div>
+          </li>
+          <li className="flex items-start gap-3">
+            <div className="w-6 h-6 rounded-md bg-indigo-500/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <Clock size={12} className="text-indigo-500" />
+            </div>
+            <div>
+              <strong className="text-sm text-foreground">Waktu Sholat &amp; Dzikir</strong>
+              <p className="text-sm text-muted-foreground">Jadwal waktu sholat otomatis berdasarkan lokasi GPS menggunakan API Aladhan, dilengkapi pengingat dzikir pagi dan petang via notifikasi browser.</p>
+            </div>
+          </li>
+          <li className="flex items-start gap-3">
+            <div className="w-6 h-6 rounded-md bg-amber-500/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <Landmark size={12} className="text-amber-500" />
+            </div>
+            <div>
+              <strong className="text-sm text-foreground">Panduan Haji</strong>
+              <p className="text-sm text-muted-foreground">Panduan lengkap ibadah haji 10 langkah berdasarkan &quot;Mulakhos Fiqhi&quot; Syaikh Shaleh Al-Fauzan, dengan doa, bacaan Arab, dan keterangan praktis.</p>
             </div>
           </li>
         </ul>
@@ -121,7 +139,7 @@ export default function TentangClient() {
           </li>
           <li className="flex items-start gap-2">
             <span className="text-primary font-bold">•</span>
-            <span><strong>Manasik Haji &amp; Umrah</strong> — Panduan ringkas tata cara umrah berdasarkan Sunnah</span>
+            <span><strong>Manasik Haji &amp; Umrah</strong> — Panduan tata cara haji &amp; umrah berdasarkan Sunnah. Haji: Mulakhos Fiqhi (Syaikh Shaleh Al-Fauzan)</span>
           </li>
         </ul>
       </motion.div>
@@ -133,12 +151,17 @@ export default function TentangClient() {
             'Doa lengkap dengan teks Arab',
             'Transliterasi & terjemahan',
             'Pencarian & filter doa',
-            'Bookmark doa favorit',
+            'Bookmark doa & hadits favorit',
             'Salin teks Arab',
             'Kalkulator waris lengkap',
             'Visualisasi diagram lingkaran',
             'Penjelasan Hajb, Aul, Radd',
             'Panduan umrah langkah demi langkah',
+            'Panduan haji 10 langkah lengkap',
+            'Jadwal sholat otomatis (GPS)',
+            'Pengingat dzikir pagi & petang',
+            'Kandungan hadits Arbain',
+            'Kalkulator zakat 5 jenis',
             'Mode gelap/terang',
             'Bisa diinstal sebagai aplikasi (PWA)',
             'Bekerja offline',

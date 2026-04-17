@@ -1,4 +1,4 @@
-const CACHE_NAME = 'jadda-v4';
+const CACHE_NAME = 'jadda-v5';
 const URLS_TO_CACHE = [
   '/',
   '/sholat',
