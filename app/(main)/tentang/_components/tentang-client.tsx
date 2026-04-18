@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { BookOpen, Scale, Heart, Info, MapPin, Sparkles, Clock, Landmark } from 'lucide-react';
+import { BookOpen, Scale, Heart, Info, MapPin, Sparkles, Clock, Landmark, Compass } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export default function TentangClient() {
@@ -103,6 +103,15 @@ export default function TentangClient() {
             </div>
           </li>
           <li className="flex items-start gap-3">
+            <div className="w-6 h-6 rounded-md bg-emerald-500/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <Compass size={12} className="text-emerald-600 dark:text-emerald-400" />
+            </div>
+            <div>
+              <strong className="text-sm text-foreground">Arah Kiblat</strong>
+              <p className="text-sm text-muted-foreground">Kompas kiblat digital berbasis GPS dan sensor orientasi perangkat. Menampilkan arah Ka&apos;bah, derajat bearing, jarak ke Makkah, serta panduan kalibrasi.</p>
+            </div>
+          </li>
+          <li className="flex items-start gap-3">
             <div className="w-6 h-6 rounded-md bg-amber-500/10 flex items-center justify-center flex-shrink-0 mt-0.5">
               <Landmark size={12} className="text-amber-500" />
             </div>
@@ -160,6 +169,7 @@ export default function TentangClient() {
             'Panduan haji 10 langkah lengkap',
             'Jadwal sholat otomatis (GPS)',
             'Pengingat dzikir pagi & petang',
+            'Arah kiblat (kompas digital)',
             'Kandungan hadits Arbain',
             'Kalkulator zakat 5 jenis',
             'Mode gelap/terang',
