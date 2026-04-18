@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { BookOpen, Calculator, Star, ChevronRight, ScrollText, Coins, MapPin, Clock, Landmark } from 'lucide-react';
+import { BookOpen, Calculator, Star, ChevronRight, ScrollText, Coins, MapPin, Clock, Landmark, Compass } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { dailyVerses } from '@/lib/quran-verses';
 
@@ -42,7 +42,7 @@ export default function HomeClient() {
           </p>
           <h1 className="text-2xl md:text-3xl font-display font-bold mt-4 tracking-tight">Assalamu&apos;alaikum!</h1>
           <p className="mt-2 text-sm md:text-base opacity-90 max-w-xl">
-            Selamat datang di <strong>Jadda</strong> <span className="font-arabic">(جدّ)</span> — aplikasi Islami ringkas: jadwal sholat, doa harian, hadits, kalkulator zakat &amp; waris, serta panduan umrah &amp; haji sesuai Al-Qur&apos;an dan Sunnah.
+            Selamat datang di <strong>Jadda</strong> <span className="font-arabic">(جدّ)</span> — aplikasi Islami ringkas: jadwal sholat, arah kiblat, doa harian, hadits, kalkulator zakat &amp; waris, serta panduan umrah &amp; haji sesuai Al-Qur&apos;an dan Sunnah.
           </p>
         </div>
       </motion.div>
@@ -90,6 +90,31 @@ export default function HomeClient() {
                   </div>
                 </div>
                 <ChevronRight size={20} className="text-muted-foreground group-hover:text-indigo-500 transition-colors" />
+              </div>
+            </div>
+          </Link>
+        </motion.div>
+
+        {/* Arah Kiblat */}
+        <motion.div
+          initial={{ opacity: 0, y: 15 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.28 }}
+          className="md:col-span-2"
+        >
+          <Link href="/qibla" className="block">
+            <div className="group rounded-xl bg-gradient-to-r from-emerald-500/10 to-teal-500/10 p-6 shadow-sm border border-emerald-500/20 hover:shadow-md hover:border-emerald-400/40 transition-all cursor-pointer">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-500/15 flex items-center justify-center group-hover:bg-emerald-500/25 transition-colors">
+                    <Compass size={24} className="text-emerald-600 dark:text-emerald-400" />
+                  </div>
+                  <div>
+                    <h2 className="font-display font-bold text-lg text-foreground">Arah Kiblat</h2>
+                    <p className="text-sm text-muted-foreground">Kompas digital berbasis GPS &amp; sensor perangkat</p>
+                  </div>
+                </div>
+                <ChevronRight size={20} className="text-muted-foreground group-hover:text-emerald-500 transition-colors" />
               </div>
             </div>
           </Link>

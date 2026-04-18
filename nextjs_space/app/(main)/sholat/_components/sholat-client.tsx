@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { motion } from 'framer-motion';
 import {
-  MapPin, Clock, Bell, BellOff, Sun, Sunrise, Sunset, Moon, CloudSun, RefreshCw, Loader2, AlertCircle, Volume2, BookOpen, ChevronRight
+  MapPin, Clock, Bell, BellOff, Sun, Sunrise, Sunset, Moon, CloudSun, RefreshCw, Loader2, AlertCircle, Volume2, BookOpen, ChevronRight, Compass
 } from 'lucide-react';
 import { toast } from 'sonner';
 import Link from 'next/link';
@@ -344,16 +344,28 @@ export default function SholatClient() {
             <p className="text-xs text-muted-foreground">Setelah Ashar ({prayerTimes?.Asr}) sampai Maghrib ({prayerTimes?.Maghrib})</p>
           </div>
         </div>
-        <Link href="/doa" className="flex items-center justify-between px-4 py-3 rounded-lg bg-primary/5 hover:bg-primary/10 transition-colors group">
-          <div className="flex items-center gap-3">
-            <BookOpen size={18} className="text-primary" />
-            <div>
-              <p className="text-sm font-medium text-foreground">Buka Kumpulan Doa &amp; Dzikir</p>
-              <p className="text-xs text-muted-foreground">Dzikir pagi &amp; petang lengkap dari Hisnul Muslim</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <Link href="/doa" className="flex items-center justify-between px-4 py-3 rounded-lg bg-primary/5 hover:bg-primary/10 transition-colors group">
+            <div className="flex items-center gap-3">
+              <BookOpen size={18} className="text-primary" />
+              <div>
+                <p className="text-sm font-medium text-foreground">Kumpulan Doa &amp; Dzikir</p>
+                <p className="text-xs text-muted-foreground">Dzikir pagi &amp; petang dari Hisnul Muslim</p>
+              </div>
             </div>
-          </div>
-          <ChevronRight size={18} className="text-muted-foreground group-hover:text-primary transition-colors" />
-        </Link>
+            <ChevronRight size={18} className="text-muted-foreground group-hover:text-primary transition-colors" />
+          </Link>
+          <Link href="/qibla" className="flex items-center justify-between px-4 py-3 rounded-lg bg-emerald-500/5 hover:bg-emerald-500/10 border border-emerald-500/10 transition-colors group">
+            <div className="flex items-center gap-3">
+              <Compass size={18} className="text-emerald-600 dark:text-emerald-400" />
+              <div>
+                <p className="text-sm font-medium text-foreground">Arah Kiblat</p>
+                <p className="text-xs text-muted-foreground">Kompas digital berbasis GPS &amp; sensor</p>
+              </div>
+            </div>
+            <ChevronRight size={18} className="text-muted-foreground group-hover:text-emerald-500 transition-colors" />
+          </Link>
+        </div>
       </motion.div>
 
       <div className="flex justify-center">

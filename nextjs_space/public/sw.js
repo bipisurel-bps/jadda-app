@@ -1,7 +1,8 @@
-const CACHE_NAME = 'jadda-v5';
+const CACHE_NAME = 'jadda-v6';
 const URLS_TO_CACHE = [
   '/',
   '/sholat',
+  '/qibla',
   '/doa',
   '/hadits',
   '/waris',

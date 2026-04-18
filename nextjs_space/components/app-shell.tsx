@@ -3,15 +3,16 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Home, BookOpen, Calculator, Info, Moon, Sun, Mail, Coins, ScrollText, MapPin, Clock, Landmark, MoreHorizontal, X } from 'lucide-react';
+import { Home, BookOpen, Calculator, Info, Moon, Sun, Mail, Coins, ScrollText, MapPin, Clock, Landmark, MoreHorizontal, X, Compass } from 'lucide-react';
 import { useTheme } from 'next-themes';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const APP_VERSION = '2.2';
+const APP_VERSION = '2.3';
 
 const navItems = [
   { href: '/', label: 'Beranda', icon: Home },
   { href: '/sholat', label: 'Sholat', icon: Clock },
+  { href: '/qibla', label: 'Kiblat', icon: Compass },
   { href: '/doa', label: 'Doa', icon: BookOpen },
   { href: '/hadits', label: 'Hadits', icon: ScrollText },
   { href: '/waris', label: 'Waris', icon: Calculator },
@@ -21,15 +22,16 @@ const navItems = [
   { href: '/tentang', label: 'Tentang', icon: Info },
 ];
 
-// Mobile: show these 5 in bottom bar, rest in "More" menu
+// Mobile: show these 4 in bottom bar, rest in "More" menu
 const mobileMainNav = [
   { href: '/', label: 'Beranda', icon: Home },
   { href: '/sholat', label: 'Sholat', icon: Clock },
+  { href: '/qibla', label: 'Kiblat', icon: Compass },
   { href: '/doa', label: 'Doa', icon: BookOpen },
-  { href: '/hadits', label: 'Hadits', icon: ScrollText },
 ];
 
 const mobileMoreNav = [
+  { href: '/hadits', label: 'Hadits Arbain', icon: ScrollText },
   { href: '/waris', label: 'Kalkulator Waris', icon: Calculator },
   { href: '/zakat', label: 'Kalkulator Zakat', icon: Coins },
   { href: '/umroh', label: 'Panduan Umrah', icon: MapPin },
