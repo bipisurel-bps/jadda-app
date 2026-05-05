@@ -97,7 +97,7 @@
 | **PWA** | Service Worker, Web App Manifest |
 | **API** | Aladhan (sholat), Nominatim (geocode) |
 | **Analytics** | Google Analytics 4 |
-| **Hosting** | [Abacus.AI](https://abacus.ai) |
+
 
 ---
 
