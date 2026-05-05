@@ -96,8 +96,6 @@
 | **Font** | DM Sans, Plus Jakarta Sans, Amiri (Arabic) |
 | **PWA** | Service Worker, Web App Manifest |
 | **API** | Aladhan (sholat), Nominatim (geocode) |
-| **Analytics** | Google Analytics 4 |
-
 
 ---
 
