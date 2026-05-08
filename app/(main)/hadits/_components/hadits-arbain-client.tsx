@@ -20,7 +20,7 @@ interface HadithData {
   hadits: Hadith[];
 }
 
-export default function HaditsClient() {
+export default function HaditsArbainClient() {
   const [data, setData] = useState<HadithData | null>(null);
   const [search, setSearch] = useState('');
   const [expandedId, setExpandedId] = useState<number | null>(null);
@@ -68,21 +68,14 @@ export default function HaditsClient() {
   if (!data) return <div className="flex items-center justify-center py-20"><div className="animate-spin w-6 h-6 border-2 border-primary border-t-transparent rounded-full" /></div>;
 
   return (
-    <div className="max-w-2xl mx-auto space-y-5">
-      {/* Header */}
-      <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
-        <h1 className="font-display font-bold text-2xl text-foreground">Hadits Arbain An-Nawawi</h1>
-        <p className="text-sm text-muted-foreground mt-1">42 hadits pokok-pokok ajaran Islam pilihan Imam An-Nawawi &amp; Ibnu Rajab, dilengkapi kandungan hadits</p>
-      </motion.div>
-
+    <div className="space-y-4">
       {/* Search & Filter */}
-      <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.1 }}
-        className="flex gap-2">
+      <div className="flex gap-2">
         <div className="relative flex-1">
           <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" />
           <input
             type="text" value={search} onChange={e => setSearch(e.target.value)}
-            placeholder="Cari hadits..."
+            placeholder="Cari hadits arbain..."
             className="w-full rounded-lg border border-border bg-background pl-9 pr-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary"
           />
         </div>
@@ -93,7 +86,7 @@ export default function HaditsClient() {
           <Star size={14} fill={filterFav ? 'currentColor' : 'none'} />
           <span className="hidden sm:inline">Favorit</span>
         </button>
-      </motion.div>
+      </div>
 
       {/* Count */}
       <p className="text-xs text-muted-foreground">{filtered.length} dari {data.hadits.length} hadits</p>
@@ -160,7 +153,7 @@ export default function HaditsClient() {
                           <BookMarked size={12} />
                           <span>{h.narrator}</span>
                         </div>
-                        <span className="hidden sm:inline">•</span>
+                        <span className="hidden sm:inline">&bull;</span>
                         <span>{h.source}</span>
                       </div>
                     </div>

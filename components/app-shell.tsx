@@ -7,7 +7,7 @@ import { Home, BookOpen, Calculator, Info, Moon, Sun, Mail, Coins, ScrollText, M
 import { useTheme } from 'next-themes';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const APP_VERSION = '2.3';
+const APP_VERSION = '2.4';
 
 const navItems = [
   { href: '/', label: 'Beranda', icon: Home },
@@ -31,7 +31,7 @@ const mobileMainNav = [
 ];
 
 const mobileMoreNav = [
-  { href: '/hadits', label: 'Hadits Arbain', icon: ScrollText },
+  { href: '/hadits', label: 'Koleksi Hadits', icon: ScrollText },
   { href: '/waris', label: 'Kalkulator Waris', icon: Calculator },
   { href: '/zakat', label: 'Kalkulator Zakat', icon: Coins },
   { href: '/umroh', label: 'Panduan Umrah', icon: MapPin },
@@ -65,7 +65,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
       <header className="hidden md:block sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
         <div className="max-w-[1200px] mx-auto px-6 h-16 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
-            <img src="/logo-jadda.png" alt="Jadda - Aplikasi Islami Ringkas" width={36} height={36} className="rounded-lg" />
+            <img src="/logo-jadda.svg" alt="Jadda - Aplikasi Islami Ringkas" width={36} height={36} className="rounded-lg" />
             <span className="font-display font-bold text-lg tracking-tight text-foreground">Jadda</span>
           </Link>
           <nav className="flex items-center gap-1">
@@ -104,9 +104,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
       <header className="md:hidden sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
         <div className="px-4 h-14 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
-            <span className="w-7 h-7 rounded-md bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-xs font-arabic">جدّ</span>
-            </span>
+            <img src="/logo-jadda.png" alt="Jadda" width={28} height={28} className="rounded-md" />
             <span className="font-display font-bold text-base tracking-tight text-foreground">Jadda</span>
           </Link>
           <div className="flex items-center gap-2">

@@ -2,9 +2,19 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { BookOpen, Calculator, Star, ChevronRight, ScrollText, Coins, MapPin, Clock, Landmark, Compass } from 'lucide-react';
+import { Star, ChevronRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { dailyVerses } from '@/lib/quran-verses';
+import {
+  JaddaSholatIcon,
+  JaddaKiblatIcon,
+  JaddaDoaIcon,
+  JaddaWarisIcon,
+  JaddaHaditsIcon,
+  JaddaZakatIcon,
+  JaddaUmrahIcon,
+  JaddaHajiIcon,
+} from '@/components/icons/jadda-icons';
 
 export default function HomeClient() {
   const [verse, setVerse] = useState({ text: '', source: '' });
@@ -81,8 +91,8 @@ export default function HomeClient() {
             <div className="group rounded-xl bg-gradient-to-r from-indigo-500/10 to-blue-500/10 p-6 shadow-sm border border-indigo-500/20 hover:shadow-md hover:border-indigo-400/40 transition-all cursor-pointer">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-indigo-500/15 flex items-center justify-center group-hover:bg-indigo-500/25 transition-colors">
-                    <Clock size={24} className="text-indigo-500" />
+                  <div className="w-12 h-12 rounded-xl overflow-hidden shadow-sm group-hover:scale-105 transition-transform">
+                    <JaddaSholatIcon className="w-full h-full" title="Waktu Sholat" />
                   </div>
                   <div>
                     <h2 className="font-display font-bold text-lg text-foreground">Waktu Sholat &amp; Dzikir</h2>
@@ -106,8 +116,8 @@ export default function HomeClient() {
             <div className="group rounded-xl bg-gradient-to-r from-emerald-500/10 to-teal-500/10 p-6 shadow-sm border border-emerald-500/20 hover:shadow-md hover:border-emerald-400/40 transition-all cursor-pointer">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-emerald-500/15 flex items-center justify-center group-hover:bg-emerald-500/25 transition-colors">
-                    <Compass size={24} className="text-emerald-600 dark:text-emerald-400" />
+                  <div className="w-12 h-12 rounded-xl overflow-hidden shadow-sm group-hover:scale-105 transition-transform">
+                    <JaddaKiblatIcon className="w-full h-full" title="Arah Kiblat" />
                   </div>
                   <div>
                     <h2 className="font-display font-bold text-lg text-foreground">Arah Kiblat</h2>
@@ -129,8 +139,8 @@ export default function HomeClient() {
             <div className="group rounded-xl bg-card p-6 shadow-sm border border-border/50 hover:shadow-md hover:border-primary/30 transition-all cursor-pointer">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                    <BookOpen size={24} className="text-primary" />
+                  <div className="w-12 h-12 rounded-xl overflow-hidden shadow-sm group-hover:scale-105 transition-transform">
+                    <JaddaDoaIcon className="w-full h-full" title="Doa Harian" />
                   </div>
                   <div>
                     <h2 className="font-display font-bold text-lg text-foreground">Doa Harian</h2>
@@ -152,8 +162,8 @@ export default function HomeClient() {
             <div className="group rounded-xl bg-card p-6 shadow-sm border border-border/50 hover:shadow-md hover:border-accent/30 transition-all cursor-pointer">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
-                    <Calculator size={24} className="text-accent" />
+                  <div className="w-12 h-12 rounded-xl overflow-hidden shadow-sm group-hover:scale-105 transition-transform">
+                    <JaddaWarisIcon className="w-full h-full" title="Kalkulator Waris" />
                   </div>
                   <div>
                     <h2 className="font-display font-bold text-lg text-foreground">Kalkulator Waris</h2>
@@ -175,12 +185,12 @@ export default function HomeClient() {
             <div className="group rounded-xl bg-card p-6 shadow-sm border border-border/50 hover:shadow-md hover:border-blue-400/30 transition-all cursor-pointer">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center group-hover:bg-blue-500/20 transition-colors">
-                    <ScrollText size={24} className="text-blue-500" />
+                  <div className="w-12 h-12 rounded-xl overflow-hidden shadow-sm group-hover:scale-105 transition-transform">
+                    <JaddaHaditsIcon className="w-full h-full" title="Koleksi Hadits" />
                   </div>
                   <div>
-                    <h2 className="font-display font-bold text-lg text-foreground">Hadits Arbain</h2>
-                    <p className="text-sm text-muted-foreground">42 hadits pilihan Imam An-Nawawi</p>
+                    <h2 className="font-display font-bold text-lg text-foreground">Koleksi Hadits</h2>
+                    <p className="text-sm text-muted-foreground">Arbain An-Nawawi &amp; Riyadhus Shalihin</p>
                   </div>
                 </div>
                 <ChevronRight size={20} className="text-muted-foreground group-hover:text-blue-500 transition-colors" />
@@ -198,8 +208,8 @@ export default function HomeClient() {
             <div className="group rounded-xl bg-card p-6 shadow-sm border border-border/50 hover:shadow-md hover:border-pink-400/30 transition-all cursor-pointer">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-pink-500/10 flex items-center justify-center group-hover:bg-pink-500/20 transition-colors">
-                    <Coins size={24} className="text-pink-500" />
+                  <div className="w-12 h-12 rounded-xl overflow-hidden shadow-sm group-hover:scale-105 transition-transform">
+                    <JaddaZakatIcon className="w-full h-full" title="Kalkulator Zakat" />
                   </div>
                   <div>
                     <h2 className="font-display font-bold text-lg text-foreground">Kalkulator Zakat</h2>
@@ -220,8 +230,8 @@ export default function HomeClient() {
             <div className="group rounded-xl bg-card p-6 shadow-sm border border-border/50 hover:shadow-md hover:border-teal-400/30 transition-all cursor-pointer">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-teal-500/10 flex items-center justify-center group-hover:bg-teal-500/20 transition-colors">
-                    <MapPin size={24} className="text-teal-600 dark:text-teal-400" />
+                  <div className="w-12 h-12 rounded-xl overflow-hidden shadow-sm group-hover:scale-105 transition-transform">
+                    <JaddaUmrahIcon className="w-full h-full" title="Panduan Umrah" />
                   </div>
                   <div>
                     <h2 className="font-display font-bold text-lg text-foreground">Panduan Umrah</h2>
@@ -242,8 +252,8 @@ export default function HomeClient() {
             <div className="group rounded-xl bg-card p-6 shadow-sm border border-border/50 hover:shadow-md hover:border-amber-400/30 transition-all cursor-pointer">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-amber-500/10 flex items-center justify-center group-hover:bg-amber-500/20 transition-colors">
-                    <Landmark size={24} className="text-amber-600 dark:text-amber-400" />
+                  <div className="w-12 h-12 rounded-xl overflow-hidden shadow-sm group-hover:scale-105 transition-transform">
+                    <JaddaHajiIcon className="w-full h-full" title="Panduan Haji" />
                   </div>
                   <div>
                     <h2 className="font-display font-bold text-lg text-foreground">Panduan Haji</h2>

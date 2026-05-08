@@ -71,8 +71,8 @@ export default function TentangClient() {
               <BookOpen size={12} className="text-blue-500" />
             </div>
             <div>
-              <strong className="text-sm text-foreground">Hadits Arbain An-Nawawi</strong>
-              <p className="text-sm text-muted-foreground">42 hadits pilihan Imam An-Nawawi dan Ibnu Rajab yang merupakan pokok-pokok ajaran Islam, lengkap dengan teks Arab, terjemahan, sumber periwayatan, dan kandungan hadits.</p>
+              <strong className="text-sm text-foreground">Koleksi Hadits</strong>
+              <p className="text-sm text-muted-foreground">Hadits Arbain An-Nawawi (42 hadits pokok ajaran Islam) dan Kitab Riyadhus Shalihin (372 bab kumpulan hadits shahih pilihan). Lengkap dengan teks Arab, terjemahan Indonesia, dan kandungan hadits.</p>
             </div>
           </li>
           <li className="flex items-start gap-3">
@@ -132,7 +132,7 @@ export default function TentangClient() {
           </li>
           <li className="flex items-start gap-2">
             <span className="text-primary font-bold">•</span>
-            <span><strong>Hadits Arbain An-Nawawi</strong> — Imam Yahya bin Syaraf An-Nawawi &amp; Ibnu Rajab (42 Hadits Pokok)</span>
+            <span><strong>Hadits Arbain An-Nawawi</strong> — Imam Yahya bin Syaraf An-Nawawi &amp; Ibnu Rajab (42 Hadits Pokok) + <strong>Riyadhus Shalihin</strong> — Imam An-Nawawi (372 Bab)</span>
           </li>
           <li className="flex items-start gap-2">
             <span className="text-primary font-bold">•</span>
@@ -170,7 +170,7 @@ export default function TentangClient() {
             'Jadwal sholat otomatis (GPS)',
             'Pengingat dzikir pagi & petang',
             'Arah kiblat (kompas digital)',
-            'Kandungan hadits Arbain',
+            'Kandungan hadits Arbain + Riyadhus Shalihin',
             'Kalkulator zakat 5 jenis',
             'Mode gelap/terang',
             'Bisa diinstal sebagai aplikasi (PWA)',
