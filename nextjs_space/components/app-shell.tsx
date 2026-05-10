@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Home, BookOpen, Calculator, Info, Moon, Sun, Mail, Coins, ScrollText, MapPin, Clock, Landmark, MoreHorizontal, X, Compass } from 'lucide-react';
+import { Home, BookOpen, Calculator, Info, Moon, Sun, Mail, Coins, ScrollText, MapPin, Clock, Landmark, MoreHorizontal, X, Compass, Heart, Settings } from 'lucide-react';
 import { useTheme } from 'next-themes';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -27,13 +27,13 @@ const mobileMainNav = [
   { href: '/', label: 'Beranda', icon: Home },
   { href: '/sholat', label: 'Sholat', icon: Clock },
   { href: '/qibla', label: 'Kiblat', icon: Compass },
-  { href: '/doa', label: 'Doa', icon: BookOpen },
+  { href: '/doa', label: 'Doa', icon: Heart },
 ];
 
 const mobileMoreNav = [
   { href: '/hadits', label: 'Hadits Arbain', icon: ScrollText },
-  { href: '/waris', label: 'Kalkulator Waris', icon: Calculator },
-  { href: '/zakat', label: 'Kalkulator Zakat', icon: Coins },
+  { href: '/waris', label: 'Hitung Waris', icon: Calculator },
+  { href: '/zakat', label: 'Hitung Zakat', icon: Coins },
   { href: '/umroh', label: 'Panduan Umrah', icon: MapPin },
   { href: '/haji', label: 'Panduan Haji', icon: Landmark },
   { href: '/tentang', label: 'Tentang Aplikasi', icon: Info },
@@ -196,8 +196,8 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                 }`}
               >
                 {isMoreActive && !mobileMenuOpen && <span className="absolute -top-0.5 left-1/2 -translate-x-1/2 w-5 h-[3px] rounded-full bg-primary" />}
-                {mobileMenuOpen ? <X size={18} strokeWidth={2} /> : <MoreHorizontal size={18} strokeWidth={isMoreActive ? 2.5 : 1.5} />}
-                <span className={`text-[9px] leading-tight ${isMoreActive ? 'font-bold' : 'font-medium'}`}>Lainnya</span>
+                {mobileMenuOpen ? <X size={18} strokeWidth={2} /> : <Settings size={18} strokeWidth={isMoreActive ? 2.5 : 1.5} />}
+                <span className={`text-[9px] leading-tight ${isMoreActive ? 'font-bold' : 'font-medium'}`}>Pengaturan</span>
               </button>
             );
           })()}
@@ -242,6 +242,19 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                     </Link>
                   );
                 })}
+                {/* Dark mode toggle */}
+                {mounted && (
+                  <>
+                    <div className="border-t border-border my-2" />
+                    <button
+                      onClick={toggleTheme}
+                      className="flex items-center gap-4 px-4 py-3 rounded-xl text-foreground hover:bg-muted transition-all w-full"
+                    >
+                      {theme === 'dark' ? <Sun size={20} strokeWidth={1.5} /> : <Moon size={20} strokeWidth={1.5} />}
+                      <span className="text-sm font-medium">{theme === 'dark' ? 'Mode Terang' : 'Mode Gelap'}</span>
+                    </button>
+                  </>
+                )}
               </div>
             </motion.div>
           </>
