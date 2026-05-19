@@ -1,65 +1,40 @@
 'use client';
 
-import React, { useState, useEffect, useCallback, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import {
   MapPin, Clock, Bell, BellOff, Sun, Sunrise, Sunset, Moon, CloudSun, RefreshCw, Loader2, AlertCircle, Volume2, BookOpen, ChevronRight, Compass
 } from 'lucide-react';
 import { toast } from 'sonner';
 import Link from 'next/link';
+import { usePrayerTimes } from '@/hooks/use-prayer-times';
+import { PrayerTimes, PRAYER_LABELS, PRAYER_ORDER, timeToMinutes } from '@/lib/prayer-utils';
 
-interface PrayerTimes {
-  Fajr: string;
-  Sunrise: string;
-  Dhuhr: string;
-  Asr: string;
-  Maghrib: string;
-  Isha: string;
-}
-
-interface LocationInfo {
-  latitude: number;
-  longitude: number;
-  city?: string;
-}
-
-const PRAYER_NAMES: Record<string, { label: string; icon: React.ReactNode; color: string }> = {
-  Fajr: { label: 'Subuh', icon: <Sunrise size={20} />, color: 'text-indigo-500' },
-  Sunrise: { label: 'Syuruq', icon: <Sun size={20} />, color: 'text-amber-500' },
-  Dhuhr: { label: 'Zhuhur', icon: <CloudSun size={20} />, color: 'text-yellow-600' },
-  Asr: { label: 'Ashar', icon: <Sunset size={20} />, color: 'text-orange-500' },
-  Maghrib: { label: 'Maghrib', icon: <Sunset size={20} />, color: 'text-red-500' },
-  Isha: { label: 'Isya', icon: <Moon size={20} />, color: 'text-blue-600' },
+const PRAYER_ICONS: Record<string, React.ReactNode> = {
+  Fajr: <Sunrise size={20} />,
+  Sunrise: <Sun size={20} />,
+  Dhuhr: <CloudSun size={20} />,
+  Asr: <Sunset size={20} />,
+  Maghrib: <Sunset size={20} />,
+  Isha: <Moon size={20} />,
 };
 
-function timeToMinutes(time: string): number {
-  const [h, m] = time.split(':').map(Number);
-  return h * 60 + m;
-}
-
-function formatCountdown(diffMs: number): string {
-  if (diffMs <= 0) return 'Sudah masuk';
-  const totalSec = Math.floor(diffMs / 1000);
-  const h = Math.floor(totalSec / 3600);
-  const m = Math.floor((totalSec % 3600) / 60);
-  const s = totalSec % 60;
-  if (h > 0) return `${h}j ${m}m ${s}d`;
-  if (m > 0) return `${m}m ${s}d`;
-  return `${s}d`;
-}
-
 export default function SholatClient() {
-  const [location, setLocation] = useState<LocationInfo | null>(null);
-  const [prayerTimes, setPrayerTimes] = useState<PrayerTimes | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
-  const [countdown, setCountdown] = useState('');
-  const [nextPrayer, setNextPrayer] = useState<string | null>(null);
-  const [currentDate, setCurrentDate] = useState('');
-  const [hijriDate, setHijriDate] = useState('');
+  const {
+    prayerTimes,
+    nextPrayer,
+    countdown,
+    hijriDate,
+    gregorianDate,
+    cityName,
+    loading,
+    error,
+    location,
+    reload,
+  } = usePrayerTimes();
+
   const [notifEnabled, setNotifEnabled] = useState(false);
   const [notifPermission, setNotifPermission] = useState<string>('default');
-  const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const notifCheckRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   useEffect(() => {
@@ -71,106 +46,6 @@ export default function SholatClient() {
       }
     }
   }, []);
-
-  const getLocation = useCallback((): Promise<LocationInfo> => {
-    return new Promise((resolve, reject) => {
-      if (!navigator.geolocation) {
-        reject(new Error('Geolocation tidak didukung browser ini'));
-        return;
-      }
-      navigator.geolocation.getCurrentPosition(
-        (pos) => {
-          resolve({
-            latitude: pos.coords.latitude,
-            longitude: pos.coords.longitude,
-          });
-        },
-        (err) => {
-          if (err.code === 1) reject(new Error('Izin lokasi ditolak. Silakan aktifkan izin lokasi di pengaturan browser Anda.'));
-          else if (err.code === 2) reject(new Error('Lokasi tidak tersedia.'));
-          else reject(new Error('Waktu permintaan lokasi habis. Coba lagi.'));
-        },
-        { enableHighAccuracy: false, timeout: 15000, maximumAge: 300000 }
-      );
-    });
-  }, []);
-
-  const fetchPrayerTimes = useCallback(async (loc: LocationInfo) => {
-    const today = new Date();
-    const dd = String(today.getDate()).padStart(2, '0');
-    const mm = String(today.getMonth() + 1).padStart(2, '0');
-    const yyyy = today.getFullYear();
-    const res = await fetch(
-      `https://api.aladhan.com/v1/timings/${dd}-${mm}-${yyyy}?latitude=${loc.latitude}&longitude=${loc.longitude}&method=20`
-    );
-    const data = await res.json();
-    if (data?.code === 200 && data?.data?.timings) {
-      const t = data.data.timings;
-      setPrayerTimes({
-        Fajr: t.Fajr?.split(' ')[0] || '',
-        Sunrise: t.Sunrise?.split(' ')[0] || '',
-        Dhuhr: t.Dhuhr?.split(' ')[0] || '',
-        Asr: t.Asr?.split(' ')[0] || '',
-        Maghrib: t.Maghrib?.split(' ')[0] || '',
-        Isha: t.Isha?.split(' ')[0] || '',
-      });
-      if (data.data.date?.hijri) {
-        const h = data.data.date.hijri;
-        setHijriDate(`${h.day} ${h.month?.en || ''} ${h.year} H`);
-      }
-      if (data.data.meta?.timezone) {
-        loc.city = data.data.meta.timezone.split('/').pop()?.replace(/_/g, ' ') || '';
-        setLocation({ ...loc });
-      }
-    } else {
-      throw new Error('Gagal mengambil jadwal sholat');
-    }
-  }, []);
-
-  const loadData = useCallback(async () => {
-    setLoading(true);
-    setError(null);
-    try {
-      const loc = await getLocation();
-      setLocation(loc);
-      await fetchPrayerTimes(loc);
-      setCurrentDate(new Date().toLocaleDateString('id-ID', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }));
-    } catch (e: any) {
-      setError(e?.message || 'Terjadi kesalahan');
-    } finally {
-      setLoading(false);
-    }
-  }, [getLocation, fetchPrayerTimes]);
-
-  useEffect(() => { loadData(); }, [loadData]);
-
-  // Countdown
-  useEffect(() => {
-    if (!prayerTimes) return;
-    const update = () => {
-      const now = new Date();
-      const nowMin = now.getHours() * 60 + now.getMinutes() + now.getSeconds() / 60;
-      const order = ['Fajr', 'Sunrise', 'Dhuhr', 'Asr', 'Maghrib', 'Isha'];
-      let found = false;
-      for (const key of order) {
-        const t = (prayerTimes as any)[key];
-        if (!t) continue;
-        if (timeToMinutes(t) > nowMin) {
-          setNextPrayer(key);
-          const [ph, pm] = t.split(':').map(Number);
-          const target = new Date();
-          target.setHours(ph, pm, 0, 0);
-          setCountdown(formatCountdown(target.getTime() - now.getTime()));
-          found = true;
-          break;
-        }
-      }
-      if (!found) { setNextPrayer('Fajr'); setCountdown('Besok'); }
-    };
-    update();
-    intervalRef.current = setInterval(update, 1000);
-    return () => { if (intervalRef.current) clearInterval(intervalRef.current); };
-  }, [prayerTimes]);
 
   // Dzikir notifications
   useEffect(() => {
@@ -184,7 +59,7 @@ export default function SholatClient() {
         const key = `jadda_notif_pagi_${todayKey}`;
         if (!localStorage.getItem(key)) {
           localStorage.setItem(key, '1');
-          new Notification('\ud83c\udf05 Dzikir Pagi \u2014 Jadda', { body: 'Waktunya dzikir pagi! Setelah Subuh sampai terbit matahari.', icon: '/logo-jadda.png' });
+          new Notification('🌅 Dzikir Pagi — Jadda', { body: 'Waktunya dzikir pagi! Setelah Subuh sampai terbit matahari.', icon: '/logo-jadda.png' });
         }
       }
       const asrMin = timeToMinutes(prayerTimes.Asr);
@@ -192,7 +67,7 @@ export default function SholatClient() {
         const key = `jadda_notif_petang_${todayKey}`;
         if (!localStorage.getItem(key)) {
           localStorage.setItem(key, '1');
-          new Notification('\ud83c\udf07 Dzikir Petang \u2014 Jadda', { body: 'Waktunya dzikir petang! Setelah Ashar sampai Maghrib.', icon: '/logo-jadda.png' });
+          new Notification('🌇 Dzikir Petang — Jadda', { body: 'Waktunya dzikir petang! Setelah Ashar sampai Maghrib.', icon: '/logo-jadda.png' });
         }
       }
     };
@@ -237,14 +112,12 @@ export default function SholatClient() {
       <div className="flex flex-col items-center justify-center py-20 gap-4 text-center px-4">
         <AlertCircle size={40} className="text-red-500" />
         <p className="text-foreground font-medium">{error}</p>
-        <button onClick={loadData} className="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-primary-foreground text-sm font-medium">
+        <button onClick={reload} className="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-primary-foreground text-sm font-medium">
           <RefreshCw size={16} /> Coba Lagi
         </button>
       </div>
     );
   }
-
-  const prayerOrder = ['Fajr', 'Sunrise', 'Dhuhr', 'Asr', 'Maghrib', 'Isha'];
 
   return (
     <div className="space-y-6">
@@ -252,7 +125,7 @@ export default function SholatClient() {
         <h1 className="text-2xl md:text-3xl font-display font-bold text-foreground">Waktu Sholat</h1>
         <div className="flex items-center gap-2 text-muted-foreground text-sm">
           <MapPin size={14} />
-          <span>{location?.city || `${location?.latitude?.toFixed(2)}, ${location?.longitude?.toFixed(2)}`}</span>
+          <span>{cityName || (location ? `${location.latitude?.toFixed(2)}, ${location.longitude?.toFixed(2)}` : '')}</span>
         </div>
       </motion.div>
 
@@ -261,13 +134,13 @@ export default function SholatClient() {
       >
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
           <div>
-            <p className="text-sm opacity-80">{currentDate}</p>
+            <p className="text-sm opacity-80">{gregorianDate}</p>
             {hijriDate && <p className="text-xs opacity-60 mt-0.5">{hijriDate}</p>}
           </div>
           {nextPrayer && (
             <div className="text-right">
               <p className="text-xs opacity-80 uppercase tracking-wide">Sholat berikutnya</p>
-              <p className="text-2xl font-display font-bold mt-0.5">{PRAYER_NAMES[nextPrayer]?.label}</p>
+              <p className="text-2xl font-display font-bold mt-0.5">{PRAYER_LABELS[nextPrayer]?.label}</p>
               <div className="flex items-center gap-2 justify-end mt-1">
                 <Clock size={14} className="opacity-80" />
                 <span className="text-sm font-mono">
@@ -282,18 +155,18 @@ export default function SholatClient() {
       <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}
         className="rounded-xl bg-card border border-border/50 shadow-sm overflow-hidden"
       >
-        {prayerOrder.map((key, i) => {
-          const info = PRAYER_NAMES[key];
+        {PRAYER_ORDER.map((key, i) => {
+          const info = PRAYER_LABELS[key];
           const time = (prayerTimes as any)?.[key];
           const isNext = nextPrayer === key;
           const isSunrise = key === 'Sunrise';
           return (
             <div key={key}
-              className={`flex items-center justify-between px-5 py-4 ${i < prayerOrder.length - 1 ? 'border-b border-border/30' : ''} ${isNext ? 'bg-primary/5' : ''} ${isSunrise ? 'opacity-60' : ''}`}
+              className={`flex items-center justify-between px-5 py-4 ${i < PRAYER_ORDER.length - 1 ? 'border-b border-border/30' : ''} ${isNext ? 'bg-primary/5' : ''} ${isSunrise ? 'opacity-60' : ''}`}
             >
               <div className="flex items-center gap-4">
                 <div className={`w-9 h-9 rounded-lg flex items-center justify-center ${isNext ? 'bg-primary/15' : 'bg-muted/50'}`}>
-                  <span className={info?.color}>{info?.icon}</span>
+                  <span className={info?.color}>{PRAYER_ICONS[key]}</span>
                 </div>
                 <p className={`font-medium ${isNext ? 'text-primary font-semibold' : 'text-foreground'} ${isSunrise ? 'text-muted-foreground' : ''}`}>
                   {info?.label}{isSunrise && <span className="text-xs ml-1">(terbit)</span>}
@@ -369,7 +242,7 @@ export default function SholatClient() {
       </motion.div>
 
       <div className="flex justify-center">
-        <button onClick={loadData} className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors">
+        <button onClick={reload} className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors">
           <RefreshCw size={14} /> Perbarui jadwal
         </button>
       </div>
