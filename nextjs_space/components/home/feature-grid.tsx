@@ -4,7 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import {
-  Clock, Compass, BookOpen, Calculator, ScrollText, Coins, MapPin, Landmark, ChevronRight
+  Clock, Compass, BookOpen, Calculator, ScrollText, Coins, MapPin, Landmark, Users, ChevronRight
 } from 'lucide-react';
 
 const FEATURES = [
@@ -16,17 +16,19 @@ const FEATURES = [
   { href: '/zakat', label: 'Hitung Zakat', desc: 'Hitung zakat maal, fitrah, dagang, tani & ternak', Icon: Coins, bg: 'bg-pink-500/8', iconBg: 'bg-pink-500/15', iconColor: 'text-pink-500', hoverBorder: 'hover:border-pink-400/30' },
   { href: '/umroh', label: 'Panduan Umrah', desc: 'Panduan umrah lengkap dengan doa & bacaan', Icon: MapPin, bg: 'bg-teal-500/8', iconBg: 'bg-teal-500/15', iconColor: 'text-teal-600 dark:text-teal-400', hoverBorder: 'hover:border-teal-400/30' },
   { href: '/haji', label: 'Panduan Haji', desc: 'Tuntunan ringkas ibadah haji sesuai Sunnah', Icon: Landmark, bg: 'bg-amber-500/8', iconBg: 'bg-amber-500/15', iconColor: 'text-amber-600 dark:text-amber-400', hoverBorder: 'hover:border-amber-400/30' },
+  { href: '/ulama', label: 'Biografi Ulama', desc: 'Biografi lengkap para imam hadits dan ulama besar', Icon: Users, bg: 'bg-violet-500/8', iconBg: 'bg-violet-500/15', iconColor: 'text-violet-600 dark:text-violet-400', hoverBorder: 'hover:border-violet-400/30' },
 ];
 
 export default function FeatureGrid() {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+    <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
       {FEATURES.map((item, i) => (
         <motion.div
           key={item.href}
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0.3 + i * 0.06 }}
+          className={i === FEATURES.length - 1 && FEATURES.length % 2 !== 0 ? 'col-span-2 md:col-span-1' : ''}
         >
           <Link href={item.href} className="block h-full">
             <div className={`group rounded-xl ${item.bg} p-4 md:p-5 shadow-sm border border-border/50 ${item.hoverBorder} hover:shadow-md transition-all cursor-pointer h-full`}>

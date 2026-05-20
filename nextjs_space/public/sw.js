@@ -1,4 +1,4 @@
-const CACHE_NAME = 'jadda-v6';
+const CACHE_NAME = 'jadda-v7';
 const URLS_TO_CACHE = [
   '/',
   '/sholat',
@@ -9,11 +9,13 @@ const URLS_TO_CACHE = [
   '/zakat',
   '/umroh',
   '/haji',
+  '/ulama',
   '/tentang',
   '/data/prayers.json',
   '/data/panduan-umroh.json',
   '/data/panduan-haji.json',
   '/data/hadits-arbain.json',
+  '/data/biografi-ulama.json',
   '/favicon.svg',
   '/logo-jadda.png',
   '/manifest.json'

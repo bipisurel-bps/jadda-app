@@ -3,11 +3,11 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Home, BookOpen, Calculator, Info, Moon, Sun, Mail, Coins, ScrollText, MapPin, Clock, Landmark, MoreHorizontal, X, Compass, Heart, Settings } from 'lucide-react';
+import { Home, BookOpen, Calculator, Info, Moon, Sun, Mail, Coins, ScrollText, MapPin, Clock, Landmark, MoreHorizontal, X, Compass, Heart, Settings, Users } from 'lucide-react';
 import { useTheme } from 'next-themes';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const APP_VERSION = '2.3';
+const APP_VERSION = '2.5';
 
 const navItems = [
   { href: '/', label: 'Beranda', icon: Home },
@@ -19,6 +19,7 @@ const navItems = [
   { href: '/zakat', label: 'Zakat', icon: Coins },
   { href: '/umroh', label: 'Umrah', icon: MapPin },
   { href: '/haji', label: 'Haji', icon: Landmark },
+  { href: '/ulama', label: 'Ulama', icon: Users },
   { href: '/tentang', label: 'Tentang', icon: Info },
 ];
 
@@ -36,6 +37,7 @@ const mobileMoreNav = [
   { href: '/zakat', label: 'Hitung Zakat', icon: Coins },
   { href: '/umroh', label: 'Panduan Umrah', icon: MapPin },
   { href: '/haji', label: 'Panduan Haji', icon: Landmark },
+  { href: '/ulama', label: 'Biografi Ulama', icon: Users },
   { href: '/tentang', label: 'Tentang Aplikasi', icon: Info },
 ];
 

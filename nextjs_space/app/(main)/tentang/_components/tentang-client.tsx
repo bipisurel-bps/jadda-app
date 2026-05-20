@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { BookOpen, Scale, Heart, Info, MapPin, Sparkles, Clock, Landmark, Compass } from 'lucide-react';
+import { BookOpen, Scale, Heart, Info, MapPin, Sparkles, Clock, Landmark, Compass, Users } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export default function TentangClient() {
@@ -120,6 +120,15 @@ export default function TentangClient() {
               <p className="text-sm text-muted-foreground">Panduan lengkap ibadah haji 10 langkah berdasarkan &quot;Mulakhos Fiqhi&quot; Syaikh Shaleh Al-Fauzan, dengan doa, bacaan Arab, dan keterangan praktis.</p>
             </div>
           </li>
+          <li className="flex items-start gap-3">
+            <div className="w-6 h-6 rounded-md bg-violet-500/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <Users size={12} className="text-violet-600 dark:text-violet-400" />
+            </div>
+            <div>
+              <strong className="text-sm text-foreground">Biografi Ulama</strong>
+              <p className="text-sm text-muted-foreground">Biografi lengkap para imam hadits (Bukhari, Muslim, Abu Dawud, At-Tirmidzi, An-Nasa&apos;i, Ibnu Majah) — mencakup riwayat hidup, perjalanan ilmiah, guru &amp; murid, karya monumental, dan keutamaan mereka.</p>
+            </div>
+          </li>
         </ul>
       </motion.div>
 
@@ -171,6 +180,7 @@ export default function TentangClient() {
             'Pengingat dzikir pagi & petang',
             'Arah kiblat (kompas digital)',
             'Kandungan hadits Arbain',
+            'Biografi 6 imam hadits',
             'Kalkulator zakat 5 jenis',
             'Mode gelap/terang',
             'Bisa diinstal sebagai aplikasi (PWA)',
