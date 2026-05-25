@@ -39,6 +39,8 @@ const COLOR_MAP: Record<string, { bg: string; iconBg: string; text: string; bord
   violet: { bg: 'bg-violet-500/8', iconBg: 'bg-violet-500/15', text: 'text-violet-600 dark:text-violet-400', border: 'border-violet-500/20', ring: 'hover:ring-violet-500/30' },
   rose: { bg: 'bg-rose-500/8', iconBg: 'bg-rose-500/15', text: 'text-rose-600 dark:text-rose-400', border: 'border-rose-500/20', ring: 'hover:ring-rose-500/30' },
   teal: { bg: 'bg-teal-500/8', iconBg: 'bg-teal-500/15', text: 'text-teal-600 dark:text-teal-400', border: 'border-teal-500/20', ring: 'hover:ring-teal-500/30' },
+  sky: { bg: 'bg-sky-500/8', iconBg: 'bg-sky-500/15', text: 'text-sky-600 dark:text-sky-400', border: 'border-sky-500/20', ring: 'hover:ring-sky-500/30' },
+  indigo: { bg: 'bg-indigo-500/8', iconBg: 'bg-indigo-500/15', text: 'text-indigo-600 dark:text-indigo-400', border: 'border-indigo-500/20', ring: 'hover:ring-indigo-500/30' },
 };
 
 export default function UlamaClient() {

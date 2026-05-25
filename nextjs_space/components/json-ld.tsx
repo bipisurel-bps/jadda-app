@@ -41,10 +41,10 @@ export function WebsiteJsonLd({ baseUrl }: { baseUrl: string }) {
       'Kalkulator waris (faraidh) sesuai hukum Islam',
       'Panduan umrah 10 langkah dengan doa dan bacaan lengkap',
       'Panduan haji 10 langkah sesuai Sunnah dengan doa lengkap',
-      'Biografi lengkap 6 imam hadits (Bukhari, Muslim, Abu Dawud, At-Tirmidzi, An-Nasai, Ibnu Majah)',
+      'Biografi lengkap 10 ulama besar: 6 imam hadits dan 4 imam mazhab (Abu Hanifah, Malik, Asy-Syafii, Ahmad bin Hambal)',
       'Tersedia offline (Progressive Web App)',
     ],
-    keywords: 'jadwal sholat, waktu adzan, arah kiblat, qibla, kompas kiblat, doa harian islam, hisnul muslim, hadits arbain, kalkulator zakat, kalkulator waris faraidh, panduan umrah, panduan haji, biografi imam hadits, imam bukhari, imam muslim, aplikasi islami, dzikir pagi petang',
+    keywords: 'jadwal sholat, waktu adzan, arah kiblat, qibla, kompas kiblat, doa harian islam, hisnul muslim, hadits arbain, kalkulator zakat, kalkulator waris faraidh, panduan umrah, panduan haji, biografi imam hadits, imam bukhari, imam muslim, imam mazhab, imam syafii, imam hanafi, aplikasi islami, dzikir pagi petang',
   };
 
   return <JsonLd data={data} />;

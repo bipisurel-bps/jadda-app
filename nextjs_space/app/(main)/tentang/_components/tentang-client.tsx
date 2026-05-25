@@ -126,7 +126,7 @@ export default function TentangClient() {
             </div>
             <div>
               <strong className="text-sm text-foreground">Biografi Ulama</strong>
-              <p className="text-sm text-muted-foreground">Biografi lengkap para imam hadits (Bukhari, Muslim, Abu Dawud, At-Tirmidzi, An-Nasa&apos;i, Ibnu Majah) — mencakup riwayat hidup, perjalanan ilmiah, guru &amp; murid, karya monumental, dan keutamaan mereka.</p>
+              <p className="text-sm text-muted-foreground">Biografi lengkap 10 ulama besar: 6 imam hadits (Bukhari, Muslim, Abu Dawud, At-Tirmidzi, An-Nasa&apos;i, Ibnu Majah) dan 4 imam mazhab (Abu Hanifah, Malik, Asy-Syafi&apos;i, Ahmad bin Hambal) — mencakup riwayat hidup, perjalanan ilmiah, guru &amp; murid, karya monumental, dan keutamaan mereka.</p>
             </div>
           </li>
         </ul>
@@ -180,7 +180,7 @@ export default function TentangClient() {
             'Pengingat dzikir pagi & petang',
             'Arah kiblat (kompas digital)',
             'Kandungan hadits Arbain',
-            'Biografi 6 imam hadits',
+            'Biografi 10 ulama besar (imam hadits & mazhab)',
             'Kalkulator zakat 5 jenis',
             'Mode gelap/terang',
             'Bisa diinstal sebagai aplikasi (PWA)',
