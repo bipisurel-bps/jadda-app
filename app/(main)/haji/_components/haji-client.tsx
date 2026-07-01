@@ -4,7 +4,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   ChevronDown, ChevronUp, BookOpen, MapPin, CircleDot, Info, ArrowRight, ArrowLeft,
-  Copy, Check, AlertTriangle, Landmark, Mountain, Moon as MoonIcon, Flag
+  Copy, Check, AlertTriangle, Landmark, Mountain, Moon as MoonIcon, Flag, Star
 } from 'lucide-react';
 import { toast } from 'sonner';
 
@@ -42,6 +42,7 @@ const stepIcons: Record<string, React.ReactNode> = {
   muzdalifah: <MoonIcon size={20} />,
   jumrah: <CircleDot size={20} />,
   wada: <Landmark size={20} />,
+  star: <Star size={20} />,
 };
 
 const stepColors = [

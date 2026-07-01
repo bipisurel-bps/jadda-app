@@ -236,6 +236,74 @@
         "Wanita yang sedang haid diberi keringanan untuk tidak melakukan Thawaf Wada'.",
         "Hendaknya seorang muslim bersungguh-sungguh meniru tatacara manasik Rasulullah ﷺ. Beliau bersabda: 'Hendaknya kalian mengambil dariku manasik kalian.' (HR. Muslim 1297)"
       ]
+    },
+    {
+      "id": 11,
+      "title": "Amalan Setara Pahala Haji",
+      "icon": "star",
+      "preparation": [
+        "Amalan-amalan ini setara dalam pahala dan keutamaannya, bukan berarti menggugurkan kewajiban haji.",
+        "Bagi yang mampu dari sisi kekuatan dan biaya tetap wajib menunaikan haji apabila tidak ada penghalang.",
+        "Disarikan dari materi Khutbah Jum'at oleh Abu Abdirrahman Najib Suhrawardi -waffaqahullah-"
+      ],
+      "items": [
+        {
+          "text": "Kejujuran kepada Allah dalam berniat untuk melaksanakan ibadah haji akan membuahkan pahala haji meskipun terhalang uzur.",
+          "arabic": "إِنَّ بِالْمَدِينَةِ لَرِجَالًا مَا سِرْتُمْ مَسِيرًا وَلَا قَطَعْتُمْ وَادِيًا إِلَّا كَانُوا مَعَكُمْ؛ حَبَسَهُمُ الْمَرَضُ",
+          "transliteration": "Inna bil-Madīnati la-rijālan mā sirtum masīran wa lā qata'tum wādiyan illā kānū ma'akum; habasahumul-maraḍ.",
+          "source": "HR. Muslim"
+        },
+        {
+          "text": "Al-Imam An-Nawawi rahimahullah berkata: 'Dalam hadis ini terdapat keutamaan niat dalam kebaikan. Siapa yang berniat untuk ketaatan lalu terhalang uzur, ia tetap memperoleh pahala niatnya. Semakin besar kesedihannya karena luput, semakin besar pula pahalanya.' (Al-Minhaj 13/57)"
+        },
+        {
+          "text": "Keluar dari rumah dalam keadaan telah bersuci menuju shalat wajib berjamaah, maka pahalanya seperti pahala orang haji yang berihram.",
+          "arabic": "مَنْ خَرَجَ مِنْ بَيْتِهِ مُتَطَهِّرًا إِلَى صَلَاةٍ مَكْتُوبَةٍ فَأَجْرُهُ كَأَجْرِ الْحَاجِّ الْمُحْرِمِ",
+          "transliteration": "Man kharaja min baytihī mutaṭahhiran ilā ṣalātin maktūbatin fa-ajruhū ka-ajril-ḥājjil-muḥrim.",
+          "source": "HR. Abu Dawud, dishahihkan Al-Arnauth"
+        },
+        {
+          "text": "Shalat Dhuha yang dikerjakan semata-mata karena Allah, pahalanya seperti pahala orang berumrah. Dan shalat setelah shalat tanpa diselingi perkataan sia-sia, dicatat dalam 'Illiyyin.",
+          "arabic": "وَمَنْ خَرَجَ إِلَى تَسْبِيحِ الضُّحَى لَا يُنْصِبُهُ إِلَّا إِيَّاهُ فَأَجْرُهُ كَأَجْرِ الْمُعْتَمِرِ، وَصَلَاةٌ عَلَى أَثَرِ صَلَاةٍ لَا لَغْوَ بَيْنَهُمَا كِتَابٌ فِي عِلِّيِّينَ",
+          "transliteration": "Wa man kharaja ilā tasbīḥiḍ-ḍuḥā lā yunṣibuhū illā iyyāhu fa-ajruhū ka-ajril-mu'tamir, wa ṣalātun 'alā athari ṣalātin lā laghwa baynahumā kitābun fī 'illiyyīn.",
+          "source": "HR. Abu Dawud, dishahihkan Al-Arnauth"
+        },
+        {
+          "text": "Pergi ke masjid untuk mempelajari kebaikan atau mengajarkannya, maka baginya pahala seperti pahala haji yang sempurna.",
+          "arabic": "مَنْ غَدَا إِلَى مَسْجِدٍ لَا يُرِيدُ إِلَّا أَنْ يَتَعَلَّمَ خَيْرًا أَوْ يُعَلِّمَهُ كَانَ لَهُ كَأَجْرِ حَاجٍّ تَامًّا حَجَّتُهُ",
+          "transliteration": "Man ghadā ilā masjidin lā yurīdu illā an yata'allama khayran aw yu'allimahū kāna lahū ka-ajri ḥājjin tāmman ḥajjatuh.",
+          "source": "Shahih At-Targhib"
+        },
+        {
+          "text": "Bertakbir 33 kali, bertahmid 33 kali, dan bertasbih 33 kali setiap selesai shalat fardhu — amalan ini akan menyampaikan seseorang ke derajat pahala orang yang berhaji.",
+          "arabic": "تُسَبِّحُونَ وَتَحْمَدُونَ وَتُكَبِّرُونَ خَلْفَ كُلِّ صَلَاةٍ ثَلَاثًا وَثَلَاثِينَ",
+          "transliteration": "Tusabbiḥūna wa taḥmadūna wa tukabbirūna khalfa kulli ṣalātin thalāthan wa thalāthīn.",
+          "source": "Muttafaqun 'alaih"
+        },
+        {
+          "text": "Bersungguh-sungguh berbakti kepada ibu (atau ayah), maka engkau seperti orang yang berhaji, berumrah, dan berjihad.",
+          "arabic": "فَأَبْلِ فِي بِرِّهَا، فَإِذَا فَعَلْتَ ذَلِكَ فَأَنْتَ حَاجٌّ وَمُعْتَمِرٌ وَمُجَاهِدٌ",
+          "transliteration": "Fa-abli fī birrihā, fa-idhā fa'alta dhālika fa-anta ḥājjun wa mu'tamirun wa mujāhid.",
+          "source": "HR. Ath-Thabarani dalam Al-Mu'jam Al-Awshat"
+        },
+        {
+          "text": "Umrah di bulan Ramadan menyamai pahala haji (atau haji bersama Rasulullah ﷺ). Solusi bagi yang menginginkan pahala haji namun belum mampu.",
+          "arabic": "فَإِنَّ عُمْرَةً فِي رَمَضَانَ تَقْضِي حَجَّةً - أَوْ حَجَّةً مَعِي",
+          "transliteration": "Fa-inna 'umratan fī Ramaḍāna taqḍī ḥajjatan — aw ḥajjatan ma'ī.",
+          "source": "HR. Bukhari dan Muslim"
+        },
+        {
+          "text": "Shalat Subuh berjamaah, duduk berzikir hingga matahari terbit, lalu shalat dua rakaat — pahalanya seperti haji dan umrah yang sempurna.",
+          "arabic": "مَنْ صَلَّى الْفَجْرَ فِي جَمَاعَةٍ ثُمَّ قَعَدَ يَذْكُرُ اللَّهَ حَتَّى تَطْلُعَ الشَّمْسُ ثُمَّ صَلَّى رَكْعَتَيْنِ كَانَتْ لَهُ كَأَجْرِ حَجَّةٍ وَعُمْرَةٍ تَامَّةٍ تَامَّةٍ تَامَّةٍ",
+          "transliteration": "Man ṣallal-fajra fī jamā'atin thumma qa'ada yadhkurullāha ḥattā taṭlu'asy-syamsu thumma ṣallā rak'atayni kānat lahū ka-ajri ḥajjatin wa 'umratin tāmmatin tāmmatin tāmmah.",
+          "source": "HR. Tirmidzi, dishahihkan Al-Albani"
+        }
+      ],
+      "notes": [
+        "Sumber: Materi Khutbah Jum'at oleh Abu Abdirrahman Najib Suhrawardi -waffaqahullah-",
+        "Rasulullah ﷺ bersabda: 'Tidak ada hari di mana amal shalih lebih dicintai Allah dibandingkan sepuluh hari pertama Dzulhijjah.' (HR. Bukhari) — maka manfaatkanlah hari-hari ini!",
+        "Amalan-amalan ini menjadi kesempatan besar bagi yang memiliki uzur syar'i untuk mendekatkan diri kepada Allah dan meraih pahala agung."
+      ]
     }
   ]
 }
