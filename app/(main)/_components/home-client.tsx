@@ -83,14 +83,6 @@ const lainnyaFeatures = [
     accent: 'purple',
   },
   {
-    href: '/keilmuan/ulama',
-    icon: Users,
-    title: 'Biografi Ulama',
-    desc: 'Mengenal para imam hadits & ahli ilmu Islam',
-    accent: 'emerald',
-    isLucide: true,
-  },
-  {
     href: '/keilmuan/fiqh-safar',
     icon: Compass,
     title: 'Panduan Safar',
@@ -101,7 +93,7 @@ const lainnyaFeatures = [
   {
     href: '/keilmuan/fiqh-jenazah',
     icon: Heart,
-    title: 'Panduan Pengurusan Jamaah',
+    title: 'Panduan Pengurusan Jenazah',
     desc: 'Tata cara memandikan, mengkafani hingga pemakaman',
     accent: 'green',
     isLucide: true,
@@ -112,6 +104,14 @@ const lainnyaFeatures = [
     title: 'Fadhilah Amal',
     desc: 'Amalan ringan berpahala besar & keutamaan shalawat',
     accent: 'orange',
+    isLucide: true,
+  },
+  {
+    href: '/keilmuan/ulama',
+    icon: Users,
+    title: 'Biografi Ulama',
+    desc: 'Mengenal para imam hadits & ahli ilmu Islam',
+    accent: 'emerald',
     isLucide: true,
   },
 ];
