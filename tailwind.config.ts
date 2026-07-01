@@ -32,6 +32,13 @@ const config: Config = {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',
         },
+        surface: {
+          DEFAULT: 'hsl(var(--surface))',
+          foreground: 'hsl(var(--surface-foreground))',
+        },
+        overlay: {
+          DEFAULT: 'hsl(var(--overlay))',
+        },
         popover: {
           DEFAULT: 'hsl(var(--popover))',
           foreground: 'hsl(var(--popover-foreground))',
@@ -51,6 +58,11 @@ const config: Config = {
         accent: {
           DEFAULT: 'hsl(var(--accent))',
           foreground: 'hsl(var(--accent-foreground))',
+          emerald: 'hsl(var(--accent-emerald))',
+          gold: 'hsl(var(--accent-gold))',
+          sapphire: 'hsl(var(--accent-sapphire))',
+          amethyst: 'hsl(var(--accent-amethyst))',
+          teal: 'hsl(var(--accent-teal))',
         },
         destructive: {
           DEFAULT: 'hsl(var(--destructive))',

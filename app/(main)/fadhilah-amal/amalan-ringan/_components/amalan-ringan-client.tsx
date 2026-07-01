@@ -6,6 +6,8 @@ import { Copy, Check, BookOpen, Info } from 'lucide-react';
 import { toast } from 'sonner';
 import data from '@/public/data/fadhilah-amalan-ringan.json';
 
+type AmalanItem = { text: string; arabic?: string; source?: string; transliteration?: string };
+
 function ArabicBlock({ arabic, transliteration }: { arabic?: string; transliteration?: string }) {
   const [copied, setCopied] = useState(false);
   if (!arabic) return null;
@@ -45,7 +47,7 @@ export default function AmalanRinganClient() {
         className="rounded-2xl bg-card border border-border/50 p-5 md:p-6"
       >
         <h2 className="font-display font-bold text-lg text-foreground mb-3">{data.muqoddimah.title}</h2>
-        {data.muqoddimah.items.map((item, i) => (
+        {data.muqoddimah.items.map((item: AmalanItem, i: number) => (
           <div key={i} className="mb-3 last:mb-0">
             <p className="text-sm md:text-base text-foreground/80 leading-relaxed">{item.text}</p>
             {item.arabic && <ArabicBlock arabic={item.arabic} transliteration={item.transliteration} />}
