@@ -38,7 +38,7 @@ const mainFeatures = [
     href: '/doa',
     icon: JaddaDoaIcon,
     title: 'Doa Harian',
-    desc: '310 doa lengkap dari Hisnul Muslim',
+    desc: '310 doa dari Al-Quran, hadits & kitab ulama',
     accent: 'amber',
     size: 'sm',
   },
