@@ -65,7 +65,7 @@ const keilmuanFeatures = [
     href: '/keilmuan/fiqh-jenazah',
     icon: Heart,
     title: 'Panduan Pengurusan Jamaah',
-    desc: 'Tata cara memandikan, mengkafani, menshalatkan hingga pemakaman',
+    desc: 'Tata cara memandikan, mengkafani hingga pemakaman',
     accent: 'green',
   },
 ];
