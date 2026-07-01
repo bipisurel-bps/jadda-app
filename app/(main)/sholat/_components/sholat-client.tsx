@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { motion } from 'framer-motion';
 import {
-  MapPin, Clock, Bell, BellOff, Sun, Sunrise, Sunset, Moon, CloudSun, RefreshCw, Loader2, AlertCircle, Volume2, BookOpen, ChevronRight, Compass, ScrollText, PersonStanding
+  MapPin, Clock, Bell, BellOff, Sun, Sunrise, Sunset, Moon, CloudSun, RefreshCw, Loader2, AlertCircle, Volume2, BookOpen, ChevronRight, Compass
 } from 'lucide-react';
 import { toast } from 'sonner';
 import Link from 'next/link';
@@ -321,27 +321,7 @@ export default function SholatClient() {
       {/* Hidden audio element for adzan */}
       <audio ref={audioRef} src="/audio/adzan.mp3" preload="auto" />
 
-      {/* Top Navigation — 3 Tabs */}
-      <motion.div initial={{ opacity: 0, y: -8 }} animate={{ opacity: 1, y: 0 }} className="flex gap-2 overflow-x-auto pb-1">
-        <Link
-          href="/sholat"
-          className="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium bg-primary text-primary-foreground shadow-sm"
-        >
-          <Clock size={16} /> Waktu Sholat
-        </Link>
-        <Link
-          href="/sholat/tata-cara"
-          className="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium bg-muted text-muted-foreground hover:bg-muted/80 hover:text-foreground transition-colors"
-        >
-          <PersonStanding size={16} /> Tata Cara
-        </Link>
-        <Link
-          href="/sholat/makna-bacaan"
-          className="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium bg-muted text-muted-foreground hover:bg-muted/80 hover:text-foreground transition-colors"
-        >
-          <ScrollText size={16} /> Makna Bacaan
-        </Link>
-      </motion.div>
+
 
       <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="space-y-1">
         <h1 className="text-2xl md:text-3xl font-display font-bold text-foreground">Waktu Sholat</h1>

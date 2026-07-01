@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Star, ChevronRight, Compass, Heart, Users } from 'lucide-react';
+import { Star, ChevronRight, Compass, Heart, Users, PersonStanding } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { dailyVerses } from '@/lib/quran-verses';
 import {
@@ -91,6 +91,14 @@ const lainnyaFeatures = [
     isLucide: true,
   },
   {
+    href: '/tuntunan-sholat',
+    icon: PersonStanding,
+    title: 'Tuntunan Sholat Nabi ﷺ',
+    desc: 'Tata cara sholat sesuai Sunnah & makna bacaan',
+    accent: 'sky',
+    isLucide: true,
+  },
+  {
     href: '/keilmuan/fiqh-jenazah',
     icon: Heart,
     title: 'Panduan Pengurusan Jenazah',
@@ -127,6 +135,7 @@ const accentMap: Record<string, { bg: string; border: string; text: string; glow
   green:   { bg: 'bg-green-500/10',   border: 'border-green-400/20 hover:border-green-400/40',     text: 'text-green-400',   glow: 'shadow-green-500/10' },
   purple:  { bg: 'bg-purple-500/10',  border: 'border-purple-400/20 hover:border-purple-400/40',   text: 'text-purple-400',  glow: 'shadow-purple-500/10' },
   orange:  { bg: 'bg-orange-500/10',  border: 'border-orange-400/20 hover:border-orange-400/40',   text: 'text-orange-400',  glow: 'shadow-orange-500/10' },
+  sky:     { bg: 'bg-sky-500/10',     border: 'border-sky-400/20 hover:border-sky-400/40',         text: 'text-sky-400',     glow: 'shadow-sky-500/10' },
 };
 
 const glowLineClass = (a: string) => `glow-line-${a}`;
