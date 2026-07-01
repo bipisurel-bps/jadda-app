@@ -106,6 +106,14 @@ const lainnyaFeatures = [
     accent: 'green',
     isLucide: true,
   },
+  {
+    href: '/fadhilah-amal',
+    icon: Star,
+    title: 'Fadhilah Amal',
+    desc: 'Amalan ringan berpahala besar & keutamaan shalawat',
+    accent: 'orange',
+    isLucide: true,
+  },
 ];
 
 const accentMap: Record<string, { bg: string; border: string; text: string; glow: string }> = {
@@ -118,6 +126,7 @@ const accentMap: Record<string, { bg: string; border: string; text: string; glow
   cyan:    { bg: 'bg-cyan-500/10',    border: 'border-cyan-400/20 hover:border-cyan-400/40',       text: 'text-cyan-400',    glow: 'shadow-cyan-500/10' },
   green:   { bg: 'bg-green-500/10',   border: 'border-green-400/20 hover:border-green-400/40',     text: 'text-green-400',   glow: 'shadow-green-500/10' },
   purple:  { bg: 'bg-purple-500/10',  border: 'border-purple-400/20 hover:border-purple-400/40',   text: 'text-purple-400',  glow: 'shadow-purple-500/10' },
+  orange:  { bg: 'bg-orange-500/10',  border: 'border-orange-400/20 hover:border-orange-400/40',   text: 'text-orange-400',  glow: 'shadow-orange-500/10' },
 };
 
 const glowLineClass = (a: string) => `glow-line-${a}`;
