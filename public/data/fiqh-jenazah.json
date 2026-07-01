@@ -1,0 +1,480 @@
+{
+  "title": "Panduan Pengurusan Jamaah",
+  "description": "Tata cara memandikan, mengkafani, menshalatkan hingga pemakaman sesuai Al-Qur'an, As-Sunnah, dan pemahaman salaful ummah.",
+  "source": "Disarikan dari buku \"Fikih Pengurusan Jenazah\" oleh Yulian Purnama.",
+  "note": "Disarikan dari buku \"Fikih Pengurusan Jenazah\" oleh Yulian Purnama.",
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Ketika Baru Meninggal",
+      "icon": "heart-outline",
+      "sections": [
+        {
+          "id": "1-1",
+          "title": "Memejamkan Mata Mayit",
+          "type": "text",
+          "content": "Dianjurkan memejamkan mata orang yang baru meninggal dunia. Ulama ijma bahwa hukumnya sunnah. Ketika memejamkan mata jenazah tidak ada dzikir atau doa tertentu yang berdasarkan dalil yang shahih."
+        },
+        {
+          "id": "1-2",
+          "title": "Dalil Memejamkan Mata",
+          "type": "dalil",
+          "dalil": {
+            "text": "Rasulullah shallallahu 'alaihi wa sallam ketika mendatangi Abu Salamah yang telah meninggal, ketika itu kedua matanya terbuka. Maka Nabi pun memejamkan kedua mata Abu Salamah dan bersabda: \"Sesungguhnya bila ruh telah dicabut, maka pandangan matanya mengikutinya.\"",
+            "source": "HR. Muslim no. 920"
+          }
+        },
+        {
+          "id": "1-3",
+          "title": "Mendoakan Kebaikan untuk Mayit",
+          "type": "text",
+          "content": "Dianjurkan untuk mendoakan kebaikan kepada mayit sejak ia wafat dan terus memperbanyaknya. Tahan diri untuk mengatakan hal-hal yang buruk dan tidak layak dikatakan di sisi mayit. Malaikat mengaminkan doa yang diucapkan di sisi mayit."
+        },
+        {
+          "id": "1-4",
+          "title": "Doa untuk Mayit",
+          "type": "arabic-dua",
+          "arabic": "اللَّهُمَّ اغْفِرْ لِأَبِي سَلَمَةَ وَارْفَعْ دَرَجَتَهُ فِي الْمَهْدِيِّينَ وَاخْلُفْهُ فِي عَقِبِهِ فِي الْغَابِرِينَ وَاغْفِرْ لَنَا وَلَهُ يَا رَبَّ الْعَالَمِينَ وَافْسَحْ لَهُ فِي قَبْرِهِ وَنَوِّرْ لَهُ فِيهِ",
+          "transliteration": "Allahummaghfir li Abi Salamah, warfa' darajatahu fil-mahdiyyin, wakhlufhu fi 'aqibihi fil-ghabirin, waghfir lana wa lahu ya Rabbal 'alamin, wafsah lahu fi qabrihi wa nawwir lahu fihi",
+          "translation": "Ya Allah ampunilah Abu Salamah, angkatlah derajatnya dan jadikan ia termasuk orang-orang yang mendapatkan petunjuk, dan berilah ganti yang lebih baik bagi anak keturunannya, dan ampunilah kami dan dia wahai Rabb semesta alam, luaskanlah kuburnya dan terangilah.",
+          "note": "Doa ini boleh diganti dengan doa-doa kebaikan lainnya untuk mayit. Tidak harus persis seperti di atas."
+        },
+        {
+          "id": "1-5",
+          "title": "Larangan Niyahah (Meratap Berlebihan)",
+          "type": "info-box",
+          "infoType": "warning",
+          "content": "Hindari menangis meraung-raung, menampar pipi, merobek baju, atau ekspresi sedih yang berlebihan lainnya. Itu adalah perbuatan niyahah yang dilarang dan dapat membahayakan si mayit.",
+          "arabic": "إِنَّ الْمَيِّتَ يُعَذَّبُ بِبُكَاءِ أَهْلِهِ عَلَيْهِ",
+          "transliteration": "Innal mayyita yu'adzdzabu bibukaa'i ahlihi 'alaih",
+          "translation": "Sesungguhnya mayit itu diadzab (di dalam kuburnya) ketika keluarganya menangisinya. (HR. Bukhari no. 1304, Muslim no. 929)"
+        },
+        {
+          "id": "1-6",
+          "title": "Mengikat Dagu Mayit",
+          "type": "text",
+          "content": "Dianjurkan mengikat dagu mayit agar mulutnya tidak terbuka ketika dimandikan dan ketika dipersiapkan. Caranya dengan menggunakan kain yang lebar dan panjang diikat melingkar dari dagu hingga ke atas kepalanya, sehingga mulutnya tertahan dan tidak bisa terbuka."
+        },
+        {
+          "id": "1-7",
+          "title": "Menutup Mayit dengan Kain",
+          "type": "text",
+          "content": "Mayit ditutup dengan kain setelah meninggal. Berdasarkan hadits Aisyah radhiallahu'anha, ketika Rasulullah wafat, beliau ditutup dengan kain hibrah (sejenis kain Yaman yang bercorak). Perihal kain yang digunakan ini longgar, tidak harus kain tertentu dan tidak harus berwarna tertentu."
+        },
+        {
+          "id": "1-8",
+          "title": "Bersegera dalam Pengurusan Jenazah",
+          "type": "info-box",
+          "infoType": "tip",
+          "content": "Dianjurkan bersegera mempersiapkan mayit untuk dikubur.",
+          "arabic": "أَسْرِعُوا بِالْجَنَازَةِ فَإِنْ تَكُ صَالِحَةً فَخَيْرٌ تُقَدِّمُونَهَا وَإِنْ يَكُ سِوَى ذَلِكَ فَشَرٌّ تَضَعُونَهُ عَنْ رِقَابِكُمْ",
+          "transliteration": "Asri'u bil-janazah, fa in taku shalihatan fa khairun tuqaddimunaha, wa in yaku siwa dzalika fa syarrun tadha'unahu 'an riqabikum",
+          "translation": "Percepatlah pengurusan jenazah. Jika ia orang yang shalih, maka akan jadi kebaikan baginya jika kalian percepat. Jika ia orang yang bukan demikian, maka keburukan lebih cepat hilang dari pundak-pundak kalian. (HR. Bukhari no. 1315, Muslim no. 944)"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Memandikan Mayit",
+      "icon": "water-outline",
+      "sections": [
+        {
+          "id": "2-1",
+          "title": "Hukum Memandikan Mayit",
+          "type": "text",
+          "content": "Memandikan mayit hukumnya fardhu kifayah. Berdasarkan hadits Ibnu Abbas tentang seorang lelaki yang meninggal saat wukuf di Arafah, Nabi bersabda: \"Mandikanlah ia dengan air dan daun bidara.\" (HR. Bukhari no. 1849, Muslim no. 1206)"
+        },
+        {
+          "id": "2-2",
+          "title": "Siapa yang Memandikan Mayit?",
+          "type": "checklist",
+          "items": [
+            "Yang memandikan hendaknya orang yang paham fikih pemandian mayit",
+            "Lebih diutamakan dari kalangan kerabat mayit",
+            "Jenazah laki-laki wajib dimandikan oleh laki-laki, jenazah wanita oleh wanita",
+            "Suami boleh memandikan istri dan sebaliknya",
+            "Anak usia kurang dari 7 tahun boleh dimandikan oleh lelaki atau wanita",
+            "Wajib menjaga aurat mayit: aurat laki-laki dari pusar hingga lutut, aurat wanita dari dada hingga lutut"
+          ]
+        },
+        {
+          "id": "2-3",
+          "title": "Dalil Siapa yang Memandikan",
+          "type": "dalil",
+          "dalil": {
+            "text": "Yang memandikan jenazah Nabi Shallallahu'alaihi Wasallam adalah Ali radhiallahu'anhu dan kerabat Nabi. Ali berkata: \"Aku memandikan Rasulullah. Dan aku memperhatikan jasad beliau tidak ada celanya. Jasad beliau bagus ketika hidup maupun ketika sudah wafat.\"",
+            "source": "HR. Ibnu Majah no. 1467, dishahihkan Al Albani"
+          }
+        },
+        {
+          "id": "2-4",
+          "title": "Perangkat Memandikan Mayit",
+          "type": "checklist",
+          "items": [
+            "Sarung tangan atau kain untuk dipakai orang yang memandikan agar terjaga dari najis, kotoran dan penyakit",
+            "Masker penutup hidung untuk menjaga orang yang memandikan dari penyakit",
+            "Spon penggosok atau kain untuk membersihkan badan mayit",
+            "Kapur barus yang sudah digerus untuk dilarutkan dengan air",
+            "Daun sidr (bidara) jika ada, busanya untuk mencuci rambut dan kepala. Jika tidak ada bisa diganti sampo",
+            "Satu ember sebagai wadah air",
+            "Satu ember sebagai wadah air kapur barus",
+            "Gayung",
+            "Kain untuk menutupi aurat mayit",
+            "Handuk",
+            "Plester bila dibutuhkan untuk menutupi luka pada mayit",
+            "Gunting kuku untuk menggunting kuku mayit jika panjang"
+          ]
+        },
+        {
+          "id": "2-5",
+          "title": "Tata Cara Memandikan Mayit",
+          "type": "steps",
+          "steps": [
+            {
+              "number": 1,
+              "title": "Melemaskan Persendian",
+              "description": "Melemaskan persendian mayit untuk memudahkan ketika dimandikan. Caranya dengan merentangkan tangan lalu ditekuk, direntangkan pundaknya lalu ditekuk, begitu juga dengan tangan satunya dan kaki. Dilakukan dua atau tiga kali. Berlaku lembut karena memecah tulang mayit seperti memecahnya dalam keadaan hidup. (HR. Abu Daud no. 3207)"
+            },
+            {
+              "number": 2,
+              "title": "Melepas Pakaian Mayit",
+              "description": "Pakaian yang dipakai ketika meninggal disunnahkan dilepaskan saat baru wafat. Jika sulit dilepaskan dengan cara biasa, digunting hingga terlepas. Kemudian mayit ditutup dengan kain."
+            },
+            {
+              "number": 3,
+              "title": "Menutup Tempat Mandi",
+              "description": "Mayit dimandikan dalam ruangan tertutup pintu dan jendela. Tidak boleh dimandikan di hadapan orang banyak. Aurat mayit ditutup dengan kain (laki-laki: pusar hingga lutut, wanita: dada hingga lutut)."
+            },
+            {
+              "number": 4,
+              "title": "Teknis Pemandian",
+              "description": "Berniat dan membaca basmalah. Angkat kepala mayit sampai mendekati posisi duduk. Tekan-tekan perutnya dengan lembut dan perbanyak air saat itu. Lilitkan kain pada tangan untuk membersihkan kemaluan (haram menyentuh aurat mayit usia >=7 tahun tanpa alas). Masukkan dua jari yang dilapisi kain basah ke mulut, bersihkan gigi dan lubang hidung tanpa memasukkan air. Wudhukan mayit. Cuci kepala dengan busa daun bidara, badan dengan ampasnya. Siramkan air ke seluruh badan."
+            },
+            {
+              "number": 5,
+              "title": "Jumlah Siraman",
+              "description": "Disunnahkan tiga kali siraman, mendahulukan anggota kanan, dan mengusap perut setiap kali siraman. Jika belum bersih, tambah hingga bersih. Makruh mencukupkan sekali saja. Siraman terakhir dicampur kapur barus. Boleh hingga 5 atau 7 kali siraman jika diperlukan."
+            },
+            {
+              "number": 6,
+              "title": "Ketentuan Tambahan",
+              "description": "Disunnahkan kapur barus dan daun bidara di siraman terakhir. Boleh mewarnai rambut (khidhab), memotong kumis, dan memotong kuku jika panjang. Tidak boleh menyisir rambut. Janin <4 bulan dilipat dan dikubur di tempat bersih (tidak dimandikan), janin >=4 bulan diperlakukan seperti mayit dewasa."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Mengkafani Mayit",
+      "icon": "shirt-outline",
+      "sections": [
+        {
+          "id": "3-1",
+          "title": "Hukum Mengkafani Mayit",
+          "type": "text",
+          "content": "Mengkafani mayit hukumnya fardhu kifayah. Kadar wajibnya adalah sekedar menutup seluruh tubuhnya dengan bagus. Selebihnya hukumnya sunnah. Rasulullah bersabda: \"Apabila salah seorang di antara kalian mengkafani saudaranya, maka hendaklah memperbagus kafannya.\" (HR. Muslim no. 943)"
+        },
+        {
+          "id": "3-2",
+          "title": "Pengecualian: Orang Meninggal dalam Ihram",
+          "type": "info-box",
+          "infoType": "warning",
+          "content": "Orang yang meninggal dalam keadaan ihram tidak ditutup kepalanya dan tidak diberi minyak wangi. Nabi bersabda: \"Jangan beri minyak wangi dan jangan tutup kepalanya. Karena Allah akan membangkitkannya di hari Kiamat dalam keadaan bertalbiyah.\" (HR. Bukhari no. 1849, Muslim no. 1206)"
+        },
+        {
+          "id": "3-3",
+          "title": "Kriteria Kain Kafan",
+          "type": "checklist",
+          "items": [
+            "Biaya kain kafan diambilkan dari harta mayit — biaya pengurusan jenazah lebih didahulukan dari membayar hutang (jumhur ulama)",
+            "Disunnahkan memakai kain kafan berwarna putih — sabda Nabi: \"Pakailah pakaian yang berwarna putih dan kafanilah mayit dengan kain warna putih. Karena itu adalah sebaik-baik pakaian kalian.\" (HR. Abu Daud no. 3878)",
+            "Disunnahkan menggunakan tiga helai kain putih untuk mayit laki-laki — berdasarkan hadits Aisyah: \"Rasulullah dikafankan dengan 3 helai kain putih sahuliyah dari Kursuf, tanpa gamis dan tanpa imamah.\" (HR. Muslim no. 941)",
+            "Mayit wanita disunnahkan 5 helai kain (sarung, gamis, kerudung, 2 lapis pembungkus) namun boleh 3 helai saja",
+            "Mayit anak kecil cukup dengan gamis dan dua lapis kafan",
+            "Tidak ada ketentuan jenis bahan tertentu — yang penting bisa menutupi dengan bagus dan tidak tipis menampakkan kulit"
+          ]
+        },
+        {
+          "id": "3-4",
+          "title": "Wewangian untuk Kain Kafan",
+          "type": "text",
+          "content": "Disunnahkan memberi wewangian pada kain kafan. Rasulullah bersabda: \"Apabila kalian memberi wewangian kepada mayit, maka berikanlah tiga kali.\" (HR. Ahmad no. 14580, dishahihkan Al Albani)"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Shalat Jenazah",
+      "icon": "body-outline",
+      "sections": [
+        {
+          "id": "4-1",
+          "title": "Hukum Shalat Jenazah",
+          "type": "text",
+          "content": "Shalat jenazah hukumnya fardhu kifayah. Dianjurkan sebanyak mungkin kaum Muslimin menshalatkannya agar mendapatkan syafa'at. Nabi bersabda: \"Tidaklah seorang Muslim meninggal, lalu dishalatkan oleh kaum muslimin yang jumlahnya mencapai seratus orang, semuanya mendoakan untuknya, niscaya mereka bisa memberikan syafa'at untuk si mayit.\" (HR. Muslim no. 947)"
+        },
+        {
+          "id": "4-2",
+          "title": "Dalil Keutamaan Banyak Jemaah",
+          "type": "dalil",
+          "dalil": {
+            "text": "Tidaklah seorang Muslim meninggal, lalu dishalatkan oleh empat puluh orang yang tidak berbuat syirik kepada Allah sedikit pun, kecuali Allah akan memberikan syafaat kepada jenazah tersebut dengan sebab mereka.",
+            "source": "HR. Muslim no. 948"
+          }
+        },
+        {
+          "id": "4-3",
+          "title": "Tata Cara Shalat Jenazah",
+          "type": "steps",
+          "steps": [
+            {
+              "number": 1,
+              "title": "Posisi Berdiri Imam",
+              "description": "Imam berdiri sejajar dengan kepala mayit lelaki dan bila mayitnya wanita, imam berdiri di bagian tengahnya. Makmum berdiri di belakang imam. (HR. Abu Daud no. 3194, At Tirmidzi no. 1034)"
+            },
+            {
+              "number": 2,
+              "title": "Takbir Pertama",
+              "description": "Takbir shalat jenazah disyariatkan berdasarkan ijma ulama. Disunnahkan mengangkat tangan di setiap takbir berdasarkan riwayat dari Ibnu Umar dan Ibnu Abbas radhiallahu'anhum. Setelah takbir pertama: membaca ta'awwudz kemudian Al-Fatihah secara sirr (lirih)."
+            },
+            {
+              "number": 3,
+              "title": "Takbir Kedua: Shalawat",
+              "description": "Membaca shalawat kepada Nabi Shallallahu 'alaihi wa sallam. Minimal: \"Allahumma shalli 'ala Muhammad.\" Namun lebih utama dengan shalawat yang lengkap."
+            },
+            {
+              "number": 4,
+              "title": "Takbir Ketiga: Doa untuk Mayit",
+              "description": "Membaca doa khusus untuk mayit. Disunnahkan membaca doa yang diajarkan Nabi (lihat bagian doa shalat jenazah)."
+            },
+            {
+              "number": 5,
+              "title": "Takbir Keempat dan Salam",
+              "description": "Takbir keempat, kemudian diam sejenak (boleh berdoa lagi), lalu salam ke kanan dan ke kiri. Sebagian ulama membolehkan satu salam saja."
+            }
+          ]
+        },
+        {
+          "id": "4-4",
+          "title": "Doa Shalat Jenazah",
+          "type": "arabic-dua",
+          "arabic": "اللَّهُمَّ اغْفِرْ لَهُ وَارْحَمْهُ وَعَافِهِ وَاعْفُ عَنْهُ وَأَكْرِمْ نُزُلَهُ وَوَسِّعْ مُدْخَلَهُ وَاغْسِلْهُ بِالْمَاءِ وَالثَّلْجِ وَالْبَرَدِ وَنَقِّهِ مِنَ الْخَطَايَا كَمَا نَقَّيْتَ الثَّوْبَ الْأَبْيَضَ مِنَ الدَّنَسِ وَأَبْدِلْهُ دَارًا خَيْرًا مِنْ دَارِهِ وَأَهْلًا خَيْرًا مِنْ أَهْلِهِ وَزَوْجًا خَيْرًا مِنْ زَوْجِهِ وَأَدْخِلْهُ الْجَنَّةَ وَأَعِذْهُ مِنْ عَذَابِ الْقَبْرِ وَمِنْ عَذَابِ النَّارِ",
+          "transliteration": "Allahummaghfir lahu warhamhu wa 'afihi wa'fu 'anhu wa akrim nuzulahu wa wassi' mudkhalahu waghsilhu bil-ma'i wats-tsalji wal-barad, wa naqqihi minal-khathaya kama naqqaitats-tsaubal-abyadha minad-danas, wa abdilhu daran khairan min darihi wa ahlan khairan min ahlihi wa zaujan khairan min zaujihi, wa adkhilhul-jannata wa a'idzhu min 'adzabil-qabri wa min 'adzabin-nar",
+          "translation": "Ya Allah, berilah ampunan baginya dan rahmatilah dia. Selamatkanlah dan maafkanlah ia. Berilah kehormatan untuknya, luaskanlah tempat masuknya. Mandikanlah ia dengan air, es dan salju. Bersihkanlah dia dari kesalahannya sebagaimana Engkau bersihkan baju yang putih dari kotoran. Gantikanlah baginya rumah yang lebih baik, keluarga yang lebih baik, istri yang lebih baik. Masukkanlah ia ke dalam surga, lindungilah ia dari adzab kubur dan adzab neraka.",
+          "note": "Untuk mayit wanita, ganti dhamir (kata ganti) '-hu' menjadi '-ha'. Juga ganti 'zaujan' (istri) menjadi 'zaujan khairan min zaujiha' (suami yang lebih baik)."
+        },
+        {
+          "id": "4-5",
+          "title": "Tempat Shalat Jenazah",
+          "type": "text",
+          "content": "Shalat jenazah lebih utama dilakukan di luar masjid, sebagaimana umum dilakukan di zaman Nabi. Namun boleh juga dikerjakan di dalam masjid. Boleh melakukan shalat jenazah di pemakaman bagi yang belum sempat menshalatkan sebelum dikuburkan, sebagaimana dilakukan Nabi di kuburan yang masih basah. (HR. Muslim no. 954)"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Mengantarkan ke Makam",
+      "icon": "walk-outline",
+      "sections": [
+        {
+          "id": "5-1",
+          "title": "Keutamaan Mengantarkan Jenazah",
+          "type": "text",
+          "content": "Mengantarkan jenazah ke makam adalah amalan yang sangat dianjurkan. Memiliki keutamaan besar sebagaimana disebutkan dalam hadits-hadits shahih."
+        },
+        {
+          "id": "5-2",
+          "title": "Dalil Keutamaan",
+          "type": "dalil",
+          "dalil": {
+            "text": "Barangsiapa yang mengiringi jenazah seorang muslim dengan iman dan mengharap pahala, dan ia senantiasa bersamanya sampai ia dishalatkan dan selesai proses penguburannya, maka ia akan kembali dengan membawa pahala dua qirath (pahala sebesar dua gunung besar).",
+            "source": "HR. Bukhari no. 47, Muslim no. 945"
+          }
+        },
+        {
+          "id": "5-3",
+          "title": "Adab Mengantarkan Jenazah",
+          "type": "checklist",
+          "items": [
+            "Berjalan dengan tenang dan khusyuk, tidak tergesa-gesa",
+            "Orang yang berjalan kaki, berjalan di depan jenazah atau di sampingnya",
+            "Orang yang berkendaraan, di belakang jenazah",
+            "Tidak duduk sebelum jenazah diletakkan",
+            "Boleh mengantarkan dengan berjalan kaki atau berkendaraan",
+            "Dianjurkan mempercepat langkah (tidak berlari) berdasarkan hadits tentang mempercepat pengurusan jenazah",
+            "Tidak mengeraskan suara, berdzikir, atau membaca Al-Qur'an dengan suara keras di sekitar jenazah"
+          ]
+        },
+        {
+          "id": "5-4",
+          "title": "Bacaan Saat Mengantarkan",
+          "type": "info-box",
+          "infoType": "info",
+          "content": "Tidak ada bacaan khusus yang disyariatkan dengan suara keras saat mengantarkan jenazah. Hendaknya masing-masing orang berdzikir dalam hati, beristighfar, dan mendoakan mayit. Sebagian ulama membolehkan membaca Al-Qur'an dalam hati untuk mayit."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Menguburkan Mayit",
+      "icon": "flower-outline",
+      "sections": [
+        {
+          "id": "6-1",
+          "title": "Hukum dan Waktu Penguburan",
+          "type": "text",
+          "content": "Menguburkan mayit hukumnya fardhu kifayah. Berdasarkan QS. Al-Maidah: 31, QS. Al-Mursalat: 25-26, QS. 'Abasa: 21. Waktu penguburan: boleh dilakukan kapan saja (siang atau malam). Dilarang pada 3 waktu: saat matahari baru terbit sampai agak meninggi, saat matahari tepat di atas kepala sampai bergeser, dan saat matahari hampir tenggelam. (HR. Muslim no. 831)"
+        },
+        {
+          "id": "6-2",
+          "title": "Bentuk Kuburan yang Disunnahkan",
+          "type": "text",
+          "content": "Kuburan yang sesuai sunnah adalah dengan membuat liang lahat, yaitu lubang di dasar kubur yang dibuat miring ke arah kiblat. Mayit diletakkan di liang lahat dengan posisi miring ke kanan dan menghadap kiblat. Jika tanah mudah longsor, boleh dengan syaq (lubang lurus di tengah)."
+        },
+        {
+          "id": "6-3",
+          "title": "Prosedur Penguburan",
+          "type": "steps",
+          "steps": [
+            {
+              "number": 1,
+              "title": "Memasukkan Mayit dari Arah Kaki Kuburan",
+              "description": "Mayit dimasukkan ke kubur dari arah kaki kuburan, karena ini yang paling mudah dan sesuai sunnah. Orang yang memasukkan membaca: \"Bismillahi wa 'ala millati Rasulillah\" (Dengan nama Allah dan di atas agama Rasulullah)."
+            },
+            {
+              "number": 2,
+              "title": "Meletakkan Mayit Menghadap Kiblat",
+              "description": "Mayit diletakkan di liang lahat dalam posisi miring ke kanan, wajah menghadap kiblat. Pipi dan dada menempel pada tanah (atau batu bata penahan). Tidak perlu bantalan dari tanah atau batu di bawah kepala, tetapi sebagian ulama membolehkan."
+            },
+            {
+              "number": 3,
+              "title": "Melepas Tali Pocong",
+              "description": "Disunnahkan melepas tali-tali pocong setelah mayit diletakkan di liang lahat. Karena fungsi tali pocong hanya untuk memudahkan pemindahan, bukan bagian dari ibadah. Keyakinan bahwa mayit akan penasaran atau gentayangan jika tali pocong tidak dilepas adalah khurafat yang batil."
+            },
+            {
+              "number": 4,
+              "title": "Menutup Liang Lahat",
+              "description": "Liang lahat ditutup dengan batu bata atau papan kayu. Kemudian ditimbun dengan tanah. Disunnahkan menyipratkan air untuk memadatkan tanah (bukan untuk mendinginkan mayit). Disunnahkan meninggikan kuburan sekitar sejengkal dari permukaan tanah dan dibuat rata, bukan melengkung seperti punuk unta."
+            }
+          ]
+        },
+        {
+          "id": "6-4",
+          "title": "Berdoa Setelah Pemakaman",
+          "type": "text",
+          "content": "Nabi biasa berdiri sejenak di sisi kuburan setelah selesai menguburkan lalu bersabda: \"Mintalah ampunan untuk saudara kalian ini, dan mintalah agar ia diberi kemudahan dalam menghadapi pertanyaan kubur, karena ia sekarang sedang ditanya.\" (HR. Abu Daud no. 3221). Mendoakan mayit dilakukan sendiri-sendiri, tidak secara berjamaah atau dikomando oleh satu orang."
+        },
+        {
+          "id": "6-5",
+          "title": "Larangan Terkait Kuburan",
+          "type": "checklist",
+          "items": [
+            "Mengapur atau mewarnai kuburan — hukumnya haram (HR. Muslim no. 970)",
+            "Menulis di atas kuburan — haram menurut pendapat yang rajih. Kecuali jika ada kebutuhan mendesak (misalnya agar tidak hilang), sebagian ulama membolehkan",
+            "Membangun kuburan dengan batu bata, semen, atau bangunan di atasnya — diharamkan oleh seluruh ulama",
+            "Menduduki kuburan — haram (HR. Muslim no. 970)",
+            "Meninggikan kuburan berlebihan — Nabi memerintahkan Ali untuk meratakan setiap kuburan yang ditinggikan",
+            "Membangun masjid di atas kuburan — haram berdasarkan ijma ulama",
+            "Shalat menghadap kuburan",
+            "Menjadikan kuburan sebagai tempat ibadah atau ziarah yang diagungkan"
+          ]
+        },
+        {
+          "id": "6-6",
+          "title": "Hikmah Pelarangan",
+          "type": "info-box",
+          "infoType": "warning",
+          "content": "Hikmah pelarangan membangun, mengapur, dan menghias kuburan adalah untuk menutup segala jalan kepada kesyirikan. Karena jika kuburan dibangun dan dihiasi, ia akan diagungkan dan terkadang akan membawa kepada penyembahan kuburan selain beribadah kepada Allah. (Asy Syarhul Mumthi', 5/366)"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Hukum Mengumumkan Kematian",
+      "icon": "megaphone-outline",
+      "sections": [
+        {
+          "id": "7-1",
+          "title": "Definisi An-Na'yu",
+          "type": "text",
+          "content": "An-na'yu artinya mengumumkan kematian seseorang, mengabarkan kepada orang-orang, dan memotivasi untuk bertakziah. Umumnya an-na'yu disertai dengan nida' (panggilan dengan suara keras). Menurut At-Tirmidzi: \"An-na'yu adalah mengumumkan dengan suara keras bahwa si fulan telah meninggal dan diajak untuk menghadiri pemakamannya.\""
+        },
+        {
+          "id": "7-2",
+          "title": "Hukum An-Na'yu dengan Nida'",
+          "type": "text",
+          "content": "Ulama empat mazhab sepakat bahwa an-na'yu jika disertai nida', hukumnya makruh dan merupakan perbuatan tercela. Dalilnya adalah perkataan Hudzaifah Ibnul Yaman: \"Jika aku meninggal, janganlah kalian mengganggu aku (dengan mengumumkan kematianku), karena aku khawatir itu termasuk na'yu. Aku mendengar Rasulullah melarang an-na'yu.\" (HR. At-Tirmidzi no. 986). Alasan terlarangnya adalah karena menyerupai perbuatan orang Jahiliyah yang disertai tanwih (pujian berlebihan) dan tafkhim (membesar-besarkan nama mayit)."
+        },
+        {
+          "id": "7-3",
+          "title": "Pendapat Ulama tentang An-Na'yu dengan Nida'",
+          "type": "madhab-table",
+          "madhabTable": {
+            "headers": ["Mazhab / Ulama", "Pendapat"],
+            "rows": [
+              { "madhab": "Hanafiyah (Ibnu Abidin)", "opinion": "Makruh jika disertai nida' di gang dan pasar. Namun tidak makruh jika tanpa tanwih dan tafkhim." },
+              { "madhab": "Syafi'iyah (An-Nawawi)", "opinion": "Dianjurkan mengumumkan kematian jika bukan dengan cara Jahiliyah. Yang dilarang adalah yang disertai pujian berlebihan." },
+              { "madhab": "Syaikh Ibnu Baz", "opinion": "Boleh mengumumkan kematian di koran — termasuk kebaikan." },
+              { "madhab": "Syaikh Ibnu Utsaimin", "opinion": "Boleh jika untuk maslahat (misalnya mayit punya muamalah luas, ada hak orang yang belum ditunaikan)." }
+            ]
+          }
+        },
+        {
+          "id": "7-4",
+          "title": "Kesimpulan: An-Na'yu Tanpa Nida' Boleh",
+          "type": "info-box",
+          "infoType": "tip",
+          "content": "An-na'yu tanpa disertai nida' (seruan keras) hukumnya BOLEH berdasarkan IJMA' ulama. Dalilnya: Nabi sendiri melakukan an-na'yu terhadap wafatnya An-Najasyi (HR. Bukhari no. 1245). Nabi juga bertanya: \"Mengapa kalian tidak mengabarkan kepadaku?\" tentang wafatnya tukang sapu masjid (HR. Bukhari no. 458). Ini menunjukkan bolehnya mengabarkan kematian tanpa nida'."
+        },
+        {
+          "id": "7-5",
+          "title": "Syarat An-Na'yu yang Dibolehkan",
+          "type": "checklist",
+          "items": [
+            "Tanpa nida' (seruan dengan suara keras di ruang publik)",
+            "Tanpa tanwih (memuji-muji berlebihan yang tidak ada pada mayit)",
+            "Tanpa tafkhim (membesar-besarkan nama mayit)",
+            "Boleh untuk tujuan baik: mengajak shalat jenazah, mengabarkan kepada keluarga dan kerabat, menyelesaikan hak-hak mayit yang belum ditunaikan"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Penutup",
+      "icon": "book-outline",
+      "sections": [
+        {
+          "id": "8-1",
+          "title": "Ringkasan",
+          "type": "text",
+          "content": "Fikih pengurusan jenazah adalah salah satu ilmu yang wajib dipelajari oleh setiap Muslim, karena kematian adalah sesuatu yang pasti terjadi. Kewajiban kita terhadap sesama Muslim yang meninggal mencakup empat hal: memandikan, mengkafani, menshalatkan, dan menguburkan. Semua ini hukumnya fardhu kifayah."
+        },
+        {
+          "id": "8-2",
+          "title": "Prinsip-prinsip Utama",
+          "type": "checklist",
+          "items": [
+            "Bersegera dalam pengurusan jenazah tanpa menunda-nunda",
+            "Berlaku lembut kepada mayit — memecah tulangnya seperti memecahnya saat hidup",
+            "Menjaga aurat dan kehormatan mayit",
+            "Mendoakan kebaikan dan memintakan ampunan untuk mayit",
+            "Menjauhi perbuatan niyahah (meratap berlebihan) dan bid'ah dalam pengurusan jenazah",
+            "Menutup jalan menuju kesyirikan dalam praktik penguburan dan ziarah kubur",
+            "Mengumumkan kematian dengan cara yang syar'i (tanpa nida' dan pujian berlebihan)"
+          ]
+        },
+        {
+          "id": "8-3",
+          "title": "Doa Penutup",
+          "type": "arabic-dua",
+          "arabic": "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ وَصَلَّى اللَّهُ وَسَلَّمَ وَبَارَكَ عَلَى عَبْدِهِ وَرَسُولِهِ نَبِيِّنَا مُحَمَّدٍ وَعَلَى آلِهِ وَأَصْحَابِهِ أَجْمَعِينَ",
+          "transliteration": "Alhamdulillahi Rabbil 'alamin, wa shallallahu wa sallama wa baraka 'ala 'abdihi wa rasulihi Nabiyyina Muhammad wa 'ala alihi wa ashhabihi ajma'in",
+          "translation": "Segala puji bagi Allah Rabb semesta alam. Semoga shalawat, salam, dan keberkahan tercurah kepada hamba dan utusan-Nya, Nabi kita Muhammad, serta keluarga dan seluruh sahabatnya.",
+          "note": "Semoga Allah menjaga yang hidup di antara kita dan mengampuni serta merahmati yang telah wafat. Semoga risalah ini menjadi pemberat timbangan amalan kebaikan di Yaumul Mizan."
+        }
+      ]
+    }
+  ]
+}

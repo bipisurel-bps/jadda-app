@@ -62,7 +62,7 @@ export default function TentangClient() {
               <Scale size={12} className="text-accent" />
             </div>
             <div>
-              <strong className="text-sm text-foreground">Kalkulator Waris (Faraidh)</strong>
+              <strong className="text-sm text-foreground">Hitung Waris (Faraidh)</strong>
               <p className="text-sm text-muted-foreground">Perhitungan pembagian warisan sesuai hukum Islam berdasarkan Al-Qur&apos;an dan Sunnah. Mendukung berbagai kasus termasuk &apos;Aul, Radd, Hajb, dan Al-Umariyyatain.</p>
             </div>
           </li>
@@ -80,7 +80,7 @@ export default function TentangClient() {
               <Scale size={12} className="text-pink-500" />
             </div>
             <div>
-              <strong className="text-sm text-foreground">Kalkulator Zakat</strong>
+              <strong className="text-sm text-foreground">Hitung Zakat</strong>
               <p className="text-sm text-muted-foreground">Perhitungan zakat maal, fitrah, perdagangan, pertanian, dan peternakan sesuai ketentuan syariat Islam.</p>
             </div>
           </li>
@@ -116,7 +116,7 @@ export default function TentangClient() {
               <Landmark size={12} className="text-amber-500" />
             </div>
             <div>
-              <strong className="text-sm text-foreground">Panduan Haji</strong>
+              <strong className="text-sm text-foreground">Tuntunan Haji</strong>
               <p className="text-sm text-muted-foreground">Panduan lengkap ibadah haji 10 langkah berdasarkan &quot;Mulakhos Fiqhi&quot; Syaikh Shaleh Al-Fauzan, dengan doa, bacaan Arab, dan keterangan praktis.</p>
             </div>
           </li>

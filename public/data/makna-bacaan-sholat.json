@@ -1,0 +1,529 @@
+{
+  "sections": [
+    {
+      "id": "takbiratul-ihram",
+      "title": "Takbiratul Ihram",
+      "icon": "🤲",
+      "order": 1,
+      "penjelasan_umum": "Rangkaian ibadah sholat dimulai dengan takbir dan diakhiri dengan salam. Makna takbir: 'Allah adalah Yang Terbesar, Teragung di atas segala sesuatu.' Syaikh Al-Utsaimin menjelaskan bahwa Allah Ta'ala ter-Besar dari segala sesuatu dalam hal Dzat-Nya, Nama-nama-Nya, dan Sifat-sifat-Nya. Ketika mengucapkan takbir, hayatilah bahwa Allahlah yang ter-Besar di atas segala-galanya.\n\nPeringatan: Hindari kesalahan fatal dalam pengucapan takbir:\n• Jangan membaca panjang di awal menjadi 'Aallaahu' (bermakna pertanyaan 'Apakah Allah besar?', ini kekufuran)\n• Jangan memanjangkan 'ba' sehingga menjadi 'Akbaar' (bermakna 'gendang/bedug')\n• Jangan membaca huruf 'lam' dengan tipis (mirip ucapan Nashrani yang menyebut tuhan 'A-lah')",
+      "dalil": "Q.S Az-Zumar:67, Q.S Al-Jaatsiyah:37",
+      "variants": [
+        {
+          "id": "takbir-1",
+          "label": "Bacaan Takbir",
+          "arabic": "اللَّهُ أَكْبَرُ",
+          "latin": "Allaahu Akbar",
+          "arti": "Allah Maha Besar (Allah adalah Yang Terbesar)",
+          "rincianMakna": [
+            { "arabic": "اللَّهُ", "arti": "Allah" },
+            { "arabic": "أَكْبَرُ", "arti": "Yang Terbesar, Yang Teragung" }
+          ],
+          "penjelasan": "Kata 'Maha' di sini harus diartikan sebagai 'Yang Ter-' atau 'Paling-', bukan 'sangat' atau 'amat'. Allah ter-Besar dalam Dzat, Nama, dan Sifat-Nya. Seluruh Nama Allah adalah yang terbaik dan termulia. Sifat-sifat-Nya memiliki kesempurnaan tertinggi tanpa kekurangan sedikit pun.",
+          "dalil": "HR. Muslim"
+        }
+      ]
+    },
+    {
+      "id": "doa-iftitah",
+      "title": "Doa Iftitah (Istiftah)",
+      "icon": "🤲",
+      "order": 2,
+      "penjelasan_umum": "Setelah takbiratul ihram, disunnahkan membaca doa iftitah. Ada banyak variasi yang shahih. Para Ulama menganjurkan untuk berganti-ganti membacanya di setiap sholat agar tidak terpaku pada satu bacaan saja dan dapat mengamalkan seluruh sunnah Nabi.",
+      "variants": [
+        {
+          "id": "iftitah-1",
+          "label": "Doa Iftitah — Riwayat Abu Hurairah",
+          "arabic": "اللَّهُمَّ بَاعِدْ بَيْنِي وَبَيْنَ خَطَايَايَ كَمَا بَاعَدْتَ بَيْنَ الْمَشْرِقِ وَالْمَغْرِبِ، اللَّهُمَّ نَقِّنِي مِنْ خَطَايَايَ كَمَا يُنَقَّى الثَّوْبُ الْأَبْيَضُ مِنَ الدَّنَسِ، اللَّهُمَّ اغْسِلْنِي مِنْ خَطَايَايَ بِالْمَاءِ وَالثَّلْجِ وَالْبَرَدِ",
+          "latin": "Allaahumma baa'id bainii wa baina khathaayaaya kamaa baa'adta bainal masyriqi wal maghrib. Allaahumma naqqinii min khathaayaaya kamaa yunaqqats tsaubul abyadhu minad danas. Allaahummaghsilnii min khathaayaaya bil maa-i wats tsalji wal barad.",
+          "arti": "Ya Allah, jauhkanlah antara diriku dan dosa-dosaku sebagaimana Engkau menjauhkan antara timur dan barat. Ya Allah, bersihkanlah aku dari dosa-dosaku sebagaimana pakaian putih dibersihkan dari kotoran. Ya Allah, cucilah aku dari dosa-dosaku dengan air, salju, dan embun.",
+          "rincianMakna": [
+            { "arabic": "اللَّهُمَّ", "arti": "Ya Allah" },
+            { "arabic": "بَاعِدْ بَيْنِي وَبَيْنَ خَطَايَايَ", "arti": "jauhkanlah antara diriku dan dosa-dosaku" },
+            { "arabic": "كَمَا بَاعَدْتَ بَيْنَ الْمَشْرِقِ وَالْمَغْرِبِ", "arti": "sebagaimana Engkau menjauhkan antara timur dan barat" },
+            { "arabic": "نَقِّنِي مِنْ خَطَايَايَ", "arti": "bersihkanlah aku dari dosa-dosaku" },
+            { "arabic": "كَمَا يُنَقَّى الثَّوْبُ الْأَبْيَضُ مِنَ الدَّنَسِ", "arti": "sebagaimana pakaian putih dibersihkan dari kotoran" },
+            { "arabic": "اغْسِلْنِي مِنْ خَطَايَايَ بِالْمَاءِ وَالثَّلْجِ وَالْبَرَدِ", "arti": "cucilah aku dari dosa-dosaku dengan air, salju, dan embun" }
+          ],
+          "penjelasan": "Uslub (gaya bahasa) yang sangat indah! Meminta jarak yang sangat jauh dari dosa (seperti timur-barat), kemudian dibersihkan (seperti baju putih dari noda), lalu dicuci dengan tiga media pendingin: air, salju, dan embun — melambangkan pembersihan menyeluruh hingga ke dalam hati yang 'panas' oleh dosa. Ini mencakup taubat dari dosa masa lalu, masa kini, dan masa depan.",
+          "dalil": "HR. Bukhari no. 744, Muslim no. 598"
+        },
+        {
+          "id": "iftitah-2",
+          "label": "Doa Iftitah — Riwayat Ali bin Abi Thalib",
+          "arabic": "وَجَّهْتُ وَجْهِيَ لِلَّذِي فَطَرَ السَّمَاوَاتِ وَالْأَرْضَ حَنِيفًا وَمَا أَنَا مِنَ الْمُشْرِكِينَ، إِنَّ صَلَاتِي وَنُسُكِي وَمَحْيَايَ وَمَمَاتِي لِلَّهِ رَبِّ الْعَالَمِينَ، لَا شَرِيكَ لَهُ وَبِذَٰلِكَ أُمِرْتُ وَأَنَا مِنَ الْمُسْلِمِينَ",
+          "latin": "Wajjahtu wajhiya lilladzii fatharas samaawaati wal ardha haniifaw wa maa ana minal musyrikiin. Inna shalaatii wa nusukii wa mahyaaya wa mamaatii lillaahi rabbil 'aalamiin. Laa syariika lahu wa bidzaalika umirtu wa ana minal muslimiin.",
+          "arti": "Aku hadapkan wajahku kepada Dzat yang menciptakan langit dan bumi dengan penuh kepasrahan, dan aku bukanlah termasuk orang-orang musyrik. Sesungguhnya sholatku, ibadahku, hidupku, dan matiku hanya untuk Allah, Tuhan semesta alam. Tiada sekutu bagi-Nya, dan dengan itulah aku diperintahkan, dan aku termasuk orang-orang yang berserah diri (muslim).",
+          "rincianMakna": [
+            { "arabic": "وَجَّهْتُ وَجْهِيَ", "arti": "Aku hadapkan wajahku" },
+            { "arabic": "لِلَّذِي فَطَرَ السَّمَاوَاتِ وَالْأَرْضَ", "arti": "kepada Dzat yang menciptakan langit dan bumi" },
+            { "arabic": "حَنِيفًا", "arti": "dengan lurus/penuh kepasrahan (hanif)" },
+            { "arabic": "وَمَا أَنَا مِنَ الْمُشْرِكِينَ", "arti": "dan aku bukan termasuk orang-orang musyrik" },
+            { "arabic": "إِنَّ صَلَاتِي وَنُسُكِي", "arti": "sesungguhnya sholatku dan ibadahku (kurbanku)" },
+            { "arabic": "وَمَحْيَايَ وَمَمَاتِي", "arti": "hidupku dan matiku" },
+            { "arabic": "لِلَّهِ رَبِّ الْعَالَمِينَ", "arti": "hanya untuk Allah, Tuhan semesta alam" },
+            { "arabic": "لَا شَرِيكَ لَهُ", "arti": "tiada sekutu bagi-Nya" },
+            { "arabic": "وَبِذَٰلِكَ أُمِرْتُ", "arti": "dan dengan itulah aku diperintahkan" },
+            { "arabic": "وَأَنَا مِنَ الْمُسْلِمِينَ", "arti": "dan aku termasuk orang-orang yang berserah diri" }
+          ],
+          "penjelasan": "Doa ini mengajarkan tauhid murni (hanif): menghadapkan seluruh hidup-mati hanya untuk Allah. Kata 'nusuk' bisa bermakna ibadah kurban atau seluruh ritual ibadah. Ini adalah deklarasi: sholat, ibadah, hidup, dan mati — semuanya milik Allah.",
+          "dalil": "HR. Muslim no. 771, Abu Daud no. 760"
+        },
+        {
+          "id": "iftitah-3",
+          "label": "Doa Iftitah — Subhanaka",
+          "arabic": "سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ وَتَبَارَكَ اسْمُكَ وَتَعَالَىٰ جَدُّكَ وَلَا إِلَٰهَ غَيْرُكَ",
+          "latin": "Subhaanakallaahumma wa bihamdika wa tabaarakasmuka wa ta'aalaa jadduka wa laa ilaaha ghairuk.",
+          "arti": "Maha Suci Engkau ya Allah, dan dengan memuji-Mu. Maha Berkah nama-Mu, Maha Tinggi kemuliaan-Mu, dan tidak ada sesembahan yang haq selain Engkau.",
+          "rincianMakna": [
+            { "arabic": "سُبْحَانَكَ اللَّهُمَّ", "arti": "Maha Suci Engkau ya Allah" },
+            { "arabic": "وَبِحَمْدِكَ", "arti": "dan dengan memuji-Mu (aku sucikan Engkau)" },
+            { "arabic": "وَتَبَارَكَ اسْمُكَ", "arti": "Maha Berkah nama-Mu" },
+            { "arabic": "وَتَعَالَىٰ جَدُّكَ", "arti": "Maha Tinggi kemuliaan/keagungan-Mu" },
+            { "arabic": "وَلَا إِلَٰهَ غَيْرُكَ", "arti": "dan tidak ada sesembahan yang haq selain Engkau" }
+          ],
+          "penjelasan": "Kalimat 'Subhaanakallahumma wa bihamdik' artinya aku mensucikan-Mu ya Allah dengan disertai pujian kepada-Mu. 'Tabaarakasmuk' — nama Allah penuh berkah, jika disebut dalam suatu urusan akan mendatangkan kebaikan berlimpah. 'Ta'aalaa jadduk' — kebesaran dan kemuliaan Allah Maha Tinggi, tidak bisa dikalahkan oleh siapa pun. 'Jadd' di sini bermakna keagungan, bukan 'kakek'.",
+          "dalil": "HR. Abu Daud no. 775, Tirmidzi no. 243, dishahihkan Al-Albani"
+        },
+        {
+          "id": "iftitah-4",
+          "label": "Doa Iftitah — Allahu Akbar Kabira",
+          "arabic": "اللَّهُ أَكْبَرُ كَبِيرًا، وَالْحَمْدُ لِلَّهِ كَثِيرًا، وَسُبْحَانَ اللَّهِ بُكْرَةً وَأَصِيلًا",
+          "latin": "Allaahu akbaru kabiiran, wal hamdu lillaahi katsiiran, wa subhaanallaahi bukrataw wa ashiilaa.",
+          "arti": "Allah Maha Besar dengan sebesar-besarnya. Segala puji bagi Allah dengan pujian yang sebanyak-banyaknya. Maha Suci Allah di waktu pagi dan petang.",
+          "rincianMakna": [
+            { "arabic": "اللَّهُ أَكْبَرُ كَبِيرًا", "arti": "Allah Maha Besar, benar-benar Maha Besar" },
+            { "arabic": "وَالْحَمْدُ لِلَّهِ كَثِيرًا", "arti": "segala puji bagi Allah, pujian yang sangat banyak" },
+            { "arabic": "وَسُبْحَانَ اللَّهِ بُكْرَةً وَأَصِيلًا", "arti": "Maha Suci Allah di waktu pagi dan petang" }
+          ],
+          "penjelasan": "Nabi ﷺ bersabda tentang orang yang membaca doa ini: 'Aku takjub dengannya, pintu-pintu langit dibukakan untuknya.' (HR. Muslim). Kata 'kabiiran' dan 'katsiiran' adalah taukid (penguat) — takbir dan tahmid yang benar-benar agung dan berlimpah.",
+          "dalil": "HR. Muslim no. 601, Abu Daud no. 763"
+        }
+      ]
+    },
+    {
+      "id": "taawudz",
+      "title": "Ta'awwudz",
+      "icon": "🛡️",
+      "order": 3,
+      "penjelasan_umum": "Setelah doa iftitah, disunnahkan membaca ta'awwudz sebelum Al-Fatihah. Allah memerintahkan: 'Apabila kamu membaca Al-Qur'an, hendaklah kamu meminta perlindungan kepada Allah dari setan yang terkutuk.' (Q.S An-Nahl: 98).",
+      "dalil": "Q.S An-Nahl: 98",
+      "variants": [
+        {
+          "id": "taawudz-1",
+          "label": "Bacaan Singkat",
+          "arabic": "أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ",
+          "latin": "A'uudzu billaahi minasy syaithaanir rajiim.",
+          "arti": "Aku berlindung kepada Allah dari setan yang terkutuk.",
+          "rincianMakna": [
+            { "arabic": "أَعُوذُ بِاللَّهِ", "arti": "Aku berlindung kepada Allah" },
+            { "arabic": "مِنَ الشَّيْطَانِ", "arti": "dari setan" },
+            { "arabic": "الرَّجِيمِ", "arti": "yang terkutuk (dirajam/diusir)" }
+          ],
+          "penjelasan": "Bacaan ini disepakati jumhur Ulama sebagai bacaan ta'awwudz, sesuai dengan perintah dalam Q.S An-Nahl: 98. Kata 'ar-rajiim' dari kata 'rajm' (melempar) — setan diusir dan dilaknat dari rahmat Allah.",
+          "dalil": "Q.S An-Nahl: 98"
+        },
+        {
+          "id": "taawudz-2",
+          "label": "Bacaan Lengkap",
+          "arabic": "أَعُوذُ بِاللَّهِ السَّمِيعِ الْعَلِيمِ مِنَ الشَّيْطَانِ الرَّجِيمِ مِنْ هَمْزِهِ وَنَفْخِهِ وَنَفْثِهِ",
+          "latin": "A'uudzu billaahis samii'il 'aliimi minasy syaithaanir rajiim, min hamzihi wa nafkhihi wa nafatsih.",
+          "arti": "Aku berlindung kepada Allah Yang Maha Mendengar lagi Maha Mengetahui dari setan yang terkutuk, dari bisikan was-wasnya, tiupannya, dan ludahnya.",
+          "rincianMakna": [
+            { "arabic": "أَعُوذُ بِاللَّهِ السَّمِيعِ الْعَلِيمِ", "arti": "Aku berlindung kepada Allah Yang Maha Mendengar lagi Maha Mengetahui" },
+            { "arabic": "مِنَ الشَّيْطَانِ الرَّجِيمِ", "arti": "dari setan yang terkutuk" },
+            { "arabic": "مِنْ هَمْزِهِ", "arti": "dari bisikan was-wasnya/kegilaannya" },
+            { "arabic": "وَنَفْخِهِ", "arti": "dan dari tiupannya (kesombongan)" },
+            { "arabic": "وَنَفْثِهِ", "arti": "dan dari ludahnya (syair/sihir)" }
+          ],
+          "penjelasan": "Kita berlindung dari 3 hal yang ditimbulkan setan:\n\n1️⃣ HAMZ — Was-was yang membuat ragu dalam ibadah, lupa jumlah rakaat, atau ragu terhadap janji Allah.\n\n2️⃣ NAFKH — Tiupan kesombongan, membuat seseorang merasa lebih tinggi dari orang lain (takabbur).\n\n3️⃣ NAFTS — Ludah/sihir/syair tercela yang menimbulkan permusuhan, kesyirikan, atau melalaikan dari dzikir kepada Allah.",
+          "dalil": "HR. Abu Daud no. 775, Tirmidzi, dishahihkan Al-Albani"
+        }
+      ]
+    },
+    {
+      "id": "al-fatihah",
+      "title": "Surah Al-Fatihah",
+      "icon": "📖",
+      "order": 4,
+      "penjelasan_umum": "Al-Fatihah adalah rukun sholat yang wajib dibaca di setiap rakaat. Rasulullah ﷺ bersabda: 'Tidak ada sholat bagi orang yang tidak membaca Al-Fatihah.' (HR. Bukhari-Muslim). Dalam hadits Qudsi, Allah berfirman: 'Aku membagi sholat (Al-Fatihah) antara Aku dengan hamba-Ku menjadi dua bagian. Bagi hamba-Ku apa yang ia minta.' — Setiap ayat Al-Fatihah mendapat jawaban langsung dari Allah, sehingga terjadi dialog suci antara hamba dengan Rabb-nya.",
+      "dalil": "HR. Muslim (hadits Qudsi), Bukhari no. 756",
+      "variants": [
+        {
+          "id": "fatihah-ayat-1",
+          "label": "Ayat 1 — Basmalah",
+          "arabic": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
+          "latin": "Bismillaahir rahmaanir rahiim.",
+          "arti": "Dengan nama Allah Yang Maha Pengasih lagi Maha Penyayang.",
+          "rincianMakna": [
+            { "arabic": "بِسْمِ", "arti": "Dengan nama" },
+            { "arabic": "اللَّهِ", "arti": "Allah" },
+            { "arabic": "الرَّحْمَٰنِ", "arti": "Yang Maha Pengasih (rahmat-Nya untuk seluruh makhluk)" },
+            { "arabic": "الرَّحِيمِ", "arti": "Yang Maha Penyayang (rahmat khusus untuk orang beriman)" }
+          ],
+          "penjelasan": "Basmalah adalah ayat pertama Al-Fatihah menurut pendapat yang rajih. 'Ar-Rahman' menunjukkan rahmat Allah yang meliputi seluruh makhluk (umum), sedangkan 'Ar-Rahim' rahmat khusus untuk orang beriman di akhirat. Kita memulai setiap urusan baik dengan nama Allah untuk mengharap keberkahan.",
+          "dalil": "Pendapat Syafi'iyyah, hadits shahih riwayat Bukhari-Muslim"
+        },
+        {
+          "id": "fatihah-ayat-2",
+          "label": "Ayat 2 — Alhamdulillah",
+          "arabic": "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ",
+          "latin": "Alhamdu lillaahi rabbil 'aalamiin.",
+          "arti": "Segala puji bagi Allah, Tuhan semesta alam.",
+          "rincianMakna": [
+            { "arabic": "الْحَمْدُ", "arti": "Segala pujian (penetapan sifat-sifat sempurna)" },
+            { "arabic": "لِلَّهِ", "arti": "hanyalah milik Allah" },
+            { "arabic": "رَبِّ", "arti": "Tuhan (Pencipta, Pemilik, Pengatur)" },
+            { "arabic": "الْعَالَمِينَ", "arti": "semesta alam (seluruh makhluk)" }
+          ],
+          "penjelasan": "Alhamdulillah — pujian yang disertai rasa cinta dan pengagungan. 'Al-' pada 'al-hamdu' menunjukkan keumuman: SEGALA jenis pujian hanya milik Allah. 'Rabb' mencakup 3 makna: Pencipta, Pemilik, dan Pengatur. 'Al-'aalamiin' — seluruh alam, termasuk manusia, jin, malaikat, hewan, tumbuhan, dan seluruh makhluk.\n\nAllah berfirman: 'Hamba-Ku telah memuji-Ku.'",
+          "dalil": "HR. Muslim (hadits Qudsi)"
+        },
+        {
+          "id": "fatihah-ayat-3",
+          "label": "Ayat 3 — Ar-Rahman Ar-Rahim",
+          "arabic": "الرَّحْمَٰنِ الرَّحِيمِ",
+          "latin": "Arrahmaanir rahiim.",
+          "arti": "Yang Maha Pengasih lagi Maha Penyayang.",
+          "rincianMakna": [
+            { "arabic": "الرَّحْمَٰنِ", "arti": "Yang Maha Pengasih (rahmat umum di dunia)" },
+            { "arabic": "الرَّحِيمِ", "arti": "Yang Maha Penyayang (rahmat khusus di akhirat)" }
+          ],
+          "penjelasan": "Pengulangan Ar-Rahman Ar-Rahim setelah ayat sebelumnya adalah penegasan (taukid) bahwa Allah adalah Tuhan yang penuh kasih sayang. Ini memberikan rasa optimis dan harapan — Allah yang kita sembah adalah Yang Maha Pengasih.\n\nAllah berfirman: 'Hamba-Ku telah memuji-Ku (lagi).'",
+          "dalil": "HR. Muslim (hadits Qudsi)"
+        },
+        {
+          "id": "fatihah-ayat-4",
+          "label": "Ayat 4 — Maliki Yaumid Din",
+          "arabic": "مَالِكِ يَوْمِ الدِّينِ",
+          "latin": "Maaliki yaumid diin.",
+          "arti": "Pemilik (Penguasa) hari pembalasan.",
+          "rincianMakna": [
+            { "arabic": "مَالِكِ", "arti": "Pemilik/Penguasa (Yang Memiliki segala urusan)" },
+            { "arabic": "يَوْمِ", "arti": "hari" },
+            { "arabic": "الدِّينِ", "arti": "pembalasan/perhitungan" }
+          ],
+          "penjelasan": "'Maalik' bisa dibaca dengan memanjangkan (maalik = Pemilik) atau memendekkan (malik = Raja). Keduanya shahih. 'Yaum ad-diin' adalah hari kiamat — hari pembalasan, hari ketika setiap jiwa mendapatkan balasan atas amalnya. Ayat ini mengingatkan kita akan hari perhitungan.\n\nAllah berfirman: 'Hamba-Ku telah mengagungkan Aku, dan hamba-Ku telah menyerahkan urusannya kepada-Ku.'",
+          "dalil": "HR. Muslim (hadits Qudsi)"
+        },
+        {
+          "id": "fatihah-ayat-5",
+          "label": "Ayat 5 — Iyyaka Na'budu",
+          "arabic": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+          "latin": "Iyyaaka na'budu wa iyyaaka nasta'iin.",
+          "arti": "Hanya kepada-Mu kami menyembah dan hanya kepada-Mu kami memohon pertolongan.",
+          "rincianMakna": [
+            { "arabic": "إِيَّاكَ", "arti": "Hanya kepada-Mu (pengkhususan)" },
+            { "arabic": "نَعْبُدُ", "arti": "kami menyembah/beribadah" },
+            { "arabic": "وَإِيَّاكَ", "arti": "dan hanya kepada-Mu" },
+            { "arabic": "نَسْتَعِينُ", "arti": "kami memohon pertolongan" }
+          ],
+          "penjelasan": "Ayat ini adalah INTI tauhid! 'Iyyaka' didahulukan dari 'na'budu' menunjukkan pengkhususan (qashr): HANYA kepada-Mu kami beribadah, bukan kepada selain-Mu. \n\nIbadah disandingkan dengan isti'anah (minta tolong) karena manusia tidak bisa beribadah tanpa pertolongan Allah. Kata 'na'budu' (kami) mengajarkan adab: kita beribadah secara berjamaah, tidak sombong merasa sendiri.\n\nAllah berfirman: 'Ini antara Aku dan hamba-Ku, dan bagi hamba-Ku apa yang ia minta.'",
+          "dalil": "HR. Muslim (hadits Qudsi)"
+        },
+        {
+          "id": "fatihah-ayat-6",
+          "label": "Ayat 6 — Ihdinash Shirathal Mustaqim",
+          "arabic": "اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ",
+          "latin": "Ihdinash shiraathal mustaqiim.",
+          "arti": "Tunjukilah kami jalan yang lurus.",
+          "rincianMakna": [
+            { "arabic": "اهْدِنَا", "arti": "Tunjukilah kami (berilah hidayah)" },
+            { "arabic": "الصِّرَاطَ", "arti": "jalan" },
+            { "arabic": "الْمُسْتَقِيمَ", "arti": "yang lurus (tanpa belokan/penyimpangan)" }
+          ],
+          "penjelasan": "Ini adalah doa yang paling agung — meminta hidayah (petunjuk) ke jalan yang lurus. 'Shirath' secara bahasa adalah jalan yang lebar dan jelas. Para Ulama menafsirkan 'shirathal mustaqim' sebagai: Islam, Al-Qur'an, dan Sunnah Nabi ﷺ.\n\nKita berdoa meminta hidayah di SETIAP rakaat — menandakan betapa kita sangat membutuhkan petunjuk Allah setiap saat.",
+          "dalil": "HR. Muslim (hadits Qudsi), Tafsir Ibnu Katsir"
+        },
+        {
+          "id": "fatihah-ayat-7",
+          "label": "Ayat 7 — Shirathal Ladzina...",
+          "arabic": "صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ",
+          "latin": "Shiraathal ladziina an'amta 'alaihim, ghairil maghdhuubi 'alaihim wa ladh dhaalliin.",
+          "arti": "(Yaitu) jalan orang-orang yang telah Engkau beri nikmat, bukan (jalan) mereka yang dimurkai dan bukan (pula jalan) mereka yang sesat.",
+          "rincianMakna": [
+            { "arabic": "صِرَاطَ الَّذِينَ", "arti": "(Yaitu) jalan orang-orang yang" },
+            { "arabic": "أَنْعَمْتَ عَلَيْهِمْ", "arti": "telah Engkau beri nikmat" },
+            { "arabic": "غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ", "arti": "bukan (jalan) mereka yang dimurkai (Yahudi)" },
+            { "arabic": "وَلَا الضَّالِّينَ", "arti": "dan bukan (pula jalan) mereka yang sesat (Nashrani)" }
+          ],
+          "penjelasan": "Ayat ini menjelaskan siapa 'orang yang diberi nikmat' dan siapa 'yang dimurkai' dan 'yang sesat'.\n\n✅ Yang diberi nikmat: Para Nabi, shiddiqin, syuhada, dan shalihin (QS. An-Nisa: 69)\n❌ Yang dimurkai: Orang Yahudi — mereka tahu kebenaran tapi menolaknya\n❌ Yang sesat: Orang Nashrani — mereka beribadah tanpa ilmu yang benar\n\nAllah berfirman: 'Ini untuk hamba-Ku, dan baginya apa yang ia minta.'\n\nDisunnahkan setelah Al-Fatihah mengucapkan 'Aamiin' (Ya Allah, kabulkanlah).",
+          "dalil": "HR. Muslim (hadits Qudsi), Tafsir Ibnu Katsir"
+        }
+      ]
+    },
+    {
+      "id": "ruku",
+      "title": "Ruku' — Mengagungkan Allah",
+      "icon": "🙇",
+      "order": 5,
+      "penjelasan_umum": "Rasulullah ﷺ bersabda: 'Sesungguhnya aku dilarang membaca Al-Qur'an pada waktu ruku' dan sujud. Adapun pada waktu ruku', agungkanlah Tuhan.' (HR. Muslim). Dalam ruku' kita mengagungkan Allah dengan perbuatan (menundukkan tubuh) dan ucapan (tasbih). Punggung diratakan, kepala sejajar punggung, kedua tangan memegang lutut.",
+      "dalil": "HR. Muslim",
+      "variants": [
+        {
+          "id": "ruku-1",
+          "label": "Bacaan Tasbih Ruku'",
+          "arabic": "سُبْحَانَ رَبِّيَ الْعَظِيمِ",
+          "latin": "Subhaana rabbiyal 'azhiim.",
+          "arti": "Maha Suci Tuhanku Yang Maha Agung.",
+          "rincianMakna": [
+            { "arabic": "سُبْحَانَ", "arti": "Maha Suci (terlepas dari segala kekurangan)" },
+            { "arabic": "رَبِّيَ", "arti": "Tuhanku" },
+            { "arabic": "الْعَظِيمِ", "arti": "Yang Maha Agung" }
+          ],
+          "penjelasan": "Tidak ada batasan jumlah minimal yang shahih — semakin banyak semakin baik, disesuaikan dengan panjang sholat. Hadits yang menyebutkan minimal 3 kali adalah dhaif (mursal). Namun, membacanya 3 kali atau lebih sangat dianjurkan. Rasulullah ﷺ terkadang membaca 10 kali.",
+          "dalil": "HR. Muslim, Abu Daud (hadits 3x diriwayatkan tapi dhaif mursal)"
+        },
+        {
+          "id": "ruku-2",
+          "label": "Bacaan Subbuhun Quddus",
+          "arabic": "سُبُّوحٌ قُدُّوسٌ رَبُّ الْمَلَائِكَةِ وَالرُّوحِ",
+          "latin": "Subbuuhun qudduusun rabbul malaa-ikati war ruuh.",
+          "arti": "Maha Suci, Maha Bersih, Tuhannya Malaikat dan Ruh (Jibril).",
+          "rincianMakna": [
+            { "arabic": "سُبُّوحٌ", "arti": "Maha Suci (terlepas dari segala kekurangan dan sekutu)" },
+            { "arabic": "قُدُّوسٌ", "arti": "Maha Bersih (terbersihkan dari segala yang tidak layak)" },
+            { "arabic": "رَبُّ الْمَلَائِكَةِ", "arti": "Tuhannya para Malaikat" },
+            { "arabic": "وَالرُّوحِ", "arti": "dan (Tuhannya) Ruh (Jibril)" }
+          ],
+          "penjelasan": "'Subbuh' berarti yang terlepas dari segala kekurangan dan sekutu. 'Quddus' berarti yang tersucikan dari segala yang tidak layak bagi Sang Pencipta. Keduanya adalah bentuk mubalaghah (hiperbola/sangat). 'Ar-Ruh' di sini adalah Malaikat Jibril — disebut khusus karena kemuliaannya sebagai pemimpin para Malaikat.",
+          "dalil": "HR. Muslim, Abu Daud, An-Nasai"
+        }
+      ]
+    },
+    {
+      "id": "itidal",
+      "title": "I'tidal — Bangkit dari Ruku'",
+      "icon": "🧍",
+      "order": 6,
+      "penjelasan_umum": "Bangkit dari ruku' sambil mengangkat tangan dan mengucapkan tasmi'. Kemudian berdiri tegak (i'tidal) sambil membaca tahmid dengan berbagai variasinya. Posisi berdiri harus sempurna — tulang-tulang kembali ke posisinya (thuma'ninah).",
+      "dalil": "HR. Bukhari no. 789, Muslim no. 392",
+      "variants": [
+        {
+          "id": "itidal-1",
+          "label": "Tasmi' (Saat Bangkit)",
+          "arabic": "سَمِعَ اللَّهُ لِمَنْ حَمِدَهُ",
+          "latin": "Sami'allaahu liman hamidah.",
+          "arti": "Allah mendengar orang yang memuji-Nya.",
+          "rincianMakna": [
+            { "arabic": "سَمِعَ", "arti": "Mendengar (mengabulkan)" },
+            { "arabic": "اللَّهُ", "arti": "Allah" },
+            { "arabic": "لِمَنْ", "arti": "orang yang" },
+            { "arabic": "حَمِدَهُ", "arti": "memuji-Nya" }
+          ],
+          "penjelasan": "Diucapkan oleh imam dan orang yang sholat sendiri saat bangkit dari ruku'. Makna 'sami'a' di sini bukan sekadar 'mendengar' tapi juga bermakna 'mengabulkan' — Allah mendengar dan mengabulkan pujian hamba-Nya.",
+          "dalil": "HR. Bukhari no. 789"
+        },
+        {
+          "id": "itidal-2",
+          "label": "Tahmid — Rabbana Lakal Hamd",
+          "arabic": "رَبَّنَا وَلَكَ الْحَمْدُ",
+          "latin": "Rabbanaa wa lakal hamd.",
+          "arti": "Ya Rabb kami, dan bagi-Mu segala puji.",
+          "rincianMakna": [
+            { "arabic": "رَبَّنَا", "arti": "Ya Rabb kami" },
+            { "arabic": "وَلَكَ", "arti": "dan bagi-Mu" },
+            { "arabic": "الْحَمْدُ", "arti": "segala puji" }
+          ],
+          "penjelasan": "Diucapkan setelah berdiri tegak (i'tidal). Kata 'wa' (dan) di sini menunjukkan penggabungan: kami bertahmid, dan hanya untuk-Mu pujian itu. Bisa juga dibaca 'Rabbanaa lakal hamd' tanpa 'wa'.",
+          "dalil": "HR. Bukhari no. 789, Muslim"
+        },
+        {
+          "id": "itidal-3",
+          "label": "Tahmid Lengkap — Hamdan Katsiran",
+          "arabic": "رَبَّنَا وَلَكَ الْحَمْدُ حَمْدًا كَثِيرًا طَيِّبًا مُبَارَكًا فِيهِ",
+          "latin": "Rabbanaa wa lakal hamdu hamdan katsiiran thayyiban mubaarakan fiih.",
+          "arti": "Ya Rabb kami, bagi-Mu segala puji, pujian yang banyak, baik, dan diberkahi.",
+          "rincianMakna": [
+            { "arabic": "حَمْدًا كَثِيرًا", "arti": "pujian yang sangat banyak" },
+            { "arabic": "طَيِّبًا", "arti": "yang baik (ikhlas)" },
+            { "arabic": "مُبَارَكًا فِيهِ", "arti": "yang diberkahi di dalamnya" }
+          ],
+          "penjelasan": "Nabi ﷺ pernah melihat seorang sahabat membaca doa ini setelah i'tidal, lalu beliau bersabda: 'Aku melihat 30 lebih malaikat berlomba-lomba mencatatnya.' (HR. Malik, Bukhari, Abu Daud). Pujian yang 'banyak' mengalahkan keterbatasan jumlah, 'baik' menunjukkan keikhlasan, dan 'diberkahi' melipatgandakan pahala.",
+          "dalil": "HR. Bukhari no. 799, Malik dalam Muwaththa'"
+        }
+      ]
+    },
+    {
+      "id": "sujud",
+      "title": "Sujud — Puncak Kedekatan dengan Allah",
+      "icon": "🕌",
+      "order": 7,
+      "penjelasan_umum": "Rasulullah ﷺ bersabda: 'Paling dekatnya seorang hamba kepada Allah adalah ketika ia sujud, maka perbanyaklah doa.' (HR. Muslim). Dalam sujud, 7 anggota tubuh menyentuh tanah: dahi + hidung, dua telapak tangan, dua lutut, dan dua ujung jari kaki. Ini adalah posisi paling rendah — melambangkan kepasrahan total. Bacaan sujud menetapkan bahwa Allah Maha Tinggi (Al-A'la) di atas segala makhluk-Nya dalam Dzat maupun Sifat-Nya.",
+      "dalil": "HR. Muslim (dari Abu Hurairah)",
+      "variants": [
+        {
+          "id": "sujud-1",
+          "label": "Bacaan Tasbih Sujud",
+          "arabic": "سُبْحَانَ رَبِّيَ الْأَعْلَىٰ",
+          "latin": "Subhaana rabbiyal a'laa.",
+          "arti": "Maha Suci Tuhanku Yang Maha Tinggi.",
+          "rincianMakna": [
+            { "arabic": "سُبْحَانَ", "arti": "Maha Suci" },
+            { "arabic": "رَبِّيَ", "arti": "Tuhanku" },
+            { "arabic": "الْأَعْلَىٰ", "arti": "Yang Maha (Paling) Tinggi" }
+          ],
+          "penjelasan": "'Al-A'la' menetapkan ketinggian Allah secara mutlak. Allah Maha Tinggi dalam Dzat-Nya — Dia di atas 'Arsy, di atas seluruh makhluk-Nya. Juga Maha Tinggi dalam Sifat-Nya — sifat-sifat Allah berada di puncak kesempurnaan. Bacaan ini adalah jawaban bagi yang bertanya 'di manakah Allah?' — Allah Maha Tinggi, bukan 'di mana-mana' atau 'di hati manusia'.",
+          "dalil": "HR. Muslim, Ahmad, An-Nasai"
+        },
+        {
+          "id": "sujud-2",
+          "label": "Bacaan Subbuhun Quddus (Sujud)",
+          "arabic": "سُبُّوحٌ قُدُّوسٌ رَبُّ الْمَلَائِكَةِ وَالرُّوحِ",
+          "latin": "Subbuuhun qudduusun rabbul malaa-ikati war ruuh.",
+          "arti": "Maha Suci, Maha Bersih, Tuhannya Malaikat dan Ruh (Jibril).",
+          "penjelasan": "Sama dengan bacaan ruku', bisa juga dibaca dalam sujud.",
+          "dalil": "HR. Muslim"
+        },
+        {
+          "id": "sujud-3",
+          "label": "Doa Sujud — Ampunan Menyeluruh",
+          "arabic": "اللَّهُمَّ اغْفِرْ لِي ذَنْبِي كُلَّهُ دِقَّهُ وَجِلَّهُ وَأَوَّلَهُ وَآخِرَهُ وَعَلَانِيَتَهُ وَسِرَّهُ",
+          "latin": "Allaahummaghfir lii dzanbii kullahu, diqqahu wa jillahu, wa awwalahu wa aakhirahu, wa 'alaaniyatahu wa sirrahu.",
+          "arti": "Ya Allah, ampunilah dosaku seluruhnya — yang kecil maupun yang besar, yang awal maupun yang akhir, yang tampak maupun yang tersembunyi.",
+          "rincianMakna": [
+            { "arabic": "اللَّهُمَّ اغْفِرْ لِي ذَنْبِي كُلَّهُ", "arti": "Ya Allah, ampunilah dosaku seluruhnya" },
+            { "arabic": "دِقَّهُ وَجِلَّهُ", "arti": "yang kecilnya dan yang besarnya" },
+            { "arabic": "وَأَوَّلَهُ وَآخِرَهُ", "arti": "yang awalnya dan yang akhirnya" },
+            { "arabic": "وَعَلَانِيَتَهُ وَسِرَّهُ", "arti": "yang tampak dan yang tersembunyi" }
+          ],
+          "penjelasan": "Doa ini mencakup SELURUH jenis dosa — tidak ada yang tersisa! Kecil-besar, awal-akhir, tampak-tersembunyi. Ini menunjukkan betapa luasnya rahmat Allah dan betapa kita sangat butuh ampunan-Nya. Sujud adalah waktu terbaik untuk banyak berdoa sesuai kebutuhan masing-masing.",
+          "dalil": "HR. Muslim no. 483, Abu Daud no. 878"
+        }
+      ]
+    },
+    {
+      "id": "duduk-dua-sujud",
+      "title": "Duduk di Antara Dua Sujud",
+      "icon": "🧎",
+      "order": 8,
+      "penjelasan_umum": "Duduk iftirasy: kaki kiri diduduki, kaki kanan ditegakkan. Ini adalah momen istirahat singkat sekaligus doa yang sangat komprehensif — memohon ampunan, rahmat, kecukupan, peningkatan derajat, rezeki, petunjuk, kesehatan, dan pemaafan.",
+      "dalil": "HR. Abu Daud no. 850, Tirmidzi no. 284",
+      "variants": [
+        {
+          "id": "duduk-1",
+          "label": "Bacaan Lengkap",
+          "arabic": "رَبِّ اغْفِرْ لِي وَارْحَمْنِي وَاجْبُرْنِي وَارْفَعْنِي وَارْزُقْنِي وَاهْدِنِي وَعَافِنِي وَاعْفُ عَنِّي",
+          "latin": "Rabbighfir lii, warhamnii, wajburnii, warfa'nii, warzuqnii, wahdinii, wa 'aafinii, wa'fu 'annii.",
+          "arti": "Ya Rabb, ampunilah aku, rahmatilah aku, cukupkanlah kekuranganku, angkatlah derajatku, berilah aku rezeki, berilah aku petunjuk, berilah aku kesehatan, dan maafkanlah aku.",
+          "rincianMakna": [
+            { "arabic": "رَبِّ اغْفِرْ لِي", "arti": "Ya Rabb, ampunilah aku (hapus dosa)" },
+            { "arabic": "وَارْحَمْنِي", "arti": "rahmatilah aku (curahkan kasih sayang)" },
+            { "arabic": "وَاجْبُرْنِي", "arti": "cukupkanlah kekuranganku (tutuplah aib, perbaiki)" },
+            { "arabic": "وَارْفَعْنِي", "arti": "angkatlah derajatku (tinggikan kedudukan)" },
+            { "arabic": "وَارْزُقْنِي", "arti": "berilah aku rezeki (lahir & batin)" },
+            { "arabic": "وَاهْدِنِي", "arti": "berilah aku petunjuk (hidayah)" },
+            { "arabic": "وَعَافِنِي", "arti": "berilah aku kesehatan ('afiyah)" },
+            { "arabic": "وَاعْفُ عَنِّي", "arti": "maafkanlah aku (hapus bekas kesalahan)" }
+          ],
+          "penjelasan": "Ini adalah doa 8 permohonan sekaligus — sangat ringkas namun super komprehensif! Urutannya indah:\n\n1️⃣ Ampunan (penghapusan dosa) — kebutuhan paling dasar\n2️⃣ Rahmat (kasih sayang) — setelah dosa diampuni, butuh rahmat\n3️⃣ Jabr (menutupi kekurangan/aib) — perbaikan dari kekurangan\n4️⃣ Rafa' (peningkatan derajat) — setelah diperbaiki, ditingkatkan\n5️⃣ Rezeki — kebutuhan hidup\n6️⃣ Hidayah — kebutuhan ruhani\n7️⃣ 'Afiyah (kesehatan) — modal beribadah\n8️⃣ 'Afwu (pemaafan) — dihapus bekas dosa yang tersisa\n\nMinimal bisa membaca: 'Rabbighfir lii' (Ya Rabb, ampunilah aku).",
+          "dalil": "HR. Abu Daud no. 850, Tirmidzi no. 284, Ibnu Majah no. 898"
+        }
+      ]
+    },
+    {
+      "id": "tasyahhud",
+      "title": "Tasyahhud & Sholawat",
+      "icon": "📿",
+      "order": 9,
+      "penjelasan_umum": "Tasyahhud adalah bacaan yang diucapkan saat duduk — di rakaat kedua (tasyahhud awal) dan rakaat terakhir (tasyahhud akhir). Di dalamnya terdapat pujian, salam untuk Nabi, doa keselamatan, dan syahadat. Pada tasyahhud akhir, ditambahkan sholawat dan doa sebelum salam.",
+      "dalil": "HR. Bukhari no. 1202, Muslim no. 402",
+      "variants": [
+        {
+          "id": "tasyahhud-1",
+          "label": "Tasyahhud — Riwayat Ibnu Mas'ud",
+          "arabic": "التَّحِيَّاتُ لِلَّهِ وَالصَّلَوَاتُ وَالطَّيِّبَاتُ، السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلَامُ عَلَيْنَا وَعَلَىٰ عِبَادِ اللَّهِ الصَّالِحِينَ، أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا اللَّهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ",
+          "latin": "Attahiyyaatu lillaahi wash shalawaatu wath thayyibaat. Assalaamu 'alaika ayyuhan nabiyyu wa rahmatullaahi wa barakaatuh. Assalaamu 'alainaa wa 'alaa 'ibaadillaahish shaalihiin. Asyhadu an laa ilaaha illallaah, wa asyhadu anna Muhammadan 'abduhu wa rasuuluh.",
+          "arti": "Segala keagungan hanya milik Allah, (begitu pula) sholat-sholat dan amal-amal shalih. Semoga keselamatan, rahmat Allah, dan keberkahan-Nya tercurah kepadamu wahai Nabi. Semoga keselamatan tercurah kepada kami dan kepada hamba-hamba Allah yang shalih. Aku bersaksi bahwa tiada sesembahan yang haq selain Allah, dan aku bersaksi bahwa Muhammad adalah hamba dan utusan-Nya.",
+          "rincianMakna": [
+            { "arabic": "التَّحِيَّاتُ لِلَّهِ", "arti": "Segala keagungan (penghormatan) hanya milik Allah" },
+            { "arabic": "وَالصَّلَوَاتُ", "arti": "dan sholat-sholat (ibadah)" },
+            { "arabic": "وَالطَّيِّبَاتُ", "arti": "dan amal-amal shalih (ucapan yang baik)" },
+            { "arabic": "السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ", "arti": "semoga keselamatan tercurah kepadamu wahai Nabi" },
+            { "arabic": "وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ", "arti": "dan rahmat Allah beserta keberkahan-Nya" },
+            { "arabic": "السَّلَامُ عَلَيْنَا", "arti": "semoga keselamatan tercurah kepada kami" },
+            { "arabic": "وَعَلَىٰ عِبَادِ اللَّهِ الصَّالِحِينَ", "arti": "dan kepada hamba-hamba Allah yang shalih" },
+            { "arabic": "أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا اللَّهُ", "arti": "Aku bersaksi tiada sesembahan yang haq selain Allah" },
+            { "arabic": "وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ", "arti": "dan aku bersaksi Muhammad adalah hamba dan utusan-Nya" }
+          ],
+          "penjelasan": "Makna rinci:\n• 'At-Tahiyyat' = segala penghormatan dan keagungan — hanya milik Allah\n• 'Ash-Shalawat' = sholat lima waktu, semuanya untuk Allah\n• 'Ath-Thayyibat' = amal shalih dan ucapan baik\n• Salam untuk Nabi ﷺ — bentuk penghormatan dan doa\n• Salam untuk diri sendiri dan jamaah sholat — termasuk malaikat!\n• Salam untuk hamba Allah yang shalih — mencakup seluruh orang beriman di langit dan bumi\n• Syahadat — inti keimanan, kesaksian tauhid dan kerasulan\n\nPada bacaan syahadat, jari telunjuk kanan diisyaratkan (menunjuk) sebagai isyarat tauhid.",
+          "dalil": "HR. Bukhari no. 1202, Muslim no. 402, Ahmad, Abu Daud, Tirmidzi, Nasai, Ibnu Majah"
+        },
+        {
+          "id": "sholawat-ibrahimiyah",
+          "label": "Sholawat Ibrahimiyah",
+          "arabic": "اللَّهُمَّ صَلِّ عَلَىٰ مُحَمَّدٍ وَعَلَىٰ آلِ مُحَمَّدٍ، كَمَا صَلَّيْتَ عَلَىٰ إِبْرَاهِيمَ وَعَلَىٰ آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ. اللَّهُمَّ بَارِكْ عَلَىٰ مُحَمَّدٍ وَعَلَىٰ آلِ مُحَمَّدٍ، كَمَا بَارَكْتَ عَلَىٰ إِبْرَاهِيمَ وَعَلَىٰ آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ",
+          "latin": "Allaahumma shalli 'alaa Muhammad wa 'alaa aali Muhammad, kamaa shallaita 'alaa Ibraahiim wa 'alaa aali Ibraahiim, innaka hamiidum majiid. Allaahumma baarik 'alaa Muhammad wa 'alaa aali Muhammad, kamaa baarakta 'alaa Ibraahiim wa 'alaa aali Ibraahiim, innaka hamiidum majiid.",
+          "arti": "Ya Allah, limpahkanlah sholawat (sanjungan/pujian) kepada Muhammad dan keluarga Muhammad, sebagaimana Engkau limpahkan sholawat kepada Ibrahim dan keluarga Ibrahim. Sesungguhnya Engkau Maha Terpuji lagi Maha Mulia. Ya Allah, berkahilah Muhammad dan keluarga Muhammad, sebagaimana Engkau berkahi Ibrahim dan keluarga Ibrahim. Sesungguhnya Engkau Maha Terpuji lagi Maha Mulia.",
+          "rincianMakna": [
+            { "arabic": "اللَّهُمَّ صَلِّ عَلَىٰ مُحَمَّدٍ", "arti": "Ya Allah, limpahkanlah sholawat (sanjungan) kepada Muhammad" },
+            { "arabic": "وَعَلَىٰ آلِ مُحَمَّدٍ", "arti": "dan kepada keluarga Muhammad" },
+            { "arabic": "كَمَا صَلَّيْتَ عَلَىٰ إِبْرَاهِيمَ", "arti": "sebagaimana Engkau limpahkan sholawat kepada Ibrahim" },
+            { "arabic": "إِنَّكَ حَمِيدٌ مَجِيدٌ", "arti": "sesungguhnya Engkau Maha Terpuji lagi Maha Mulia" },
+            { "arabic": "وَبَارِكْ عَلَىٰ مُحَمَّدٍ", "arti": "dan berkahilah Muhammad" },
+            { "arabic": "كَمَا بَارَكْتَ عَلَىٰ إِبْرَاهِيمَ", "arti": "sebagaimana Engkau berkahi Ibrahim" }
+          ],
+          "penjelasan": "Sholawat dari Allah bermakna: pujian dan sanjungan-Nya kepada hamba di hadapan para malaikat. Dari malaikat: doa ampunan. Dari manusia: doa dan penghormatan.\n\n'Aali Muhammad' = keluarga dan pengikut beliau yang beriman. \n\nMengapa dibandingkan dengan Ibrahim? Karena Ibrahim adalah bapak para Nabi dan kekasih Allah — kita meminta agar sholawat kepada Nabi Muhammad ﷺ setara kemuliaannya dengan sholawat yang diberikan kepada Nabi Ibrahim. Juga sebagai bukti bahwa umat ini terkait erat dengan millah (ajaran) Ibrahim.\n\n'Hamiid' = Allah dipuji dalam Dzat, Nama, dan Sifat-Nya. 'Majiid' = Allah memiliki keagungan dan kemuliaan yang sempurna.",
+          "dalil": "HR. Bukhari no. 3370, Muslim no. 406"
+        }
+      ]
+    },
+    {
+      "id": "doa-sebelum-salam",
+      "title": "Doa Sebelum Salam",
+      "icon": "🤲",
+      "order": 10,
+      "penjelasan_umum": "Setelah tasyahhud akhir dan sholawat, disunnahkan membaca doa perlindungan sebelum salam. Ini adalah benteng terakhir sebelum mengakhiri sholat — memohon perlindungan dari empat fitnah besar.",
+      "dalil": "HR. Muslim no. 588",
+      "variants": [
+        {
+          "id": "doa-salam-1",
+          "label": "Doa Perlindungan Empat Perkara",
+          "arabic": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ عَذَابِ جَهَنَّمَ، وَمِنْ عَذَابِ الْقَبْرِ، وَمِنْ فِتْنَةِ الْمَحْيَا وَالْمَمَاتِ، وَمِنْ شَرِّ فِتْنَةِ الْمَسِيحِ الدَّجَّالِ",
+          "latin": "Allaahumma innii a'uudzu bika min 'adzaabi jahannam, wa min 'adzaabil qabri, wa min fitnatil mahyaa wal mamaat, wa min syarri fitnatil masiihid dajjaal.",
+          "arti": "Ya Allah, aku berlindung kepada-Mu dari siksa neraka Jahannam, dari siksa kubur, dari fitnah kehidupan dan kematian, dan dari keburukan fitnah Al-Masih Ad-Dajjal.",
+          "rincianMakna": [
+            { "arabic": "مِنْ عَذَابِ جَهَنَّمَ", "arti": "dari siksa neraka Jahannam" },
+            { "arabic": "وَمِنْ عَذَابِ الْقَبْرِ", "arti": "dan dari siksa kubur" },
+            { "arabic": "وَمِنْ فِتْنَةِ الْمَحْيَا وَالْمَمَاتِ", "arti": "dan dari fitnah (ujian) kehidupan dan kematian" },
+            { "arabic": "وَمِنْ شَرِّ فِتْنَةِ الْمَسِيحِ الدَّجَّالِ", "arti": "dan dari keburukan fitnah Al-Masih Ad-Dajjal" }
+          ],
+          "penjelasan": "Empat perlindungan yang sangat penting:\n\n1️⃣ Siksa Jahannam — puncak penderitaan, semoga kita dijauhkan\n2️⃣ Siksa kubur — fase pertama setelah kematian sebelum kiamat\n3️⃣ Fitnah kehidupan (syahwat, harta, keluarga, syubhat) dan fitnah kematian (sakaratul maut, su'ul khatimah)\n4️⃣ Fitnah Dajjal — ujian terbesar sepanjang sejarah manusia\n\nRasulullah ﷺ selalu membaca doa ini dalam tasyahhud akhir beliau.",
+          "dalil": "HR. Muslim no. 588, Bukhari no. 1377"
+        },
+        {
+          "id": "doa-salam-2",
+          "label": "Doa Tambahan",
+          "arabic": "اللَّهُمَّ إِنِّي ظَلَمْتُ نَفْسِي ظُلْمًا كَثِيرًا، وَلَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ، فَاغْفِرْ لِي مَغْفِرَةً مِنْ عِنْدِكَ وَارْحَمْنِي، إِنَّكَ أَنْتَ الْغَفُورُ الرَّحِيمُ",
+          "latin": "Allaahumma innii zhalamtu nafsii zhulman katsiiraa, wa laa yaghfirudz dzunuuba illaa anta, faghfir lii maghfiratam min 'indika warhamnii, innaka antal ghafuurur rahiim.",
+          "arti": "Ya Allah, aku telah menzalimi diriku sendiri dengan kezaliman yang banyak. Tidak ada yang bisa mengampuni dosa-dosa kecuali Engkau. Maka ampunilah aku dengan ampunan dari sisi-Mu dan rahmatilah aku. Sesungguhnya Engkau Maha Pengampun lagi Maha Penyayang.",
+          "penjelasan": "Doa ini adalah pengakuan dosa yang tulus. Kata 'zhulman katsira' (kezaliman yang banyak) menunjukkan betapa banyaknya dosa kita. Tapi diikuti dengan keyakinan bahwa hanya Allah yang bisa mengampuni — 'laa yaghfirudz dzunuuba illaa anta'. Doa ini dikenal sebagai 'sayyidul istighfar dalam sholat'.",
+          "dalil": "HR. Bukhari no. 834, Muslim no. 2705"
+        }
+      ]
+    },
+    {
+      "id": "salam",
+      "title": "Salam — Penutup Sholat",
+      "icon": "👋",
+      "order": 11,
+      "penjelasan_umum": "Rasulullah ﷺ bersabda: 'Kunci sholat adalah bersuci, pembukanya adalah takbir, dan penutupnya adalah salam.' (HR. Abu Daud no. 61). Salam diucapkan dengan menoleh ke kanan lalu ke kiri, sebagai salam perpisahan dan doa keselamatan.",
+      "dalil": "HR. Abu Daud no. 61, Tirmidzi no. 3",
+      "variants": [
+        {
+          "id": "salam-1",
+          "label": "Bacaan Salam",
+          "arabic": "السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللَّهِ",
+          "latin": "Assalaamu 'alaikum wa rahmatullaah.",
+          "arti": "Semoga keselamatan dan rahmat Allah tercurah kepada kalian.",
+          "rincianMakna": [
+            { "arabic": "السَّلَامُ", "arti": "keselamatan (Allah sendiri adalah As-Salam)" },
+            { "arabic": "عَلَيْكُمْ", "arti": "kepada kalian" },
+            { "arabic": "وَرَحْمَةُ اللَّهِ", "arti": "dan rahmat Allah" }
+          ],
+          "penjelasan": "Salam adalah doa keselamatan untuk jamaah di kanan dan kiri (termasuk malaikat). Kata 'As-Salam' adalah salah satu Nama Allah — kita mendoakan dengan Nama-Nya: semoga keselamatan dari Allah tercurah kepadamu. Salam minimal: 'Assalaamu 'alaikum'. Disunnahkan menambahkan 'wa rahmatullaah'.\n\nMenoleh ke kanan dan kiri juga bisa dimaknai sebagai 'saksi' bahwa sholat telah selesai dan diterima — seperti dalam hadits tentang penghapusan dosa.",
+          "dalil": "HR. Muslim no. 431, Abu Daud no. 996"
+        }
+      ]
+    }
+  ]
+}

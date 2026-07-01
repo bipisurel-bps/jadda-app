@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { motion } from 'framer-motion';
 import {
-  MapPin, Clock, Bell, BellOff, Sun, Sunrise, Sunset, Moon, CloudSun, RefreshCw, Loader2, AlertCircle, Volume2, BookOpen, ChevronRight, Compass
+  MapPin, Clock, Bell, BellOff, Sun, Sunrise, Sunset, Moon, CloudSun, RefreshCw, Loader2, AlertCircle, Volume2, BookOpen, ChevronRight, Compass, ScrollText, PersonStanding
 } from 'lucide-react';
 import { toast } from 'sonner';
 import Link from 'next/link';
@@ -59,15 +59,22 @@ export default function SholatClient() {
   const [hijriDate, setHijriDate] = useState('');
   const [notifEnabled, setNotifEnabled] = useState(false);
   const [notifPermission, setNotifPermission] = useState<string>('default');
+  const [adzanEnabled, setAdzanEnabled] = useState(false);
+  const [adzanPermission, setAdzanPermission] = useState<string>('default');
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const notifCheckRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const adzanCheckRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const saved = localStorage.getItem('jadda_dzikir_notif');
       if (saved === 'true') setNotifEnabled(true);
+      const adzanSaved = localStorage.getItem('jadda_adzan_enabled');
+      if (adzanSaved === 'true') setAdzanEnabled(true);
       if ('Notification' in window) {
         setNotifPermission(Notification.permission);
+        setAdzanPermission(Notification.permission);
       }
     }
   }, []);
@@ -172,6 +179,44 @@ export default function SholatClient() {
     return () => { if (intervalRef.current) clearInterval(intervalRef.current); };
   }, [prayerTimes]);
 
+  // Adzan sound + notification — check every 30 seconds
+  useEffect(() => {
+    if (!adzanEnabled || !prayerTimes || adzanPermission !== 'granted') return;
+    const prayerOrder = ['Fajr', 'Dhuhr', 'Asr', 'Maghrib', 'Isha'];
+    const prayerLabels: Record<string, string> = {
+      Fajr: 'Subuh', Dhuhr: 'Zhuhur', Asr: 'Ashar', Maghrib: 'Maghrib', Isha: 'Isya',
+    };
+    const checkAdzan = () => {
+      const now = new Date();
+      const nowMin = now.getHours() * 60 + now.getMinutes();
+      const todayKey = now.toISOString().split('T')[0];
+
+      for (const key of prayerOrder) {
+        const time = (prayerTimes as any)[key];
+        if (!time) continue;
+        const prayerMin = timeToMinutes(time);
+        if (nowMin >= prayerMin && nowMin <= prayerMin + 2) {
+          const notifKey = `jadda_adzan_${key}_${todayKey}`;
+          if (!localStorage.getItem(notifKey)) {
+            localStorage.setItem(notifKey, '1');
+            if (audioRef.current) {
+              audioRef.current.currentTime = 0;
+              audioRef.current.play().catch(() => {});
+            }
+            new Notification(`\u{1F54C} Waktu ${prayerLabels[key]} \u2014 Jadda`, {
+              body: `Sudah masuk waktu sholat ${prayerLabels[key]} (${time})`,
+              icon: '/logo-jadda.png',
+              tag: `adzan-${key}`,
+            });
+          }
+        }
+      }
+    };
+    checkAdzan();
+    adzanCheckRef.current = setInterval(checkAdzan, 30000);
+    return () => { if (adzanCheckRef.current) clearInterval(adzanCheckRef.current); };
+  }, [adzanEnabled, prayerTimes, adzanPermission]);
+
   // Dzikir notifications
   useEffect(() => {
     if (!notifEnabled || !prayerTimes || notifPermission !== 'granted') return;
@@ -184,7 +229,7 @@ export default function SholatClient() {
         const key = `jadda_notif_pagi_${todayKey}`;
         if (!localStorage.getItem(key)) {
           localStorage.setItem(key, '1');
-          new Notification('\ud83c\udf05 Dzikir Pagi \u2014 Jadda', { body: 'Waktunya dzikir pagi! Setelah Subuh sampai terbit matahari.', icon: '/logo-jadda.png' });
+          new Notification('\u{1F305} Dzikir Pagi \u2014 Jadda', { body: 'Waktunya dzikir pagi! Setelah Subuh sampai terbit matahari.', icon: '/logo-jadda.png' });
         }
       }
       const asrMin = timeToMinutes(prayerTimes.Asr);
@@ -192,7 +237,7 @@ export default function SholatClient() {
         const key = `jadda_notif_petang_${todayKey}`;
         if (!localStorage.getItem(key)) {
           localStorage.setItem(key, '1');
-          new Notification('\ud83c\udf07 Dzikir Petang \u2014 Jadda', { body: 'Waktunya dzikir petang! Setelah Ashar sampai Maghrib.', icon: '/logo-jadda.png' });
+          new Notification('\u{1F307} Dzikir Petang \u2014 Jadda', { body: 'Waktunya dzikir petang! Setelah Ashar sampai Maghrib.', icon: '/logo-jadda.png' });
         }
       }
     };
@@ -200,6 +245,31 @@ export default function SholatClient() {
     notifCheckRef.current = setInterval(check, 60000);
     return () => { if (notifCheckRef.current) clearInterval(notifCheckRef.current); };
   }, [notifEnabled, prayerTimes, notifPermission]);
+
+  const toggleAdzan = async () => {
+    if (typeof window === 'undefined' || !('Notification' in window)) {
+      toast.error('Browser Anda tidak mendukung notifikasi');
+      return;
+    }
+    if (!adzanEnabled) {
+      const perm = await Notification.requestPermission();
+      setAdzanPermission(perm);
+      if (perm === 'granted') {
+        setAdzanEnabled(true);
+        localStorage.setItem('jadda_adzan_enabled', 'true');
+        if (audioRef.current) {
+          audioRef.current.load();
+        }
+        toast.success('Adzan & notifikasi waktu sholat diaktifkan! \u{1F50A}');
+      } else {
+        toast.error('Izin notifikasi ditolak. Aktifkan di pengaturan browser.');
+      }
+    } else {
+      setAdzanEnabled(false);
+      localStorage.setItem('jadda_adzan_enabled', 'false');
+      toast('Adzan dinonaktifkan');
+    }
+  };
 
   const toggleNotif = async () => {
     if (typeof window === 'undefined' || !('Notification' in window)) {
@@ -247,7 +317,32 @@ export default function SholatClient() {
   const prayerOrder = ['Fajr', 'Sunrise', 'Dhuhr', 'Asr', 'Maghrib', 'Isha'];
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-5">
+      {/* Hidden audio element for adzan */}
+      <audio ref={audioRef} src="/audio/adzan.mp3" preload="auto" />
+
+      {/* Top Navigation — 3 Tabs */}
+      <motion.div initial={{ opacity: 0, y: -8 }} animate={{ opacity: 1, y: 0 }} className="flex gap-2 overflow-x-auto pb-1">
+        <Link
+          href="/sholat"
+          className="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium bg-primary text-primary-foreground shadow-sm"
+        >
+          <Clock size={16} /> Waktu Sholat
+        </Link>
+        <Link
+          href="/sholat/tata-cara"
+          className="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium bg-muted text-muted-foreground hover:bg-muted/80 hover:text-foreground transition-colors"
+        >
+          <PersonStanding size={16} /> Tata Cara
+        </Link>
+        <Link
+          href="/sholat/makna-bacaan"
+          className="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium bg-muted text-muted-foreground hover:bg-muted/80 hover:text-foreground transition-colors"
+        >
+          <ScrollText size={16} /> Makna Bacaan
+        </Link>
+      </motion.div>
+
       <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="space-y-1">
         <h1 className="text-2xl md:text-3xl font-display font-bold text-foreground">Waktu Sholat</h1>
         <div className="flex items-center gap-2 text-muted-foreground text-sm">
@@ -311,6 +406,27 @@ export default function SholatClient() {
       <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}
         className="rounded-xl bg-card border border-border/50 shadow-sm p-5 space-y-4"
       >
+        {/* Adzan Toggle */}
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-xl bg-emerald-500/10 flex items-center justify-center">
+              <Volume2 size={20} className="text-emerald-600" />
+            </div>
+            <div>
+              <h2 className="font-display font-bold text-foreground">Adzan &amp; Pengingat Sholat</h2>
+              <p className="text-xs text-muted-foreground">Suara adzan + notifikasi tiap waktu sholat</p>
+            </div>
+          </div>
+          <button onClick={toggleAdzan}
+            className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all ${adzanEnabled ? 'bg-emerald-500/10 text-emerald-600 border border-emerald-500/20' : 'bg-muted text-muted-foreground hover:bg-muted/80'}`}
+          >
+            {adzanEnabled ? <Bell size={16} /> : <BellOff size={16} />}
+            {adzanEnabled ? 'Aktif' : 'Aktifkan'}
+          </button>
+        </div>
+
+        <div className="border-t border-border/30" />
+
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center">
@@ -328,6 +444,7 @@ export default function SholatClient() {
             {notifEnabled ? 'Aktif' : 'Aktifkan'}
           </button>
         </div>
+
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <div className="rounded-lg bg-indigo-500/5 border border-indigo-500/10 p-3">
             <div className="flex items-center gap-2 mb-1">
@@ -344,6 +461,7 @@ export default function SholatClient() {
             <p className="text-xs text-muted-foreground">Setelah Ashar ({prayerTimes?.Asr}) sampai Maghrib ({prayerTimes?.Maghrib})</p>
           </div>
         </div>
+
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <Link href="/doa" className="flex items-center justify-between px-4 py-3 rounded-lg bg-primary/5 hover:bg-primary/10 transition-colors group">
             <div className="flex items-center gap-3">

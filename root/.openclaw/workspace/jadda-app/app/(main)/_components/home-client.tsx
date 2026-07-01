@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Star, ChevronRight, Compass, Heart, Users } from 'lucide-react';
+import { Star, ChevronRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { dailyVerses } from '@/lib/quran-verses';
 import {
@@ -16,14 +16,14 @@ import {
   JaddaHajiIcon,
 } from '@/components/icons/jadda-icons';
 
-/* ── Main feature config ── */
-const mainFeatures = [
+/* ── Feature config ── */
+const features = [
   {
     href: '/sholat',
     icon: JaddaSholatIcon,
     title: 'Waktu Sholat & Dzikir',
     desc: 'Jadwal otomatis & pengingat dzikir pagi petang',
-    accent: 'amber',
+    accent: 'emerald',
     size: 'lg',
   },
   {
@@ -50,41 +50,21 @@ const mainFeatures = [
     accent: 'blue',
     size: 'sm',
   },
-];
-
-/* ── Keilmuan section ── */
-const keilmuanFeatures = [
-  {
-    href: '/keilmuan/fiqh-safar',
-    icon: Compass,
-    title: 'Panduan Safar',
-    desc: 'Qashar, jamak, puasa musafir, tayammum & adab',
-    accent: 'cyan',
-  },
-  {
-    href: '/keilmuan/fiqh-jenazah',
-    icon: Heart,
-    title: 'Panduan Pengurusan Jamaah',
-    desc: 'Tata cara memandikan, mengkafani, menshalatkan hingga pemakaman',
-    accent: 'green',
-  },
-];
-
-/* ── Lainnya section ── */
-const lainnyaFeatures = [
   {
     href: '/zakat',
     icon: JaddaZakatIcon,
-    title: 'Hitung Zakat',
+    title: 'Kalkulator Zakat',
     desc: 'Zakat maal, fitrah, dagang, tani & ternak',
     accent: 'rose',
+    size: 'sm',
   },
   {
     href: '/waris',
     icon: JaddaWarisIcon,
-    title: 'Hitung Waris',
+    title: 'Kalkulator Waris',
     desc: 'Perhitungan faraidh sesuai syariat',
     accent: 'indigo',
+    size: 'sm',
   },
   {
     href: '/umroh',
@@ -92,20 +72,15 @@ const lainnyaFeatures = [
     title: 'Panduan Umrah',
     desc: 'Tata cara lengkap dengan doa & bacaan Arab',
     accent: 'cyan',
+    size: 'sm',
   },
   {
     href: '/haji',
     icon: JaddaHajiIcon,
-    title: 'Tuntunan Haji',
+    title: 'Panduan Haji',
     desc: 'Tuntunan ringkas ibadah haji sesuai Sunnah',
     accent: 'purple',
-  },
-  {
-    href: '/keilmuan/ulama',
-    icon: Users,
-    title: 'Biografi Ulama',
-    desc: 'Mengenal para imam hadits & ahli ilmu Islam',
-    accent: 'emerald',
+    size: 'sm',
   },
 ];
 
@@ -117,7 +92,6 @@ const accentMap: Record<string, { bg: string; border: string; text: string; glow
   rose:    { bg: 'bg-rose-500/10',    border: 'border-rose-400/20 hover:border-rose-400/40',       text: 'text-rose-400',    glow: 'shadow-rose-500/10' },
   indigo:  { bg: 'bg-indigo-500/10',  border: 'border-indigo-400/20 hover:border-indigo-400/40',   text: 'text-indigo-400',  glow: 'shadow-indigo-500/10' },
   cyan:    { bg: 'bg-cyan-500/10',    border: 'border-cyan-400/20 hover:border-cyan-400/40',       text: 'text-cyan-400',    glow: 'shadow-cyan-500/10' },
-  green:   { bg: 'bg-green-500/10',   border: 'border-green-400/20 hover:border-green-400/40',     text: 'text-green-400',   glow: 'shadow-green-500/10' },
   purple:  { bg: 'bg-purple-500/10',  border: 'border-purple-400/20 hover:border-purple-400/40',   text: 'text-purple-400',  glow: 'shadow-purple-500/10' },
 };
 
@@ -210,8 +184,8 @@ export default function HomeClient() {
             className="glass-card rounded-2xl p-5 md:p-6 transition-all duration-500"
           >
             <div className="flex items-start gap-3 md:gap-4">
-              <div className="flex-shrink-0 w-9 h-9 md:w-10 md:h-10 rounded-xl bg-blue-500/10 border border-blue-400/20 flex items-center justify-center">
-                <Star size={16} className="text-blue-400" />
+              <div className="flex-shrink-0 w-9 h-9 md:w-10 md:h-10 rounded-xl bg-amber-500/10 border border-amber-400/20 flex items-center justify-center">
+                <Star size={16} className="text-amber-400" />
               </div>
               <div>
                 <p className="text-[11px] md:text-xs font-medium text-white/30 uppercase tracking-wider mb-1.5">
@@ -228,7 +202,7 @@ export default function HomeClient() {
           </motion.section>
         ) : null}
 
-        {/* ── Main Feature Bento Grid ── */}
+        {/* ── Feature Bento Grid ── */}
         <motion.div
           variants={container}
           initial="hidden"
@@ -237,69 +211,36 @@ export default function HomeClient() {
         >
           {/* ── Sholat — Featured (spans 2 cols on desktop) ── */}
           <motion.div variants={item} className="md:col-span-2">
-            <FeatureCard href={mainFeatures[0].href} icon={mainFeatures[0].icon} title={mainFeatures[0].title} desc={mainFeatures[0].desc} accent={mainFeatures[0].accent} featured />
+            <FeatureCard feature={features[0]} featured />
           </motion.div>
 
           {/* ── Kiblat ── */}
           <motion.div variants={item}>
-            <FeatureCard href={mainFeatures[1].href} icon={mainFeatures[1].icon} title={mainFeatures[1].title} desc={mainFeatures[1].desc} accent={mainFeatures[1].accent} />
+            <FeatureCard feature={features[1]} />
           </motion.div>
 
-          {/* ── Doa · Hadits ── */}
+          {/* ── Doa · Hadits · Zakat ── */}
           <motion.div variants={item}>
-            <FeatureCard href={mainFeatures[2].href} icon={mainFeatures[2].icon} title={mainFeatures[2].title} desc={mainFeatures[2].desc} accent={mainFeatures[2].accent} />
+            <FeatureCard feature={features[2]} />
           </motion.div>
           <motion.div variants={item}>
-            <FeatureCard href={mainFeatures[3].href} icon={mainFeatures[3].icon} title={mainFeatures[3].title} desc={mainFeatures[3].desc} accent={mainFeatures[3].accent} />
+            <FeatureCard feature={features[3]} />
+          </motion.div>
+          <motion.div variants={item}>
+            <FeatureCard feature={features[4]} />
+          </motion.div>
+
+          {/* ── Waris · Umrah · Haji ── */}
+          <motion.div variants={item}>
+            <FeatureCard feature={features[5]} />
+          </motion.div>
+          <motion.div variants={item}>
+            <FeatureCard feature={features[6]} />
+          </motion.div>
+          <motion.div variants={item}>
+            <FeatureCard feature={features[7]} />
           </motion.div>
         </motion.div>
-
-        {/* ── Fitur Keilmuan ── */}
-        <motion.section
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-        >
-          <h2 className="font-display font-bold text-base md:text-lg text-white/60 mb-3">
-            Fitur Keilmuan
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
-            {keilmuanFeatures.map((f) => (
-              <FeatureCard
-                key={f.href}
-                href={f.href}
-                icon={f.icon}
-                title={f.title}
-                desc={f.desc}
-                accent={f.accent}
-                isLucide
-              />
-            ))}
-          </div>
-        </motion.section>
-
-        {/* ── Fitur Lainnya ── */}
-        <motion.section
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.5 }}
-        >
-          <h2 className="font-display font-bold text-base md:text-lg text-white/60 mb-3">
-            Fitur Lainnya
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4">
-            {lainnyaFeatures.map((f) => (
-              <FeatureCard
-                key={f.href}
-                href={f.href}
-                icon={f.icon}
-                title={f.title}
-                desc={f.desc}
-                accent={f.accent}
-              />
-            ))}
-          </div>
-        </motion.section>
 
         {/* ── Footer note ── */}
         <motion.p
@@ -318,24 +259,14 @@ export default function HomeClient() {
 
 /* ── Feature Card Component ── */
 function FeatureCard({
-  href,
-  icon: IconComponent,
-  title,
-  desc,
-  accent,
+  feature,
   featured = false,
-  isLucide = false,
 }: {
-  href: string;
-  icon: any;
-  title: string;
-  desc: string;
-  accent: string;
+  feature: (typeof features)[number];
   featured?: boolean;
-  isLucide?: boolean;
 }) {
+  const { href, icon: Icon, title, desc, accent } = feature;
   const styles = accentMap[accent] ?? accentMap.emerald;
-  const LucideIcon = isLucide ? IconComponent : null;
 
   return (
     <Link href={href} className="block h-full">
@@ -348,13 +279,7 @@ function FeatureCard({
         <div className={`relative z-10 p-4 md:p-6 flex flex-col h-full ${featured ? 'md:flex-row md:items-center md:gap-6' : ''}`}>
           {/* Icon */}
           <div className={`flex-shrink-0 w-11 h-11 md:w-12 md:h-12 rounded-xl overflow-hidden ${styles.bg} border border-white/[0.06] group-hover:scale-105 transition-transform duration-500 mb-3 ${featured ? 'md:mb-0' : ''}`}>
-            {LucideIcon ? (
-              <div className={`w-full h-full flex items-center justify-center`}>
-                <LucideIcon size={22} className={styles.text} />
-              </div>
-            ) : (
-              <IconComponent className="w-full h-full" title={title} />
-            )}
+            <Icon className="w-full h-full" title={title} />
           </div>
 
           {/* Text */}

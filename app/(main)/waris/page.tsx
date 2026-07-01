@@ -2,11 +2,11 @@ import WarisClient from './_components/waris-client';
 import { BreadcrumbJsonLd, FAQJsonLd } from '@/components/json-ld';
 
 export const metadata = {
-  title: 'Kalkulator Waris Islam (Faraidh) Online — Jadda',
-  description: 'Kalkulator pembagian harta waris (faraidh) sesuai hukum Islam. Hitung bagian ahli waris secara otomatis dengan fitur Ashabul Furudh, Ashabah, Hajb, Aul, dan Radd. Gratis dan mudah digunakan.',
-  keywords: ['kalkulator waris', 'faraidh', 'pembagian harta waris islam', 'kalkulator warisan', 'hukum waris islam', 'ashabul furudh', 'ashabah', 'bagian ahli waris'],
+  title: 'Hitung Waris Islam (Faraidh) Online — Jadda',
+  description: 'Hitung pembagian harta waris (faraidh) sesuai hukum Islam. Kalkulasi bagian ahli waris secara otomatis dengan fitur Ashabul Furudh, Ashabah, Hajb, Aul, dan Radd. Gratis dan mudah digunakan.',
+  keywords: ['hitung waris', 'kalkulator waris', 'faraidh', 'pembagian harta waris islam', 'kalkulator warisan', 'hukum waris islam', 'ashabul furudh', 'ashabah', 'bagian ahli waris'],
   openGraph: {
-    title: 'Kalkulator Waris Islam (Faraidh) Online — Jadda',
+    title: 'Hitung Waris Islam (Faraidh) Online — Jadda',
     description: 'Hitung pembagian harta waris sesuai hukum Islam secara otomatis. Gratis dan akurat.',
     type: 'website',
     locale: 'id_ID',
@@ -19,7 +19,7 @@ export default function WarisPage() {
     <>
       <BreadcrumbJsonLd items={[
         { name: 'Beranda', url: baseUrl },
-        { name: 'Kalkulator Waris', url: `${baseUrl}/waris` },
+        { name: 'Hitung Waris', url: `${baseUrl}/waris` },
       ]} />
       <FAQJsonLd faqs={[
         { question: 'Bagaimana cara menghitung waris dalam Islam?', answer: 'Pembagian waris Islam (faraidh) mengikuti ketentuan Al-Quran Surat An-Nisa ayat 11-12. Setiap ahli waris mendapat bagian yang sudah ditentukan (Ashabul Furudh), kemudian sisanya dibagikan kepada ahli waris Ashabah.' },

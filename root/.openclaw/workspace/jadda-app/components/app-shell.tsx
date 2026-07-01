@@ -19,7 +19,6 @@ const navItems = [
   { href: '/zakat', label: 'Zakat', icon: Coins },
   { href: '/umroh', label: 'Umrah', icon: MapPin },
   { href: '/haji', label: 'Haji', icon: Landmark },
-  { href: '/keilmuan', label: 'Keilmuan', icon: BookOpen },
   { href: '/tentang', label: 'Tentang', icon: Info },
 ];
 

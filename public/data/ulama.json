@@ -1,0 +1,640 @@
+{
+  "title": "Biografi Ulama",
+  "description": "Mengenal lebih dekat para ulama besar yang menjadi pilar keilmuan Islam",
+  "categories": [
+    {
+      "id": "imam-hadits",
+      "title": "Imam Hadits",
+      "description": "Enam imam besar penulis Kutub as-Sittah (enam kitab hadits utama)",
+      "scholars": [
+        {
+          "id": "imam-bukhari",
+          "name": "Imam Bukhari",
+          "fullName": "Muhammad bin Isma'il bin Ibrahim bin Al-Mughirah bin Bardizbah Al-Ju'fi",
+          "kunyah": "Abu 'Abdillah",
+          "birthYear": "194 H",
+          "birthPlace": "Bukhara",
+          "deathYear": "256 H",
+          "deathPlace": "Khartank, Samarqand",
+          "age": 62,
+          "masterwork": "Shahih Bukhari",
+          "color": "emerald",
+          "sections": [
+            {
+              "title": "Nama, Nasab, dan Kelahiran",
+              "content": "Nama lengkap beliau adalah Muhammad bin Isma'il bin Ibrahim bin Al-Mughirah bin Bardizbah Al-Ju'fi, dengan kunyah Abu 'Abdillah. Beliau lahir di Bukhara pada hari Jum'at setelah shalat Jum'at, 13 Syawwal 194 H. Ayahnya, Isma'il, adalah seorang ulama besar ahli hadis yang pernah berguru kepada Imam Malik dan Hammad bin Zaid. Namun, sang ayah wafat saat Imam Bukhari masih kecil, sehingga beliau dibesarkan sepenuhnya oleh ibunya."
+            },
+            {
+              "title": "Masa Kecil dan Kesembuhan Mata",
+              "content": "Sewaktu kecil, Imam Bukhari sempat kehilangan penglihatannya (buta). Ibunya, yang merupakan seorang wanita salehah dan ahli ibadah, terus-menerus berdoa kepada Allah demi kesembuhan putranya. Suatu malam, sang ibu bermimpi melihat Nabi Ibrahim AS yang mengabarkan: 'Wahai wanita, Allah telah mengembalikan penglihatan putramu karena doa-doamu yang tak henti-hentinya.' Pada pagi harinya, penglihatan Imam Bukhari benar-benar telah sembuh total."
+            },
+            {
+              "title": "Perjalanan Menuntut Ilmu",
+              "content": "Beliau mulai menunjukkan ketertarikan pada ilmu hadis saat masih belajar di kuttab (sekolah dasar). Pada usia 16 tahun, beliau pergi ke Makkah bersama ibu dan saudaranya untuk menunaikan ibadah haji, lalu memutuskan menetap di sana untuk memperdalam ilmu hadis. Beliau berkelana ke berbagai pusat ilmu dunia Islam, termasuk Madinah, Bashrah, Kufah, Baghdad, Syam, Mesir, Jazirah, hingga Khurasan. Beliau tercatat menimba ilmu dan mencatat hadis dari lebih dari 1.000 orang guru (syaikh)."
+            },
+            {
+              "title": "Kekuatan Hafalan Luar Biasa",
+              "content": "Pada usia 11 tahun, beliau berhasil membenarkan kesalahan gurunya (Ad-Dakhili) mengenai nama seorang perawi hadis. Di Bashrah, beliau mampu membacakan kembali 15.000 hadis murni dari hafalannya secara tepat tanpa catatan. Beliau menghafal 100.000 hadis sahih dan 200.000 hadis yang tidak sahih. Saat diuji oleh 10 ulama Baghdad yang membacakan 100 hadis dengan sanad dan matan diacak, Imam Bukhari mengulangi kembali ke-100 hadis yang salah tersebut secara berurutan, lalu membetulkannya satu per satu ke posisi semula dengan sempurna."
+            },
+            {
+              "title": "Karakter dan Kepribadian",
+              "content": "Beliau sangat berhati-hati dari perkara syubhat dan haram (wara'). Sering menyedekahkan hartanya secara sembunyi-sembunyi. Pernah disengat lebah berkali-kali saat sedang shalat namun tidak membatalkannya karena begitu menikmati keindahan surah Al-Qur'an. Di bulan Ramadhan, beliau mengkhatamkan Al-Qur'an setiap tiga hari pada waktu sahur. Dalam mengkritik perawi hadis, beliau sangat santun — menghindari kata 'pembohong' dan lebih memilih istilah halus seperti fihi nazhar (perlu diteliti)."
+            },
+            {
+              "title": "Karya-Karya Monumental",
+              "content": "1. Al-Jami' Ash-Shahih (Shahih Bukhari) — Karya paling agung yang disusun selama 16 tahun, disaring ketat dari sekitar 600.000 hadis.\n2. At-Tarikh Al-Kabir — Mulai ditulis pada usia 18 tahun di samping makam Rasulullah ﷺ.\n3. At-Tarikh Ash-Shaghir\n4. Khalqu Af'al Al-Ibad\n5. Al-Adab Al-Mufrad\n6. Adh-Dhu'afa' Ash-Shaghir"
+            },
+            {
+              "title": "Sanjungan Para Ulama",
+              "quotes": [
+                {
+                  "scholar": "Imam Muslim",
+                  "text": "Izinkan aku mencium kakimu, wahai guru para guru, tuan para ulama ahli hadis, dan dokter hadis dalam mengobati illat (penyakit) hadis."
+                },
+                {
+                  "scholar": "Qutaibah bin Sa'id",
+                  "text": "Dia di masanya seperti halnya Umar di kalangan para sahabat."
+                },
+                {
+                  "scholar": "Imam Ahmad bin Hambal",
+                  "text": "Negeri Khurasan belum pernah melahirkan orang yang seperti Muhammad bin Isma'il."
+                }
+              ]
+            },
+            {
+              "title": "Ujian dan Akhir Hayat",
+              "content": "Gubernur Bukhara meminta Imam Bukhari datang ke istana untuk mengajarkan kitab secara eksklusif kepada anak-anaknya. Imam Bukhari menolak dengan tegas: 'Aku tidak akan menghinakan ilmu dan aku tidak akan membawanya ke pintu manusia.' Akibat keteguhannya, beliau diusir dari kampung halamannya lalu mengungsi ke desa Khartank. Beliau berdoa agar Allah segera memanggilnya. Belum genap sebulan, beliau wafat pada malam Idul Fitri tahun 256 H dalam usia 62 tahun. Setelah dimakamkan, dari arah kuburnya tercium aroma wangi yang semerbak laksana minyak kasturi."
+            }
+          ]
+        },
+        {
+          "id": "imam-muslim",
+          "name": "Imam Muslim",
+          "fullName": "Muslim bin Hajjaj bin Muslim bin Wardi Al-Qusyairi An-Naisaburi",
+          "kunyah": "Abul Husain",
+          "birthYear": "204 H",
+          "birthPlace": "Naisabur",
+          "deathYear": "261 H",
+          "deathPlace": "Naisabur",
+          "age": 57,
+          "masterwork": "Shahih Muslim",
+          "color": "blue",
+          "sections": [
+            {
+              "title": "Nama, Nasab, dan Kelahiran",
+              "content": "Nama lengkap beliau adalah Muslim bin Hajjaj bin Muslim bin Wardi (atau Warad) bin Kawisyadz Al-Qusyairi An-Naisaburi, dengan kunyah Abul Husain atau Abul Hasan. Beliau lahir di Naisabur, tahun kelahiran beliau diperselisihkan antara tahun 204 H atau 206 H."
+            },
+            {
+              "title": "Karakter Fisik dan Mata Pencaharian",
+              "content": "Beliau memiliki wajah yang tampan, berwibawa, dan perawakan yang sempurna dengan rambut serta jenggot memutih yang memanjang. Penampilannya sangat rapi, sering mengenakan rida (selendang) yang bagus, serta imamah (sorban) yang dijulurkan di antara kedua pundaknya. Di samping menjadi ulama, beliau adalah seorang pedagang pakaian yang sukses dan sangat dermawan."
+            },
+            {
+              "title": "Perjalanan Menuntut Ilmu",
+              "content": "Beliau mulai belajar hadis sejak usia dini, yaitu 12 tahun (pada tahun 218 H). Beliau melakukan rihlah yang panjang ke berbagai wilayah pusat keilmuan Islam, seperti Irak, Hijaz, Syam, dan Mesir. Guru-guru utama beliau antara lain Abu Bakar bin Abi Syaibah, Qutaibah bin Sa'id, Imam Ahmad bin Hambal, dan Imam Al-Bukhari."
+            },
+            {
+              "title": "Hubungan Unik dengan Imam Bukhari",
+              "content": "Meskipun berguru secara intensif kepada Imam Bukhari, Imam Muslim tidak meriwayatkan satu pun hadis dari Imam Bukhari di dalam kitab Shahih Muslim. Hal ini dilakukan demi mengejar uluwul isnad (jalur sanad yang lebih pendek/dekat ke Rasulullah ﷺ) dengan cara meriwayatkan langsung dari guru-guru Imam Bukhari."
+            },
+            {
+              "title": "Kedudukan dan Akidah",
+              "content": "Beliau adalah seorang Salafi yang teguh di atas manhaj Ahlussunnah wal Jama'ah. Beliau sangat tegas memusuhi tokoh-tokoh ahli bid'ah (Jahmiyyah, Qadariyyah, Khawarij, dan Murji'ah) dan menolak meriwayatkan hadis dari perawi yang memiliki pemahaman menyimpang. Dalam fikih, beliau berpegang pada mazhab Ahlul Hadits."
+            },
+            {
+              "title": "Keistimewaan Shahih Muslim",
+              "content": "Kitab Shahih Muslim (Al-Jami' Ash-Shahih) disepakati sebagai kitab paling sahih setelah Al-Qur'an dan Shahih Bukhari. Keunggulannya: (1) Sistematis — metode pemaparan sangat rapi dan runtut, (2) Sanad & Matan menyatu — seluruh jalur sanad dan teks hadis dikumpulkan dalam satu tempat, (3) Minim hadis mu'allaq. Karya lainnya: Al-Musnad Al-Kabir, Al-Jami' Al-Kabir, Al-'Ilal, At-Tamyiz, dan Thabaqat At-Tabi'in."
+            },
+            {
+              "title": "Sanjungan Para Ulama",
+              "quotes": [
+                {
+                  "scholar": "Muhammad bin Basyar",
+                  "text": "Di dunia ini ada empat orang yang memiliki hafalan hadis paling hebat, dan salah satunya adalah Imam Muslim."
+                },
+                {
+                  "scholar": "Abu Zur'ah & Abu Hatim",
+                  "text": "Lebih mengutamakan pendapat Imam Muslim dalam mengenali kesahihan sebuah hadis dibandingkan ulama-ulama lain di masanya."
+                }
+              ]
+            },
+            {
+              "title": "Kisah Wafat",
+              "content": "Dalam sebuah majelis ilmu, beliau ditanya tentang suatu hadis yang belum beliau ketahui. Sesampainya di rumah, beliau langsung menyalakan lampu dan menelaah kitab-kitabnya. Sembari mencari, beliau disuguhi sekeranjang kurma. Karena terlampau fokus dan larut dalam pencarian hadis hingga pagi hari, beliau tidak sadar telah memakan kurma tersebut sampai habis sekeranjang penuh. Akibat mengonsumsi kurma dalam jumlah banyak sekaligus, beliau jatuh sakit. Imam Muslim wafat pada hari Ahad dan dimakamkan pada hari Senin, 5 Rajab 261 H di Naisabur."
+            }
+          ]
+        },
+        {
+          "id": "imam-abu-dawud",
+          "name": "Imam Abu Dawud",
+          "fullName": "Sulaiman bin Al-Asy'ats bin Ishaq bin Basyir bin Syaddad Al-Azdi As-Sijistani",
+          "kunyah": "Abu Dawud",
+          "birthYear": "202 H",
+          "birthPlace": "Sijistan",
+          "deathYear": "275 H",
+          "deathPlace": "Bashrah",
+          "age": 73,
+          "masterwork": "Sunan Abu Dawud",
+          "color": "amber",
+          "sections": [
+            {
+              "title": "Nama, Nasab, dan Kelahiran",
+              "content": "Nama lengkap beliau adalah Sulaiman bin Al-Asy'ats bin Ishaq bin Basyir bin Syaddad bin Amr bin Imran Al-Azdi As-Sijistani, dengan kunyah Abu Dawud. Beliau lahir di daerah Sijistan pada tahun 202 H. Beliau memiliki seorang putra bernama Abu Bakar Abdullah bin Abu Dawud (penulis kitab Al-Mashabih) yang kelak tumbuh menjadi ulama hafiz terkemuka di Baghdad."
+            },
+            {
+              "title": "Perjalanan Menuntut Ilmu",
+              "content": "Imam Abu Dawud memiliki semangat dan kecintaan luar biasa terhadap ilmu hadis sejak kanak-kanak. Beliau adalah murid langsung dari Imam Bukhari dan dikenal memiliki kesamaan sikap dengan Imam Ahmad bin Hanbal. Demi mengumpulkan hadis, beliau melakukan rihlah yang ekstensif ke Syam, Mesir, Jazirah Arab, Irak, dan Khurasan. Guru-guru utama beliau: Imam Ahmad bin Hanbal, Yahya bin Ma'in, Qutaibah bin Sa'id, dan Ishaq bin Rahuyah."
+            },
+            {
+              "title": "Karya-Karya Monumental",
+              "content": "1. Kitab Sunan Abu Dawud — Karya paling fenomenal dan rujukan utama fikih hadis umat Islam.\n2. Dala'il An-Nubuwwah\n3. Kitab Al-Marasil\n4. Kitab At-Tafarrud fi As-Sunan\n5. Kitab Al-Masa'il\n6. Nasikh Al-Qur'an wa Mansukhuhu\n7. Az-Zuhd"
+            },
+            {
+              "title": "Ketegasan di Hadapan Penguasa",
+              "content": "Putra Mahkota (Amir Abu Ahmad Al-Muwaffaq) meminta beliau pindah ke Bashrah untuk mengadakan majelis ilmu khusus bagi anak-anak khalifah yang terpisah dari masyarakat umum. Imam Abu Dawud menyetujui untuk pindah dan mengajar, namun menolak keras pembuatan majelis eksklusif tersebut. Beliau menegaskan: 'Dalam ilmu, semua orang — baik yang mulia maupun rakyat biasa — adalah sama.' Akhirnya, anak-anak khalifah tetap duduk berdekatan di majelis bersama masyarakat umum."
+            },
+            {
+              "title": "Sanjungan Para Ulama",
+              "quotes": [
+                {
+                  "scholar": "Al-Hakim",
+                  "text": "Imam ahli hadis di zamannya tanpa ada yang menandinginya."
+                },
+                {
+                  "scholar": "Imam Adz-Dzahabi",
+                  "text": "Mengakui kepakarannya bukan hanya sebagai imam hadis, tetapi juga sebagai ulama besar dalam bidang fikih."
+                },
+                {
+                  "scholar": "Musa bin Harun",
+                  "text": "Aku tidak pernah melihat orang yang lebih baik dari Abu Dawud."
+                }
+              ]
+            },
+            {
+              "title": "Akhir Hayat",
+              "content": "Imam Abu Dawud wafat di kota Bashrah pada hari Jumat, 16 Syawal tahun 275 H dalam usia 73 tahun. Jasad beliau dimakamkan bersebelahan dengan makam ulama besar ahli zuhud, yaitu Imam Sufyan Ats-Tsauri."
+            }
+          ]
+        },
+        {
+          "id": "imam-tirmidzi",
+          "name": "Imam At-Tirmidzi",
+          "fullName": "Muhammad bin 'Isa bin Saurah bin Musa as-Sulami at-Tirmidzi",
+          "kunyah": "Abu 'Isa",
+          "birthYear": "209 H",
+          "birthPlace": "Tirmidz",
+          "deathYear": "279 H",
+          "deathPlace": "Tirmidz",
+          "age": 70,
+          "masterwork": "Sunan At-Tirmidzi (Al-Jami')",
+          "color": "violet",
+          "sections": [
+            {
+              "title": "Nama, Nasab, dan Kelahiran",
+              "content": "Nama lengkap beliau adalah Muhammad bin 'Isa bin Saurah bin Musa as-Sulami at-Tirmidzi, dengan kunyah Abu 'Isa. Lahir tahun 209 H di Tirmidz (daerah yang namanya dinisbatkan kepada Sungai Jaihun). Beliau tidak buta sejak lahir, melainkan baru mengalami kebutaan pada masa tuanya akibat banyak menangis karena takut kepada Allah serta dampak perjalanan panjang menuntut ilmu."
+            },
+            {
+              "title": "Perjalanan Menuntut Ilmu",
+              "content": "Sejak usia muda, beliau telah memiliki semangat tinggi menuntut ilmu agama. Beliau melanglang buana ke Khurasan, Irak, Madinah, dan Mekkah. Guru utamanya: Ishaq bin Rahawaih (guru pertama), Imam Bukhari (paling berpengaruh dalam ilmu 'ilalul hadits), Imam Muslim, Imam Abu Dawud, dan Qutaibah bin Sa'id. Muridnya antara lain Abu Bakar Ahmad bin Isma'il as-Samarqandi dan Abu Hamid al-Marwazi."
+            },
+            {
+              "title": "Karya-Karya Monumental",
+              "content": "1. Al-Jami' (Sunan At-Tirmidzi) — Karya paling monumental dan luas manfaatnya.\n2. Syamail an-Nabi ﷺ — Salah satu kitab terbaik tentang sifat fisik, karakteristik, dan akhlak Nabi Muhammad ﷺ.\n3. Al-'Ilal, Al-'Ilal al-Kabir, At-Tarikh, Az-Zuhd, dan Al-Asma' wal-Kuna."
+            },
+            {
+              "title": "Keistimewaan Kitab Al-Jami'",
+              "content": "Imam Abu Isma'il al-Anshoriy menilai kitab ini lebih bermanfaat dari Shahih Bukhari dan Muslim karena bisa dipahami oleh setiap orang (awam), bukan hanya kalangan ulama. Kitab ini menunjukkan kehebatan beliau dalam hadis, fikih, dan pemahaman khilafiyah (perbedaan pendapat ulama)."
+            },
+            {
+              "title": "Jasa Membela Sunnah",
+              "content": "Imam At-Tirmidzi memiliki andil besar dalam membela akidah Ahlussunnah wal Jama'ah. Dalam kitab Al-Jami', beliau menyusun pembahasan khusus untuk membantah pemahaman menyimpang dari kelompok Al-Qadariyyah, Al-Murji'ah, Khawarij, dan Syi'ah Rafidhah. Beliau membuat bab khusus 'Kitab al-Iman' dan 'Kitab al-Qadr' serta secara eksplisit menyebutkan keutamaan para sahabat Nabi."
+            },
+            {
+              "title": "Sanjungan Para Ulama",
+              "quotes": [
+                {
+                  "scholar": "Abu Sa'd al-Idrisi",
+                  "text": "Seorang imam hadis yang menjadi teladan dalam masalah hafalan."
+                },
+                {
+                  "scholar": "'Umar bin 'Allak",
+                  "text": "Sepeninggal Imam Bukhari, tidak ada yang bisa menggantikan posisinya kecuali Abu 'Isa (At-Tirmidzi) dalam hal ilmu, kuatnya hafalan, sifat zuhud, dan wara'."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "imam-nasai",
+          "name": "Imam An-Nasa'i",
+          "fullName": "Abu Abdirrahman Ahmad bin Syuaib bin Ali bin Sinan bin Bahr Al-Khurasani An-Nasa'i",
+          "kunyah": "Abu Abdirrahman",
+          "birthYear": "214 H",
+          "birthPlace": "Nasa', Khurasan",
+          "deathYear": "303 H",
+          "deathPlace": "Makkah",
+          "age": 89,
+          "masterwork": "Sunan An-Nasa'i (Al-Mujtaba)",
+          "color": "rose",
+          "sections": [
+            {
+              "title": "Nama, Nasab, dan Kelahiran",
+              "content": "Nama lengkap beliau adalah Abu Abdirrahman Ahmad bin Syuaib bin Ali bin Sinan bin Bahr Al-Khurasani An-Nasa'i. Sebutan 'An-Nasa'i' merujuk pada daerah kelahirannya, yaitu Nasa' di wilayah Khurasan. Beliau lahir pada tahun 214 H atau 215 H."
+            },
+            {
+              "title": "Karakter dan Kebiasaan",
+              "content": "Beliau adalah ulama yang sangat berwibawa, bermuka cerah, ringan tangan (suka menolong), dan berbudi luhur. Wajah beliau tetap terlihat tampan menawan meskipun usianya telah senja. Beliau memiliki empat orang istri dan gemar mengenakan pakaian musim dingin."
+            },
+            {
+              "title": "Kedudukan Ilmiah",
+              "content": "Imam Ad-Daruquthni menyebut beliau sebagai pionir ilmu hadis di masanya. Imam Adz-Dzahabi menyatakan bahwa hafalan beliau bahkan dinilai lebih kuat daripada Imam Muslim. Syarat kesahihan yang diterapkan beliau dalam mengkritik perawi hadis dinilai lebih ketat daripada syarat Imam Al-Bukhari dan Imam Muslim. Dalam fikih, beliau mengikuti Mazhab Syafi'i."
+            },
+            {
+              "title": "Sejarah Kitab Sunan An-Nasa'i",
+              "content": "Awalnya beliau menyusun kitab As-Sunan Al-Kubra dan menghadiahkannya kepada seorang amir di Ramallah. Sang amir bertanya apakah semua isinya sahih. Imam An-Nasa'i menjawab jujur bahwa masih ada hadis yang belum sahih. Sang amir meminta seleksi ulang. Dari hasil seleksi super ketat inilah lahir kitab Al-Mujtaba (yang terpilih), yang kini dikenal sebagai Sunan An-Nasa'i. Karya lain: Tafsir An-Nasa'i, Amal Al-Yaum wa Al-Lailah, dan Ash-Dhu'afa' wa Al-Matrukin."
+            },
+            {
+              "title": "Kitab Al-Khasha'ish dan Ketegasan Prinsip",
+              "content": "Di Damaskus, beliau prihatin melihat banyak penduduk yang terpengaruh untuk membenci Ali bin Abi Thalib. Maka beliau menulis Kitab Al-Khasha'ish tentang keutamaan Ali. Ketika kelompok pendukung Muawiyah meminta beliau menulis kitab serupa tentang keutamaan Muawiyah, Imam An-Nasa'i dengan tegas menolaknya karena tidak menemukan riwayat sahih khusus yang sebanding."
+            },
+            {
+              "title": "Sanjungan Para Ulama",
+              "quotes": [
+                {
+                  "scholar": "Imam Ad-Daruquthni",
+                  "text": "Pionir dalam ilmu hadis di masanya dan menjadikannya sebagai hujjah (sandaran hukum) antara dirinya dan Allah."
+                },
+                {
+                  "scholar": "Imam Adz-Dzahabi",
+                  "text": "Hafalan Imam An-Nasa'i bahkan dinilai lebih kuat daripada Imam Muslim. Derajatnya hampir sejajar dengan Imam Al-Bukhari dan Abu Zur'ah."
+                }
+              ]
+            },
+            {
+              "title": "Ujian Fisik dan Akhir Hayat",
+              "content": "Ketegasan prinsip beliau berujung pada siksaan fisik yang keji. Di Damaskus, beliau ditekan, dipukuli, dan diseret keluar dari masjid oleh kelompok ekstrem. Dalam kondisi terluka parah, beliau meminta dievakuasi ke Makkah. Beliau wafat di Makkah pada bulan Sya'ban tahun 303 H dan dikuburkan di antara Shafa dan Marwa. Ada juga pendapat yang menyatakan beliau wafat di Ramallah, Palestina pada tahun 302 H."
+            }
+          ]
+        },
+        {
+          "id": "imam-ibnu-majah",
+          "name": "Imam Ibnu Majah",
+          "fullName": "Abu Abdillah Muhammad bin Yazid bin Majah Al-Rabi' Al-Qazwini",
+          "kunyah": "Abu Abdillah",
+          "birthYear": "209 H",
+          "birthPlace": "Qazwin",
+          "deathYear": "273 H",
+          "deathPlace": "Qazwin",
+          "age": 64,
+          "masterwork": "Sunan Ibnu Majah",
+          "color": "teal",
+          "sections": [
+            {
+              "title": "Nama, Nasab, dan Kelahiran",
+              "content": "Nama lengkap beliau adalah Abu Abdillah Muhammad bin Yazid bin Majah Al-Rabi' Al-Qazwini. Lahir tahun 209 H di Qazwin. 'Majah' adalah julukan ayahnya yang berasal dari Persia. Nasabnya bersambung ke suku Arab bernama Rabi'ah, dan beliau berasal dari Qazwin, sebuah kota terkemuka di Irak yang terkenal banyak melahirkan ilmuwan hebat."
+            },
+            {
+              "title": "Masa Kecil dan Perjalanan Ilmu",
+              "content": "Beliau tumbuh di lingkungan yang mencintai ilmu syar'i. Sejak kecil, beliau telah menghafal Al-Qur'an dan rutin menghadiri majelis-majelis ahli hadis. Pada tahun 230 H, beliau mulai rihlah ke Khurasan, Basrah, Kufah, Baghdad, Damaskus, Makkah, Madinah, dan Mesir. Setelah lebih dari 15 tahun berkelana, beliau kembali menetap di Qazwin untuk fokus menulis hadis."
+            },
+            {
+              "title": "Guru-Guru dan Murid",
+              "content": "Guru-guru utama: Ali bin Muhammad At-Tanafisi, Jabbar bin Al-Mughlis, Mus'ab bin Abdullah Az-Zubairi, Suwaid bin Said, dan Muhammad bin Ramh. Murid-murid utama: Ali bin Said Al-Ghadani, Ibrahim bin Dinar Al-Jurashi, Ahmad bin Ibrahim Al-Qazwini, dan Ja'far bin Idris."
+            },
+            {
+              "title": "Karya-Karya Monumental",
+              "content": "1. Sunan Ibnu Majah — Karya paling fenomenal, masuk dalam jajaran Kutub as-Sittah (enam kitab hadis utama).\n2. Kitab Tafsir Al-Qur'an — Sebuah kitab tafsir yang sangat komprehensif.\n3. Kitab Sejarah — Mengulas rentang waktu sejak zaman sahabat hingga zaman beliau.\n\nSangat disayangkan, karya tafsir dan kitab sejarah monumental milik beliau tersebut telah hilang ditelan zaman."
+            },
+            {
+              "title": "Sanjungan Para Ulama",
+              "quotes": [
+                {
+                  "scholar": "Ibnu Khallikan",
+                  "text": "Dia adalah seorang imam dalam hadis, yang mengetahui ilmu-ilmunya dan segala yang terkait dengannya."
+                },
+                {
+                  "scholar": "Imam Adz-Dzahabi",
+                  "text": "Ibnu Majah adalah seorang hafiz, jujur, dan memiliki ilmu yang luas."
+                },
+                {
+                  "scholar": "Abu Ya'la Al-Khalili",
+                  "text": "Dia adalah seorang yang terpercaya, besar, diterima dalam periwayatan, dan memiliki pengetahuan tentang hadis serta hafalan yang baik."
+                }
+              ]
+            },
+            {
+              "title": "Akhir Hayat",
+              "content": "Imam Ibnu Majah wafat dalam usia 64 tahun, tepatnya pada hari Senin, 22 Ramadan tahun 273 H. Prosesi shalat jenazah diimami langsung oleh saudaranya yang bernama Abu Bakar. Pemakaman beliau dilakukan oleh kedua saudaranya (Abu Bakar dan Abu Abdullah) bersama putra beliau yang bernama Abdullah."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imam-mazhab",
+      "title": "Imam Mazhab",
+      "description": "Empat imam besar pendiri mazhab fikih utama dalam Islam",
+      "scholars": [
+        {
+          "id": "imam-abu-hanifah",
+          "name": "Imam Abu Hanifah",
+          "fullName": "Nu'man bin Tsabit bin Marzuban Al-Kufi",
+          "kunyah": "Abu Hanifah",
+          "birthYear": "80 H",
+          "birthPlace": "Kufah, Irak",
+          "deathYear": "150 H",
+          "deathPlace": "Baghdad, Irak",
+          "age": 70,
+          "masterwork": "Al-Fiqh al-Akbar",
+          "color": "rose",
+          "sections": [
+            {
+              "title": "Nama, Nasab, dan Kelahiran",
+              "content": "Nama asli beliau adalah Nu'man bin Zauthi At-Taimi Al-Kufi, lebih dikenal dengan nama Nu'man bin Tsabit bin Marzuban. Kunyah beliau Abu Hanifah, konon karena beliau selalu membawa tinta ke mana pun pergi, yang dalam bahasa Irak disebut Hanifah. Beliau berasal dari keturunan Persia (Kabul, Afghanistan). Kakeknya, Marzuban, memeluk Islam pada masa pemerintahan Khalifah Umar bin Khattab. Lahir di kota Kufah pada tahun 80 Hijriah (699 M), di masa kekhalifahan Abdul Malik bin Marwan."
+            },
+            {
+              "title": "Masa Kecil dan Kepribadian",
+              "content": "Tumbuh di lingkungan keluarga yang saleh dan berada. Ayahnya adalah seorang pebisnis sukses di Kufah. Abu Hanifah mewarisi bakat tersebut dan menjadi pedagang kain sutra serta pakaian yang sukses. Berperawakan sedang dan ideal, berkulit sawo matang, tampan, serta memancarkan wibawa yang besar. Selalu tampil sangat rapi dengan ciri khas memakai kopiah panjang berwarna hitam. Beliau memiliki suara yang bagus dan dikenal tenang — tidak banyak bicara kecuali untuk menjawab pertanyaan."
+            },
+            {
+              "title": "Perjalanan Menuntut Ilmu",
+              "content": "Sejak kecil beliau sudah menghafal Al-Qur'an dan mulai serius mendalami ilmu syariat pada usia remaja. Pada usia 16 tahun, melakukan perjalanan ke Makkah dan Madinah untuk berguru kepada ulama-ulama besar. Semangat belajarnya luar biasa; beliau tercatat melaksanakan ibadah haji sebanyak 55 kali, dan selalu memanfaatkan momentum haji untuk belajar, berdiskusi, dan berdakwah bersama para ulama dari berbagai penjuru dunia Islam."
+            },
+            {
+              "title": "Guru-Guru Beliau",
+              "content": "Imam Abu Hanifah memiliki sekitar 4.000 orang guru, terdiri dari: 7 orang Sahabat Nabi (di antaranya Anas bin Malik, Sahl bin Sa'd, dan Jabir bin Abdullah), 93 ulama dari kalangan Tabi'in (salah satu yang paling utama adalah Atha' bin Abi Rabah), serta ribuan ulama dari kalangan Tabi' at-Tabi'in (seperti Hammad bin Sulaiman)."
+            },
+            {
+              "title": "Metode Ijtihad dan Mazhab Hanafi",
+              "content": "Meskipun sering dijuluki sebagai tokoh rasionalis (Ahlu Ra'yi), Imam Abu Hanifah memiliki komitmen yang sangat total terhadap Sunah Nabi. Dalam menetapkan hukum, beliau menggunakan urutan prioritas yang ketat: Al-Qur'an → Sunah/Hadis → Fatwa Sahabat → Qiyas (analogi) jika sangat dibutuhkan. Di dalam majelisnya, beliau menerapkan metode diskusi interaktif — melemparkan permasalahan ke dalam forum bersama murid-muridnya untuk dibedah, diperdebatkan, dan dianalisis secara mendalam sebelum ditarik menjadi kesimpulan hukum. Dari forum diskusi dinamis inilah lahir Mazhab Hanafi."
+            },
+            {
+              "title": "Murid dan Karya Utama",
+              "content": "Murid-murid terkemuka beliau antara lain Abu Yusuf Al-Qadhi, Muhammad asy-Syaibani, dan Az-Zuffar. Karya monumental beliau adalah kitab Al-Fiqh al-Akbar yang membahas fondasi akidah Islam."
+            },
+            {
+              "title": "Karakter dan Ibadah",
+              "content": "Beliau adalah ahli ibadah yang luar biasa. Selama 40 tahun, beliau terbiasa melakukan shalat Isya dan Subuh dengan satu wudhu yang sama karena menghidupkan seluruh waktu malamnya tanpa tidur. Beliau sering menangis dan berdoa dengan penuh rasa takut kepada Allah hingga fajar menyingsing. Dalam berbisnis, pernah suatu ketika beliau menyedekahkan seluruh uang hasil penjualan sepotong baju karena rekan yang diutusnya lupa menjelaskan cacat pada baju tersebut. Beliau juga bernazar bahwa setiap membelanjakan uang untuk keluarganya, beliau wajib mengeluarkan sedekah kepada fakir miskin dengan jumlah yang sama."
+            },
+            {
+              "title": "Sanjungan Para Ulama",
+              "content": null,
+              "quotes": [
+                {
+                  "text": "Dalam ilmu fikih, orang-orang (para ulama) adalah satu keluarga (tanggungan) dengan Imam Abu Hanifah.",
+                  "scholar": "Imam Asy-Syafi'i"
+                },
+                {
+                  "text": "Abu Hanifah adalah orang yang dapat dipercaya, dia tidak meriwayatkan hadis kecuali yang telah dia hafal.",
+                  "scholar": "Yahya bin Ma'in"
+                },
+                {
+                  "text": "Abu Hanifah adalah ahli fikih yang wara', sangat dermawan, penyabar, serta tidak pernah tergiur oleh harta dan jabatan dari pihak penguasa.",
+                  "scholar": "Al-Fudhail bin Iyadh"
+                }
+              ]
+            },
+            {
+              "title": "Cobaan, Penjara, dan Wafat",
+              "content": "Keteguhan prinsip Imam Abu Hanifah untuk menolak masuk ke dalam lingkaran kekuasaan membuatnya menanggung siksaan berat. Di era Bani Umayyah, beliau dicambuk 110 kali karena menolak jabatan hakim agung (Qadhi). Di era Bani Abbasiyah, Khalifah Al-Manshur kembali memaksanya menduduki jabatan hakim negara, namun beliau bersumpah menolak. Akibat penolakannya, beliau dijebloskan ke penjara bawah tanah di Baghdad. Beliau wafat di dalam penjara pada tahun 150 Hijriah (767 M) dalam usia 70 tahun. Sebuah riwayat kuat menyebutkan beliau wafat karena diracun, dan menghembuskan napas terakhir dalam keadaan bersujud kepada Allah. Jenazah beliau dishalatkan bergantian oleh enam kelompok besar penduduk Baghdad. Masjid Imam Abu Hanifah kini berdiri megah di kota Baghdad, Irak."
+            }
+          ],
+          "quotes": [
+            {
+              "text": "Dalam ilmu fikih, orang-orang (para ulama) adalah satu keluarga (tanggungan) dengan Imam Abu Hanifah.",
+              "source": "Imam Asy-Syafi'i"
+            }
+          ]
+        },
+        {
+          "id": "imam-malik",
+          "name": "Imam Malik bin Anas",
+          "fullName": "Abu Abdullah Malik bin Anas bin Malik bin Abu Amir Al-Ashbahi Al-Humairi",
+          "kunyah": "Abu Abdullah — Imam Dar Al-Hijrah",
+          "birthYear": "93 H",
+          "birthPlace": "Madinah",
+          "deathYear": "179 H",
+          "deathPlace": "Madinah",
+          "age": 85,
+          "masterwork": "Al-Muwaththa'",
+          "color": "amber",
+          "sections": [
+            {
+              "title": "Nama, Nasab, dan Kelahiran",
+              "content": "Nama lengkap beliau adalah Abu Abdullah Malik bin Anas bin Malik bin Abu Amir bin Amr bin Al-Harits Al-Ashbahi Al-Humairi. Dikenal dengan gelar Imam Dar Al-Hijrah (Imam kota Madinah). Kakeknya, Abu Amir, adalah seorang sahabat Nabi yang mulia. Beliau lahir di Madinah; pendapat terkuat menyatakan beliau lahir pada tahun 93 Hijriah, bertepatan dengan tahun wafatnya sahabat Anas bin Malik."
+            },
+            {
+              "title": "Karakter Fisik dan Penampilan",
+              "content": "Berpostur tubuh tinggi besar, memiliki kepala yang besar, bermata biru, serta berkulit sangat putih hingga agak kemerahan (pirang). Rambut dan jenggotnya dibiarkan memutih alami tanpa disemir, dengan jenggot memanjang hingga dada. Selalu tampil sangat rapi dan wangi. Beliau menyukai pakaian berwarna putih halus dari Yaman. Ciri khasnya mengenakan sorban yang diikat di bawah dagu dengan ujungnya menjuntai di antara kedua bahu."
+            },
+            {
+              "title": "Masa Kecil dan Lingkungan Keilmuan",
+              "content": "Imam Malik tumbuh dalam keluarga yang mendedikasikan diri pada ilmu hadis di kota Madinah. Didukung kondisi finansial yang berkecukupan, beliau tidak tertarik pada perdagangan atau pekerjaan lain. Beliau memfokuskan seluruh hidupnya untuk berhidmat pada ilmu dan periwayatan hadis. Mulai giat menuntut ilmu pada tahun 110 Hijriah dan sudah mulai berfatwa sejak usia 21 tahun. Karena kecintaannya pada Madinah, beliau sangat selektif dan jarang meriwayatkan hadis dari ulama luar kota suci tersebut."
+            },
+            {
+              "title": "Guru dan Murid",
+              "content": "Guru-guru utama beliau berasal dari ulama Madinah: Nafi' (Maula Ibnu Umar), Ibnu Syihab Az-Zuhri, Said Al-Maqbari, Ibnu Al-Munkadir, Nu'aim Al-Mujammar, Rabi'ah bin Abi Abdurrahman, dan Abdullah bin Dinar. Murid-murid terkemuka: Imam Asy-Syafi'i, Ibnu Al-Qasim & Ashhab (penyebar di Mesir), Asad bin Al-Furat (penyebar di Afrika), Yahya bin Yahya Al-Laitsi (penyebar di Andalusia), Abdurrahman bin Mahdi & Abdullah bin Muslimah (Irak)."
+            },
+            {
+              "title": "Adab dan Penghormatan terhadap Hadis",
+              "content": "Imam Malik sangat mengagungkan hadis Rasulullah SAW. Jika hendak membacakan atau mengajarkan hadis, beliau melakukan persiapan khusus: mandi atau berwudu, memakai wewangian terbaik, merapikan jenggot dan pakaian, serta duduk dengan posisi tegak, tenang, dan penuh sopan santun. Beliau sangat menghindari menyampaikan hadis sambil berdiri, berjalan, atau dalam keadaan tergesa-gesa."
+            },
+            {
+              "title": "Kehati-hatian dalam Berfatwa",
+              "content": "Perisai utama beliau dalam menjaga agama adalah ucapan 'Aku tidak tahu'. Beliau tidak pernah malu mengaku tidak tahu jika masalah tersebut belum jelas dalilnya. Pernah suatu ketika beliau ditanya mengenai 48 masalah agama, dan 32 di antaranya dijawab dengan ungkapan: 'Aku tidak mengetahui.'"
+            },
+            {
+              "title": "Akidah dan Ketegasan Membela Sunnah",
+              "content": "Imam Malik merupakan pilar utama Ahlussunnah wal Jama'ah. Tentang Iman: iman adalah ucapan dan perbuatan, bertambah dengan ketaatan dan berkurang dengan maksiat. Tentang Al-Qur'an: murni Kalamullah (firman Allah) dan bukan makhluk. Tentang Istiwa' (bersemayamnya Allah di atas 'Arsy), beliau menjawab: 'Istiwa' itu sudah maklum maknanya, adapun bagaimana (kaifiatnya) tidak dapat dinalar akal, menanyakannya adalah bid'ah, dan mengimaninya adalah wajib!'"
+            },
+            {
+              "title": "Ujian Fisik (Mihnah)",
+              "content": "Keteguhan prinsip Imam Malik mengundang ujian dari penguasa. Beliau ditangkap, dicambuk, ditarik tangannya dengan kejam hingga mengalami dislokasi (patah/pergeseran sendi bahu), lalu diarak keliling kota di atas punggung keledai. Siksaan ini dijatuhkan karena beliau tetap kokoh mengeluarkan fatwa: 'Talak yang diucapkan dalam keadaan terpaksa adalah tidak sah.' Fatwa ini tidak disukai penguasa karena secara tidak langsung melegitimasi bahwa baiat politik yang dipaksakan juga tidak sah."
+            },
+            {
+              "title": "Karya-Karya Monumental",
+              "content": "1. Al-Muwaththa': Karya terbesar yang disusun selama 40 tahun dan dikoreksi setiap 40 hari. Memuat ribuan hadis sahih penduduk Hijaz serta fatwa para sahabat dan tabi'in. Disodorkan kepada 70 ulama fikih Madinah dan semuanya menyepakatinya, sehingga dinamakan Al-Muwaththa' (Yang Disepakati). 2. Risalah fi Al-Qadr (tentang takdir). 3. Risalah fi Al-Aqdiyah (tentang hukum dan peradilan). 4. Tafsir Al-Qur'an. 5. Buku Ilmu Falak (pembahasan mengenai bulan dan bintang)."
+            },
+            {
+              "title": "Sanjungan Para Ulama",
+              "content": null,
+              "quotes": [
+                {
+                  "text": "Jika ulama disebutkan, maka Malik adalah bintangnya.",
+                  "scholar": "Imam Asy-Syafi'i"
+                },
+                {
+                  "text": "Siapa yang ingin belajar hadis, maka dia perlu bersandar kepada Malik.",
+                  "scholar": "Imam Asy-Syafi'i"
+                },
+                {
+                  "text": "Malik adalah pemimpinnya para ulama, dan imam dalam hadis dan fikih.",
+                  "scholar": "Imam Ahmad bin Hambal"
+                },
+                {
+                  "text": "Demi Allah, saya belum pernah melihat seseorang yang lebih cepat dalam memberikan jawaban darinya, seseorang yang jujur dan memiliki kesederhanaan yang sempurna.",
+                  "scholar": "Imam Abu Hanifah"
+                }
+              ]
+            },
+            {
+              "title": "Akhir Hayat",
+              "content": "Menjelang wafatnya, Imam Malik jatuh sakit selama beberapa hari di kota Madinah. Di saat-saat terakhirnya, beliau mengucapkan kalimat syahadat dan melantunkan ayat surah Ar-Rum ayat 4: 'Hanya milik Allah segala urusan, baik sebelum maupun setelahnya.' Beliau wafat pada pagi hari tanggal 14 Rabiul Awal tahun 179 Hijriah di masa kekhalifahan Harun Ar-Rasyid, dalam usia 85 tahun. Jenazah beliau disalatkan langsung oleh Gubernur Madinah dan dimakamkan di pekuburan suci Baqi'."
+            }
+          ],
+          "quotes": [
+            {
+              "text": "Jika ulama disebutkan, maka Malik adalah bintangnya.",
+              "source": "Imam Asy-Syafi'i"
+            },
+            {
+              "text": "Istiwa' itu sudah maklum maknanya, adapun 'bagaimana' (kaifiatnya) tidak dapat dinalar akal, menanyakannya adalah bid'ah, dan mengimaninya adalah wajib!",
+              "source": "Imam Malik bin Anas"
+            }
+          ]
+        },
+        {
+          "id": "imam-syafii",
+          "name": "Imam Asy-Syafi'i",
+          "fullName": "Muhammad bin Idris bin al-'Abbas bin 'Utsman bin Syafi' bin as-Saib",
+          "kunyah": "Abu Abdillah — Nashir As-Sunnah",
+          "birthYear": "150 H",
+          "birthPlace": "Gaza, Syam",
+          "deathYear": "204 H",
+          "deathPlace": "Mesir",
+          "age": 54,
+          "masterwork": "Ar-Risalah & Al-Umm",
+          "color": "sky",
+          "sections": [
+            {
+              "title": "Nama, Nasab, dan Kelahiran",
+              "content": "Nama lengkap beliau Muhammad bin Idris bin al-'Abbas bin 'Utsman bin Syafi' bin as-Saib bin 'Ubayd bin 'Abdu Zayd bin Hasyim bin al-Muththalib bin 'Abdu Manaf bin Qushay. Kunyah beliau Abu Abdillah. Nasab beliau sangat mulia — murni dari bangsa Arab Quraisy. Nasab beliau bertemu dengan nasab Rasulullah SAW pada kakeknya, Abdu Manaf, sehingga terhitung sebagai kerabat Nabi SAW dari garis Hasyim bin al-Muththalib. Lahir di Gaza (Syam) pada tahun 150 Hijriah, bertepatan dengan tahun wafatnya Imam Abu Hanifah. Berbadan tinggi, gagah, berwajah simpatik, dan sangat tampan."
+            },
+            {
+              "title": "Masa Kecil dan Perjuangan Menuntut Ilmu",
+              "content": "Ayah beliau wafat di usia muda di Asqalan. Pada usia dua tahun, beliau dibawa ibunya pindah ke Makkah. Tumbuh besar dalam keadaan yatim dan kondisi ekonomi yang miskin. Kemiskinan tidak menjadi penghalang; di Makkah, beliau mengumpulkan pecahan tembikar, potongan kulit, tulang unta, dan pelepah kurma dari tempat sampah untuk dijadikan alat tulis. Pada usia 7 tahun telah menghafal seluruh Al-Qur'an. Pada usia 12 tahun telah menghafal kitab Al-Muwaththa' karya Imam Malik. Awalnya mendalami sastra, syair Arab, sejarah, dan memanah (mampu mengenai sasaran 9 dari 10 tembakan). Atas saran Muslim bin Khalid Az-Zanji (Mufti Makkah), akhirnya memfokuskan diri pada ilmu fikih."
+            },
+            {
+              "title": "Pengembaraan Ilmiah (Rihlah)",
+              "content": "Rihlah ke Madinah: Berguru kepada Imam Malik bin Anas yang sangat takjub dengan hafalan dan kecerdasannya, dan berpesan: 'Sesungguhnya Allah telah menyinari hatimu dengan nur-Nya, maka jangan padamkan nur-Nya dengan berbuat maksiat.' Rihlah ke Yaman: Mengambil ilmu sekaligus bekerja, namun difitnah ingin memberontak bersama kelompok Alawiyah hingga diadukan ke hadapan Khalifah Harun Ar-Rasyid. Rihlah ke Irak (Baghdad): Membela Ash-habul Hadits yang terdominasi Ahlu Ra'yi, dan merumuskan mazhab pertamanya (Qaul Qadim). Rihlah ke Mesir (199 H): Merevisi beberapa karyanya dan merumuskan pendapat baru (Qaul Jadid)."
+            },
+            {
+              "title": "Karakter dan Kepribadian",
+              "content": "Manajemen waktu yang ketat: sepertiga malam untuk menulis, sepertiga untuk shalat malam, sepertiga untuk tidur. Suara bacaan Al-Qur'an beliau sangat merdu hingga sering membuat jamaah menangis. Pernah membawa uang 10.000 dinar ke Makkah dan langsung membagikannya kepada orang miskin hingga habis tanpa sisa sebelum malam tiba. Sangat berhati-hati dari perkara syubhat — pernah menolak menginjak lantai istana Khalifah hanya karena lantainya dialasi karpet dari kain sutra."
+            },
+            {
+              "title": "Ketegasan Membela Sunnah",
+              "content": "Imam Asy-Syafi'i digelari Nashir As-Sunnah wa Al-Hadits (Pembela Sunnah dan Hadis) karena komitmen totalnya terhadap tuntunan Rasulullah SAW. Beliau sangat menentang ilmu kalam (teologi filsafat). Prinsip utama fondasi mazhab beliau: 'Apabila hadits itu adalah hadits yang shahih, maka ketahuilah bahwa sesungguhnya itu adalah madzhabku.' Beliau berpesan kepada murid-muridnya, jika kelak ditemukan fatwa atau pendapatnya bertentangan dengan hadis sahih, maka umat harus membuang pendapatnya dan wajib mengikuti hadis."
+            },
+            {
+              "title": "Sanjungan Para Ulama",
+              "content": null,
+              "quotes": [
+                {
+                  "text": "Imam Asy-Syafi'i bagaikan matahari bagi bumi dan kesehatan bagi tubuh manusia. Beliau adalah mujaddid (pembaharu agama) pada abad kedua Hijriah.",
+                  "scholar": "Imam Ahmad bin Hambal"
+                },
+                {
+                  "text": "Jika Asy-Syafi'i meninggal, dunia kehilangan orang paling mulia di masanya.",
+                  "scholar": "Sufyan bin 'Uyainah"
+                },
+                {
+                  "text": "Kepandaian Imam Asy-Syafi'i jauh di atas Abu Hanifah, Abu Yusuf, maupun Muhammad bin Al-Hasan.",
+                  "scholar": "Abu Tsaur"
+                }
+              ]
+            },
+            {
+              "title": "Karya-Karya Monumental",
+              "content": "Karya-karya beliau memiliki kualitas balaghah (retorika) dan keindahan sastra Arab yang sangat tinggi, mencapai seratusan judul. Dua yang paling fenomenal: 1. Ar-Risalah: Kitab pertama dalam sejarah Islam yang meletakkan dasar-dasar ilmu Ushul Fiqh, memuat kaidah pengambilan hukum secara sistematis, konsep nasikh mansukh, serta kedudukan hadis dalam syariat. 2. Al-Umm: Kitab rujukan utama (masterpiece) fikih Mazhab Syafi'i yang memuat kodifikasi ratusan masalah hukum fikih secara komprehensif."
+            },
+            {
+              "title": "Akhir Hayat",
+              "content": "Di sisa hidupnya, Imam Asy-Syafi'i diuji dengan penyakit wasir (bawasir) kronis yang parah. Penyakit ini membuat darah beliau sering mengalir hingga membasahi pakaian dan kendaraan yang beliau tunggangi. Setelah menuliskan wasiat tauhid yang menyentuh kepada keluarganya, beliau menghembuskan napas terakhir di Mesir pada malam Jumat setelah shalat Isya', tepat pada hari terakhir bulan Rajab tahun 204 Hijriah, dalam usia 54 tahun."
+            }
+          ],
+          "quotes": [
+            {
+              "text": "Apabila hadits itu adalah hadits yang shahih, maka ketahuilah bahwa sesungguhnya itu adalah madzhabku.",
+              "source": "Imam Asy-Syafi'i"
+            },
+            {
+              "text": "Sesungguhnya Allah telah menyinari hatimu dengan nur-Nya, maka jangan padamkan nur-Nya dengan berbuat maksiat.",
+              "source": "Imam Malik kepada Asy-Syafi'i"
+            }
+          ]
+        },
+        {
+          "id": "imam-ahmad",
+          "name": "Imam Ahmad bin Hambal",
+          "fullName": "Ahmad bin Muhammad bin Hambal bin Hilal bin Asad bin Idris Al-Syaibani",
+          "kunyah": "Abu Abdillah — Imam Ahlu Sunnah",
+          "birthYear": "164 H",
+          "birthPlace": "Baghdad",
+          "deathYear": "241 H",
+          "deathPlace": "Baghdad",
+          "age": 77,
+          "masterwork": "Al-Musnad",
+          "color": "indigo",
+          "sections": [
+            {
+              "title": "Nama, Nasab, dan Kelahiran",
+              "content": "Nama lengkap beliau Ahmad bin Muhammad bin Hambal bin Hilal bin Asad bin Idris Al-Syaibani, dengan kunyah Abu Abdillah. Merupakan ras Arab murni yang garis keturunannya bersambung dengan keturunan Rasulullah SAW pada kakeknya yang bernama Nazzar. Lahir di kota Baghdad pada bulan Rabiul Awal tahun 164 Hijriah. Ayah beliau wafat dalam usia muda (sekitar 30 tahun) ketika Imam Ahmad masih bayi. Beliau tumbuh sebagai anak yatim dan dibesarkan oleh ibunya dengan penuh perhatian dan kasih sayang."
+            },
+            {
+              "title": "Keluarga dan Karakter Fisik",
+              "content": "Beliau baru menikah setelah usia melewati 40 tahun. Istri pertama: 'Abasa binti Al-Fadl (melahirkan putranya, Shalih). Istri kedua: Rayhana (melahirkan Abdullah). Juga memiliki seorang budak perempuan bernama Husn yang melahirkan beberapa anak, di antaranya Sa'id. Berpostur tinggi besar, bertubuh gagah, berwajah tampan dengan mata bercahaya, serta kulit sawo matang agak kemerahan. Sering memakai celak dan penampilannya sangat bersahaja — gemar mengenakan pakaian dari kain kasar berwarna putih yang mencerminkan sifat zuhudnya."
+            },
+            {
+              "title": "Perjalanan Menuntut Ilmu",
+              "content": "Mulai menuntut ilmu hadis secara intensif saat berusia 15-16 tahun. Melakukan rihlah yang sangat luas ke berbagai pusat ilmu: Kufah, Bashrah (dikunjungi hingga 5 kali), Hijaz, Syam, dan Yaman. Perjalanan ke Shan'a untuk menemui Abdurrazaq bin Hammam sangat berat — karena kehabisan bekal, beliau menyewakan diri untuk mengangkut barang dan bekerja sebagai penenun tikar demi menyambung hidup. Menunaikan ibadah haji sebanyak 5 kali, 3 di antaranya ditempuh dengan berjalan kaki."
+            },
+            {
+              "title": "Guru dan Murid",
+              "content": "Beliau memiliki guru berjumlah lebih dari 300 orang. Guru-guru utama: Husyaim bin Bashir, Sufyan bin 'Uyainah, Waki', Yazid bin Harun, dan Imam Asy-Syafi'i (yang mengajarkan dasar-dasar fikih serta nasikh mansukh). Murid-murid terkemuka: Imam Al-Bukhari, Imam Muslim, Abu Dawud, An-Nasa'i, At-Tirmidzi, Ibnu Majah, Yahya bin Ma'in, hingga kedua putranya sendiri (Shalih dan Abdullah)."
+            },
+            {
+              "title": "Sanjungan Ulama dan Kecerdasan",
+              "content": null,
+              "quotes": [
+                {
+                  "text": "Aku keluar dari Baghdad dan tidak meninggalkan di sana orang yang lebih bertakwa, lebih wara', lebih fakih, dan lebih berilmu selain Ahmad bin Hambal.",
+                  "scholar": "Imam Asy-Syafi'i"
+                },
+                {
+                  "text": "Imam Ahmad hafal 1.000.000 (satu juta) hadis, yang dikuasai secara mendalam lewat metode pembelajaran sistematis per bab.",
+                  "scholar": "Abu Zur'ah Ar-Razi"
+                }
+              ]
+            },
+            {
+              "title": "Kezuhudan dan Sifat Wara'",
+              "content": "Beliau sering hanya memakan roti kasar dan keras yang dilembekkan dengan air, serta jarang membeli buah-buahan kecuali semangka. Pernah menolak pemberian uang warisan yang halal senilai 100.000 dinar emas karena merasa hidupnya sudah berkecukupan. Beliau menolak tinggal di rumah putranya, Shalih, dan tidak mau menyentuh makanan dari sana karena Shalih menerima uang tunjangan dari pemerintah."
+            },
+            {
+              "title": "Ujian Mihnah — Keteguhan Membela Akidah",
+              "content": "Gelar Imam Ahlu Sunnah melekat berkat ketabahannya menghadapi ujian Mihnah (inkuisisi) terkait fitnah Khalqul Qur'an oleh kelompok Muktazilah. Penguasa memaksa para ulama meyakini Al-Qur'an adalah makhluk. Imam Ahmad dengan gagah berani menentang dan tetap kokoh bahwa Al-Qur'an adalah Kalamullah (firman Allah), bukan makhluk. Di masa Khalifah Al-Mu'tashim, beliau dipenjara selama 28 bulan, diseret dan dicambuk sangat kejam hingga pingsan berlumuran darah, namun tetap tidak mau menarik ucapannya. Di masa Khalifah Al-Watsiq, beliau diasingkan dan dijadikan tahanan rumah. Akhirnya di masa Khalifah Al-Mutawakkil, akidah Ahlussunnah berjaya kembali."
+            },
+            {
+              "title": "Karya-Karya Monumental",
+              "content": "1. Al-Musnad: Karya paling fenomenal berisi sekitar 30.000 hadis, diseleksi dari 150.000 hadis. 2. Kitab Al-'Ilal. 3. An-Nasikh wa Al-Mansukh. 4. Az-Zuhd. 5. Al-Masa'il, Al-Iman, & Al-Asyribah. 6. Ar-Radd 'ala Al-Jahmiyyah (Bantahan terhadap pemahaman sesat)."
+            },
+            {
+              "title": "Akhir Hayat",
+              "content": "Di akhir hayatnya, Imam Ahmad jatuh sakit dan mengalami demam tinggi dengan napas berat selama sembilan hari. Meski menahan rasa sakit luar biasa, beliau enggan mengeluh karena teringat sebuah atsar bahwa keluhan orang sakit tidak disukai. Beliau wafat pada hari Jumat, 12 Rabiul Awal tahun 241 Hijriah pada usia 77 tahun. Jenazah sang Imam diiringi lautan manusia yang diperkirakan mencapai 1.000.000 pelayat laki-laki dan sekitar 60.000 pelayat perempuan — menjadi saksi sejarah atas kecintaan umat terhadap sang Imam Ahlussunnah."
+            }
+          ],
+          "quotes": [
+            {
+              "text": "Aku keluar dari Baghdad dan tidak meninggalkan di sana orang yang lebih bertakwa, lebih wara', lebih fakih, dan lebih berilmu selain Ahmad bin Hambal.",
+              "source": "Imam Asy-Syafi'i"
+            },
+            {
+              "text": "Al-Qur'an adalah Kalamullah (firman Allah), bukan makhluk.",
+              "source": "Imam Ahmad bin Hambal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

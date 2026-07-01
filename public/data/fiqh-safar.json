@@ -1,0 +1,518 @@
+{
+  "title": "Panduan Safar",
+  "description": "Panduan komprehensif fikih perjalanan: qashar, jamak, puasa, tayammum, dan adab musafir. Berdasarkan Al-Qur'an, Hadits Shahih, dan fikih 4 madzhab.",
+  "source": "Buku 'Bekal Safar, Hukum dan Adab' oleh Abu Abdillah Syahrul Fatwa & Abu Ubaidah Yusuf as-Sidawi + rangkuman kitab lainnya",
+  "note": "Disarikan dari buku \"Bekal Safar, Hukum dan Adab\" oleh Abu Abdillah Syahrul Fatwa & Abu Ubaidah Yusuf as-Sidawi, serta rangkuman kitab lainnya.",
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Pendahuluan",
+      "icon": "information-circle-outline",
+      "sections": [
+        {
+          "id": "1-1",
+          "title": "Definisi Safar",
+          "type": "text",
+          "content": "Safar (سفر) secara bahasa berarti menyingkap — dikatakan safara 'an syai'in berarti menyingkap sesuatu. Secara istilah syar'i, safar adalah 'al-khuruj 'an 'imar al-wathan qashdan ila makanin ba'idin bi al-masafah allati taqtadhi rukhshatan' — keluar dari pemukiman menuju tempat yang jauh dengan jarak yang mensyaratkan keringanan (rukhsah).\n\nIslam mensyariatkan berbagai rukhsah bagi musafir: mengqashar shalat, menjamak shalat, berbuka puasa, mengusap khuff lebih lama, dan tayammum. Ini adalah manifestasi dari prinsip taysir (kemudahan) dalam syariat."
+        },
+        {
+          "id": "1-2",
+          "title": "Dalil Rukhsah Safar",
+          "type": "dalil",
+          "dalil": {
+            "text": "Allah menghendaki kemudahan bagimu dan tidak menghendaki kesukaran.",
+            "source": "QS. Al-Baqarah [2]: 185"
+          }
+        },
+        {
+          "id": "1-3",
+          "title": "Batas Jarak Safar",
+          "type": "text",
+          "content": "Ini adalah pembahasan paling khilafiyah dalam fiqh safar. Tidak ada nash yang secara eksplisit menyebutkan angka pasti, sehingga para ulama berijtihad. Pendapat yang kuat: tidak ada batas jarak tertentu — dikembalikan kepada 'urf (kebiasaan) masyarakat. Apa yang secara umum dianggap 'perjalanan' oleh masyarakat, itulah safar.\n\n📌 Mayoritas ulama kontemporer (termasuk Al-Albani dan Ibnu Utsaimin) menetapkan dengan 'urf. Ini lebih fleksibel dan sesuai maqashid syariah karena nash tidak menetapkan angka baku."
+        },
+        {
+          "id": "1-4",
+          "title": "Perbandingan Madzhab: Jarak Safar",
+          "type": "madhab-table",
+          "madhabTable": {
+            "headers": ["Madzhab", "Jarak Safar"],
+            "rows": [
+              { "madhab": "Hanafi", "opinion": "±90 km (3 marhalah). Rukhsah tetap berlaku selama belum berniat mukim 15 hari." },
+              { "madhab": "Maliki", "opinion": "±80 km (4 burud = 48 mil hasyimi). Atau perjalanan sehari-semalam dengan unta normal." },
+              { "madhab": "Syafi'i", "opinion": "±80,64 km (4 burud). Rukhsah gugur jika berniat mukim 4 hari atau lebih (di luar hari tiba & berangkat)." },
+              { "madhab": "Hambali", "opinion": "±80 km (4 burud). Batas mukim 4 hari — lebih dari itu dianggap muqim." }
+            ]
+          }
+        },
+        {
+          "id": "1-5",
+          "title": "Batas Lama Safar",
+          "type": "text",
+          "content": "Seorang musafir tetap dihukumi musafir selama ia belum berniat mukim secara menetap. Jumhur (Syafi'i, Maliki, Hambali): jika berniat mukim 4 hari atau lebih, rukhsah safar gugur. Hanafi: batasnya 15 hari. Selama niat mukim belum mencapai batas tersebut, rukhsah tetap berlaku."
+        },
+        {
+          "id": "1-6",
+          "title": "Hikmah Rukhsah Safar",
+          "type": "checklist",
+          "items": [
+            "Mengangkat masyaqqah (kesulitan) — safar adalah potongan dari azab (HR. Bukhari No. 1804), sehingga wajar bila syariat memberikan keringanan.",
+            "Memudahkan ibadah agar tidak ditinggalkan — tanpa rukhsah, banyak musafir akan meninggalkan shalat atau puasa. Rukhsah menjaga konsistensi ibadah.",
+            "Menunjukkan kasih sayang Allah — \"Allah hendak memberikan keringanan kepadamu, karena manusia diciptakan bersifat lemah.\" (QS. An-Nisa' [4]: 28)",
+            "Syiar Islam yang praktis dan realistis — agama yang bisa dijalankan dalam segala kondisi, tidak hanya saat nyaman di rumah."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Mengqashar Shalat",
+      "icon": "resize-outline",
+      "sections": [
+        {
+          "id": "2-1",
+          "title": "Dalil Qashar",
+          "type": "dalil",
+          "dalil": {
+            "text": "Dan apabila kamu bepergian di muka bumi, maka tidaklah berdosa kamu mengqashar shalat. (QS. An-Nisa' [4]: 101)\n\nRasulullah ﷺ bersabda: 'Itu adalah sedekah yang Allah berikan kepada kalian, maka terimalah sedekah-Nya.'",
+            "source": "HR. Muslim No. 686"
+          }
+        },
+        {
+          "id": "2-2",
+          "title": "Pengertian Qashar",
+          "type": "text",
+          "content": "Qashar (قصر) berarti meringkas — dalam konteks shalat, meringkas shalat empat rakaat menjadi dua rakaat. Ayat ini menyebutkan syarat 'takut diserang', namun dalam Sunnah syarat ini dihapus. Ya'la bin Umayyah bertanya kepada Umar: 'Mengapa kita masih mengqashar padahal sudah aman?' Umar menjawab: 'Aku bertanya kepada Nabi ﷺ. Beliau bersabda: Itu adalah sedekah yang Allah berikan kepada kalian.' — Inilah dalil bahwa qashar tetap berlaku dalam kondisi aman."
+        },
+        {
+          "id": "2-3",
+          "title": "Hukum Qashar Per Madzhab",
+          "type": "madhab-table",
+          "madhabTable": {
+            "headers": ["Madzhab", "Hukum Qashar"],
+            "rows": [
+              { "madhab": "Hanafi", "opinion": "WAJIB. Musafir tidak boleh menyempurnakan 4 rakaat. Jika sengaja 4 rakaat, shalat tidak sah." },
+              { "madhab": "Maliki", "opinion": "Sunnah mu'akkadah. Sangat dianjurkan, namun jika menyempurnakan tidak berdosa." },
+              { "madhab": "Syafi'i", "opinion": "Ja'iz (boleh). Qashar adalah rukhsah — boleh pilih qashar atau sempurna. Qashar lebih utama." },
+              { "madhab": "Hambali", "opinion": "Sunnah. Qashar lebih utama daripada sempurna. Menyempurnakan tetap sah." }
+            ]
+          }
+        },
+        {
+          "id": "2-4",
+          "title": "Syarat-Syarat Qashar",
+          "type": "checklist",
+          "items": [
+            "Perjalanan telah mencapai jarak safar (±80-90 km).",
+            "Perjalanan memiliki tujuan yang mubah (bukan maksiat).",
+            "Berniat qashar saat takbiratul ihram — 'ushalli fardha azh-zhuhri rak'ataini qashran lillahi ta'ala'.",
+            "Shalat yang diqashar adalah shalat ruba'iyyah (Zhuhur, Ashar, Isya) — Maghrib & Subuh TIDAK bisa diqashar.",
+            "Tidak bermakmum kepada imam yang menyempurnakan (muqim) — menurut jumhur.",
+            "Belum berniat mukim 4 hari (Syafi'i/Hambali) atau 15 hari (Hanafi)."
+          ]
+        },
+        {
+          "id": "2-5",
+          "title": "Catatan Penting",
+          "type": "info-box",
+          "infoType": "info",
+          "content": "Tidak disyaratkan adanya kesulitan (masyaqqah) — bahkan jika safar dengan pesawat first class yang nyaman, rukhsah qashar tetap berlaku. Karena berlakunya hukum dikaitkan dengan sebab (safar), bukan akibat (kelelahan)."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Menjamak Shalat",
+      "icon": "git-merge-outline",
+      "sections": [
+        {
+          "id": "3-1",
+          "title": "Dalil Jamak",
+          "type": "dalil",
+          "dalil": {
+            "text": "Rasulullah ﷺ menjamak shalat Zhuhur dan Ashar ketika beliau berangkat (safar) sebelum matahari tergelincir.",
+            "source": "HR. Bukhari No. 1111 dan Muslim No. 704 — Shahih"
+          }
+        },
+        {
+          "id": "3-2",
+          "title": "Pengertian Jamak",
+          "type": "text",
+          "content": "Jamak (جمع) berarti menggabungkan dua shalat dalam satu waktu — Zhuhur dengan Ashar, atau Maghrib dengan Isya. Jumhur (Maliki, Syafi'i, Hambali) membolehkan jamak dalam safar, hujan, sakit, dan kebutuhan mendesak. Hanafi hanya membolehkan jamak di Arafah & Muzdalifah saat haji."
+        },
+        {
+          "id": "3-3",
+          "title": "Hukum Jamak Per Madzhab",
+          "type": "madhab-table",
+          "madhabTable": {
+            "headers": ["Madzhab", "Hukum Jamak"],
+            "rows": [
+              { "madhab": "Hanafi", "opinion": "TIDAK boleh jamak dalam safar — hanya jamak haji (Arafah & Muzdalifah). Di luar itu hanya jamak suri." },
+              { "madhab": "Maliki", "opinion": "Boleh jamak taqdim & ta'khir untuk safar, hujan, sakit, lumpur, kondisi sulit. Syarat ringan." },
+              { "madhab": "Syafi'i", "opinion": "Boleh untuk safar (perjalanan aktif), hujan, sakit, dan hajat. Syarat lebih ketat." },
+              { "madhab": "Hambali", "opinion": "Paling fleksibel — jamak boleh untuk safar, hujan, salju, angin kencang, dingin ekstrem, sakit, menyusui." }
+            ]
+          }
+        },
+        {
+          "id": "3-4",
+          "title": "Jenis-Jenis Jamak: Taqdim & Ta'khir",
+          "type": "text",
+          "content": "Jamak Taqdim (جمع تقديم): menggabungkan dua shalat di waktu shalat pertama. Contoh: Zhuhur dan Ashar dikerjakan bersama di waktu Zhuhur.\n\nJamak Ta'khir (جمع تأخير): menggabungkan dua shalat di waktu shalat kedua. Contoh: Maghrib dan Isya dikerjakan di waktu Isya."
+        },
+        {
+          "id": "3-5",
+          "title": "Syarat Jamak Taqdim",
+          "type": "checklist",
+          "items": [
+            "Niat jamak saat shalat pertama.",
+            "Muwalah — tidak ada jeda panjang antara dua shalat.",
+            "Perjalanan masih berlangsung hingga selesai shalat kedua.",
+            "Tertib — shalat pertama dulu, baru shalat kedua."
+          ]
+        },
+        {
+          "id": "3-6",
+          "title": "Syarat Jamak Ta'khir",
+          "type": "checklist",
+          "items": [
+            "Niat jamak ta'khir sebelum waktu shalat pertama habis.",
+            "Perjalanan masih berlangsung hingga kedua shalat selesai.",
+            "Tidak disyaratkan tertib — boleh shalat kedua dulu baru pertama, meskipun yang utama adalah tertib."
+          ]
+        },
+        {
+          "id": "3-7",
+          "title": "Catatan: Jamak Bukan Hanya untuk Safar",
+          "type": "info-box",
+          "infoType": "tip",
+          "content": "Dalam madzhab Syafi'i, selain safar, jamak juga dibolehkan karena hujan lebat (khusus Zhuhur+Ashar), sakit, dan kondisi darurat. Dalilnya: Nabi ﷺ menjamak di Madinah tanpa safar dan tanpa hujan… beliau ingin tidak memberatkan umatnya. (HR. Muslim No. 705)"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Qashar & Jamak Sekaligus",
+      "icon": "layers-outline",
+      "sections": [
+        {
+          "id": "4-1",
+          "title": "Hukum Kombinasi Qashar & Jamak",
+          "type": "text",
+          "content": "Menggabungkan qashar dan jamak sekaligus — misalnya Zhuhur 2 rakaat + Ashar 2 rakaat dikerjakan bersama di waktu Zhuhur — adalah BOLEH menurut jumhur (Syafi'i, Maliki, Hambali). Hanafiyah tidak membolehkan jamak, sehingga otomatis tidak membolehkan kombinasi ini.\n\nTata caranya: niat qashar + niat jamak dalam satu kali takbiratul ihram shalat pertama. Jamak taqdim qashar: Shalat pertama (2 rakaat) → salam → shalat kedua (2 rakaat) → salam."
+        },
+        {
+          "id": "4-2",
+          "title": "Contoh Praktis 1: Berangkat Siang Hari",
+          "type": "info-box",
+          "infoType": "tip",
+          "content": "Anda berangkat pukul 13:00 (waktu Zhuhur) dalam perjalanan jarak jauh. Sebelum berangkat, shalat Zhuhur 2 rakaat (qashar) + Ashar 2 rakaat (jamak taqdim qashar). Sepanjang perjalanan hingga Maghrib, Anda tidak perlu berhenti untuk Ashar."
+        },
+        {
+          "id": "4-3",
+          "title": "Contoh Praktis 2: Tiba Malam Hari",
+          "type": "info-box",
+          "infoType": "tip",
+          "content": "Anda tiba di hotel pukul 22:00 (waktu Isya) setelah perjalanan panjang. Anda belum shalat Maghrib dan Isya. Shalat Maghrib 3 rakaat (Maghrib TIDAK diqashar!) lalu Isya 2 rakaat (qashar) — ini jamak ta'khir. Sah menurut jumhur."
+        },
+        {
+          "id": "4-4",
+          "title": "⚠️ INGAT: Maghrib & Subuh Tidak Bisa Diqashar",
+          "type": "info-box",
+          "infoType": "warning",
+          "content": "Shalat Maghrib TETAP 3 rakaat dalam kondisi apa pun. Subuh juga TETAP 2 rakaat. Qashar HANYA berlaku untuk shalat empat rakaat: Zhuhur, Ashar, dan Isya."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Puasa Bagi Musafir",
+      "icon": "moon-outline",
+      "sections": [
+        {
+          "id": "5-1",
+          "title": "Dalil Berbuka Puasa",
+          "type": "dalil",
+          "dalil": {
+            "text": "Dan barangsiapa sakit atau dalam perjalanan (lalu ia berbuka), maka (wajib menggantinya) sebanyak hari yang ditinggalkan itu pada hari-hari yang lain. Allah menghendaki kemudahan bagimu dan tidak menghendaki kesukaran.",
+            "source": "QS. Al-Baqarah [2]: 185"
+          }
+        },
+        {
+          "id": "5-2",
+          "title": "Hukum Berbuka Dalam Safar",
+          "type": "text",
+          "content": "Ayat ini eksplisit: musafir boleh berbuka. TIDAK ADA perbedaan pendapat di kalangan madzhab tentang kebolehan ini. Semua sepakat bahwa berbuka adalah rukhsah yang disyariatkan. Hari-hari puasa yang ditinggalkan wajib diqadha di hari lain di luar Ramadhan. Jika musafir memilih tetap puasa, puasanya sah dan tidak perlu qadha."
+        },
+        {
+          "id": "5-3",
+          "title": "Puasa vs Berbuka: Mana Lebih Utama?",
+          "type": "text",
+          "content": "Mayoritas ulama (Hanafi, Maliki, Syafi'i, sebagian Hambali): Berbuka lebih utama. Dalilnya: 'Bukanlah termasuk kebaikan berpuasa dalam safar.' (HR. Bukhari No. 1946). Nabi ﷺ juga berbuka saat safar dalam kondisi perang.\n\nPendapat kedua (sebagian sahabat & Hambali): Puasa lebih utama jika mampu. Dalil: 'Jika engkau berpuasa maka itu lebih baik bagimu.' (QS. Al-Baqarah [2]: 184)\n\nTARJIH WASATHIYAH: Kembalikan pada kondisi. Jika safar ringan (pesawat, kereta nyaman), boleh puasa. Jika safar berat (panas ekstrem, perjalanan darat panjang), berbuka lebih utama untuk mengambil rukhsah Allah."
+        },
+        {
+          "id": "5-4",
+          "title": "Perbandingan Madzhab: Puasa Safar",
+          "type": "madhab-table",
+          "madhabTable": {
+            "headers": ["Madzhab", "Pendapat"],
+            "rows": [
+              { "madhab": "Hanafi", "opinion": "Berbuka lebih utama. Jika tetap puasa dan berat, hukumnya makruh tahrim." },
+              { "madhab": "Maliki", "opinion": "Berbuka lebih utama secara mutlak. Jika tetap puasa, khilaf al-awla." },
+              { "madhab": "Syafi'i", "opinion": "Jika tidak memberatkan → puasa lebih utama. Jika memberatkan → berbuka lebih utama. Pendekatan paling adil." },
+              { "madhab": "Hambali", "opinion": "Sama dengan Syafi'i — pendekatan kontekstual." }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Tayammum Dalam Safar",
+      "icon": "water-outline",
+      "sections": [
+        {
+          "id": "6-1",
+          "title": "Dalil Tayammum",
+          "type": "dalil",
+          "dalil": {
+            "text": "...lalu kamu tidak memperoleh air, maka bertayammumlah dengan tanah yang baik (bersih).",
+            "source": "QS. Al-Ma'idah [5]: 6"
+          }
+        },
+        {
+          "id": "6-2",
+          "title": "Syarat-Syarat Tayammum",
+          "type": "checklist",
+          "items": [
+            "Tidak menemukan air setelah mencarinya (thalab).",
+            "Atau air ada tapi tidak bisa digunakan — karena sakit, dingin ekstrem tanpa alat pemanas, atau air hanya cukup untuk minum.",
+            "Masuk waktu shalat.",
+            "Menggunakan tanah/debu bersih (sha'id thayyib).",
+            "Niat tayammum dalam hati.",
+            "Islam, berakal, dan tidak berhadats besar (tayammum juga menggantikan mandi junub jika tidak ada air)."
+          ]
+        },
+        {
+          "id": "6-3",
+          "title": "Tata Cara Tayammum",
+          "type": "steps",
+          "steps": [
+            { "number": 1, "title": "Niat", "description": "Niat tayammum dalam hati." },
+            { "number": 2, "title": "Tepuk Tanah", "description": "Ucapkan basmalah, tepukkan kedua telapak tangan ke tanah/debu satu kali." },
+            { "number": 3, "title": "Tiup Debu", "description": "Tiup/tiup ringan kedua telapak tangan untuk mengurangi debu." },
+            { "number": 4, "title": "Usap Wajah", "description": "Usapkan ke seluruh wajah." },
+            { "number": 5, "title": "Usap Tangan", "description": "Usapkan telapak tangan kiri ke punggung tangan kanan hingga pergelangan, lalu sebaliknya. (Menurut Syafi'iyah: hingga siku. Menurut jumhur: cukup pergelangan.)" }
+          ]
+        },
+        {
+          "id": "6-4",
+          "title": "Pembatal Tayammum",
+          "type": "checklist",
+          "items": [
+            "Segala yang membatalkan wudhu.",
+            "Menemukan air sebelum shalat.",
+            "Selesai shalat (tayammum hanya berlaku untuk satu kali shalat wajib menurut jumhur; menurut Hanafi boleh untuk beberapa shalat)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Mengusap Khuff & Sepatu",
+      "icon": "shoe-outline",
+      "sections": [
+        {
+          "id": "7-1",
+          "title": "Dalil Mengusap Khuff",
+          "type": "dalil",
+          "dalil": {
+            "text": "Bahwa Rasulullah ﷺ mengusap kedua khuff (sepatu kulit)nya. (HR. Al-Mughirah bin Syu'bah — HR. Bukhari No. 206 dan Muslim No. 274, Shahih)\n\nRasulullah ﷺ menetapkan tiga hari tiga malam bagi musafir (untuk mengusap khuff), dan sehari semalam bagi yang mukim.",
+            "source": "HR. Muslim No. 276 — Mutawatir"
+          }
+        },
+        {
+          "id": "7-2",
+          "title": "Syarat Mengusap Khuff/Sepatu",
+          "type": "checklist",
+          "items": [
+            "Memakai khuff/sepatu dalam keadaan suci (telah berwudhu sempurna).",
+            "Khuff/sepatu menutupi kaki hingga mata kaki.",
+            "Khuff/sepatu suci, bukan dari bahan najis.",
+            "Mengusap bagian atas khuff, bukan bagian bawahnya.",
+            "Dalam batas waktu yang ditentukan."
+          ]
+        },
+        {
+          "id": "7-3",
+          "title": "Durasi Mengusap Bagi Musafir",
+          "type": "text",
+          "content": "Musafir: 3 hari 3 malam (72 jam) terhitung sejak pertama kali mengusap setelah hadats.\nMukim: 1 hari 1 malam (24 jam).\n\nJika musafir telah mencapai tujuan dan berniat mukim >4 hari, ia kembali ke durasi mukim (24 jam). Jika masa usap habis saat masih musafir, ia tidak boleh mengusap lagi hingga melepas dan berwudhu sempurna."
+        },
+        {
+          "id": "7-4",
+          "title": "Tips Praktis",
+          "type": "info-box",
+          "infoType": "tip",
+          "content": "Bagi musafir yang sering di pesawat/kereta dan kesulitan membasuh kaki, mengusap sepatu/kaus kaki tebal adalah solusi syar'i. Pastikan kaki dalam keadaan suci saat memakai sepatu di awal."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Shalat di Atas Kendaraan",
+      "icon": "car-outline",
+      "sections": [
+        {
+          "id": "8-1",
+          "title": "Shalat Sunnah di Kendaraan",
+          "type": "text",
+          "content": "SHALAT SUNNAH di atas kendaraan DIPERBOLEHKAN tanpa harus menghadap kiblat. Dalilnya praktik Nabi ﷺ:\n\n'Rasulullah ﷺ shalat (sunnah) di atas kendaraannya ke arah mana pun kendaraan menghadap. Namun jika beliau ingin shalat wajib, beliau turun dan menghadap kiblat.' (HR. Bukhari No. 1098)\n\nGerakan shalat diadaptasi — ruku' dan sujud dengan isyarat (sujud lebih rendah dari ruku')."
+        },
+        {
+          "id": "8-2",
+          "title": "Shalat Wajib di Kendaraan",
+          "type": "info-box",
+          "infoType": "warning",
+          "content": "Shalat wajib: WAJIB menghadap kiblat dan dilakukan dengan gerakan sempurna. Jika tidak mungkin (seperti di pesawat saat turbulensi atau take-off/landing), maka shalat dilakukan semampunya: berdiri → jika tidak bisa, duduk → jika tidak bisa, berbaring dengan isyarat. Allah berfirman: 'Bertakwalah kepada Allah semampu kalian.' (QS. At-Taghabun [64]: 16)"
+        },
+        {
+          "id": "8-3",
+          "title": "Di Pesawat Terbang",
+          "type": "text",
+          "content": "Shalat wajib tetap harus dikerjakan tepat waktu. Jika waktu sempit dan tidak memungkinkan turun, shalatlah di kursi dengan gerakan semampunya — menghadap kiblat jika memungkinkan, jika tidak maka ke arah mana pun. Ini pendapat mayoritas ulama kontemporer termasuk fatwa Al-Lajnah ad-Da'imah dan Majma' al-Fiqh al-Islami (OKI)."
+        },
+        {
+          "id": "8-4",
+          "title": "Menghadap Kiblat Saat Safar",
+          "type": "text",
+          "content": "Kewajiban menghadap kiblat saat shalat wajib tetap berlaku selama memungkinkan. Jika ragu arah kiblat dan tidak ada petunjuk (kompas, aplikasi), berijtihad (taharri) dan shalat ke arah yang diyakini paling mendekati. Shalatnya sah meskipun ternyata arahnya salah — karena ia telah berusaha.\n\nSaat ini dengan adanya GPS dan aplikasi kiblat, ijtihad hampir tidak diperlukan. Gunakan sarana yang tersedia."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Adab & Doa Safar",
+      "icon": "compass-outline",
+      "sections": [
+        {
+          "id": "9-1",
+          "title": "Sunnah Sebelum Safar",
+          "type": "checklist",
+          "items": [
+            "Shalat istikharah sebelum berangkat — memohon petunjuk Allah tentang perjalanan.",
+            "Berpamitan dan meminta doa — doa pamitan: 'Astawdi'ullaha dinaka wa amanataka wa khawatima 'amalik' (Aku titipkan kepada Allah agamamu, amanahmu, dan akhir amalanmu).",
+            "Safar di hari Kamis — ini sunnah yang sering dilakukan Nabi ﷺ (HR. Bukhari No. 2949).",
+            "Safar berjamaah minimal bertiga — 'Satu penunggang adalah setan, dua penunggang adalah dua setan, tiga penunggang adalah rombongan.' (HR. Abu Dawud No. 2607)",
+            "Menunjuk pemimpin rombongan (amir as-safar) agar keputusan terkoordinasi.",
+            "Takbir saat jalan menanjak, tasbih saat menurun — praktik Nabi ﷺ (HR. Bukhari No. 2994)."
+          ]
+        },
+        {
+          "id": "9-2",
+          "title": "Doa Keluar Rumah",
+          "type": "arabic-dua",
+          "arabic": "بِسْمِ اللَّهِ تَوَكَّلْتُ عَلَى اللَّهِ، وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ",
+          "transliteration": "Bismillahi tawakkaltu 'alallah, wa laa hawla wa laa quwwata illa billah",
+          "translation": "Dengan nama Allah, aku bertawakal kepada Allah. Tiada daya dan upaya kecuali dengan (pertolongan) Allah."
+        },
+        {
+          "id": "9-3",
+          "title": "Doa Naik Kendaraan",
+          "type": "arabic-dua",
+          "arabic": "سُبْحَانَ الَّذِي سَخَّرَ لَنَا هَٰذَا وَمَا كُنَّا لَهُ مُقْرِنِينَ وَإِنَّا إِلَىٰ رَبِّنَا لَمُنقَلِبُونَ",
+          "transliteration": "Subhanalladzi sakhkhara lana hadza wa ma kunna lahu muqrinin, wa inna ila rabbina lamunqalibun",
+          "translation": "Mahasuci Allah yang telah menundukkan untuk kami kendaraan ini, padahal kami sebelumnya tidak mampu menguasainya. Dan sesungguhnya kami akan kembali kepada Tuhan kami. (QS. Az-Zukhruf [43]: 13-14)"
+        },
+        {
+          "id": "9-4",
+          "title": "Doa Safar Lengkap",
+          "type": "arabic-dua",
+          "arabic": "اللَّهُمَّ إِنَّا نَسْأَلُكَ فِي سَفَرِنَا هَٰذَا الْبِرَّ وَالتَّقْوَىٰ، وَمِنَ الْعَمَلِ مَا تَرْضَىٰ. اللَّهُمَّ هَوِّنْ عَلَيْنَا سَفَرَنَا هَٰذَا وَاطْوِ عَنَّا بُعْدَهُ. اللَّهُمَّ أَنْتَ الصَّاحِبُ فِي السَّفَرِ وَالْخَلِيفَةُ فِي الْأَهْلِ",
+          "transliteration": "Allahumma inna nas'aluka fi safarina hadzal birra wat taqwa, wa minal 'amali ma tardha. Allahumma hawwin 'alaina safarana hadza wathwi 'anna bu'dahu. Allahumma antash shahibu fis safari wal khalifatu fil ahli",
+          "translation": "Ya Allah, kami memohon kepada-Mu kebaikan dan ketakwaan dalam perjalanan kami ini, dan amal yang Engkau ridhai. Ya Allah, mudahkanlah perjalanan kami ini dan dekatkanlah jaraknya. Ya Allah, Engkaulah teman dalam perjalanan dan pengganti bagi keluarga (yang ditinggalkan).",
+          "note": "HR. Muslim No. 1342 — Shahih"
+        },
+        {
+          "id": "9-5",
+          "title": "Adab Selama Safar",
+          "type": "checklist",
+          "items": [
+            "Takwa kepada Allah di mana pun berada — jangan biarkan safar menjadi ajang maksiat.",
+            "Istirahat di tengah perjalanan — beri hak badan. Jika mengemudi, istirahat cukup agar tidak mengantuk.",
+            "Pilih tempat istirahat yang aman — hindari di jalan karena itu tempat kendaraan lewat dan gangguan di malam hari (HR. Muslim 1926).",
+            "Berkumpul, jangan berpencar — berpencarnya kalian adalah dari setan (HR. Abu Dawud 2628).",
+            "Segera pulang bila urusan selesai — safar adalah potongan dari azab, menghambat makan, minum, dan tidur (HR. Bukhari & Muslim)."
+          ]
+        },
+        {
+          "id": "9-6",
+          "title": "Hukum Wanita Safar Tanpa Mahram",
+          "type": "text",
+          "content": "Hadits utama: 'Janganlah seorang wanita bepergian (safar) kecuali bersama mahram.' (HR. Bukhari No. 1862 dan Muslim No. 1339)\n\nJumhur (Hanafi, Syafi'i, Hambali): HARAM safar tanpa mahram — baik safar wajib (haji) maupun sunnah. Kecuali safar darurat (menyelamatkan diri dari bahaya).\n\nMaliki & sebagian ulama kontemporer: BOLEH jika aman — misalnya dalam rombongan wanita terpercaya, dengan transportasi modern, atau haji dengan rombongan resmi.\n\nMajma' al-Fiqh al-Islami (OKI): Membolehkan wanita haji wajib dalam rombongan terpercaya tanpa mahram, dengan syarat aman.\n\nSikap wasathiyah: Untuk safar wajib (haji pertama), sebagian ulama kontemporer memberi kelonggaran dalam kondisi tertentu. Untuk safar sunnah/rekreasi, lebih baik bersama mahram. Kehormatan dan keselamatan wanita tetap prioritas utama."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Kesalahan Dalam Safar",
+      "icon": "warning-outline",
+      "sections": [
+        {
+          "id": "10-1",
+          "title": "Thiyarah (Merasa Sial)",
+          "type": "text",
+          "content": "Nabi ﷺ telah membatalkan perkara jahiliyyah termasuk tathayyur — merasa sial dengan burung atau lainnya. Sabda Nabi ﷺ: 'Tidak ada penyakit menular dan thiyarah (merasa sial), dan saya menyukai ucapan yang baik.' (HR. Muslim 2223).\n\nSebaliknya, bertawakkallah bulat kepada Allah. Kalau bimbang, lakukan shalat istikharah, berdoa, dan bermusyawarah dengan orang berpengalaman."
+        },
+        {
+          "id": "10-2",
+          "title": "Kesalahan Umum Dalam Safar",
+          "type": "checklist",
+          "items": [
+            "Safar sendirian (tanpa teman) — dilarang kecuali darurat. Nabi ﷺ melarang seseorang bepergian sendirian (HR. Bukhari).",
+            "Tidak shalat tepat waktu — banyak yang menunda shalat dengan alasan safar. Padahal jamak adalah RUKHSAH, bukan alasan meninggalkan shalat.",
+            "Meninggalkan shalat berjamaah saat safar — tetap dianjurkan berjamaah jika memungkinkan, meskipun dengan cara jamak qashar.",
+            "Tidak membaca doa safar — melewatkan keberkahan besar. Musafir yang berdoa termasuk golongan yang doanya mustajab (HR. Abu Dawud No. 1535).",
+            "Berlebihan dalam mengambil rukhsah — misalnya terus-menerus menjamak padahal sudah tiba di tujuan dan bisa shalat normal.",
+            "Suami/istri mengabaikan hak pasangan saat safar — tetap jaga komunikasi dan kabari keluarga.",
+            "Lalai dalam menjaga aurat dan pergaulan — terutama saat di bandara, pesawat, hotel. Safar bukan alasan melonggarkan aturan syariat.",
+            "Membawa barang haram atau maksiat dalam perjalanan — miras, obat terlarang, atau hal lain yang dilarang syariat."
+          ]
+        },
+        {
+          "id": "10-3",
+          "title": "Shalat Sebelum Safar?",
+          "type": "info-box",
+          "infoType": "warning",
+          "content": "Sebagian ulama mensunnahkan shalat 2 rakaat sebelum safar, namun hadits yang menjadi sandaran TIDAK SHAHIH. Suatu ibadah harus dibangun di atas dalil yang shahih. Yang disyariatkan adalah shalat istikharah (jika ragu), bukan shalat safar khusus."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Kesimpulan",
+      "icon": "book-outline",
+      "sections": [
+        {
+          "id": "11-1",
+          "title": "Ringkasan Panduan Safar",
+          "type": "checklist",
+          "items": [
+            "Safar adalah kondisi yang diakui syariat sebagai sebab rukhsah — qashar, jamak, berbuka puasa, tayammum, mengusap khuff lebih lama. Ini adalah 'sedekah dari Allah'.",
+            "Batas safar diperselisihkan (80-90 km), namun esensinya adalah 'urf — apa yang secara umum dianggap 'perjalanan'. Yang penting kemudahan, bukan kalkulasi kaku.",
+            "Qashar shalat adalah rukhsah dengan dalil qath'i. Jumhur memandangnya sunnah/ja'iz, memberi fleksibilitas.",
+            "Jamak shalat dibolehkan jumhur (Maliki, Syafi'i, Hambali) untuk safar dan kondisi sulit lainnya.",
+            "Puasa dalam safar — berbuka adalah rukhsah yang dianjurkan jika memberatkan. Pendekatan kontekstual paling adil.",
+            "Adab safar — doa, kebersamaan, kepemimpinan, dan zikir — mengubah perjalanan menjadi ibadah bernilai pahala.",
+            "Wanita dan safar — pendapat jumhur paling berhati-hati, fatwa kontemporer memberi kelonggaran terbatas dalam kondisi aman."
+          ]
+        },
+        {
+          "id": "11-2",
+          "title": "Penutup",
+          "type": "text",
+          "content": "Semoga panduan ini menjadi referensi praktis bagi setiap Muslim yang hendak melakukan perjalanan — sehingga safarnya bukan hanya selamat secara fisik, namun juga diberkahi dan bernilai ibadah.\n\nRukhsah safar bukan dispensasi yang memalukan — ia adalah ibadah karena melaksanakannya berarti menaati Allah dan Rasul-Nya dalam bentuk keringanan. 'Allah menyukai keringanan-Nya diambil, sebagaimana Dia membenci maksiat.' (HR. Ahmad)\n\nوالله أعلم بالصواب — Wallahu a'lam bish shawab."
+        }
+      ]
+    }
+  ]
+}

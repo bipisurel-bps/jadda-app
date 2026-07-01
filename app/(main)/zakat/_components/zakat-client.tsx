@@ -155,7 +155,7 @@ export default function ZakatClient() {
     <div className="max-w-2xl mx-auto space-y-6">
       {/* Header */}
       <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
-        <h1 className="font-display font-bold text-2xl text-foreground">Kalkulator Zakat</h1>
+        <h1 className="font-display font-bold text-2xl text-foreground">Hitung Zakat</h1>
         <p className="text-sm text-muted-foreground mt-1">Hitung zakat Anda sesuai ketentuan syariat Islam</p>
       </motion.div>
 

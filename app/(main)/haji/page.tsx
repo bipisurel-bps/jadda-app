@@ -2,11 +2,11 @@ import HajiClient from './_components/haji-client';
 import { BreadcrumbJsonLd, JsonLd } from '@/components/json-ld';
 
 export const metadata = {
-  title: 'Panduan Haji Lengkap Sesuai Sunnah — Jadda',
+  title: 'Tuntunan Haji Lengkap Sesuai Sunnah — Jadda',
   description: 'Tuntunan ringkas ibadah haji berdasarkan buku Mulakhos Fiqhi karya Syaikh Shaleh bin Fauzan. Meliputi syarat, miqat, ihram, wukuf Arafah, Muzdalifah, lempar jumrah, thawaf, dan doa haji.',
-  keywords: ['panduan haji', 'tata cara haji', 'manasik haji', 'doa haji', 'wukuf arafah', 'ihram haji', 'lempar jumrah', 'thawaf ifadhah', 'haji tamattuk', 'rukun haji'],
+  keywords: ['tuntunan haji', 'panduan haji', 'tata cara haji', 'manasik haji', 'doa haji', 'wukuf arafah', 'ihram haji', 'lempar jumrah', 'thawaf ifadhah', 'haji tamattuk', 'rukun haji'],
   openGraph: {
-    title: 'Panduan Haji Lengkap Sesuai Sunnah — Jadda',
+    title: 'Tuntunan Haji Lengkap Sesuai Sunnah — Jadda',
     description: 'Tuntunan ringkas ibadah haji: syarat, ihram, wukuf, muzdalifah, jumrah, thawaf & doa lengkap.',
     type: 'website',
     locale: 'id_ID',
@@ -19,7 +19,7 @@ export default function HajiPage() {
     <>
       <BreadcrumbJsonLd items={[
         { name: 'Beranda', url: baseUrl },
-        { name: 'Panduan Haji', url: `${baseUrl}/haji` },
+        { name: 'Tuntunan Haji', url: `${baseUrl}/haji` },
       ]} />
       <JsonLd data={{
         '@context': 'https://schema.org',
