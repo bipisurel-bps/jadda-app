@@ -52,25 +52,7 @@ const mainFeatures = [
   },
 ];
 
-/* ── Keilmuan section ── */
-const keilmuanFeatures = [
-  {
-    href: '/keilmuan/fiqh-safar',
-    icon: Compass,
-    title: 'Panduan Safar',
-    desc: 'Qashar, jamak, puasa musafir, tayammum & adab',
-    accent: 'cyan',
-  },
-  {
-    href: '/keilmuan/fiqh-jenazah',
-    icon: Heart,
-    title: 'Panduan Pengurusan Jamaah',
-    desc: 'Tata cara memandikan, mengkafani hingga pemakaman',
-    accent: 'green',
-  },
-];
-
-/* ── Lainnya section ── */
+/* ── Fitur Lainnya ── */
 const lainnyaFeatures = [
   {
     href: '/zakat',
@@ -106,6 +88,23 @@ const lainnyaFeatures = [
     title: 'Biografi Ulama',
     desc: 'Mengenal para imam hadits & ahli ilmu Islam',
     accent: 'emerald',
+    isLucide: true,
+  },
+  {
+    href: '/keilmuan/fiqh-safar',
+    icon: Compass,
+    title: 'Panduan Safar',
+    desc: 'Qashar, jamak, puasa musafir, tayammum & adab',
+    accent: 'cyan',
+    isLucide: true,
+  },
+  {
+    href: '/keilmuan/fiqh-jenazah',
+    icon: Heart,
+    title: 'Panduan Pengurusan Jamaah',
+    desc: 'Tata cara memandikan, mengkafani hingga pemakaman',
+    accent: 'green',
+    isLucide: true,
   },
 ];
 
@@ -254,35 +253,11 @@ export default function HomeClient() {
           </motion.div>
         </motion.div>
 
-        {/* ── Fitur Keilmuan ── */}
-        <motion.section
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-        >
-          <h2 className="font-display font-bold text-base md:text-lg text-white/60 mb-3">
-            Fitur Keilmuan
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
-            {keilmuanFeatures.map((f) => (
-              <FeatureCard
-                key={f.href}
-                href={f.href}
-                icon={f.icon}
-                title={f.title}
-                desc={f.desc}
-                accent={f.accent}
-                isLucide
-              />
-            ))}
-          </div>
-        </motion.section>
-
         {/* ── Fitur Lainnya ── */}
         <motion.section
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.5 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
         >
           <h2 className="font-display font-bold text-base md:text-lg text-white/60 mb-3">
             Fitur Lainnya
@@ -296,6 +271,7 @@ export default function HomeClient() {
                 title={f.title}
                 desc={f.desc}
                 accent={f.accent}
+                isLucide={f.isLucide}
               />
             ))}
           </div>
