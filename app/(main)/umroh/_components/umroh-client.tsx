@@ -88,21 +88,21 @@ function ArabicBlock({ arabic, transliteration }: { arabic: string; transliterat
   }, [arabic]);
 
   return (
-    <div className="my-3 rounded-xl bg-primary/5 dark:bg-primary/10 border border-primary/10 p-4">
+    <div className="my-3 rounded-xl bg-emerald-500/5 dark:bg-emerald-500/10 border border-emerald-500/10 p-4">
       <div className="flex items-start justify-between gap-2">
-        <p className="text-xl md:text-2xl font-arabic leading-[2.2] text-foreground text-right flex-1" dir="rtl">
+        <p className="text-xl md:text-2xl font-arabic leading-[2.2] text-white/85 text-right flex-1" dir="rtl">
           {arabic}
         </p>
         <button
           onClick={handleCopy}
-          className="flex-shrink-0 mt-1 p-1.5 rounded-lg hover:bg-primary/10 transition-colors"
+          className="flex-shrink-0 mt-1 p-1.5 rounded-lg hover:bg-emerald-500/10 transition-colors"
           aria-label="Salin teks Arab"
         >
-          {copied ? <Check size={16} className="text-green-500" /> : <Copy size={16} className="text-muted-foreground" />}
+          {copied ? <Check size={16} className="text-green-500" /> : <Copy size={16} className="text-white/35" />}
         </button>
       </div>
       {transliteration && (
-        <p className="mt-2 text-sm italic text-muted-foreground leading-relaxed">
+        <p className="mt-2 text-sm italic text-white/35 leading-relaxed">
           {transliteration}
         </p>
       )}
@@ -130,7 +130,7 @@ export default function UmrohClient() {
   if (!data) {
     return (
       <div className="flex items-center justify-center min-h-[50vh]">
-        <div className="animate-pulse text-muted-foreground">Memuat panduan umrah...</div>
+        <div className="animate-pulse text-white/35">Memuat panduan umrah...</div>
       </div>
     );
   }
@@ -147,17 +147,17 @@ export default function UmrohClient() {
         transition={{ duration: 0.5 }}
       >
         <div className="flex items-center gap-3 mb-2">
-          <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
-            <MapPin size={22} className="text-primary" />
+          <div className="w-10 h-10 rounded-xl bg-emerald-500/10 flex items-center justify-center">
+            <MapPin size={22} className="text-emerald-400" />
           </div>
           <div>
-            <h1 className="text-2xl md:text-3xl font-display font-bold text-foreground tracking-tight">
+            <h1 className="text-2xl md:text-3xl font-display font-bold text-white/85 tracking-tight">
               {data.title}
             </h1>
-            <p className="text-sm text-muted-foreground">{data.steps.length} langkah tata cara umrah</p>
+            <p className="text-sm text-white/35">{data.steps.length} langkah tata cara umrah</p>
           </div>
         </div>
-        <p className="text-sm text-muted-foreground mt-3 leading-relaxed">
+        <p className="text-sm text-white/35 mt-3 leading-relaxed">
           {data.description}
         </p>
       </motion.div>
@@ -169,7 +169,7 @@ export default function UmrohClient() {
           className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
             viewMode === 'accordion'
               ? 'bg-primary text-primary-foreground'
-              : 'bg-muted text-muted-foreground hover:bg-muted/80'
+              : 'bg-white/[0.04] text-white/35 hover:bg-white/80'
           }`}
         >
           Semua Langkah
@@ -179,7 +179,7 @@ export default function UmrohClient() {
           className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
             viewMode === 'stepper'
               ? 'bg-primary text-primary-foreground'
-              : 'bg-muted text-muted-foreground hover:bg-muted/80'
+              : 'bg-white/[0.04] text-white/35 hover:bg-white/80'
           }`}
         >
           Satu per Satu
@@ -198,25 +198,25 @@ export default function UmrohClient() {
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3, delay: idx * 0.05 }}
-                className="rounded-xl bg-card border border-border/50 shadow-sm overflow-hidden"
+                className="rounded-xl bg-white/[0.03] border border-white/50 shadow-sm overflow-hidden"
               >
                 <button
                   onClick={() => toggleStep(s.id)}
-                  className="w-full flex items-center gap-3 p-4 text-left hover:bg-muted/30 transition-colors"
+                  className="w-full flex items-center gap-3 p-4 text-left hover:bg-white/[0.03] transition-colors"
                 >
                   <div className={`w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 ${color}`}>
                     {stepIcons[s.icon] || <CircleDot size={20} />}
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2">
-                      <span className="text-xs font-bold text-muted-foreground">Langkah {s.id}</span>
+                      <span className="text-xs font-bold text-white/35">Langkah {s.id}</span>
                     </div>
-                    <h3 className="font-display font-bold text-foreground truncate">{s.title}</h3>
+                    <h3 className="font-display font-bold text-white/85 truncate">{s.title}</h3>
                   </div>
                   {isOpen ? (
-                    <ChevronUp size={20} className="text-muted-foreground flex-shrink-0" />
+                    <ChevronUp size={20} className="text-white/35 flex-shrink-0" />
                   ) : (
-                    <ChevronDown size={20} className="text-muted-foreground flex-shrink-0" />
+                    <ChevronDown size={20} className="text-white/35 flex-shrink-0" />
                   )}
                 </button>
                 <AnimatePresence>
@@ -251,7 +251,7 @@ export default function UmrohClient() {
                   idx === currentStep
                     ? 'bg-primary'
                     : idx < currentStep
-                    ? 'bg-primary/40'
+                    ? 'bg-emerald-500/40'
                     : 'bg-muted'
                 }`}
               />
@@ -263,15 +263,15 @@ export default function UmrohClient() {
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.3 }}
-            className="rounded-xl bg-card border border-border/50 shadow-sm overflow-hidden"
+            className="rounded-xl bg-white/[0.03] border border-white/50 shadow-sm overflow-hidden"
           >
-            <div className="p-4 border-b border-border/50">
+            <div className="p-4 border-b border-white/50">
               <div className="flex items-center gap-3">
                 <div className={`w-12 h-12 rounded-xl flex items-center justify-center ${colorClass}`}>
                   {stepIcons[step.icon] || <CircleDot size={22} />}
                 </div>
                 <div>
-                  <span className="text-xs font-bold text-muted-foreground">Langkah {step.id} dari {data.steps.length}</span>
+                  <span className="text-xs font-bold text-white/35">Langkah {step.id} dari {data.steps.length}</span>
                   <h3 className="text-xl font-display font-bold text-foreground">{step.title}</h3>
                 </div>
               </div>
@@ -284,17 +284,17 @@ export default function UmrohClient() {
             <button
               onClick={() => setCurrentStep(p => Math.max(0, p - 1))}
               disabled={currentStep === 0}
-              className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-muted text-sm font-medium disabled:opacity-30 hover:bg-muted/80 transition-colors"
+              className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white/[0.04] text-sm font-medium disabled:opacity-30 hover:bg-white/80 transition-colors"
             >
               <ArrowLeft size={16} /> Sebelumnya
             </button>
-            <span className="text-sm text-muted-foreground font-medium">
+            <span className="text-sm text-white/35 font-medium">
               {currentStep + 1} / {data.steps.length}
             </span>
             <button
               onClick={() => setCurrentStep(p => Math.min(data.steps.length - 1, p + 1))}
               disabled={currentStep === data.steps.length - 1}
-              className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-primary text-primary-foreground text-sm font-medium disabled:opacity-30 hover:bg-primary/90 transition-colors"
+              className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-primary text-primary-foreground text-sm font-medium disabled:opacity-30 hover:bg-emerald-500/90 transition-colors"
             >
               Selanjutnya <ArrowRight size={16} />
             </button>
@@ -342,20 +342,20 @@ function StepContent({ step }: { step: UmrohStep }) {
       <ol className="space-y-4">
         {step.items.map((item, idx) => (
           <li key={idx} className="flex items-start gap-3">
-            <span className="flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 text-primary text-xs font-bold flex items-center justify-center mt-0.5">
+            <span className="flex-shrink-0 w-6 h-6 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-bold flex items-center justify-center mt-0.5">
               {idx + 1}
             </span>
             <div className="flex-1 min-w-0">
-              <p className="text-sm text-foreground leading-relaxed">{item.text}</p>
+              <p className="text-sm text-white/85 leading-relaxed">{item.text}</p>
               {item.arabic && (
                 <ArabicBlock arabic={item.arabic} transliteration={item.transliteration} />
               )}
               {/* Subnotes */}
               {item.subnotes && item.subnotes.length > 0 && (
-                <div className="mt-2 ml-2 space-y-3 border-l-2 border-primary/20 pl-3">
+                <div className="mt-2 ml-2 space-y-3 border-l-2 border-emerald-500/20 pl-3">
                   {item.subnotes.map((sub, si) => (
                     <div key={si}>
-                      <p className="text-sm text-muted-foreground">{sub.text}</p>
+                      <p className="text-sm text-white/35">{sub.text}</p>
                       {sub.arabic && (
                         <ArabicBlock arabic={sub.arabic} transliteration={sub.transliteration} />
                       )}
@@ -370,11 +370,11 @@ function StepContent({ step }: { step: UmrohStep }) {
 
       {/* Notes */}
       {step.notes && step.notes.length > 0 && (
-        <div className="rounded-lg bg-muted/50 p-3 mt-3">
-          <p className="text-xs font-bold text-muted-foreground mb-1.5">Keterangan:</p>
+        <div className="rounded-lg bg-white/[0.04] p-3 mt-3">
+          <p className="text-xs font-bold text-white/35 mb-1.5">Keterangan:</p>
           <ul className="space-y-1">
             {step.notes.map((n, i) => (
-              <li key={i} className="text-xs text-muted-foreground flex items-start gap-2">
+              <li key={i} className="text-xs text-white/35 flex items-start gap-2">
                 <span className="mt-1.5 w-1 h-1 rounded-full bg-muted-foreground/40 flex-shrink-0" />
                 {n}
               </li>

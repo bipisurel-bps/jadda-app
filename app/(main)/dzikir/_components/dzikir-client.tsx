@@ -149,7 +149,7 @@ export default function DzikirClient() {
           className={`flex items-center justify-center gap-2 py-2.5 rounded-xl text-sm font-semibold transition-all ${
             tab === 'pagi'
               ? 'bg-amber-500 text-white shadow-md'
-              : 'bg-card border border-border text-muted-foreground hover:bg-muted/20'
+              : 'bg-white/[0.03] border border-white/[0.06] text-white/35 hover:bg-white/20'
           }`}
         >
           <Sun size={16} />
@@ -161,7 +161,7 @@ export default function DzikirClient() {
           className={`flex items-center justify-center gap-2 py-2.5 rounded-xl text-sm font-semibold transition-all ${
             tab === 'petang'
               ? 'bg-indigo-500 text-white shadow-md'
-              : 'bg-card border border-border text-muted-foreground hover:bg-muted/20'
+              : 'bg-white/[0.03] border border-white/[0.06] text-white/35 hover:bg-white/20'
           }`}
         >
           <Moon size={16} />
@@ -178,34 +178,34 @@ export default function DzikirClient() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: Math.min(i * 0.03, 0.5) }}
-            className="p-4 rounded-xl bg-card border border-border overflow-hidden"
+            className="p-4 rounded-xl bg-white/[0.03] border border-white/[0.06] overflow-hidden"
           >
             {/* Count badge */}
             {dzikir.count > 1 && (
               <div className="flex items-center gap-2 mb-3">
-                <div className="px-2 py-0.5 rounded-full bg-primary/10 border border-primary/20">
+                <div className="px-2 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/20">
                   <span className="text-[11px] font-bold text-primary">×{dzikir.count}</span>
                 </div>
-                <span className="text-[11px] text-muted-foreground">dibaca {dzikir.count} kali</span>
+                <span className="text-[11px] text-white/35">dibaca {dzikir.count} kali</span>
               </div>
             )}
 
             {/* Arabic */}
-            <p className="text-2xl leading-[2.3] text-right font-arabic text-foreground mb-3">
+            <p className="text-2xl leading-[2.3] text-right font-arabic text-white/85 mb-3">
               {dzikir.arabic}
             </p>
 
             {/* Transliteration */}
             <details className="mb-3">
-              <summary className="text-xs font-semibold text-primary cursor-pointer hover:text-primary/80 transition-colors">
+              <summary className="text-xs font-semibold text-emerald-400 cursor-pointer hover:text-emerald-400/80 transition-colors">
                 Tampilkan Transliterasi
               </summary>
-              <p className="text-sm italic text-foreground/70 mt-2">{dzikir.transliteration}</p>
+              <p className="text-sm italic text-white/70 mt-2">{dzikir.transliteration}</p>
             </details>
 
             {/* Translation */}
-            <p className="text-xs font-semibold text-muted-foreground mb-1">Terjemah:</p>
-            <p className="text-sm leading-relaxed text-foreground/80 mb-3">
+            <p className="text-xs font-semibold text-white/35 mb-1">Terjemah:</p>
+            <p className="text-sm leading-relaxed text-white/70 mb-3">
               {dzikir.translation}
             </p>
 
@@ -213,30 +213,30 @@ export default function DzikirClient() {
             {dzikir.fadhilah && (
               <div className="p-2.5 rounded-lg bg-amber-500/5 border border-amber-500/10 mb-3">
                 <p className="text-[11px] font-semibold text-amber-500 mb-0.5">KEUTAMAAN:</p>
-                <p className="text-xs text-foreground/70 leading-relaxed">{dzikir.fadhilah}</p>
+                <p className="text-xs text-white/70 leading-relaxed">{dzikir.fadhilah}</p>
               </div>
             )}
 
             {/* Source + Actions */}
             <div className="flex items-center justify-between pt-1">
-              <p className="text-[11px] text-muted-foreground">{dzikir.source}</p>
+              <p className="text-[11px] text-white/35">{dzikir.source}</p>
               <div className="flex items-center gap-1">
                 <button
                   onClick={() => shareItem(dzikir)}
-                  className="w-7 h-7 rounded-full bg-muted/50 flex items-center justify-center hover:bg-muted transition-colors"
+                  className="w-7 h-7 rounded-full bg-white/[0.04] flex items-center justify-center hover:bg-white/[0.04] transition-colors"
                 >
-                  <Share2 size={13} className="text-muted-foreground" />
+                  <Share2 size={13} className="text-white/35" />
                 </button>
                 <button
                   onClick={() => copyText(dzikir, i)}
                   className={`w-7 h-7 rounded-full flex items-center justify-center transition-colors ${
-                    copiedIndex === i ? 'bg-primary/15' : 'bg-muted/50 hover:bg-muted'
+                    copiedIndex === i ? 'bg-emerald-500/15' : 'bg-white/[0.04] hover:bg-muted'
                   }`}
                 >
                   {copiedIndex === i ? (
-                    <Check size={13} className="text-primary" />
+                    <Check size={13} className="text-emerald-400" />
                   ) : (
-                    <Copy size={13} className="text-muted-foreground" />
+                    <Copy size={13} className="text-white/35" />
                   )}
                 </button>
               </div>

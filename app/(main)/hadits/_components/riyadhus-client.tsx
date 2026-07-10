@@ -31,7 +31,7 @@ const ITEMS_PER_PAGE = 30;
 
 export default function RiyadhusClient() {
   const [indexData, setIndexData] = useState<IndexData | null>(null);
-  const [contentCache, setContentCache] = useState<Record<number, ChapterContent>>({}); // keyed by chapter id
+  const [contentCache, setContentCache] = useState<Record<number, ChapterContent>>({});
   const [loadingChunks, setLoadingChunks] = useState<Set<number>>(new Set());
   const [expandedId, setExpandedId] = useState<number | null>(null);
   const [favorites, setFavorites] = useState<number[]>([]);
@@ -40,7 +40,6 @@ export default function RiyadhusClient() {
   const [page, setPage] = useState(1);
   const listRef = useRef<HTMLDivElement>(null);
 
-  // Load index
   useEffect(() => {
     fetch('/data/riyadhus/index.json')
       .then(r => r.json())
@@ -48,7 +47,6 @@ export default function RiyadhusClient() {
       .catch(() => {});
   }, []);
 
-  // Load favorites
   useEffect(() => {
     try {
       const saved = localStorage.getItem('riyadhus-favorites');
@@ -64,12 +62,10 @@ export default function RiyadhusClient() {
     });
   };
 
-  // Determine which chunk a chapter belongs to
   const getChunkNum = useCallback((chapterIdx: number) => {
     return Math.floor(chapterIdx / CHUNK_SIZE) + 1;
   }, []);
 
-  // Load chunk on demand
   const loadChunk = useCallback(async (chunkNum: number) => {
     if (loadingChunks.has(chunkNum)) return;
     setLoadingChunks(prev => new Set(prev).add(chunkNum));
@@ -89,7 +85,6 @@ export default function RiyadhusClient() {
     });
   }, [loadingChunks]);
 
-  // When expanding, load content if needed
   const handleExpand = useCallback(async (chapter: ChapterIndex, chapterIdx: number) => {
     if (expandedId === chapter.id) {
       setExpandedId(null);
@@ -101,11 +96,9 @@ export default function RiyadhusClient() {
     }
   }, [expandedId, contentCache, loadChunk, getChunkNum]);
 
-  // Filter chapters
   const filtered = useMemo(() => {
     if (!indexData) return [];
     let list = indexData.chapters;
-    // Skip pendahuluan (bab 0) in list but keep searchable
     if (filterFav) list = list.filter(ch => favorites.includes(ch.id));
     if (search.trim()) {
       const q = search.toLowerCase();
@@ -117,7 +110,6 @@ export default function RiyadhusClient() {
     return list;
   }, [indexData, search, filterFav, favorites]);
 
-  // Pagination
   const totalPages = Math.max(1, Math.ceil(filtered.length / ITEMS_PER_PAGE));
   const safePageNum = Math.min(page, totalPages);
   const paginatedItems = filtered.slice(
@@ -125,7 +117,6 @@ export default function RiyadhusClient() {
     safePageNum * ITEMS_PER_PAGE
   );
 
-  // Reset page on filter/search change
   useEffect(() => {
     setPage(1);
   }, [search, filterFav]);
@@ -136,28 +127,32 @@ export default function RiyadhusClient() {
     listRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
-  if (!indexData) return <div className="flex items-center justify-center py-20"><div className="animate-spin w-6 h-6 border-2 border-primary border-t-transparent rounded-full" /></div>;
+  if (!indexData) return (
+    <div className="flex items-center justify-center py-16">
+      <div className="w-8 h-8 border-2 border-emerald-400/30 border-t-emerald-400 rounded-full animate-spin" />
+    </div>
+  );
 
   return (
-    <div className="space-y-4" ref={listRef}>
+    <div className="space-y-3" ref={listRef}>
       {/* Description */}
-      <p className="text-xs text-muted-foreground leading-relaxed">
+      <p className="text-xs text-white/35 leading-relaxed">
         {indexData.description}
       </p>
 
       {/* Search & Filter */}
       <div className="flex gap-2">
         <div className="relative flex-1">
-          <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" />
+          <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-white/35" />
           <input
             type="text" value={search} onChange={e => setSearch(e.target.value)}
             placeholder="Cari bab..."
-            className="w-full rounded-lg border border-border bg-background pl-9 pr-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary"
+            className="w-full rounded-xl bg-white/[0.04] border border-white/[0.06] pl-9 pr-4 py-2.5 text-sm text-white/80 placeholder:text-white/30 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500/30 transition-all"
           />
         </div>
         <button onClick={() => setFilterFav(!filterFav)}
-          className={`flex items-center gap-1.5 px-3 rounded-lg border text-sm font-medium transition-all ${
-            filterFav ? 'bg-accent/10 border-accent/30 text-accent' : 'border-border text-muted-foreground hover:bg-muted/50'
+          className={`flex items-center gap-1.5 px-3 rounded-xl border text-sm font-medium transition-all ${
+            filterFav ? 'bg-amber-500/10 border-amber-500/20 text-amber-400' : 'border-white/[0.06] text-white/40 hover:bg-white/[0.04]'
           }`}>
           <Star size={14} fill={filterFav ? 'currentColor' : 'none'} />
           <span className="hidden sm:inline">Favorit</span>
@@ -166,11 +161,11 @@ export default function RiyadhusClient() {
 
       {/* Count & Pagination Info */}
       <div className="flex items-center justify-between">
-        <p className="text-xs text-muted-foreground">
+        <p className="text-xs text-white/35">
           {filtered.length} dari {indexData.totalChapters} bab
         </p>
         {totalPages > 1 && (
-          <p className="text-xs text-muted-foreground">
+          <p className="text-xs text-white/35">
             Halaman {safePageNum}/{totalPages}
           </p>
         )}
@@ -181,28 +176,27 @@ export default function RiyadhusClient() {
         {paginatedItems.map((ch) => {
           const isOpen = expandedId === ch.id;
           const content = contentCache[ch.id];
-          // Find the original index in full list for chunk calculation
           const chapterIdx = indexData.chapters.findIndex(c => c.id === ch.id);
           const isLoading = !content && isOpen;
 
           return (
             <motion.div key={ch.id} layout initial={{ opacity: 0 }} animate={{ opacity: 1 }}
-              className="rounded-xl bg-card border border-border/50 shadow-sm overflow-hidden">
+              className="rounded-xl bg-white/[0.03] border border-white/[0.06] overflow-hidden">
               <div
                 onClick={() => handleExpand(ch, chapterIdx)}
-                className="w-full flex items-center gap-3 px-4 py-3 text-left hover:bg-muted/30 transition-colors cursor-pointer"
+                className="w-full flex items-center gap-3 px-4 py-3 text-left hover:bg-white/[0.04] transition-colors cursor-pointer"
                 role="button"
                 tabIndex={0}
               >
-                <span className="flex-shrink-0 w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-[10px] font-bold text-primary">
+                <span className="flex-shrink-0 w-8 h-8 rounded-lg bg-emerald-500/10 flex items-center justify-center text-[10px] font-bold text-emerald-400">
                   {ch.bab}
                 </span>
-                <span className="flex-1 text-sm font-medium text-foreground leading-snug">{ch.title}</span>
+                <span className="flex-1 text-sm font-medium text-white/80 leading-snug">{ch.title}</span>
                 <button onClick={(e) => { e.stopPropagation(); toggleFav(ch.id); }}
-                  className="flex-shrink-0 p-1 hover:bg-muted/50 rounded">
-                  <Star size={14} className={favorites.includes(ch.id) ? 'text-accent fill-accent' : 'text-muted-foreground'} />
+                  className="flex-shrink-0 p-1 hover:bg-white/[0.06] rounded">
+                  <Star size={14} className={favorites.includes(ch.id) ? 'text-amber-400 fill-amber-400' : 'text-white/30'} />
                 </button>
-                {isOpen ? <ChevronUp size={16} className="text-muted-foreground flex-shrink-0" /> : <ChevronDown size={16} className="text-muted-foreground flex-shrink-0" />}
+                {isOpen ? <ChevronUp size={16} className="text-white/35 flex-shrink-0" /> : <ChevronDown size={16} className="text-white/35 flex-shrink-0" />}
               </div>
 
               <AnimatePresence>
@@ -214,27 +208,25 @@ export default function RiyadhusClient() {
                     transition={{ duration: 0.25 }}
                     className="overflow-hidden"
                   >
-                    <div className="px-4 pb-4 space-y-3 border-t border-border/30 pt-3">
+                    <div className="px-4 pb-4 space-y-3 border-t border-white/[0.06] pt-3">
                       {isLoading ? (
                         <div className="flex items-center justify-center py-6">
-                          <Loader2 size={20} className="animate-spin text-primary" />
-                          <span className="ml-2 text-sm text-muted-foreground">Memuat konten...</span>
+                          <Loader2 size={20} className="animate-spin text-emerald-400" />
+                          <span className="ml-2 text-sm text-white/35">Memuat konten...</span>
                         </div>
                       ) : content ? (
                         <>
-                          {/* Arabic */}
                           {content.arabic && (
-                            <div className="bg-primary/5 rounded-lg p-4">
-                              <p className="font-arabic text-lg text-foreground text-right leading-[2.2] whitespace-pre-line" dir="rtl">
+                            <div className="bg-white/[0.02] rounded-xl p-4">
+                              <p className="font-arabic text-lg text-white/90 text-right leading-[2.2] whitespace-pre-line" dir="rtl">
                                 {content.arabic}
                               </p>
                             </div>
                           )}
 
-                          {/* Translation */}
                           {content.translation && (
                             <div>
-                              <p className="text-sm text-foreground leading-relaxed whitespace-pre-line">
+                              <p className="text-sm text-white/70 leading-relaxed whitespace-pre-line">
                                 {content.translation}
                               </p>
                             </div>
@@ -252,7 +244,7 @@ export default function RiyadhusClient() {
 
       {/* Empty State */}
       {filtered.length === 0 && (
-        <div className="text-center py-10 text-muted-foreground text-sm">
+        <div className="text-center py-10 text-white/35 text-sm">
           {filterFav ? 'Belum ada bab favorit' : 'Bab tidak ditemukan'}
         </div>
       )}
@@ -263,7 +255,7 @@ export default function RiyadhusClient() {
           <button
             onClick={() => changePage(safePageNum - 1)}
             disabled={safePageNum <= 1}
-            className="p-2 rounded-lg border border-border text-muted-foreground hover:bg-muted/30 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+            className="p-2 rounded-lg border border-white/[0.06] text-white/35 hover:bg-white/[0.04] disabled:opacity-20 disabled:cursor-not-allowed transition-colors"
           >
             <ChevronLeft size={16} />
           </button>
@@ -274,8 +266,8 @@ export default function RiyadhusClient() {
                 onClick={() => changePage(p)}
                 className={`w-8 h-8 rounded-lg text-xs font-medium transition-all ${
                   p === safePageNum
-                    ? 'bg-primary text-white shadow-sm'
-                    : 'text-muted-foreground hover:bg-muted/30'
+                    ? 'bg-emerald-500/15 text-emerald-400'
+                    : 'text-white/35 hover:bg-white/[0.04]'
                 }`}
               >
                 {p}
@@ -285,7 +277,7 @@ export default function RiyadhusClient() {
           <button
             onClick={() => changePage(safePageNum + 1)}
             disabled={safePageNum >= totalPages}
-            className="p-2 rounded-lg border border-border text-muted-foreground hover:bg-muted/30 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+            className="p-2 rounded-lg border border-white/[0.06] text-white/35 hover:bg-white/[0.04] disabled:opacity-20 disabled:cursor-not-allowed transition-colors"
           >
             <ChevronRight size={16} />
           </button>
@@ -293,7 +285,7 @@ export default function RiyadhusClient() {
       )}
 
       {/* Attribution */}
-      <p className="text-[10px] text-muted-foreground/60 text-center pt-2">
+      <p className="text-[10px] text-white/[0.15] text-center pt-2">
         Sumber data: github.com/irsyadulibad/hadits-database
       </p>
     </div>

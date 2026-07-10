@@ -81,7 +81,7 @@ export default function FiqhJenazahClient() {
   if (loading) {
     return (
       <div className="flex items-center justify-center py-20">
-        <div className="w-8 h-8 border-2 border-primary border-t-transparent rounded-full animate-spin" />
+        <div className="w-8 h-8 border-2 border-emerald-500/30 border-t-transparent rounded-full animate-spin" />
       </div>
     );
   }
@@ -89,7 +89,7 @@ export default function FiqhJenazahClient() {
   if (!data) {
     return (
       <div className="text-center py-20">
-        <p className="text-muted-foreground">Data tidak tersedia</p>
+        <p className="text-white/35">Data tidak tersedia</p>
       </div>
     );
   }
@@ -100,7 +100,7 @@ export default function FiqhJenazahClient() {
       <motion.div initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.3 }}>
         <Link
           href="/keilmuan"
-          className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+          className="inline-flex items-center gap-2 text-sm text-white/35 hover:text-white/85 transition-colors"
         >
           <ArrowLeft size={16} />
           Kembali ke Keilmuan
@@ -110,7 +110,7 @@ export default function FiqhJenazahClient() {
       {/* Header */}
       <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
         <h1 className="font-display font-bold text-2xl md:text-3xl text-foreground">{data.title}</h1>
-        <p className="text-sm text-muted-foreground mt-1">{data.description}</p>
+        <p className="text-sm text-white/35 mt-1">{data.description}</p>
       </motion.div>
 
       {/* Source Banner */}
@@ -124,7 +124,7 @@ export default function FiqhJenazahClient() {
           <BookOpen size={18} className="text-green-400 mt-0.5 shrink-0" />
           <div>
             <p className="text-xs font-semibold text-green-400 mb-1">Sumber Rujukan</p>
-            <p className="text-xs text-muted-foreground leading-relaxed">{data.source}</p>
+            <p className="text-xs text-white/35 leading-relaxed">{data.source}</p>
           </div>
         </div>
       </motion.div>
@@ -134,25 +134,25 @@ export default function FiqhJenazahClient() {
         {(data.chapters ?? []).map((chapter) => {
           const isOpen = expandedChapters.has(chapter.id);
           return (
-            <div key={chapter.id} className="rounded-2xl border border-border bg-card overflow-hidden shadow-sm">
+            <div key={chapter.id} className="rounded-2xl border border-white/[0.06] bg-white/[0.03] overflow-hidden shadow-sm">
               <button
                 onClick={() => toggleChapter(chapter.id)}
                 className={`w-full flex items-center justify-between p-4 transition-colors ${
-                  isOpen ? 'bg-green-500/5 border-b border-border' : 'hover:bg-muted/30'
+                  isOpen ? 'bg-green-500/5 border-b border-border' : 'hover:bg-white/[0.03]'
                 }`}
               >
                 <div className="flex items-center gap-3">
                   <div className={`w-9 h-9 rounded-xl flex items-center justify-center ${isOpen ? 'bg-green-500/10 border border-green-400/20' : 'bg-muted'}`}>
-                    <BookOpen size={16} className={isOpen ? 'text-green-400' : 'text-muted-foreground'} />
+                    <BookOpen size={16} className={isOpen ? 'text-green-400' : 'text-white/35'} />
                   </div>
                   <div className="text-left">
-                    <h3 className={`font-display font-bold text-sm ${isOpen ? 'text-green-400' : 'text-foreground'}`}>
+                    <h3 className={`font-display font-bold text-sm ${isOpen ? 'text-green-400' : 'text-white/85'}`}>
                       Bab {chapter.id}: {chapter.title}
                     </h3>
-                    <p className="text-xs text-muted-foreground">{chapter.sections.length} bahasan</p>
+                    <p className="text-xs text-white/35">{chapter.sections.length} bahasan</p>
                   </div>
                 </div>
-                <ChevronDown size={18} className={`text-muted-foreground transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} />
+                <ChevronDown size={18} className={`text-white/35 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} />
               </button>
               <AnimatePresence>
                 {isOpen && (
@@ -184,9 +184,9 @@ function JenazahSectionRenderer({ section }: { section: JenazahSection }) {
     case 'text':
       return (
         <div>
-          <h4 className="font-bold text-sm text-foreground mb-2">{section.title}</h4>
+          <h4 className="font-bold text-sm text-white/85 mb-2">{section.title}</h4>
           {section.content && (
-            <p className="text-sm text-muted-foreground leading-relaxed whitespace-pre-line">{section.content}</p>
+            <p className="text-sm text-white/35 leading-relaxed whitespace-pre-line">{section.content}</p>
           )}
         </div>
       );
@@ -194,11 +194,11 @@ function JenazahSectionRenderer({ section }: { section: JenazahSection }) {
     case 'dalil':
       return (
         <div>
-          <h4 className="font-bold text-sm text-foreground mb-2">{section.title}</h4>
+          <h4 className="font-bold text-sm text-white/85 mb-2">{section.title}</h4>
           {section.dalil && (
             <div className="rounded-xl bg-green-500/5 border-l-2 border-green-400 p-3">
               <BookOpen size={14} className="text-green-400 mb-2" />
-              <p className="text-sm text-foreground/80 leading-relaxed whitespace-pre-line">{section.dalil.text}</p>
+              <p className="text-sm text-white/70 leading-relaxed whitespace-pre-line">{section.dalil.text}</p>
               {section.dalil.source && (
                 <p className="text-xs text-green-400/70 mt-2 font-medium">{section.dalil.source}</p>
               )}
@@ -210,10 +210,10 @@ function JenazahSectionRenderer({ section }: { section: JenazahSection }) {
     case 'checklist':
       return (
         <div>
-          <h4 className="font-bold text-sm text-foreground mb-2">{section.title}</h4>
+          <h4 className="font-bold text-sm text-white/85 mb-2">{section.title}</h4>
           <ul className="space-y-2">
             {section.items?.map((item, i) => (
-              <li key={i} className="flex items-start gap-2.5 text-sm text-muted-foreground leading-relaxed">
+              <li key={i} className="flex items-start gap-2.5 text-sm text-white/35 leading-relaxed">
                 <CheckCircle2 size={15} className="text-green-400 mt-0.5 shrink-0" />
                 <span>{item}</span>
               </li>
@@ -225,10 +225,10 @@ function JenazahSectionRenderer({ section }: { section: JenazahSection }) {
     case 'numbered-list':
       return (
         <div>
-          <h4 className="font-bold text-sm text-foreground mb-2">{section.title}</h4>
+          <h4 className="font-bold text-sm text-white/85 mb-2">{section.title}</h4>
           <ol className="space-y-2 list-decimal list-inside">
             {section.items?.map((item, i) => (
-              <li key={i} className="text-sm text-muted-foreground leading-relaxed pl-1">
+              <li key={i} className="text-sm text-white/35 leading-relaxed pl-1">
                 <span className="ml-1">{item}</span>
               </li>
             ))}
@@ -239,7 +239,7 @@ function JenazahSectionRenderer({ section }: { section: JenazahSection }) {
     case 'timeline':
       return (
         <div>
-          <h4 className="font-bold text-sm text-foreground mb-3">{section.title}</h4>
+          <h4 className="font-bold text-sm text-white/85 mb-3">{section.title}</h4>
           <div className="space-y-4">
             {section.timeline?.map((step) => (
               <div key={step.step} className="flex gap-3">
@@ -251,7 +251,7 @@ function JenazahSectionRenderer({ section }: { section: JenazahSection }) {
                 </div>
                 <div className="pb-2">
                   <h5 className="font-semibold text-sm text-foreground">{step.title}</h5>
-                  <p className="text-xs text-muted-foreground mt-0.5 leading-relaxed">{step.desc}</p>
+                  <p className="text-xs text-white/35 mt-0.5 leading-relaxed">{step.desc}</p>
                 </div>
               </div>
             ))}
@@ -262,17 +262,17 @@ function JenazahSectionRenderer({ section }: { section: JenazahSection }) {
     case 'recipe-steps':
       return (
         <div>
-          <h4 className="font-bold text-sm text-foreground mb-3">{section.title}</h4>
+          <h4 className="font-bold text-sm text-white/85 mb-3">{section.title}</h4>
           <div className="space-y-4">
             {section.recipeSteps?.map((rs, i) => (
-              <div key={i} className="rounded-xl border border-border p-4">
+              <div key={i} className="rounded-xl border border-white/[0.06] p-4">
                 <h5 className="font-semibold text-sm text-green-400 mb-2">Langkah {i + 1}: {rs.title}</h5>
                 {rs.materials && rs.materials.length > 0 && (
                   <div className="mb-2">
-                    <p className="text-xs font-medium text-muted-foreground mb-1">Bahan & Persiapan:</p>
+                    <p className="text-xs font-medium text-white/35 mb-1">Bahan & Persiapan:</p>
                     <ul className="space-y-0.5">
                       {rs.materials.map((m, j) => (
-                        <li key={j} className="flex items-start gap-2 text-xs text-muted-foreground">
+                        <li key={j} className="flex items-start gap-2 text-xs text-white/35">
                           <CheckCircle2 size={11} className="text-green-400 mt-0.5 shrink-0" />
                           {m}
                         </li>
@@ -280,10 +280,10 @@ function JenazahSectionRenderer({ section }: { section: JenazahSection }) {
                     </ul>
                   </div>
                 )}
-                <p className="text-xs font-medium text-muted-foreground mb-1">Tata Cara:</p>
+                <p className="text-xs font-medium text-white/35 mb-1">Tata Cara:</p>
                 <ul className="space-y-1">
                   {rs.steps.map((s, j) => (
-                    <li key={j} className="flex items-start gap-2 text-xs text-muted-foreground leading-relaxed">
+                    <li key={j} className="flex items-start gap-2 text-xs text-white/35 leading-relaxed">
                       <span className="text-green-400 font-bold text-xs shrink-0 mt-0.5">{j + 1}.</span>
                       {s}
                     </li>
@@ -299,12 +299,12 @@ function JenazahSectionRenderer({ section }: { section: JenazahSection }) {
       const InfoIcon = infoIcon(section.infoType);
       return (
         <div>
-          {section.title && <h4 className="font-bold text-sm text-foreground mb-2">{section.title}</h4>}
+          {section.title && <h4 className="font-bold text-sm text-white/85 mb-2">{section.title}</h4>}
           <div className={`rounded-xl border p-4 ${infoBg(section.infoType)}`}>
             <div className="flex items-start gap-2.5">
               <InfoIcon size={16} className={`${infoIconColor(section.infoType)} mt-0.5 shrink-0`} />
               <div className="space-y-2">
-                {section.content && <p className="text-sm text-foreground/80 leading-relaxed">{section.content}</p>}
+                {section.content && <p className="text-sm text-white/70 leading-relaxed">{section.content}</p>}
                 {section.arabic && (
                   <p className="text-lg font-arabic leading-relaxed text-right" dir="rtl">{section.arabic}</p>
                 )}
@@ -312,7 +312,7 @@ function JenazahSectionRenderer({ section }: { section: JenazahSection }) {
                   <p className="text-xs text-green-700 dark:text-green-400 italic">{section.transliteration}</p>
                 )}
                 {section.translation && (
-                  <p className="text-xs text-muted-foreground">{section.translation}</p>
+                  <p className="text-xs text-white/35">{section.translation}</p>
                 )}
               </div>
             </div>
@@ -323,10 +323,10 @@ function JenazahSectionRenderer({ section }: { section: JenazahSection }) {
     case 'arabic-dua':
       return (
         <div>
-          <h4 className="font-bold text-sm text-foreground mb-2">{section.title}</h4>
+          <h4 className="font-bold text-sm text-white/85 mb-2">{section.title}</h4>
           <div className="rounded-xl bg-muted/20 dark:bg-muted/10 p-4 space-y-3">
             {section.arabic && (
-              <p className="text-xl md:text-2xl font-arabic leading-[2.2] text-foreground text-right" dir="rtl">
+              <p className="text-xl md:text-2xl font-arabic leading-[2.2] text-white/85 text-right" dir="rtl">
                 {section.arabic}
               </p>
             )}
@@ -334,10 +334,10 @@ function JenazahSectionRenderer({ section }: { section: JenazahSection }) {
               <p className="text-sm text-green-700 dark:text-green-400 italic leading-relaxed">{section.transliteration}</p>
             )}
             {section.translation && (
-              <p className="text-sm text-foreground/80 leading-relaxed">{section.translation}</p>
+              <p className="text-sm text-white/70 leading-relaxed">{section.translation}</p>
             )}
             {section.note && (
-              <p className="text-xs text-muted-foreground/60 italic">{section.note}</p>
+              <p className="text-xs text-white/35/60 italic">{section.note}</p>
             )}
           </div>
         </div>
@@ -346,17 +346,17 @@ function JenazahSectionRenderer({ section }: { section: JenazahSection }) {
     case 'qa':
       return (
         <div>
-          <h4 className="font-bold text-sm text-foreground mb-2">{section.title}</h4>
+          <h4 className="font-bold text-sm text-white/85 mb-2">{section.title}</h4>
           <div className="space-y-3">
             {section.qas?.map((qa, i) => (
-              <div key={i} className="rounded-xl border border-border p-3">
+              <div key={i} className="rounded-xl border border-white/[0.06] p-3">
                 <div className="flex items-start gap-2">
                   <span className="text-xs font-bold text-green-400 bg-green-500/10 px-2 py-0.5 rounded-full shrink-0">T</span>
                   <p className="text-sm font-semibold text-foreground">{qa.question}</p>
                 </div>
                 <div className="flex items-start gap-2 mt-2 pl-1">
                   <span className="text-xs font-bold text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded-full shrink-0">J</span>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{qa.answer}</p>
+                  <p className="text-sm text-white/35 leading-relaxed">{qa.answer}</p>
                 </div>
               </div>
             ))}

@@ -1,12 +1,11 @@
 'use client';
 
-import React, { useEffect, useState, useMemo, useCallback } from 'react';
+import React, { useEffect, useState, useMemo } from 'react';
 import Link from 'next/link';
 import { Search, X, Book, Layers, Grid3X3, ChevronRight, Globe, Home as HomeIcon } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { fetchAllSurahs, getSurahNameId, getRevelationLabel, JUZ_MAP, SURAH_PAGE_STARTS, getSurahForPage, SurahItem } from '@/lib/quran';
 import { PageHeader } from '@/components/layouts/page-header';
-import { Input } from '@/components/ui/input';
 
 type TabMode = 'surah' | 'juz' | 'halaman';
 
@@ -89,43 +88,23 @@ export default function QuranClient() {
     { key: 'halaman', label: 'Halaman', icon: <Grid3X3 size={15} /> },
   ];
 
-  if (loading) {
-    return (
-      <div className="flex flex-col items-center justify-center py-20">
-        <div className="w-8 h-8 border-2 border-primary border-t-transparent rounded-full animate-spin" />
-        <p className="mt-3 text-sm text-muted-foreground">Memuat 114 surah...</p>
-      </div>
-    );
-  }
-
-  if (error) {
-    return (
-      <div className="flex flex-col items-center justify-center py-20 px-4">
-        <div className="w-14 h-14 rounded-full bg-muted flex items-center justify-center mb-4">
-          <X size={24} className="text-muted-foreground" />
-        </div>
-        <p className="text-sm text-muted-foreground text-center">{error}</p>
-      </div>
-    );
-  }
-
   return (
-    <div>
+    <div className="min-h-screen bg-[\0]">
       <PageHeader title="Al Quran" description={`${surahs.length} Surah • 30 Juz`} />
 
       {/* Search */}
       <div className="px-4 mb-3">
         <div className="relative">
-          <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" />
-          <Input
-            className="pl-9 pr-8 h-10 bg-card border-border text-sm"
+          <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-white/35" />
+          <input
+            className="w-full pl-9 pr-8 h-10 rounded-xl bg-white/[0.04] border border-white/[0.06] text-sm text-white/80 placeholder:text-white/30 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500/30 transition-all"
             placeholder={tab === 'surah' ? 'Cari surah...' : tab === 'juz' ? 'Cari juz...' : 'Cari halaman (1-604)...'}
             value={search}
             onChange={(e) => setSearch(e.target.value)}
           />
           {search && (
-            <button onClick={() => setSearch('')} className="absolute right-3 top-1/2 -translate-y-1/2">
-              <X size={16} className="text-muted-foreground" />
+            <button onClick={() => setSearch('')} className="absolute right-3 top-1/2 -translate-y-1/2 p-0.5 rounded hover:bg-white/[0.06] transition-colors">
+              <X size={16} className="text-white/40" />
             </button>
           )}
         </div>
@@ -133,15 +112,15 @@ export default function QuranClient() {
 
       {/* Tabs */}
       <div className="px-4 mb-4">
-        <div className="flex gap-1.5 bg-muted/50 p-1 rounded-lg">
+        <div className="flex gap-1.5 bg-white/[0.03] p-1 rounded-xl">
           {tabs.map((t) => (
             <button
               key={t.key}
               onClick={() => setTab(t.key)}
-              className={`flex-1 flex items-center justify-center gap-1.5 py-2 rounded-md text-sm font-medium transition-all ${
+              className={`flex-1 flex items-center justify-center gap-1.5 py-2 rounded-lg text-sm font-medium transition-all ${
                 tab === t.key
-                  ? 'bg-primary text-primary-foreground shadow-sm'
-                  : 'text-muted-foreground hover:text-foreground'
+                  ? 'bg-emerald-500/15 text-emerald-400 shadow-sm'
+                  : 'text-white/40 hover:text-white/70'
               }`}
             >
               {t.icon}
@@ -151,11 +130,29 @@ export default function QuranClient() {
         </div>
       </div>
 
+      {/* Loading */}
+      {loading && (
+        <div className="flex flex-col items-center justify-center py-16">
+          <div className="w-8 h-8 border-2 border-emerald-400/30 border-t-emerald-400 rounded-full animate-spin" />
+          <p className="mt-3 text-sm text-white/35">Memuat 114 surah...</p>
+        </div>
+      )}
+
+      {/* Error */}
+      {error && !loading && (
+        <div className="flex flex-col items-center justify-center py-16 px-4">
+          <div className="w-14 h-14 rounded-full bg-white/[0.04] flex items-center justify-center mb-4">
+            <X size={24} className="text-white/30" />
+          </div>
+          <p className="text-sm text-white/50 text-center">{error}</p>
+        </div>
+      )}
+
       {/* Surah List */}
-      {tab === 'surah' && (
+      {!loading && !error && tab === 'surah' && (
         <div className="px-4 pb-8">
           {filtered.length === 0 ? (
-            <p className="text-center text-sm text-muted-foreground py-10">Surah tidak ditemukan</p>
+            <p className="text-center text-sm text-white/35 py-10">Surah tidak ditemukan</p>
           ) : (
             <div className="space-y-2">
               {filtered.map((s, i) => (
@@ -167,17 +164,17 @@ export default function QuranClient() {
                 >
                   <Link
                     href={`/quran/${s.number}`}
-                    className="flex items-center gap-3 p-3.5 rounded-xl bg-card border border-border hover:bg-muted/30 transition-colors"
+                    className="flex items-center gap-3 p-3.5 rounded-2xl bg-white/[0.03] border border-white/[0.06] hover:bg-white/[0.05] hover:border-emerald-500/15 transition-all"
                   >
-                    <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                      <span className="text-sm font-bold text-primary">{s.number}</span>
+                    <div className="w-10 h-10 rounded-full bg-emerald-500/10 flex items-center justify-center flex-shrink-0">
+                      <span className="text-sm font-bold text-emerald-400">{s.number}</span>
                     </div>
                     <div className="flex-1 min-w-0">
-                      <p className="text-base font-semibold text-foreground font-arabic">{s.name}</p>
-                      <p className="text-sm text-muted-foreground truncate">
+                      <p className="text-base font-semibold text-white/90 font-arabic">{s.name}</p>
+                      <p className="text-sm text-white/60 truncate">
                         {s.transliteration} ({getSurahNameId(s.number)})
                       </p>
-                      <p className="text-xs text-muted-foreground mt-0.5">
+                      <p className="text-xs text-white/35 mt-0.5">
                         {getRevelationLabel(s.revelationType) === 'Makkiyah' ? (
                           <><Globe size={10} className="inline mr-1" />Makkiyah</>
                         ) : (
@@ -186,7 +183,7 @@ export default function QuranClient() {
                         • {s.numberOfAyahs} ayat
                       </p>
                     </div>
-                    <ChevronRight size={18} className="text-muted-foreground flex-shrink-0" />
+                    <ChevronRight size={18} className="text-white/25 flex-shrink-0" />
                   </Link>
                 </motion.div>
               ))}
@@ -196,10 +193,10 @@ export default function QuranClient() {
       )}
 
       {/* Juz List */}
-      {tab === 'juz' && (
+      {!loading && !error && tab === 'juz' && (
         <div className="px-4 pb-8">
           {filteredJuzList.length === 0 ? (
-            <p className="text-center text-sm text-muted-foreground py-10">Juz tidak ditemukan</p>
+            <p className="text-center text-sm text-white/35 py-10">Juz tidak ditemukan</p>
           ) : (
             <div className="space-y-2">
               {filteredJuzList.map((j, i) => (
@@ -211,18 +208,18 @@ export default function QuranClient() {
                 >
                   <Link
                     href={`/quran/${j.surahNumber}?juz=${j.juz}`}
-                    className="flex items-center gap-3 p-3.5 rounded-xl bg-card border border-border hover:bg-muted/30 transition-colors"
+                    className="flex items-center gap-3 p-3.5 rounded-2xl bg-white/[0.03] border border-white/[0.06] hover:bg-white/[0.05] hover:border-emerald-500/15 transition-all"
                   >
                     <div className="w-12 h-12 rounded-full bg-emerald-500/10 flex flex-col items-center justify-center flex-shrink-0">
-                      <span className="text-[10px] font-semibold text-emerald-500">Juz</span>
-                      <span className="text-base font-bold text-emerald-500">{j.juz}</span>
+                      <span className="text-[10px] font-semibold text-emerald-400">Juz</span>
+                      <span className="text-base font-bold text-emerald-400">{j.juz}</span>
                     </div>
                     <div className="flex-1 min-w-0">
-                      <p className="text-base font-semibold text-foreground font-arabic">{j.surahName}</p>
-                      <p className="text-sm text-muted-foreground truncate">{j.surahEnglish}</p>
-                      <p className="text-xs text-muted-foreground mt-0.5">Mulai ayat {j.startAyah}</p>
+                      <p className="text-base font-semibold text-white/90 font-arabic">{j.surahName}</p>
+                      <p className="text-sm text-white/60 truncate">{j.surahEnglish}</p>
+                      <p className="text-xs text-white/35 mt-0.5">Mulai ayat {j.startAyah}</p>
                     </div>
-                    <ChevronRight size={18} className="text-muted-foreground flex-shrink-0" />
+                    <ChevronRight size={18} className="text-white/25 flex-shrink-0" />
                   </Link>
                 </motion.div>
               ))}
@@ -232,15 +229,15 @@ export default function QuranClient() {
       )}
 
       {/* Halaman Grid */}
-      {tab === 'halaman' && (
+      {!loading && !error && tab === 'halaman' && (
         <div className="px-4 pb-8">
           {filteredPageGroups.length === 0 ? (
-            <p className="text-center text-sm text-muted-foreground py-10">Halaman tidak ditemukan</p>
+            <p className="text-center text-sm text-white/35 py-10">Halaman tidak ditemukan</p>
           ) : (
             <div className="space-y-5">
               {filteredPageGroups.map((group) => (
                 <div key={group.juz}>
-                  <p className="text-sm font-semibold text-foreground mb-2 ml-1">{group.label}</p>
+                  <p className="text-[13px] font-extrabold text-white/90 tracking-tight uppercase mb-2 ml-1">{group.label}</p>
                   <div className="grid grid-cols-5 gap-1.5">
                     {group.pages.map((page) => {
                       const pageSurah = getSurahForPage(page);
@@ -249,10 +246,10 @@ export default function QuranClient() {
                         <Link
                           key={page}
                           href={`/quran/${pageSurah}?page=${page}`}
-                          className="aspect-square rounded-lg bg-card border border-border hover:bg-muted/30 transition-colors flex flex-col items-center justify-center p-1"
+                          className="aspect-square rounded-xl bg-white/[0.03] border border-white/[0.06] hover:bg-white/[0.06] hover:border-emerald-500/20 transition-all flex flex-col items-center justify-center p-1"
                         >
-                          <span className="text-sm font-bold text-foreground">{page}</span>
-                          <span className="text-[9px] text-primary truncate max-w-full text-center leading-tight">
+                          <span className="text-sm font-bold text-white/80">{page}</span>
+                          <span className="text-[9px] text-emerald-400 truncate max-w-full text-center leading-tight">
                             {surah?.transliteration ?? `S.${pageSurah}`}
                           </span>
                         </Link>

@@ -250,7 +250,7 @@ export default function QiblaClient() {
           <AlertTriangle size={18} className="text-destructive flex-shrink-0 mt-0.5" />
           <div className="flex-1">
             <p className="text-sm font-medium text-destructive">Gagal mendeteksi lokasi</p>
-            <p className="text-xs text-muted-foreground mt-1">{locationError}</p>
+            <p className="text-xs text-white/35 mt-1">{locationError}</p>
             <button
               onClick={requestLocation}
               className="mt-3 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-destructive text-destructive-foreground text-xs font-medium hover:bg-destructive/90"
@@ -263,9 +263,9 @@ export default function QiblaClient() {
       ) : null}
 
       {locationLoading && !coords ? (
-        <div className="rounded-xl border border-border bg-card p-6 flex items-center justify-center gap-3">
+        <div className="rounded-xl border border-white/[0.06] bg-white/[0.03] p-6 flex items-center justify-center gap-3">
           <Loader2 size={18} className="animate-spin text-primary" />
-          <p className="text-sm text-muted-foreground">Mendeteksi lokasi Anda…</p>
+          <p className="text-sm text-white/35">Mendeteksi lokasi Anda…</p>
         </div>
       ) : null}
 
@@ -275,24 +275,24 @@ export default function QiblaClient() {
           initial={{ opacity: 0, scale: 0.98 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.4, delay: 0.1 }}
-          className="rounded-2xl bg-card border border-border shadow-sm p-5 md:p-8"
+          className="rounded-2xl bg-white/[0.03] border border-white/[0.06] shadow-sm p-5 md:p-8"
         >
           {/* Status aligned */}
           <div className="flex items-center justify-center mb-4">
             {heading === null ? (
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-muted text-muted-foreground text-xs font-medium">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/[0.04] text-white/35 text-xs font-medium">
                 <Info size={12} /> Aktifkan sensor kompas untuk navigasi
               </div>
             ) : isFacingQibla ? (
               <motion.div
                 initial={{ scale: 0.9, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
-                className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/15 text-primary text-xs font-bold"
+                className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-500/15 text-emerald-400 text-xs font-bold"
               >
                 <CheckCircle2 size={14} /> Menghadap Kiblat
               </motion.div>
             ) : (
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent/15 text-accent-foreground text-xs font-medium">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-500/15 text-amber-400-foreground text-xs font-medium">
                 <Navigation2 size={12} />
                 Putar {deltaToQibla !== null ? `${Math.round(deltaToQibla)}°` : '—'} menuju kiblat
               </div>
@@ -305,7 +305,7 @@ export default function QiblaClient() {
 
             {/* Compass Rose (rotates -heading) */}
             <motion.div
-              className="absolute inset-0 rounded-full border-2 border-border bg-background shadow-inner"
+              className="absolute inset-0 rounded-full border-2 border-white/[0.06] bg-[\0] shadow-inner"
               animate={{ rotate: roseRotation }}
               transition={{ type: 'spring', damping: 20, stiffness: 100, mass: 0.5 }}
             >
@@ -324,7 +324,7 @@ export default function QiblaClient() {
                   >
                     <div
                       className={`${
-                        isMajor ? 'w-[2px] h-3 bg-foreground/60' : 'w-[1px] h-1.5 bg-muted-foreground/40'
+                        isMajor ? 'w-[2px] h-3 bg-white/60' : 'w-[1px] h-1.5 bg-muted-foreground/40'
                       } mx-auto`}
                     />
                   </div>
@@ -334,9 +334,9 @@ export default function QiblaClient() {
               {/* N / E / S / W labels */}
               {[
                 { label: 'N', angle: 0, color: 'text-red-500 dark:text-red-400' },
-                { label: 'E', angle: 90, color: 'text-foreground' },
-                { label: 'S', angle: 180, color: 'text-foreground' },
-                { label: 'W', angle: 270, color: 'text-foreground' },
+                { label: 'E', angle: 90, color: 'text-white/85' },
+                { label: 'S', angle: 180, color: 'text-white/85' },
+                { label: 'W', angle: 270, color: 'text-white/85' },
               ].map((c) => (
                 <div
                   key={c.label}
@@ -360,7 +360,7 @@ export default function QiblaClient() {
                   style={{ transform: `translateX(-50%) rotate(${angle}deg)`, height: '50%' }}
                 >
                   <div className="pt-6" style={{ transform: `rotate(${-angle}deg)` }}>
-                    <span className="text-[10px] text-muted-foreground">{angle}</span>
+                    <span className="text-[10px] text-white/35">{angle}</span>
                   </div>
                 </div>
               ))}
@@ -395,32 +395,32 @@ export default function QiblaClient() {
             </motion.div>
 
             {/* Center hub */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-background border-2 border-primary flex items-center justify-center z-10">
-              <span className="font-arabic text-primary text-sm leading-none">كعبة</span>
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-[\0] border-2 border-emerald-500/30 flex items-center justify-center z-10">
+              <span className="font-arabic text-emerald-400 text-sm leading-none">كعبة</span>
             </div>
           </div>
 
           {/* Info derajat */}
           <div className="mt-5 grid grid-cols-2 gap-3">
             <div className="rounded-lg bg-muted/60 p-3 text-center">
-              <p className="text-[11px] uppercase tracking-wide text-muted-foreground font-medium">
+              <p className="text-[11px] uppercase tracking-wide text-white/35 font-medium">
                 Arah Kiblat
               </p>
-              <p className="font-display text-2xl font-bold text-primary mt-1">
+              <p className="font-display text-2xl font-bold text-emerald-400 mt-1">
                 {Math.round(qiblaBearing)}°
               </p>
-              <p className="text-[11px] text-muted-foreground mt-0.5">
+              <p className="text-[11px] text-white/35 mt-0.5">
                 {bearingToCompassLabelLong(qiblaBearing)} dari utara
               </p>
             </div>
             <div className="rounded-lg bg-muted/60 p-3 text-center">
-              <p className="text-[11px] uppercase tracking-wide text-muted-foreground font-medium">
+              <p className="text-[11px] uppercase tracking-wide text-white/35 font-medium">
                 Arah Perangkat
               </p>
-              <p className="font-display text-2xl font-bold text-foreground mt-1">
+              <p className="font-display text-2xl font-bold text-white/85 mt-1">
                 {heading !== null ? `${Math.round(heading)}°` : '—'}
               </p>
-              <p className="text-[11px] text-muted-foreground mt-0.5">
+              <p className="text-[11px] text-white/35 mt-0.5">
                 {heading !== null ? bearingToCompassLabelLong(heading) : 'Sensor belum aktif'}
               </p>
             </div>
@@ -432,7 +432,7 @@ export default function QiblaClient() {
               <button
                 onClick={startSensor}
                 disabled={sensorStatus === 'requesting'}
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-primary text-primary-foreground text-sm font-medium hover:bg-primary/90 disabled:opacity-60 transition-colors"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-primary text-primary-foreground text-sm font-medium hover:bg-emerald-500/90 disabled:opacity-60 transition-colors"
               >
                 {sensorStatus === 'requesting' ? (
                   <Loader2 size={16} className="animate-spin" />
@@ -446,11 +446,11 @@ export default function QiblaClient() {
                   Izin sensor ditolak. Aktifkan di pengaturan browser, lalu muat ulang halaman.
                 </p>
               ) : sensorStatus === 'unsupported' ? (
-                <p className="text-[11px] text-muted-foreground">
+                <p className="text-[11px] text-white/35">
                   Perangkat tidak mendukung sensor. Gunakan derajat kiblat di atas &amp; kompas fisik.
                 </p>
               ) : (
-                <p className="text-[11px] text-muted-foreground">
+                <p className="text-[11px] text-white/35">
                   iOS: perlu izin orientasi. Android Chrome biasanya langsung aktif.
                 </p>
               )}
@@ -475,24 +475,24 @@ export default function QiblaClient() {
           transition={{ duration: 0.4, delay: 0.15 }}
           className="grid grid-cols-1 md:grid-cols-2 gap-3"
         >
-          <div className="rounded-xl bg-card border border-border p-4">
+          <div className="rounded-xl bg-white/[0.03] border border-white/[0.06] p-4">
             <div className="flex items-start gap-3">
-              <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                <MapPin size={16} className="text-primary" />
+              <div className="w-9 h-9 rounded-lg bg-emerald-500/10 flex items-center justify-center flex-shrink-0">
+                <MapPin size={16} className="text-emerald-400" />
               </div>
               <div className="min-w-0 flex-1">
-                <p className="text-[11px] uppercase tracking-wide text-muted-foreground font-medium">
+                <p className="text-[11px] uppercase tracking-wide text-white/35 font-medium">
                   Lokasi Anda
                 </p>
-                <p className="text-sm font-semibold text-foreground mt-0.5 truncate">
+                <p className="text-sm font-semibold text-white/85 mt-0.5 truncate">
                   {locationLabel || 'Terdeteksi'}
                 </p>
-                <p className="text-[11px] text-muted-foreground mt-1">
+                <p className="text-[11px] text-white/35 mt-1">
                   {formatCoord(coords.lat)} {coords.lat >= 0 ? 'LU' : 'LS'} ·{' '}
                   {formatCoord(coords.lon)} {coords.lon >= 0 ? 'BT' : 'BB'}
                 </p>
                 {coords.accuracy ? (
-                  <p className="text-[11px] text-muted-foreground">
+                  <p className="text-[11px] text-white/35">
                     Akurasi: ±{Math.round(coords.accuracy)} m
                   </p>
                 ) : null}
@@ -501,7 +501,7 @@ export default function QiblaClient() {
                 onClick={requestLocation}
                 disabled={locationLoading}
                 aria-label="Perbarui lokasi"
-                className="p-2 rounded-lg hover:bg-muted text-muted-foreground transition-colors disabled:opacity-50"
+                className="p-2 rounded-lg hover:bg-white/[0.04] text-white/35 transition-colors disabled:opacity-50"
               >
                 {locationLoading ? (
                   <Loader2 size={14} className="animate-spin" />
@@ -512,19 +512,19 @@ export default function QiblaClient() {
             </div>
           </div>
 
-          <div className="rounded-xl bg-card border border-border p-4">
+          <div className="rounded-xl bg-white/[0.03] border border-white/[0.06] p-4">
             <div className="flex items-start gap-3">
-              <div className="w-9 h-9 rounded-lg bg-accent/15 flex items-center justify-center flex-shrink-0">
-                <Navigation2 size={16} className="text-accent-foreground" />
+              <div className="w-9 h-9 rounded-lg bg-amber-500/15 flex items-center justify-center flex-shrink-0">
+                <Navigation2 size={16} className="text-amber-400-foreground" />
               </div>
               <div>
-                <p className="text-[11px] uppercase tracking-wide text-muted-foreground font-medium">
+                <p className="text-[11px] uppercase tracking-wide text-white/35 font-medium">
                   Jarak ke Ka&apos;bah
                 </p>
-                <p className="text-sm font-semibold text-foreground mt-0.5">
+                <p className="text-sm font-semibold text-white/85 mt-0.5">
                   {formatDistance(distanceKm)}
                 </p>
-                <p className="text-[11px] text-muted-foreground mt-1">
+                <p className="text-[11px] text-white/35 mt-1">
                   Garis lurus (great-circle) ke Masjidil Haram, Makkah.
                 </p>
               </div>
@@ -538,15 +538,15 @@ export default function QiblaClient() {
         initial={{ opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4, delay: 0.2 }}
-        className="rounded-xl bg-card border border-border p-4 md:p-5"
+        className="rounded-xl bg-white/[0.03] border border-white/[0.06] p-4 md:p-5"
       >
         <div className="flex items-start gap-3">
-          <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-            <Info size={16} className="text-primary" />
+          <div className="w-9 h-9 rounded-lg bg-emerald-500/10 flex items-center justify-center flex-shrink-0">
+            <Info size={16} className="text-emerald-400" />
           </div>
           <div className="flex-1">
             <h3 className="font-display font-bold text-sm text-foreground">Petunjuk Penggunaan</h3>
-            <ol className="mt-2 space-y-1.5 text-sm text-muted-foreground list-decimal list-inside">
+            <ol className="mt-2 space-y-1.5 text-sm text-white/35 list-decimal list-inside">
               <li>Izinkan akses <strong>lokasi</strong> agar arah kiblat dihitung dari posisi Anda.</li>
               <li>Ketuk <strong>Aktifkan Sensor Kompas</strong> untuk mengaktifkan kompas perangkat.</li>
               <li>
@@ -560,7 +560,7 @@ export default function QiblaClient() {
                 Jauhi benda magnetik (logam besar, speaker, casing bermagnet) agar pembacaan akurat.
               </li>
             </ol>
-            <p className="mt-3 text-[11px] text-muted-foreground leading-relaxed">
+            <p className="mt-3 text-[11px] text-white/35 leading-relaxed">
               Catatan: Akurasi kompas web bergantung pada sensor perangkat. Untuk akurasi optimal, gunakan di area
               terbuka, hindari sumber magnet, dan kalibrasi berkala. Nilai derajat kiblat yang ditampilkan dihitung
               dengan rumus bearing lingkaran besar (great-circle) dari lokasi Anda ke Ka&apos;bah

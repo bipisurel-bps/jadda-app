@@ -69,10 +69,10 @@ function ArabicBlock({ arabic, transliteration }: { arabic?: string; translitera
     }).catch(() => toast.error('Gagal menyalin'));
   };
   return (
-    <div className="my-3 rounded-lg bg-muted/50 p-4 border border-border/30">
-      <p className="text-xl md:text-2xl font-arabic text-foreground leading-[2.2] text-right mb-2" dir="rtl">{arabic}</p>
-      {transliteration && <p className="text-sm text-muted-foreground italic">{transliteration}</p>}
-      <button onClick={handleCopy} className="mt-2 flex items-center gap-1.5 text-xs text-primary hover:text-primary/80 transition-colors">
+    <div className="my-3 rounded-lg bg-white/[0.04] p-4 border border-white/30">
+      <p className="text-xl md:text-2xl font-arabic text-white/85 leading-[2.2] text-right mb-2" dir="rtl">{arabic}</p>
+      {transliteration && <p className="text-sm text-white/35 italic">{transliteration}</p>}
+      <button onClick={handleCopy} className="mt-2 flex items-center gap-1.5 text-xs text-emerald-400 hover:text-emerald-400/80 transition-colors">
         {copied ? <Check size={12} /> : <Copy size={12} />}
         {copied ? 'Tersalin' : 'Salin teks Arab'}
       </button>
@@ -100,7 +100,7 @@ export default function HajiClient() {
   if (!data) {
     return (
       <div className="flex justify-center py-20">
-        <div className="w-8 h-8 border-2 border-primary border-t-transparent rounded-full animate-spin" />
+        <div className="w-8 h-8 border-2 border-emerald-500/30 border-t-transparent rounded-full animate-spin" />
       </div>
     );
   }
@@ -111,16 +111,16 @@ export default function HajiClient() {
     <div className="space-y-6">
       <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="space-y-2">
         <h1 className="text-2xl md:text-3xl font-display font-bold text-foreground">{data.title}</h1>
-        <p className="text-sm text-muted-foreground">{data.description}</p>
-        <p className="text-xs text-muted-foreground italic">{data.source}</p>
+        <p className="text-sm text-white/35">{data.description}</p>
+        <p className="text-xs text-white/35 italic">{data.source}</p>
       </motion.div>
 
       {data.note && (
         <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}
-          className="rounded-xl bg-primary/5 border border-primary/15 p-4">
+          className="rounded-xl bg-emerald-500/5 border border-emerald-500/15 p-4">
           <div className="flex gap-3">
-            <Info size={18} className="text-primary mt-0.5 flex-shrink-0" />
-            <p className="text-sm text-foreground leading-relaxed">{data.note}</p>
+            <Info size={18} className="text-emerald-400 mt-0.5 flex-shrink-0" />
+            <p className="text-sm text-white/85 leading-relaxed">{data.note}</p>
           </div>
         </motion.div>
       )}
@@ -128,11 +128,11 @@ export default function HajiClient() {
       {/* View toggle */}
       <div className="flex gap-2">
         <button onClick={() => setViewMode('accordion')}
-          className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${viewMode === 'accordion' ? 'bg-primary text-primary-foreground shadow-sm' : 'bg-muted text-muted-foreground hover:text-foreground'}`}>
+          className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${viewMode === 'accordion' ? 'bg-primary text-primary-foreground shadow-sm' : 'bg-white/[0.04] text-white/35 hover:text-foreground'}`}>
           Semua Langkah
         </button>
         <button onClick={() => setViewMode('stepper')}
-          className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${viewMode === 'stepper' ? 'bg-primary text-primary-foreground shadow-sm' : 'bg-muted text-muted-foreground hover:text-foreground'}`}>
+          className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${viewMode === 'stepper' ? 'bg-primary text-primary-foreground shadow-sm' : 'bg-white/[0.04] text-white/35 hover:text-foreground'}`}>
           Langkah demi Langkah
         </button>
       </div>
@@ -144,16 +144,16 @@ export default function HajiClient() {
             const color = stepColors[idx % stepColors.length];
             return (
               <motion.div key={step.id} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: idx * 0.05 }}
-                className="rounded-xl bg-card border border-border/50 shadow-sm overflow-hidden">
-                <button onClick={() => toggleStep(idx)} className="w-full flex items-center gap-4 p-4 text-left hover:bg-muted/30 transition-colors">
+                className="rounded-xl bg-white/[0.03] border border-white/50 shadow-sm overflow-hidden">
+                <button onClick={() => toggleStep(idx)} className="w-full flex items-center gap-4 p-4 text-left hover:bg-white/[0.03] transition-colors">
                   <div className={`w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 ${color}`}>
                     {stepIcons[step.icon] || <Info size={20} />}
                   </div>
                   <div className="flex-1 min-w-0">
-                    <p className="text-xs font-medium text-muted-foreground">Langkah {step.id}</p>
-                    <p className="font-display font-bold text-foreground truncate">{step.title}</p>
+                    <p className="text-xs font-medium text-white/35">Langkah {step.id}</p>
+                    <p className="font-display font-bold text-white/85 truncate">{step.title}</p>
                   </div>
-                  {isOpen ? <ChevronUp size={20} className="text-muted-foreground" /> : <ChevronDown size={20} className="text-muted-foreground" />}
+                  {isOpen ? <ChevronUp size={20} className="text-white/35" /> : <ChevronDown size={20} className="text-white/35" />}
                 </button>
                 <AnimatePresence>
                   {isOpen && (
@@ -161,12 +161,12 @@ export default function HajiClient() {
                       className="overflow-hidden">
                       <div className="px-4 pb-4 space-y-3">
                         {step.preparation && step.preparation.length > 0 && (
-                          <div className="rounded-lg bg-muted/30 p-3">
-                            <p className="text-xs font-semibold text-muted-foreground mb-2">PERSIAPAN:</p>
+                          <div className="rounded-lg bg-white/[0.03] p-3">
+                            <p className="text-xs font-semibold text-white/35 mb-2">PERSIAPAN:</p>
                             <ul className="space-y-1">
                               {step.preparation.map((p, i) => (
-                                <li key={i} className="text-sm text-foreground flex gap-2">
-                                  <span className="text-primary font-bold">{i + 1}.</span> {p}
+                                <li key={i} className="text-sm text-white/85 flex gap-2">
+                                  <span className="text-emerald-400 font-bold">{i + 1}.</span> {p}
                                 </li>
                               ))}
                             </ul>
@@ -174,7 +174,7 @@ export default function HajiClient() {
                         )}
                         {step.items.map((item, i) => (
                           <div key={i}>
-                            <p className="text-sm text-foreground leading-relaxed">{item.text}</p>
+                            <p className="text-sm text-white/85 leading-relaxed">{item.text}</p>
                             <ArabicBlock arabic={item.arabic} transliteration={item.transliteration} />
                           </div>
                         ))}
@@ -182,7 +182,7 @@ export default function HajiClient() {
                           <div className="rounded-lg bg-amber-500/5 border border-amber-500/10 p-3 mt-2">
                             <p className="text-xs font-semibold text-amber-700 dark:text-amber-400 mb-1">CATATAN:</p>
                             {step.notes.map((n, i) => (
-                              <p key={i} className="text-xs text-muted-foreground leading-relaxed mt-1">• {n}</p>
+                              <p key={i} className="text-xs text-white/35 leading-relaxed mt-1">• {n}</p>
                             ))}
                           </div>
                         )}
@@ -202,7 +202,7 @@ export default function HajiClient() {
               <button key={step.id} onClick={() => setCurrentStep(idx)}
                 className={`flex-shrink-0 w-9 h-9 rounded-full flex items-center justify-center text-sm font-bold transition-all ${
                   idx === currentStep ? 'bg-primary text-primary-foreground shadow-md scale-110' :
-                  idx < currentStep ? 'bg-primary/20 text-primary' : 'bg-muted text-muted-foreground'
+                  idx < currentStep ? 'bg-emerald-500/20 text-primary' : 'bg-white/[0.04] text-white/35'
                 }`}>
                 {step.id}
               </button>
@@ -211,23 +211,23 @@ export default function HajiClient() {
 
           {steps[currentStep] && (
             <motion.div key={currentStep} initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.3 }}
-              className="rounded-xl bg-card border border-border/50 shadow-sm p-5 space-y-4">
+              className="rounded-xl bg-white/[0.03] border border-white/50 shadow-sm p-5 space-y-4">
               <div className="flex items-center gap-3">
                 <div className={`w-10 h-10 rounded-xl flex items-center justify-center ${stepColors[currentStep % stepColors.length]}`}>
                   {stepIcons[steps[currentStep].icon] || <Info size={20} />}
                 </div>
                 <div>
-                  <p className="text-xs text-muted-foreground">Langkah {steps[currentStep].id} dari {steps.length}</p>
+                  <p className="text-xs text-white/35">Langkah {steps[currentStep].id} dari {steps.length}</p>
                   <h2 className="font-display font-bold text-lg text-foreground">{steps[currentStep].title}</h2>
                 </div>
               </div>
               {steps[currentStep].preparation && (
-                <div className="rounded-lg bg-muted/30 p-3">
-                  <p className="text-xs font-semibold text-muted-foreground mb-2">PERSIAPAN:</p>
+                <div className="rounded-lg bg-white/[0.03] p-3">
+                  <p className="text-xs font-semibold text-white/35 mb-2">PERSIAPAN:</p>
                   <ul className="space-y-1">
                     {steps[currentStep].preparation!.map((p, i) => (
-                      <li key={i} className="text-sm text-foreground flex gap-2">
-                        <span className="text-primary font-bold">{i + 1}.</span> {p}
+                      <li key={i} className="text-sm text-white/85 flex gap-2">
+                        <span className="text-emerald-400 font-bold">{i + 1}.</span> {p}
                       </li>
                     ))}
                   </ul>
@@ -235,7 +235,7 @@ export default function HajiClient() {
               )}
               {steps[currentStep].items.map((item, i) => (
                 <div key={i}>
-                  <p className="text-sm text-foreground leading-relaxed">{item.text}</p>
+                  <p className="text-sm text-white/85 leading-relaxed">{item.text}</p>
                   <ArabicBlock arabic={item.arabic} transliteration={item.transliteration} />
                 </div>
               ))}
@@ -243,17 +243,17 @@ export default function HajiClient() {
                 <div className="rounded-lg bg-amber-500/5 border border-amber-500/10 p-3">
                   <p className="text-xs font-semibold text-amber-700 dark:text-amber-400 mb-1">CATATAN:</p>
                   {steps[currentStep].notes!.map((n, i) => (
-                    <p key={i} className="text-xs text-muted-foreground leading-relaxed mt-1">• {n}</p>
+                    <p key={i} className="text-xs text-white/35 leading-relaxed mt-1">• {n}</p>
                   ))}
                 </div>
               )}
               <div className="flex justify-between pt-2">
                 <button onClick={() => setCurrentStep(Math.max(0, currentStep - 1))} disabled={currentStep === 0}
-                  className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium bg-muted text-foreground disabled:opacity-30 disabled:cursor-not-allowed hover:bg-muted/80 transition-colors">
+                  className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium bg-white/[0.04] text-white/85 disabled:opacity-30 disabled:cursor-not-allowed hover:bg-white/80 transition-colors">
                   <ArrowLeft size={16} /> Sebelumnya
                 </button>
                 <button onClick={() => setCurrentStep(Math.min(steps.length - 1, currentStep + 1))} disabled={currentStep === steps.length - 1}
-                  className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium bg-primary text-primary-foreground disabled:opacity-30 disabled:cursor-not-allowed hover:bg-primary/90 transition-colors">
+                  className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium bg-primary text-primary-foreground disabled:opacity-30 disabled:cursor-not-allowed hover:bg-emerald-500/90 transition-colors">
                   Selanjutnya <ArrowRight size={16} />
                 </button>
               </div>
@@ -262,7 +262,7 @@ export default function HajiClient() {
         </div>
       )}
 
-      <p className="text-center text-[11px] text-muted-foreground italic">Sumber: Mulakhos Fiqhi (Kitabul Hajj) &mdash; Syaikh Shaleh bin Fauzan Al-Fauzan</p>
+      <p className="text-center text-[11px] text-white/35 italic">Sumber: Mulakhos Fiqhi (Kitabul Hajj) &mdash; Syaikh Shaleh bin Fauzan Al-Fauzan</p>
     </div>
   );
 }

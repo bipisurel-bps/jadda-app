@@ -119,7 +119,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-[#050a14] text-white;
     
   }
   [data-hydration-error] {

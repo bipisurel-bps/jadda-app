@@ -297,7 +297,7 @@ export default function SholatClient() {
     return (
       <div className="flex flex-col items-center justify-center py-20 gap-4">
         <Loader2 size={40} className="animate-spin text-primary" />
-        <p className="text-muted-foreground text-sm">Mendeteksi lokasi & mengambil jadwal sholat...</p>
+        <p className="text-white/35 text-sm">Mendeteksi lokasi & mengambil jadwal sholat...</p>
       </div>
     );
   }
@@ -306,7 +306,7 @@ export default function SholatClient() {
     return (
       <div className="flex flex-col items-center justify-center py-20 gap-4 text-center px-4">
         <AlertCircle size={40} className="text-red-500" />
-        <p className="text-foreground font-medium">{error}</p>
+        <p className="text-white/85 font-medium">{error}</p>
         <button onClick={loadData} className="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-primary-foreground text-sm font-medium">
           <RefreshCw size={16} /> Coba Lagi
         </button>
@@ -325,7 +325,7 @@ export default function SholatClient() {
 
       <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="space-y-1">
         <h1 className="text-2xl md:text-3xl font-display font-bold text-foreground">Waktu Sholat</h1>
-        <div className="flex items-center gap-2 text-muted-foreground text-sm">
+        <div className="flex items-center gap-2 text-white/35 text-sm">
           <MapPin size={14} />
           <span>{location?.city || `${location?.latitude?.toFixed(2)}, ${location?.longitude?.toFixed(2)}`}</span>
         </div>
@@ -355,7 +355,7 @@ export default function SholatClient() {
       </motion.div>
 
       <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}
-        className="rounded-xl bg-card border border-border/50 shadow-sm overflow-hidden"
+        className="rounded-xl bg-white/[0.03] border border-white/50 shadow-sm overflow-hidden"
       >
         {prayerOrder.map((key, i) => {
           const info = PRAYER_NAMES[key];
@@ -364,18 +364,18 @@ export default function SholatClient() {
           const isSunrise = key === 'Sunrise';
           return (
             <div key={key}
-              className={`flex items-center justify-between px-5 py-4 ${i < prayerOrder.length - 1 ? 'border-b border-border/30' : ''} ${isNext ? 'bg-primary/5' : ''} ${isSunrise ? 'opacity-60' : ''}`}
+              className={`flex items-center justify-between px-5 py-4 ${i < prayerOrder.length - 1 ? 'border-b border-white/30' : ''} ${isNext ? 'bg-emerald-500/5' : ''} ${isSunrise ? 'opacity-60' : ''}`}
             >
               <div className="flex items-center gap-4">
-                <div className={`w-9 h-9 rounded-lg flex items-center justify-center ${isNext ? 'bg-primary/15' : 'bg-muted/50'}`}>
+                <div className={`w-9 h-9 rounded-lg flex items-center justify-center ${isNext ? 'bg-emerald-500/15' : 'bg-white/[0.04]'}`}>
                   <span className={info?.color}>{info?.icon}</span>
                 </div>
-                <p className={`font-medium ${isNext ? 'text-primary font-semibold' : 'text-foreground'} ${isSunrise ? 'text-muted-foreground' : ''}`}>
+                <p className={`font-medium ${isNext ? 'text-emerald-400 font-semibold' : 'text-white/85'} ${isSunrise ? 'text-white/35' : ''}`}>
                   {info?.label}{isSunrise && <span className="text-xs ml-1">(terbit)</span>}
                 </p>
               </div>
               <div className="flex items-center gap-3">
-                <span className={`font-mono text-base ${isNext ? 'text-primary font-bold' : 'text-foreground'}`}>{time}</span>
+                <span className={`font-mono text-base ${isNext ? 'text-emerald-400 font-bold' : 'text-white/85'}`}>{time}</span>
                 {isNext && <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />}
               </div>
             </div>
@@ -384,7 +384,7 @@ export default function SholatClient() {
       </motion.div>
 
       <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}
-        className="rounded-xl bg-card border border-border/50 shadow-sm p-5 space-y-4"
+        className="rounded-xl bg-white/[0.03] border border-white/50 shadow-sm p-5 space-y-4"
       >
         {/* Adzan Toggle */}
         <div className="flex items-center justify-between">
@@ -394,18 +394,18 @@ export default function SholatClient() {
             </div>
             <div>
               <h2 className="font-display font-bold text-foreground">Adzan &amp; Pengingat Sholat</h2>
-              <p className="text-xs text-muted-foreground">Suara adzan + notifikasi tiap waktu sholat</p>
+              <p className="text-xs text-white/35">Suara adzan + notifikasi tiap waktu sholat</p>
             </div>
           </div>
           <button onClick={toggleAdzan}
-            className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all ${adzanEnabled ? 'bg-emerald-500/10 text-emerald-600 border border-emerald-500/20' : 'bg-muted text-muted-foreground hover:bg-muted/80'}`}
+            className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all ${adzanEnabled ? 'bg-emerald-500/10 text-emerald-600 border border-emerald-500/20' : 'bg-white/[0.04] text-white/35 hover:bg-white/80'}`}
           >
             {adzanEnabled ? <Bell size={16} /> : <BellOff size={16} />}
             {adzanEnabled ? 'Aktif' : 'Aktifkan'}
           </button>
         </div>
 
-        <div className="border-t border-border/30" />
+        <div className="border-t border-white/30" />
 
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
@@ -414,11 +414,11 @@ export default function SholatClient() {
             </div>
             <div>
               <h2 className="font-display font-bold text-foreground">Pengingat Dzikir</h2>
-              <p className="text-xs text-muted-foreground">Notifikasi dzikir pagi &amp; petang</p>
+              <p className="text-xs text-white/35">Notifikasi dzikir pagi &amp; petang</p>
             </div>
           </div>
           <button onClick={toggleNotif}
-            className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all ${notifEnabled ? 'bg-primary/10 text-primary border border-primary/20' : 'bg-muted text-muted-foreground hover:bg-muted/80'}`}
+            className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all ${notifEnabled ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/20' : 'bg-white/[0.04] text-white/35 hover:bg-white/80'}`}
           >
             {notifEnabled ? <Bell size={16} /> : <BellOff size={16} />}
             {notifEnabled ? 'Aktif' : 'Aktifkan'}
@@ -431,47 +431,47 @@ export default function SholatClient() {
               <Sunrise size={14} className="text-indigo-500" />
               <span className="text-sm font-semibold text-foreground">Dzikir Pagi</span>
             </div>
-            <p className="text-xs text-muted-foreground">Setelah Subuh ({prayerTimes?.Fajr}) sampai Syuruq ({prayerTimes?.Sunrise})</p>
+            <p className="text-xs text-white/35">Setelah Subuh ({prayerTimes?.Fajr}) sampai Syuruq ({prayerTimes?.Sunrise})</p>
           </div>
           <div className="rounded-lg bg-orange-500/5 border border-orange-500/10 p-3">
             <div className="flex items-center gap-2 mb-1">
               <Sunset size={14} className="text-orange-500" />
               <span className="text-sm font-semibold text-foreground">Dzikir Petang</span>
             </div>
-            <p className="text-xs text-muted-foreground">Setelah Ashar ({prayerTimes?.Asr}) sampai Maghrib ({prayerTimes?.Maghrib})</p>
+            <p className="text-xs text-white/35">Setelah Ashar ({prayerTimes?.Asr}) sampai Maghrib ({prayerTimes?.Maghrib})</p>
           </div>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          <Link href="/doa" className="flex items-center justify-between px-4 py-3 rounded-lg bg-primary/5 hover:bg-primary/10 transition-colors group">
+          <Link href="/doa" className="flex items-center justify-between px-4 py-3 rounded-lg bg-emerald-500/5 hover:bg-emerald-500/10 transition-colors group">
             <div className="flex items-center gap-3">
-              <BookOpen size={18} className="text-primary" />
+              <BookOpen size={18} className="text-emerald-400" />
               <div>
                 <p className="text-sm font-medium text-foreground">Kumpulan Doa &amp; Dzikir</p>
-                <p className="text-xs text-muted-foreground">Dzikir pagi &amp; petang dari Hisnul Muslim</p>
+                <p className="text-xs text-white/35">Dzikir pagi &amp; petang dari Hisnul Muslim</p>
               </div>
             </div>
-            <ChevronRight size={18} className="text-muted-foreground group-hover:text-primary transition-colors" />
+            <ChevronRight size={18} className="text-white/35 group-hover:text-emerald-400 transition-colors" />
           </Link>
           <Link href="/qibla" className="flex items-center justify-between px-4 py-3 rounded-lg bg-emerald-500/5 hover:bg-emerald-500/10 border border-emerald-500/10 transition-colors group">
             <div className="flex items-center gap-3">
               <Compass size={18} className="text-emerald-600 dark:text-emerald-400" />
               <div>
                 <p className="text-sm font-medium text-foreground">Arah Kiblat</p>
-                <p className="text-xs text-muted-foreground">Kompas digital berbasis GPS &amp; sensor</p>
+                <p className="text-xs text-white/35">Kompas digital berbasis GPS &amp; sensor</p>
               </div>
             </div>
-            <ChevronRight size={18} className="text-muted-foreground group-hover:text-emerald-500 transition-colors" />
+            <ChevronRight size={18} className="text-white/35 group-hover:text-emerald-500 transition-colors" />
           </Link>
         </div>
       </motion.div>
 
       <div className="flex justify-center">
-        <button onClick={loadData} className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors">
+        <button onClick={loadData} className="flex items-center gap-2 text-sm text-white/35 hover:text-emerald-400 transition-colors">
           <RefreshCw size={14} /> Perbarui jadwal
         </button>
       </div>
-      <p className="text-center text-[11px] text-muted-foreground">Sumber: Aladhan.com &bull; Metode: Kemenag RI</p>
+      <p className="text-center text-[11px] text-white/35">Sumber: Aladhan.com &bull; Metode: Kemenag RI</p>
     </div>
   );
 }

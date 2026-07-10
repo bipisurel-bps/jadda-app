@@ -240,7 +240,7 @@ export default function HomeClient() {
     <div className="relative min-h-screen -mx-4 md:-mx-6 -mt-4 md:-mt-6 pb-16">
       {/* ═══════ Deep Void Background ═══════ */}
       <div className="fixed inset-0 -z-10 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-[#050a14] via-[#060e1a] to-[#040a12]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[\0] via-[#060e1a] to-[#040a12]" />
         {/* Aurora mesh */}
         <div className="absolute inset-0 opacity-50">
           <div className="absolute -top-20 -right-16 w-[700px] h-[700px] rounded-full bg-[radial-gradient(circle_at_center,_rgb(5_150_105_/_0.10),_transparent_70%)] animate-orb-1" />
@@ -290,7 +290,7 @@ export default function HomeClient() {
           </div>
 
           {/* Bottom fade for seamless blend */}
-          <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[#050a14] to-transparent pointer-events-none" />
+          <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[\0] to-transparent pointer-events-none" />
         </motion.section>
 
         {/* ═══════ DAILY VERSE ═══════ */}

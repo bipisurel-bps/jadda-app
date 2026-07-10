@@ -93,7 +93,7 @@ export default function UlamaDetailPage({ params }: { params: Promise<{ id: stri
       <motion.div initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.3 }}>
         <Link
           href="/keilmuan/ulama"
-          className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+          className="inline-flex items-center gap-2 text-sm text-white/35 hover:text-white/85 transition-colors"
         >
           <ArrowLeft size={16} />
           Kembali ke Biografi Ulama
@@ -114,11 +114,11 @@ export default function UlamaDetailPage({ params }: { params: Promise<{ id: stri
               <GraduationCap size={26} className={styles.text} />
             </div>
             <div className="flex-1 min-w-0">
-              <h1 className="font-display font-bold text-xl md:text-2xl text-foreground">{scholar.name}</h1>
+              <h1 className="font-display font-bold text-xl md:text-2xl text-white/85">{scholar.name}</h1>
               {scholar.kunyah && (
-                <p className="text-sm text-muted-foreground mt-0.5">{scholar.kunyah}</p>
+                <p className="text-sm text-white/35 mt-0.5">{scholar.kunyah}</p>
               )}
-              <p className="text-xs text-muted-foreground/70 mt-1 leading-relaxed">{scholar.fullName}</p>
+              <p className="text-xs text-white/35/70 mt-1 leading-relaxed">{scholar.fullName}</p>
             </div>
           </div>
 
@@ -127,7 +127,7 @@ export default function UlamaDetailPage({ params }: { params: Promise<{ id: stri
             {(scholar.birthYear || scholar.deathYear) && (
               <div className="flex items-center gap-2">
                 <Calendar size={14} className={styles.text} />
-                <span className="text-xs text-muted-foreground">
+                <span className="text-xs text-white/35">
                   {scholar.birthYear ?? '?'} — {scholar.deathYear ?? '?'}
                 </span>
               </div>
@@ -135,20 +135,20 @@ export default function UlamaDetailPage({ params }: { params: Promise<{ id: stri
             {scholar.age && (
               <div className="flex items-center gap-2">
                 <Clock size={14} className={styles.text} />
-                <span className="text-xs text-muted-foreground">{scholar.age} tahun</span>
+                <span className="text-xs text-white/35">{scholar.age} tahun</span>
               </div>
             )}
             {scholar.birthPlace && (
               <div className="flex items-center gap-2">
                 <MapPin size={14} className={styles.text} />
-                <span className="text-xs text-muted-foreground">{scholar.birthPlace}</span>
+                <span className="text-xs text-white/35">{scholar.birthPlace}</span>
               </div>
             )}
             {scholar.masterwork && (
               <div className="flex items-center gap-2 col-span-2 sm:col-span-3">
                 <BookOpen size={14} className={styles.text} />
-                <span className="text-xs text-muted-foreground">
-                  Karya utama: <span className="font-medium text-foreground/80">{scholar.masterwork}</span>
+                <span className="text-xs text-white/35">
+                  Karya utama: <span className="font-medium text-white/85/80">{scholar.masterwork}</span>
                 </span>
               </div>
             )}
@@ -172,7 +172,7 @@ export default function UlamaDetailPage({ params }: { params: Promise<{ id: stri
               {section.title}
             </h3>
             {section.content && (
-              <p className="text-sm text-muted-foreground leading-relaxed whitespace-pre-line">
+              <p className="text-sm text-white/35 leading-relaxed whitespace-pre-line">
                 {section.content}
               </p>
             )}
@@ -183,10 +183,10 @@ export default function UlamaDetailPage({ params }: { params: Promise<{ id: stri
                     <div className="flex items-start gap-2.5">
                       <Quote size={14} className={`${styles.text} mt-0.5 shrink-0`} />
                       <div>
-                        <p className="text-xs text-foreground/80 leading-relaxed italic">
+                        <p className="text-xs text-white/85/80 leading-relaxed italic">
                           &ldquo;{q.text}&rdquo;
                         </p>
-                        <p className="text-[11px] text-muted-foreground/60 mt-1.5">
+                        <p className="text-[11px] text-white/35/60 mt-1.5">
                           — {q.scholar}
                         </p>
                       </div>

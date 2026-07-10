@@ -10,7 +10,7 @@ import { toast } from 'sonner';
 type TabType = 'maal' | 'fitrah' | 'perdagangan' | 'pertanian' | 'peternakan';
 
 const tabs: { id: TabType; label: string; icon: React.ElementType; color: string }[] = [
-  { id: 'maal', label: 'Maal', icon: Coins, color: 'text-primary' },
+  { id: 'maal', label: 'Maal', icon: Coins, color: 'text-emerald-400' },
   { id: 'fitrah', label: 'Fitrah', icon: Heart, color: 'text-pink-500' },
   { id: 'perdagangan', label: 'Dagang', icon: ShoppingCart, color: 'text-blue-500' },
   { id: 'pertanian', label: 'Tani', icon: Wheat, color: 'text-amber-600' },
@@ -20,9 +20,9 @@ const tabs: { id: TabType; label: string; icon: React.ElementType; color: string
 function CurrencyInput({ label, value, onChange, placeholder, hint }: { label: string; value: string; onChange: (v: string) => void; placeholder?: string; hint?: string }) {
   return (
     <div>
-      <label className="block text-sm font-medium text-foreground mb-1.5">{label}</label>
+      <label className="block text-sm font-medium text-white/85 mb-1.5">{label}</label>
       <div className="relative">
-        <span className="absolute left-3 top-1/2 -translate-y-1/2 text-sm text-muted-foreground">Rp</span>
+        <span className="absolute left-3 top-1/2 -translate-y-1/2 text-sm text-white/35">Rp</span>
         <input
           type="text"
           inputMode="numeric"
@@ -32,10 +32,10 @@ function CurrencyInput({ label, value, onChange, placeholder, hint }: { label: s
             onChange(raw ? parseInt(raw).toLocaleString('id-ID') : '');
           }}
           placeholder={placeholder ?? '0'}
-          className="w-full rounded-lg border border-border bg-background pl-10 pr-4 py-2.5 text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary"
+          className="w-full rounded-lg border border-white/[0.06] bg-[\0] pl-10 pr-4 py-2.5 text-sm text-white/85 focus:outline-none focus:ring-2 focus:ring-emerald-500/30 focus:border-primary"
         />
       </div>
-      {hint && <p className="text-xs text-muted-foreground mt-1">{hint}</p>}
+      {hint && <p className="text-xs text-white/35 mt-1">{hint}</p>}
     </div>
   );
 }
@@ -43,7 +43,7 @@ function CurrencyInput({ label, value, onChange, placeholder, hint }: { label: s
 function NumberInput({ label, value, onChange, placeholder, suffix }: { label: string; value: string; onChange: (v: string) => void; placeholder?: string; suffix?: string }) {
   return (
     <div>
-      <label className="block text-sm font-medium text-foreground mb-1.5">{label}</label>
+      <label className="block text-sm font-medium text-white/85 mb-1.5">{label}</label>
       <div className="relative">
         <input
           type="text"
@@ -54,9 +54,9 @@ function NumberInput({ label, value, onChange, placeholder, suffix }: { label: s
             onChange(raw);
           }}
           placeholder={placeholder ?? '0'}
-          className="w-full rounded-lg border border-border bg-background px-4 py-2.5 text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary"
+          className="w-full rounded-lg border border-white/[0.06] bg-[\0] px-4 py-2.5 text-sm text-white/85 focus:outline-none focus:ring-2 focus:ring-emerald-500/30 focus:border-primary"
         />
-        {suffix && <span className="absolute right-3 top-1/2 -translate-y-1/2 text-xs text-muted-foreground">{suffix}</span>}
+        {suffix && <span className="absolute right-3 top-1/2 -translate-y-1/2 text-xs text-white/35">{suffix}</span>}
       </div>
     </div>
   );
@@ -156,7 +156,7 @@ export default function ZakatClient() {
       {/* Header */}
       <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
         <h1 className="font-display font-bold text-2xl text-foreground">Hitung Zakat</h1>
-        <p className="text-sm text-muted-foreground mt-1">Hitung zakat Anda sesuai ketentuan syariat Islam</p>
+        <p className="text-sm text-white/35 mt-1">Hitung zakat Anda sesuai ketentuan syariat Islam</p>
       </motion.div>
 
       {/* Tab Selector */}
@@ -168,9 +168,9 @@ export default function ZakatClient() {
           return (
             <button key={tab.id} onClick={() => handleTabChange(tab.id)}
               className={`flex items-center gap-1.5 px-3 py-2 rounded-lg text-sm font-medium transition-all border ${
-                isActive ? 'bg-primary/10 border-primary/30 text-primary shadow-sm' : 'bg-card border-border/50 text-muted-foreground hover:bg-muted/50'
+                isActive ? 'bg-emerald-500/10 border-emerald-500/30 text-emerald-400 shadow-sm' : 'bg-white/[0.03] border-white/50 text-white/35 hover:bg-white/[0.04]'
               }`}>
-              <Icon size={15} className={isActive ? 'text-primary' : tab.color} />
+              <Icon size={15} className={isActive ? 'text-emerald-400' : tab.color} />
               {tab.label}
             </button>
           );
@@ -198,11 +198,11 @@ export default function ZakatClient() {
 
       {/* Form */}
       <motion.div key={activeTab} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}
-        className="rounded-xl bg-card border border-border/50 p-5 shadow-sm space-y-4">
+        className="rounded-xl bg-white/[0.03] border border-white/50 p-5 shadow-sm space-y-4">
         
         {activeTab === 'maal' && (
           <>
-            <div className="text-xs text-muted-foreground bg-muted/50 rounded-lg p-3">
+            <div className="text-xs text-white/35 bg-white/[0.04] rounded-lg p-3">
               <strong>Zakat Maal</strong> wajib atas harta yang telah mencapai nisab (setara 85 gram emas) dan telah dimiliki selama 1 tahun (haul). Besarnya 2,5% dari harta bersih.
             </div>
             <CurrencyInput label="Total Harta (tabungan, emas, investasi, dll)" value={maalHarta} onChange={setMaalHarta} />
@@ -212,7 +212,7 @@ export default function ZakatClient() {
 
         {activeTab === 'fitrah' && (
           <>
-            <div className="text-xs text-muted-foreground bg-muted/50 rounded-lg p-3">
+            <div className="text-xs text-white/35 bg-white/[0.04] rounded-lg p-3">
               <strong>Zakat Fitrah</strong> wajib atas setiap jiwa Muslim menjelang Idul Fitri. Besarnya 2,5 kg atau 3,5 liter makanan pokok per jiwa.
             </div>
             <NumberInput label="Jumlah Jiwa" value={fitrahJiwa} onChange={setFitrahJiwa} placeholder="Contoh: 4" suffix="jiwa" />
@@ -222,7 +222,7 @@ export default function ZakatClient() {
 
         {activeTab === 'perdagangan' && (
           <>
-            <div className="text-xs text-muted-foreground bg-muted/50 rounded-lg p-3">
+            <div className="text-xs text-white/35 bg-white/[0.04] rounded-lg p-3">
               <strong>Zakat Perdagangan</strong> dikenakan atas harta niaga yang telah mencapai nisab dan haul. Dihitung dari: (modal + keuntungan + piutang lancar + stok barang) - hutang dagang. Besarnya 2,5%.
             </div>
             <CurrencyInput label="Modal Awal Usaha" value={dagangModal} onChange={setDagangModal} />
@@ -235,13 +235,13 @@ export default function ZakatClient() {
 
         {activeTab === 'pertanian' && (
           <>
-            <div className="text-xs text-muted-foreground bg-muted/50 rounded-lg p-3">
+            <div className="text-xs text-white/35 bg-white/[0.04] rounded-lg p-3">
               <strong>Zakat Pertanian</strong> dikenakan saat panen jika hasilnya mencapai nisab (653 kg gabah). Besarnya 10% jika tadah hujan, 5% jika irigasi berbayar, dan 7,5% jika campuran.
             </div>
             <NumberInput label="Hasil Panen" value={taniHasil} onChange={setTaniHasil} placeholder="Contoh: 1000" suffix="kg" />
             <CurrencyInput label="Harga per Kg" value={taniHarga} onChange={setTaniHarga} />
             <div>
-              <label className="block text-sm font-medium text-foreground mb-1.5">Jenis Pengairan</label>
+              <label className="block text-sm font-medium text-white/85 mb-1.5">Jenis Pengairan</label>
               <div className="grid grid-cols-3 gap-2">
                 {[
                   { value: 'tadah_hujan' as const, label: 'Tadah Hujan', pct: '10%' },
@@ -250,7 +250,7 @@ export default function ZakatClient() {
                 ].map((opt) => (
                   <button key={opt.value} onClick={() => setTaniIrigasi(opt.value)}
                     className={`rounded-lg border px-3 py-2 text-xs font-medium transition-all ${
-                      taniIrigasi === opt.value ? 'bg-primary/10 border-primary/30 text-primary' : 'bg-background border-border text-muted-foreground hover:bg-muted/50'
+                      taniIrigasi === opt.value ? 'bg-emerald-500/10 border-emerald-500/30 text-primary' : 'bg-[\0] border-white/[0.06] text-white/35 hover:bg-white/[0.04]'
                     }`}>
                     <div>{opt.label}</div>
                     <div className="text-[10px] mt-0.5 opacity-70">{opt.pct}</div>
@@ -263,11 +263,11 @@ export default function ZakatClient() {
 
         {activeTab === 'peternakan' && (
           <>
-            <div className="text-xs text-muted-foreground bg-muted/50 rounded-lg p-3">
+            <div className="text-xs text-white/35 bg-white/[0.04] rounded-lg p-3">
               <strong>Zakat Peternakan</strong> wajib atas hewan ternak (unta, sapi/kerbau, kambing/domba) yang telah mencapai nisab, digembalakan (sa&apos;imah), dan dimiliki selama 1 tahun (haul). Zakat dibayarkan dalam bentuk hewan.
             </div>
             <div>
-              <label className="block text-sm font-medium text-foreground mb-1.5">Jenis Hewan Ternak</label>
+              <label className="block text-sm font-medium text-white/85 mb-1.5">Jenis Hewan Ternak</label>
               <div className="grid grid-cols-3 gap-2">
                 {[
                   { value: 'kambing' as const, label: 'Kambing/Domba', nisab: 'Nisab: 40' },
@@ -276,7 +276,7 @@ export default function ZakatClient() {
                 ].map((opt) => (
                   <button key={opt.value} onClick={() => { setTernakJenis(opt.value); setResult(null); setShowNisabTable(false); }}
                     className={`rounded-lg border px-3 py-2 text-xs font-medium transition-all ${
-                      ternakJenis === opt.value ? 'bg-primary/10 border-primary/30 text-primary' : 'bg-background border-border text-muted-foreground hover:bg-muted/50'
+                      ternakJenis === opt.value ? 'bg-emerald-500/10 border-emerald-500/30 text-primary' : 'bg-[\0] border-white/[0.06] text-white/35 hover:bg-white/[0.04]'
                     }`}>
                     <div>{opt.label}</div>
                     <div className="text-[10px] mt-0.5 opacity-70">{opt.nisab} ekor</div>
@@ -287,14 +287,14 @@ export default function ZakatClient() {
             <NumberInput label="Jumlah Hewan" value={ternakJumlah} onChange={setTernakJumlah} placeholder="Contoh: 50" suffix="ekor" />
             
             <button onClick={() => setShowNisabTable(!showNisabTable)}
-              className="text-xs text-primary hover:underline font-medium">
+              className="text-xs text-emerald-400 hover:underline font-medium">
               {showNisabTable ? 'Sembunyikan' : 'Lihat'} tabel nisab {ternakJenis === 'kambing' ? 'kambing/domba' : ternakJenis === 'sapi' ? 'sapi/kerbau' : 'unta'}
             </button>
 
             {showNisabTable && (
-              <div className="rounded-lg border border-border overflow-hidden">
+              <div className="rounded-lg border border-white/[0.06] overflow-hidden">
                 <table className="w-full text-xs">
-                  <thead className="bg-muted/50">
+                  <thead className="bg-white/[0.04]">
                     <tr>
                       <th className="text-left px-3 py-2 font-medium text-foreground">Jumlah (ekor)</th>
                       <th className="text-left px-3 py-2 font-medium text-foreground">Zakat</th>
@@ -302,9 +302,9 @@ export default function ZakatClient() {
                   </thead>
                   <tbody className="divide-y divide-border">
                     {nisabTableData.map((row, i) => (
-                      <tr key={i} className="hover:bg-muted/30">
+                      <tr key={i} className="hover:bg-white/[0.03]">
                         <td className="px-3 py-2 text-foreground">{row.max === Infinity ? `${row.min}+` : `${row.min} – ${row.max}`}</td>
-                        <td className="px-3 py-2 text-muted-foreground">{row.zakatDesc}</td>
+                        <td className="px-3 py-2 text-white/35">{row.zakatDesc}</td>
                       </tr>
                     ))}
                   </tbody>
@@ -316,11 +316,11 @@ export default function ZakatClient() {
 
         <div className="flex gap-3 pt-2">
           <button onClick={handleHitung}
-            className="flex-1 bg-primary text-primary-foreground rounded-lg py-2.5 text-sm font-semibold hover:bg-primary/90 transition-colors">
+            className="flex-1 bg-primary text-primary-foreground rounded-lg py-2.5 text-sm font-semibold hover:bg-emerald-500/90 transition-colors">
             Hitung Zakat
           </button>
           <button onClick={handleReset}
-            className="px-4 rounded-lg border border-border text-sm text-muted-foreground hover:bg-muted/50 transition-colors">
+            className="px-4 rounded-lg border border-white/[0.06] text-sm text-white/35 hover:bg-white/[0.04] transition-colors">
             Reset
           </button>
         </div>
@@ -330,12 +330,12 @@ export default function ZakatClient() {
       {result && (
         <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}
           className={`rounded-xl border p-5 shadow-sm space-y-3 ${
-            result.wajibZakat ? 'bg-primary/5 border-primary/20' : 'bg-muted/50 border-border/50'
+            result.wajibZakat ? 'bg-emerald-500/5 border-emerald-500/20' : 'bg-white/[0.04] border-white/50'
           }`}>
           <div className="flex items-center gap-2">
             {result.wajibZakat
-              ? <CheckCircle size={20} className="text-primary" />
-              : <AlertCircle size={20} className="text-muted-foreground" />
+              ? <CheckCircle size={20} className="text-emerald-400" />
+              : <AlertCircle size={20} className="text-white/35" />
             }
             <h3 className="font-display font-semibold text-foreground">
               {result.wajibZakat ? 'Wajib Zakat' : 'Belum Wajib Zakat'}
@@ -343,25 +343,25 @@ export default function ZakatClient() {
           </div>
 
           {result.wajibZakat && activeTab !== 'peternakan' && (
-            <div className="bg-card rounded-lg p-4 border border-border/30">
-              <p className="text-xs text-muted-foreground mb-1">Zakat yang harus dikeluarkan</p>
+            <div className="bg-white/[0.03] rounded-lg p-4 border border-white/30">
+              <p className="text-xs text-white/35 mb-1">Zakat yang harus dikeluarkan</p>
               <p className="font-display font-bold text-2xl text-primary">Rp {formatCurrency(result.jumlahZakat)}</p>
               {result.persentase > 0 && (
-                <p className="text-xs text-muted-foreground mt-1">{result.persentase}% dari Rp {formatCurrency(result.totalHartaBersih)}</p>
+                <p className="text-xs text-white/35 mt-1">{result.persentase}% dari Rp {formatCurrency(result.totalHartaBersih)}</p>
               )}
             </div>
           )}
 
           {result.wajibZakat && activeTab === 'peternakan' && result.zakatHewan && (
-            <div className="bg-card rounded-lg p-4 border border-border/30">
-              <p className="text-xs text-muted-foreground mb-1">Zakat yang harus dikeluarkan</p>
+            <div className="bg-white/[0.03] rounded-lg p-4 border border-white/30">
+              <p className="text-xs text-white/35 mb-1">Zakat yang harus dikeluarkan</p>
               <p className="font-display font-bold text-lg text-primary">{result.zakatHewan}</p>
             </div>
           )}
 
-          <p className="text-sm text-muted-foreground leading-relaxed">{result.penjelasan}</p>
+          <p className="text-sm text-white/35 leading-relaxed">{result.penjelasan}</p>
 
-          <div className="text-xs text-muted-foreground/70 bg-muted/30 rounded-lg p-3 mt-2">
+          <div className="text-xs text-white/35/70 bg-white/[0.03] rounded-lg p-3 mt-2">
             <strong>Catatan:</strong> Perhitungan ini bersifat estimasi. Konsultasikan dengan ulama atau lembaga amil zakat terpercaya untuk perhitungan yang lebih akurat.
           </div>
         </motion.div>

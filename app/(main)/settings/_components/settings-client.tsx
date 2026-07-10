@@ -64,10 +64,10 @@ export default function SettingsClient() {
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: si * 0.08 }}
-            className="rounded-xl bg-card border border-border overflow-hidden"
+            className="rounded-xl bg-white/[0.03] border border-white/[0.06] overflow-hidden"
           >
-            <div className="flex items-center gap-3 px-4 py-3 border-b border-border/50 bg-muted/20">
-              <span className="text-muted-foreground">{section.icon}</span>
+            <div className="flex items-center gap-3 px-4 py-3 border-b border-white/50 bg-muted/20">
+              <span className="text-white/35">{section.icon}</span>
               <h3 className="text-sm font-semibold text-foreground">{section.title}</h3>
             </div>
 
@@ -76,7 +76,7 @@ export default function SettingsClient() {
                 <div key={item.key} className="flex items-center justify-between px-4 py-3">
                   <div>
                     <p className="text-sm font-medium text-foreground">{item.label}</p>
-                    <p className="text-xs text-muted-foreground mt-0.5">{item.description}</p>
+                    <p className="text-xs text-white/35 mt-0.5">{item.description}</p>
                   </div>
                   {item.type === 'toggle' && 'onChange' in item && (
                     <button
@@ -105,10 +105,10 @@ export default function SettingsClient() {
           transition={{ delay: 0.3 }}
           className="text-center pt-4"
         >
-          <p className="font-arabic text-lg text-foreground/60 mb-2" dir="rtl">
+          <p className="font-arabic text-lg text-white/60 mb-2" dir="rtl">
             جَزَاكُمُ اللَّهُ خَيْرًا
           </p>
-          <p className="text-xs text-muted-foreground">
+          <p className="text-xs text-white/35">
             Jadda &copy; {new Date().getFullYear()} — Mohon doanya 🙏🏽
           </p>
         </motion.div>

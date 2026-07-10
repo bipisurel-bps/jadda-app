@@ -51,7 +51,7 @@ export default function SirahClient() {
   if (loading) {
     return (
       <div className="flex flex-col items-center justify-center py-20">
-        <div className="w-8 h-8 border-2 border-primary border-t-transparent rounded-full animate-spin" />
+        <div className="w-8 h-8 border-2 border-emerald-500/30 border-t-transparent rounded-full animate-spin" />
       </div>
     );
   }
@@ -59,7 +59,7 @@ export default function SirahClient() {
   if (!data) {
     return (
       <div className="flex flex-col items-center justify-center py-20">
-        <p className="text-sm text-muted-foreground">Gagal memuat data</p>
+        <p className="text-sm text-white/35">Gagal memuat data</p>
       </div>
     );
   }
@@ -69,9 +69,9 @@ export default function SirahClient() {
       <PageHeader title={data.title} description={data.meaning} />
 
       {/* Description */}
-      <div className="mt-4 mb-4 p-4 rounded-xl bg-card border border-border">
-        <p className="text-sm leading-relaxed text-muted-foreground">{data.description}</p>
-        <p className="text-xs text-muted-foreground/60 mt-2">— {data.source}</p>
+      <div className="mt-4 mb-4 p-4 rounded-xl bg-white/[0.03] border border-border">
+        <p className="text-sm leading-relaxed text-white/35">{data.description}</p>
+        <p className="text-xs text-white/35/60 mt-2">— {data.source}</p>
       </div>
 
       {/* Chapters */}
@@ -82,22 +82,22 @@ export default function SirahClient() {
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: i * 0.03 }}
-            className="rounded-xl bg-card border border-border overflow-hidden"
+            className="rounded-xl bg-white/[0.03] border border-white/[0.06] overflow-hidden"
           >
             <button
               onClick={() => setExpandedChapter(expandedChapter === ch.id ? null : ch.id)}
-              className="w-full flex items-center gap-3 p-4 text-left hover:bg-muted/20 transition-colors"
+              className="w-full flex items-center gap-3 p-4 text-left hover:bg-white/20 transition-colors"
             >
-              <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                <span className="text-primary">{iconMap[ch.icon] ?? <Book size={16} />}</span>
+              <div className="w-9 h-9 rounded-lg bg-emerald-500/10 flex items-center justify-center flex-shrink-0">
+                <span className="text-emerald-400">{iconMap[ch.icon] ?? <Book size={16} />}</span>
               </div>
               <div className="flex-1 min-w-0">
                 <h3 className="text-sm font-semibold text-foreground">{ch.title}</h3>
               </div>
               {expandedChapter === ch.id ? (
-                <ChevronUp size={18} className="text-muted-foreground flex-shrink-0" />
+                <ChevronUp size={18} className="text-white/35 flex-shrink-0" />
               ) : (
-                <ChevronDown size={18} className="text-muted-foreground flex-shrink-0" />
+                <ChevronDown size={18} className="text-white/35 flex-shrink-0" />
               )}
             </button>
 
@@ -110,11 +110,11 @@ export default function SirahClient() {
                   transition={{ duration: 0.25 }}
                   className="overflow-hidden"
                 >
-                  <div className="px-4 pb-4 space-y-3 border-t border-border/50 pt-3">
+                  <div className="px-4 pb-4 space-y-3 border-t border-white/50 pt-3">
                     {ch.sections.map((sec, si) => (
                       <div key={si}>
-                        <h4 className="text-sm font-semibold text-foreground mb-1">{sec.title}</h4>
-                        <p className="text-sm leading-relaxed text-muted-foreground">{sec.content}</p>
+                        <h4 className="text-sm font-semibold text-white/85 mb-1">{sec.title}</h4>
+                        <p className="text-sm leading-relaxed text-white/35">{sec.content}</p>
                       </div>
                     ))}
                   </div>
@@ -127,7 +127,7 @@ export default function SirahClient() {
 
       {/* Note */}
       {data.note && (
-        <p className="text-xs text-center text-muted-foreground/50 pb-8 italic">{data.note}</p>
+        <p className="text-xs text-center text-white/35/50 pb-8 italic">{data.note}</p>
       )}
     </div>
   );

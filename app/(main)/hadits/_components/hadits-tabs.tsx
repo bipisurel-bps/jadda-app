@@ -2,13 +2,16 @@
 
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { BookOpen, Library } from 'lucide-react';
+import { BookOpen, Users, Heart } from 'lucide-react';
+import { PageHeader } from '@/components/layouts/page-header';
 import HaditsArbainClient from './hadits-arbain-client';
 import RiyadhusClient from './riyadhus-client';
+import KisahPilihanClient from './kisah-pilihan-client';
 
 const tabs = [
-  { id: 'arbain', label: 'Arbain An-Nawawi', icon: BookOpen, desc: '42 hadits pilihan' },
-  { id: 'riyadhus', label: 'Riyadhus Shalihin', icon: Library, desc: '372 bab' },
+  { id: 'arbain', label: 'Arbain', desc: '42 hadits pilihan', icon: BookOpen },
+  { id: 'sahabat', label: '7 Sahabat', desc: 'Hadits dari 7 sahabat', icon: Users },
+  { id: 'kisah', label: 'Kisah Pilihan', desc: 'Kisah & hadits pilihan', icon: Heart },
 ] as const;
 
 type TabId = typeof tabs[number]['id'];
@@ -17,60 +20,50 @@ export default function HaditsTabs() {
   const [activeTab, setActiveTab] = useState<TabId>('arbain');
 
   return (
-    <div className="max-w-2xl mx-auto space-y-5">
-      {/* Header */}
-      <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
-        <h1 className="font-display font-bold text-2xl text-foreground">Koleksi Hadits</h1>
-        <p className="text-sm text-muted-foreground mt-1">
-          Kumpulan hadits-hadits shahih pilihan untuk panduan hidup sehari-hari
-        </p>
-      </motion.div>
+    <div className="min-h-screen bg-[#050a14]">
+      <PageHeader
+        title="Koleksi Hadits"
+        description="Hadits-hadits shahih pilihan"
+      />
 
-      {/* Tabs */}
-      <motion.div
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.4, delay: 0.1 }}
-        className="grid grid-cols-2 gap-2"
-      >
-        {tabs.map((tab) => {
-          const Icon = tab.icon;
-          const isActive = activeTab === tab.id;
-          return (
-            <button
-              key={tab.id}
-              onClick={() => setActiveTab(tab.id)}
-              className={`relative flex items-center gap-2.5 px-3.5 py-3 rounded-xl border text-left transition-all ${
-                isActive
-                  ? 'bg-primary/10 border-primary/30 shadow-sm'
-                  : 'bg-card border-border/50 hover:bg-muted/30'
-              }`}
-            >
-              <div className={`flex-shrink-0 w-9 h-9 rounded-lg flex items-center justify-center ${
-                isActive ? 'bg-primary/20 text-primary' : 'bg-muted/50 text-muted-foreground'
-              }`}>
-                <Icon size={18} />
-              </div>
-              <div className="min-w-0">
-                <p className={`text-sm font-semibold truncate ${
-                  isActive ? 'text-primary' : 'text-foreground'
-                }`}>{tab.label}</p>
-                <p className="text-[11px] text-muted-foreground">{tab.desc}</p>
-              </div>
-              {isActive && (
-                <motion.div
-                  layoutId="activeTabIndicator"
-                  className="absolute inset-0 rounded-xl border-2 border-primary/40"
-                  transition={{ type: 'spring', stiffness: 500, damping: 30 }}
-                />
-              )}
-            </button>
-          );
-        })}
-      </motion.div>
+      <div className="mt-4 space-y-4">
+        {/* Tabs */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4 }}
+          className="flex gap-1.5 bg-white/[0.03] p-1 rounded-xl"
+        >
+          {tabs.map((tab) => {
+            const Icon = tab.icon;
+            const isActive = activeTab === tab.id;
+            return (
+              <button
+                key={tab.id}
+                onClick={() => setActiveTab(tab.id)}
+                className={`flex-1 flex items-center justify-center gap-1.5 py-2.5 rounded-lg text-xs sm:text-sm font-medium transition-all ${
+                  isActive
+                    ? 'bg-emerald-500/15 text-emerald-400 shadow-sm'
+                    : 'text-white/40 hover:text-white/70'
+                }`}
+              >
+                <Icon size={14} />
+                <span className="hidden sm:inline">{tab.label}</span>
+                <span className="sm:hidden">{tab.label}</span>
+              </button>
+            );
+          })}
+        </motion.div>
 
-      {/* Tab Content */}
-      {activeTab === 'arbain' ? <HaditsArbainClient /> : <RiyadhusClient />}
+        {/* Tab Content */}
+        {activeTab === 'arbain' ? (
+          <HaditsArbainClient />
+        ) : activeTab === 'sahabat' ? (
+          <RiyadhusClient />
+        ) : (
+          <KisahPilihanClient />
+        )}
+      </div>
     </div>
   );
 }

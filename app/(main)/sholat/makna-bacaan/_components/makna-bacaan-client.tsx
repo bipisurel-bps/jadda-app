@@ -127,7 +127,7 @@ export default function MaknaBacaanClient() {
         <motion.div
           animate={{ rotate: 360 }}
           transition={{ duration: 1.5, repeat: Infinity, ease: 'linear' }}
-          className="w-8 h-8 border-2 border-primary border-t-transparent rounded-full"
+          className="w-8 h-8 border-2 border-emerald-500/30 border-t-transparent rounded-full"
         />
       </div>
     );
@@ -135,7 +135,7 @@ export default function MaknaBacaanClient() {
 
   if (!data) {
     return (
-      <div className="text-center py-20 text-muted-foreground">
+      <div className="text-center py-20 text-white/35">
         <p>Gagal memuat data. Silakan coba lagi.</p>
       </div>
     );
@@ -147,13 +147,13 @@ export default function MaknaBacaanClient() {
       <motion.div initial={{ opacity: 0, y: -8 }} animate={{ opacity: 1, y: 0 }} className="flex gap-2 overflow-x-auto pb-1">
         <Link
           href="/sholat"
-          className="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium bg-muted text-muted-foreground hover:bg-muted/80 hover:text-foreground transition-colors whitespace-nowrap"
+          className="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium bg-white/[0.04] text-white/35 hover:bg-white/80 hover:text-white/85 transition-colors whitespace-nowrap"
         >
           <Clock size={16} /> Waktu Sholat
         </Link>
         <Link
           href="/sholat/tata-cara"
-          className="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium bg-muted text-muted-foreground hover:bg-muted/80 hover:text-foreground transition-colors whitespace-nowrap"
+          className="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium bg-white/[0.04] text-white/35 hover:bg-white/80 hover:text-white/85 transition-colors whitespace-nowrap"
         >
           <PersonStanding size={16} /> Tata Cara
         </Link>
@@ -168,12 +168,12 @@ export default function MaknaBacaanClient() {
       {/* Header */}
       <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
         <div className="flex items-center gap-3 mb-2">
-          <Link href="/sholat" className="flex items-center gap-1 text-sm text-muted-foreground hover:text-primary transition-colors">
+          <Link href="/sholat" className="flex items-center gap-1 text-sm text-white/35 hover:text-emerald-400 transition-colors">
             <ArrowLeft size={16} /> Sholat
           </Link>
         </div>
         <h1 className="font-display font-bold text-2xl md:text-3xl text-foreground">Makna Bacaan Sholat</h1>
-        <p className="text-sm text-muted-foreground mt-1">
+        <p className="text-sm text-white/35 mt-1">
           Memahami arti setiap lafadz yang kita ucapkan dalam sholat — rincian makna per kata & penjelasan Ulama
         </p>
       </motion.div>
@@ -182,7 +182,7 @@ export default function MaknaBacaanClient() {
       <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}>
         <button
           onClick={() => { setShowSearch(!showSearch); setTimeout(() => searchInputRef.current?.focus(), 100); }}
-          className="w-full flex items-center gap-2 px-4 py-2.5 rounded-xl bg-card border border-border/50 text-sm text-muted-foreground hover:border-primary/30 hover:text-foreground transition-all"
+          className="w-full flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white/[0.03] border border-white/50 text-sm text-white/35 hover:border-emerald-500/30 hover:text-white/85 transition-all"
         >
           <Search size={16} />
           <span>Cari bacaan atau kata kunci...</span>
@@ -203,34 +203,34 @@ export default function MaknaBacaanClient() {
                     value={searchTerm}
                     onChange={e => handleSearch(e.target.value)}
                     placeholder="Ketik kata kunci... (contoh: ruku, sujud, iftitah)"
-                    className="w-full px-4 py-2.5 pr-10 rounded-xl bg-card border border-primary/30 text-sm text-foreground focus:outline-none focus:border-primary"
+                    className="w-full px-4 py-2.5 pr-10 rounded-xl bg-white/[0.03] border border-emerald-500/30 text-sm text-white/85 focus:outline-none focus:border-primary"
                   />
                   {searchTerm && (
                     <button onClick={() => handleSearch('')} className="absolute right-3 top-1/2 -translate-y-1/2">
-                      <X size={16} className="text-muted-foreground" />
+                      <X size={16} className="text-white/35" />
                     </button>
                   )}
                 </div>
                 {searchResults.length > 0 && (
-                  <div className="max-h-64 overflow-y-auto rounded-xl bg-card border border-border/30 divide-y divide-border/10">
+                  <div className="max-h-64 overflow-y-auto rounded-xl bg-white/[0.03] border border-white/30 divide-y divide-border/10">
                     {searchResults.map((r, i) => (
                       <button
                         key={`${r.section.id}-${r.variant.id}`}
                         onClick={() => navigateToVariant(r.section, r.variant)}
-                        className="w-full flex items-center gap-2 px-3 py-2.5 text-left hover:bg-muted/30 transition-colors"
+                        className="w-full flex items-center gap-2 px-3 py-2.5 text-left hover:bg-white/[0.03] transition-colors"
                       >
                         <span className="text-sm">{r.section.icon}</span>
                         <div className="flex-1 min-w-0">
-                          <p className="text-xs font-medium text-foreground truncate">{r.variant.label}</p>
-                          <p className="text-[11px] text-muted-foreground truncate">{r.section.title}</p>
+                          <p className="text-xs font-medium text-white/85 truncate">{r.variant.label}</p>
+                          <p className="text-[11px] text-white/35 truncate">{r.section.title}</p>
                         </div>
-                        <ChevronRight size={14} className="text-muted-foreground flex-shrink-0" />
+                        <ChevronRight size={14} className="text-white/35 flex-shrink-0" />
                       </button>
                     ))}
                   </div>
                 )}
                 {searchTerm && searchResults.length === 0 && (
-                  <p className="text-xs text-muted-foreground text-center py-3">Tidak ditemukan. Coba kata kunci lain.</p>
+                  <p className="text-xs text-white/35 text-center py-3">Tidak ditemukan. Coba kata kunci lain.</p>
                 )}
               </div>
             </motion.div>
@@ -252,7 +252,7 @@ export default function MaknaBacaanClient() {
           </div>
           <div>
             <h2 className="font-display font-bold text-base text-foreground">Agar Sholat Lebih Khusyuk</h2>
-            <p className="text-xs text-muted-foreground mt-1 leading-relaxed">
+            <p className="text-xs text-white/35 mt-1 leading-relaxed">
               Memahami arti bacaan sholat adalah kunci kekhusyukan. Sumber: kitab <em>&quot;Memahami Makna Bacaan Sholat&quot;</em> — Abu Utsman Kharisman (Pustaka Hudaya). Dilengkapi penjelasan dari Syaikh Utsaimin, Ibnu Katsir, dan ulama Ahlus Sunnah lainnya.
             </p>
           </div>
@@ -275,7 +275,7 @@ export default function MaknaBacaanClient() {
               {/* Section Header */}
               <button
                 onClick={() => toggleSection(section.id)}
-                className="w-full flex items-center justify-between rounded-xl bg-card border border-border/50 shadow-sm p-4 hover:border-primary/20 transition-all duration-200"
+                className="w-full flex items-center justify-between rounded-xl bg-white/[0.03] border border-white/50 shadow-sm p-4 hover:border-emerald-500/20 transition-all duration-200"
               >
                 <div className="flex items-center gap-3">
                   <div className={`w-10 h-10 rounded-xl border flex items-center justify-center flex-shrink-0 ${bgColors}`}>
@@ -283,12 +283,12 @@ export default function MaknaBacaanClient() {
                   </div>
                   <div className="text-left">
                     <h3 className="font-display font-bold text-sm text-foreground">{section.title}</h3>
-                    <p className="text-[11px] text-muted-foreground">{section.variants.length} bacaan</p>
+                    <p className="text-[11px] text-white/35">{section.variants.length} bacaan</p>
                   </div>
                 </div>
                 <ChevronDown
                   size={18}
-                  className={`text-muted-foreground transition-transform duration-300 ${isExpanded ? 'rotate-180' : ''}`}
+                  className={`text-white/35 transition-transform duration-300 ${isExpanded ? 'rotate-180' : ''}`}
                 />
               </button>
 
@@ -302,19 +302,19 @@ export default function MaknaBacaanClient() {
                     transition={{ duration: 0.3 }}
                     className="overflow-hidden"
                   >
-                    <div className="pt-3 space-y-3 pl-2 border-l-2 border-primary/20 ml-4">
+                    <div className="pt-3 space-y-3 pl-2 border-l-2 border-emerald-500/20 ml-4">
                       {/* Penjelasan Umum */}
                       {section.penjelasan_umum && (
-                        <div className="px-3 py-2 rounded-lg bg-muted/30 text-xs text-muted-foreground leading-relaxed whitespace-pre-line">
+                        <div className="px-3 py-2 rounded-lg bg-white/[0.03] text-xs text-white/35 leading-relaxed whitespace-pre-line">
                           {section.penjelasan_umum}
                         </div>
                       )}
 
                       {/* Dalil section */}
                       {section.dalil && (
-                        <div className="flex items-start gap-2 rounded-lg bg-primary/5 border border-primary/10 p-2 px-3">
-                          <BookOpen size={13} className="text-primary mt-0.5 flex-shrink-0" />
-                          <p className="text-[11px] text-muted-foreground">{section.dalil}</p>
+                        <div className="flex items-start gap-2 rounded-lg bg-emerald-500/5 border border-emerald-500/10 p-2 px-3">
+                          <BookOpen size={13} className="text-emerald-400 mt-0.5 flex-shrink-0" />
+                          <p className="text-[11px] text-white/35">{section.dalil}</p>
                         </div>
                       )}
 
@@ -322,17 +322,17 @@ export default function MaknaBacaanClient() {
                       {section.variants.map((variant) => {
                         const isVariantExpanded = expandedVariants.has(variant.id);
                         return (
-                          <div key={variant.id} id={`variant-${variant.id}`} className="rounded-lg bg-card/60 border border-border/30 overflow-hidden">
+                          <div key={variant.id} id={`variant-${variant.id}`} className="rounded-lg bg-card/60 border border-white/30 overflow-hidden">
                             <button
                               onClick={() => toggleVariant(variant.id)}
-                              className="w-full flex items-center justify-between p-3 hover:bg-muted/20 transition-colors"
+                              className="w-full flex items-center justify-between p-3 hover:bg-white/20 transition-colors"
                             >
                               <div className="flex items-center gap-2 min-w-0">
-                                <span className="text-sm font-medium text-foreground truncate">{variant.label}</span>
+                                <span className="text-sm font-medium text-white/85 truncate">{variant.label}</span>
                               </div>
                               <ChevronRight
                                 size={15}
-                                className={`text-muted-foreground transition-transform duration-200 flex-shrink-0 ${isVariantExpanded ? 'rotate-90' : ''}`}
+                                className={`text-white/35 transition-transform duration-200 flex-shrink-0 ${isVariantExpanded ? 'rotate-90' : ''}`}
                               />
                             </button>
 
@@ -348,32 +348,32 @@ export default function MaknaBacaanClient() {
                                   <div className="px-4 pb-4 space-y-3">
                                     {/* Arabic */}
                                     <div>
-                                      <p className="text-[10px] uppercase tracking-wider text-muted-foreground mb-1">Arab</p>
+                                      <p className="text-[10px] uppercase tracking-wider text-white/35 mb-1">Arab</p>
                                       <p className="text-xl font-arabic leading-relaxed text-right" dir="rtl">{variant.arabic}</p>
                                     </div>
 
                                     {/* Latin */}
                                     <div>
-                                      <p className="text-[10px] uppercase tracking-wider text-muted-foreground mb-1">Latin</p>
-                                      <p className="text-sm italic text-primary/80 leading-relaxed">{variant.latin}</p>
+                                      <p className="text-[10px] uppercase tracking-wider text-white/35 mb-1">Latin</p>
+                                      <p className="text-sm italic text-emerald-400/80 leading-relaxed">{variant.latin}</p>
                                     </div>
 
                                     {/* Arti */}
                                     <div>
-                                      <p className="text-[10px] uppercase tracking-wider text-muted-foreground mb-1">Arti</p>
-                                      <p className="text-sm text-foreground/80 leading-relaxed">{variant.arti}</p>
+                                      <p className="text-[10px] uppercase tracking-wider text-white/35 mb-1">Arti</p>
+                                      <p className="text-sm text-white/70 leading-relaxed">{variant.arti}</p>
                                     </div>
 
                                     {/* Rincian Makna per Kata */}
                                     {variant.rincianMakna && variant.rincianMakna.length > 0 && (
                                       <div>
-                                        <p className="text-[10px] uppercase tracking-wider text-muted-foreground mb-2">Rincian Makna Per Kata</p>
+                                        <p className="text-[10px] uppercase tracking-wider text-white/35 mb-2">Rincian Makna Per Kata</p>
                                         <div className="space-y-1.5">
                                           {variant.rincianMakna.map((rm, i) => (
-                                            <div key={i} className="flex items-start gap-2 py-1 border-b border-border/20 last:border-0">
+                                            <div key={i} className="flex items-start gap-2 py-1 border-b border-white/20 last:border-0">
                                               <p className="text-sm font-arabic text-right min-w-[60px] leading-relaxed" dir="rtl">{rm.arabic}</p>
-                                              <p className="text-[10px] text-muted-foreground pt-0.5">→</p>
-                                              <p className="text-xs text-foreground/70 leading-relaxed flex-1">{rm.arti}</p>
+                                              <p className="text-[10px] text-white/35 pt-0.5">→</p>
+                                              <p className="text-xs text-white/70 leading-relaxed flex-1">{rm.arti}</p>
                                             </div>
                                           ))}
                                         </div>
@@ -382,15 +382,15 @@ export default function MaknaBacaanClient() {
 
                                     {/* Penjelasan */}
                                     <div>
-                                      <p className="text-[10px] uppercase tracking-wider text-muted-foreground mb-1">Penjelasan</p>
-                                      <p className="text-xs text-foreground leading-relaxed whitespace-pre-line">{variant.penjelasan}</p>
+                                      <p className="text-[10px] uppercase tracking-wider text-white/35 mb-1">Penjelasan</p>
+                                      <p className="text-xs text-white/85 leading-relaxed whitespace-pre-line">{variant.penjelasan}</p>
                                     </div>
 
                                     {/* Dalil */}
                                     {variant.dalil && (
-                                      <div className="flex items-start gap-2 rounded-lg bg-primary/5 border border-primary/10 p-2.5">
-                                        <BookOpen size={13} className="text-primary mt-0.5 flex-shrink-0" />
-                                        <p className="text-[11px] text-muted-foreground">{variant.dalil}</p>
+                                      <div className="flex items-start gap-2 rounded-lg bg-emerald-500/5 border border-emerald-500/10 p-2.5">
+                                        <BookOpen size={13} className="text-emerald-400 mt-0.5 flex-shrink-0" />
+                                        <p className="text-[11px] text-white/35">{variant.dalil}</p>
                                       </div>
                                     )}
                                   </div>
@@ -416,7 +416,7 @@ export default function MaknaBacaanClient() {
         transition={{ delay: 0.5 }}
         className="text-center py-6"
       >
-        <p className="text-[11px] text-muted-foreground leading-relaxed">
+        <p className="text-[11px] text-white/35 leading-relaxed">
           Sumber: &quot;Memahami Makna Bacaan Sholat — Sebuah Upaya Menikmati Indahnya Berdialog dengan Allah&quot;<br />
           Abu Utsman Kharisman — Penerbit Pustaka Hudaya<br />
           Dengan rujukan tafsir Ibnu Katsir, syarah hadits, dan penjelasan para Ulama Ahlus Sunnah

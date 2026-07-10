@@ -225,7 +225,7 @@ export default function TataCaraClient() {
       <motion.div initial={{ opacity: 0, y: -8 }} animate={{ opacity: 1, y: 0 }} className="flex gap-2 overflow-x-auto pb-1">
         <Link
           href="/sholat"
-          className="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium bg-muted text-muted-foreground hover:bg-muted/80 hover:text-foreground transition-colors"
+          className="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium bg-white/[0.04] text-white/35 hover:bg-white/80 hover:text-white/85 transition-colors"
         >
           <Clock size={16} /> Waktu Sholat
         </Link>
@@ -237,7 +237,7 @@ export default function TataCaraClient() {
         </Link>
         <Link
           href="/sholat/makna-bacaan"
-          className="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium bg-muted text-muted-foreground hover:bg-muted/80 hover:text-foreground transition-colors"
+          className="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium bg-white/[0.04] text-white/35 hover:bg-white/80 hover:text-white/85 transition-colors"
         >
           <ScrollText size={16} /> Makna Bacaan
         </Link>
@@ -246,12 +246,12 @@ export default function TataCaraClient() {
       {/* Header */}
       <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
         <div className="flex items-center gap-3 mb-2">
-          <Link href="/sholat" className="flex items-center gap-1 text-sm text-muted-foreground hover:text-primary transition-colors">
+          <Link href="/sholat" className="flex items-center gap-1 text-sm text-white/35 hover:text-emerald-400 transition-colors">
             <ArrowLeft size={16} /> Sholat
           </Link>
         </div>
         <h1 className="font-display font-bold text-2xl md:text-3xl text-foreground">Tata Cara Sholat Nabi ﷺ</h1>
-        <p className="text-sm text-muted-foreground mt-1">
+        <p className="text-sm text-white/35 mt-1">
           Panduan sholat sesuai Sunnah Rasulullah — berdasarkan Sifat Sholat Nabi karya Syaikh Al-Albani
         </p>
       </motion.div>
@@ -270,7 +270,7 @@ export default function TataCaraClient() {
           </div>
           <div>
             <h2 className="font-display font-bold text-base text-foreground">Sholatlah Sebagaimana Kalian Melihatku Sholat</h2>
-            <p className="text-xs text-muted-foreground mt-1 leading-relaxed">
+            <p className="text-xs text-white/35 mt-1 leading-relaxed">
               Sabda Rasulullah ﷺ: <em>"Shalluu kamaa ra-aitumuunii ushallii"</em> — Sholatlah kalian sebagaimana kalian melihatku sholat. 
               (HR. Bukhari no. 631). Panduan ini merujuk pada kitab <em>Sifatu Sholaatin Nabi</em> karya Syaikh Muhammad Nashiruddin Al-Albani rahimahullah.
             </p>
@@ -290,18 +290,18 @@ export default function TataCaraClient() {
             {/* Section Header */}
             <button
               onClick={() => setExpandedSection(expandedSection === section.section ? null : section.section)}
-              className="w-full flex items-center justify-between rounded-xl bg-card border border-border/50 shadow-sm p-4 hover:border-primary/20 transition-all duration-200"
+              className="w-full flex items-center justify-between rounded-xl bg-white/[0.03] border border-white/50 shadow-sm p-4 hover:border-emerald-500/20 transition-all duration-200"
             >
               <div className="flex items-center gap-3">
                 <span className="text-xl">{section.icon}</span>
                 <div className="text-left">
                   <h3 className="font-display font-bold text-base text-foreground">{section.section}</h3>
-                  <p className="text-xs text-muted-foreground">{section.steps.length} langkah</p>
+                  <p className="text-xs text-white/35">{section.steps.length} langkah</p>
                 </div>
               </div>
               <ChevronDown
                 size={20}
-                className={`text-muted-foreground transition-transform duration-300 ${expandedSection === section.section ? 'rotate-180' : ''}`}
+                className={`text-white/35 transition-transform duration-300 ${expandedSection === section.section ? 'rotate-180' : ''}`}
               />
             </button>
 
@@ -315,24 +315,24 @@ export default function TataCaraClient() {
                   transition={{ duration: 0.3 }}
                   className="overflow-hidden"
                 >
-                  <div className="pt-3 space-y-2 pl-2 border-l-2 border-primary/20 ml-4">
+                  <div className="pt-3 space-y-2 pl-2 border-l-2 border-emerald-500/20 ml-4">
                     {section.steps.map((step) => {
                       const isExpanded = expandedSteps.has(step.id);
                       return (
-                        <div key={step.id} className="rounded-lg bg-card/60 border border-border/30 overflow-hidden">
+                        <div key={step.id} className="rounded-lg bg-card/60 border border-white/30 overflow-hidden">
                           <button
                             onClick={() => toggleStep(step.id)}
-                            className="w-full flex items-center justify-between p-3 hover:bg-muted/30 transition-colors"
+                            className="w-full flex items-center justify-between p-3 hover:bg-white/[0.03] transition-colors"
                           >
                             <div className="flex items-center gap-2">
-                              <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center">
-                                <CheckCircle2 size={14} className="text-primary" />
+                              <div className="w-6 h-6 rounded-full bg-emerald-500/10 flex items-center justify-center">
+                                <CheckCircle2 size={14} className="text-emerald-400" />
                               </div>
-                              <span className="text-sm font-medium text-foreground text-left">{step.title}</span>
+                              <span className="text-sm font-medium text-white/85 text-left">{step.title}</span>
                             </div>
                             <ChevronRight
                               size={16}
-                              className={`text-muted-foreground transition-transform duration-200 ${isExpanded ? 'rotate-90' : ''}`}
+                              className={`text-white/35 transition-transform duration-200 ${isExpanded ? 'rotate-90' : ''}`}
                             />
                           </button>
 
@@ -349,7 +349,7 @@ export default function TataCaraClient() {
                                   {/* Arabic */}
                                   {step.arabic && (
                                     <div>
-                                      <p className="text-[10px] uppercase tracking-wider text-muted-foreground mb-1">Arab</p>
+                                      <p className="text-[10px] uppercase tracking-wider text-white/35 mb-1">Arab</p>
                                       <p className="text-xl font-arabic leading-relaxed text-right" dir="rtl">{step.arabic}</p>
                                     </div>
                                   )}
@@ -357,30 +357,30 @@ export default function TataCaraClient() {
                                   {/* Latin */}
                                   {step.latin && (
                                     <div>
-                                      <p className="text-[10px] uppercase tracking-wider text-muted-foreground mb-1">Latin</p>
-                                      <p className="text-sm italic text-primary/80">{step.latin}</p>
+                                      <p className="text-[10px] uppercase tracking-wider text-white/35 mb-1">Latin</p>
+                                      <p className="text-sm italic text-emerald-400/80">{step.latin}</p>
                                     </div>
                                   )}
 
                                   {/* Arti */}
                                   {step.arti && (
                                     <div>
-                                      <p className="text-[10px] uppercase tracking-wider text-muted-foreground mb-1">Arti</p>
-                                      <p className="text-sm text-foreground/80 leading-relaxed">{step.arti}</p>
+                                      <p className="text-[10px] uppercase tracking-wider text-white/35 mb-1">Arti</p>
+                                      <p className="text-sm text-white/70 leading-relaxed">{step.arti}</p>
                                     </div>
                                   )}
 
                                   {/* Detail */}
                                   <div>
-                                    <p className="text-[10px] uppercase tracking-wider text-muted-foreground mb-1">Penjelasan</p>
-                                    <p className="text-sm text-foreground leading-relaxed whitespace-pre-line">{step.detail}</p>
+                                    <p className="text-[10px] uppercase tracking-wider text-white/35 mb-1">Penjelasan</p>
+                                    <p className="text-sm text-white/85 leading-relaxed whitespace-pre-line">{step.detail}</p>
                                   </div>
 
                                   {/* Dalil */}
                                   {step.dalil && (
-                                    <div className="flex items-start gap-2 rounded-lg bg-primary/5 border border-primary/10 p-2.5">
-                                      <BookOpen size={14} className="text-primary mt-0.5 flex-shrink-0" />
-                                      <p className="text-xs text-muted-foreground">{step.dalil}</p>
+                                    <div className="flex items-start gap-2 rounded-lg bg-emerald-500/5 border border-emerald-500/10 p-2.5">
+                                      <BookOpen size={14} className="text-emerald-400 mt-0.5 flex-shrink-0" />
+                                      <p className="text-xs text-white/35">{step.dalil}</p>
                                     </div>
                                   )}
                                 </div>
@@ -405,7 +405,7 @@ export default function TataCaraClient() {
         transition={{ delay: 0.5 }}
         className="text-center py-6"
       >
-        <p className="text-xs text-muted-foreground">
+        <p className="text-xs text-white/35">
           Sumber: Sifatu Sholaatin Nabi ﷺ — Syaikh Muhammad Nashiruddin Al-Albani rahimahullah<br />
           & Kitab-kitab hadits shahih (Bukhari, Muslim, Abu Daud, Tirmidzi, dll)
         </p>

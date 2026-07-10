@@ -58,7 +58,7 @@ export default function HaditsDetailClient() {
   if (loading) {
     return (
       <div className="flex flex-col items-center justify-center py-20">
-        <div className="w-8 h-8 border-2 border-primary border-t-transparent rounded-full animate-spin" />
+        <div className="w-8 h-8 border-2 border-emerald-500/30 border-t-transparent rounded-full animate-spin" />
       </div>
     );
   }
@@ -66,8 +66,8 @@ export default function HaditsDetailClient() {
   if (!hadits) {
     return (
       <div className="flex flex-col items-center justify-center py-20 px-4">
-        <p className="text-sm text-muted-foreground">Hadits tidak ditemukan</p>
-        <Link href="/hadits" className="mt-4 text-sm text-primary font-medium">← Kembali ke daftar hadits</Link>
+        <p className="text-sm text-white/35">Hadits tidak ditemukan</p>
+        <Link href="/hadits" className="mt-4 text-sm text-emerald-400 font-medium">← Kembali ke daftar hadits</Link>
       </div>
     );
   }
@@ -104,7 +104,7 @@ export default function HaditsDetailClient() {
               <Book size={10} />
               {hadits.narrator}
             </span>
-            <span className="text-[11px] text-muted-foreground">
+            <span className="text-[11px] text-white/35">
               {hadits.source}
             </span>
           </div>
@@ -115,10 +115,10 @@ export default function HaditsDetailClient() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
-          className="p-4 rounded-xl bg-card border border-border"
+          className="p-4 rounded-xl bg-white/[0.03] border border-border"
         >
-          <h3 className="text-xs font-semibold text-muted-foreground mb-2">TERJEMAHAN</h3>
-          <p className="text-sm leading-relaxed text-foreground/80">{hadits.translation}</p>
+          <h3 className="text-xs font-semibold text-white/35 mb-2">TERJEMAHAN</h3>
+          <p className="text-sm leading-relaxed text-white/70">{hadits.translation}</p>
         </motion.div>
 
         {/* Kandungan / Lesson */}
@@ -127,10 +127,10 @@ export default function HaditsDetailClient() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="p-4 rounded-xl bg-card border border-border"
+            className="p-4 rounded-xl bg-white/[0.03] border border-border"
           >
-            <h3 className="text-xs font-semibold text-muted-foreground mb-2">KANDUNGAN HADITS</h3>
-            <div className="text-sm leading-relaxed text-foreground/80 whitespace-pre-line">
+            <h3 className="text-xs font-semibold text-white/35 mb-2">KANDUNGAN HADITS</h3>
+            <div className="text-sm leading-relaxed text-white/70 whitespace-pre-line">
               {hadits.kandungan}
             </div>
           </motion.div>
@@ -138,20 +138,20 @@ export default function HaditsDetailClient() {
       </div>
 
       {/* Bottom navigation */}
-      <div className="fixed bottom-[60px] md:bottom-0 left-0 right-0 bg-card/95 backdrop-blur-md border-t border-border z-30 px-4 py-2.5 flex items-center justify-between">
+      <div className="fixed bottom-[60px] md:bottom-0 left-0 right-0 bg-card/95 backdrop-blur-md border-t border-white/[0.06] z-30 px-4 py-2.5 flex items-center justify-between">
         {prevHadits ? (
           <Link
             href={`/hadits/${prevHadits.id}`}
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg hover:bg-muted/50 transition-colors text-sm font-semibold"
+            className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg hover:bg-white/[0.04] transition-colors text-sm font-semibold"
           >
-            <ChevronLeft size={16} className="text-primary" />
+            <ChevronLeft size={16} className="text-emerald-400" />
             <span className="truncate max-w-[120px]">Hadits {prevHadits.id}</span>
           </Link>
         ) : <div />}
 
         <Link
           href="/hadits"
-          className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg hover:bg-muted/50 transition-colors text-sm font-semibold text-muted-foreground"
+          className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg hover:bg-white/[0.04] transition-colors text-sm font-semibold text-white/35"
         >
           <Book size={14} />
           Semua Hadits
@@ -160,10 +160,10 @@ export default function HaditsDetailClient() {
         {nextHadits ? (
           <Link
             href={`/hadits/${nextHadits.id}`}
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg hover:bg-muted/50 transition-colors text-sm font-semibold"
+            className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg hover:bg-white/[0.04] transition-colors text-sm font-semibold"
           >
             <span className="truncate max-w-[120px]">Hadits {nextHadits.id}</span>
-            <ChevronRight size={16} className="text-primary" />
+            <ChevronRight size={16} className="text-emerald-400" />
           </Link>
         ) : <div />}
       </div>

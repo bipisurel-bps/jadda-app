@@ -17,10 +17,10 @@ function ArabicBlock({ arabic, transliteration }: { arabic?: string; translitera
     }).catch(() => toast.error('Gagal menyalin'));
   };
   return (
-    <div className="my-3 rounded-lg bg-muted/50 p-4 border border-border/30">
-      <p className="text-xl md:text-2xl font-arabic text-foreground leading-[2.2] text-right mb-2" dir="rtl">{arabic}</p>
-      {transliteration && <p className="text-sm text-muted-foreground italic">{transliteration}</p>}
-      <button onClick={handleCopy} className="mt-2 flex items-center gap-1.5 text-xs text-primary hover:text-primary/80 transition-colors">
+    <div className="my-3 rounded-lg bg-white/[0.04] p-4 border border-white/30">
+      <p className="text-xl md:text-2xl font-arabic text-white/85 leading-[2.2] text-right mb-2" dir="rtl">{arabic}</p>
+      {transliteration && <p className="text-sm text-white/35 italic">{transliteration}</p>}
+      <button onClick={handleCopy} className="mt-2 flex items-center gap-1.5 text-xs text-emerald-400 hover:text-emerald-400/80 transition-colors">
         {copied ? <Check size={12} /> : <Copy size={12} />}
         {copied ? 'Tersalin' : 'Salin teks Arab'}
       </button>
@@ -34,8 +34,8 @@ export default function ShalawatNabiClient() {
       {/* Header */}
       <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
         <h1 className="font-display font-bold text-2xl md:text-3xl text-foreground">{data.title}</h1>
-        <p className="text-sm text-muted-foreground mt-1">{data.subtitle}</p>
-        <p className="text-xs text-muted-foreground mt-0.5">
+        <p className="text-sm text-white/35 mt-1">{data.subtitle}</p>
+        <p className="text-xs text-white/35 mt-0.5">
           {data.author} — Penerjemah: {data.translator}
         </p>
       </motion.div>
@@ -43,14 +43,14 @@ export default function ShalawatNabiClient() {
       {/* Intro - Muqoddimah */}
       <motion.div
         initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.1 }}
-        className="rounded-2xl bg-card border border-border/50 p-5 md:p-6"
+        className="rounded-2xl bg-white/[0.03] border border-white/50 p-5 md:p-6"
       >
-        <h2 className="font-display font-bold text-lg text-foreground mb-4">{data.intro.title}</h2>
+        <h2 className="font-display font-bold text-lg text-white/85 mb-4">{data.intro.title}</h2>
         {data.intro.items.map((item, i) => (
           <div key={i} className="mb-4 last:mb-0">
-            <p className="text-sm md:text-base text-foreground/80 leading-relaxed">{item.text}</p>
+            <p className="text-sm md:text-base text-white/70 leading-relaxed">{item.text}</p>
             {item.arabic && <ArabicBlock arabic={item.arabic} transliteration={item.transliteration} />}
-            {item.source && <p className="text-xs text-muted-foreground mt-1">📖 {item.source}</p>}
+            {item.source && <p className="text-xs text-white/35 mt-1">📖 {item.source}</p>}
           </div>
         ))}
       </motion.div>
@@ -66,9 +66,9 @@ export default function ShalawatNabiClient() {
         </div>
         {data.keutamaan.items.map((item, i) => (
           <div key={i} className="mb-4 last:mb-0 pl-4 border-l-2 border-rose-400/20">
-            <p className="text-sm md:text-base text-foreground/75 leading-relaxed">{item.text}</p>
+            <p className="text-sm md:text-base text-white/65 leading-relaxed">{item.text}</p>
             {item.arabic && <ArabicBlock arabic={item.arabic} transliteration={item.transliteration} />}
-            {item.source && <p className="text-xs text-muted-foreground mt-1">📖 {item.source}</p>}
+            {item.source && <p className="text-xs text-white/35 mt-1">📖 {item.source}</p>}
           </div>
         ))}
       </motion.div>
@@ -88,7 +88,7 @@ export default function ShalawatNabiClient() {
               <span className="w-6 h-6 rounded-full bg-emerald-500/10 border border-emerald-400/20 flex items-center justify-center text-xs font-bold text-emerald-400 flex-shrink-0 mt-0.5">
                 {i + 1}
               </span>
-              <span className="text-sm md:text-base text-foreground/75 leading-relaxed">{item}</span>
+              <span className="text-sm md:text-base text-white/65 leading-relaxed">{item}</span>
             </li>
           ))}
         </ol>
@@ -97,7 +97,7 @@ export default function ShalawatNabiClient() {
       {/* Bacaan Shalawat */}
       <motion.div
         initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.35 }}
-        className="rounded-2xl bg-card border border-border/50 p-5 md:p-6"
+        className="rounded-2xl bg-white/[0.03] border border-white/50 p-5 md:p-6"
       >
         <div className="flex items-center gap-2 mb-4">
           <BookOpen size={18} className="text-blue-400" />
@@ -106,7 +106,7 @@ export default function ShalawatNabiClient() {
         {data.bacaan.items.map((item, i) => (
           <div key={i} className="mb-4 last:mb-0">
             {item.arabic && <ArabicBlock arabic={item.arabic} transliteration={item.transliteration} />}
-            <p className="text-xs text-muted-foreground mt-1">📖 {item.source}</p>
+            <p className="text-xs text-white/35 mt-1">📖 {item.source}</p>
           </div>
         ))}
       </motion.div>
@@ -126,7 +126,7 @@ export default function ShalawatNabiClient() {
               <span className="w-6 h-6 rounded-lg bg-indigo-500/10 border border-indigo-400/20 flex items-center justify-center text-xs font-bold text-indigo-400 flex-shrink-0 mt-0.5">
                 {i + 1}
               </span>
-              <span className="text-sm md:text-base text-foreground/75 leading-relaxed">{item}</span>
+              <span className="text-sm md:text-base text-white/65 leading-relaxed">{item}</span>
             </li>
           ))}
         </ol>
@@ -134,7 +134,7 @@ export default function ShalawatNabiClient() {
 
       <motion.p
         initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6 }}
-        className="text-center text-muted-foreground/50 text-xs pt-2 pb-4"
+        className="text-center text-white/35/50 text-xs pt-2 pb-4"
       >
         Disarikan dari buku &quot;Shalawat Kepada Nabi, Keutamaan Serta Faidahnya&quot; karya {data.author}
       </motion.p>

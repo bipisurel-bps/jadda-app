@@ -110,8 +110,8 @@ export default function JuzClient() {
   if (loading) {
     return (
       <div className="flex flex-col items-center justify-center py-20">
-        <div className="w-8 h-8 border-2 border-primary border-t-transparent rounded-full animate-spin" />
-        <p className="mt-3 text-sm text-muted-foreground">Memuat kandungan juz...</p>
+        <div className="w-8 h-8 border-2 border-emerald-500/30 border-t-transparent rounded-full animate-spin" />
+        <p className="mt-3 text-sm text-white/35">Memuat kandungan juz...</p>
       </div>
     );
   }
@@ -119,7 +119,7 @@ export default function JuzClient() {
   if (error && contents.length === 0) {
     return (
       <div className="flex flex-col items-center justify-center py-20 px-4">
-        <p className="text-sm text-muted-foreground">Gagal memuat data: {error}</p>
+        <p className="text-sm text-white/35">Gagal memuat data: {error}</p>
       </div>
     );
   }
@@ -131,16 +131,16 @@ export default function JuzClient() {
       {/* Search */}
       <div className="mt-4 mb-4">
         <div className="relative">
-          <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" />
+          <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-white/35" />
           <Input
-            className="pl-9 pr-8 h-10 bg-card border-border text-sm"
+            className="pl-9 pr-8 h-10 bg-white/[0.03] border-white/[0.06] text-sm"
             placeholder="Cari juz..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
           />
           {search && (
             <button onClick={() => setSearch('')} className="absolute right-3 top-1/2 -translate-y-1/2">
-              <X size={16} className="text-muted-foreground" />
+              <X size={16} className="text-white/35" />
             </button>
           )}
         </div>
@@ -149,7 +149,7 @@ export default function JuzClient() {
       {/* Juz list */}
       <div className="pb-8">
         {filtered.length === 0 ? (
-          <p className="text-center text-sm text-muted-foreground py-10">Juz tidak ditemukan</p>
+          <p className="text-center text-sm text-white/35 py-10">Juz tidak ditemukan</p>
         ) : (
           <div className="space-y-3">
             {filtered.map((juz, i) => (
@@ -161,20 +161,20 @@ export default function JuzClient() {
               >
                 <Link
                   href={`/quran?tab=juz&search=${juz.number}`}
-                  className="flex items-start gap-3 p-4 rounded-xl bg-card border border-border hover:bg-muted/30 transition-colors"
+                  className="flex items-start gap-3 p-4 rounded-xl bg-white/[0.03] border border-white/[0.06] hover:bg-white/[0.03] transition-colors"
                 >
                   <div className="w-11 h-11 rounded-full bg-gradient-to-br from-emerald-500 to-teal-500 flex items-center justify-center flex-shrink-0 shadow-sm">
                     <span className="text-base font-bold text-white">{juz.number}</span>
                   </div>
                   <div className="flex-1 min-w-0">
-                    <h3 className="text-sm font-semibold text-foreground line-clamp-2">{juz.title}</h3>
-                    <p className="text-xs text-muted-foreground mt-1">
+                    <h3 className="text-sm font-semibold text-white/85 line-clamp-2">{juz.title}</h3>
+                    <p className="text-xs text-white/35 mt-1">
                       {juz.estimatedSurahs}
                     </p>
                     {juz.details.length > 0 && (
                       <ul className="mt-2 space-y-0.5">
                         {juz.details.slice(0, 3).map((d, di) => (
-                          <li key={di} className="flex items-start gap-1.5 text-xs text-muted-foreground">
+                          <li key={di} className="flex items-start gap-1.5 text-xs text-white/35">
                             <span className="mt-1 w-1 h-1 rounded-full bg-emerald-400 flex-shrink-0" />
                             <span className="line-clamp-1">{d}</span>
                           </li>
@@ -182,7 +182,7 @@ export default function JuzClient() {
                       </ul>
                     )}
                   </div>
-                  <ChevronRight size={16} className="text-muted-foreground flex-shrink-0 mt-2" />
+                  <ChevronRight size={16} className="text-white/35 flex-shrink-0 mt-2" />
                 </Link>
               </motion.div>
             ))}

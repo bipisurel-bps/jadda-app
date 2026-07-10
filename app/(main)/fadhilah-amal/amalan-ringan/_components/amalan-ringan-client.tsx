@@ -19,10 +19,10 @@ function ArabicBlock({ arabic, transliteration }: { arabic?: string; translitera
     }).catch(() => toast.error('Gagal menyalin'));
   };
   return (
-    <div className="my-3 rounded-lg bg-muted/50 p-4 border border-border/30">
-      <p className="text-xl md:text-2xl font-arabic text-foreground leading-[2.2] text-right mb-2" dir="rtl">{arabic}</p>
-      {transliteration && <p className="text-sm text-muted-foreground italic">{transliteration}</p>}
-      <button onClick={handleCopy} className="mt-2 flex items-center gap-1.5 text-xs text-primary hover:text-primary/80 transition-colors">
+    <div className="my-3 rounded-lg bg-white/[0.04] p-4 border border-white/30">
+      <p className="text-xl md:text-2xl font-arabic text-white/85 leading-[2.2] text-right mb-2" dir="rtl">{arabic}</p>
+      {transliteration && <p className="text-sm text-white/35 italic">{transliteration}</p>}
+      <button onClick={handleCopy} className="mt-2 flex items-center gap-1.5 text-xs text-emerald-400 hover:text-emerald-400/80 transition-colors">
         {copied ? <Check size={12} /> : <Copy size={12} />}
         {copied ? 'Tersalin' : 'Salin teks Arab'}
       </button>
@@ -36,7 +36,7 @@ export default function AmalanRinganClient() {
       {/* Header */}
       <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
         <h1 className="font-display font-bold text-2xl md:text-3xl text-foreground">{data.title}</h1>
-        <p className="text-xs text-muted-foreground mt-1">
+        <p className="text-xs text-white/35 mt-1">
           {data.author} — {data.publisher}, {data.year}
         </p>
       </motion.div>
@@ -44,14 +44,14 @@ export default function AmalanRinganClient() {
       {/* Muqoddimah */}
       <motion.div
         initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.1 }}
-        className="rounded-2xl bg-card border border-border/50 p-5 md:p-6"
+        className="rounded-2xl bg-white/[0.03] border border-white/50 p-5 md:p-6"
       >
-        <h2 className="font-display font-bold text-lg text-foreground mb-3">{data.muqoddimah.title}</h2>
+        <h2 className="font-display font-bold text-lg text-white/85 mb-3">{data.muqoddimah.title}</h2>
         {data.muqoddimah.items.map((item: AmalanItem, i: number) => (
           <div key={i} className="mb-3 last:mb-0">
-            <p className="text-sm md:text-base text-foreground/80 leading-relaxed">{item.text}</p>
+            <p className="text-sm md:text-base text-white/70 leading-relaxed">{item.text}</p>
             {item.arabic && <ArabicBlock arabic={item.arabic} transliteration={item.transliteration} />}
-            {item.source && <p className="text-xs text-muted-foreground mt-1">📖 {item.source}</p>}
+            {item.source && <p className="text-xs text-white/35 mt-1">📖 {item.source}</p>}
           </div>
         ))}
       </motion.div>
@@ -68,9 +68,9 @@ export default function AmalanRinganClient() {
         <div className="space-y-4">
           {data.syarat.items.map((item, i) => (
             <div key={i} className="pl-4 border-l-2 border-blue-400/20">
-              <p className="text-sm md:text-base text-foreground/75 leading-relaxed">{item.text}</p>
+              <p className="text-sm md:text-base text-white/65 leading-relaxed">{item.text}</p>
               {item.arabic && <ArabicBlock arabic={item.arabic} transliteration={item.transliteration} />}
-              {item.source && <p className="text-xs text-muted-foreground mt-1">📖 {item.source}</p>}
+              {item.source && <p className="text-xs text-white/35 mt-1">📖 {item.source}</p>}
             </div>
           ))}
         </div>
@@ -79,14 +79,14 @@ export default function AmalanRinganClient() {
       {/* Jangan Remehkan */}
       <motion.div
         initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.2 }}
-        className="rounded-2xl bg-card border border-border/50 p-5 md:p-6"
+        className="rounded-2xl bg-white/[0.03] border border-white/50 p-5 md:p-6"
       >
-        <h2 className="font-display font-bold text-lg text-foreground mb-3">{data.janganRemehkan.title}</h2>
+        <h2 className="font-display font-bold text-lg text-white/85 mb-3">{data.janganRemehkan.title}</h2>
         {data.janganRemehkan.items.map((item, i) => (
           <div key={i} className="mb-3 last:mb-0">
-            <p className="text-sm md:text-base text-foreground/80 leading-relaxed">{item.text}</p>
+            <p className="text-sm md:text-base text-white/70 leading-relaxed">{item.text}</p>
             {item.arabic && <ArabicBlock arabic={item.arabic} transliteration={item.transliteration} />}
-            {item.source && <p className="text-xs text-muted-foreground mt-1">📖 {item.source}</p>}
+            {item.source && <p className="text-xs text-white/35 mt-1">📖 {item.source}</p>}
           </div>
         ))}
       </motion.div>
@@ -105,17 +105,17 @@ export default function AmalanRinganClient() {
           }`}
         >
           <div className="flex items-center gap-3 mb-4">
-            <div className="w-8 h-8 rounded-lg bg-foreground/10 flex items-center justify-center text-sm font-bold text-foreground">
+            <div className="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center text-sm font-bold text-foreground">
               {amal.number}
             </div>
             <h2 className="font-display font-bold text-base md:text-lg text-foreground">{amal.title}</h2>
           </div>
           <div className="space-y-4">
             {amal.items.map((item, i) => (
-              <div key={i} className="pl-4 border-l-2 border-foreground/10">
-                <p className="text-sm md:text-base text-foreground/75 leading-relaxed">{item.text}</p>
+              <div key={i} className="pl-4 border-l-2 border-white/10">
+                <p className="text-sm md:text-base text-white/65 leading-relaxed">{item.text}</p>
                 {item.arabic && <ArabicBlock arabic={item.arabic} transliteration={item.transliteration} />}
-                {item.source && <p className="text-xs text-muted-foreground mt-2">📖 {item.source}</p>}
+                {item.source && <p className="text-xs text-white/35 mt-2">📖 {item.source}</p>}
               </div>
             ))}
           </div>
@@ -125,21 +125,21 @@ export default function AmalanRinganClient() {
       {/* Penutup */}
       <motion.div
         initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.5 }}
-        className="rounded-2xl bg-card border border-border/50 p-5 md:p-6"
+        className="rounded-2xl bg-white/[0.03] border border-white/50 p-5 md:p-6"
       >
-        <h2 className="font-display font-bold text-lg text-foreground mb-3">{data.penutup.title}</h2>
+        <h2 className="font-display font-bold text-lg text-white/85 mb-3">{data.penutup.title}</h2>
         {data.penutup.items.map((item, i) => (
           <div key={i} className="mb-3 last:mb-0">
-            <p className="text-sm md:text-base text-foreground/80 leading-relaxed">{item.text}</p>
+            <p className="text-sm md:text-base text-white/70 leading-relaxed">{item.text}</p>
             {item.arabic && <ArabicBlock arabic={item.arabic} transliteration={item.transliteration} />}
-            {item.source && <p className="text-xs text-muted-foreground mt-1">📖 {item.source}</p>}
+            {item.source && <p className="text-xs text-white/35 mt-1">📖 {item.source}</p>}
           </div>
         ))}
       </motion.div>
 
       <motion.p
         initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6 }}
-        className="text-center text-muted-foreground/50 text-xs pt-2 pb-4"
+        className="text-center text-white/35/50 text-xs pt-2 pb-4"
       >
         Disarikan dari buku &quot;Amalan Ringan Berpahala Besar&quot; karya {data.author}
       </motion.p>

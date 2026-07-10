@@ -95,7 +95,7 @@ export default function UlamaPage() {
       <motion.div initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.3 }}>
         <Link
           href="/keilmuan"
-          className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+          className="inline-flex items-center gap-2 text-sm text-white/35 hover:text-white/85 transition-colors"
         >
           <ArrowLeft size={16} />
           Kembali ke Keilmuan
@@ -104,8 +104,8 @@ export default function UlamaPage() {
 
       {/* Header */}
       <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.05 }}>
-        <h1 className="font-display font-bold text-2xl md:text-3xl text-foreground">Biografi Ulama</h1>
-        <p className="text-sm text-muted-foreground mt-1">
+        <h1 className="font-display font-bold text-2xl md:text-3xl text-white/85">Biografi Ulama</h1>
+        <p className="text-sm text-white/35 mt-1">
           Mengenal para ulama Islam — {totalUlama} biografi
         </p>
       </motion.div>
@@ -117,13 +117,13 @@ export default function UlamaPage() {
         transition={{ duration: 0.3, delay: 0.1 }}
         className="relative"
       >
-        <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" />
+        <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-white/35" />
         <input
           type="text"
           placeholder="Cari ulama berdasarkan nama, karya, atau tempat lahir..."
           value={search}
           onChange={e => setSearch(e.target.value)}
-          className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-card border border-border text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/30"
+          className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-card border border-border text-sm text-white/85 placeholder:text-white/35 focus:outline-none focus:ring-2 focus:ring-primary/30"
         />
       </motion.div>
 
@@ -131,8 +131,8 @@ export default function UlamaPage() {
       <div className="space-y-3">
         {filtered.length === 0 ? (
           <div className="text-center py-12 rounded-2xl bg-card border border-border">
-            <Users size={44} className="mx-auto text-muted-foreground/30 mb-4" />
-            <p className="text-sm text-muted-foreground font-medium">Tidak ada ulama ditemukan</p>
+            <Users size={44} className="mx-auto text-white/35/30 mb-4" />
+            <p className="text-sm text-white/35 font-medium">Tidak ada ulama ditemukan</p>
           </div>
         ) : (
           filtered.map((cat) => {
@@ -151,11 +151,11 @@ export default function UlamaPage() {
                       <Users size={18} className={styles.text} />
                     </div>
                     <div className="text-left">
-                      <h3 className="font-display font-bold text-sm text-foreground">{cat.name}</h3>
-                      <p className="text-xs text-muted-foreground">{cat.scholars.length} ulama</p>
+                      <h3 className="font-display font-bold text-sm text-white/85">{cat.name}</h3>
+                      <p className="text-xs text-white/35">{cat.scholars.length} ulama</p>
                     </div>
                   </div>
-                  <ChevronDown size={18} className={`text-muted-foreground transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} />
+                  <ChevronDown size={18} className={`text-white/35 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} />
                 </button>
                 <AnimatePresence>
                   {isOpen && (
@@ -179,14 +179,14 @@ export default function UlamaPage() {
                                 <GraduationCap size={18} className={s.text} />
                               </div>
                               <div className="flex-1 min-w-0">
-                                <h4 className="font-bold text-sm text-foreground group-hover:text-primary transition-colors">
+                                <h4 className="font-bold text-sm text-white/85 group-hover:text-primary transition-colors">
                                   {scholar.name}
                                 </h4>
-                                <p className="text-xs text-muted-foreground">{scholar.fullName}</p>
+                                <p className="text-xs text-white/35">{scholar.fullName}</p>
                                 {(scholar.birthYear || scholar.deathYear) && (
                                   <div className="flex items-center gap-1.5 mt-1.5">
-                                    <Calendar size={11} className="text-muted-foreground/50" />
-                                    <span className="text-[11px] text-muted-foreground/60">
+                                    <Calendar size={11} className="text-white/35/50" />
+                                    <span className="text-[11px] text-white/35/60">
                                       {scholar.birthYear ?? '?'} — {scholar.deathYear ?? '?'}
                                     </span>
                                   </div>
@@ -201,7 +201,7 @@ export default function UlamaPage() {
                                     </span>
                                   )}
                                   {scholar.birthPlace && (
-                                    <span className="inline-flex items-center gap-1 text-[10px] text-muted-foreground/50">
+                                    <span className="inline-flex items-center gap-1 text-[10px] text-white/35/50">
                                       <MapPin size={9} />
                                       {scholar.birthPlace}
                                     </span>

@@ -131,29 +131,29 @@ export default function WarisClient() {
       {/* Header */}
       <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}>
         <h1 className="text-2xl md:text-3xl font-display font-bold tracking-tight text-foreground">Hitung Waris</h1>
-        <p className="text-sm text-muted-foreground mt-1">Perhitungan faraidh sesuai Al-Qur&apos;an dan Sunnah</p>
+        <p className="text-sm text-white/35 mt-1">Perhitungan faraidh sesuai Al-Qur&apos;an dan Sunnah</p>
       </motion.div>
 
       {/* Form */}
       <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="space-y-4">
         {/* Total Estate */}
-        <div className="rounded-xl bg-card border border-border/50 p-5 shadow-sm">
-          <label className="text-sm font-medium text-foreground mb-2 block">Total Harta Warisan</label>
+        <div className="rounded-xl bg-white/[0.03] border border-white/50 p-5 shadow-sm">
+          <label className="text-sm font-medium text-white/85 mb-2 block">Total Harta Warisan</label>
           <div className="relative">
-            <span className="absolute left-3 top-1/2 -translate-y-1/2 text-sm text-muted-foreground font-medium">Rp</span>
+            <span className="absolute left-3 top-1/2 -translate-y-1/2 text-sm text-white/35 font-medium">Rp</span>
             <input
               type="text"
               value={totalEstate}
               onChange={handleEstateChange}
               placeholder="0"
-              className="w-full pl-10 pr-4 py-2.5 rounded-lg bg-background border border-border text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/30 font-mono"
+              className="w-full pl-10 pr-4 py-2.5 rounded-lg bg-[\0] border border-white/[0.06] text-sm text-white/85 placeholder:text-white/35 focus:outline-none focus:ring-2 focus:ring-emerald-500/30 font-mono"
             />
           </div>
         </div>
 
         {/* Deceased Gender */}
-        <div className="rounded-xl bg-card border border-border/50 p-5 shadow-sm">
-          <label className="text-sm font-medium text-foreground mb-3 block">Status Pewaris (yang meninggal)</label>
+        <div className="rounded-xl bg-white/[0.03] border border-white/50 p-5 shadow-sm">
+          <label className="text-sm font-medium text-white/85 mb-3 block">Status Pewaris (yang meninggal)</label>
           <div className="flex gap-3">
             {(['male', 'female'] as Gender[])?.map?.((g: Gender) => (
               <button
@@ -167,7 +167,7 @@ export default function WarisClient() {
                 className={`flex-1 py-2.5 rounded-lg text-sm font-medium transition-all ${
                   deceasedGender === g
                     ? 'bg-primary text-primary-foreground shadow-md'
-                    : 'bg-muted text-muted-foreground hover:bg-muted/80'
+                    : 'bg-white/[0.04] text-white/35 hover:bg-white/80'
                 }`}
               >
                 {g === 'male' ? 'Laki-laki' : 'Perempuan'}
@@ -177,22 +177,22 @@ export default function WarisClient() {
         </div>
 
         {/* Heir Selection */}
-        <div className="rounded-xl bg-card border border-border/50 p-5 shadow-sm">
+        <div className="rounded-xl bg-white/[0.03] border border-white/50 p-5 shadow-sm">
           <div className="flex items-center gap-2 mb-4">
-            <Users size={16} className="text-primary" />
+            <Users size={16} className="text-emerald-400" />
             <label className="text-sm font-medium text-foreground">Ahli Waris yang Ada</label>
           </div>
           <div className="space-y-2">
             {groups?.map?.(([groupName, fields]: [string, HeirFieldConfig[]]) => {
               const isExpanded = expandedGroups?.includes?.(groupName);
               return (
-                <div key={groupName} className="rounded-lg border border-border/30 overflow-hidden">
+                <div key={groupName} className="rounded-lg border border-white/30 overflow-hidden">
                   <button
                     onClick={() => toggleGroup(groupName)}
-                    className="w-full flex items-center justify-between px-4 py-2.5 bg-muted/30 hover:bg-muted/50 transition-colors"
+                    className="w-full flex items-center justify-between px-4 py-2.5 bg-white/[0.03] hover:bg-white/[0.04] transition-colors"
                   >
-                    <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">{groupName}</span>
-                    {isExpanded ? <ChevronUp size={14} className="text-muted-foreground" /> : <ChevronDown size={14} className="text-muted-foreground" />}
+                    <span className="text-xs font-semibold text-white/35 uppercase tracking-wider">{groupName}</span>
+                    {isExpanded ? <ChevronUp size={14} className="text-white/35" /> : <ChevronDown size={14} className="text-white/35" />}
                   </button>
                   <AnimatePresence>
                     {isExpanded && (
@@ -225,7 +225,7 @@ export default function WarisClient() {
                                       const cur = ((heirs as any)?.[field?.key] ?? 0) as number;
                                       if (cur > 0) updateHeir(field?.key, cur - 1);
                                     }}
-                                    className="w-7 h-7 rounded-md bg-muted text-foreground flex items-center justify-center text-sm font-bold hover:bg-muted/80"
+                                    className="w-7 h-7 rounded-md bg-white/[0.04] text-white/85 flex items-center justify-center text-sm font-bold hover:bg-white/80"
                                   >
                                     -
                                   </button>
@@ -237,7 +237,7 @@ export default function WarisClient() {
                                       const cur = ((heirs as any)?.[field?.key] ?? 0) as number;
                                       if (cur < (field?.max ?? 20)) updateHeir(field?.key, cur + 1);
                                     }}
-                                    className="w-7 h-7 rounded-md bg-muted text-foreground flex items-center justify-center text-sm font-bold hover:bg-muted/80"
+                                    className="w-7 h-7 rounded-md bg-white/[0.04] text-white/85 flex items-center justify-center text-sm font-bold hover:bg-white/80"
                                   >
                                     +
                                   </button>
@@ -259,14 +259,14 @@ export default function WarisClient() {
         <div className="flex gap-3">
           <button
             onClick={handleCalculate}
-            className="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl bg-primary text-primary-foreground font-medium text-sm shadow-md hover:bg-primary/90 transition-all"
+            className="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl bg-primary text-primary-foreground font-medium text-sm shadow-md hover:bg-emerald-500/90 transition-all"
           >
             <Calculator size={16} />
             Hitung Waris
           </button>
           <button
             onClick={handleReset}
-            className="flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-muted text-muted-foreground font-medium text-sm hover:bg-muted/80 transition-all"
+            className="flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-white/[0.04] text-white/35 font-medium text-sm hover:bg-white/80 transition-all"
           >
             <RotateCcw size={16} />
             Reset
@@ -279,13 +279,13 @@ export default function WarisClient() {
         <div id="waris-results" className="space-y-4">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="space-y-4">
             {/* Summary */}
-            <div className="rounded-xl bg-card border border-border/50 p-5 shadow-sm">
+            <div className="rounded-xl bg-white/[0.03] border border-white/50 p-5 shadow-sm">
               <div className="flex items-center gap-2 mb-4">
-                <Scale size={16} className="text-primary" />
+                <Scale size={16} className="text-emerald-400" />
                 <h2 className="font-display font-bold text-lg text-foreground">Hasil Perhitungan</h2>
               </div>
-              <p className="text-sm text-muted-foreground mb-4">
-                Total harta: <strong className="text-foreground font-mono">Rp {formatRupiah(result?.totalEstate ?? 0)}</strong>
+              <p className="text-sm text-white/35 mb-4">
+                Total harta: <strong className="text-white/85 font-mono">Rp {formatRupiah(result?.totalEstate ?? 0)}</strong>
               </p>
 
               {/* Results Table */}
@@ -293,26 +293,26 @@ export default function WarisClient() {
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b border-border">
-                      <th className="text-left py-2 px-2 text-muted-foreground font-medium">Ahli Waris</th>
-                      <th className="text-left py-2 px-2 text-muted-foreground font-medium">Dasar</th>
-                      <th className="text-center py-2 px-2 text-muted-foreground font-medium">Bagian</th>
-                      <th className="text-right py-2 px-2 text-muted-foreground font-medium">Persentase</th>
-                      <th className="text-right py-2 px-2 text-muted-foreground font-medium">Jumlah</th>
+                      <th className="text-left py-2 px-2 text-white/35 font-medium">Ahli Waris</th>
+                      <th className="text-left py-2 px-2 text-white/35 font-medium">Dasar</th>
+                      <th className="text-center py-2 px-2 text-white/35 font-medium">Bagian</th>
+                      <th className="text-right py-2 px-2 text-white/35 font-medium">Persentase</th>
+                      <th className="text-right py-2 px-2 text-white/35 font-medium">Jumlah</th>
                     </tr>
                   </thead>
                   <tbody>
                     {(result?.heirs ?? [])?.map?.((heir: HeirResult, idx: number) => (
-                      <tr key={idx} className="border-b border-border/30">
-                        <td className="py-2.5 px-2 text-foreground font-medium">
+                      <tr key={idx} className="border-b border-white/30">
+                        <td className="py-2.5 px-2 text-white/85 font-medium">
                           <div>{heir?.name}{(heir?.count ?? 0) > 1 ? ` (${heir.count} orang)` : ''}</div>
                           {(heir?.perPersonAmount ?? 0) > 0 && (heir?.count ?? 0) > 1 && (
-                            <div className="text-xs text-muted-foreground mt-0.5">Masing-masing: Rp {formatRupiah(heir.perPersonAmount ?? 0)}</div>
+                            <div className="text-xs text-white/35 mt-0.5">Masing-masing: Rp {formatRupiah(heir.perPersonAmount ?? 0)}</div>
                           )}
                         </td>
-                        <td className="py-2.5 px-2 text-muted-foreground text-xs">{heir?.basis}</td>
-                        <td className="py-2.5 px-2 text-center text-foreground font-mono text-xs">{heir?.shareFraction}</td>
-                        <td className="py-2.5 px-2 text-right text-foreground font-mono">{(heir?.percentage ?? 0)?.toFixed?.(1) ?? '0'}%</td>
-                        <td className="py-2.5 px-2 text-right text-foreground font-mono font-medium">Rp {formatRupiah(heir?.amount ?? 0)}</td>
+                        <td className="py-2.5 px-2 text-white/35 text-xs">{heir?.basis}</td>
+                        <td className="py-2.5 px-2 text-center text-white/85 font-mono text-xs">{heir?.shareFraction}</td>
+                        <td className="py-2.5 px-2 text-right text-white/85 font-mono">{(heir?.percentage ?? 0)?.toFixed?.(1) ?? '0'}%</td>
+                        <td className="py-2.5 px-2 text-right text-white/85 font-mono font-medium">Rp {formatRupiah(heir?.amount ?? 0)}</td>
                       </tr>
                     )) ?? []}
                   </tbody>
@@ -322,8 +322,8 @@ export default function WarisClient() {
 
             {/* Pie Chart */}
             {(result?.heirs ?? [])?.filter?.((h: HeirResult) => (h?.amount ?? 0) > 0)?.length > 0 && (
-              <div className="rounded-xl bg-card border border-border/50 p-5 shadow-sm">
-                <h3 className="font-display font-semibold text-sm text-foreground mb-4">Visualisasi Pembagian</h3>
+              <div className="rounded-xl bg-white/[0.03] border border-white/50 p-5 shadow-sm">
+                <h3 className="font-display font-semibold text-sm text-white/85 mb-4">Visualisasi Pembagian</h3>
                 <div className="w-full" style={{ height: 300 }}>
                   <InheritancePieChart heirs={(result?.heirs ?? [])?.filter?.((h: HeirResult) => (h?.amount ?? 0) > 0) ?? []} />
                 </div>
@@ -334,15 +334,15 @@ export default function WarisClient() {
             <div className="space-y-3">
               {/* Blocked Heirs */}
               {(result?.blockedHeirs?.length ?? 0) > 0 && (
-                <div className="rounded-xl bg-card border border-border/50 p-5 shadow-sm">
+                <div className="rounded-xl bg-white/[0.03] border border-white/50 p-5 shadow-sm">
                   <div className="flex items-center gap-2 mb-3">
                     <AlertTriangle size={14} className="text-amber-500" />
                     <h3 className="font-semibold text-sm text-foreground">Ahli Waris yang Terhalang (Hajb)</h3>
                   </div>
                   <ul className="space-y-2">
                     {(result?.blockedHeirs ?? [])?.map?.((h: HeirResult, idx: number) => (
-                      <li key={idx} className="text-sm text-muted-foreground">
-                        <strong className="text-foreground">{h?.name}</strong> ({h?.count} orang) — {h?.blockReason}
+                      <li key={idx} className="text-sm text-white/35">
+                        <strong className="text-white/85">{h?.name}</strong> ({h?.count} orang) — {h?.blockReason}
                       </li>
                     )) ?? []}
                   </ul>
@@ -373,8 +373,8 @@ export default function WarisClient() {
             </div>
 
             {/* Disclaimer */}
-            <div className="rounded-xl bg-muted/50 p-4 border border-border/30">
-              <p className="text-xs text-muted-foreground leading-relaxed">
+            <div className="rounded-xl bg-white/[0.04] p-4 border border-white/30">
+              <p className="text-xs text-white/35 leading-relaxed">
                 <strong>Disclaimer:</strong> Hasil perhitungan ini adalah panduan berdasarkan Al-Qur&apos;an dan Sunnah. Untuk kepastian hukum, disarankan berkonsultasi dengan ahli waris, notaris, atau Pengadilan Agama.
               </p>
             </div>

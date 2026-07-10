@@ -21,7 +21,7 @@ export default function TuntunanSholatClient() {
         <h1 className="font-display font-bold text-2xl md:text-3xl text-foreground">
           Tuntunan Sholat Nabi ﷺ
         </h1>
-        <p className="text-sm text-muted-foreground mt-1">
+        <p className="text-sm text-white/35 mt-1">
           Tata cara sholat sesuai Sunnah & makna setiap bacaan
         </p>
       </motion.div>
@@ -41,7 +41,7 @@ export default function TuntunanSholatClient() {
               className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium transition-all ${
                 isActive
                   ? 'bg-primary text-primary-foreground shadow-sm'
-                  : 'bg-muted text-muted-foreground hover:bg-muted/80 hover:text-foreground'
+                  : 'bg-white/[0.04] text-white/35 hover:bg-white/80 hover:text-foreground'
               }`}
             >
               <Icon size={16} />
