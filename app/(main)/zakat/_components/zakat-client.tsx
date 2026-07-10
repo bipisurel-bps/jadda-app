@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Coins, Wheat, ShoppingCart, Heart, Beef, Calculator, RotateCcw, CheckCircle, AlertCircle, ChevronDown, BookOpen, Users } from 'lucide-react';
 import { hitungZakatMaal, hitungZakatFitrah, hitungZakatPerdagangan, hitungZakatPertanian, hitungZakatPeternakan, getNisabTable, formatCurrency, parseCurrency } from '@/lib/zakat';
 import type { ZakatResult } from '@/lib/zakat';
-import PageHeader from '@/components/page-header';
+import { PageHeader } from '@/components/layouts/page-header';
 import { toast } from 'sonner';
 
 type MainTabType = 'kalkulator' | 'fiqh';
