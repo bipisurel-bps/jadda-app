@@ -1,223 +1,184 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import Link from 'next/link';
-import { Star, ChevronRight, Compass, Heart, Users, PersonStanding, Book, BookOpen, Moon } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { dailyVerses } from '@/lib/quran-verses';
-import {
-  JaddaSholatIcon,
-  JaddaKiblatIcon,
-  JaddaDoaIcon,
-  JaddaWarisIcon,
-  JaddaHaditsIcon,
-  JaddaZakatIcon,
-  JaddaUmrahIcon,
-  JaddaHajiIcon,
-} from '@/components/icons/jadda-icons';
 
-/* ── Main feature config ── */
-const mainFeatures = [
-  {
-    href: '/sholat',
-    icon: JaddaSholatIcon,
-    title: 'Waktu Sholat & Dzikir',
-    desc: 'Jadwal otomatis & pengingat dzikir pagi petang',
-    accent: 'gold',
-    size: 'lg',
-  },
-  {
-    href: '/quran',
-    icon: Book,
-    title: 'Al-Quran',
-    desc: '114 surah, 30 juz — baca dengan terjemah Indonesia',
-    accent: 'emerald',
-    size: 'md',
-    isLucide: true,
-  },
-  {
-    href: '/juz',
-    icon: BookOpen,
-    title: 'Kandungan Juz',
-    desc: 'Ringkasan tema pokok setiap juz Al-Quran',
-    accent: 'teal',
-    size: 'md',
-    isLucide: true,
-  },
-  {
-    href: '/qibla',
-    icon: JaddaKiblatIcon,
-    title: 'Arah Kiblat',
-    desc: 'Kompas digital berbasis GPS & sensor',
-    accent: 'sapphire',
-    size: 'md',
-  },
-  {
-    href: '/doa',
-    icon: JaddaDoaIcon,
-    title: 'Doa Harian',
-    desc: '310 doa dari Al-Quran, hadits & kitab ulama',
-    accent: 'gold',
-    size: 'sm',
-  },
-  {
-    href: '/hadits',
-    icon: JaddaHaditsIcon,
-    title: 'Koleksi Hadits',
-    desc: 'Arbain An-Nawawi & Riyadhus Shalihin',
-    accent: 'sapphire',
-    size: 'sm',
-  },
+/* ══════════════════════════════════════════
+   Accent Palette — matching Android premium theme
+   ══════════════════════════════════════════ */
+const ACCENT = {
+  emerald:  { hex: '#059669', light: '#34D399', dark: '#047857' },
+  gold:     { hex: '#D97706', light: '#F59E0B', dark: '#B45309' },
+  sapphire: { hex: '#2563EB', light: '#60A5FA', dark: '#1D4ED8' },
+  amethyst: { hex: '#7C3AED', light: '#A78BFA', dark: '#5B21B6' },
+  teal:     { hex: '#0D9488', light: '#2DD4BF', dark: '#0F766E' },
+} as const;
+
+type AccentKey = keyof typeof ACCENT;
+
+/* ══════════════════════════════════════════
+   Prayer Config — matching Android
+   ══════════════════════════════════════════ */
+const PRAYER_NAMES_AR: Record<string, string> = {
+  Fajr: 'صبح', Dhuhr: 'ظهر', Asr: 'عصر', Maghrib: 'مغرب', Isha: 'عشاء',
+};
+const PRAYER_NAMES_ID: Record<string, string> = {
+  Fajr: 'Subuh', Dhuhr: 'Zhuhur', Asr: 'Ashar', Maghrib: 'Maghrib', Isha: 'Isya',
+};
+const PRAYER_ORDER = ['Fajr', 'Dhuhr', 'Asr', 'Maghrib', 'Isha'] as const;
+type PrayerKey = typeof PRAYER_ORDER[number];
+
+const PRAYER_ICONS: Record<PrayerKey, string> = {
+  Fajr: '🌙', Dhuhr: '☀️', Asr: '⛅', Maghrib: '🌆', Isha: '🌑',
+};
+
+const PRAYER_COLORS: Record<PrayerKey, string> = {
+  Fajr: ACCENT.sapphire.hex,
+  Dhuhr: ACCENT.gold.dark,
+  Asr: ACCENT.amethyst.hex,
+  Maghrib: '#DC2626',
+  Isha: ACCENT.sapphire.dark,
+};
+
+/* ══════════════════════════════════════════
+   Date Helper
+   ══════════════════════════════════════════ */
+const HARI = ['Ahad', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
+const BULAN = ['Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun', 'Jul', 'Ags', 'Sep', 'Okt', 'Nov', 'Des'];
+
+function formatTanggal(): string {
+  const now = new Date();
+  return `${HARI[now.getDay()]}, ${now.getDate()} ${BULAN[now.getMonth()]} ${now.getFullYear()}`;
+}
+
+/* ══════════════════════════════════════════
+   Feature Lists — matching Android structure
+   ══════════════════════════════════════════ */
+const MAIN_FEATURES = [
+  { title: 'Waktu Sholat & Dzikir', desc: 'Jadwal Sholat dan pengingat Dzikir', href: '/sholat', icon: '⏰', accent: 'amethyst' as AccentKey },
+  { title: 'Arah Kiblat', desc: 'Kompas Digital berbasis GPS', href: '/qibla', icon: '🧭', accent: 'sapphire' as AccentKey },
+  { title: 'Doa Harian', desc: 'Doa-doa dari Alquran dan Hadits', href: '/doa', icon: '📖', accent: 'emerald' as AccentKey },
 ];
 
-/* ── Fitur Lainnya ── */
-const lainnyaFeatures = [
-  {
-    href: '/dzikir',
-    icon: Moon,
-    title: 'Dzikir Pagi & Petang',
-    desc: 'Bacaan dzikir dari Al-Quran & Sunnah yang shahih',
-    accent: 'teal',
-    isLucide: true,
-  },
-  {
-    href: '/zakat',
-    icon: JaddaZakatIcon,
-    title: 'Hitung Zakat',
-    desc: 'Zakat maal, fitrah, dagang, tani & ternak',
-    accent: 'teal',
-  },
-  {
-    href: '/waris',
-    icon: JaddaWarisIcon,
-    title: 'Hitung Waris',
-    desc: 'Perhitungan faraidh sesuai syariat',
-    accent: 'amethyst',
-  },
-  {
-    href: '/umroh',
-    icon: JaddaUmrahIcon,
-    title: 'Panduan Umrah',
-    desc: 'Tata cara lengkap dengan doa & bacaan Arab',
-    accent: 'teal',
-  },
-  {
-    href: '/haji',
-    icon: JaddaHajiIcon,
-    title: 'Tuntunan Haji',
-    desc: 'Tuntunan ringkas ibadah haji sesuai Sunnah',
-    accent: 'amethyst',
-  },
-  {
-    href: '/keilmuan/fiqh-safar',
-    icon: Compass,
-    title: 'Panduan Safar',
-    desc: 'Qashar, jamak, puasa musafir, tayammum & adab',
-    accent: 'teal',
-    isLucide: true,
-  },
-  {
-    href: '/tuntunan-sholat',
-    icon: PersonStanding,
-    title: 'Tuntunan Sholat Nabi ﷺ',
-    desc: 'Tata cara sholat sesuai Sunnah & makna bacaan',
-    accent: 'sapphire',
-    isLucide: true,
-  },
-  {
-    href: '/keilmuan/fiqh-jenazah',
-    icon: Heart,
-    title: 'Panduan Pengurusan Jenazah',
-    desc: 'Tata cara memandikan, mengkafani hingga pemakaman',
-    accent: 'emerald',
-    isLucide: true,
-  },
-  {
-    href: '/fadhilah-amal',
-    icon: Star,
-    title: 'Fadhilah Amal',
-    desc: 'Amalan ringan berpahala besar & keutamaan shalawat',
-    accent: 'gold',
-    isLucide: true,
-  },
-  {
-    href: '/keilmuan/ulama',
-    icon: Users,
-    title: 'Biografi Ulama',
-    desc: 'Mengenal para imam hadits & ahli ilmu Islam',
-    accent: 'emerald',
-    isLucide: true,
-  },
+const PILIHAN_FEATURES = [
+  { title: 'Al-Quran', desc: 'Baca & Tadabur', href: '/quran', icon: '📖', accent: 'amethyst' as AccentKey },
+  { title: 'Tuntunan Sholat Nabi ﷺ', desc: 'Tata cara dan makna bacaan sholat', href: '/tuntunan-sholat', icon: '🕌', accent: 'sapphire' as AccentKey },
+  { title: 'Hadits', desc: 'Arbain, 7 Sahabat & Kisah dari Hadits', href: '/hadits', icon: '📜', accent: 'emerald' as AccentKey },
+  { title: 'Zakat', desc: 'Kalkulator dan Fiqh Zakat', href: '/zakat', icon: '💰', accent: 'amethyst' as AccentKey },
+  { title: 'Waris', desc: 'Kalkulator dan Fiqh Waris', href: '/waris', icon: '🧮', accent: 'sapphire' as AccentKey },
+  { title: 'Panduan Manasik Umroh', desc: 'Panduan ringkas sesuai sunnah', href: '/umroh', icon: '🕋', accent: 'emerald' as AccentKey },
+  { title: 'Panduan Manasik Haji', desc: 'Panduan ringkas sesuai sunnah', href: '/haji', icon: '🕋', accent: 'amethyst' as AccentKey },
+  { title: 'Panduan Safar', desc: 'Qashar, jamak, puasa dan adab musafir', href: '/keilmuan/fiqh-safar', icon: '✈️', accent: 'sapphire' as AccentKey },
+  { title: 'Panduan Pengurusan Jenazah', desc: 'Panduan Pengurusan Jenazah', href: '/keilmuan/fiqh-jenazah', icon: '🌸', accent: 'emerald' as AccentKey },
 ];
 
-/* ── Curated 5-Color Accent Map ── */
-const accentMap: Record<string, { card: string; text: string; glowLine: string; glowColor: string; iconBg: string; iconGlow: string }> = {
-  emerald: {
-    card: 'card-emerald',
-    text: 'text-emerald-300',
-    glowLine: 'glow-line-emerald',
-    glowColor: '--glow-emerald',
-    iconBg: 'bg-gradient-to-br from-emerald-500/15 to-teal-500/5',
-    iconGlow: 'shadow-emerald-500/20',
-  },
-  gold: {
-    card: 'card-gold',
-    text: 'text-amber-300',
-    glowLine: 'glow-line-gold',
-    glowColor: '--glow-gold',
-    iconBg: 'bg-gradient-to-br from-amber-500/18 to-yellow-400/6',
-    iconGlow: 'shadow-amber-500/20',
-  },
-  sapphire: {
-    card: 'card-sapphire',
-    text: 'text-blue-300',
-    glowLine: 'glow-line-sapphire',
-    glowColor: '--glow-sapphire',
-    iconBg: 'bg-gradient-to-br from-blue-500/15 to-indigo-500/5',
-    iconGlow: 'shadow-blue-500/20',
-  },
-  amethyst: {
-    card: 'card-amethyst',
-    text: 'text-purple-300',
-    glowLine: 'glow-line-amethyst',
-    glowColor: '--glow-amethyst',
-    iconBg: 'bg-gradient-to-br from-purple-500/15 to-violet-500/5',
-    iconGlow: 'shadow-purple-500/20',
-  },
-  teal: {
-    card: 'card-teal',
-    text: 'text-teal-300',
-    glowLine: 'glow-line-teal',
-    glowColor: '--glow-teal',
-    iconBg: 'bg-gradient-to-br from-teal-500/15 to-cyan-400/5',
-    iconGlow: 'shadow-teal-500/20',
-  },
-};
+const LAINNYA_FEATURES = [
+  { title: 'Rihlah Al-Quran', desc: 'Sejarah dan kisah Perjalanan Al-Quran', href: '/sirah-alquran', icon: '📚', accent: 'amethyst' as AccentKey },
+  { title: 'Fadhilah Amal', desc: 'Amalan Ringan berpahala besar', href: '/fadhilah-amal', icon: '⭐', accent: 'sapphire' as AccentKey },
+  { title: 'Biografi Ulama', desc: 'Mengenal para imam dan ulama besar', href: '/keilmuan/ulama', icon: '👥', accent: 'emerald' as AccentKey },
+  { title: 'Dzikir Pagi & Petang', desc: 'Bacaan dzikir dari Al-Quran & Sunnah', href: '/dzikir', icon: '🌅', accent: 'teal' as AccentKey },
+];
 
-/* ── CSS custom property mapping for glow colors ── */
-const glowColorVars: Record<string, string> = {
-  emerald: 'rgb(5 150 105)',
-  gold: 'rgb(217 119 6)',
-  sapphire: 'rgb(37 99 235)',
-  amethyst: 'rgb(124 58 237)',
-  teal: 'rgb(13 148 136)',
-};
+/* ══════════════════════════════════════════
+   GlassFeatureCard — matching Android 2-col
+   ══════════════════════════════════════════ */
+function GlassFeatureCard({
+  title, icon, accent, href, isDark,
+}: {
+  title: string; icon: string; accent: AccentKey; href: string; isDark: boolean;
+}) {
+  const a = ACCENT[accent];
+  return (
+    <Link
+      href={href}
+      className={`group flex items-center gap-3 rounded-[14px] py-3.5 px-3.5 transition-all duration-200 ${
+        isDark
+          ? 'bg-[#1E293B] hover:bg-[#1E293B]/90'
+          : 'bg-white hover:bg-gray-50/90'
+      } ${isDark ? 'shadow-none' : 'shadow-[0_2px_8px_rgba(0,0,0,0.08)]'}`}
+      style={{
+        boxShadow: isDark ? 'none' : '0 2px 8px rgba(0,0,0,0.08)',
+      }}
+    >
+      <div
+        className="w-10 h-10 rounded-[12px] flex items-center justify-center flex-shrink-0 text-lg"
+        style={{
+          backgroundColor: isDark
+            ? `${a.hex}22`
+            : `${a.hex}1A`,
+        }}
+      >
+        {icon}
+      </div>
+      <span
+        className="text-[13px] font-bold leading-[18px] flex-1 line-clamp-3"
+        style={{ color: isDark ? '#F1F5F9' : '#0F172A' }}
+      >
+        {title}
+      </span>
+    </Link>
+  );
+}
 
-const container = {
-  hidden: { opacity: 0 },
-  show: {
-    opacity: 1,
-    transition: { staggerChildren: 0.06, delayChildren: 0.1 },
-  },
-};
+/* ══════════════════════════════════════════
+   Prayer Pill
+   ══════════════════════════════════════════ */
+function PrayerPill({
+  nameAr, nameId, time, icon, isActive, color, isDark,
+}: {
+  nameAr: string; nameId: string; time: string; icon: string; isActive: boolean; color: string; isDark: boolean;
+}) {
+  return (
+    <div
+      className={`flex items-center justify-between py-3 px-3.5 rounded-xl transition-all duration-200 ${
+        isActive
+          ? isDark ? 'bg-white/10 border-white/15' : 'bg-gray-50 border-gray-200'
+          : ''
+      }`}
+      style={{
+        border: isActive ? `1px solid ${color}30` : '1px solid transparent',
+        backgroundColor: isActive ? (isDark ? `${color}12` : `${color}08`) : 'transparent',
+      }}
+    >
+      <div className="flex items-center gap-3">
+        <span className="text-base">{icon}</span>
+        <div>
+          <p className="text-[12px] font-semibold" style={{ color: isActive ? (isDark ? '#F1F5F9' : '#0F172A') : isDark ? '#94A3B8' : '#9CA3AF' }}>
+            {nameAr} ({nameId})
+          </p>
+          <p className="text-[11px] mt-0.5" style={{ color: isDark ? '#64748B' : '#9CA3AF' }}>
+            {time}
+          </p>
+        </div>
+      </div>
+      {isActive && (
+        <div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: color }} />
+      )}
+    </div>
+  );
+}
 
-const item = {
-  hidden: { opacity: 0, y: 20 },
-  show: { opacity: 1, y: 0 },
-};
+/* ══════════════════════════════════════════
+   Section Header
+   ══════════════════════════════════════════ */
+function SectionHeader({ title, subtitle }: { title: string; subtitle?: string }) {
+  return (
+    <div className="mb-3">
+      <h2 className="text-[15px] font-extrabold text-white/90 tracking-tight">{title}</h2>
+      {subtitle && <p className="text-[12px] text-white/35 mt-0.5">{subtitle}</p>}
+    </div>
+  );
+}
 
+/* ══════════════════════════════════════════
+   Main Component
+   ══════════════════════════════════════════ */
 export default function HomeClient() {
   const [verse, setVerse] = useState({ text: '', source: '' });
+  const [isDark, setIsDark] = useState(true);
+  const today = useMemo(() => formatTanggal(), []);
 
   useEffect(() => {
     const today = new Date();
@@ -226,276 +187,258 @@ export default function HomeClient() {
     );
     const idx = dayOfYear % (dailyVerses?.length ?? 1);
     setVerse(dailyVerses?.[idx] ?? { text: '', source: '' });
+
+    // Detect theme
+    const html = document.documentElement;
+    setIsDark(!html.classList.contains('light'));
+    const observer = new MutationObserver(() => {
+      setIsDark(!html.classList.contains('light'));
+    });
+    observer.observe(html, { attributes: true, attributeFilter: ['class'] });
+    return () => observer.disconnect();
   }, []);
+
+  // Prayer times — using static sample for demo on PWA
+  // In production this would use the geolocation + AlAdhan API
+  const [prayerTimes] = useState<Record<PrayerKey, string>>({
+    Fajr: '04:45', Dhuhr: '11:57', Asr: '15:15', Maghrib: '17:52', Isha: '19:05',
+  });
+
+  // Countdown to next prayer
+  const [countdown, setCountdown] = useState('--:--:--');
+  const [nextPrayerKey, setNextPrayerKey] = useState<PrayerKey | null>(null);
+
+  useEffect(() => {
+    const tick = () => {
+      const now = new Date();
+      let found = false;
+      for (const p of PRAYER_ORDER) {
+        const [h, m] = (prayerTimes[p] || '00:00').split(':').map(Number);
+        const pd = new Date(now); pd.setHours(h, m, 0, 0);
+        if (pd > now) {
+          setNextPrayerKey(p);
+          const diff = pd.getTime() - now.getTime();
+          const hrs = Math.floor(diff / 3600000);
+          const mins = Math.floor((diff % 3600000) / 60000);
+          const secs = Math.floor((diff % 60000) / 1000);
+          setCountdown(`${String(hrs).padStart(2, '0')}:${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`);
+          found = true;
+          break;
+        }
+      }
+      if (!found) {
+        setNextPrayerKey('Fajr');
+        setCountdown('--:--:--');
+      }
+    };
+    tick();
+    const interval = setInterval(tick, 1000);
+    return () => clearInterval(interval);
+  }, [prayerTimes]);
 
   return (
     <div className="relative min-h-screen -mx-4 md:-mx-6 -mt-4 md:-mt-6 pb-16">
-      {/* ═══════ Mesh Aurora Background ═══════ */}
+      {/* ═══════ Deep Void Background ═══════ */}
       <div className="fixed inset-0 -z-10 overflow-hidden">
-        {/* Deep void base */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#050a14] via-[#060e1a] to-[#040a12]" />
-
-        {/* Aurora mesh — multi-layer radial gradients */}
-        <div className="absolute inset-0 opacity-60">
-          {/* Emerald sweep top-right */}
-          <div className="absolute -top-20 -right-16 w-[700px] h-[700px] rounded-full bg-[radial-gradient(circle_at_center,_rgb(5_150_105_/_0.12),_transparent_70%)] animate-orb-1" />
-          {/* Gold sweep mid-left */}
-          <div className="absolute top-1/4 -left-20 w-[500px] h-[500px] rounded-full bg-[radial-gradient(circle_at_center,_rgb(217_119_6_/_0.08),_transparent_70%)] animate-orb-2" />
-          {/* Sapphire sweep bottom-right */}
-          <div className="absolute bottom-10 right-1/4 w-[450px] h-[450px] rounded-full bg-[radial-gradient(circle_at_center,_rgb(37_99_235_/_0.06),_transparent_70%)] animate-orb-3" />
-          {/* Amethyst accent top-center */}
-          <div className="absolute top-1/2 left-1/3 w-[350px] h-[350px] rounded-full bg-[radial-gradient(circle_at_center,_rgb(124_58_237_/_0.05),_transparent_70%)] animate-orb-4" />
+        {/* Aurora mesh */}
+        <div className="absolute inset-0 opacity-50">
+          <div className="absolute -top-20 -right-16 w-[700px] h-[700px] rounded-full bg-[radial-gradient(circle_at_center,_rgb(5_150_105_/_0.10),_transparent_70%)] animate-orb-1" />
+          <div className="absolute top-1/4 -left-20 w-[500px] h-[500px] rounded-full bg-[radial-gradient(circle_at_center,_rgb(217_119_6_/_0.07),_transparent_70%)] animate-orb-2" />
+          <div className="absolute bottom-10 right-1/4 w-[450px] h-[450px] rounded-full bg-[radial-gradient(circle_at_center,_rgb(37_99_235_/_0.05),_transparent_70%)] animate-orb-3" />
+          <div className="absolute top-1/2 left-1/3 w-[350px] h-[350px] rounded-full bg-[radial-gradient(circle_at_center,_rgb(124_58_237_/_0.04),_transparent_70%)] animate-orb-4" />
         </div>
-
-        {/* Subtle geometric grid pattern */}
-        <div className="absolute inset-0 opacity-[0.015]" style={{
+        {/* Geometric grid */}
+        <div className="absolute inset-0 opacity-[0.012]" style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='white' stroke-width='0.5'%3E%3Cpath d='M40 0L80 40L40 80L0 40Z'/%3E%3Ccircle cx='40' cy='40' r='8'/%3E%3C/g%3E%3C/svg%3E")`,
         }} />
       </div>
 
-      {/* ═══════ Grain Texture Overlay ═══════ */}
-      <div className="grain-overlay" />
+      {/* Content */}
+      <div className="relative z-10 px-4 md:px-6 pt-8 md:pt-12 max-w-[1200px] mx-auto space-y-5 md:space-y-6">
 
-      {/* ═══════ Content ═══════ */}
-      <div className="relative z-10 px-4 md:px-6 pt-8 md:pt-12 max-w-[1200px] mx-auto space-y-6 md:space-y-8">
-
-        {/* ── Hero ── */}
+        {/* ═══════ HERO ═══════ */}
         <motion.section
-          initial={{ opacity: 0, y: 24 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-          className="relative overflow-hidden rounded-3xl p-6 md:p-10 border-glow"
+          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+          className="relative overflow-hidden rounded-3xl p-6 md:p-8"
         >
-          {/* Hero multi-stop gradient */}
-          <div className="absolute inset-0 bg-gradient-to-br from-emerald-900/50 via-[#082018]/60 to-[#050a14]/70" />
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_120%_80%_at_30%_20%,_rgb(5_150_105_/_0.15),_transparent_60%)]" />
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_80%_80%,_rgb(217_119_6_/_0.06),_transparent_50%)]" />
-
-          {/* Decorative islamic pattern overlay */}
-          <div className="absolute inset-0 opacity-[0.04]" style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='white' stroke-width='0.4'%3E%3Cpath d='M40 0L80 40L40 80L0 40Z'/%3E%3Ccircle cx='40' cy='40' r='8'/%3E%3C/g%3E%3C/svg%3E")`,
+          {/* Hero solid bg — matching Android #137343 green + pattern */}
+          <div className="absolute inset-0 bg-[#0D5C3B]" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_100%_80%_at_30%_30%,_rgb(16_185_129_/_0.20),_transparent_50%)]" />
+          {/* Islamic pattern overlay — 7% opacity matching Android */}
+          <div className="absolute inset-0 opacity-[0.07]" style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='white' stroke-width='0.4'%3E%3Cpath d='M40 0L80 40L40 80L0 40Z'/%3E%3Ccircle cx='40' cy='40' r='8'/%3E%3Cpath d='M40 10L70 40L40 70L10 40Z'/%3E%3Ccircle cx='40' cy='40' r='3'/%3E%3C/g%3E%3C/svg%3E")`,
           }} />
 
           <div className="relative z-10">
             {/* Bismillah */}
-            <p className="text-2xl md:text-4xl font-arabic mb-3 md:mb-4 text-right leading-relaxed bg-gradient-to-r from-emerald-200 via-teal-100 to-amber-200 bg-clip-text text-transparent animate-text-shimmer drop-shadow-[0_0_12px_rgb(5_150_105_/_0.3)]" dir="rtl">
+            <p className="text-xl md:text-3xl font-arabic mb-2 md:mb-3 text-right leading-relaxed text-white/90" dir="rtl">
               بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ
             </p>
-
-            {/* Salam */}
-            <h1 className="font-display font-extrabold text-2xl md:text-4xl tracking-tight text-white/90">
-              Assalamu&apos;alaikum
-              <span className="text-emerald-400">!</span>
+            {/* Date */}
+            <p className="text-[11px] md:text-xs text-white/45 mb-3">{today}</p>
+            {/* Greeting */}
+            <h1 className="font-display font-extrabold text-xl md:text-3xl tracking-tight text-white/95">
+              Assalamu&apos;alaikum<span className="text-emerald-300">!</span>
             </h1>
-            <p className="mt-2 md:mt-3 text-sm md:text-base text-white/45 max-w-lg leading-relaxed">
-              Selamat datang di <strong className="text-white/65">Jadda</strong>{' '}
-              <span className="font-arabic text-emerald-300/80">(جدّ)</span> — aplikasi Islami ringkas untuk ibadah sehari-hari Anda.
+            <p className="mt-1.5 md:mt-2 text-[13px] md:text-sm text-white/45 max-w-lg leading-relaxed">
+              Selamat datang di <strong className="text-white/60">Jadda</strong>{' '}
+              <span className="font-arabic text-emerald-300/70">(جدّ)</span> — aplikasi Islami ringkas untuk ibadah sehari-hari.
             </p>
           </div>
 
-          {/* Bottom gradient fade */}
-          <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#050a14] to-transparent pointer-events-none" />
+          {/* Bottom fade for seamless blend */}
+          <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[#050a14] to-transparent pointer-events-none" />
         </motion.section>
 
-        {/* ── Daily Verse ── */}
-        {verse?.text ? (
-          <motion.section
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.15 }}
-            className="glass-card rounded-2xl p-5 md:p-6 transition-all duration-500 card-sapphire"
-          >
-            <div className="flex items-start gap-3 md:gap-4">
-              <div className="flex-shrink-0 w-9 h-9 md:w-10 md:h-10 rounded-xl bg-gradient-to-br from-blue-500/15 to-indigo-500/5 border border-blue-400/20 flex items-center justify-center shadow-blue-500/20">
-                <Star size={16} className="text-blue-300 animate-pulse-glow" style={{ '--glow-color': 'rgb(37 99 235 / 0.3)' } as React.CSSProperties} />
-              </div>
-              <div className="flex-1 min-w-0">
-                <p className="text-[11px] md:text-xs font-semibold text-white/25 uppercase tracking-[0.15em] mb-1.5">
-                  Ayat Hari Ini
-                </p>
-                <p className="text-sm md:text-base text-white/80 italic leading-relaxed">
-                  {verse?.text}
-                </p>
-                <p className="text-xs text-white/25 mt-2 font-medium">
-                  {verse?.source}
-                </p>
-              </div>
-            </div>
-          </motion.section>
-        ) : null}
-
-        {/* ── Main Feature Bento Grid ── */}
-        <motion.div
-          variants={container}
-          initial="hidden"
-          animate="show"
-          className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4"
-        >
-          {/* ── Sholat — Featured (spans 2 cols on desktop) ── */}
-          <motion.div variants={item} className="md:col-span-2">
-            <FeatureCard href={mainFeatures[0].href} icon={mainFeatures[0].icon} title={mainFeatures[0].title} desc={mainFeatures[0].desc} accent={mainFeatures[0].accent} featured />
-          </motion.div>
-
-          {/* ── Al-Quran ── */}
-          <motion.div variants={item}>
-            <FeatureCard href={mainFeatures[1].href} icon={mainFeatures[1].icon} title={mainFeatures[1].title} desc={mainFeatures[1].desc} accent={mainFeatures[1].accent} isLucide />
-          </motion.div>
-
-          {/* ── Juz · Kiblat ── */}
-          <motion.div variants={item}>
-            <FeatureCard href={mainFeatures[2].href} icon={mainFeatures[2].icon} title={mainFeatures[2].title} desc={mainFeatures[2].desc} accent={mainFeatures[2].accent} isLucide />
-          </motion.div>
-          <motion.div variants={item}>
-            <FeatureCard href={mainFeatures[3].href} icon={mainFeatures[3].icon} title={mainFeatures[3].title} desc={mainFeatures[3].desc} accent={mainFeatures[3].accent} />
-          </motion.div>
-
-          {/* ── Doa · Hadits ── */}
-          <motion.div variants={item}>
-            <FeatureCard href={mainFeatures[4].href} icon={mainFeatures[4].icon} title={mainFeatures[4].title} desc={mainFeatures[4].desc} accent={mainFeatures[4].accent} />
-          </motion.div>
-          <motion.div variants={item}>
-            <FeatureCard href={mainFeatures[5].href} icon={mainFeatures[5].icon} title={mainFeatures[5].title} desc={mainFeatures[5].desc} accent={mainFeatures[5].accent} />
-          </motion.div>
-        </motion.div>
-
-        {/* ── Dzikir Banner ── */}
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.35 }}
-        >
-          <Link
-            href="/dzikir"
-            className="block w-full p-4 rounded-2xl bg-gradient-to-r from-amber-500/10 via-indigo-500/10 to-amber-500/5 border border-amber-500/15 hover:border-amber-500/25 transition-colors group"
-          >
-            <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-500 to-indigo-500 flex items-center justify-center flex-shrink-0 shadow-md group-hover:scale-105 transition-transform">
-                <Moon size={22} className="text-white" />
-              </div>
-              <div className="flex-1 min-w-0">
-                <h2 className="font-display font-bold text-sm text-white group-hover:text-white/90 transition-colors">
-                  Dzikir Pagi & Petang
-                </h2>
-                <p className="text-xs text-white/35 mt-0.5">
-                  Bacaan dzikir dari Al-Quran & Sunnah yang shahih
-                </p>
-              </div>
-              <ChevronRight size={18} className="text-white/20 group-hover:text-white/40 transition-colors" />
-            </div>
-          </Link>
-        </motion.div>
-
-        {/* ── Fitur Lainnya ── */}
+        {/* ═══════ DAILY VERSE ═══════ */}
         <motion.section
-          initial={{ opacity: 0, y: 16 }}
+          initial={{ opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          className="px-4 md:px-0"
         >
-          <h2 className="font-display font-bold text-sm md:text-base text-white/50 uppercase tracking-[0.12em] mb-3 flex items-center gap-2">
-            <span className="w-6 h-px bg-gradient-to-r from-gold-400/40 to-transparent inline-block" />
-            Fitur Lainnya
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4">
-            {lainnyaFeatures.map((f) => (
-              <FeatureCard
-                key={f.href}
-                href={f.href}
-                icon={f.icon}
+          {verse.text && (
+            <div className="relative overflow-hidden rounded-2xl p-4 md:p-5 border border-white/[0.06] bg-white/[0.03]">
+              <div className="absolute top-0 left-4 text-[10px] font-bold text-emerald-400/60 uppercase tracking-[0.15em]">
+                Ayat Hari Ini
+              </div>
+              <p className="mt-4 text-[13px] md:text-sm leading-relaxed text-white/55 italic">
+                &ldquo;{verse.text}&rdquo;
+              </p>
+              {verse.source && (
+                <p className="mt-1.5 text-[11px] text-white/25">— {verse.source}</p>
+              )}
+            </div>
+          )}
+        </motion.section>
+
+        {/* ═══════ PRAYER CARD — 2x5 Grid ═══════ */}
+        <motion.section
+          initial={{ opacity: 0, y: 14 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.15 }}
+          className="px-4 md:px-0"
+        >
+          <div className="rounded-2xl p-4 border border-white/[0.06] bg-white/[0.03]">
+            {/* Countdown */}
+            {nextPrayerKey && (
+              <div className="flex items-center justify-between mb-3 pb-3 border-b border-white/[0.06]">
+                <div>
+                  <p className="text-[11px] text-white/35 uppercase tracking-wider">Menuju</p>
+                  <p className="text-sm font-bold text-white/85">
+                    {PRAYER_NAMES_AR[nextPrayerKey]} ({PRAYER_NAMES_ID[nextPrayerKey]}) — {prayerTimes[nextPrayerKey]}
+                  </p>
+                </div>
+                <div
+                  className="px-3 py-1.5 rounded-full text-sm font-mono font-bold tracking-wider"
+                  style={{
+                    backgroundColor: `${PRAYER_COLORS[nextPrayerKey]}18`,
+                    color: PRAYER_COLORS[nextPrayerKey],
+                    border: `1px solid ${PRAYER_COLORS[nextPrayerKey]}30`,
+                  }}
+                >
+                  {countdown}
+                </div>
+              </div>
+            )}
+            {/* Prayer pills */}
+            <div className="space-y-1.5">
+              {PRAYER_ORDER.map((p) => (
+                <PrayerPill
+                  key={p}
+                  nameAr={PRAYER_NAMES_AR[p]}
+                  nameId={PRAYER_NAMES_ID[p]}
+                  time={prayerTimes[p]}
+                  icon={PRAYER_ICONS[p]}
+                  isActive={nextPrayerKey === p}
+                  color={PRAYER_COLORS[p]}
+                  isDark={isDark}
+                />
+              ))}
+            </div>
+          </div>
+        </motion.section>
+
+        {/* ═══════ FITUR UTAMA — 3 horizontal ═══════ */}
+        <motion.section
+          initial={{ opacity: 0, y: 14 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="px-4 md:px-0 space-y-3"
+        >
+          <SectionHeader title="Fitur Utama" />
+          <div className="grid grid-cols-3 gap-2.5">
+            {MAIN_FEATURES.map((f) => {
+              const a = ACCENT[f.accent];
+              return (
+                <Link
+                  key={f.title}
+                  href={f.href}
+                  className="group flex flex-col items-center gap-2 p-3 rounded-2xl bg-white/[0.04] border border-white/[0.06] hover:bg-white/[0.06] transition-colors"
+                >
+                  <div
+                    className="w-10 h-10 rounded-xl flex items-center justify-center text-lg"
+                    style={{ backgroundColor: `${a.hex}20` }}
+                  >
+                    {f.icon}
+                  </div>
+                  <span className="text-[11px] font-bold text-center leading-tight text-white/80 line-clamp-2">
+                    {f.title}
+                  </span>
+                </Link>
+              );
+            })}
+          </div>
+        </motion.section>
+
+        {/* ═══════ FITUR PILIHAN — 2-col GlassFeatureCard ═══════ */}
+        <motion.section
+          initial={{ opacity: 0, y: 14 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.25 }}
+          className="px-4 md:px-0 space-y-3"
+        >
+          <SectionHeader title="Fitur Pilihan" />
+          <div className="grid grid-cols-2 gap-2.5">
+            {PILIHAN_FEATURES.map((f) => (
+              <GlassFeatureCard
+                key={f.title}
                 title={f.title}
-                desc={f.desc}
+                icon={f.icon}
                 accent={f.accent}
-                isLucide={f.isLucide}
+                href={f.href}
+                isDark={isDark}
               />
             ))}
           </div>
         </motion.section>
 
-        {/* ── Footer note ── */}
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.9 }}
-          className="text-center text-white/12 text-xs md:text-sm pt-2 pb-8"
+        {/* ═══════ FITUR LAINNYA — 2-col GlassFeatureCard ═══════ */}
+        <motion.section
+          initial={{ opacity: 0, y: 14 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="px-4 md:px-0 space-y-3 mb-8"
         >
-          Mohon doanya agar kami bisa melanjutkan development aplikasi ini 🙏🏽
-        </motion.p>
+          <SectionHeader title="Fitur Lainnya" />
+          <div className="grid grid-cols-2 gap-2.5">
+            {LAINNYA_FEATURES.map((f) => (
+              <GlassFeatureCard
+                key={f.title}
+                title={f.title}
+                icon={f.icon}
+                accent={f.accent}
+                href={f.href}
+                isDark={isDark}
+              />
+            ))}
+          </div>
+        </motion.section>
 
       </div>
     </div>
-  );
-}
-
-/* ── Feature Card Component ── */
-function FeatureCard({
-  href,
-  icon: IconComponent,
-  title,
-  desc,
-  accent,
-  featured = false,
-  isLucide = false,
-}: {
-  href: string;
-  icon: any;
-  title: string;
-  desc: string;
-  accent: string;
-  featured?: boolean;
-  isLucide?: boolean;
-}) {
-  const styles = accentMap[accent] ?? accentMap.emerald;
-  const LucideIcon = isLucide ? IconComponent : null;
-  const glowVar = glowColorVars[accent] ?? glowColorVars.emerald;
-
-  return (
-    <Link href={href} className="block h-full">
-      <div
-        className={`group relative h-full rounded-2xl overflow-hidden transition-all duration-500 glass-card ${styles.card}`}
-      >
-        {/* Glow line at top */}
-        <div className={`absolute top-0 left-0 right-0 h-px opacity-0 group-hover:opacity-100 transition-opacity duration-500 ${styles.glowLine}`} />
-
-        <div className={`relative z-10 p-4 md:p-6 flex flex-col h-full ${featured ? 'md:flex-row md:items-center md:gap-6' : ''}`}>
-          {/* Icon container */}
-          <div className={`flex-shrink-0 w-11 h-11 md:w-12 md:h-12 rounded-xl overflow-hidden ${styles.iconBg} border border-white/[0.06] group-hover:scale-105 group-hover:${styles.iconGlow} transition-all duration-500 mb-3 ${featured ? 'md:mb-0' : ''}`}
-            style={{ '--glow-color': glowVar } as React.CSSProperties}
-          >
-            {LucideIcon ? (
-              <div className={`w-full h-full flex items-center justify-center`}>
-                <LucideIcon size={22} className={styles.text} />
-              </div>
-            ) : (
-              <IconComponent className="w-full h-full" title={title} />
-            )}
-          </div>
-
-          {/* Text */}
-          <div className="flex-1 min-w-0">
-            <div className="flex items-center justify-between gap-2">
-              <h2 className={`font-display font-bold text-sm md:text-base text-white/85 group-hover:text-white transition-colors duration-300 ${featured ? 'md:text-lg' : ''}`}>
-                {title}
-              </h2>
-              <ChevronRight size={16} className={`flex-shrink-0 ${styles.text} opacity-30 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300`} />
-            </div>
-            <p className="mt-1 text-xs md:text-sm text-white/35 group-hover:text-white/45 transition-colors duration-300 leading-relaxed">
-              {desc}
-            </p>
-
-            {/* Featured badge */}
-            {featured && (
-              <div className="mt-3 flex items-center gap-2">
-                <span className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-semibold ${styles.iconBg} ${styles.text} border border-white/[0.08]`}>
-                  <span className={`w-1.5 h-1.5 rounded-full ${styles.text} animate-pulse`} />
-                  Fitur Utama
-                </span>
-              </div>
-            )}
-          </div>
-        </div>
-
-        {/* Hover gradient overlay */}
-        <div className={`absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-br ${styles.iconBg} pointer-events-none`} />
-      </div>
-    </Link>
   );
 }

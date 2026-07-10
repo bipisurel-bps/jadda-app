@@ -14,23 +14,31 @@ export function PageHeader({
   backHref?: string
 }) {
   return (
-    <div className={cn('flex items-start justify-between gap-4 pb-6 border-b', className)}>
-      <div className="flex items-center gap-2">
+    <div className={cn('relative', className)}>
+      {/* Header bar — matching Android screen header */}
+      <div className="flex items-center gap-3 py-3 mb-2">
         {backHref && (
-          <Link href={backHref} className="flex-shrink-0 w-8 h-8 rounded-lg bg-muted/50 flex items-center justify-center hover:bg-muted transition-colors -ml-1">
-            <ChevronLeft size={18} className="text-muted-foreground" />
+          <Link
+            href={backHref}
+            className="flex-shrink-0 w-8 h-8 rounded-lg bg-white/[0.06] flex items-center justify-center hover:bg-white/[0.10] transition-colors"
+          >
+            <ChevronLeft size={18} className="text-white/60" />
           </Link>
         )}
-        <div>
-          <h1 className="font-display text-2xl font-semibold tracking-tight">{title}</h1>
+        <div className="flex-1 min-w-0">
+          <h1 className="text-[17px] font-extrabold text-white/90 tracking-tight">
+            {title}
+          </h1>
           {description && (
-            <p className="text-sm text-muted-foreground mt-1">{description}</p>
+            <p className="text-[12px] text-white/35 mt-0.5">{description}</p>
           )}
         </div>
+        {actions && (
+          <div className="flex items-center gap-2 shrink-0">{actions}</div>
+        )}
       </div>
-      {actions && (
-        <div className="flex items-center gap-2 shrink-0">{actions}</div>
-      )}
+      {/* Thin bottom border — emerald tint */}
+      <div className="h-px bg-gradient-to-r from-emerald-500/20 via-white/[0.04] to-emerald-500/20" />
     </div>
   )
 }
