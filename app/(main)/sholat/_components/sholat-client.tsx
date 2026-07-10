@@ -7,6 +7,7 @@ import {
 } from 'lucide-react';
 import { toast } from 'sonner';
 import Link from 'next/link';
+import { PageHeader } from '@/components/layouts/page-header';
 
 interface PrayerTimes {
   Fajr: string;
@@ -23,13 +24,14 @@ interface LocationInfo {
   city?: string;
 }
 
-const PRAYER_NAMES: Record<string, { label: string; icon: React.ReactNode; color: string }> = {
-  Fajr: { label: 'Subuh', icon: <Sunrise size={20} />, color: 'text-indigo-500' },
-  Sunrise: { label: 'Syuruq', icon: <Sun size={20} />, color: 'text-amber-500' },
-  Dhuhr: { label: 'Zhuhur', icon: <CloudSun size={20} />, color: 'text-yellow-600' },
-  Asr: { label: 'Ashar', icon: <Sunset size={20} />, color: 'text-orange-500' },
-  Maghrib: { label: 'Maghrib', icon: <Sunset size={20} />, color: 'text-red-500' },
-  Isha: { label: 'Isya', icon: <Moon size={20} />, color: 'text-blue-600' },
+// Per-sholat colors matching Android
+const PRAYER_COLORS: Record<string, { label: string; icon: React.ReactNode; color: string; bg: string; text: string }> = {
+  Fajr: { label: 'Subuh', icon: <Sunrise size={20} />, color: '#7C3AED', bg: 'bg-violet-500/10', text: 'text-violet-400' },
+  Sunrise: { label: 'Syuruq', icon: <Sun size={20} />, color: '#D97706', bg: 'bg-amber-500/10', text: 'text-amber-400' },
+  Dhuhr: { label: 'Zhuhur', icon: <CloudSun size={20} />, color: '#059669', bg: 'bg-emerald-500/10', text: 'text-emerald-400' },
+  Asr: { label: 'Ashar', icon: <Sunset size={20} />, color: '#EA580C', bg: 'bg-orange-500/10', text: 'text-orange-400' },
+  Maghrib: { label: 'Maghrib', icon: <Sunset size={20} />, color: '#DC2626', bg: 'bg-red-500/10', text: 'text-red-400' },
+  Isha: { label: 'Isya', icon: <Moon size={20} />, color: '#2563EB', bg: 'bg-blue-500/10', text: 'text-blue-400' },
 };
 
 function timeToMinutes(time: string): number {
@@ -179,7 +181,7 @@ export default function SholatClient() {
     return () => { if (intervalRef.current) clearInterval(intervalRef.current); };
   }, [prayerTimes]);
 
-  // Adzan sound + notification — check every 30 seconds
+  // Adzan sound + notification
   useEffect(() => {
     if (!adzanEnabled || !prayerTimes || adzanPermission !== 'granted') return;
     const prayerOrder = ['Fajr', 'Dhuhr', 'Asr', 'Maghrib', 'Isha'];
@@ -295,8 +297,8 @@ export default function SholatClient() {
 
   if (loading) {
     return (
-      <div className="flex flex-col items-center justify-center py-20 gap-4">
-        <Loader2 size={40} className="animate-spin text-primary" />
+      <div className="min-h-screen bg-[#050a14] flex flex-col items-center justify-center py-20 gap-4">
+        <Loader2 size={40} className="animate-spin text-emerald-400" />
         <p className="text-white/35 text-sm">Mendeteksi lokasi & mengambil jadwal sholat...</p>
       </div>
     );
@@ -304,10 +306,10 @@ export default function SholatClient() {
 
   if (error) {
     return (
-      <div className="flex flex-col items-center justify-center py-20 gap-4 text-center px-4">
-        <AlertCircle size={40} className="text-red-500" />
-        <p className="text-white/85 font-medium">{error}</p>
-        <button onClick={loadData} className="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-primary-foreground text-sm font-medium">
+      <div className="min-h-screen bg-[#050a14] flex flex-col items-center justify-center py-20 gap-4 text-center px-4">
+        <AlertCircle size={40} className="text-red-400" />
+        <p className="text-white/70 font-medium">{error}</p>
+        <button onClick={loadData} className="flex items-center gap-2 px-4 py-2 rounded-xl bg-emerald-500/15 text-emerald-400 text-sm font-medium hover:bg-emerald-500/20 transition-colors">
           <RefreshCw size={16} /> Coba Lagi
         </button>
       </div>
@@ -315,163 +317,173 @@ export default function SholatClient() {
   }
 
   const prayerOrder = ['Fajr', 'Sunrise', 'Dhuhr', 'Asr', 'Maghrib', 'Isha'];
+  const nextPrayerColor = nextPrayer ? PRAYER_COLORS[nextPrayer] : null;
 
   return (
-    <div className="space-y-5">
+    <div className="min-h-screen bg-[#050a14]">
+      <PageHeader title="Waktu Sholat" description={location?.city || 'Lokasi Anda'} />
+
       {/* Hidden audio element for adzan */}
       <audio ref={audioRef} src="/audio/adzan.mp3" preload="auto" />
 
-
-
-      <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="space-y-1">
-        <h1 className="text-2xl md:text-3xl font-display font-bold text-foreground">Waktu Sholat</h1>
-        <div className="flex items-center gap-2 text-white/35 text-sm">
-          <MapPin size={14} />
-          <span>{location?.city || `${location?.latitude?.toFixed(2)}, ${location?.longitude?.toFixed(2)}`}</span>
-        </div>
-      </motion.div>
-
-      <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}
-        className="rounded-2xl bg-gradient-to-br from-primary/90 to-primary p-6 text-primary-foreground"
-      >
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-          <div>
-            <p className="text-sm opacity-80">{currentDate}</p>
-            {hijriDate && <p className="text-xs opacity-60 mt-0.5">{hijriDate}</p>}
-          </div>
-          {nextPrayer && (
-            <div className="text-right">
-              <p className="text-xs opacity-80 uppercase tracking-wide">Sholat berikutnya</p>
-              <p className="text-2xl font-display font-bold mt-0.5">{PRAYER_NAMES[nextPrayer]?.label}</p>
-              <div className="flex items-center gap-2 justify-end mt-1">
-                <Clock size={14} className="opacity-80" />
-                <span className="text-sm font-mono">
-                  {(prayerTimes as any)?.[nextPrayer]} &mdash; <span className="font-bold">{countdown}</span>
-                </span>
-              </div>
+      <div className="mt-4 space-y-4">
+        {/* Date card */}
+        <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}
+          className="rounded-2xl bg-emerald-500/[0.04] border border-emerald-500/10 p-5"
+        >
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div>
+              <p className="text-sm text-white/60">{currentDate}</p>
+              {hijriDate && <p className="text-xs text-white/35 mt-0.5">{hijriDate}</p>}
             </div>
-          )}
-        </div>
-      </motion.div>
-
-      <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}
-        className="rounded-xl bg-white/[0.03] border border-white/50 shadow-sm overflow-hidden"
-      >
-        {prayerOrder.map((key, i) => {
-          const info = PRAYER_NAMES[key];
-          const time = (prayerTimes as any)?.[key];
-          const isNext = nextPrayer === key;
-          const isSunrise = key === 'Sunrise';
-          return (
-            <div key={key}
-              className={`flex items-center justify-between px-5 py-4 ${i < prayerOrder.length - 1 ? 'border-b border-white/30' : ''} ${isNext ? 'bg-emerald-500/5' : ''} ${isSunrise ? 'opacity-60' : ''}`}
-            >
-              <div className="flex items-center gap-4">
-                <div className={`w-9 h-9 rounded-lg flex items-center justify-center ${isNext ? 'bg-emerald-500/15' : 'bg-white/[0.04]'}`}>
-                  <span className={info?.color}>{info?.icon}</span>
-                </div>
-                <p className={`font-medium ${isNext ? 'text-emerald-400 font-semibold' : 'text-white/85'} ${isSunrise ? 'text-white/35' : ''}`}>
-                  {info?.label}{isSunrise && <span className="text-xs ml-1">(terbit)</span>}
+            {nextPrayer && (
+              <div className="text-right">
+                <p className="text-[11px] font-extrabold text-white/30 uppercase tracking-tight">Sholat berikutnya</p>
+                <p className="text-2xl font-display font-bold text-white/90 mt-0.5">
+                  {PRAYER_COLORS[nextPrayer]?.label}
                 </p>
+                <div className="flex items-center gap-2 justify-end mt-1.5">
+                  <Clock size={14} className="text-white/40" />
+                  <span className="text-sm text-white/70 font-mono">
+                    {(prayerTimes as any)?.[nextPrayer]} — <span className="font-bold text-emerald-400">{countdown}</span>
+                  </span>
+                </div>
               </div>
+            )}
+          </div>
+        </motion.div>
+
+        {/* Prayer pills */}
+        <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}
+          className="rounded-2xl bg-white/[0.03] border border-white/[0.06] overflow-hidden"
+        >
+          {prayerOrder.map((key, i) => {
+            const info = PRAYER_COLORS[key];
+            const time = (prayerTimes as any)?.[key];
+            const isNext = nextPrayer === key;
+            const isSunrise = key === 'Sunrise';
+            return (
+              <div key={key}
+                className={`flex items-center justify-between px-5 py-4 ${
+                  i < prayerOrder.length - 1 ? 'border-b border-white/[0.04]' : ''
+                } ${isNext ? 'bg-emerald-500/[0.03]' : ''} ${isSunrise ? 'opacity-50' : ''}`}
+              >
+                <div className="flex items-center gap-4">
+                  <div className={`w-9 h-9 rounded-lg flex items-center justify-center ${isNext ? info.bg : 'bg-white/[0.03]'}`}>
+                    <span className={info.text}>{info.icon}</span>
+                  </div>
+                  <p className={`font-medium text-sm ${
+                    isNext ? 'text-white/90 font-semibold' : 'text-white/60'
+                  }`}>
+                    {info.label}{isSunrise && <span className="text-xs text-white/30 ml-1">(terbit)</span>}
+                  </p>
+                </div>
+                <div className="flex items-center gap-3">
+                  <span className={`font-mono text-base ${
+                    isNext ? 'text-emerald-400 font-bold' : 'text-white/70'
+                  }`}>{time}</span>
+                  {isNext && <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />}
+                </div>
+              </div>
+            );
+          })}
+        </motion.div>
+
+        {/* Toggles card */}
+        <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}
+          className="rounded-2xl bg-white/[0.03] border border-white/[0.06] p-5 space-y-4"
+        >
+          {/* Adzan Toggle */}
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-xl bg-emerald-500/10 flex items-center justify-center">
+                <Volume2 size={20} className="text-emerald-400" />
+              </div>
+              <div>
+                <h2 className="font-display font-bold text-sm text-white/80">Adzan & Pengingat Sholat</h2>
+                <p className="text-xs text-white/35">Suara adzan + notifikasi tiap waktu sholat</p>
+              </div>
+            </div>
+            <button onClick={toggleAdzan}
+              className={`flex items-center gap-2 px-3.5 py-2 rounded-lg text-sm font-medium transition-all ${
+                adzanEnabled ? 'bg-emerald-500/15 text-emerald-400 border border-emerald-500/20' : 'bg-white/[0.04] text-white/35 hover:bg-white/[0.06]'
+              }`}
+            >
+              {adzanEnabled ? <Bell size={16} /> : <BellOff size={16} />}
+              {adzanEnabled ? 'Aktif' : 'Aktifkan'}
+            </button>
+          </div>
+
+          <div className="h-px bg-white/[0.06]" />
+
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center">
+                <Volume2 size={20} className="text-amber-400" />
+              </div>
+              <div>
+                <h2 className="font-display font-bold text-sm text-white/80">Pengingat Dzikir</h2>
+                <p className="text-xs text-white/35">Notifikasi dzikir pagi & petang</p>
+              </div>
+            </div>
+            <button onClick={toggleNotif}
+              className={`flex items-center gap-2 px-3.5 py-2 rounded-lg text-sm font-medium transition-all ${
+                notifEnabled ? 'bg-emerald-500/15 text-emerald-400 border border-emerald-500/20' : 'bg-white/[0.04] text-white/35 hover:bg-white/[0.06]'
+              }`}
+            >
+              {notifEnabled ? <Bell size={16} /> : <BellOff size={16} />}
+              {notifEnabled ? 'Aktif' : 'Aktifkan'}
+            </button>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div className="rounded-xl bg-violet-500/[0.04] border border-violet-500/10 p-3">
+              <div className="flex items-center gap-2 mb-1">
+                <Sunrise size={14} className="text-violet-400" />
+                <span className="text-sm font-semibold text-white/80">Dzikir Pagi</span>
+              </div>
+              <p className="text-xs text-white/35">Setelah Subuh ({prayerTimes?.Fajr}) sampai Syuruq ({prayerTimes?.Sunrise})</p>
+            </div>
+            <div className="rounded-xl bg-orange-500/[0.04] border border-orange-500/10 p-3">
+              <div className="flex items-center gap-2 mb-1">
+                <Sunset size={14} className="text-orange-400" />
+                <span className="text-sm font-semibold text-white/80">Dzikir Petang</span>
+              </div>
+              <p className="text-xs text-white/35">Setelah Ashar ({prayerTimes?.Asr}) sampai Maghrib ({prayerTimes?.Maghrib})</p>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <Link href="/doa" className="flex items-center justify-between px-4 py-3 rounded-xl bg-emerald-500/[0.04] hover:bg-emerald-500/[0.06] transition-colors group">
               <div className="flex items-center gap-3">
-                <span className={`font-mono text-base ${isNext ? 'text-emerald-400 font-bold' : 'text-white/85'}`}>{time}</span>
-                {isNext && <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />}
+                <BookOpen size={18} className="text-emerald-400" />
+                <div>
+                  <p className="text-sm font-medium text-white/70">Kumpulan Doa & Dzikir</p>
+                  <p className="text-xs text-white/35">Dzikir pagi & petang dari Hisnul Muslim</p>
+                </div>
               </div>
-            </div>
-          );
-        })}
-      </motion.div>
-
-      <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}
-        className="rounded-xl bg-white/[0.03] border border-white/50 shadow-sm p-5 space-y-4"
-      >
-        {/* Adzan Toggle */}
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-emerald-500/10 flex items-center justify-center">
-              <Volume2 size={20} className="text-emerald-600" />
-            </div>
-            <div>
-              <h2 className="font-display font-bold text-foreground">Adzan &amp; Pengingat Sholat</h2>
-              <p className="text-xs text-white/35">Suara adzan + notifikasi tiap waktu sholat</p>
-            </div>
+              <ChevronRight size={18} className="text-white/25 group-hover:text-emerald-400 transition-colors" />
+            </Link>
+            <Link href="/qibla" className="flex items-center justify-between px-4 py-3 rounded-xl bg-emerald-500/[0.04] hover:bg-emerald-500/[0.06] transition-colors group">
+              <div className="flex items-center gap-3">
+                <Compass size={18} className="text-emerald-400" />
+                <div>
+                  <p className="text-sm font-medium text-white/70">Arah Kiblat</p>
+                  <p className="text-xs text-white/35">Kompas digital berbasis GPS & sensor</p>
+                </div>
+              </div>
+              <ChevronRight size={18} className="text-white/25 group-hover:text-emerald-400 transition-colors" />
+            </Link>
           </div>
-          <button onClick={toggleAdzan}
-            className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all ${adzanEnabled ? 'bg-emerald-500/10 text-emerald-600 border border-emerald-500/20' : 'bg-white/[0.04] text-white/35 hover:bg-white/80'}`}
-          >
-            {adzanEnabled ? <Bell size={16} /> : <BellOff size={16} />}
-            {adzanEnabled ? 'Aktif' : 'Aktifkan'}
+        </motion.div>
+
+        <div className="flex justify-center pb-4">
+          <button onClick={loadData} className="flex items-center gap-2 text-sm text-white/35 hover:text-emerald-400 transition-colors">
+            <RefreshCw size={14} /> Perbarui jadwal
           </button>
         </div>
-
-        <div className="border-t border-white/30" />
-
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center">
-              <Volume2 size={20} className="text-amber-600" />
-            </div>
-            <div>
-              <h2 className="font-display font-bold text-foreground">Pengingat Dzikir</h2>
-              <p className="text-xs text-white/35">Notifikasi dzikir pagi &amp; petang</p>
-            </div>
-          </div>
-          <button onClick={toggleNotif}
-            className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all ${notifEnabled ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/20' : 'bg-white/[0.04] text-white/35 hover:bg-white/80'}`}
-          >
-            {notifEnabled ? <Bell size={16} /> : <BellOff size={16} />}
-            {notifEnabled ? 'Aktif' : 'Aktifkan'}
-          </button>
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          <div className="rounded-lg bg-indigo-500/5 border border-indigo-500/10 p-3">
-            <div className="flex items-center gap-2 mb-1">
-              <Sunrise size={14} className="text-indigo-500" />
-              <span className="text-sm font-semibold text-foreground">Dzikir Pagi</span>
-            </div>
-            <p className="text-xs text-white/35">Setelah Subuh ({prayerTimes?.Fajr}) sampai Syuruq ({prayerTimes?.Sunrise})</p>
-          </div>
-          <div className="rounded-lg bg-orange-500/5 border border-orange-500/10 p-3">
-            <div className="flex items-center gap-2 mb-1">
-              <Sunset size={14} className="text-orange-500" />
-              <span className="text-sm font-semibold text-foreground">Dzikir Petang</span>
-            </div>
-            <p className="text-xs text-white/35">Setelah Ashar ({prayerTimes?.Asr}) sampai Maghrib ({prayerTimes?.Maghrib})</p>
-          </div>
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          <Link href="/doa" className="flex items-center justify-between px-4 py-3 rounded-lg bg-emerald-500/5 hover:bg-emerald-500/10 transition-colors group">
-            <div className="flex items-center gap-3">
-              <BookOpen size={18} className="text-emerald-400" />
-              <div>
-                <p className="text-sm font-medium text-foreground">Kumpulan Doa &amp; Dzikir</p>
-                <p className="text-xs text-white/35">Dzikir pagi &amp; petang dari Hisnul Muslim</p>
-              </div>
-            </div>
-            <ChevronRight size={18} className="text-white/35 group-hover:text-emerald-400 transition-colors" />
-          </Link>
-          <Link href="/qibla" className="flex items-center justify-between px-4 py-3 rounded-lg bg-emerald-500/5 hover:bg-emerald-500/10 border border-emerald-500/10 transition-colors group">
-            <div className="flex items-center gap-3">
-              <Compass size={18} className="text-emerald-600 dark:text-emerald-400" />
-              <div>
-                <p className="text-sm font-medium text-foreground">Arah Kiblat</p>
-                <p className="text-xs text-white/35">Kompas digital berbasis GPS &amp; sensor</p>
-              </div>
-            </div>
-            <ChevronRight size={18} className="text-white/35 group-hover:text-emerald-500 transition-colors" />
-          </Link>
-        </div>
-      </motion.div>
-
-      <div className="flex justify-center">
-        <button onClick={loadData} className="flex items-center gap-2 text-sm text-white/35 hover:text-emerald-400 transition-colors">
-          <RefreshCw size={14} /> Perbarui jadwal
-        </button>
+        <p className="text-center text-[11px] text-white/[0.15] pb-8">Sumber: Aladhan.com • Metode: Kemenag RI</p>
       </div>
-      <p className="text-center text-[11px] text-white/35">Sumber: Aladhan.com &bull; Metode: Kemenag RI</p>
     </div>
   );
 }

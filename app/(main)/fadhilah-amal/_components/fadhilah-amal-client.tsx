@@ -4,7 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { Star, Sparkles, Heart, HandHeart, ChevronRight } from 'lucide-react';
-import PageHeader from '@/components/page-header';
+import { PageHeader } from '@/components/layouts/page-header';
 
 const FADHILAH_MENU = [
   {

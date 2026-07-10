@@ -3,7 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Smartphone, Heart, BookOpen, MapPin, Globe, Mail, Shield, Users, Sparkles } from 'lucide-react';
-import PageHeader from '@/components/page-header';
+import { PageHeader } from '@/components/layouts/page-header';
 
 const FEATURES = [
   { icon: BookOpen, title: 'Al-Qur\'an & Juz', desc: 'Baca Al-Qur\'an lengkap dengan kandungan setiap Juz' },

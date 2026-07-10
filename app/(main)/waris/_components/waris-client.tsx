@@ -1,60 +1,45 @@
 'use client';
 
 import React, { useState, useCallback } from 'react';
-import { Calculator, RotateCcw, AlertTriangle, Scale, BookOpen, Users, ChevronDown, ChevronUp, Info } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Calculator, RotateCcw, AlertTriangle, Scale, Users, ChevronDown, ChevronUp, Info } from 'lucide-react';
 import { Gender, HeirInput, InheritanceResult, HeirResult } from '@/lib/types';
 import { calculateInheritance, formatRupiah, parseRupiah } from '@/lib/faraidh';
+import { PageHeader } from '@/components/layouts/page-header';
 import { toast } from 'sonner';
 import InheritancePieChart from './inheritance-pie-chart';
 
 const defaultHeirs: HeirInput = {
-  husband: false,
-  wife: 0,
-  son: 0,
-  daughter: 0,
-  father: false,
-  mother: false,
-  grandfather: false,
-  grandmother: false,
-  fullBrother: 0,
-  fullSister: 0,
-  paternalHalfBrother: 0,
-  paternalHalfSister: 0,
-  maternalHalfBrother: 0,
-  maternalHalfSister: 0,
-  grandsonFromSon: 0,
-  granddaughterFromSon: 0,
-  paternalUncle: 0,
-  uncleSon: 0,
+  husband: false, wife: 0, son: 0, daughter: 0,
+  father: false, mother: false, grandfather: false, grandmother: false,
+  fullBrother: 0, fullSister: 0, paternalHalfBrother: 0, paternalHalfSister: 0,
+  maternalHalfBrother: 0, maternalHalfSister: 0,
+  grandsonFromSon: 0, granddaughterFromSon: 0,
+  paternalUncle: 0, uncleSon: 0,
 };
 
 interface HeirFieldConfig {
-  key: keyof HeirInput;
-  label: string;
-  type: 'boolean' | 'number';
-  max?: number;
-  showWhen?: (gender: Gender) => boolean;
-  group: string;
+  key: keyof HeirInput; label: string; type: 'boolean' | 'number';
+  max?: number; showWhen?: (gender: Gender) => boolean; group: string;
 }
 
 const heirFields: HeirFieldConfig[] = [
-  { key: 'husband', label: 'Suami', type: 'boolean', showWhen: (g: Gender) => g === 'female', group: 'Pasangan' },
-  { key: 'wife', label: 'Istri', type: 'number', max: 4, showWhen: (g: Gender) => g === 'male', group: 'Pasangan' },
+  { key: 'husband', label: 'Suami', type: 'boolean', showWhen: (g) => g === 'female', group: 'Pasangan' },
+  { key: 'wife', label: 'Istri', type: 'number', max: 4, showWhen: (g) => g === 'male', group: 'Pasangan' },
   { key: 'son', label: 'Anak Laki-laki', type: 'number', max: 20, group: 'Anak' },
   { key: 'daughter', label: 'Anak Perempuan', type: 'number', max: 20, group: 'Anak' },
   { key: 'father', label: 'Ayah', type: 'boolean', group: 'Orang Tua' },
   { key: 'mother', label: 'Ibu', type: 'boolean', group: 'Orang Tua' },
   { key: 'grandfather', label: 'Kakek (dari ayah)', type: 'boolean', group: 'Kakek/Nenek' },
   { key: 'grandmother', label: 'Nenek', type: 'boolean', group: 'Kakek/Nenek' },
-  { key: 'fullBrother', label: 'Saudara Laki-laki Kandung', type: 'number', max: 10, group: 'Saudara Kandung' },
+  { key: 'fullBrother', label: 'Saudara Laki Kandung', type: 'number', max: 10, group: 'Saudara Kandung' },
   { key: 'fullSister', label: 'Saudara Perempuan Kandung', type: 'number', max: 10, group: 'Saudara Kandung' },
-  { key: 'paternalHalfBrother', label: 'Saudara Laki-laki Seayah', type: 'number', max: 10, group: 'Saudara Seayah' },
+  { key: 'paternalHalfBrother', label: 'Saudara Laki Seayah', type: 'number', max: 10, group: 'Saudara Seayah' },
   { key: 'paternalHalfSister', label: 'Saudara Perempuan Seayah', type: 'number', max: 10, group: 'Saudara Seayah' },
-  { key: 'maternalHalfBrother', label: 'Saudara Laki-laki Seibu', type: 'number', max: 10, group: 'Saudara Seibu' },
+  { key: 'maternalHalfBrother', label: 'Saudara Laki Seibu', type: 'number', max: 10, group: 'Saudara Seibu' },
   { key: 'maternalHalfSister', label: 'Saudara Perempuan Seibu', type: 'number', max: 10, group: 'Saudara Seibu' },
-  { key: 'grandsonFromSon', label: 'Cucu Laki-laki (dari anak laki-laki)', type: 'number', max: 10, group: 'Cucu' },
-  { key: 'granddaughterFromSon', label: 'Cucu Perempuan (dari anak laki-laki)', type: 'number', max: 10, group: 'Cucu' },
+  { key: 'grandsonFromSon', label: 'Cucu Laki (dari anak laki)', type: 'number', max: 10, group: 'Cucu' },
+  { key: 'granddaughterFromSon', label: 'Cucu Perempuan (dari anak laki)', type: 'number', max: 10, group: 'Cucu' },
   { key: 'paternalUncle', label: 'Paman (saudara ayah)', type: 'number', max: 10, group: 'Paman' },
   { key: 'uncleSon', label: 'Anak Paman', type: 'number', max: 10, group: 'Paman' },
 ];
@@ -67,38 +52,26 @@ export default function WarisClient() {
   const [expandedGroups, setExpandedGroups] = useState<string[]>(['Pasangan', 'Anak', 'Orang Tua']);
 
   const toggleGroup = useCallback((group: string) => {
-    setExpandedGroups((prev: string[]) =>
-      prev?.includes?.(group)
-        ? prev?.filter?.((g: string) => g !== group) ?? []
-        : [...(prev ?? []), group]
+    setExpandedGroups((prev) =>
+      prev.includes(group) ? prev.filter((g) => g !== group) : [...prev, group]
     );
   }, []);
 
   const updateHeir = useCallback((key: keyof HeirInput, value: boolean | number) => {
-    setHeirs((prev: HeirInput) => ({ ...(prev ?? {}), [key]: value } as HeirInput));
+    setHeirs((prev) => ({ ...prev, [key]: value } as HeirInput));
   }, []);
 
   const handleCalculate = useCallback(() => {
     const estate = parseRupiah(totalEstate);
-    if (estate <= 0) {
-      toast.error('Masukkan jumlah harta warisan');
-      return;
-    }
-    // Check at least one heir
-    const hasHeir = Object.entries(heirs ?? {})?.some?.(([k, v]: [string, any]) => {
-      if (typeof v === 'boolean') return v;
-      if (typeof v === 'number') return v > 0;
-      return false;
-    });
-    if (!hasHeir) {
-      toast.error('Pilih minimal satu ahli waris');
-      return;
-    }
+    if (estate <= 0) { toast.error('Masukkan jumlah harta warisan'); return; }
+    const hasHeir = Object.entries(heirs).some(([, v]) =>
+      typeof v === 'boolean' ? v : (v as number) > 0
+    );
+    if (!hasHeir) { toast.error('Pilih minimal satu ahli waris'); return; }
     const res = calculateInheritance(estate, deceasedGender, heirs);
     setResult(res);
-    // Scroll to results
     setTimeout(() => {
-      document?.getElementById?.('waris-results')?.scrollIntoView?.({ behavior: 'smooth' });
+      document.getElementById('waris-results')?.scrollIntoView({ behavior: 'smooth' });
     }, 100);
   }, [totalEstate, deceasedGender, heirs]);
 
@@ -110,16 +83,15 @@ export default function WarisClient() {
   }, []);
 
   const handleEstateChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
-    const raw = (e?.target?.value ?? '')?.replace?.(/[^0-9]/g, '') ?? '';
-    setTotalEstate(raw ? parseInt(raw, 10)?.toLocaleString?.('id-ID') ?? '' : '');
+    const raw = (e.target.value ?? '').replace(/[^0-9]/g, '');
+    setTotalEstate(raw ? parseInt(raw, 10).toLocaleString('id-ID') : '');
   }, []);
 
-  // Group the fields
   const groups = (() => {
     const map: Record<string, HeirFieldConfig[]> = {};
     for (const f of heirFields) {
-      if (f?.showWhen && !f.showWhen(deceasedGender)) continue;
-      const g = f?.group ?? 'Lainnya';
+      if (f.showWhen && !f.showWhen(deceasedGender)) continue;
+      const g = f.group;
       if (!map[g]) map[g] = [];
       map[g].push(f);
     }
@@ -127,72 +99,86 @@ export default function WarisClient() {
   })();
 
   return (
-    <div className="space-y-6">
-      {/* Header */}
-      <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}>
-        <h1 className="text-2xl md:text-3xl font-display font-bold tracking-tight text-foreground">Hitung Waris</h1>
-        <p className="text-sm text-white/35 mt-1">Perhitungan faraidh sesuai Al-Qur&apos;an dan Sunnah</p>
-      </motion.div>
+    <div className="min-h-screen bg-[#050a14]">
+      <PageHeader title="Kalkulator Waris" description="Perhitungan faraidh sesuai Al-Qur'an dan Sunnah" backHref="/" />
 
-      {/* Form */}
-      <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="space-y-4">
+      <div className="max-w-2xl mx-auto px-4 pb-12 space-y-4">
         {/* Total Estate */}
-        <div className="rounded-xl bg-white/[0.03] border border-white/50 p-5 shadow-sm">
-          <label className="text-sm font-medium text-white/85 mb-2 block">Total Harta Warisan</label>
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3 }}
+          className="rounded-2xl bg-white/[0.03] border border-white/[0.06] p-5"
+        >
+          <label className="block text-[13px] font-extrabold text-white/90 uppercase tracking-tight mb-3">Total Harta Warisan</label>
           <div className="relative">
-            <span className="absolute left-3 top-1/2 -translate-y-1/2 text-sm text-white/35 font-medium">Rp</span>
+            <span className="absolute left-3 top-1/2 -translate-y-1/2 text-sm text-white/35">Rp</span>
             <input
               type="text"
               value={totalEstate}
               onChange={handleEstateChange}
               placeholder="0"
-              className="w-full pl-10 pr-4 py-2.5 rounded-lg bg-[\0] border border-white/[0.06] text-sm text-white/85 placeholder:text-white/35 focus:outline-none focus:ring-2 focus:ring-emerald-500/30 font-mono"
+              className="w-full pl-10 pr-4 py-3 rounded-xl bg-white/[0.03] border border-white/[0.06] text-sm text-white/85 placeholder:text-white/20 font-mono focus:outline-none focus:ring-2 focus:ring-emerald-500/30 focus:border-emerald-400/30 transition-all"
             />
           </div>
-        </div>
+        </motion.div>
 
         {/* Deceased Gender */}
-        <div className="rounded-xl bg-white/[0.03] border border-white/50 p-5 shadow-sm">
-          <label className="text-sm font-medium text-white/85 mb-3 block">Status Pewaris (yang meninggal)</label>
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3, delay: 0.05 }}
+          className="rounded-2xl bg-white/[0.03] border border-white/[0.06] p-5"
+        >
+          <label className="block text-[13px] font-extrabold text-white/90 uppercase tracking-tight mb-3">Status Pewaris</label>
           <div className="flex gap-3">
-            {(['male', 'female'] as Gender[])?.map?.((g: Gender) => (
+            {(['male', 'female'] as Gender[]).map((g) => (
               <button
                 key={g}
                 onClick={() => {
                   setDeceasedGender(g);
-                  // Reset spouse-related fields
                   if (g === 'male') updateHeir('husband', false);
                   if (g === 'female') updateHeir('wife', 0);
                 }}
-                className={`flex-1 py-2.5 rounded-lg text-sm font-medium transition-all ${
-                  deceasedGender === g
-                    ? 'bg-primary text-primary-foreground shadow-md'
-                    : 'bg-white/[0.04] text-white/35 hover:bg-white/80'
-                }`}
+                className="flex-1 py-3 rounded-xl text-sm font-bold transition-all border"
+                style={{
+                  backgroundColor: deceasedGender === g ? '#05966918' : 'transparent',
+                  borderColor: deceasedGender === g ? '#05966940' : 'rgba(255,255,255,0.06)',
+                  color: deceasedGender === g ? '#34D399' : 'rgba(255,255,255,0.5)',
+                }}
               >
                 {g === 'male' ? 'Laki-laki' : 'Perempuan'}
               </button>
-            )) ?? []}
+            ))}
           </div>
-        </div>
+        </motion.div>
 
         {/* Heir Selection */}
-        <div className="rounded-xl bg-white/[0.03] border border-white/50 p-5 shadow-sm">
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3, delay: 0.1 }}
+          className="rounded-2xl bg-white/[0.03] border border-white/[0.06] p-5"
+        >
           <div className="flex items-center gap-2 mb-4">
             <Users size={16} className="text-emerald-400" />
-            <label className="text-sm font-medium text-foreground">Ahli Waris yang Ada</label>
+            <label className="text-[13px] font-extrabold text-white/90 uppercase tracking-tight">Ahli Waris yang Ada</label>
           </div>
           <div className="space-y-2">
-            {groups?.map?.(([groupName, fields]: [string, HeirFieldConfig[]]) => {
-              const isExpanded = expandedGroups?.includes?.(groupName);
+            {groups.map(([groupName, fields]) => {
+              const isExpanded = expandedGroups.includes(groupName);
               return (
-                <div key={groupName} className="rounded-lg border border-white/30 overflow-hidden">
+                <div key={groupName} className="rounded-xl border border-white/[0.06] overflow-hidden">
                   <button
                     onClick={() => toggleGroup(groupName)}
-                    className="w-full flex items-center justify-between px-4 py-2.5 bg-white/[0.03] hover:bg-white/[0.04] transition-colors"
+                    className="w-full flex items-center justify-between px-4 py-3 bg-white/[0.02] hover:bg-white/[0.04] transition-colors"
                   >
-                    <span className="text-xs font-semibold text-white/35 uppercase tracking-wider">{groupName}</span>
-                    {isExpanded ? <ChevronUp size={14} className="text-white/35" /> : <ChevronDown size={14} className="text-white/35" />}
+                    <span className="text-xs font-extrabold text-white/50 uppercase tracking-tight">{groupName}</span>
+                    {isExpanded ? (
+                      <ChevronUp size={14} className="text-white/35" />
+                    ) : (
+                      <ChevronDown size={14} className="text-white/35" />
+                    )}
                   </button>
                   <AnimatePresence>
                     {isExpanded && (
@@ -204,183 +190,185 @@ export default function WarisClient() {
                         className="overflow-hidden"
                       >
                         <div className="p-3 space-y-2">
-                          {fields?.map?.((field: HeirFieldConfig) => (
-                            <div key={field?.key} className="flex items-center justify-between gap-3">
-                              <span className="text-sm text-foreground">{field?.label}</span>
-                              {field?.type === 'boolean' ? (
+                          {fields.map((field) => (
+                            <div key={field.key} className="flex items-center justify-between gap-3">
+                              <span className="text-sm text-white/70">{field.label}</span>
+                              {field.type === 'boolean' ? (
                                 <button
-                                  onClick={() => updateHeir(field?.key, !(heirs as any)?.[field?.key])}
-                                  className={`w-10 h-6 rounded-full transition-colors relative ${
-                                    (heirs as any)?.[field?.key] ? 'bg-primary' : 'bg-muted'
-                                  }`}
+                                  onClick={() => updateHeir(field.key, !(heirs as any)[field.key])}
+                                  className="relative w-10 h-6 rounded-full transition-colors"
+                                  style={{
+                                    backgroundColor: (heirs as any)[field.key] ? '#059669' : 'rgba(255,255,255,0.08)',
+                                  }}
                                 >
-                                  <div className={`w-4 h-4 rounded-full bg-white absolute top-1 transition-transform ${
-                                    (heirs as any)?.[field?.key] ? 'translate-x-5' : 'translate-x-1'
-                                  }`} />
+                                  <div
+                                    className="absolute top-1 w-4 h-4 rounded-full bg-white transition-transform"
+                                    style={{ transform: (heirs as any)[field.key] ? 'translateX(20px)' : 'translateX(4px)' }}
+                                  />
                                 </button>
                               ) : (
                                 <div className="flex items-center gap-1">
                                   <button
                                     onClick={() => {
-                                      const cur = ((heirs as any)?.[field?.key] ?? 0) as number;
-                                      if (cur > 0) updateHeir(field?.key, cur - 1);
+                                      const cur = ((heirs as any)[field.key] ?? 0) as number;
+                                      if (cur > 0) updateHeir(field.key, cur - 1);
                                     }}
-                                    className="w-7 h-7 rounded-md bg-white/[0.04] text-white/85 flex items-center justify-center text-sm font-bold hover:bg-white/80"
+                                    className="w-7 h-7 rounded-lg bg-white/[0.04] border border-white/[0.06] text-white/50 flex items-center justify-center text-sm font-bold hover:bg-white/[0.08]"
                                   >
                                     -
                                   </button>
-                                  <span className="w-8 text-center text-sm font-mono text-foreground">
-                                    {((heirs as any)?.[field?.key] ?? 0)}
+                                  <span className="w-8 text-center text-sm font-mono text-white/85">
+                                    {((heirs as any)[field.key] ?? 0)}
                                   </span>
                                   <button
                                     onClick={() => {
-                                      const cur = ((heirs as any)?.[field?.key] ?? 0) as number;
-                                      if (cur < (field?.max ?? 20)) updateHeir(field?.key, cur + 1);
+                                      const cur = ((heirs as any)[field.key] ?? 0) as number;
+                                      if (cur < (field.max ?? 20)) updateHeir(field.key, cur + 1);
                                     }}
-                                    className="w-7 h-7 rounded-md bg-white/[0.04] text-white/85 flex items-center justify-center text-sm font-bold hover:bg-white/80"
+                                    className="w-7 h-7 rounded-lg bg-white/[0.04] border border-white/[0.06] text-white/50 flex items-center justify-center text-sm font-bold hover:bg-white/[0.08]"
                                   >
                                     +
                                   </button>
                                 </div>
                               )}
                             </div>
-                          )) ?? []}
+                          ))}
                         </div>
                       </motion.div>
                     )}
                   </AnimatePresence>
                 </div>
               );
-            }) ?? []}
+            })}
           </div>
-        </div>
+        </motion.div>
 
         {/* Action Buttons */}
-        <div className="flex gap-3">
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3, delay: 0.15 }}
+          className="flex gap-3"
+        >
           <button
             onClick={handleCalculate}
-            className="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl bg-primary text-primary-foreground font-medium text-sm shadow-md hover:bg-emerald-500/90 transition-all"
+            className="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl bg-emerald-500 text-white text-sm font-bold hover:bg-emerald-400 transition-colors shadow-lg shadow-emerald-500/20"
           >
             <Calculator size={16} />
             Hitung Waris
           </button>
           <button
             onClick={handleReset}
-            className="flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-white/[0.04] text-white/35 font-medium text-sm hover:bg-white/80 transition-all"
+            className="flex items-center justify-center gap-2 px-5 py-3 rounded-xl border border-white/[0.06] text-sm text-white/50 hover:bg-white/[0.04] transition-colors"
           >
             <RotateCcw size={16} />
-            Reset
           </button>
-        </div>
-      </motion.div>
+        </motion.div>
 
-      {/* Results */}
-      {result && (
-        <div id="waris-results" className="space-y-4">
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="space-y-4">
-            {/* Summary */}
-            <div className="rounded-xl bg-white/[0.03] border border-white/50 p-5 shadow-sm">
-              <div className="flex items-center gap-2 mb-4">
-                <Scale size={16} className="text-emerald-400" />
-                <h2 className="font-display font-bold text-lg text-foreground">Hasil Perhitungan</h2>
-              </div>
-              <p className="text-sm text-white/35 mb-4">
-                Total harta: <strong className="text-white/85 font-mono">Rp {formatRupiah(result?.totalEstate ?? 0)}</strong>
-              </p>
+        {/* Results */}
+        {result && (
+          <div id="waris-results" className="space-y-4">
+            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="space-y-4">
+              {/* Summary */}
+              <div className="rounded-2xl bg-white/[0.03] border border-white/[0.06] p-5">
+                <div className="flex items-center gap-2 mb-4">
+                  <Scale size={16} className="text-emerald-400" />
+                  <h2 className="font-extrabold text-base text-white/90">Hasil Perhitungan</h2>
+                </div>
+                <p className="text-sm text-white/50 mb-4">
+                  Total harta: <strong className="text-white/80 font-mono">Rp {formatRupiah(result.totalEstate)}</strong>
+                </p>
 
-              {/* Results Table */}
-              <div className="overflow-x-auto">
-                <table className="w-full text-sm">
-                  <thead>
-                    <tr className="border-b border-border">
-                      <th className="text-left py-2 px-2 text-white/35 font-medium">Ahli Waris</th>
-                      <th className="text-left py-2 px-2 text-white/35 font-medium">Dasar</th>
-                      <th className="text-center py-2 px-2 text-white/35 font-medium">Bagian</th>
-                      <th className="text-right py-2 px-2 text-white/35 font-medium">Persentase</th>
-                      <th className="text-right py-2 px-2 text-white/35 font-medium">Jumlah</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {(result?.heirs ?? [])?.map?.((heir: HeirResult, idx: number) => (
-                      <tr key={idx} className="border-b border-white/30">
-                        <td className="py-2.5 px-2 text-white/85 font-medium">
-                          <div>{heir?.name}{(heir?.count ?? 0) > 1 ? ` (${heir.count} orang)` : ''}</div>
-                          {(heir?.perPersonAmount ?? 0) > 0 && (heir?.count ?? 0) > 1 && (
-                            <div className="text-xs text-white/35 mt-0.5">Masing-masing: Rp {formatRupiah(heir.perPersonAmount ?? 0)}</div>
-                          )}
-                        </td>
-                        <td className="py-2.5 px-2 text-white/35 text-xs">{heir?.basis}</td>
-                        <td className="py-2.5 px-2 text-center text-white/85 font-mono text-xs">{heir?.shareFraction}</td>
-                        <td className="py-2.5 px-2 text-right text-white/85 font-mono">{(heir?.percentage ?? 0)?.toFixed?.(1) ?? '0'}%</td>
-                        <td className="py-2.5 px-2 text-right text-white/85 font-mono font-medium">Rp {formatRupiah(heir?.amount ?? 0)}</td>
+                <div className="overflow-x-auto">
+                  <table className="w-full text-sm">
+                    <thead>
+                      <tr className="border-b border-white/[0.06]">
+                        <th className="text-left py-2 px-2 text-white/40 font-medium text-xs">Ahli Waris</th>
+                        <th className="text-left py-2 px-2 text-white/40 font-medium text-xs">Dasar</th>
+                        <th className="text-center py-2 px-2 text-white/40 font-medium text-xs">Bagian</th>
+                        <th className="text-right py-2 px-2 text-white/40 font-medium text-xs">%</th>
+                        <th className="text-right py-2 px-2 text-white/40 font-medium text-xs">Jumlah</th>
                       </tr>
-                    )) ?? []}
-                  </tbody>
-                </table>
-              </div>
-            </div>
-
-            {/* Pie Chart */}
-            {(result?.heirs ?? [])?.filter?.((h: HeirResult) => (h?.amount ?? 0) > 0)?.length > 0 && (
-              <div className="rounded-xl bg-white/[0.03] border border-white/50 p-5 shadow-sm">
-                <h3 className="font-display font-semibold text-sm text-white/85 mb-4">Visualisasi Pembagian</h3>
-                <div className="w-full" style={{ height: 300 }}>
-                  <InheritancePieChart heirs={(result?.heirs ?? [])?.filter?.((h: HeirResult) => (h?.amount ?? 0) > 0) ?? []} />
+                    </thead>
+                    <tbody>
+                      {(result.heirs ?? []).map((heir: HeirResult, idx: number) => (
+                        <tr key={idx} className="border-b border-white/[0.04]">
+                          <td className="py-3 px-2 text-white/80 font-medium">
+                            <div>{heir.name}{(heir.count ?? 0) > 1 ? ` (${heir.count} org)` : ''}</div>
+                            {(heir.perPersonAmount ?? 0) > 0 && (heir.count ?? 0) > 1 && (
+                              <div className="text-xs text-white/35 mt-0.5">@ Rp {formatRupiah(heir.perPersonAmount ?? 0)}</div>
+                            )}
+                          </td>
+                          <td className="py-3 px-2 text-white/40 text-xs">{heir.basis}</td>
+                          <td className="py-3 px-2 text-center text-white/60 font-mono text-xs">{heir.shareFraction}</td>
+                          <td className="py-3 px-2 text-right text-white/60 font-mono text-xs">{(heir.percentage ?? 0).toFixed(1)}%</td>
+                          <td className="py-3 px-2 text-right text-white/80 font-mono font-bold">Rp {formatRupiah(heir.amount ?? 0)}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
                 </div>
               </div>
-            )}
 
-            {/* Explanations */}
-            <div className="space-y-3">
+              {/* Pie Chart */}
+              {(result.heirs ?? []).filter((h) => (h.amount ?? 0) > 0).length > 0 && (
+                <div className="rounded-2xl bg-white/[0.03] border border-white/[0.06] p-5">
+                  <h3 className="font-extrabold text-sm text-white/90 mb-4">Visualisasi Pembagian</h3>
+                  <div className="w-full" style={{ height: 300 }}>
+                    <InheritancePieChart heirs={(result.heirs ?? []).filter((h) => (h.amount ?? 0) > 0)} />
+                  </div>
+                </div>
+              )}
+
               {/* Blocked Heirs */}
-              {(result?.blockedHeirs?.length ?? 0) > 0 && (
-                <div className="rounded-xl bg-white/[0.03] border border-white/50 p-5 shadow-sm">
+              {(result.blockedHeirs?.length ?? 0) > 0 && (
+                <div className="rounded-2xl bg-white/[0.03] border border-white/[0.06] p-5">
                   <div className="flex items-center gap-2 mb-3">
-                    <AlertTriangle size={14} className="text-amber-500" />
-                    <h3 className="font-semibold text-sm text-foreground">Ahli Waris yang Terhalang (Hajb)</h3>
+                    <AlertTriangle size={14} className="text-amber-400" />
+                    <h3 className="font-extrabold text-sm text-white/90">Ahli Waris Terhalang (Hajb)</h3>
                   </div>
                   <ul className="space-y-2">
-                    {(result?.blockedHeirs ?? [])?.map?.((h: HeirResult, idx: number) => (
-                      <li key={idx} className="text-sm text-white/35">
-                        <strong className="text-white/85">{h?.name}</strong> ({h?.count} orang) — {h?.blockReason}
+                    {(result.blockedHeirs ?? []).map((h: HeirResult, idx: number) => (
+                      <li key={idx} className="text-sm text-white/50">
+                        <strong className="text-white/70">{h.name}</strong> ({h.count} orang) — {h.blockReason}
                       </li>
-                    )) ?? []}
+                    ))}
                   </ul>
                 </div>
               )}
 
               {/* Aul */}
-              {result?.aulOccurred && (
-                <div className="rounded-xl bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 p-5">
+              {result.aulOccurred && (
+                <div className="rounded-2xl bg-amber-500/5 border border-amber-400/20 p-5">
                   <div className="flex items-center gap-2 mb-2">
-                    <Info size={14} className="text-amber-600" />
-                    <h3 className="font-semibold text-sm text-amber-800 dark:text-amber-300">&apos;Aul (Penyesuaian Proporsional)</h3>
+                    <Info size={14} className="text-amber-400" />
+                    <h3 className="font-extrabold text-sm text-amber-300">&apos;Aul (Penyesuaian Proporsional)</h3>
                   </div>
-                  <p className="text-sm text-amber-700 dark:text-amber-400">{result?.aulExplanation}</p>
+                  <p className="text-sm text-amber-200/70 leading-relaxed">{result.aulExplanation}</p>
                 </div>
               )}
 
               {/* Radd */}
-              {result?.raddOccurred && (
-                <div className="rounded-xl bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800 p-5">
+              {result.raddOccurred && (
+                <div className="rounded-2xl bg-emerald-500/5 border border-emerald-400/20 p-5">
                   <div className="flex items-center gap-2 mb-2">
-                    <Info size={14} className="text-emerald-600" />
-                    <h3 className="font-semibold text-sm text-emerald-800 dark:text-emerald-300">Radd (Pengembalian Sisa)</h3>
+                    <Info size={14} className="text-emerald-400" />
+                    <h3 className="font-extrabold text-sm text-emerald-300">Radd (Pengembalian Sisa)</h3>
                   </div>
-                  <p className="text-sm text-emerald-700 dark:text-emerald-400">{result?.raddExplanation}</p>
+                  <p className="text-sm text-emerald-200/70 leading-relaxed">{result.raddExplanation}</p>
                 </div>
               )}
-            </div>
 
-            {/* Disclaimer */}
-            <div className="rounded-xl bg-white/[0.04] p-4 border border-white/30">
-              <p className="text-xs text-white/35 leading-relaxed">
-                <strong>Disclaimer:</strong> Hasil perhitungan ini adalah panduan berdasarkan Al-Qur&apos;an dan Sunnah. Untuk kepastian hukum, disarankan berkonsultasi dengan ahli waris, notaris, atau Pengadilan Agama.
-              </p>
-            </div>
-          </motion.div>
-        </div>
-      )}
+              {/* Disclaimer */}
+              <div className="rounded-2xl bg-white/[0.02] border border-white/[0.06] p-4">
+                <p className="text-xs text-white/35 leading-relaxed">
+                  <strong className="text-white/50">Disclaimer:</strong> Hasil perhitungan ini adalah panduan berdasarkan Al-Qur&apos;an dan Sunnah. Konsultasikan dengan ahli waris, notaris, atau Pengadilan Agama.
+                </p>
+              </div>
+            </motion.div>
+          </div>
+        )}
+      </div>
     </div>
   );
 }

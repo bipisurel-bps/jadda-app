@@ -2,10 +2,9 @@
 
 import React, { useState, useMemo } from 'react';
 import Link from 'next/link';
-import { Search, X, Book, ChevronRight } from 'lucide-react';
+import { Search, X, ChevronRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { PageHeader } from '@/components/layouts/page-header';
-import { Input } from '@/components/ui/input';
 
 interface RawJuzContent {
   number: number;
@@ -19,7 +18,6 @@ interface JuzDisplay {
   estimatedSurahs: string;
 }
 
-// Parse raw juz content text into structured display
 function parseJuzContent(raw: RawJuzContent): JuzDisplay {
   const lines = raw.content.split('\n').filter((l) => l.trim());
   const details: string[] = [];
@@ -29,31 +27,27 @@ function parseJuzContent(raw: RawJuzContent): JuzDisplay {
     const trimmed = line.trim();
     if (!trimmed) continue;
 
-    // Extract title from first meaningful line
     if (title === `Juz ${raw.number}` && trimmed.length > 10) {
-      // Clean up the title
       const cleaned = trimmed
         .replace(/^\(\d+\)\s*/, '')
         .replace(/\u00a0/g, ' ')
         .trim();
       if (cleaned.length > 15) {
-        title = cleaned.length > 80 ? cleaned.substring(0, 80) + '…' : cleaned;
+        title = cleaned.length > 80 ? cleaned.substring(0, 80) + '\u2026' : cleaned;
       }
     }
 
-    // Collect key points — lines starting with numbers or significant content
     if (trimmed.match(/^\(\d+\)/) || trimmed.length > 25) {
       const cleaned = trimmed
         .replace(/^\(\d+\)\s*/, '')
         .replace(/\u00a0/g, ' ')
         .trim();
       if (cleaned.length > 6) {
-        details.push(cleaned.length > 120 ? cleaned.substring(0, 120) + '…' : cleaned);
+        details.push(cleaned.length > 120 ? cleaned.substring(0, 120) + '\u2026' : cleaned);
       }
     }
   }
 
-  // Surah estimation per juz
   const surahRanges: Record<number, string> = {
     1: 'Al-Fatihah – Al-Baqarah', 2: 'Al-Baqarah', 3: 'Al-Baqarah – Ali Imran',
     4: 'Ali Imran – An-Nisa', 5: 'An-Nisa', 6: 'An-Nisa – Al-Maidah',
@@ -109,42 +103,44 @@ export default function JuzClient() {
 
   if (loading) {
     return (
-      <div className="flex flex-col items-center justify-center py-20">
-        <div className="w-8 h-8 border-2 border-emerald-500/30 border-t-transparent rounded-full animate-spin" />
-        <p className="mt-3 text-sm text-white/35">Memuat kandungan juz...</p>
-      </div>
-    );
-  }
-
-  if (error && contents.length === 0) {
-    return (
-      <div className="flex flex-col items-center justify-center py-20 px-4">
-        <p className="text-sm text-white/35">Gagal memuat data: {error}</p>
+      <div className="min-h-screen bg-[#050a14]">
+        <PageHeader title="Kandungan Juz Al-Quran" description="30 Juz • Ringkasan Tema Pokok" />
+        <div className="flex flex-col items-center justify-center py-16">
+          <div className="w-8 h-8 border-2 border-emerald-400/30 border-t-emerald-400 rounded-full animate-spin" />
+          <p className="mt-3 text-sm text-white/35">Memuat kandungan juz...</p>
+        </div>
       </div>
     );
   }
 
   return (
-    <div>
+    <div className="min-h-screen bg-[#050a14]">
       <PageHeader title="Kandungan Juz Al-Quran" description="30 Juz • Ringkasan Tema Pokok" />
 
       {/* Search */}
       <div className="mt-4 mb-4">
         <div className="relative">
           <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-white/35" />
-          <Input
-            className="pl-9 pr-8 h-10 bg-white/[0.03] border-white/[0.06] text-sm"
+          <input
+            className="w-full pl-9 pr-8 h-10 rounded-xl bg-white/[0.04] border border-white/[0.06] text-sm text-white/80 placeholder:text-white/30 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500/30 transition-all"
             placeholder="Cari juz..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
           />
           {search && (
-            <button onClick={() => setSearch('')} className="absolute right-3 top-1/2 -translate-y-1/2">
-              <X size={16} className="text-white/35" />
+            <button onClick={() => setSearch('')} className="absolute right-3 top-1/2 -translate-y-1/2 p-0.5 rounded hover:bg-white/[0.06] transition-colors">
+              <X size={16} className="text-white/40" />
             </button>
           )}
         </div>
       </div>
+
+      {/* Error state */}
+      {error && contents.length === 0 && (
+        <div className="flex flex-col items-center justify-center py-16 px-4">
+          <p className="text-sm text-white/50">Gagal memuat data: {error}</p>
+        </div>
+      )}
 
       {/* Juz list */}
       <div className="pb-8">
@@ -161,28 +157,28 @@ export default function JuzClient() {
               >
                 <Link
                   href={`/quran?tab=juz&search=${juz.number}`}
-                  className="flex items-start gap-3 p-4 rounded-xl bg-white/[0.03] border border-white/[0.06] hover:bg-white/[0.03] transition-colors"
+                  className="flex items-start gap-3 p-4 rounded-2xl bg-white/[0.03] border border-white/[0.06] hover:bg-white/[0.05] hover:border-emerald-500/15 transition-all"
                 >
-                  <div className="w-11 h-11 rounded-full bg-gradient-to-br from-emerald-500 to-teal-500 flex items-center justify-center flex-shrink-0 shadow-sm">
-                    <span className="text-base font-bold text-white">{juz.number}</span>
+                  <div className="w-11 h-11 rounded-full bg-emerald-500/15 flex items-center justify-center flex-shrink-0">
+                    <span className="text-base font-bold text-emerald-400">{juz.number}</span>
                   </div>
                   <div className="flex-1 min-w-0">
                     <h3 className="text-sm font-semibold text-white/85 line-clamp-2">{juz.title}</h3>
-                    <p className="text-xs text-white/35 mt-1">
+                    <p className="text-xs text-emerald-400/60 mt-1">
                       {juz.estimatedSurahs}
                     </p>
                     {juz.details.length > 0 && (
                       <ul className="mt-2 space-y-0.5">
                         {juz.details.slice(0, 3).map((d, di) => (
-                          <li key={di} className="flex items-start gap-1.5 text-xs text-white/35">
-                            <span className="mt-1 w-1 h-1 rounded-full bg-emerald-400 flex-shrink-0" />
+                          <li key={di} className="flex items-start gap-1.5 text-xs text-white/50">
+                            <span className="mt-1.5 w-1 h-1 rounded-full bg-emerald-400/40 flex-shrink-0" />
                             <span className="line-clamp-1">{d}</span>
                           </li>
                         ))}
                       </ul>
                     )}
                   </div>
-                  <ChevronRight size={16} className="text-white/35 flex-shrink-0 mt-2" />
+                  <ChevronRight size={16} className="text-white/20 flex-shrink-0 mt-2" />
                 </Link>
               </motion.div>
             ))}
