@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Star, ChevronRight, Compass, Heart, Users, PersonStanding } from 'lucide-react';
+import { Star, ChevronRight, Compass, Heart, Users, PersonStanding, Book, BookOpen } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { dailyVerses } from '@/lib/quran-verses';
 import {
@@ -25,6 +25,24 @@ const mainFeatures = [
     desc: 'Jadwal otomatis & pengingat dzikir pagi petang',
     accent: 'gold',
     size: 'lg',
+  },
+  {
+    href: '/quran',
+    icon: Book,
+    title: 'Al-Quran',
+    desc: '114 surah, 30 juz — baca dengan terjemah Indonesia',
+    accent: 'emerald',
+    size: 'md',
+    isLucide: true,
+  },
+  {
+    href: '/juz',
+    icon: BookOpen,
+    title: 'Kandungan Juz',
+    desc: 'Ringkasan tema pokok setiap juz Al-Quran',
+    accent: 'teal',
+    size: 'md',
+    isLucide: true,
   },
   {
     href: '/qibla',
@@ -310,17 +328,25 @@ export default function HomeClient() {
             <FeatureCard href={mainFeatures[0].href} icon={mainFeatures[0].icon} title={mainFeatures[0].title} desc={mainFeatures[0].desc} accent={mainFeatures[0].accent} featured />
           </motion.div>
 
-          {/* ── Kiblat ── */}
+          {/* ── Al-Quran ── */}
           <motion.div variants={item}>
-            <FeatureCard href={mainFeatures[1].href} icon={mainFeatures[1].icon} title={mainFeatures[1].title} desc={mainFeatures[1].desc} accent={mainFeatures[1].accent} />
+            <FeatureCard href={mainFeatures[1].href} icon={mainFeatures[1].icon} title={mainFeatures[1].title} desc={mainFeatures[1].desc} accent={mainFeatures[1].accent} isLucide />
+          </motion.div>
+
+          {/* ── Juz · Kiblat ── */}
+          <motion.div variants={item}>
+            <FeatureCard href={mainFeatures[2].href} icon={mainFeatures[2].icon} title={mainFeatures[2].title} desc={mainFeatures[2].desc} accent={mainFeatures[2].accent} isLucide />
+          </motion.div>
+          <motion.div variants={item}>
+            <FeatureCard href={mainFeatures[3].href} icon={mainFeatures[3].icon} title={mainFeatures[3].title} desc={mainFeatures[3].desc} accent={mainFeatures[3].accent} />
           </motion.div>
 
           {/* ── Doa · Hadits ── */}
           <motion.div variants={item}>
-            <FeatureCard href={mainFeatures[2].href} icon={mainFeatures[2].icon} title={mainFeatures[2].title} desc={mainFeatures[2].desc} accent={mainFeatures[2].accent} />
+            <FeatureCard href={mainFeatures[4].href} icon={mainFeatures[4].icon} title={mainFeatures[4].title} desc={mainFeatures[4].desc} accent={mainFeatures[4].accent} />
           </motion.div>
           <motion.div variants={item}>
-            <FeatureCard href={mainFeatures[3].href} icon={mainFeatures[3].icon} title={mainFeatures[3].title} desc={mainFeatures[3].desc} accent={mainFeatures[3].accent} />
+            <FeatureCard href={mainFeatures[5].href} icon={mainFeatures[5].icon} title={mainFeatures[5].title} desc={mainFeatures[5].desc} accent={mainFeatures[5].accent} />
           </motion.div>
         </motion.div>
 

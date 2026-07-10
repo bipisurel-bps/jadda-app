@@ -1,0 +1,118 @@
+'use client';
+
+import React, { useState, useEffect } from 'react';
+import { useTheme } from 'next-themes';
+import { Moon, Sun, Globe, Bell, MapPin, Info, Monitor } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { PageHeader } from '@/components/layouts/page-header';
+
+const APP_VERSION = '3.0';
+
+export default function SettingsClient() {
+  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
+
+  const settingsSections = [
+    {
+      title: 'Tampilan',
+      icon: <Monitor size={16} />,
+      items: [
+        {
+          label: 'Tema Gelap',
+          description: 'Mode gelap sepanjang waktu',
+          type: 'toggle',
+          key: 'dark',
+          value: theme === 'dark',
+          onChange: () => setTheme(theme === 'dark' ? 'light' : 'dark'),
+        },
+      ],
+    },
+    {
+      title: 'Aplikasi',
+      icon: <Info size={16} />,
+      items: [
+        {
+          label: 'Versi Aplikasi',
+          description: `v${APP_VERSION}`,
+          type: 'info',
+          key: 'version',
+        },
+        {
+          label: 'Sumber Data Quran',
+          description: 'quran-json v3 (CDN)',
+          type: 'info',
+          key: 'quran-source',
+        },
+      ],
+    },
+  ];
+
+  return (
+    <div>
+      <PageHeader title="Pengaturan" description="Preferensi & Informasi Aplikasi" />
+
+      <div className="mt-4 space-y-4 pb-8">
+        {settingsSections.map((section, si) => (
+          <motion.div
+            key={section.title}
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: si * 0.08 }}
+            className="rounded-xl bg-card border border-border overflow-hidden"
+          >
+            <div className="flex items-center gap-3 px-4 py-3 border-b border-border/50 bg-muted/20">
+              <span className="text-muted-foreground">{section.icon}</span>
+              <h3 className="text-sm font-semibold text-foreground">{section.title}</h3>
+            </div>
+
+            <div className="divide-y divide-border/50">
+              {section.items.map((item) => (
+                <div key={item.key} className="flex items-center justify-between px-4 py-3">
+                  <div>
+                    <p className="text-sm font-medium text-foreground">{item.label}</p>
+                    <p className="text-xs text-muted-foreground mt-0.5">{item.description}</p>
+                  </div>
+                  {item.type === 'toggle' && 'onChange' in item && (
+                    <button
+                      onClick={item.onChange}
+                      className={`relative w-11 h-6 rounded-full transition-colors duration-200 ${
+                        item.value ? 'bg-primary' : 'bg-muted-foreground/20'
+                      }`}
+                    >
+                      <div
+                        className={`absolute top-1 w-4 h-4 rounded-full bg-white transition-transform duration-200 ${
+                          item.value ? 'translate-x-[23px]' : 'translate-x-[3px]'
+                        }`}
+                      />
+                    </button>
+                  )}
+                </div>
+              ))}
+            </div>
+          </motion.div>
+        ))}
+
+        {/* Credits */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3 }}
+          className="text-center pt-4"
+        >
+          <p className="font-arabic text-lg text-foreground/60 mb-2" dir="rtl">
+            جَزَاكُمُ اللَّهُ خَيْرًا
+          </p>
+          <p className="text-xs text-muted-foreground">
+            Jadda &copy; {new Date().getFullYear()} — Mohon doanya 🙏🏽
+          </p>
+        </motion.div>
+      </div>
+    </div>
+  );
+}

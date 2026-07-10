@@ -1,0 +1,455 @@
+{
+  "title": "Rihlah Al-Qur'an",
+  "subtitle": "رحلة القرآن العظيم",
+  "meaning": "Rihlah (رحلة) berarti perjalanan, pengembaraan, atau ekspedisi — menggambarkan perjalanan agung Al-Qur'an melintasi ruang dan waktu.",
+  "description": "Perjalanan agung Al-Qur'an dari wahyu pertama di Gua Hira hingga tersebar ke seluruh penjuru dunia — mencakup sejarah penulisan, kompilasi, harakat, simbol artistik, angka, kaligrafi, percetakan, dan pelestariannya sepanjang 14 abad",
+  "source": "Kitab Rihlah Al-Qur'an Al-'Azhim (رحلة القرآن العظيم) karya Dr. Abdurrahman Al-Syihri, diterjemahkan dari bahasa Arab",
+  "note": "Buku ini mengisahkan perjalanan fisik dan spiritual Al-Qur'an — bukan tafsir, melainkan sejarah bagaimana firman Allah dijaga, ditulis, dihias, dan disebarkan oleh umat Islam dari generasi ke generasi",
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Tanah Turunnya Wahyu",
+      "icon": "earth",
+      "sections": [
+        {
+          "id": "1-1",
+          "title": "Geografi Mekah dan Gua Hira",
+          "type": "text",
+          "content": "Semenanjung Arab merupakan semenanjung terbesar di dunia, dikelilingi air dari tiga sisinya. Para cendekiawan Islam membaginya menjadi lima bagian: Hijaz, Yaman, Najd, Bahrain, dan Yamamah. Hijaz membentang dari Ailah (Aqabah) hingga Yaman — disebut \"Hijaz\" karena merupakan rangkaian pegunungan yang memisahkan Tihamah (dataran rendah sepanjang Laut Merah) dari Najd. Di jantung Hijaz inilah terletak Mekah Al-Mukarramah, kota yang dikelilingi pegunungan tandus tetapi dipilih Allah sebagai tempat turunnya wahyu terakhir."
+        },
+        {
+          "id": "1-2",
+          "title": "Gua Hira — Tempat Wahyu Pertama",
+          "type": "text",
+          "content": "Di puncak Jabal Nur (Gunung Cahaya), sekitar 3 km dari Mekah, terdapat Gua Hira — sebuah celah kecil di antara bebatuan yang menghadap ke Ka'bah. Di sinilah Nabi Muhammad ﷺ sering berkhalwat (menyendiri) merenungi alam dan menyembah Allah menurut ajaran Nabi Ibrahim. Pada malam 17 Ramadhan tahun 610 M (bertepatan dengan 13 tahun sebelum Hijrah), Malaikat Jibril datang membawa wahyu pertama."
+        },
+        {
+          "id": "1-3",
+          "title": "Ayat Pertama yang Diturunkan",
+          "type": "dalil",
+          "content": "Lima ayat pertama Surah Al-'Alaq menjadi wahyu pembuka risalah kenabian. Ayat-ayat ini menekankan pentingnya membaca, ilmu pengetahuan, dan bahwa Allah adalah sumber segala pengetahuan.",
+          "dalil": {
+            "text": "Bacalah dengan (menyebut) nama Tuhanmu yang Menciptakan. Dia telah menciptakan manusia dari segumpal darah. Bacalah, dan Tuhanmulah Yang Maha Pemurah. Yang mengajar (manusia) dengan perantaraan kalam. Dia mengajarkan kepada manusia apa yang tidak diketahuinya.",
+            "source": "QS. Al-'Alaq (96): 1-5"
+          }
+        },
+        {
+          "id": "1-4",
+          "title": "Keadaan Ummi Nabi Muhammad ﷺ",
+          "type": "info-box",
+          "content": "Nabi Muhammad ﷺ tidak bisa membaca dan menulis (ummi). Ini adalah hikmah Ilahi — agar tidak ada keraguan bahwa Al-Qur'an adalah wahyu murni dari Allah, bukan karangan beliau. Seandainya beliau bisa membaca dan menulis, orang-orang kafir akan menuduh beliau menyalin dari kitab-kitab terdahulu.",
+          "infoType": "info",
+          "dalil": {
+            "text": "Dan kamu tidak pernah membaca sebelumnya (Al-Qur'an) sesuatu kitab pun dan kamu tidak (pernah) menulis suatu kitab dengan tangan kananmu; andaikata (kamu pernah membaca dan menulis), benar-benar ragulah orang yang mengingkari(mu).",
+            "source": "QS. Al-'Ankabut (29): 48"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Tulisan Arab Awal",
+      "icon": "create",
+      "sections": [
+        {
+          "id": "2-1",
+          "title": "Asal-Usul Tulisan Arab dari Nabatea",
+          "type": "text",
+          "content": "Tulisan Arab yang digunakan untuk menulis Al-Qur'an berasal dari tulisan Nabatea (Nabathiyah). Bangsa Nabatea adalah bangsa Arab kuno yang mendirikan kerajaan di wilayah Syam selatan dan Yordania utara, dengan ibu kota di Petra. Tulisan mereka berkembang dari tulisan Aram dan Fenisia. Melalui jalur perdagangan musim dingin dan musim panas (rihlat asy-syita' wa ash-shayf) yang menghubungkan Mekah dengan Syam dan Yaman, tulisan Nabatea menyebar ke Hijaz dan perlahan-lahan berkembang menjadi tulisan Arab awal."
+        },
+        {
+          "id": "2-2",
+          "title": "Prasasti-Prasasti Arab Tertua",
+          "type": "info-box",
+          "content": "Prasasti Fihr bin Salim (abad ke-4 M) dan prasasti Jadhimah Al-Abrasy (abad ke-3 M) merupakan bukti perkembangan awal tulisan Arab. Prasasti-prasasti ini ditemukan di wilayah Syam dan menunjukkan transisi dari aksara Nabatea ke aksara Arab. Tulisan Arab awal memiliki dua bentuk utama: tulisan kaku (hijazi/kufi) untuk keperluan resmi dan mushaf, serta tulisan lembut (kursif) untuk keperluan sehari-hari dan surat-menyurat.",
+          "infoType": "info"
+        },
+        {
+          "id": "2-3",
+          "title": "Penyebaran Tulisan ke Mekah dan Hijaz",
+          "type": "text",
+          "content": "Kafilah dagang Quraisy yang berangkat ke Syam pada musim panas dan ke Yaman pada musim dingin membawa pulang tidak hanya barang dagangan tetapi juga kebudayaan, termasuk sistem penulisan. Beberapa penduduk Mekah belajar menulis dari penduduk Hirah (Irak) dan Syam. Menjelang masa kenabian, tradisi tulis-menulis mulai dikenal di Mekah meskipun masih terbatas pada kalangan tertentu. Bisyr bin Abdul Malik belajar menulis dari penduduk Hirah, lalu mengajarkannya kepada Harb bin Umayyah. Dari sinilah tradisi penulisan Arab di Hijaz mulai berkembang."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Penulisan Wahyu di Masa Nabi ﷺ",
+      "icon": "book",
+      "sections": [
+        {
+          "id": "3-1",
+          "title": "Para Penulis Wahyu",
+          "type": "text",
+          "content": "Nabi Muhammad ﷺ menerima Al-Qur'an secara lisan dari Malaikat Jibril dan sangat peduli untuk menghafal serta mendokumentasikannya. Beliau mengangkat para penulis wahyu (kuttab al-wahy) yang bertugas mencatat setiap ayat yang turun. Jumlah mereka mencapai 43 orang, namun yang paling banyak dan paling khusus menulis adalah Mu'awiyah bin Abi Sufyan dan Zaid bin Tsabit Al-Anshari. Di antara penulis wahyu lainnya adalah Ali bin Abi Thalib, Ubay bin Ka'ab, Abdullah bin Mas'ud, dan Utsman bin Affan."
+        },
+        {
+          "id": "3-2",
+          "title": "Metode Penulisan Wahyu",
+          "type": "text",
+          "content": "Zaid bin Tsabit meriwayatkan: \"Aku menulis wahyu di hadapan Rasulullah ﷺ dan beliau mendiktekannya kepadaku. Ketika aku selesai, beliau berkata: 'Bacalah.' Maka aku membacakannya, dan jika ada kesalahan, beliau membetulkannya.\" Proses ini menunjukkan ketelitian luar biasa dalam pencatatan wahyu — setiap kata diperiksa dua kali: saat menulis dan saat membacakan kembali. Ini menjadi fondasi tradisi isnad dan verifikasi dalam ilmu Al-Qur'an."
+        },
+        {
+          "id": "3-3",
+          "title": "Bahan-Bahan Penulisan",
+          "type": "info-box",
+          "content": "Al-Qur'an pertama kali ditulis dengan tinta pada berbagai bahan yang tersedia saat itu: tulang (al-'izham), batu (al-likhaf), pelepah kurma (al-'usub), kulit binatang (al-adim), perkamen (ar-raqq), dan papirus. Tidak ada kertas di Hijaz pada masa itu. Setelah ditulis, naskah-naskah disimpan di rumah Rasulullah ﷺ, sementara para penulis juga membuat salinan untuk diri mereka sendiri. Dengan demikian, hafalan dan tulisan bekerja sama menjaga Al-Qur'an — sesuai firman Allah: \"Sesungguhnya Kami-lah yang menurunkan Al-Qur'an, dan sesungguhnya Kami benar-benar memeliharanya.\"",
+          "infoType": "tip",
+          "dalil": {
+            "text": "Sesungguhnya Kami-lah yang menurunkan Al-Qur'an, dan sesungguhnya Kami benar-benar memeliharanya.",
+            "source": "QS. Al-Hijr (15): 9"
+          }
+        },
+        {
+          "id": "3-4",
+          "title": "Pengaturan Ayat dan Surah",
+          "type": "text",
+          "content": "Nabi ﷺ mengatur urutan ayat dan surah Al-Qur'an sesuai petunjuk wahyu. Utsman bin Abi Al-'Ash meriwayatkan: \"Aku sedang duduk bersama Rasulullah ﷺ ketika beliau memandang ke atas... lalu berkata: 'Jibril telah datang kepadaku dan memerintahkanku untuk meletakkan ayat ini di tempat ini dalam surat ini: \"Sesungguhnya Allah menyuruh (kamu) berlaku adil dan berbuat kebajikan...\" sampai akhir ayat.'\" Meskipun demikian, Al-Qur'an belum dikumpulkan dalam satu mushaf utuh pada masa Nabi, karena wahyu masih terus turun hingga wafatnya."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Kompilasi di Masa Abu Bakar",
+      "icon": "layers",
+      "sections": [
+        {
+          "id": "4-1",
+          "title": "Perang Yamamah dan Gugurnya Para Huffazh",
+          "type": "text",
+          "content": "Setelah wafatnya Nabi ﷺ, Kekhalifahan Abu Bakar Ash-Shiddiq menghadapi Perang Riddah (perang melawan kemurtadan). Dalam Perang Yamamah, 70 orang penghafal Al-Qur'an (huffazh) gugur sebagai syuhada. Ini menimbulkan kekhawatiran besar di kalangan sahabat — jika para penghafal terus gugur, dikhawatirkan sebagian Al-Qur'an akan hilang."
+        },
+        {
+          "id": "4-2",
+          "title": "Usulan Umar dan Keputusan Abu Bakar",
+          "type": "text",
+          "content": "Sayyidina Umar bin Khattab mengusulkan kepada Khalifah Abu Bakar untuk mengumpulkan Al-Qur'an dalam satu mushaf. Awalnya Abu Bakar ragu — bagaimana mungkin ia melakukan sesuatu yang tidak dilakukan Nabi? Namun Umar terus meyakinkannya hingga Allah melapangkan dada Abu Bakar. Tugas berat ini dipercayakan kepada Zaid bin Tsabit, juru tulis wahyu senior yang menyaksikan penyampaian terakhir Al-Qur'an (al-'ardhah al-akhirah) di akhir kehidupan Nabi.",
+          "dalil": {
+            "text": "Zaid berkata: \"Aku diperintahkan untuk mengumpulkan Al-Qur'an. Maka aku mengumpulkannya dari pelepah kurma, tulang-tulang, dan dari hafalan para penghafal.\"",
+            "source": "HR. Bukhari"
+          }
+        },
+        {
+          "id": "4-3",
+          "title": "Mushaf Pertama yang Terikat",
+          "type": "text",
+          "content": "Zaid bekerja dengan sangat teliti — ia tidak menerima satu ayat pun kecuali disaksikan oleh dua orang saksi yang melihat langsung penulisannya di hadapan Nabi. Setelah selesai, Zaid menyalin mushaf pada lembaran-lembaran kulit (suhuf) lalu mengikatnya dengan benang. Inilah asal-usul penggunaan kata \"mushaf\" — Abu Bakar menamakannya demikian. Mushaf ini disimpan oleh Khalifah Abu Bakar, kemudian diwariskan kepada Umar bin Khattab, lalu kepada Ummul Mukminin Hafshah binti Umar. Lembaran-lembaran suci ini menjadi dasar bagi kodifikasi Al-Qur'an di masa Utsman."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Kodifikasi Mushaf Utsmani",
+      "icon": "git-branch",
+      "sections": [
+        {
+          "id": "5-1",
+          "title": "Penyebab Standarisasi Mushaf",
+          "type": "text",
+          "content": "Pada masa Khalifah Utsman bin Affan, wilayah Islam meluas hingga ke Armenia, Azerbaijan, Persia, dan Afrika Utara. Para tentara Muslim dari berbagai daerah berkumpul dalam ekspedisi militer. Hudzaifah bin Al-Yaman menyaksikan perbedaan serius dalam bacaan Al-Qur'an di antara tentara — sebagian membaca dengan dialek Quraisy, sebagian dengan dialek lain. Ia melaporkan kepada Utsman: \"Selamatkanlah umat ini sebelum mereka berselisih tentang Kitab Allah seperti perselisihan Yahudi dan Nasrani.\""
+        },
+        {
+          "id": "5-2",
+          "title": "Panitia Empat dan Proses Kodifikasi",
+          "type": "text",
+          "content": "Khalifah Utsman membentuk panitia empat orang: Zaid bin Tsabit (ketua), Abdullah bin Zubair, Sa'id bin Al-'Ash, dan Abdurrahman bin Al-Harits bin Hisyam. Panitia ini bekerja berdasarkan mushaf Hafshah (kompilasi Abu Bakar) sebagai sumber utama. Prinsip kerja mereka: jika ada perbedaan dialek dalam penulisan, mereka menuliskannya dalam dialek Quraisy — karena Al-Qur'an diturunkan dalam bahasa Quraisy."
+        },
+        {
+          "id": "5-3",
+          "title": "Pengiriman Mushaf ke Berbagai Wilayah",
+          "type": "info-box",
+          "content": "Setelah bekerja keras selama satu tahun, panitia menghasilkan mushaf standar yang disebut \"Al-Mushaf Al-Imam\". Utsman memerintahkan pembuatan 4-7 salinan dan mengirimkannya ke pusat-pusat Islam: Mekah, Madinah, Kufah, Bashrah, Syam (Damaskus), dan menyimpan satu mushaf untuk dirinya sendiri. Bersamaan dengan pengiriman mushaf, Utsman juga mengirim seorang qari (pembaca Al-Qur'an) ke setiap wilayah untuk mengajarkan bacaan yang benar. Semua mushaf lain yang berbeda dengan standar ini diperintahkan untuk dimusnahkan, sehingga umat Islam bersatu pada satu mushaf.",
+          "infoType": "warning"
+        },
+        {
+          "id": "5-4",
+          "title": "Keistimewaan Rasm Utsmani",
+          "type": "text",
+          "content": "Mushaf Utsmani memiliki kaidah penulisan (rasm) khusus yang berbeda dari kaidah tulisan Arab biasa — dikenal sebagai 'Rasm Utsmani'. Keistimewaan ini mencakup: penambahan huruf alif pada kata-kata tertentu (seperti 'la-adzbahannahu'), penghapusan alif pada kata lain (seperti 'al-'alamin'), penulisan huruf ta' dengan ta' mabsuthah padahal dibaca ta' marbuthah (seperti 'ni'mat'), dan berbagai pola yang mencerminkan dialek Quraisy serta pengaruh tulisan Nabatea. Rasm Utsmani bukan sekadar aturan ortografi, tetapi memiliki dimensi ilahiyah — para ulama menyebutnya sebagai 'tauqifi' (berdasarkan petunjuk Nabi)."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Harakat & Tanda Baca Al-Qur'an",
+      "icon": "code-slash",
+      "sections": [
+        {
+          "id": "6-1",
+          "title": "Masalah yang Muncul dari Ekspansi Islam",
+          "type": "text",
+          "content": "Ketika ribuan non-Arab (al-a'ajim) dari Persia, Romawi, dan Afrika masuk Islam, mereka tidak terbiasa dengan pengucapan Arab. Kesalahan pelafalan mulai menyebar. Dikatakan bahwa surat Utsman kepada gubernur Mesir tertulis 'faqbaluhu' (terimalah dia) namun dibaca 'faqtuluhu' (bunuhlah dia) — dan terjadilah fitnah serta pemberontakan terhadap Utsman. Masalah menjadi semakin serius ketika kesalahan membaca menyebar di kalangan masyarakat Muslim non-Arab."
+        },
+        {
+          "id": "6-2",
+          "title": "Abu Al-Aswad Ad-Du'ali — Pionir Tanda Baca",
+          "type": "text",
+          "content": "Abu Al-Aswad Ad-Du'ali (wafat 69 H), seorang tabi'in dari Bashrah, adalah orang pertama yang merancang sistem tanda baca (i'rab) untuk Al-Qur'an. Atas perintah Ziyad bin Abihi, gubernur Bashrah, ia menciptakan metode tanda baca dengan tinta merah. Sistemnya sederhana: titik merah di atas huruf untuk fathah, di bawah huruf untuk kasrah, di depan huruf (atau di kiri) untuk dhammah, dan dua titik untuk tanwin. Sistem ini kemudian digunakan dan dikembangkan selama hampir empat abad."
+        },
+        {
+          "id": "6-3",
+          "title": "Nasr bin Ashim — Titik Huruf",
+          "type": "text",
+          "content": "Setelah masalah i'rab diselesaikan, masih ada kesulitan membedakan huruf-huruf yang mirip bentuknya (ba, ta, tsa, jim, ha, kha, dan seterusnya). Nasr bin Ashim (wafat 89 H), atas perintah Khalifah Abdul Malik bin Marwan dan Al-Hajjaj bin Yusuf Ats-Tsaqafi, menciptakan sistem titik pembeda huruf menggunakan garis-garis miring kecil — agar tidak tertukar dengan titik harakat Abu Al-Aswad. Inilah cikal bakal titik-titik pada huruf yang kita kenal sekarang."
+        },
+        {
+          "id": "6-4",
+          "title": "Titik-Titik Berwarna",
+          "type": "info-box",
+          "content": "Setelah Abu Al-Aswad dan Nasr bin Ashim, para ulama mengembangkan sistem titik berwarna yang lebih lengkap untuk menunjukkan berbagai fungsi bacaan: titik kuning untuk hamzah qath', titik hijau untuk hamzah washl, titik oranye untuk tasydid, dan titik biru untuk madd. Sistem warna-warni ini digunakan di seluruh dunia Islam selama empat abad, meskipun terdapat perbedaan antara Timur (Irak, Syam) dan Barat (Maghrib, Andalusia) dalam penempatan titik pada huruf fa (satu titik di bawah) dan qaf (satu titik di atas).",
+          "infoType": "tip"
+        },
+        {
+          "id": "6-5",
+          "title": "Al-Khalil bin Ahmad Al-Farahidi — Revolusi Tanda Baca",
+          "type": "text",
+          "content": "Pada abad kedua Hijriah, Al-Khalil bin Ahmad Al-Farahidi (wafat 170 H), ahli bahasa dan guru Sibawaih, menciptakan sistem baru yang revolusioner. Alih-alih menggunakan berbagai warna titik, ia merancang simbol-simbol sederhana: alif kecil mendatar di atas huruf untuk fathah, alif kecil di bawah untuk kasrah, wau kecil untuk dhammah, kepala huruf ha' untuk sukun, kepala huruf syin untuk tasydid, huruf 'ain untuk hamzah qath', huruf shad untuk hamzah washl, dan huruf mim untuk madd. Inilah asal-usul harakat yang kita gunakan hingga saat ini. Meskipun demikian, beberapa penulis tetap menggunakan metode titik berwarna lama hingga akhir abad kelima Hijriah."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Simbol Artistik & Pembagian Al-Qur'an",
+      "icon": "shapes",
+      "sections": [
+        {
+          "id": "7-1",
+          "title": "Pembagian Juz, Hizb, dan Rubu'",
+          "type": "text",
+          "content": "Al-Hajjaj bin Yusuf Ats-Tsaqafi (wafat 95 H) mengumpulkan para fuqaha, qari, dan huffazh. Mereka bekerja siang malam selama empat bulan untuk menghitung, menyamakan bagian-bagian, dan membagi Al-Qur'an menjadi satuan-satuan yang memudahkan hafalan dan bacaan rutin. Hasilnya: Al-Qur'an dibagi menjadi 30 juz, 60 hizb, 240 rubu' (seperempat juz), dan 480 'usyr (sepersepuluh juz). Jumlah ayat dihitung sebanyak 6.236 ayat (menurut hitungan Kufah), jumlah kata 77.439, dan jumlah huruf 323.015."
+        },
+        {
+          "id": "7-2",
+          "title": "Pembagian Tujuh Hizb Mingguan",
+          "type": "text",
+          "content": "Pembagian Al-Qur'an untuk bacaan mingguan telah ada sejak masa sahabat. Aus bin Hudzaifah bertanya kepada para sahabat: \"Bagaimana kalian membagi Al-Qur'an?\" Mereka menjawab: \"Tiga, lima, tujuh, sembilan, sebelas, dan hizb mufashshal dari surah Qaf hingga selesai.\" Saidina Utsman membaca seluruh Al-Qur'an setiap minggu: malam Jumat (Al-Baqarah sampai Al-Ma'idah), malam Sabtu (Al-An'am sampai Hud), malam Minggu (Yusuf sampai Maryam), malam Senin (Thaha sampai Thasim), malam Selasa (Al-Ankabut sampai Shad), malam Rabu (Az-Zumar sampai Ar-Rahman), dan malam Kamis (sisa surah).",
+          "dalil": {
+            "text": "Diriwayatkan dari Aus bin Hudzaifah bahwa ia bertanya kepada para sahabat Rasulullah ﷺ: \"Bagaimana kalian membagi Al-Qur'an?\" Mereka menjawab: \"Tiga, lima, tujuh, sembilan, sebelas, dan hizb mufashshal dari surat Qaf hingga selesai.\"",
+            "source": "HR. Ahmad, Abu Dawud, Ibnu Majah"
+          }
+        },
+        {
+          "id": "7-3",
+          "title": "Takhmis dan Ta'syir — Penanda Ayat",
+          "type": "text",
+          "content": "Umat Islam awal menciptakan simbol-simbol untuk memudahkan pembacaan: huruf 'ha' (ﻫ) di dalam lingkaran pada akhir setiap 5 ayat — disebut 'takhmis', dan huruf 'ya' (ي) pada setiap 10 ayat — disebut 'ta'syir'. Sistem hisab jumal (abjad) digunakan: alif=1, ba=2, jim=3, dan seterusnya. Huruf 'ya' (=10) untuk sepuluh, 'kaf' (=20) untuk dua puluh, 'lam' (=30) untuk tiga puluh, hingga akhirnya berkembang menjadi angka-angka yang kita kenal. Huruf 'ha' berwarna emas ditempatkan pada setiap ayat yang mengandung perintah sujud."
+        },
+        {
+          "id": "7-4",
+          "title": "Angka Arab — dari India ke Dunia Islam",
+          "type": "text",
+          "content": "Angka yang kita gunakan saat ini (1, 2, 3...) berasal dari India, dikenal sebagai 'al-arqam al-hindiyah'. Kaum Muslimin mengadaptasi dan mengembangkannya melalui karya Al-Khawarizmi (wafat 232 H) yang menulis kitab 'Al-Jami' wa At-Tafriq bi Hisab Al-Hind'. Sementara itu, muncul juga sistem 'ghubariyah' (dari kata 'ghubar' — debu, karena ditulis di atas papan debu) yang menjadi cikal bakal angka Arab yang digunakan di Barat (1, 2, 3...). Kedua sistem ini berkembang berdampingan dan memperkaya khazanah penomoran mushaf."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Hiasan & Tajwid dalam Mushaf",
+      "icon": "color-palette",
+      "sections": [
+        {
+          "id": "8-1",
+          "title": "Simbol Waqaf dan Tajwid",
+          "type": "text",
+          "content": "Para ulama menciptakan simbol-simbol khusus untuk menunjukkan cara berhenti (waqaf) dan melanjutkan bacaan: huruf 'mim' (ﻣ ) untuk waqaf lazim (wajib berhenti), 'tha' (ﻃ ) untuk waqaf baik, 'jim' (ﺝ ) untuk waqaf jaiz (boleh berhenti atau lanjut), 'shad' (ﺹ ) untuk waqaf dimana melanjutkan lebih utama, 'qaf' (ﻕ ) untuk waqaf yang diperselisihkan, dan tiga titik bertumpuk untuk waqaf mu'anaqah (berhenti di salah satu tanda, tidak di keduanya)."
+        },
+        {
+          "id": "8-2",
+          "title": "Simbol Khusus: Imalah, Isymam, dan Tashil",
+          "type": "info-box",
+          "content": "Mushaf-mushaf kuno memiliki simbol-simbol untuk cara membaca khusus: titik biru (lazuardi) di bawah huruf ra untuk imalah (kecenderungan fathah ke kasrah); tanda kotak di atas akhir huruf mim sebelum nun bertasydid untuk isymam (membulatkan bibir sebagai isyarat dhammah); dan titik bulat di atas hamzah kedua untuk tashil (membaca antara hamzah dan alif), seperti pada 'a'ajamiyyun wa 'arabiyyun' (QS. Fushshilat: 44). Huruf 'sin' (ﺱ ) kecil juga digunakan untuk saktah — berhenti ringan tanpa bernafas di lima tempat khusus dalam Al-Qur'an.",
+          "infoType": "tip"
+        },
+        {
+          "id": "8-3",
+          "title": "Hiasan Judul Surah dan Pemisah Ayat",
+          "type": "text",
+          "content": "Pada awalnya, mushaf hanya berisi huruf-huruf tanpa hiasan. Para sahabat ragu untuk menambahkan apapun pada Al-Qur'an. Namun perlahan-lahan, para penyalin mulai menulis judul surah dengan emas atau warna berbeda serta menggunakan tulisan berhias dedaunan — untuk membedakannya dari isi Al-Qur'an. Pemisah akhir ayat berkembang dari titik-titik menjadi lingkaran, lalu lingkaran-lingkaran berbentuk segitiga, hingga akhirnya menjadi lingkaran hias (syamsah) dengan huruf di dalamnya yang menunjukkan angka. Tradisi ini mencapai puncak keindahan pada masa Abbasiyah, Mamluk, dan Utsmaniyah."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Perkembangan Kaligrafi Mushaf",
+      "icon": "brush",
+      "sections": [
+        {
+          "id": "9-1",
+          "title": "Dari Khat Kufi ke Khat Lembut",
+          "type": "text",
+          "content": "Mushaf-mushaf awal ditulis dengan khat Kufi yang kaku dan tegas — dinamakan demikian karena berasal dari Kufah, Irak. Khat ini mendominasi penulisan Al-Qur'an selama lebih dari 400 tahun. Namun pada masa Umayyah, Damaskus sebagai ibu kota mendorong khat Kufi ke arah kemajuan dan perbaikan, melahirkan khat Syam yang lebih indah. Pada abad ketiga Hijriah, dengan kemunculan kertas sebagai pengganti perkamen, tulisan Al-Qur'an secara bertahap berubah menjadi lebih lembut dan meninggalkan khat Kufi yang kaku."
+        },
+        {
+          "id": "9-2",
+          "title": "Ibnu Muqlah — Arsitek Proporsi Huruf",
+          "type": "text",
+          "content": "Muhammad bin Muqlah (272-328 H), wazir untuk tiga khalifah Abbasiyah, adalah jenius pertama yang mengkodifikasi kaidah-kaidah proporsi huruf Arab. Ia merumuskan sistem 'al-khatt al-mansub' (tulisan proporsional) di mana setiap huruf memiliki ukuran yang diukur dengan titik-titik belah ketupat dari ujung pena — misalnya, alif harus setinggi 7 titik. Sistem ini menjadi fondasi bagi enam gaya kaligrafi utama (al-aqlam as-sittah): Tsuluts, Naskh, Muhaqqaq, Raihan, Tauqi', dan Riqa'. Ibnu Muqlah menulis mushaf agung dua kali, namun sejarah belum mengungkapkan nasibnya."
+        },
+        {
+          "id": "9-3",
+          "title": "Ibnu Al-Bawwab — Penyempurna Khat Lembut",
+          "type": "text",
+          "content": "Ali bin Hilal, dikenal sebagai Ibnu Al-Bawwab (wafat 423 H), adalah kaligrafer jenius yang menyempurnakan karya Ibnu Muqlah. Satu-satunya mushafnya yang masih utuh sepenuhnya disimpan di Perpustakaan Chester Beatty, Dublin, Irlandia (No. 1431). Mushaf ini ditulis pada tahun 391 H di Baghdad dengan khat Raihan yang murni dan mengalir. Ibnu Al-Bawwab menguasai semua gaya kaligrafi, menghias mushafnya dengan ornamen geometris dan tumbuhan yang indah, serta menciptakan standar keindahan yang belum tertandingi pada zamannya. Di akhir mushaf, ia menulis: '...memohon ampunan atas dosa-dosanya.'"
+        },
+        {
+          "id": "9-4",
+          "title": "Yaqut Al-Musta'shimi — Revolusi Pena Miring",
+          "type": "text",
+          "content": "Jamaluddin Yaqut bin Abdullah Al-Musta'shimi (wafat 685 H) adalah kaligrafer terbesar mazhab Baghdad. Ia hidup di masa kejatuhan Baghdad ke tangan Mongol — khalifahnya, Al-Musta'shim Billah, dibunuh oleh Hulagu pada 656 H, namun Yaqut selamat dan kemudian menjadi pustakawan di perpustakaan Al-Mustansiriyah. Inovasi terbesarnya adalah penggunaan pena miring (al-qalam al-mahrur) yang menghasilkan garis halus di bagian vertikal dan ketebalan sempurna di horizontal — menciptakan revolusi dalam dunia kaligrafi. Dikatakan ia menulis seribu mushaf Al-Qur'an sepanjang hidupnya, dan mushaf-mushafnya sering dikirim sebagai hadiah kepada para raja. Ia menjadi 'kiblat para penulis' (qiblat al-khattatin) yang diikuti oleh generasi-generasi berikutnya."
+        },
+        {
+          "id": "9-5",
+          "title": "Enam Gaya Kaligrafi Utama",
+          "type": "info-box",
+          "content": "Enam gaya kaligrafi (al-aqlam as-sittah) yang disempurnakan oleh Ibnu Muqlah dan mencapai puncaknya di tangan Yaqut: (1) Tsuluts — gaya monumental untuk judul dan dekorasi, (2) Naskh — gaya utama untuk mushaf karena mudah dibaca, (3) Muhaqqaq — gaya agung dengan huruf besar dan kokoh, (4) Raihan — gaya lembut dan mengalir, (5) Tauqi' — untuk dokumen resmi, (6) Riqa' — untuk keperluan cepat dan catatan. Dari keenam gaya inilah seluruh perkembangan kaligrafi Arab dan penulisan mushaf berakar.",
+          "infoType": "info"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Quran di Andalusia & Maghrib",
+      "icon": "compass",
+      "sections": [
+        {
+          "id": "10-1",
+          "title": "Karakteristik Mushaf Maghribi-Andalusia",
+          "type": "text",
+          "content": "Mushaf-mushaf dari kawasan Maghrib (Maroko, Aljazair, Tunisia) dan Andalusia (Spanyol Muslim) memiliki karakteristik yang sangat khas. Mereka menggunakan perkamen sebagai bahan utama, dengan khat Mabsuth (kursif Maghribi) yang berbeda dari khat Timur. Dalam hal penempatan titik, penduduk Barat mengambil kaidah lama: titik di bawah untuk huruf fa, titik di atas untuk qaf. Mereka meninggalkan huruf qaf dan nun tanpa titik dalam keadaan tunggal dan di akhir kata karena keduanya tidak akan tertukar. Tradisi Utsmani dipertahankan dengan sangat ketat — mushaf-mushaf Maghribi dikenal paling setia kepada rasm Utsmani."
+        },
+        {
+          "id": "10-2",
+          "title": "Sistem Warna Andalusia",
+          "type": "text",
+          "content": "Penulis mushaf di Andalusia menggunakan sistem warna yang khas untuk tanda baca: titik kuning untuk hamzah qath', titik hijau untuk hamzah washl, merah untuk harakat, dan biru untuk madd. Meskipun berbeda dari sistem Timur (Irak dan Syam), sistem Maghribi memiliki keindahan dan ketelitian tersendiri. Perpustakaan-perpustakaan di Fes, Kairouan, Granada, dan Cordoba menyimpan mushaf-mushaf indah yang menjadi saksi peradaban Islam di Barat."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Revolusi Kertas & Perkembangan Mushaf",
+      "icon": "document-text",
+      "sections": [
+        {
+          "id": "11-1",
+          "title": "Dari Perkamen ke Kertas",
+          "type": "text",
+          "content": "Selama berabad-abad, Al-Qur'an ditulis di atas perkamen (kulit binatang yang diolah). Bangsa Arab mengenal kertas sejak lama tetapi tidak menyebar hingga mereka memproduksinya sendiri. Titik balik terjadi setelah penaklukan Samarkand pada tahun 133 H — kaum Muslimin membawa pulang pekerja Cina yang mahir membuat kertas. Pabrik kertas pertama didirikan di Samarkand, kemudian menyebar ke Baghdad (didirikan oleh Al-Fadhl bin Yahya Al-Barmaki, wazir Harun Ar-Rasyid), Syam, Palestina, dan akhirnya ke Maghrib, Sisilia, Andalusia, dan Eropa. Philip Hanna berkata: 'Salah satu jasa terbesar yang diberikan Islam kepada Eropa adalah industri kertas; tanpanya, mesin cetak tidak akan pernah ditemukan.'"
+        },
+        {
+          "id": "11-2",
+          "title": "Era Keemasan Mushaf Abbasiyah",
+          "type": "text",
+          "content": "Kemunculan kertas menyebabkan revolusi budaya pada masa Abbasiyah. Mushaf yang mulia mendapatkan bagian terbesar dari revolusi ini — ia adalah kitab yang tidak ada kitab lain yang mengungguli. Mushaf tersebar ke seluruh penjuru dunia dengan sangat mengagumkan. Para kaligrafer dan seniman menjadi aktif dalam penulisannya setelah meninggalkan kaligrafi kaku. Meskipun jumlah mushaf yang ditulis sangat besar pada periode ini, hanya sedikit yang sampai kepada kita — di antaranya Mushaf Ibnu Al-Bawwab yang menjadi harta karun tak ternilai."
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Pengajaran Al-Qur'an di Negeri Syam",
+      "icon": "school",
+      "sections": [
+        {
+          "id": "12-1",
+          "title": "Misi Pengajaran ke Syam",
+          "type": "text",
+          "content": "Orang-orang Arab di Syam masuk Islam setelah penaklukan dan sangat membutuhkan pengajar Al-Qur'an. Yazid bin Abi Sufyan, pemimpin pertama di Syam, menyadari kebutuhan ini dan menulis surat kepada Khalifah Umar bin Khattab memintanya untuk mengutus sahabat penghafal Al-Qur'an dari Madinah. Umar memanggil lima orang Anshar yang telah menghafal Al-Qur'an pada masa Nabi: Mu'adz bin Jabal, Ubadah bin Ash-Shamit, Ubay bin Ka'ab, Abu Ayyub, dan Abu Darda'. Akhirnya Mu'adz, Ubadah, dan Abu Darda' berangkat — Mu'adz ke Palestina, Ubadah ke Homs, dan Abu Darda' ke Damaskus."
+        },
+        {
+          "id": "12-2",
+          "title": "Tradisi Menghafal di Masa Umayyah",
+          "type": "text",
+          "content": "Abdul Malik bin Marwan adalah khalifah pertama yang memerintahkan penduduk Syam untuk membaca dan menghafal Al-Qur'an, diikuti oleh Al-Walid. Ia berkata kepada pengajar anaknya: 'Ajarkanlah mereka Al-Qur'an hingga mereka menghafalnya.' Pada masa Umar bin Abdul Aziz, perhatian terhadap Al-Qur'an semakin meningkat. Barangsiapa yang membaca dan menghafal Al-Qur'an, mereka dihargai dan diberi hadiah. Yang tidak membaca, mereka dijauhi dan ditahan hingga mau membaca. Para qari Syam membacakan Al-Qur'an dengan bacaan mutawatir — mereka meninjau bacaan dengan kerabat yang datang dari Madinah dan Mekah, menjaga sanad yang bersambung hingga Nabi ﷺ."
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Era Utsmaniyah & Khat Naskhi",
+      "icon": "pencil",
+      "sections": [
+        {
+          "id": "13-1",
+          "title": "Syekh Hamdullah Al-Amasi — Bapak Khat Naskhi",
+          "type": "text",
+          "content": "Kontribusi terbesar dalam perkembangan khat Naskhi mushaf berasal dari Syekh Hamdullah Al-Amasi (lahir 833 H/1429 M). Beliau mempelajari enam jenis khat dari Khairuddin Al-Mar'asyi dan mengkaji tulisan-tulisan Abdullah Al-Sairafi. Sultan Bayazid, putra Sultan Muhammad Al-Fatih, sangat menghormatinya — bahkan memegang tempat tinta untuknya saat menulis. Syekh Hamdullah menulis 47 mushaf sepanjang hidupnya, dan khat Naskhi mencapai kematangan artistik di tangannya. Kaidah-kaidah yang ia tetapkan tetap diwariskan dan dipatuhi oleh generasi-generasi berikutnya. Beliau wafat pada 926 H dan dimakamkan di Üsküdar, Istanbul."
+        },
+        {
+          "id": "13-2",
+          "title": "Hafiz Utsman — Puncak Khat Naskhi Mushaf",
+          "type": "text",
+          "content": "Kepemimpinan dalam kaligrafi mushaf berakhir pada Hafiz Utsman (wafat 1110 H/1698 M). Ia menguasai rahasia-rahasia kaligrafi dan mencapai keunggulan dalam kelancaran dan keseimbangan huruf, dengan baris-baris yang lurus dan blok-blok yang harmonis. Hafiz Utsman telah menulis 25 mushaf — tiga di antaranya telah dicetak dan menjadi standar mushaf cetak di dunia Islam. Mushaf-mushafnya menunjukkan keindahan khat Naskhi yang sempurna, dengan nama-nama surah ditulis dalam khat Ijazah dan hiasan yang sederhana namun elegan."
+        },
+        {
+          "id": "13-3",
+          "title": "Seni Hiasan Mushaf Utsmaniyah",
+          "type": "info-box",
+          "content": "Mazhab Utsmaniyah cenderung pada kesederhanaan dalam hiasan mushaf, sambil tetap menghargai pola-pola tradisional. Halaman pertama dihiasi dengan persegi panjang ornamental, nama surah dengan emas, dan tanda pemisah ayat berupa lingkaran dan bunga. Di tepi halaman terdapat misykat (lentera hias) dan tanda untuk juz, hizb, khums (seperlima), dan 'asyr (sepersepuluh). Mushaf-mushaf ini menunjukkan bahwa dalam kesederhanaan justru terletak keagungan — huruf-huruf menjadi murni dan kata-katanya jelas tanpa cacat.",
+          "infoType": "tip"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Seni Penjilidan & Mushaf Mewah",
+      "icon": "bookmarks",
+      "sections": [
+        {
+          "id": "14-1",
+          "title": "Lahirnya Seni Penjilidan dari Al-Qur'an",
+          "type": "text",
+          "content": "Sejak Al-Qur'an dikumpulkan pertama kali oleh Zaid bin Tsabit dan diikat dengan benang oleh Khalifah Abu Bakar, seni pembuatan kitab mulai berkembang. Awalnya, sampul mushaf terbuat dari kayu yang dilapisi kain dan sutra, tanpa hiasan. Namun para perajin segera menampilkan kreativitas mereka — menghiasi papan kayu dengan gading, tulang, batu mulia, dan akhirnya emas serta perak. Ibnu Nadim dalam 'Al-Fihrist' menyebutkan tujuh penjilid terkenal pada masa Abbasiyah. Sebelum abad keempat Hijriah berakhir, penjilidan Al-Qur'an telah mencapai tingkat kesempurnaan dan ketelitian yang luar biasa."
+        },
+        {
+          "id": "14-2",
+          "title": "Teknik 'Lak' dan Inovasi Material",
+          "type": "text",
+          "content": "Umat Islam pertama kali memperkenalkan bahan 'lak' (lacquer) dalam seni penjilidan — untuk melindungi gambar berwarna pada permukaan sampul dan memberikan kilau yang indah. Al-Maqdisi, penjilid mahir dan penulis 'Ahsan Al-Taqasim', pergi ke Yaman mengajarkan penduduknya keterampilan yang ia pelajari dari penduduk Syam — termasuk teknik 'lisan' (penutup lidah) yang revolusioner. Sampul mushaf dihiasi dengan ornamen geometris, floral, dan bintang dalam desain yang menakjubkan — menjadi karya seni yang melindungi firman Allah."
+        },
+        {
+          "id": "14-3",
+          "title": "Mushaf-Mushaf Bersejarah di Museum Dunia",
+          "type": "info-box",
+          "content": "Saat ini tersebar di berbagai museum dunia mushaf-mushaf bersejarah yang dinisbatkan kepada tokoh-tokoh penting. Di Perpustakaan Nur Utsmaniyah, Istanbul, terdapat mushaf yang dinisbatkan kepada Sayyidina Ali r.a. — ditulis dengan emas pada perkamen. Di Khazanah Imam Ridha, Masyhad, Iran, tersimpan mushaf tanpa titik dan harakat yang diwakafkan Shah Abbas Safawi pada 1008 H. Di Museum Topkapi, Istanbul, terdapat mushaf bertuliskan 'Ditulis oleh Ali bin Abi Thalib' — 147 lembar, tujuh baris per halaman, dengan harakat merah dan hijau. Di British Library, London, tersimpan halaman mushaf abad ketiga Hijriah dengan titik-titik Nasr bin Ashim. Keberadaan mushaf-mushaf ini membuktikan kesinambungan tradisi penulisan Al-Qur'an sepanjang sejarah Islam.",
+          "infoType": "info"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Percetakan & Penyebaran Modern",
+      "icon": "print",
+      "sections": [
+        {
+          "id": "15-1",
+          "title": "Dari Pena ke Mesin Cetak",
+          "type": "text",
+          "content": "Selama lebih dari 1200 tahun, Al-Qur'an hanya ditulis tangan. Setiap mushaf adalah karya seni unik yang memakan waktu berbulan-bulan atau bahkan bertahun-tahun. Mesin cetak pertama untuk Al-Qur'an muncul pada abad ke-11 Hijriah (abad ke-17 M) di Eropa, namun mendapat resistensi dari dunia Islam karena kekhawatiran akan kesalahan cetak. Mushaf cetak pertama yang diakui oleh dunia Islam dicetak di Hamburg, Jerman pada 1694 M oleh Abraham Hinckelmann. Namun titik balik sebenarnya terjadi pada abad ke-13 H/19 M ketika percetakan mushaf dimulai di Istanbul, Mesir, dan India."
+        },
+        {
+          "id": "15-2",
+          "title": "Mushaf Al-Madinah dan Mushaf Standar Mesir",
+          "type": "text",
+          "content": "Pada abad ke-20, dua mushaf cetak menjadi standar dunia Islam: Mushaf Al-Madinah An-Nabawiyyah yang dicetak oleh Mujamma' Al-Malik Fahd li Thiba'at Al-Mushaf Asy-Syarif di Madinah (berdasarkan riwayat Hafsh dari 'Ashim), dan Mushaf Al-Azhar Mesir (Mushaf Al-Masyariqah). Keduanya melalui proses tashhih (koreksi) yang sangat ketat oleh komite ulama sebelum dicetak — meneruskan tradisi verifikasi yang telah dimulai sejak Zaid bin Tsabit. Mushaf Al-Madinah telah dicetak dalam puluhan juta eksemplar dan didistribusikan ke seluruh dunia secara gratis."
+        },
+        {
+          "id": "15-3",
+          "title": "Al-Qur'an Digital dan Pelestarian Masa Depan",
+          "type": "text",
+          "content": "Di era digital, Al-Qur'an tersedia dalam berbagai bentuk: aplikasi mobile, website, e-book, dan software. Namun prinsip pelestariannya tetap sama: setiap salinan digital harus melalui verifikasi ulama. Teknologi baru — seperti blockchain untuk verifikasi mushaf dan AI untuk deteksi kesalahan cetak — mulai digunakan untuk memastikan keaslian teks. Meskipun bentuknya berubah, esensi penjagaan Al-Qur'an tetap sama seperti yang dijanjikan Allah: 'Sesungguhnya Kami-lah yang menurunkan Al-Qur'an, dan sesungguhnya Kami benar-benar memeliharanya.' (QS. Al-Hijr: 9)"
+        },
+        {
+          "id": "15-4",
+          "title": "Perjalanan yang Belum Berakhir",
+          "type": "info-box",
+          "content": "Dari Gua Hira di puncak Jabal Nur hingga layar smartphone di tangan miliaran manusia — inilah perjalanan Al-Qur'an yang agung. Perjalanan yang melibatkan para Nabi, sahabat, tabi'in, khalifah, ulama, kaligrafer, penghias, penjilid, pencetak, dan jutaan penghafal. Setiap generasi memberikan kontribusinya dalam menjaga, memperindah, dan menyebarkan firman Allah. Sejarah Al-Qur'an adalah sejarah umat Islam itu sendiri — sejarah iman, ilmu, seni, dan peradaban. Dan perjalanan ini belum berakhir. Setiap kali seorang Muslim membaca Al-Qur'an, menghafalnya, atau mengajarkannya — ia meneruskan mata rantai yang telah berjalan selama lebih dari 1400 tahun.",
+          "infoType": "info",
+          "dalil": {
+            "text": "Sesungguhnya Kami-lah yang menurunkan Al-Qur'an, dan sesungguhnya Kami benar-benar memeliharanya.",
+            "source": "QS. Al-Hijr (15): 9"
+          }
+        }
+      ]
+    }
+  ]
+}

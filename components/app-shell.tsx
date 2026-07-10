@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Home, BookOpen, Calculator, Info, Moon, Sun, Mail, Coins, ScrollText, MapPin, Clock, Landmark, MoreHorizontal, X, Compass } from 'lucide-react';
+import { Home, BookOpen, Calculator, Info, Moon, Sun, Mail, Coins, ScrollText, MapPin, Clock, Landmark, MoreHorizontal, X, Compass, Book } from 'lucide-react';
 import { useTheme } from 'next-themes';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -11,6 +11,8 @@ const APP_VERSION = '2.4';
 
 const navItems = [
   { href: '/', label: 'Beranda', icon: Home },
+  { href: '/quran', label: 'Quran', icon: Book },
+  { href: '/juz', label: 'Juz', icon: BookOpen },
   { href: '/sholat', label: 'Sholat', icon: Clock },
   { href: '/qibla', label: 'Kiblat', icon: Compass },
   { href: '/doa', label: 'Doa', icon: BookOpen },
@@ -25,17 +27,21 @@ const navItems = [
 
 const mobileMainNav = [
   { href: '/', label: 'Beranda', icon: Home },
+  { href: '/quran', label: 'Quran', icon: Book },
   { href: '/sholat', label: 'Sholat', icon: Clock },
-  { href: '/qibla', label: 'Kiblat', icon: Compass },
   { href: '/doa', label: 'Doa', icon: BookOpen },
 ];
 
 const mobileMoreNav = [
+  { href: '/juz', label: 'Juz', icon: BookOpen },
+  { href: '/qibla', label: 'Kiblat', icon: Compass },
   { href: '/hadits', label: 'Hadits', icon: ScrollText },
+  { href: '/sirah-alquran', label: 'Sirah Quran', icon: Book },
   { href: '/waris', label: 'Waris', icon: Calculator },
   { href: '/zakat', label: 'Zakat', icon: Coins },
   { href: '/umroh', label: 'Umrah', icon: MapPin },
   { href: '/haji', label: 'Haji', icon: Landmark },
+  { href: '/settings', label: 'Pengaturan', icon: Info },
   { href: '/tentang', label: 'Tentang', icon: Info },
 ];
 
