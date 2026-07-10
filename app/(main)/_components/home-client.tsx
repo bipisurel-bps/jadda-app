@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Star, ChevronRight, Compass, Heart, Users, PersonStanding, Book, BookOpen } from 'lucide-react';
+import { Star, ChevronRight, Compass, Heart, Users, PersonStanding, Book, BookOpen, Moon } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { dailyVerses } from '@/lib/quran-verses';
 import {
@@ -72,6 +72,14 @@ const mainFeatures = [
 
 /* ── Fitur Lainnya ── */
 const lainnyaFeatures = [
+  {
+    href: '/dzikir',
+    icon: Moon,
+    title: 'Dzikir Pagi & Petang',
+    desc: 'Bacaan dzikir dari Al-Quran & Sunnah yang shahih',
+    accent: 'teal',
+    isLucide: true,
+  },
   {
     href: '/zakat',
     icon: JaddaZakatIcon,
@@ -348,6 +356,33 @@ export default function HomeClient() {
           <motion.div variants={item}>
             <FeatureCard href={mainFeatures[5].href} icon={mainFeatures[5].icon} title={mainFeatures[5].title} desc={mainFeatures[5].desc} accent={mainFeatures[5].accent} />
           </motion.div>
+        </motion.div>
+
+        {/* ── Dzikir Banner ── */}
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.35 }}
+        >
+          <Link
+            href="/dzikir"
+            className="block w-full p-4 rounded-2xl bg-gradient-to-r from-amber-500/10 via-indigo-500/10 to-amber-500/5 border border-amber-500/15 hover:border-amber-500/25 transition-colors group"
+          >
+            <div className="flex items-center gap-4">
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-500 to-indigo-500 flex items-center justify-center flex-shrink-0 shadow-md group-hover:scale-105 transition-transform">
+                <Moon size={22} className="text-white" />
+              </div>
+              <div className="flex-1 min-w-0">
+                <h2 className="font-display font-bold text-sm text-white group-hover:text-white/90 transition-colors">
+                  Dzikir Pagi & Petang
+                </h2>
+                <p className="text-xs text-white/35 mt-0.5">
+                  Bacaan dzikir dari Al-Quran & Sunnah yang shahih
+                </p>
+              </div>
+              <ChevronRight size={18} className="text-white/20 group-hover:text-white/40 transition-colors" />
+            </div>
+          </Link>
         </motion.div>
 
         {/* ── Fitur Lainnya ── */}

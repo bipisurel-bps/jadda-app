@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Home, BookOpen, Calculator, Info, Moon, Sun, Mail, Coins, ScrollText, MapPin, Clock, Landmark, MoreHorizontal, X, Compass, Book } from 'lucide-react';
+import { Home, BookOpen, Calculator, Info, Moon, Sun, Mail, Coins, ScrollText, MapPin, Clock, Landmark, MoreHorizontal, X, Compass, Book, Star } from 'lucide-react';
 import { useTheme } from 'next-themes';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -21,6 +21,7 @@ const navItems = [
   { href: '/zakat', label: 'Zakat', icon: Coins },
   { href: '/umroh', label: 'Umrah', icon: MapPin },
   { href: '/haji', label: 'Haji', icon: Landmark },
+  { href: '/dzikir', label: 'Dzikir', icon: Moon },
   { href: '/keilmuan', label: 'Keilmuan', icon: BookOpen },
   { href: '/tentang', label: 'Tentang', icon: Info },
 ];
@@ -33,6 +34,7 @@ const mobileMainNav = [
 ];
 
 const mobileMoreNav = [
+  { href: '/dzikir', label: 'Dzikir', icon: Moon },
   { href: '/juz', label: 'Juz', icon: BookOpen },
   { href: '/qibla', label: 'Kiblat', icon: Compass },
   { href: '/hadits', label: 'Hadits', icon: ScrollText },
