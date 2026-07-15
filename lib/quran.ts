@@ -1,6 +1,25 @@
 // Quran data service — fetches from quran-json CDN (same as Android)
 const QURAN_JSON_URL = 'https://cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/quran_id.json';
 
+// Normalize Quranic Unicode (mushaf Utsmani) to standard Arabic
+// Fixes display issues with fonts that don't support Quranic orthography
+const QURAN_TO_STANDARD: Record<string, string> = {
+  '\u06E1': '\u0652', // Quranic sukun → standard sukun
+  '\u0657': '\u064B', // Inverted damma (tanwin marker) → standard fatḥatayn
+  '\u06DF': '\u0652', // Small high rounded zero → sukun
+  '\u06E5': '',       // Small waw (optional Quranic notation) → remove
+  '\u06E6': '',       // Small ya (optional Quranic notation) → remove
+  '\u06E8': '',       // Small high noon → remove
+};
+
+export function normalizeQuranText(text: string): string {
+  let out = text;
+  for (const [from, to] of Object.entries(QURAN_TO_STANDARD)) {
+    while (out.includes(from)) out = out.replaceAll(from, to);
+  }
+  return out;
+}
+
 export interface SurahItem {
   number: number;
   name: string;
@@ -194,6 +213,7 @@ export async function fetchSurahDetail(surahNumber: number): Promise<SurahDetail
     let arabic = i === 0 && idxAfterBismillah > 0 && shouldStrip
       ? raw.substring(idxAfterBismillah)
       : raw;
+    arabic = normalizeQuranText(arabic);
     if (i === 0 && shouldStrip) {
       const basmalahEnd = arabic.indexOf('\u0631\u0651\u064e\u062d\u0650\u064a\u0645\u0650');
       if (basmalahEnd > 0) {
