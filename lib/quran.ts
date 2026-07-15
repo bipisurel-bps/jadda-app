@@ -4,14 +4,19 @@ const QURAN_JSON_URL = 'https://cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/quran
 // Normalize Quranic Unicode (mushaf Utsmani) to standard Arabic
 // Fixes display issues with fonts that don't support Quranic orthography
 // Mapping: Quranic marks → standard equivalents, or '' for visual-only marks
+// 
+// KESALAHAN SEBELUMNYA (udah difix):
+//   - U+065E dulu dipetakan ke U+064B (fathatayn) — SALAH! Ini tanwin dammah (ٌ)
+//   - U+0656 dulu dihapus — SALAH! Ini tanwin kasrah (ٍ)
 const QURAN_TO_STANDARD: Record<string, string> = {
-  // ── Replace with standard Arabic equivalents ──
-  '\u06E1': '\u0652', // Quranic sukun → standard sukun (37K occurrences)
-  '\u0657': '\u064B', // Inverted damma → standard fatḥatayn (2.9K)
-  '\u065E': '\u064B', // Fatha with two dots → standard fatḥatayn (1.8K)
+  // ── Tanwin: Quranic → standard ──
+  '\u0657': '\u064B', // Inverted damma → fatḥatayn (ً) — 2.9K, selalu mansub
+  '\u065E': '\u064C', // Fatha with two dots → dammatayn (ٌ) — 1.8K, selalu marfu'
+  '\u0656': '\u064D', // Subscript alef → kasratayn (ٍ) — 1.9K, selalu majrur
+  // ── Sukun: Quranic → standard ──
+  '\u06E1': '\u0652', // Quranic sukun → standard sukun (ْ) — 37K
   '\u06DF': '\u0652', // Small high rounded zero → sukun
-  // ── Remove: Quranic notation marks (no standard equivalent) ──
-  '\u0656': '',       // Subscript alef (1.9K)
+  // ── Remove: tanda waqf & notasi mushaf (hiasan, bukan harakat) ──
   '\u06E5': '',       // Small waw (1.3K)
   '\u06E6': '',       // Small ya (957)
   '\u06E8': '',       // Small high noon (1)
@@ -27,8 +32,9 @@ const QURAN_TO_STANDARD: Record<string, string> = {
   '\u06DC': '',       // Small high seen stop (8)
   '\u06EC': '',       // Rounded high stop (2)
   '\u06ED': '',       // Small low meem (99)
-  '\u06EA': '',       // Empty centre low stop
-  '\u06EB': '',       // Empty centre high stop
+  '\u06DE': '',       // Rub el hizb — decorative section marker (199)
+  '\u06E9': '',       // Sajda symbol — handled by app separately (15)
+  '\u065C': '',       // Vowel sign dot below — rare Quranic diacritic (1)
 };
 
 export function normalizeQuranText(text: string): string {
