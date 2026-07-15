@@ -3,13 +3,32 @@ const QURAN_JSON_URL = 'https://cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/quran
 
 // Normalize Quranic Unicode (mushaf Utsmani) to standard Arabic
 // Fixes display issues with fonts that don't support Quranic orthography
+// Mapping: Quranic marks → standard equivalents, or '' for visual-only marks
 const QURAN_TO_STANDARD: Record<string, string> = {
-  '\u06E1': '\u0652', // Quranic sukun → standard sukun
-  '\u0657': '\u064B', // Inverted damma (tanwin marker) → standard fatḥatayn
+  // ── Replace with standard Arabic equivalents ──
+  '\u06E1': '\u0652', // Quranic sukun → standard sukun (37K occurrences)
+  '\u0657': '\u064B', // Inverted damma → standard fatḥatayn (2.9K)
+  '\u065E': '\u064B', // Fatha with two dots → standard fatḥatayn (1.8K)
   '\u06DF': '\u0652', // Small high rounded zero → sukun
-  '\u06E5': '',       // Small waw (optional Quranic notation) → remove
-  '\u06E6': '',       // Small ya (optional Quranic notation) → remove
-  '\u06E8': '',       // Small high noon → remove
+  // ── Remove: Quranic notation marks (no standard equivalent) ──
+  '\u0656': '',       // Subscript alef (1.9K)
+  '\u06E5': '',       // Small waw (1.3K)
+  '\u06E6': '',       // Small ya (957)
+  '\u06E8': '',       // Small high noon (1)
+  '\u06E0': '',       // Small high upright rectangular zero (66)
+  '\u06E2': '',       // Small high meem isolate (510)
+  '\u06E4': '',       // Small high mad / elongated alef (26)
+  '\u06E7': '',       // Small high ya with dots (38)
+  '\u06D6': '',       // Wasl / continue sign (1.7K)
+  '\u06D7': '',       // Stop sign (511)
+  '\u06D8': '',       // Lazim stop (21)
+  '\u06DA': '',       // Waqf / pause permitted (2.1K)
+  '\u06DB': '',       // Small high 3 dots stop (6)
+  '\u06DC': '',       // Small high seen stop (8)
+  '\u06EC': '',       // Rounded high stop (2)
+  '\u06ED': '',       // Small low meem (99)
+  '\u06EA': '',       // Empty centre low stop
+  '\u06EB': '',       // Empty centre high stop
 };
 
 export function normalizeQuranText(text: string): string {
