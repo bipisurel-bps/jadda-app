@@ -1983,26 +1983,6 @@
       ]
     },
     {
-      "id": 92,
-      "category_name": "Doa untuk Orang yang Sakit (Menjenguk)",
-      "prayers": [
-        {
-          "arabic": "لَا بَأْسَ، طَهُورٌ إِنْ شَاءَ اللَّهُ",
-          "transliteration": "Laa ba'sa, thahuurun in syaa-allaah",
-          "translation": "Tidak mengapa, semoga menjadi pembersih (dosa) insya Allah",
-          "source": "HR. Bukhari no. 3616",
-          "label": "Ucapan untuk Orang Sakit"
-        },
-        {
-          "arabic": "أَسْأَلُ اللَّهَ الْعَظِيمَ رَبَّ الْعَرْشِ الْعَظِيمِ أَنْ يَشْفِيَكَ",
-          "transliteration": "As-alullaahal 'azhiima rabbal 'arsyil 'azhiimi an yasyfiyaka",
-          "translation": "Aku memohon kepada Allah Yang Maha Agung, Tuhan Arsy yang agung, agar menyembuhkanmu",
-          "source": "HR. At-Tirmidzi no. 2083, Abu Dawud",
-          "label": "Doa Kesembuhan (7x)"
-        }
-      ]
-    },
-    {
       "id": 93,
       "category_name": "Doa Ketika Rasa Sakit di Badan",
       "prayers": [

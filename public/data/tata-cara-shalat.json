@@ -1,0 +1,511 @@
+{
+  "title": "Tata Cara Salat Nabi ﷺ",
+  "description": "Panduan lengkap tata cara shalat sesuai sunnah Rasulullah ﷺ. Disarikan dari kitab 'Kaifiyatu Shalatin Nabi ﷺ' karya Syekh Abdul Aziz bin Abdullah bin Bāz — ulama besar abad ke-20, mufti Arab Saudi, dan tokoh Ahlus Sunnah.",
+  "source": "Disarikan dari kitab 'Kaifiyatu Shalatin Nabi ﷺ' oleh Syekh Abdul Aziz bin Abdullah bin Bāz rahimahullah.",
+  "note": "Semoga Allah mengampuni beliau, kedua orang tua beliau, dan seluruh umat Islam.",
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Wudu & Kesucian",
+      "icon": "water-outline",
+      "sections": [
+        {
+          "id": "1-1",
+          "title": "Menyempurnakan Wudu",
+          "type": "text",
+          "content": "Langkah pertama sebelum shalat adalah menyempurnakan wudu, yaitu berwudu seperti yang diperintahkan Allah Subḥānahu wa Ta'ālā. Wudu yang sempurna merupakan syarat sah shalat."
+        },
+        {
+          "id": "1-2",
+          "title": "Dalil Perintah Wudu",
+          "type": "dalil",
+          "dalil": {
+            "text": "Wahai orang-orang yang beriman, apabila kamu hendak melaksanakan shalat, maka basuhlah wajahmu dan kedua tanganmu sampai ke siku, serta usaplah kepalamu dan (basuh) kedua kakimu sampai ke kedua mata kaki.",
+            "source": "QS. Al-Mā'idah: 6"
+          }
+        },
+        {
+          "id": "1-3",
+          "title": "Hadits Tentang Wudu",
+          "type": "checklist",
+          "items": [
+            "Rasulullah ﷺ bersabda: \"Shalat tidak akan diterima tanpa bersuci.\" (HR. Muslim No. 224)",
+            "Rasulullah ﷺ bersabda kepada orang yang shalatnya keliru: \"Apabila kamu mendirikan shalat, maka berwudulah dengan sempurna.\" (HR. Bukhari No. 5782)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Menghadap Kiblat & Niat",
+      "icon": "compass-outline",
+      "sections": [
+        {
+          "id": "2-1",
+          "title": "Menghadap Kiblat",
+          "type": "text",
+          "content": "Orang yang hendak shalat harus menghadap secara total ke kiblat, yaitu Ka'bah, di mana pun posisi dirinya. Menghadap kiblat termasuk syarat dalam shalat, kecuali dalam kondisi-kondisi tertentu yang telah diketahui dan dijelaskan dalam buku-buku ulama."
+        },
+        {
+          "id": "2-2",
+          "title": "Niat di Dalam Hati",
+          "type": "text",
+          "content": "Berniat dalam hati akan mengerjakan shalat yang ingin dikerjakan, baik itu fardu ataupun sunah. Tidak perlu melafalkan niat secara lisan, sebab mengucapkan niat tidak disyariatkan, bahkan termasuk bidah. Nabi ﷺ tidak pernah melafalkan niat, begitu pula para sahabatnya radiyallahu 'anhum."
+        },
+        {
+          "id": "2-3",
+          "title": "Sutrah (Pembatas Shalat)",
+          "type": "info-box",
+          "infoType": "tip",
+          "content": "Dianjurkan meletakkan sutrah (pembatas) di hadapan saat shalat jika menjadi imam atau shalat sendirian. Sutrah berfungsi sebagai pembatas agar tidak ada orang yang lewat di depannya."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Takbiratul Ihram",
+      "icon": "hand-left-outline",
+      "sections": [
+        {
+          "id": "3-1",
+          "title": "Mengucapkan Takbir",
+          "type": "text",
+          "content": "Mengucapkan takbiratul ihram dengan membaca: \"Allāhu Akbar\" sambil melihat ke tempat sujud. Pandangan diarahkan ke tempat sujud selama berdiri."
+        },
+        {
+          "id": "3-2",
+          "title": "Mengangkat Kedua Tangan",
+          "type": "text",
+          "content": "Mengangkat kedua tangan saat bertakbir sampai sejajar dengan kedua bahu atau setara dengan kedua telinga. Ini dilakukan pada: takbiratul ihram, saat hendak rukuk, bangkit dari rukuk, dan bangkit ke rakaat ketiga."
+        },
+        {
+          "id": "3-3",
+          "title": "Posisi Tangan Berdiri",
+          "type": "text",
+          "content": "Meletakkan kedua tangan di dada. Telapak tangan kanan diletakkan di atas telapak tangan kiri, pergelangan, dan hasta. Posisi ini berdasarkan hadis-hadis yang sahih dari Nabi ﷺ, diriwayatkan oleh Wā'il bin Ḥujr dan Sahl bin Sa'ad radiyallahu 'anhuma."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Doa Iftitah",
+      "icon": "book-outline",
+      "sections": [
+        {
+          "id": "4-1",
+          "title": "Doa Iftitah Pertama",
+          "type": "arabic-dua",
+          "arabic": "اللَّهُمَّ بَاعِدْ بَيْنِي وَبَيْنَ خَطَايَايَ كَمَا بَاعَدْتَ بَيْنَ الْمَشْرِقِ وَالْمَغْرِبِ، اللَّهُمَّ نَقِّنِي مِنَ الْخَطَايَا كَمَا يُنَقَّى الثَّوْبُ الْأَبْيَضُ مِنَ الدَّنَسِ، اللَّهُمَّ اغْسِلْ خَطَايَايَ بِالْمَاءِ وَالثَّلْجِ وَالْبَرَدِ",
+          "transliteration": "Allāhumma bā'id bainī wa baina khaṭāyāya kamā bā'adta bainal-masyriqi wal-magribi. Allāhumma naqqinī minal-khaṭāyā kamā yunaqqaṡ-ṡaubul-abyaḍu minad-danas. Allāhumma-gsil khaṭāyāya bil-mā'i waṡ-ṡalji wal-barad.",
+          "translation": "Ya Allah, jauhkanlah antara aku dan kesalahan-kesalahanku, sebagaimana Engkau menjauhkan antara timur dan barat. Ya Allah, bersihkanlah aku dari kesalahan-kesalahanku sebagaimana kain putih yang dibersihkan dari noda. Ya Allah, basuhlah aku dari kesalahan-kesalahanku dengan air, salju, dan es.",
+          "note": "HR. Bukhari No. 744 dan Muslim No. 598"
+        },
+        {
+          "id": "4-2",
+          "title": "Doa Iftitah Kedua",
+          "type": "arabic-dua",
+          "arabic": "سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَى جَدُّكَ، وَلَا إِلَهَ غَيْرُكَ",
+          "transliteration": "Subḥānakallāhumma wa biḥamdika wa tabārakasmuka wa ta'ālā jadduka wa lā ilāha gairuka.",
+          "translation": "Ya Allah, Maha Suci Engkau dan dengan memuji-Mu, Maha Berkah nama-Mu, Maha Luhur kemuliaan-Mu, dan tidak ada tuhan yang berhak disembah selain Engkau.",
+          "note": "HR. Muslim No. 399"
+        },
+        {
+          "id": "4-3",
+          "title": "Catatan Doa Iftitah",
+          "type": "info-box",
+          "infoType": "info",
+          "content": "Apabila membaca doa iftitah lainnya yang sahih dari Nabi ﷺ, maka tidak masalah. Sebaiknya membaca doa-doa iftitah ini secara bergantian, karena hal itu lebih sempurna dalam mengikuti beliau ﷺ."
+        },
+        {
+          "id": "4-4",
+          "title": "Ta'awudz & Basmalah",
+          "type": "text",
+          "content": "Kemudian mengucapkan ta'awudz: \"A'ūżu billāhi minasy-syaiṭānir-rajīm\" (Aku berlindung kepada Allah dari setan yang terkutuk), lalu membaca basmalah: \"Bismillāhir-raḥmānir-raḥīm\" (Dengan nama Allah yang Maha Pengasih lagi Maha Penyayang)."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Al-Fatihah & Surah",
+      "icon": "book-outline",
+      "sections": [
+        {
+          "id": "5-1",
+          "title": "Membaca Al-Fatihah",
+          "type": "text",
+          "content": "Membaca Surah Al-Fātiḥah adalah rukun shalat. Nabi ﷺ bersabda: \"Tidak sah shalat orang yang tidak membaca Al-Fātiḥah.\" (HR. Bukhari No. 756). Setelah selesai Al-Fatihah, mengucapkan \"Āmīn\" dengan jahr (keras) ketika shalat jahr, dan sir (lirih) ketika shalat sir."
+        },
+        {
+          "id": "5-2",
+          "title": "Surah Setelah Al-Fatihah",
+          "type": "text",
+          "content": "Setelah Al-Fatihah, membaca ayat-ayat dari Al-Qur'an semampunya. Sebaiknya:\n\n• Shalat Subuh: surah dari Ṭiwālul-Mufaṣṣal (surah-surah panjang, seperti Qaf hingga Al-Mursalat)\n• Shalat Zuhur, Asar, Isya: surah dari Awsāṭul-Mufaṣṣal (surah pertengahan)\n• Shalat Magrib: kadang Ṭiwālul-Mufaṣṣal, kadang Qiṣārul-Mufaṣṣal (surah pendek)\n\nHal ini sebagai bentuk pengamalan Sunnah yang tertera dalam berbagai hadis."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Rukuk",
+      "icon": "accessibility-outline",
+      "sections": [
+        {
+          "id": "6-1",
+          "title": "Gerakan Rukuk",
+          "type": "text",
+          "content": "Turun melakukan rukuk dengan bertakbir sambil mengangkat kedua tangan sampai sejajar dengan kedua telinga. Kepala diposisikan lurus dengan punggung, kedua telapak tangan diletakkan di kedua lutut, jari-jemari direnggangkan. Wajib bersikap tumakninah (tenang sejenak) dalam rukuk."
+        },
+        {
+          "id": "6-2",
+          "title": "Bacaan Rukuk",
+          "type": "arabic-dua",
+          "arabic": "سُبْحَانَ رَبِّيَ الْعَظِيمِ",
+          "transliteration": "Subḥāna rabbiyal-'aẓīm.",
+          "translation": "Maha Suci Tuhanku Yang Maha Agung.",
+          "note": "Sebaiknya diulang 3 kali atau lebih."
+        },
+        {
+          "id": "6-3",
+          "title": "Bacaan Rukuk Lainnya",
+          "type": "arabic-dua",
+          "arabic": "سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، اللَّهُمَّ اغْفِرْ لِي",
+          "transliteration": "Subḥānakallāhumma wa biḥamdika, allāhummagfir-lī.",
+          "translation": "Maha Suci Engkau, ya Allah, dan Engkau Maha Terpuji. Ya Allah, ampunilah aku.",
+          "note": "HR. Bukhari No. 817 dan Muslim No. 484"
+        },
+        {
+          "id": "6-4",
+          "title": "Nasihat Rukuk",
+          "type": "info-box",
+          "infoType": "info",
+          "content": "Rasulullah ﷺ bersabda: \"Adapun ketika rukuk, maka agungkanlah Tuhanmu; dan saat sujud, bersungguh-sungguhlah dalam berdoa, karena saat itu layak untuk dikabulkan doa kalian.\" (HR. Muslim No. 479)"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "I'tidal (Bangkit dari Rukuk)",
+      "icon": "arrow-up-outline",
+      "sections": [
+        {
+          "id": "7-1",
+          "title": "Gerakan I'tidal",
+          "type": "text",
+          "content": "Mengangkat kepala untuk bangkit dari rukuk sambil mengangkat kedua tangan sejajar dengan kedua bahu atau kedua telinga seraya berucap: \"Sami'allāhu liman ḥamidah\" (Allah mendengar orang yang memuji-Nya). Berdiri lurus kembali dengan tumakninah."
+        },
+        {
+          "id": "7-2",
+          "title": "Bacaan Setelah I'tidal",
+          "type": "arabic-dua",
+          "arabic": "رَبَّنَا وَلَكَ الْحَمْدُ، حَمْدًا كَثِيرًا طَيِّبًا مُبَارَكًا فِيهِ، مِلْءَ السَّمَاوَاتِ وَمِلْءَ الْأَرْضِ، وَمِلْءَ مَا شِئْتَ مِنْ شَيْءٍ بَعْدُ",
+          "transliteration": "Rabbanā walakal-ḥamdu ḥamdan kaṣīran ṭayyiban mubārakan fīh, mil'as-samāwāti wamil'al-arḍi, wamil'a mā syi'ta min syai'in ba'du.",
+          "translation": "Wahai Tuhan kami, segala pujian sebanyak-banyaknya milik-Mu, yang baik, serta penuh keberkahan di dalamnya, sepenuh langit dan bumi, dan sepenuh apa yang Engkau kehendaki setelah itu.",
+          "note": "HR. Muslim No. 477"
+        },
+        {
+          "id": "7-3",
+          "title": "Tambahan Bacaan I'tidal (Sunah)",
+          "type": "arabic-dua",
+          "arabic": "أَهْلَ الثَّنَاءِ وَالْمَجْدِ، أَحَقُّ مَا قَالَ الْعَبْدُ، وَكُلُّنَا لَكَ عَبْدٌ، اللَّهُمَّ لَا مَانِعَ لِمَا أَعْطَيْتَ وَلَا مُعْطِيَ لِمَا مَنَعْتَ، وَلَا يَنْفَعُ ذَا الْجَدِّ مِنْكَ الْجَدُّ",
+          "transliteration": "Ahlaṡ-ṡanā'i wal-majdi, aḥaqqu mā qālal-'abdu, wa kullunā laka 'abdun, allāhumma lā māni'a limā a'ṭaita wa lā mu'ṭiya limā mana'ta, wa lā yanfa'u żal-jaddi minkal-jaddu.",
+          "translation": "Engkau yang berhak terhadap semua pujian dan pengagungan. Itu adalah ucapan paling benar yang dikatakan oleh hamba, dan kami seluruhnya hamba-Mu. Ya Allah, tidak ada yang mampu menghalangi apa yang Engkau beri dan tidak ada pula yang dapat memberi apa yang Engkau halangi. Kekayaan atau kemuliaan seseorang tidak bisa digunakan untuk menghindari siksa-Mu.",
+          "note": "HR. Bukhari No. 711 dan Muslim No. 598 — ini tambahan yang lebih utama"
+        },
+        {
+          "id": "7-4",
+          "title": "Posisi Tangan Setelah I'tidal",
+          "type": "text",
+          "content": "Disunahkan meletakkan kembali kedua tangan di dada setelah i'tidal — baik imam, makmum, atau shalat sendirian — sebagaimana posisi saat berdiri sebelum rukuk. Hal ini tertera secara valid dari Nabi ﷺ dalam hadis Wā'il bin Ḥujr dan Sahl bin Sa'ad radiyallahu 'anhuma."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Sujud",
+      "icon": "flame-outline",
+      "sections": [
+        {
+          "id": "8-1",
+          "title": "Gerakan Sujud",
+          "type": "text",
+          "content": "Turun sujud sambil bertakbir. Meletakkan kedua lutut terlebih dahulu sebelum kedua tangan jika memungkinkan. Namun bila terasa berat, boleh mendahulukan kedua tangan sebelum kedua lutut. Semua jemari kaki dan tangan dihadapkan ke kiblat, dirapatkan jemarinya, dan dijulurkan ke arah kiblat."
+        },
+        {
+          "id": "8-2",
+          "title": "Tujuh Anggota Sujud",
+          "type": "checklist",
+          "items": [
+            "Dahi dan hidung",
+            "Kedua telapak tangan",
+            "Kedua lutut",
+            "Jemari bagian dalam kedua kaki"
+          ]
+        },
+        {
+          "id": "8-3",
+          "title": "Bacaan Sujud",
+          "type": "arabic-dua",
+          "arabic": "سُبْحَانَ رَبِّيَ الْأَعْلَى",
+          "transliteration": "Subḥāna rabbiyal-a'lā.",
+          "translation": "Maha Suci Tuhanku Yang Maha Tinggi.",
+          "note": "Disunahkan dibaca 3 kali atau lebih."
+        },
+        {
+          "id": "8-4",
+          "title": "Bacaan Sujud Lainnya",
+          "type": "arabic-dua",
+          "arabic": "سُبْحَانَكَ اللَّهُمَّ رَبَّنَا وَبِحَمْدِكَ، اللَّهُمَّ اغْفِرْ لِي",
+          "transliteration": "Subḥānakallāhumma rabbanā wa biḥamdika, allāhumma-gfir lī.",
+          "translation": "Maha Suci Engkau, wahai Tuhan kami, dan segala puji bagi-Mu. Ya Allah, ampunilah aku.",
+          "note": "Dianjurkan memperbanyak doa saat sujud — mohon kebaikan dunia dan akhirat."
+        },
+        {
+          "id": "8-5",
+          "title": "Adab Sujud",
+          "type": "checklist",
+          "items": [
+            "Merenggangkan kedua lengan dari samping tubuh",
+            "Menjauhkan perut dari kedua paha",
+            "Menjauhkan kedua paha dari kedua betis",
+            "Tidak menempelkan kedua lengan di lantai (seperti anjing)"
+          ]
+        },
+        {
+          "id": "8-6",
+          "title": "Hadits Adab Sujud",
+          "type": "dalil",
+          "dalil": {
+            "text": "Bersikaplah pertengahan dalam sujud dan tidak boleh salah satu di antara kalian menghamparkan kedua hastanya layaknya seekor anjing.",
+            "source": "HR. Bukhari No. 788 dan Muslim No. 493"
+          }
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Duduk Antara Dua Sujud",
+      "icon": "sunny-outline",
+      "sections": [
+        {
+          "id": "9-1",
+          "title": "Posisi Duduk",
+          "type": "text",
+          "content": "Bangkit dari sujud sambil bertakbir. Membentangkan kaki kiri dan duduk di atasnya, menegakkan telapak kaki kanan, serta meletakkan kedua tangan di atas paha dan lutut. Wajib tumakninah (tenang sejenak) saat duduk ini."
+        },
+        {
+          "id": "9-2",
+          "title": "Bacaan Duduk Antara Dua Sujud",
+          "type": "arabic-dua",
+          "arabic": "رَبِّ اغْفِرْ لِي وَارْحَمْنِي وَاهْدِنِي وَارْزُقْنِي وَعَافِنِي وَاجْبُرْنِي",
+          "transliteration": "Rabbig-firlī war-ḥamnī wah-dinī war-zuqnī wa 'āfinī waj-burnī.",
+          "translation": "Tuhanku, ampunilah aku, kasihanilah aku, berilah aku petunjuk, berilah aku rezeki, selamatkanlah aku, dan perbaikilah aku.",
+          "note": "HR. Tirmizi No. 284, Abu Daud No. 850, dan Ibnu Majah No. 898"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Sujud Kedua & Rakaat Kedua",
+      "icon": "refresh-outline",
+      "sections": [
+        {
+          "id": "10-1",
+          "title": "Sujud Kedua",
+          "type": "text",
+          "content": "Melakukan sujud kedua sambil bertakbir. Tata cara sujud kedua sama persis dengan sujud pertama: tumakninah, membaca \"Subḥāna rabbiyal-a'lā\" 3x, dan memperbanyak doa."
+        },
+        {
+          "id": "10-2",
+          "title": "Duduk Istirahat (Sunah)",
+          "type": "text",
+          "content": "Bangkit dari sujud kedua sambil bertakbir, lalu duduk sejenak seperti duduk di antara dua sujud. Ini disebut duduk istirahat. Hukumnya sunah — jika tidak dikerjakan pun tidak masalah. Tidak ada zikir atau doa tertentu padanya."
+        },
+        {
+          "id": "10-3",
+          "title": "Bangkit ke Rakaat Kedua",
+          "type": "text",
+          "content": "Kemudian bangkit berdiri untuk rakaat kedua sambil bertumpu pada kedua lutut jika memungkinkan. Bila terasa berat, boleh bertumpu pada lantai dengan kedua tangan. Lalu membaca Al-Fatihah dan surah lainnya, serta melakukan gerakan yang sama seperti rakaat pertama."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Tasyahud & Shalawat",
+      "icon": "chatbubble-outline",
+      "sections": [
+        {
+          "id": "11-1",
+          "title": "Posisi Duduk Tasyahud",
+          "type": "text",
+          "content": "Pada shalat dua rakaat (Subuh, Jumat, Id), setelah sujud kedua rakaat terakhir: duduk dengan telapak kaki kanan ditegakkan sementara kaki kiri dihamparkan. Tangan kanan di atas paha kanan — genggam jari kelingking dan jari manis, lingkarkan jari tengah dengan jempol, sementara jari telunjuk menunjuk sebagai isyarat tauhid. Atau bisa juga menggenggam semua jari kecuali telunjuk. Lakukan secara bergantian karena kedua cara ini sahih dari Nabi ﷺ."
+        },
+        {
+          "id": "11-2",
+          "title": "Bacaan Tasyahud",
+          "type": "arabic-dua",
+          "arabic": "التَّحِيَّاتُ لِلَّهِ وَالصَّلَوَاتُ وَالطَّيِّبَاتُ، السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللَّهِ الصَّالِحِينَ، أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا اللَّهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ",
+          "transliteration": "At-taḥiyyātu lillāh, waṣ-ṣalawātu waṭ-ṭayyibāt. As-salāmu 'alaika ayyuhan-nabiyyu wa raḥmatullāhi wa barakātuh. As-salāmu 'alainā wa 'alā 'ibādillāhiṣ-ṣāliḥīn. Asyhadu an lā ilāha illallāh wa asyhadu anna muḥammadan 'abduhu wa rasūluh.",
+          "translation": "Segala ucapan penghormatan, selawat, dan kebaikan hanya milik Allah. Semoga keselamatan terlimpah kepadamu, wahai Nabi, juga rahmat Allah serta berkah-Nya. Semoga keselamatan terlimpah pada kami dan hamba-hamba Allah yang saleh. Aku bersaksi bahwa tiada ilah yang berhak disembah selain Allah dan aku bersaksi bahwa Muhammad adalah hamba dan utusan-Nya."
+        },
+        {
+          "id": "11-3",
+          "title": "Shalawat Ibrahimiyyah",
+          "type": "arabic-dua",
+          "arabic": "اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ، كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ. وَبَارِكْ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ، كَمَا بَارَكْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ",
+          "transliteration": "Allāhumma ṣalli 'alā muḥammad wa 'alā āli muḥammad, kamā ṣallaita 'alā ibrāhīm wa 'alā āli ibrāhīm, innaka ḥamīdun majīd. Wa bārik 'alā muḥammad wa 'alā āli muḥammad, kamā bārakta 'alā ibrāhīm wa 'alā āli ibrāhīm, innaka ḥamīdun majīd.",
+          "translation": "Ya Allah, limpahkanlah selawat kepada Muhammad dan keluarga Muhammad, sebagaimana Engkau melimpahkan selawat kepada Ibrahim dan keluarga Ibrahim, sesungguhnya Engkau Zat yang Maha Terpuji lagi Maha Mulia. Curahkanlah pula keberkahan kepada Muhammad dan keluarga Muhammad, sebagaimana Engkau mencurahkan keberkahan kepada Ibrahim dan keluarga Ibrahim, sesungguhnya Engkau Maha Terpuji lagi Maha Mulia.",
+          "note": "HR. Bukhari No. 797 dan Muslim No. 402"
+        },
+        {
+          "id": "11-4",
+          "title": "Doa Perlindungan Sebelum Salam",
+          "type": "arabic-dua",
+          "arabic": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ عَذَابِ جَهَنَّمَ، وَمِنْ عَذَابِ الْقَبْرِ، وَمِنْ فِتْنَةِ الْمَحْيَا وَالْمَمَاتِ، وَمِنْ شَرِّ فِتْنَةِ الْمَسِيحِ الدَّجَّالِ",
+          "transliteration": "Allāhumma innī a'ūżubika min 'ażābi jahannam, wa min 'ażābil-qabri, wa min fitnatil-maḥyā wal-mamāti wa min syarri fitnatil-masīh ad-dajjāl.",
+          "translation": "Ya Allah, sesungguhnya aku berlindung kepada-Mu dari siksa jahanam, dari siksa kubur, dari ujian hidup dan kematian, serta dari keburukan ujian Almasih Dajal.",
+          "note": "HR. Bukhari No. 1311 dan Muslim No. 588"
+        },
+        {
+          "id": "11-5",
+          "title": "Doa Tambahan Setelah Tasyahud",
+          "type": "info-box",
+          "infoType": "tip",
+          "content": "Setelah shalawat dan doa perlindungan, berdoalah sekehendak hati memohon kebaikan dunia dan akhirat. Boleh berdoa untuk kedua orang tua atau kaum muslimin lainnya. Nabi ﷺ bersabda: \"Kemudian silakan memilih doa yang ia sukai untuk dibaca.\" (HR. An-Nasa'i No. 1298). Dalam lafaz lain: \"Kemudian silakan meminta apa pun yang ia kehendaki.\" (HR. Muslim No. 402). Doa ini mencakup semua perkara yang bermanfaat bagi seorang hamba di dunia dan akhirat."
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Salam",
+      "icon": "hand-right-outline",
+      "sections": [
+        {
+          "id": "12-1",
+          "title": "Mengucapkan Salam",
+          "type": "text",
+          "content": "Mengucapkan salam sambil menoleh ke kanan dan ke kiri dengan membaca: \"As-salāmu 'alaikum wa raḥmatullāh, As-salāmu 'alaikum wa raḥmatullāh.\" (Semoga keselamatan dan rahmat Allah terlimpah kepada kalian)."
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Shalat 3 & 4 Rakaat",
+      "icon": "add-circle-outline",
+      "sections": [
+        {
+          "id": "13-1",
+          "title": "Tasyahud Awal",
+          "type": "text",
+          "content": "Pada shalat Magrib (3 rakaat), Zuhur, Asar, dan Isya (4 rakaat): setelah sujud kedua rakaat kedua, lakukan tasyahud awal. Baca doa tasyahud seperti di Bab 11, disertai shalawat kepada Nabi ﷺ. Jika tidak membaca shalawat setelah tasyahud awal, tidak masalah."
+        },
+        {
+          "id": "13-2",
+          "title": "Bangkit ke Rakaat Selanjutnya",
+          "type": "text",
+          "content": "Setelah tasyahud awal, bangkit berdiri sambil bertumpu pada kedua lutut, mengangkat kedua tangan sejajar bahu/telinga seraya bertakbir \"Allāhu Akbar\", lalu meletakkan tangan di dada. Pada rakaat ketiga dan keempat, cukup membaca Surah Al-Fātiḥah saja. Namun pada shalat Zuhur, sesekali boleh membaca ayat lain setelah Al-Fātiḥah karena ada dalil sahih dari Nabi ﷺ (hadis Abu Sa'id)."
+        },
+        {
+          "id": "13-3",
+          "title": "Tasyahud Akhir & Salam",
+          "type": "text",
+          "content": "Lakukan tasyahud akhir di rakaat ketiga (Magrib) atau keempat (Zuhur/Asar/Isya), sama seperti yang dipaparkan di Bab 11. Kemudian ucapkan salam kanan-kiri seperti di Bab 12."
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Dzikir Setelah Shalat",
+      "icon": "finger-print-outline",
+      "sections": [
+        {
+          "id": "14-1",
+          "title": "Istigfar & Doa Setelah Salam",
+          "type": "text",
+          "content": "Setelah salam, membaca istigfar sebanyak 3 kali: \"Astagfirullāh\" (Aku mohon ampun kepada Allah). Kemudian membaca doa:"
+        },
+        {
+          "id": "14-2",
+          "title": "Doa Setelah Salam",
+          "type": "arabic-dua",
+          "arabic": "اللَّهُمَّ أَنْتَ السَّلَامُ وَمِنْكَ السَّلَامُ، تَبَارَكْتَ يَا ذَا الْجَلَالِ وَالْإِكْرَامِ",
+          "transliteration": "Allāhumma antas-salām, wa minkas-salām, tabārakta yā żal-jalāli wal-ikrām.",
+          "translation": "Ya Allah, Engkaulah As-Salām dan dari-Mu keselamatan. Maha Tinggi Engkau, wahai pemilik kebesaran dan keagungan.",
+          "note": "HR. Muslim No. 591 — imam membaca doa ini sebelum menghadap jemaah"
+        },
+        {
+          "id": "14-3",
+          "title": "Zikir Setelah Shalat",
+          "type": "arabic-dua",
+          "arabic": "لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ. لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ. اللَّهُمَّ لَا مَانِعَ لِمَا أَعْطَيْتَ وَلَا مُعْطِيَ لِمَا مَنَعْتَ، وَلَا يَنْفَعُ ذَا الْجَدِّ مِنْكَ الْجَدُّ. لَا إِلَهَ إِلَّا اللَّهُ، وَلَا نَعْبُدُ إِلَّا إِيَّاهُ، لَهُ النِّعْمَةُ وَلَهُ الْفَضْلُ، وَلَهُ الثَّنَاءُ الْحَسَنُ. لَا إِلَهَ إِلَّا اللَّهُ مُخْلِصِينَ لَهُ الدِّينَ وَلَوْ كَرِهَ الْكَافِرُونَ",
+          "transliteration": "Lā ilāha illallāh waḥdahu lā syarīka lah, lahul-mulku wa lahul-ḥamdu, wa huwa 'alā kulli syai'in qadīr. Lā ḥaula wa lā quwwata illā billāh. Allāhumma lā māni'a limā a'ṭaita wa lā mu'ṭiya limā mana'ta, wa lā yanfa'u żal-jaddi minkal-jaddu. Lā ilāha illallāh, wa lā na'budu illā iyyāh, lahun-ni'matu wa lahul-faḍlu, wa lahuṡ-ṡanā'ul-ḥasan. Lā ilāha illallāh mukhliṣīna lahud-dīn wa law karihal-kāfirūn.",
+          "translation": "Tidak ada tuhan yang berhak disembah kecuali Allah semata, tidak ada sekutu bagi-Nya. Hanya milik-Nya semua kerajaan dan hanya bagi-Nya semua pujian dan Dia Mahakuasa atas segala sesuatu. Tidak ada upaya dan kekuatan kecuali dengan pertolongan Allah. Ya Allah, tidak ada yang mampu menghalangi apa yang Engkau beri dan tidak ada pula yang dapat memberi apa yang Engkau halangi. Kekayaan atau kemuliaan seseorang tidak bisa digunakan untuk menghindari siksa-Mu. Tidak ada tuhan yang berhak disembah kecuali Allah. Kita tidak beribadah kecuali hanya kepada-Nya. Hanya milik-Nya semua nikmat, hanya milik-Nya semua kebaikan, dan hanya milik-Nya semua pujian yang baik. Tidak ada tuhan yang berhak disembah kecuali Allah dengan memurnikan ibadah seluruhnya hanya kepada-Nya walaupun orang-orang kafir tidak menyukainya.",
+          "note": "HR. Muslim No. 402"
+        },
+        {
+          "id": "14-4",
+          "title": "Tasbih, Tahmid, Takbir",
+          "type": "text",
+          "content": "Bertasbih (Subḥānallāh) sebanyak 33 kali, bertahmid (Alḥamdulillāh) 33 kali, dan bertakbir (Allāhu Akbar) 33 kali. Lalu menggenapkan menjadi 100 dengan membaca: \"Lā ilāha illallāhu waḥdahu lā syarīka lah, lahul-mulku wa lahul-ḥamdu wa huwa 'alā kulli syai'in qadīr.\""
+        },
+        {
+          "id": "14-5",
+          "title": "Membaca Ayat Kursi & Mu'awwidzat",
+          "type": "info-box",
+          "infoType": "tip",
+          "content": "Setelah shalat fardu, disunahkan membaca: Ayat Kursi, Qul huwallāhu aḥad, Qul a'ūżu birabbil-falaq, dan Qul a'ūżu birabbin-nās. Setelah shalat Subuh dan Magrib, ketiga surah terakhir (Al-Ikhlas, Al-Falaq, An-Nas) diulang sebanyak 3 kali. Semua zikir ini sunah, bukan wajib."
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Shalat Sunah Rawatib",
+      "icon": "star-outline",
+      "sections": [
+        {
+          "id": "15-1",
+          "title": "Keutamaan Shalat Rawatib",
+          "type": "text",
+          "content": "Disyariatkan mengerjakan shalat sunah rawatib yang sangat dirutinkan Nabi ﷺ saat mukim. Total 12 rakaat dalam sehari semalam."
+        },
+        {
+          "id": "15-2",
+          "title": "Rincian Shalat Rawatib",
+          "type": "steps",
+          "steps": [
+            { "number": 1, "title": "Sebelum Subuh", "description": "2 rakaat — selalu dikerjakan Nabi ﷺ baik mukim maupun safar" },
+            { "number": 2, "title": "Sebelum Zuhur", "description": "4 rakaat (bisa ditambah 2 rakaat setelahnya menjadi 4, mendapat keutamaan diharamkan dari neraka)" },
+            { "number": 3, "title": "Setelah Zuhur", "description": "2 rakaat" },
+            { "number": 4, "title": "Setelah Magrib", "description": "2 rakaat" },
+            { "number": 5, "title": "Setelah Isya", "description": "2 rakaat" }
+          ]
+        },
+        {
+          "id": "15-3",
+          "title": "Hadits Keutamaan",
+          "type": "dalil",
+          "dalil": {
+            "text": "Siapa yang shalat dua belas rakaat dalam sehari semalam, niscaya akan dibangunkan rumah untuknya di surga.",
+            "source": "HR. Bukhari No. 6860"
+          }
+        },
+        {
+          "id": "15-4",
+          "title": "Tambahan Sunah Lainnya",
+          "type": "checklist",
+          "items": [
+            "4 rakaat sebelum Asar (ada dalil sahih)",
+            "2 rakaat sebelum Magrib (ada dalil sahih)",
+            "2 rakaat sebelum Isya (ada dalil sahih)",
+            "Shalat Witir — Nabi ﷺ selalu mengerjakannya baik mukim maupun safar"
+          ]
+        },
+        {
+          "id": "15-5",
+          "title": "Di Mana Dikerjakan?",
+          "type": "info-box",
+          "infoType": "info",
+          "content": "Shalat rawatib dan witir lebih utama dikerjakan di rumah. Nabi ﷺ bersabda: \"Sebaik-baik shalat seseorang adalah yang dikerjakan di rumahnya, kecuali shalat fardu.\" (HR. Muslim No. 728). Namun bila dikerjakan di masjid pun tidak masalah."
+        }
+      ]
+    }
+  ]
+}
